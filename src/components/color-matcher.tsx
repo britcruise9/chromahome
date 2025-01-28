@@ -1,7 +1,11 @@
 "use client";
+
+// External imports first
 import React, { useState } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Upload } from 'lucide-react';
+
+// Then UI components
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 export default function ColorMatcher() {
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
@@ -15,22 +19,19 @@ export default function ColorMatcher() {
       const img = new Image();
 
       img.onload = () => {
+        if (!ctx) return;
         canvas.width = img.width;
         canvas.height = img.height;
-        ctx?.drawImage(img, 0, 0);
+        ctx.drawImage(img, 0, 0);
         
         const centerX = Math.floor(img.width / 2);
         const centerY = Math.floor(img.height / 2);
-        const pixel = ctx?.getImageData(centerX, centerY, 1, 1).data;
+        const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
         
-        if (pixel) {
-          const hex = '#' + [pixel[0], pixel[1], pixel[2]]
-            .map(x => x.toString(16).padStart(2, '0'))
-            .join('');
-          resolve(hex);
-        } else {
-          resolve('#808080');
-        }
+        const hex = '#' + [pixel[0], pixel[1], pixel[2]]
+          .map(x => x.toString(16).padStart(2, '0'))
+          .join('');
+        resolve(hex);
       };
 
       img.src = URL.createObjectURL(file);
@@ -71,6 +72,7 @@ export default function ColorMatcher() {
         </CardHeader>
         <CardContent>
           <div className="flex flex-col items-center gap-6">
+            {/* Upload Zone */}
             <div className="w-full">
               <label 
                 className="flex flex-col items-center justify-center w-full h-40 border-2 border-dashed rounded-xl cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors border-gray-300 hover:border-gray-400"
@@ -91,12 +93,14 @@ export default function ColorMatcher() {
               </label>
             </div>
 
+            {/* Processing State */}
             {isProcessing && (
               <div className="text-sm text-gray-600 animate-pulse">
                 Finding matching products...
               </div>
             )}
 
+            {/* Color Display */}
             {selectedColor && (
               <div className="text-center">
                 <div className="flex items-center gap-4">
@@ -119,6 +123,7 @@ export default function ColorMatcher() {
         </CardContent>
       </Card>
 
+      {/* Product Results */}
       {products.length > 0 && (
         <Card>
           <CardHeader>
@@ -138,16 +143,20 @@ export default function ColorMatcher() {
                   />
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h3 className="font-medium text-gray-900 line-clamp-2">{product.title}</h3>
+                      <h3 className="font-medium text-gray-900 line-clamp-2">
+                        {product.title}
+                      </h3>
                       <div 
                         className="w-6 h-6 rounded-md shadow-sm"
                         style={{ backgroundColor: product.dominantColor }}
                       />
                     </div>
-                    <p className="text-sm text-gray-600">${product.price}</p>
+                    <p className="text-sm text-gray-600">
+                      ${product.price.toFixed(2)}
+                    </p>
                     {product.colorDistance && (
                       <p className="text-xs text-gray-500">
-                        Color match: {Math.round((1 - product.colorDistance/442) * 100)}%
+                        Match: {Math.round((1 - product.colorDistance/442) * 100)}%
                       </p>
                     )}
                   </div>
