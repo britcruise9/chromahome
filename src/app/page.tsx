@@ -1,3 +1,4 @@
+// src/app/page.tsx
 import ColorMatcher from '@/components/color-matcher';
 
 export default function Home() {
