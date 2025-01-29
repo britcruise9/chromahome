@@ -26,24 +26,25 @@ const ColorMatcher = () => {
       const ctx = canvas.getContext('2d');
       const img = new Image();
 
-      img.onload = () => {
-        if (!ctx) return;
-        canvas.width = img.width;
-        canvas.height = img.height;
-        ctx.drawImage(img, 0, 0);
+      return new Promise((resolve) => {
+        img.onload = () => {
+          if (!ctx) return resolve('#000000');
+          canvas.width = img.width;
+          canvas.height = img.height;
+          ctx.drawImage(img, 0, 0);
 
-        const centerX = Math.floor(img.width / 2);
-        const centerY = Math.floor(img.height / 2);
-        const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
+          const centerX = Math.floor(img.width / 2);
+          const centerY = Math.floor(img.height / 2);
+          const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
 
-        const hex = '#' + [pixel[0], pixel[1], pixel[2]]
-          .map(x => x.toString(16).padStart(2, '0'))
-          .join('');
-        return hex;
-      };
+          const hex = '#' + [pixel[0], pixel[1], pixel[2]]
+            .map(x => x.toString(16).padStart(2, '0'))
+            .join('');
+          resolve(hex);
+        };
 
-      img.src = URL.createObjectURL(file);
-      return ''; // Return a default value for now
+        img.src = URL.createObjectURL(file);
+      });
     } catch (error) {
       console.error('Error getting dominant color:', error);
       return '#000000'; // Return a default color if extraction fails
@@ -57,6 +58,7 @@ const ColorMatcher = () => {
       setProducts(data);
     } catch (error) {
       console.error('Error fetching products:', error);
+      setProducts([]); // Set empty array on error
     }
   };
 
@@ -76,8 +78,9 @@ const ColorMatcher = () => {
     }
   };
 
+  // Initialize with empty products array
   useEffect(() => {
-    fetchProducts();
+    setProducts([]);
   }, []);
 
   return (
@@ -160,12 +163,12 @@ const ColorMatcher = () => {
                     <p className="text-sm text-gray-600">
                       ${product.price.toFixed(2)}
                     </p>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-500 line-clamp-2">
                       {product.description}
                     </p>
                     {product.dominantColor && (
                       <div
-                        className="w-6 h-6 rounded-md shadow-sm"
+                        className="w-6 h-6 rounded-md shadow-sm mt-2"
                         style={{ backgroundColor: product.dominantColor }}
                       />
                     )}
