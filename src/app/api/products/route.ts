@@ -28,8 +28,8 @@ async function extractProductColor(imageUrl: string): Promise<string> {
       if (!swatch) continue;
       
       const [r, g, b] = swatch.rgb;
-      // Skip if it's too light (close to white) or too dark (close to black)
-      if (r + g + b > 650 || r + g + b < 100) continue;
+      // More lenient threshold for white
+      if (r + g + b > 700 || r + g + b < 100) continue;
       
       return swatch.hex;
     }
