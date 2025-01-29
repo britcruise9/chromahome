@@ -1,82 +1,108 @@
 // src/app/api/products/route.ts
 import { NextResponse } from 'next/server';
-import { type NextRequest } from 'next/server';
 
-function hexToRgb(hex: string) {
-  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return result ? {
-    r: parseInt(result[1], 16),
-    g: parseInt(result[2], 16),
-    b: parseInt(result[3], 16)
-  } : null;
-}
-
-function getColorDistance(color1: string, color2: string): number {
-  const rgb1 = hexToRgb(color1);
-  const rgb2 = hexToRgb(color2);
+function calculateColorDistance(color1: string, color2: string): number {
+  // Convert hex to RGB
+  const rgb1 = {
+    r: parseInt(color1.slice(1, 3), 16),
+    g: parseInt(color1.slice(3, 5), 16),
+    b: parseInt(color1.slice(5, 7), 16)
+  };
   
-  if (!rgb1 || !rgb2) return 999999;
+  const rgb2 = {
+    r: parseInt(color2.slice(1, 3), 16),
+    g: parseInt(color2.slice(3, 5), 16),
+    b: parseInt(color2.slice(5, 7), 16)
+  };
 
-  // Simple RGB distance for now
-  const rDiff = rgb1.r - rgb2.r;
-  const gDiff = rgb1.g - rgb2.g;
-  const bDiff = rgb1.b - rgb2.b;
+  // Calculate Euclidean distance
+  const distance = Math.sqrt(
+    Math.pow(rgb2.r - rgb1.r, 2) +
+    Math.pow(rgb2.g - rgb1.g, 2) +
+    Math.pow(rgb2.b - rgb1.b, 2)
+  );
 
-  return Math.sqrt(rDiff * rDiff + gDiff * gDiff + bDiff * bDiff);
+  // Convert to a percentage (0-100)
+  const maxDistance = Math.sqrt(Math.pow(255, 2) * 3); // Max possible distance
+  const matchPercentage = Math.round((1 - distance / maxDistance) * 100);
+
+  return matchPercentage;
 }
 
-// Sample product colors - more realistic for product photos
-const PRODUCT_COLORS = [
-  '#1B1B1B', '#2E2E2E', '#404040', // Blacks
-  '#FF0000', '#8B0000', '#DC143C', // Reds
-  '#0000FF', '#000080', '#4169E1', // Blues
-  '#006400', '#228B22', '#32CD32', // Greens
-  '#8B4513', '#A0522D', '#DEB887', // Browns
-  '#4B0082', '#800080', '#BA55D3', // Purples
-  '#FFD700', '#DAA520', '#B8860B', // Golds
-  '#C0C0C0', '#A9A9A9', '#808080', // Grays
-];
-
-export async function GET(request: NextRequest) {
+async function extractProductColor(imageUrl: string): Promise<string> {
   try {
-    const searchParams = request.nextUrl.searchParams;
+    const response = await fetch(imageUrl);
+    const arrayBuffer = await response.arrayBuffer();
+    const base64 = Buffer.from(arrayBuffer).toString('base64');
+    const dataUrl = `data:image/jpeg;base64,${base64}`;
+    
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d', { willReadFrequently: true });
+    const img = new Image();
+    
+    return new Promise((resolve) => {
+      img.onload = () => {
+        if (!ctx) return resolve('#000000');
+        
+        // Make canvas smaller to effectively blur the image
+        const scaleFactor = 0.1; // Reduce to 10% of original size
+        canvas.width = img.width * scaleFactor;
+        canvas.height = img.height * scaleFactor;
+        
+        // Draw image at smaller size (creates blur effect)
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        
+        // Get the center pixel from the blurred image
+        const centerX = Math.floor(canvas.width / 2);
+        const centerY = Math.floor(canvas.height / 2);
+        const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
+
+        const hex = '#' + [pixel[0], pixel[1], pixel[2]]
+          .map(x => x.toString(16).padStart(2, '0'))
+          .join('');
+        resolve(hex);
+      };
+      
+      img.src = dataUrl;
+    });
+  } catch (error) {
+    console.error('Error extracting product color:', error);
+    return '#000000';
+  }
+}
+
+export async function GET(request: Request) {
+  try {
+    const { searchParams } = new URL(request.url);
     const targetColor = searchParams.get('color');
 
-    if (!targetColor) {
-      return NextResponse.json([]);
-    }
-
-    const response = await fetch('https://fakestoreapi.com/products');
+    const response = await fetch('https://fakestoreapi.com/products?limit=5');
     const products = await response.json();
 
-    const productsWithColors = products.map(product => {
-      // Assign a color based on product ID to keep it consistent between requests
-      const colorIndex = product.id % PRODUCT_COLORS.length;
-      const dominantColor = PRODUCT_COLORS[colorIndex];
-      const distance = getColorDistance(targetColor, dominantColor);
-      
-      // Convert distance to a more intuitive percentage
-      const maxDistance = 442; // Max possible RGB distance
-      const matchPercentage = Math.max(0, Math.min(100, Math.round((1 - distance / maxDistance) * 100)));
-      
-      return {
-        ...product,
-        dominantColor,
-        colorDistance: distance,
-        matchPercentage
-      };
-    });
+    // Process each product to extract its color
+    const productsWithColors = await Promise.all(
+      products.map(async (product: any) => {
+        const dominantColor = await extractProductColor(product.image);
+        const matchPercentage = targetColor ? calculateColorDistance(targetColor, dominantColor) : 100;
 
-    // Sort by color distance and return top 20 matches
-    const sortedProducts = productsWithColors
-      .sort((a, b) => a.colorDistance - b.colorDistance)
-      .slice(0, 20);
+        return {
+          ...product,
+          dominantColor,
+          matchPercentage
+        };
+      })
+    );
 
-    return NextResponse.json(sortedProducts);
+    // Sort by match percentage if target color is provided
+    if (targetColor) {
+      productsWithColors.sort((a, b) => b.matchPercentage - a.matchPercentage);
+    }
+
+    return NextResponse.json(productsWithColors);
   } catch (error) {
     console.error('Error fetching products:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch products' }, 
+      { error: 'Failed to fetch products' },
       { status: 500 }
     );
   }
