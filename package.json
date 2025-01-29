@@ -15,6 +15,7 @@
     "clsx": "^2.0.0",
     "lucide-react": "^0.302.0",
     "next": "14.0.4",
+    "node-vibrant": "^3.2.1-alpha.1",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.2.0",
