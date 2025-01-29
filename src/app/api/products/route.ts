@@ -1,6 +1,6 @@
 // src/app/api/products/route.ts
 import { NextResponse } from 'next/server';
-import * as Vibrant from 'node-vibrant';
+import Vibrant from 'node-vibrant';  // Changed import syntax
 
 function calculateColorDistance(color1: string, color2: string): number {
   // Convert hex to RGB
@@ -32,10 +32,9 @@ function calculateColorDistance(color1: string, color2: string): number {
 
 async function extractProductColor(imageUrl: string): Promise<string> {
   try {
+    // Use without `* as` syntax
     const palette = await Vibrant.from(imageUrl).getPalette();
-    // Get the dominant color from the palette
-    const dominantColor = palette.Vibrant?.hex || '#000000';
-    return dominantColor;
+    return palette.Vibrant?.hex || '#000000';
   } catch (error) {
     console.error('Error extracting color:', error);
     return '#000000';
