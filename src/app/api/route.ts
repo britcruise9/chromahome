@@ -54,9 +54,17 @@ export async function GET(request: Request) {
 }
 
 async function getDominantColor(imageUrl: string): Promise<string> {
-  // (Existing color extraction logic)
+  try {
+    // Existing color extraction logic
+    // ...
+    return '#AABBCC'; // Replace with the actual dominant color
+  } catch (error) {
+    console.error('Error getting dominant color:', error);
+    return '#000000'; // Return a default color if extraction fails
+  }
 }
 
 function colorDistance(color1: string, color2: string): number {
-  // (Existing color distance calculation)
+  // Existing color distance calculation
+  // ...
 }
