@@ -172,10 +172,17 @@ const ColorMatcher = () => {
                       {product.description}
                     </p>
                     {product.dominantColor && (
-                      <div
-                        className="w-6 h-6 rounded-md shadow-sm mt-2"
-                        style={{ backgroundColor: product.dominantColor }}
-                      />
+                      <div className="flex items-center gap-2 mt-2">
+                        <div
+                          className="w-6 h-6 rounded-md shadow-sm"
+                          style={{ backgroundColor: product.dominantColor }}
+                        />
+                        {product.colorDistance && (
+                          <span className="text-xs text-gray-500">
+                            Match: {Math.max(0, 100 - Math.round(product.colorDistance / 4))}%
+                          </span>
+                        )}
+                      </div>
                     )}
                   </div>
                 </div>
