@@ -12,47 +12,64 @@ function hexToRgb(hex: string) {
   } : null;
 }
 
-// Calculate color distance using Delta E (simplified version)
+// Convert RGB to LAB
+function rgbToLab(rgb: { r: number, g: number, b: number }) {
+  let r = rgb.r / 255;
+  let g = rgb.g / 255;
+  let b = rgb.b / 255;
+
+  r = r > 0.04045 ? Math.pow((r + 0.055) / 1.055, 2.4) : r / 12.92;
+  g = g > 0.04045 ? Math.pow((g + 0.055) / 1.055, 2.4) : g / 12.92;
+  b = b > 0.04045 ? Math.pow((b + 0.055) / 1.055, 2.4) : b / 12.92;
+
+  let x = (r * 0.4124 + g * 0.3576 + b * 0.1805) * 100;
+  let y = (r * 0.2126 + g * 0.7152 + b * 0.0722) * 100;
+  let z = (r * 0.0193 + g * 0.1192 + b * 0.9505) * 100;
+
+  x = x / 95.047;
+  y = y / 100.0;
+  z = z / 108.883;
+
+  x = x > 0.008856 ? Math.pow(x, 1/3) : (7.787 * x) + 16/116;
+  y = y > 0.008856 ? Math.pow(y, 1/3) : (7.787 * y) + 16/116;
+  z = z > 0.008856 ? Math.pow(z, 1/3) : (7.787 * z) + 16/116;
+
+  return {
+    l: (116 * y) - 16,
+    a: 500 * (x - y),
+    b: 200 * (y - z)
+  };
+}
+
+// Calculate color distance using CIELAB Delta E
 function getColorDistance(color1: string, color2: string): number {
   const rgb1 = hexToRgb(color1);
   const rgb2 = hexToRgb(color2);
   
-  if (!rgb1 || !rgb2) return 999999; // Return large number if invalid colors
+  if (!rgb1 || !rgb2) return 999999;
 
-  // Calculate Euclidean distance between colors
-  const rDiff = rgb1.r - rgb2.r;
-  const gDiff = rgb1.g - rgb2.g;
-  const bDiff = rgb1.b - rgb2.b;
-  
-  return Math.sqrt(rDiff * rDiff + gDiff * gDiff + bDiff * bDiff);
+  const lab1 = rgbToLab(rgb1);
+  const lab2 = rgbToLab(rgb2);
+
+  const deltaL = lab1.l - lab2.l;
+  const deltaA = lab1.a - lab2.a;
+  const deltaB = lab1.b - lab2.b;
+
+  return Math.sqrt(deltaL * deltaL + deltaA * deltaA + deltaB * deltaB);
 }
 
-// Sample product colors - we'll use these to simulate product colors
+// Sample product colors with more realistic product colors
 const SAMPLE_COLORS = [
-  '#1B1B1B', // Black
-  '#2E2E2E', // Dark Gray
-  '#404040', // Charcoal
-  '#4A4A4A', // Medium Gray
-  '#696969', // Dim Gray
-  '#808080', // Gray
-  '#A9A9A9', // Dark Gray
-  '#C0C0C0', // Silver
-  '#D3D3D3', // Light Gray
-  '#DCDCDC', // Gainsboro
-  '#F5F5F5', // White Smoke
-  '#FFFFFF', // White
-  '#8B4513', // Saddle Brown
-  '#A0522D', // Sienna
-  '#6B4423', // Brown
-  '#800000', // Maroon
-  '#8B0000', // Dark Red
-  '#B22222', // Fire Brick
-  '#DC143C', // Crimson
-  '#FF0000', // Red
-  '#FF4500', // Orange Red
-  '#FF6347', // Tomato
-  '#FF7F50', // Coral
-  '#FFA07A', // Light Salmon
+    '#FF0000', '#FF4444', '#CC0000', // Reds
+    '#0000FF', '#4444FF', '#0000CC', // Blues
+    '#00FF00', '#44FF44', '#00CC00', // Greens
+    '#FFFF00', '#FFFF44', '#CCCC00', // Yellows
+    '#FF00FF', '#FF44FF', '#CC00CC', // Magentas
+    '#00FFFF', '#44FFFF', '#00CCCC', // Cyans
+    '#000000', '#444444', '#888888', // Grays
+    '#FFFFFF', '#CCCCCC', '#AAAAAA', // Whites
+    '#964B00', '#A0522D', '#6B4423', // Browns
+    '#FFA500', '#FF8C00', '#FFD700'  // Oranges
 ];
 
 export async function GET(request: NextRequest) {
@@ -60,32 +77,35 @@ export async function GET(request: NextRequest) {
     const searchParams = request.nextUrl.searchParams;
     const targetColor = searchParams.get('color');
 
-    // If no color parameter is provided, return empty array
     if (!targetColor) {
       return NextResponse.json([]);
     }
 
-    // Fetch all available products
     const response = await fetch('https://fakestoreapi.com/products');
     const products = await response.json();
 
-    // Add color and calculate color distance for each product
     const productsWithColors = products.map(product => {
-      // Assign a random color from our sample colors
       const randomColor = SAMPLE_COLORS[Math.floor(Math.random() * SAMPLE_COLORS.length)];
+      const distance = getColorDistance(targetColor, randomColor);
+      
+      // Convert distance to a more intuitive percentage (closer to how humans perceive color difference)
+      const maxDistance = 100; // Maximum meaningful CIELAB distance
+      const matchPercentage = Math.max(0, Math.min(100, Math.round((1 - distance / maxDistance) * 100)));
       
       return {
         ...product,
         dominantColor: randomColor,
-        colorDistance: getColorDistance(targetColor, randomColor)
+        colorDistance: distance,
+        matchPercentage
       };
     });
 
     // Sort by color distance (closest matches first)
-    const sortedProducts = productsWithColors.sort((a, b) => a.colorDistance - b.colorDistance);
+    const sortedProducts = productsWithColors
+      .sort((a, b) => a.colorDistance - b.colorDistance)
+      .slice(0, 20);
 
-    // Return the top 20 closest color matches
-    return NextResponse.json(sortedProducts.slice(0, 20));
+    return NextResponse.json(sortedProducts);
   } catch (error) {
     console.error('Error fetching products:', error);
     return NextResponse.json(
