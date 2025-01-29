@@ -160,9 +160,14 @@ const ColorMatcher = () => {
                     <h3 className="font-medium text-gray-900 line-clamp-2">
                       {product.title}
                     </h3>
-                    <p className="text-sm text-gray-600">
-                      ${product.price.toFixed(2)}
-                    </p>
+                    <div className="flex justify-between items-center">
+                      <p className="text-sm text-gray-600">
+                        ${product.price.toFixed(2)}
+                      </p>
+                      <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
+                        {product.category}
+                      </span>
+                    </div>
                     <p className="text-sm text-gray-500 line-clamp-2">
                       {product.description}
                     </p>
