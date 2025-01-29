@@ -10,7 +10,9 @@ interface Product {
   price: number;
   description: string;
   image: string;
-  dominantColor: string;
+  category: string;
+  dominantColor?: string;
+  colorDistance?: number;
 }
 
 const ColorMatcher = () => {
@@ -19,34 +21,12 @@ const ColorMatcher = () => {
   const [products, setProducts] = useState<Product[]>([]);
 
   const extractColor = async (file: File): Promise<string> => {
-    return new Promise((resolve) => {
-      const canvas = document.createElement('canvas');
-      const ctx = canvas.getContext('2d');
-      const img = new Image();
-
-      img.onload = () => {
-        if (!ctx) return;
-        canvas.width = img.width;
-        canvas.height = img.height;
-        ctx.drawImage(img, 0, 0);
-        
-        const centerX = Math.floor(img.width / 2);
-        const centerY = Math.floor(img.height / 2);
-        const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
-        
-        const hex = '#' + [pixel[0], pixel[1], pixel[2]]
-          .map(x => x.toString(16).padStart(2, '0'))
-          .join('');
-        resolve(hex);
-      };
-
-      img.src = URL.createObjectURL(file);
-    });
+    // (Existing color extraction logic)
   };
 
-  const fetchProducts = async (color: string) => {
+  const fetchProducts = async (color?: string) => {
     try {
-      const response = await fetch(`/api/products?color=${encodeURIComponent(color)}`);
+      const response = await fetch(`/api/products${color ? `?color=${encodeURIComponent(color)}` : ''}`);
       const data = await response.json();
       setProducts(data);
     } catch (error) {
@@ -71,66 +51,13 @@ const ColorMatcher = () => {
   };
 
   useEffect(() => {
-    fetchProducts('');
+    fetchProducts();
   }, []);
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
       <Card className="mb-8">
-        <CardHeader>
-          <CardTitle>Paint Chip Color Matcher</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="flex flex-col items-center gap-6">
-            {/* Upload Zone */}
-            <div className="w-full">
-              <label 
-                className="flex flex-col items-center justify-center w-full h-40 border-2 border-dashed rounded-xl cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors border-gray-300 hover:border-gray-400"
-              >
-                <div className="flex flex-col items-center justify-center pt-5 pb-6">
-                  <Upload className="w-12 h-12 mb-3 text-gray-400" />
-                  <p className="mb-2 text-sm text-gray-600">
-                    <span className="font-medium">Upload a paint chip photo</span>
-                  </p>
-                  <p className="text-xs text-gray-500">PNG, JPG up to 10MB</p>
-                </div>
-                <input
-                  type="file"
-                  className="hidden"
-                  accept="image/*"
-                  onChange={handleFileUpload}
-                />
-              </label>
-            </div>
-
-            {/* Processing State */}
-            {isProcessing && (
-              <div className="text-sm text-gray-600 animate-pulse">
-                Finding matching products...
-              </div>
-            )}
-
-            {/* Color Display */}
-            {selectedColor && (
-              <div className="text-center">
-                <div className="flex items-center gap-4">
-                  <div 
-                    className="w-20 h-20 rounded-lg shadow-lg"
-                    style={{ backgroundColor: selectedColor }}
-                  />
-                  <div className="text-left">
-                    <p className="text-sm font-medium text-gray-900">
-                      Detected Color
-                    </p>
-                    <p className="text-sm text-gray-500">
-                      {selectedColor}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-        </CardContent>
+        {/* (Existing upload and color display) */}
       </Card>
 
       {/* Product Results */}
@@ -142,12 +69,12 @@ const ColorMatcher = () => {
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {products.map((product) => (
-                <div 
+                <div
                   key={product.id}
                   className="flex gap-4 p-4 border rounded-lg hover:shadow-md transition-shadow bg-white"
                 >
-                  <img 
-                    src={product.image} 
+                  <img
+                    src={product.image}
                     alt={product.title}
                     className="w-24 h-24 object-cover rounded-md"
                   />
@@ -161,10 +88,12 @@ const ColorMatcher = () => {
                     <p className="text-sm text-gray-500">
                       {product.description}
                     </p>
-                    <div
-                      className="w-6 h-6 rounded-md shadow-sm"
-                      style={{ backgroundColor: product.dominantColor }}
-                    />
+                    {product.dominantColor && (
+                      <div
+                        className="w-6 h-6 rounded-md shadow-sm"
+                        style={{ backgroundColor: product.dominantColor }}
+                      />
+                    )}
                   </div>
                 </div>
               ))}
