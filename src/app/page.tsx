@@ -1,10 +1,9 @@
 import React from 'react';
 import ColorMatcher from '@/components/color-matcher';
 
-const Home = () => {
+const UpdatedHeader = () => {
   return (
-    <div>
-       <header className="flex h-36 mb-8">
+    <header className="flex h-36 mb-8">
       <div className="w-1/7 bg-[#D1CBAA]"></div>
       <div className="w-1/7 bg-[#F0EFE7]"></div>
       <div className="w-1/7 bg-[#B0A589]"></div>
@@ -15,12 +14,8 @@ const Home = () => {
         <h1 className="text-4xl font-bold font-['Playfair Display', 'serif']">CHROMA HOME</h1>
         <p className="text-lg">Shop your color</p>
       </div>
-      </header>
-      <main>
-        <ColorMatcher />
-      </main>
-    </div>
+    </header>
   );
 };
 
-export default Home;
+export default UpdatedHeader;
