@@ -1,4 +1,3 @@
-// src/app/api/products/route.ts
 import { NextResponse } from 'next/server';
 
 interface Product {
@@ -56,8 +55,28 @@ export async function GET(request: Request) {
 async function getDominantColor(imageUrl: string): Promise<string> {
   try {
     // Existing color extraction logic
-    // ...
-    return '#AABBCC'; // Replace with the actual dominant color
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    const img = new Image();
+
+    img.onload = () => {
+      if (!ctx) return;
+      canvas.width = img.width;
+      canvas.height = img.height;
+      ctx.drawImage(img, 0, 0);
+
+      const centerX = Math.floor(img.width / 2);
+      const centerY = Math.floor(img.height / 2);
+      const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
+
+      const hex = '#' + [pixel[0], pixel[1], pixel[2]]
+        .map(x => x.toString(16).padStart(2, '0'))
+        .join('');
+      return hex;
+    };
+
+    img.src = imageUrl;
+    return ''; // Return a default value for now
   } catch (error) {
     console.error('Error getting dominant color:', error);
     return '#000000'; // Return a default color if extraction fails
