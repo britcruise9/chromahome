@@ -18,8 +18,40 @@ const ColorMatcher = () => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [products, setProducts] = useState<Product[]>([]);
 
-  const extractColor = (file: File): Promise<string> => {
-    // (Existing color extraction logic)
+  const extractColor = async (file: File): Promise<string> => {
+    return new Promise((resolve) => {
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      const img = new Image();
+
+      img.onload = () => {
+        if (!ctx) return;
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.drawImage(img, 0, 0);
+        
+        const centerX = Math.floor(img.width / 2);
+        const centerY = Math.floor(img.height / 2);
+        const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
+        
+        const hex = '#' + [pixel[0], pixel[1], pixel[2]]
+          .map(x => x.toString(16).padStart(2, '0'))
+          .join('');
+        resolve(hex);
+      };
+
+      img.src = URL.createObjectURL(file);
+    });
+  };
+
+  const fetchProducts = async (color: string) => {
+    try {
+      const response = await fetch(`/api/products?color=${encodeURIComponent(color)}`);
+      const data = await response.json();
+      setProducts(data);
+    } catch (error) {
+      console.error('Error fetching products:', error);
+    }
   };
 
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -38,16 +70,6 @@ const ColorMatcher = () => {
     }
   };
 
-  const fetchProducts = async (color: string) => {
-    try {
-      const response = await fetch(`/api/products?color=${encodeURIComponent(color)}`);
-      const data = await response.json();
-      setProducts(data);
-    } catch (error) {
-      console.error('Error fetching products:', error);
-    }
-  };
-
   useEffect(() => {
     fetchProducts('');
   }, []);
@@ -62,7 +84,7 @@ const ColorMatcher = () => {
           <div className="flex flex-col items-center gap-6">
             {/* Upload Zone */}
             <div className="w-full">
-              <label
+              <label 
                 className="flex flex-col items-center justify-center w-full h-40 border-2 border-dashed rounded-xl cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors border-gray-300 hover:border-gray-400"
               >
                 <div className="flex flex-col items-center justify-center pt-5 pb-6">
@@ -92,7 +114,7 @@ const ColorMatcher = () => {
             {selectedColor && (
               <div className="text-center">
                 <div className="flex items-center gap-4">
-                  <div
+                  <div 
                     className="w-20 h-20 rounded-lg shadow-lg"
                     style={{ backgroundColor: selectedColor }}
                   />
@@ -120,12 +142,12 @@ const ColorMatcher = () => {
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {products.map((product) => (
-                <div
+                <div 
                   key={product.id}
                   className="flex gap-4 p-4 border rounded-lg hover:shadow-md transition-shadow bg-white"
                 >
-                  <img
-                    src={product.image}
+                  <img 
+                    src={product.image} 
                     alt={product.title}
                     className="w-24 h-24 object-cover rounded-md"
                   />
