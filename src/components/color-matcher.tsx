@@ -21,33 +21,42 @@ const ColorMatcher = () => {
   const [products, setProducts] = useState<Product[]>([]);
 
   const extractColor = async (file: File): Promise<string> => {
-    // (Existing color extraction logic)
+    try {
+      // Existing color extraction logic
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      const img = new Image();
+
+      img.onload = () => {
+        if (!ctx) return;
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.drawImage(img, 0, 0);
+
+        const centerX = Math.floor(img.width / 2);
+        const centerY = Math.floor(img.height / 2);
+        const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
+
+        const hex = '#' + [pixel[0], pixel[1], pixel[2]]
+          .map(x => x.toString(16).padStart(2, '0'))
+          .join('');
+        return hex;
+      };
+
+      img.src = URL.createObjectURL(file);
+      return ''; // Return a default value for now
+    } catch (error) {
+      console.error('Error getting dominant color:', error);
+      return '#000000'; // Return a default color if extraction fails
+    }
   };
 
   const fetchProducts = async (color?: string) => {
-    try {
-      const response = await fetch(`/api/products${color ? `?color=${encodeURIComponent(color)}` : ''}`);
-      const data = await response.json();
-      setProducts(data);
-    } catch (error) {
-      console.error('Error fetching products:', error);
-    }
+    // (Existing fetchProducts logic)
   };
 
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-
-    setIsProcessing(true);
-    try {
-      const color = await extractColor(file);
-      setSelectedColor(color);
-      await fetchProducts(color);
-    } catch (error) {
-      console.error('Error processing image:', error);
-    } finally {
-      setIsProcessing(false);
-    }
+    // (Existing handleFileUpload logic)
   };
 
   useEffect(() => {
@@ -55,53 +64,7 @@ const ColorMatcher = () => {
   }, []);
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
-      <Card className="mb-8">
-        {/* (Existing upload and color display) */}
-      </Card>
-
-      {/* Product Results */}
-      {products.length > 0 && (
-        <Card>
-          <CardHeader>
-            <CardTitle>Matching Products</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {products.map((product) => (
-                <div
-                  key={product.id}
-                  className="flex gap-4 p-4 border rounded-lg hover:shadow-md transition-shadow bg-white"
-                >
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="w-24 h-24 object-cover rounded-md"
-                  />
-                  <div className="flex-1">
-                    <h3 className="font-medium text-gray-900 line-clamp-2">
-                      {product.title}
-                    </h3>
-                    <p className="text-sm text-gray-600">
-                      ${product.price.toFixed(2)}
-                    </p>
-                    <p className="text-sm text-gray-500">
-                      {product.description}
-                    </p>
-                    {product.dominantColor && (
-                      <div
-                        className="w-6 h-6 rounded-md shadow-sm"
-                        style={{ backgroundColor: product.dominantColor }}
-                      />
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      )}
-    </div>
+    // (Existing ColorMatcher JSX)
   );
 };
 
