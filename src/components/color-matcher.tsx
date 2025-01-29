@@ -17,7 +17,7 @@ interface Product {
   matchPercentage?: number;
 }
 
-export default function ColorMatcher() {  // Changed to named export
+export default function ColorMatcher() {
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [products, setProducts] = useState<Product[]>([]);
@@ -25,18 +25,24 @@ export default function ColorMatcher() {  // Changed to named export
   const extractColor = async (file: File): Promise<string> => {
     try {
       const canvas = document.createElement('canvas');
-      const ctx = canvas.getContext('2d');
+      const ctx = canvas.getContext('2d', { willReadFrequently: true });
       const img = new Image();
 
       return new Promise((resolve) => {
         img.onload = () => {
           if (!ctx) return resolve('#000000');
-          canvas.width = img.width;
-          canvas.height = img.height;
-          ctx.drawImage(img, 0, 0);
-
-          const centerX = Math.floor(img.width / 2);
-          const centerY = Math.floor(img.height / 2);
+          
+          // Make canvas smaller to effectively blur the image
+          const scaleFactor = 0.1; // Reduce to 10% of original size
+          canvas.width = img.width * scaleFactor;
+          canvas.height = img.height * scaleFactor;
+          
+          // Draw image at smaller size (creates blur effect)
+          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+          
+          // Get the center pixel from the blurred image
+          const centerX = Math.floor(canvas.width / 2);
+          const centerY = Math.floor(canvas.height / 2);
           const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
 
           const hex = '#' + [pixel[0], pixel[1], pixel[2]]
@@ -174,14 +180,27 @@ export default function ColorMatcher() {  // Changed to named export
                     </p>
                     {product.dominantColor && (
                       <div className="flex items-center gap-2 mt-2">
-                        <div
-                          className="w-6 h-6 rounded-md shadow-sm"
-                          style={{ backgroundColor: product.dominantColor }}
-                        />
-                        {product.matchPercentage !== undefined && (
+                        <div className="flex items-center gap-1">
+                          <div
+                            className="w-6 h-6 rounded-md shadow-sm"
+                            style={{ backgroundColor: product.dominantColor }}
+                            title={`Product color: ${product.dominantColor}`}
+                          />
                           <span className="text-xs text-gray-500">
-                            Match: {product.matchPercentage}%
+                            {product.dominantColor}
                           </span>
+                        </div>
+                        {selectedColor && (
+                          <div className="flex items-center gap-1">
+                            <div
+                              className="w-6 h-6 rounded-md shadow-sm"
+                              style={{ backgroundColor: selectedColor }}
+                              title={`Selected color: ${selectedColor}`}
+                            />
+                            <span className="text-xs text-gray-500">
+                              {product.matchPercentage}% match
+                            </span>
+                          </div>
                         )}
                       </div>
                     )}
