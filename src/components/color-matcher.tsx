@@ -13,6 +13,7 @@ interface Product {
   category: string;
   dominantColor?: string;
   colorDistance?: number;
+  matchPercentage?: number;  
 }
 
 const ColorMatcher = () => {
