@@ -11,6 +11,65 @@ const ALLOWED_CATEGORIES = [
   'home decoration'
 ];
 
+async function extractProductColor(imageUrl: string): Promise<string> {
+  try {
+    const palette = await Vibrant.from(imageUrl)
+      .quality(1) // Fast processing
+      .maxColorCount(5) // Get top 5 colors
+      .getPalette();
+    
+    // Convert palette to array and sort by population
+    const colors = Object.values(palette)
+      .filter(swatch => swatch !== null)
+      .sort((a, b) => (b?.population || 0) - (a?.population || 0));
+    
+    // Get the most dominant color that isn't too light or dark
+    for (const swatch of colors) {
+      if (!swatch) continue;
+      
+      const [r, g, b] = swatch.rgb;
+      // Skip if it's too light (close to white) or too dark (close to black)
+      if (r + g + b > 650 || r + g + b < 100) continue;
+      
+      return swatch.hex;
+    }
+    
+    // Fallback to first color if no good ones found
+    return colors[0]?.hex || '#000000';
+  } catch (error) {
+    console.error('Error extracting color:', error);
+    return '#000000';
+  }
+}
+
+function calculateColorDistance(color1: string, color2: string): number {
+  // Convert hex to RGB
+  const rgb1 = {
+    r: parseInt(color1.slice(1, 3), 16),
+    g: parseInt(color1.slice(3, 5), 16),
+    b: parseInt(color1.slice(5, 7), 16)
+  };
+  
+  const rgb2 = {
+    r: parseInt(color2.slice(1, 3), 16),
+    g: parseInt(color2.slice(3, 5), 16),
+    b: parseInt(color2.slice(5, 7), 16)
+  };
+
+  // Calculate Euclidean distance
+  const distance = Math.sqrt(
+    Math.pow(rgb2.r - rgb1.r, 2) +
+    Math.pow(rgb2.g - rgb1.g, 2) +
+    Math.pow(rgb2.b - rgb1.b, 2)
+  );
+
+  // Convert to a percentage (0-100)
+  const maxDistance = Math.sqrt(Math.pow(255, 2) * 3);
+  const matchPercentage = Math.round((1 - distance / maxDistance) * 100);
+
+  return matchPercentage;
+}
+
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
