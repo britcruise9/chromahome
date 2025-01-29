@@ -179,7 +179,7 @@ const ColorMatcher = () => {
                         />
                         {product.colorDistance && (
                           <span className="text-xs text-gray-500">
-                            Match: {Math.max(0, 100 - Math.round(product.colorDistance / 4))}%
+                            Match: {product.matchPercentage}%
                           </span>
                         )}
                       </div>
