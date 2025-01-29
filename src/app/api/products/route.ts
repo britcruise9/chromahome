@@ -1,5 +1,6 @@
 // src/app/api/products/route.ts
 import { NextResponse } from 'next/server';
+import * as Vibrant from 'node-vibrant';
 
 function calculateColorDistance(color1: string, color2: string): number {
   // Convert hex to RGB
@@ -23,7 +24,7 @@ function calculateColorDistance(color1: string, color2: string): number {
   );
 
   // Convert to a percentage (0-100)
-  const maxDistance = Math.sqrt(Math.pow(255, 2) * 3); // Max possible distance
+  const maxDistance = Math.sqrt(Math.pow(255, 2) * 3);
   const matchPercentage = Math.round((1 - distance / maxDistance) * 100);
 
   return matchPercentage;
@@ -31,42 +32,12 @@ function calculateColorDistance(color1: string, color2: string): number {
 
 async function extractProductColor(imageUrl: string): Promise<string> {
   try {
-    const response = await fetch(imageUrl);
-    const arrayBuffer = await response.arrayBuffer();
-    const base64 = Buffer.from(arrayBuffer).toString('base64');
-    const dataUrl = `data:image/jpeg;base64,${base64}`;
-    
-    const canvas = document.createElement('canvas');
-    const ctx = canvas.getContext('2d', { willReadFrequently: true });
-    const img = new Image();
-    
-    return new Promise((resolve) => {
-      img.onload = () => {
-        if (!ctx) return resolve('#000000');
-        
-        // Make canvas smaller to effectively blur the image
-        const scaleFactor = 0.1; // Reduce to 10% of original size
-        canvas.width = img.width * scaleFactor;
-        canvas.height = img.height * scaleFactor;
-        
-        // Draw image at smaller size (creates blur effect)
-        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-        
-        // Get the center pixel from the blurred image
-        const centerX = Math.floor(canvas.width / 2);
-        const centerY = Math.floor(canvas.height / 2);
-        const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
-
-        const hex = '#' + [pixel[0], pixel[1], pixel[2]]
-          .map(x => x.toString(16).padStart(2, '0'))
-          .join('');
-        resolve(hex);
-      };
-      
-      img.src = dataUrl;
-    });
+    const palette = await Vibrant.from(imageUrl).getPalette();
+    // Get the dominant color from the palette
+    const dominantColor = palette.Vibrant?.hex || '#000000';
+    return dominantColor;
   } catch (error) {
-    console.error('Error extracting product color:', error);
+    console.error('Error extracting color:', error);
     return '#000000';
   }
 }
@@ -76,7 +47,8 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const targetColor = searchParams.get('color');
 
-    const response = await fetch('https://fakestoreapi.com/products?limit=5');
+    // Fetch all products (removed limit)
+    const response = await fetch('https://fakestoreapi.com/products');
     const products = await response.json();
 
     // Process each product to extract its color
