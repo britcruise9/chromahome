@@ -12,23 +12,62 @@ interface Product {
   dominantColor?: string;
 }
 
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const targetColor = searchParams.get('color');
+
+  try {
+    // Fetch all products from FakeStore API
+    const response = await fetch('https://fakestoreapi.com/products');
+    const allProducts = await response.json();
+
+    // Add dominant color to each product
+    const productsWithColors = await Promise.all(
+      allProducts.map(async (product: Product) => {
+        const color = await getDominantColor(product.image);
+        return { ...product, dominantColor: color };
+      })
+    );
+
+    // If target color provided, filter by similarity
+    if (targetColor) {
+      return NextResponse.json(
+        productsWithColors
+          .map((product) => ({
+            ...product,
+            colorDistance: colorDistance(targetColor, product.dominantColor || '#000000')
+          }))
+          .sort((a, b) => a.colorDistance - b.colorDistance)
+          .slice(0, 20) // Return top 20 matches
+      );
+    }
+
+    return NextResponse.json(productsWithColors);
+  } catch (error) {
+    console.error('Error:', error);
+    return NextResponse.json({ error: 'Failed to fetch products' }, { status: 500 });
+  }
+}
+
 async function getDominantColor(imageUrl: string): Promise<string> {
   try {
-    return new Promise((resolve, reject) => {
+    const response = await fetch(imageUrl);
+    const arrayBuffer = await response.arrayBuffer();
+    
+    return new Promise((resolve) => {
       const img = new Image();
-      const canvas = document.createElement('canvas');
-      const ctx = canvas.getContext('2d');
-      
       img.onload = () => {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
         if (!ctx) {
           resolve('#000000');
           return;
         }
-        
+
         canvas.width = img.width;
         canvas.height = img.height;
         ctx.drawImage(img, 0, 0);
-        
+
         const centerX = Math.floor(img.width / 2);
         const centerY = Math.floor(img.height / 2);
         const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
@@ -36,12 +75,11 @@ async function getDominantColor(imageUrl: string): Promise<string> {
         const hex = '#' + [pixel[0], pixel[1], pixel[2]]
           .map(x => x.toString(16).padStart(2, '0'))
           .join('');
-          
+        
         resolve(hex);
       };
       
-      img.onerror = reject;
-      img.src = imageUrl;
+      img.src = URL.createObjectURL(new Blob([arrayBuffer]));
     });
   } catch (error) {
     console.error('Error getting dominant color:', error);
@@ -65,40 +103,4 @@ function colorDistance(color1: string, color2: string): number {
     Math.pow(g2 - g1, 2) +
     Math.pow(b2 - b1, 2)
   );
-}
-
-export async function GET(request: Request) {
-  const { searchParams } = new URL(request.url);
-  const targetColor = searchParams.get('color');
-
-  try {
-    const response = await fetch('https://fakestoreapi.com/products');
-    const allProducts = await response.json();
-
-    // Add dominant color to each product
-    const productsWithColors = await Promise.all(
-      allProducts.map(async (product: Product) => {
-        const color = await getDominantColor(product.image);
-        return { ...product, dominantColor: color };
-      })
-    );
-
-    // If target color provided, sort by similarity
-    if (targetColor) {
-      return NextResponse.json(
-        productsWithColors
-          .map((product) => ({
-            ...product,
-            colorDistance: colorDistance(targetColor, product.dominantColor || '#000000')
-          }))
-          .sort((a, b) => a.colorDistance - b.colorDistance)
-          .slice(0, 20)
-      );
-    }
-
-    return NextResponse.json(productsWithColors);
-  } catch (error) {
-    console.error('Error:', error);
-    return NextResponse.json({ error: 'Failed to fetch products' }, { status: 500 });
-  }
 }
