@@ -49,6 +49,20 @@ const ModernUploader = () => {
     });
   };
 
+  const getComplementaryColor = (color: string) => {
+    const hex = color.replace('#', '');
+    const r = parseInt(hex.slice(0, 2), 16);
+    const g = parseInt(hex.slice(2, 4), 16);
+    const b = parseInt(hex.slice(4, 6), 16);
+    
+    // Convert to complementary
+    const compR = 255 - r;
+    const compG = 255 - g;
+    const compB = 255 - b;
+    
+    return `#${compR.toString(16).padStart(2, '0')}${compG.toString(16).padStart(2, '0')}${compB.toString(16).padStart(2, '0')}`;
+  };
+
   const fetchProducts = async (color?: string) => {
     try {
       const response = await fetch(`/api/products${color ? `?color=${encodeURIComponent(color)}` : ''}`);
@@ -67,7 +81,9 @@ const ModernUploader = () => {
     setIsProcessing(true);
     try {
       const color = await extractColor(file);
+      const complementary = getComplementaryColor(color);
       setSelectedColor(color);
+      setComplementaryColor(complementary);
       setActiveColor(color);
       await fetchProducts(color);
       setView('results');
@@ -127,6 +143,18 @@ const ModernUploader = () => {
               </div>
             )}
             
+            {/* Complementary Color */}
+            {complementaryColor && (
+              <div className="text-center">
+                <button
+                  onClick={() => handleColorClick(complementaryColor)}
+                  className={`w-20 h-20 rounded-lg shadow-lg transition-transform hover:scale-105 ${activeColor === complementaryColor ? 'ring-2 ring-white' : ''}`}
+                  style={{ backgroundColor: complementaryColor }}
+                />
+                <p className="mt-2 text-sm text-gray-300">Complement</p>
+              </div>
+            )}
+            
             {/* New Search Button */}
             <div className="text-center">
               <button
@@ -138,6 +166,7 @@ const ModernUploader = () => {
                   <span className="block text-xs text-gray-400 mt-1">New</span>
                 </div>
               </button>
+              <p className="mt-2 text-sm text-gray-300">Color</p>
             </div>
           </div>
 
@@ -170,6 +199,10 @@ const ModernUploader = () => {
                       <div
                         className="w-6 h-6 rounded-md shadow-sm"
                         style={{ backgroundColor: product.dominantColor }}
+                      />
+                      <div
+                        className="w-6 h-6 rounded-md shadow-sm"
+                        style={{ backgroundColor: activeColor || '#000000' }}
                       />
                       <span className="text-xs text-gray-300">
                         Match: {Math.round((1 - (product.colorDistance || 0) / 450) * 100)}%
