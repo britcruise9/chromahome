@@ -12,31 +12,97 @@ interface Product {
   description: string;
   image: string;
   category: string;
-  dominantColor?: string;
-  colorDistance?: number;
-  matchPercentage?: number;
+  dominantColor: string;
+  matchPercentage: number;
+}
+
+function rgbToHsl(r: number, g: number, b: number): [number, number, number] {
+  r /= 255; g /= 255; b /= 255;
+  const max = Math.max(r, g, b), min = Math.min(r, g, b);
+  let h = 0, s, l = (max + min) / 2;
+
+  if (max !== min) {
+    const d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+    switch (max) {
+      case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+      case g: h = (b - r) / d + 2; break;
+      case b: h = (r - g) / d + 4; break;
+    }
+    h /= 6;
+  }
+
+  return [h * 360, s * 100, l * 100];
+}
+
+function hslToRgb(h: number, s: number, l: number): [number, number, number] {
+  h /= 360; s /= 100; l /= 100;
+  let r, g, b;
+
+  if (s === 0) {
+    r = g = b = l;
+  } else {
+    const hue2rgb = (p: number, q: number, t: number) => {
+      if (t < 0) t += 1;
+      if (t > 1) t -= 1;
+      if (t < 1/6) return p + (q - p) * 6 * t;
+      if (t < 1/2) return q;
+      if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+      return p;
+    };
+    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+    const p = 2 * l - q;
+    r = hue2rgb(p, q, h + 1/3);
+    g = hue2rgb(p, q, h);
+    b = hue2rgb(p, q, h - 1/3);
+  }
+
+  return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+}
+
+function hexToRgb(hex: string): [number, number, number] {
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result ? [
+    parseInt(result[1], 16),
+    parseInt(result[2], 16),
+    parseInt(result[3], 16)
+  ] : [0, 0, 0];
+}
+
+function rgbToHex(r: number, g: number, b: number): string {
+  return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+}
+
+function getComplementaryColor(hex: string): string {
+  const [r, g, b] = hexToRgb(hex);
+  let [h, s, l] = rgbToHsl(r, g, b);
+  h = (h + 180) % 360;
+  const [r2, g2, b2] = hslToRgb(h, s, l);
+  return rgbToHex(r2, g2, b2);
 }
 
 export default function ColorMatcher() {
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
+  const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [products, setProducts] = useState<Product[]>([]);
 
   const extractColor = async (file: File): Promise<string> => {
     try {
       const canvas = document.createElement('canvas');
-      const ctx = canvas.getContext('2d');
+      const ctx = canvas.getContext('2d', { willReadFrequently: true });
       const img = new Image();
 
       return new Promise((resolve) => {
         img.onload = () => {
           if (!ctx) return resolve('#000000');
-          canvas.width = img.width;
-          canvas.height = img.height;
-          ctx.drawImage(img, 0, 0);
+          const scaleFactor = 0.1;
+          canvas.width = img.width * scaleFactor;
+          canvas.height = img.height * scaleFactor;
+          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
-          const centerX = Math.floor(img.width / 2);
-          const centerY = Math.floor(img.height / 2);
+          const centerX = Math.floor(canvas.width / 2);
+          const centerY = Math.floor(canvas.height / 2);
           const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
 
           const hex = '#' + [pixel[0], pixel[1], pixel[2]]
@@ -72,12 +138,19 @@ export default function ColorMatcher() {
     try {
       const color = await extractColor(file);
       setSelectedColor(color);
+      setComplementaryColor(getComplementaryColor(color));
       await fetchProducts(color);
     } catch (error) {
       console.error('Error processing image:', error);
     } finally {
       setIsProcessing(false);
     }
+  };
+
+  const handleColorClick = async (color: string) => {
+    setSelectedColor(color);
+    setComplementaryColor(getComplementaryColor(color));
+    await fetchProducts(color);
   };
 
   useEffect(() => {
@@ -122,16 +195,34 @@ export default function ColorMatcher() {
               <div className="text-center">
                 <div className="flex items-center gap-4">
                   <div
-                    className="w-20 h-20 rounded-lg shadow-lg"
+                    className="w-20 h-20 rounded-lg shadow-lg cursor-pointer"
                     style={{ backgroundColor: selectedColor }}
+                    onClick={() => handleColorClick(selectedColor)}
                   />
+                  {complementaryColor && (
+                    <div
+                      className="w-20 h-20 rounded-lg shadow-lg cursor-pointer"
+                      style={{ backgroundColor: complementaryColor }}
+                      onClick={() => handleColorClick(complementaryColor)}
+                    />
+                  )}
                   <div className="text-left">
                     <p className="text-sm font-medium text-gray-900">
-                      Detected Color
+                      Selected Color
                     </p>
                     <p className="text-sm text-gray-500">
                       {selectedColor}
                     </p>
+                    {complementaryColor && (
+                      <>
+                        <p className="text-sm font-medium text-gray-900 mt-2">
+                          Complementary Color
+                        </p>
+                        <p className="text-sm text-gray-500">
+                          {complementaryColor}
+                        </p>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
@@ -172,19 +263,15 @@ export default function ColorMatcher() {
                     <p className="text-sm text-gray-500 line-clamp-2">
                       {product.description}
                     </p>
-                    {product.dominantColor && (
-                      <div className="flex items-center gap-2 mt-2">
-                        <div
-                          className="w-6 h-6 rounded-md shadow-sm"
-                          style={{ backgroundColor: product.dominantColor }}
-                        />
-                        {product.matchPercentage !== undefined && (
-                          <span className="text-xs text-gray-500">
-                            Match: {product.matchPercentage}%
-                          </span>
-                        )}
-                      </div>
-                    )}
+                    <div className="flex items-center gap-2 mt-2">
+                      <div
+                        className="w-6 h-6 rounded-md shadow-sm"
+                        style={{ backgroundColor: product.dominantColor }}
+                      />
+                      <span className="text-xs text-gray-500">
+                        Match: {product.matchPercentage.toFixed(0)}%
+                      </span>
+                    </div>
                   </div>
                 </div>
               ))}
