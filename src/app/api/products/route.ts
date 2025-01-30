@@ -12,6 +12,65 @@ interface Product {
   dominantColor?: string;
 }
 
+const getDominantColor = async (imageUrl: string): Promise<string> => {
+  try {
+    const response = await fetch(imageUrl);
+    const arrayBuffer = await response.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
+    
+    // Create a canvas element
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    const img = new Image();
+    
+    return new Promise((resolve) => {
+      img.onload = () => {
+        if (!ctx) {
+          resolve('#000000');
+          return;
+        }
+
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.drawImage(img, 0, 0);
+
+        const centerX = Math.floor(img.width / 2);
+        const centerY = Math.floor(img.height / 2);
+        const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
+        
+        const hex = '#' + [pixel[0], pixel[1], pixel[2]]
+          .map(x => x.toString(16).padStart(2, '0'))
+          .join('');
+        
+        resolve(hex);
+      };
+      
+      img.src = URL.createObjectURL(new Blob([buffer]));
+    });
+  } catch (error) {
+    console.error('Error getting dominant color:', error);
+    return '#000000';
+  }
+};
+
+const colorDistance = (color1: string, color2: string): number => {
+  const hexToRgb = (hex: string) => {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    return { r, g, b };
+  };
+
+  const { r: r1, g: g1, b: b1 } = hexToRgb(color1);
+  const { r: r2, g: g2, b: b2 } = hexToRgb(color2);
+
+  return Math.sqrt(
+    Math.pow(r2 - r1, 2) +
+    Math.pow(g2 - g1, 2) +
+    Math.pow(b2 - b1, 2)
+  );
+};
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const targetColor = searchParams.get('color');
