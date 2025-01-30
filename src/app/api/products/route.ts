@@ -10,13 +10,39 @@ interface Product {
   image: string;
   category: string;
   dominantColor?: string;
+  colorDistance?: number;
 }
+
+// Color utilities
+const hexToRgb = (hex: string) => {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  return { r, g, b };
+};
+
+const rgbToHex = (r: number, g: number, b: number) => {
+  return '#' + [r, g, b]
+    .map(x => x.toString(16).padStart(2, '0'))
+    .join('');
+};
+
+const colorDistance = (color1: string, color2: string): number => {
+  const rgb1 = hexToRgb(color1);
+  const rgb2 = hexToRgb(color2);
+
+  // Calculate Euclidean distance in RGB space
+  return Math.sqrt(
+    Math.pow(rgb2.r - rgb1.r, 2) +
+    Math.pow(rgb2.g - rgb1.g, 2) +
+    Math.pow(rgb2.b - rgb1.b, 2)
+  );
+};
 
 const getDominantColor = async (imageUrl: string): Promise<string> => {
   try {
     const response = await fetch(imageUrl);
     const arrayBuffer = await response.arrayBuffer();
-    const buffer = Buffer.from(arrayBuffer);
     
     // Create a canvas element
     const canvas = document.createElement('canvas');
@@ -34,18 +60,31 @@ const getDominantColor = async (imageUrl: string): Promise<string> => {
         canvas.height = img.height;
         ctx.drawImage(img, 0, 0);
 
-        const centerX = Math.floor(img.width / 2);
-        const centerY = Math.floor(img.height / 2);
-        const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
-        
-        const hex = '#' + [pixel[0], pixel[1], pixel[2]]
-          .map(x => x.toString(16).padStart(2, '0'))
-          .join('');
-        
+        // Sample multiple points for better color detection
+        const samplePoints = [
+          { x: Math.floor(img.width / 2), y: Math.floor(img.height / 2) },  // Center
+          { x: Math.floor(img.width / 4), y: Math.floor(img.height / 4) },  // Top left
+          { x: Math.floor(3 * img.width / 4), y: Math.floor(img.height / 4) }  // Top right
+        ];
+
+        let r = 0, g = 0, b = 0;
+        samplePoints.forEach(point => {
+          const pixel = ctx.getImageData(point.x, point.y, 1, 1).data;
+          r += pixel[0];
+          g += pixel[1];
+          b += pixel[2];
+        });
+
+        // Average the sampled colors
+        r = Math.round(r / samplePoints.length);
+        g = Math.round(g / samplePoints.length);
+        b = Math.round(b / samplePoints.length);
+
+        const hex = rgbToHex(r, g, b);
         resolve(hex);
       };
       
-      img.src = URL.createObjectURL(new Blob([buffer]));
+      img.src = URL.createObjectURL(new Blob([arrayBuffer]));
     });
   } catch (error) {
     console.error('Error getting dominant color:', error);
@@ -53,30 +92,12 @@ const getDominantColor = async (imageUrl: string): Promise<string> => {
   }
 };
 
-const colorDistance = (color1: string, color2: string): number => {
-  const hexToRgb = (hex: string) => {
-    const r = parseInt(hex.slice(1, 3), 16);
-    const g = parseInt(hex.slice(3, 5), 16);
-    const b = parseInt(hex.slice(5, 7), 16);
-    return { r, g, b };
-  };
-
-  const { r: r1, g: g1, b: b1 } = hexToRgb(color1);
-  const { r: r2, g: g2, b: b2 } = hexToRgb(color2);
-
-  return Math.sqrt(
-    Math.pow(r2 - r1, 2) +
-    Math.pow(g2 - g1, 2) +
-    Math.pow(b2 - b1, 2)
-  );
-};
-
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const targetColor = searchParams.get('color');
 
   try {
-    // Fetch all products (will return 20 products)
+    // Fetch all products from FakeStore API
     const response = await fetch('https://fakestoreapi.com/products');
     const allProducts = await response.json();
 
@@ -96,7 +117,7 @@ export async function GET(request: Request) {
             ...product,
             colorDistance: colorDistance(targetColor, product.dominantColor || '#000000')
           }))
-          .sort((a, b) => a.colorDistance - b.colorDistance)
+          .sort((a, b) => (a.colorDistance || 0) - (b.colorDistance || 0))
           .slice(0, 20) // Show all products, sorted by color similarity
       );
     }
