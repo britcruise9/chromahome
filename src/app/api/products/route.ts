@@ -5,7 +5,31 @@ import Vibrant from 'node-vibrant';
 const ALLOWED_CATEGORIES = ['clothing', 'jewelery', 'furniture', 'home decor'];
 
 function calculateColorDistance(color1: string, color2: string): number {
-  // ... (keep your existing calculateColorDistance function)
+  // Convert hex to RGB
+  const rgb1 = {
+    r: parseInt(color1.slice(1, 3), 16),
+    g: parseInt(color1.slice(3, 5), 16),
+    b: parseInt(color1.slice(5, 7), 16)
+  };
+  
+  const rgb2 = {
+    r: parseInt(color2.slice(1, 3), 16),
+    g: parseInt(color2.slice(3, 5), 16),
+    b: parseInt(color2.slice(5, 7), 16)
+  };
+
+  // Calculate Euclidean distance
+  const distance = Math.sqrt(
+    Math.pow(rgb2.r - rgb1.r, 2) +
+    Math.pow(rgb2.g - rgb1.g, 2) +
+    Math.pow(rgb2.b - rgb1.b, 2)
+  );
+
+  // Convert to a percentage (0-100)
+  const maxDistance = Math.sqrt(Math.pow(255, 2) * 3); // Max possible distance
+  const matchPercentage = Math.round((1 - distance / maxDistance) * 100);
+
+  return matchPercentage;
 }
 
 async function extractProductColor(imageUrl: string): Promise<string> {
