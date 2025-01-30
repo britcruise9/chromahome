@@ -122,21 +122,29 @@ const ModernUploader = () => {
         </div>
       )}
 
-      {/* Results View */}
+    {/* Results View */}
       {view === 'results' && products.length > 0 && (
         <div className="max-w-7xl mx-auto px-4">
-          {/* Color Display */}
-          <div className="flex justify-center gap-4 mb-12">
+          {/* Color Display with Research Button */}
+          <div className="flex justify-center gap-4 mb-12 items-center">
             <div 
-              className="w-24 h-24 rounded-xl shadow-lg" 
-              style={{ backgroundColor: selectedColor }} 
+              className="w-24 h-24 rounded-xl shadow-lg cursor-pointer hover:ring-2 hover:ring-white/20 transition-all" 
+              style={{ backgroundColor: selectedColor }}
+              onClick={() => fetchProducts(selectedColor)} 
             />
             {complementaryColor && (
               <div 
-                className="w-24 h-24 rounded-xl shadow-lg" 
-                style={{ backgroundColor: complementaryColor }} 
+                className="w-24 h-24 rounded-xl shadow-lg cursor-pointer hover:ring-2 hover:ring-white/20 transition-all" 
+                style={{ backgroundColor: complementaryColor }}
+                onClick={() => fetchProducts(complementaryColor)}
               />
             )}
+            <button
+              onClick={() => setView('initial')}
+              className="ml-4 px-6 py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white/80 transition-all"
+            >
+              Research New Color
+            </button>
           </div>
 
           {/* Product Grid */}
