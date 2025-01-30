@@ -23,10 +23,11 @@ function calculateColorDistance(color1: string, color2: string): number {
   const { r: r1, g: g1, b: b1 } = hexToRGB(color1);
   const { r: r2, g: g2, b: b2 } = hexToRGB(color2);
 
+  // Weight the colors based on human perception
   return Math.sqrt(
-    Math.pow(r2 - r1, 2) +
-    Math.pow(g2 - g1, 2) +
-    Math.pow(b2 - b1, 2)
+    2 * Math.pow(r2 - r1, 2) + // Weight red more
+    4 * Math.pow(g2 - g1, 2) + // Weight green most (humans are most sensitive to green)
+    3 * Math.pow(b2 - b1, 2)   // Weight blue between red and green
   );
 }
 
@@ -44,7 +45,18 @@ export async function GET(request: Request) {
       products.map(async (product) => {
         try {
           const palette = await Vibrant.from(product.image).getPalette();
-          const dominantColor = palette.Vibrant?.hex || '#000000';
+          
+          // Try different color options in order of preference
+          const dominantColor = 
+            palette.Vibrant?.hex || 
+            palette.DarkVibrant?.hex || 
+            palette.LightVibrant?.hex ||
+            palette.Muted?.hex ||
+            palette.DarkMuted?.hex ||
+            palette.LightMuted?.hex ||
+            '#000000';
+
+          console.log(`Product ${product.title}: extracted color ${dominantColor}`);
           return { ...product, dominantColor };
         } catch (error) {
           console.error('Error extracting color:', error);
@@ -55,15 +67,19 @@ export async function GET(request: Request) {
 
     // If target color provided, filter by similarity
     if (targetColor) {
-      return NextResponse.json(
-        productsWithColors
-          .map((product) => ({
+      console.log('Target color:', targetColor);
+      const sortedProducts = productsWithColors
+        .map((product) => {
+          const distance = calculateColorDistance(targetColor, product.dominantColor || '#000000');
+          return {
             ...product,
-            colorDistance: calculateColorDistance(targetColor, product.dominantColor || '#000000')
-          }))
-          .sort((a, b) => (a.colorDistance || 0) - (b.colorDistance || 0))
-          .slice(0, 20) // Return top 20 matches
-      );
+            colorDistance: distance
+          };
+        })
+        .sort((a, b) => (a.colorDistance || 0) - (b.colorDistance || 0))
+        .slice(0, 20); // Return top 20 matches
+
+      return NextResponse.json(sortedProducts);
     }
 
     return NextResponse.json([]); // Return empty array if no color provided
