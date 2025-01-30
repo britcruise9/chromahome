@@ -235,7 +235,7 @@ const ModernUploader = () => {
                 style={{ backgroundColor: selectedColor || '#000000' }}
                 onClick={() => selectedColor && handleColorClick(selectedColor)} 
               />
-              <span className="text-sm text-white/60">Selected</span>
+              <span className="text-sm text-white/60">Primary</span>
             </div>
 
             {complementaryColor && (
