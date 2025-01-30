@@ -1,83 +1,15 @@
 import { NextResponse } from 'next/server';
-import Vibrant from 'vibrant';
+import * as Vibrant from 'node-vibrant';
 
-const ALLOWED_CATEGORIES = ['men\'s clothing', 'women\'s clothing', 'jewelery', 'electronics'];
-
-async function extractProductColor(imageUrl: string): Promise<{ dominantColor: string; complementaryColor: string }> {
-  const palette = await Vibrant.from(imageUrl).getPalette();
-
-  // Find the most dominant non-white/non-black color
-  let dominantColor: Vibrant.Swatch | null = null;
-  let maxPopulation = 0;
-  for (const swatch of Object.values(palette)) {
-    if (swatch.population > maxPopulation && swatch.hsl.l > 0.2 && swatch.hsl.l < 0.8) {
-      dominantColor = swatch;
-      maxPopulation = swatch.population;
-    }
-  }
-
-  // If no suitable dominant color found, default to white
-  if (!dominantColor) {
-    dominantColor = palette.Vibrant;
-  }
-
-  // Calculate complementary color
-  const { h, s, l } = dominantColor!.hsl;
-  const complementaryColor = `#${Vibrant.toString([(h + 180) % 360, s, l])}`;
-
-  return {
-    dominantColor: `#${dominantColor!.hex}`,
-    complementaryColor
-  };
-}
-
-export async function GET(request: Request) {
-  const { searchParams } = new URL(request.url);
-  const targetColor = searchParams.get('color');
-
-  try {
-    // Fetch all products from FakeStore API
-    const response = await fetch('https://fakestoreapi.com/products');
-    const allProducts = await response.json();
-
-    // Filter to only allowed categories
-    const filteredProducts = allProducts.filter((product: any) =>
-      ALLOWED_CATEGORIES.includes(product.category)
-    );
-
-    // Add dominant and complementary colors to each product
-    const productsWithColors = await Promise.all(
-      filteredProducts.map(async (product: any) => {
-        const { dominantColor, complementaryColor } = await extractProductColor(product.image);
-        return { ...product, dominantColor, complementaryColor };
-      })
-    );
-
-    // If target color provided, filter by similarity
-    if (targetColor) {
-      const sortedProducts = productsWithColors
-        .map((product) => ({
-          ...product,
-          colorDistance: calculateColorDistance(targetColor, product.dominantColor || '#000000')
-        }))
-        .sort((a, b) => a.colorDistance - b.colorDistance)
-        .slice(0, 20);
-
-      // Move products with the target color to the top
-      const targetColorProducts = sortedProducts.filter(
-        (product) => product.dominantColor === targetColor
-      );
-      const otherProducts = sortedProducts.filter(
-        (product) => product.dominantColor !== targetColor
-      );
-      return NextResponse.json([...targetColorProducts, ...otherProducts]);
-    }
-
-    return NextResponse.json(productsWithColors);
-  } catch (error) {
-    console.error('Error:', error);
-    return NextResponse.json({ error: 'Failed to fetch products' }, { status: 500 });
-  }
+interface Product {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  image: string;
+  category: string;
+  dominantColor?: string;
+  colorDistance?: number;
 }
 
 function calculateColorDistance(color1: string, color2: string): number {
@@ -96,4 +28,47 @@ function calculateColorDistance(color1: string, color2: string): number {
     Math.pow(g2 - g1, 2) +
     Math.pow(b2 - b1, 2)
   );
+}
+
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const targetColor = searchParams.get('color');
+
+  try {
+    // Fetch all products from FakeStore API
+    const response = await fetch('https://fakestoreapi.com/products');
+    const products: Product[] = await response.json();
+
+    // Add dominant color to each product using Vibrant
+    const productsWithColors = await Promise.all(
+      products.map(async (product) => {
+        try {
+          const palette = await Vibrant.from(product.image).getPalette();
+          const dominantColor = palette.Vibrant?.hex || '#000000';
+          return { ...product, dominantColor };
+        } catch (error) {
+          console.error('Error extracting color:', error);
+          return { ...product, dominantColor: '#000000' };
+        }
+      })
+    );
+
+    // If target color provided, filter by similarity
+    if (targetColor) {
+      return NextResponse.json(
+        productsWithColors
+          .map((product) => ({
+            ...product,
+            colorDistance: calculateColorDistance(targetColor, product.dominantColor || '#000000')
+          }))
+          .sort((a, b) => (a.colorDistance || 0) - (b.colorDistance || 0))
+          .slice(0, 20) // Return top 20 matches
+      );
+    }
+
+    return NextResponse.json([]); // Return empty array if no color provided
+  } catch (error) {
+    console.error('Error:', error);
+    return NextResponse.json({ error: 'Failed to fetch products' }, { status: 500 });
+  }
 }
