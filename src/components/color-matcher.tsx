@@ -1,4 +1,3 @@
-// src/components/color-matcher.tsx
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -14,10 +13,17 @@ interface Product {
   category: string;
   dominantColor?: string;
   colorDistance?: number;
-  matchPercentage?: number;
 }
 
-function rgbToHsl(r: number, g: number, b: number): [number, number, number] {
+// Color conversion utilities
+const hexToRgb = (hex: string) => {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  return { r, g, b };
+};
+
+const rgbToHsl = (r: number, g: number, b: number) => {
   r /= 255;
   g /= 255;
   b /= 255;
@@ -31,7 +37,7 @@ function rgbToHsl(r: number, g: number, b: number): [number, number, number] {
   if (max !== min) {
     const d = max - min;
     s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-
+    
     switch (max) {
       case r:
         h = (g - b) / d + (g < b ? 6 : 0);
@@ -46,12 +52,15 @@ function rgbToHsl(r: number, g: number, b: number): [number, number, number] {
     h /= 6;
   }
 
-  return [h * 360, s, l];
-}
+  return { h: h * 360, s: s * 100, l: l * 100 };
+};
 
-function hslToRgb(h: number, s: number, l: number): [number, number, number] {
+const hslToRgb = (h: number, s: number, l: number) => {
   h /= 360;
-  let r, g, b;
+  s /= 100;
+  l /= 100;
+
+  let r: number, g: number, b: number;
 
   if (s === 0) {
     r = g = b = l;
@@ -67,68 +76,60 @@ function hslToRgb(h: number, s: number, l: number): [number, number, number] {
 
     const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
     const p = 2 * l - q;
-
     r = hue2rgb(p, q, h + 1/3);
     g = hue2rgb(p, q, h);
     b = hue2rgb(p, q, h - 1/3);
   }
 
-  return [r * 255, g * 255, b * 255];
-}
+  return {
+    r: Math.round(r * 255),
+    g: Math.round(g * 255),
+    b: Math.round(b * 255)
+  };
+};
 
-function getComplementaryColor(hex: string): string {
-  // Convert hex to RGB
-  const r = parseInt(hex.slice(1, 3), 16);
-  const g = parseInt(hex.slice(3, 5), 16);
-  const b = parseInt(hex.slice(5, 7), 16);
-  
-  // Convert to HSL, rotate hue by 180 degrees, convert back to RGB
-  const [h, s, l] = rgbToHsl(r, g, b);
-  const newHue = (h + 180) % 360;
-  const [rNew, gNew, bNew] = hslToRgb(newHue, s, l);
-  
-  // Convert to hex
-  const hex2 = '#' + [rNew, gNew, bNew]
-    .map(x => Math.round(x).toString(16).padStart(2, '0'))
+const rgbToHex = (r: number, g: number, b: number) => {
+  return '#' + [r, g, b]
+    .map(x => x.toString(16).padStart(2, '0'))
     .join('');
-    
-  return hex2;
-}
+};
 
-export default function ColorMatcher() {
+const getComplementaryColor = (hex: string) => {
+  const rgb = hexToRgb(hex);
+  const hsl = rgbToHsl(rgb.r, rgb.g, rgb.b);
+  // Rotate hue by 180 degrees for complementary color
+  hsl.h = (hsl.h + 180) % 360;
+  const complementaryRgb = hslToRgb(hsl.h, hsl.s, hsl.l);
+  return rgbToHex(complementaryRgb.r, complementaryRgb.g, complementaryRgb.b);
+};
+
+const ColorMatcher = () => {
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
+  const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [products, setProducts] = useState<Product[]>([]);
 
   const extractColor = async (file: File): Promise<string> => {
     try {
       const canvas = document.createElement('canvas');
-      const ctx = canvas.getContext('2d', { willReadFrequently: true });
-      const img = new Image();
+      const ctx = canvas.getContext('2d');
+      if (!ctx) throw new Error('Could not get canvas context');
 
-      return new Promise((resolve) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
         img.onload = () => {
-          if (!ctx) return resolve('#000000');
-          
-          // Make canvas smaller to effectively blur the image
-          const scaleFactor = 0.1; // Reduce to 10% of original size
-          canvas.width = img.width * scaleFactor;
-          canvas.height = img.height * scaleFactor;
-          
-          // Draw image at smaller size (creates blur effect)
-          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-          
-          // Get the center pixel from the blurred image
-          const centerX = Math.floor(canvas.width / 2);
-          const centerY = Math.floor(canvas.height / 2);
-          const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
+          canvas.width = img.width;
+          canvas.height = img.height;
+          ctx.drawImage(img, 0, 0);
 
-          const hex = '#' + [pixel[0], pixel[1], pixel[2]]
-            .map(x => x.toString(16).padStart(2, '0'))
-            .join('');
+          const centerX = Math.floor(img.width / 2);
+          const centerY = Math.floor(img.height / 2);
+          const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
+          
+          const hex = rgbToHex(pixel[0], pixel[1], pixel[2]);
           resolve(hex);
         };
-
+        img.onerror = reject;
         img.src = URL.createObjectURL(file);
       });
     } catch (error) {
@@ -144,7 +145,6 @@ export default function ColorMatcher() {
       setProducts(data);
     } catch (error) {
       console.error('Error fetching products:', error);
-      setProducts([]);
     }
   };
 
@@ -156,6 +156,7 @@ export default function ColorMatcher() {
     try {
       const color = await extractColor(file);
       setSelectedColor(color);
+      setComplementaryColor(getComplementaryColor(color));
       await fetchProducts(color);
     } catch (error) {
       console.error('Error processing image:', error);
@@ -164,8 +165,14 @@ export default function ColorMatcher() {
     }
   };
 
+  const handleColorClick = async (color: string) => {
+    setSelectedColor(color);
+    setComplementaryColor(getComplementaryColor(color));
+    await fetchProducts(color);
+  };
+
   useEffect(() => {
-    setProducts([]);
+    fetchProducts();
   }, []);
 
   return (
@@ -177,9 +184,7 @@ export default function ColorMatcher() {
         <CardContent>
           <div className="flex flex-col items-center gap-6">
             <div className="w-full">
-              <label
-                className="flex flex-col items-center justify-center w-full h-40 border-2 border-dashed rounded-xl cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors border-gray-300 hover:border-gray-400"
-              >
+              <label className="flex flex-col items-center justify-center w-full h-40 border-2 border-dashed rounded-xl cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors border-gray-300 hover:border-gray-400">
                 <div className="flex flex-col items-center justify-center pt-5 pb-6">
                   <Upload className="w-12 h-12 mb-3 text-gray-400" />
                   <p className="mb-2 text-sm text-gray-600">
@@ -206,36 +211,36 @@ export default function ColorMatcher() {
               <div className="text-center">
                 <div className="flex items-center gap-4">
                   <div className="flex gap-2">
-                    <div>
-                      <div
-                        className="w-20 h-20 rounded-lg shadow-lg"
-                        style={{ backgroundColor: selectedColor }}
+                    <button
+                      onClick={() => handleColorClick(selectedColor)}
+                      className="w-20 h-20 rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105"
+                      style={{ backgroundColor: selectedColor }}
+                    />
+                    {complementaryColor && (
+                      <button
+                        onClick={() => handleColorClick(complementaryColor)}
+                        className="w-20 h-20 rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105"
+                        style={{ backgroundColor: complementaryColor }}
                       />
-                      <div className="text-left mt-2">
-                        <p className="text-sm font-medium text-gray-900">
-                          Detected Color
-                        </p>
-                        <p className="text-sm text-gray-500">
-                          {selectedColor}
-                        </p>
-                      </div>
-                    </div>
-                    <div>
-                      <div
-                        className="w-20 h-20 rounded-lg shadow-lg cursor-pointer hover:ring-2 hover:ring-blue-500 transition-all"
-                        style={{ backgroundColor: getComplementaryColor(selectedColor) }}
-                        onClick={() => fetchProducts(getComplementaryColor(selectedColor))}
-                        title="Click to search with complementary color"
-                      />
-                      <div className="text-left mt-2">
-                        <p className="text-sm font-medium text-gray-900">
+                    )}
+                  </div>
+                  <div className="text-left">
+                    <p className="text-sm font-medium text-gray-900">
+                      Selected Color
+                    </p>
+                    <p className="text-sm text-gray-500">
+                      {selectedColor}
+                    </p>
+                    {complementaryColor && (
+                      <>
+                        <p className="text-sm font-medium text-gray-900 mt-2">
                           Complementary Color
                         </p>
                         <p className="text-sm text-gray-500">
-                          {getComplementaryColor(selectedColor)}
+                          {complementaryColor}
                         </p>
-                      </div>
-                    </div>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
@@ -261,16 +266,36 @@ export default function ColorMatcher() {
                     alt={product.title}
                     className="w-24 h-24 object-cover rounded-md"
                   />
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-0">
                     <h3 className="font-medium text-gray-900 line-clamp-2">
                       {product.title}
                     </h3>
-                    <div className="flex justify-between items-center">
-                      <p className="text-sm text-gray-600">
-                        ${product.price.toFixed(2)}
-                      </p>
-                      <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
-                        {product.category}
-                      </span>
-                    </div>
-                    <p
+                    <p className="text-sm text-gray-600 mt-1">
+                      ${product.price.toFixed(2)}
+                    </p>
+                    <p className="text-sm text-gray-500 line-clamp-2 mt-1">
+                      {product.description}
+                    </p>
+                    {product.dominantColor && (
+                      <div className="mt-2 flex items-center gap-2">
+                        <div
+                          className="w-6 h-6 rounded-md shadow-sm"
+                          style={{ backgroundColor: product.dominantColor }}
+                        />
+                        <span className="text-xs text-gray-500">
+                          {product.dominantColor}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
+    </div>
+  );
+};
+
+export default ColorMatcher;
