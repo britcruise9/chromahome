@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import * as Vibrant from 'node-vibrant';
+import Vibrant from 'node-vibrant';
 
 interface Product {
   id: number;
