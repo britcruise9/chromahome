@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { ModernUploader } from '@/components/modern-uploader';
+import { Upload } from 'lucide-react';
 
 interface Product {
   id: number;
@@ -64,7 +64,10 @@ export default function ColorMatcher() {
     }
   };
 
-  const handleFileUpload = async (file: File) => {
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
     setIsProcessing(true);
     try {
       const color = await extractColor(file);
@@ -89,7 +92,25 @@ export default function ColorMatcher() {
         </CardHeader>
         <CardContent>
           <div className="flex flex-col items-center gap-6">
-            <ModernUploader onFileUpload={handleFileUpload} />
+            <div className="w-full">
+              <label
+                className="flex flex-col items-center justify-center w-full h-40 border-2 border-dashed rounded-xl cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors border-gray-300 hover:border-gray-400"
+              >
+                <div className="flex flex-col items-center justify-center pt-5 pb-6">
+                  <Upload className="w-12 h-12 mb-3 text-gray-400" />
+                  <p className="mb-2 text-sm text-gray-600">
+                    <span className="font-medium">Upload a paint chip photo</span>
+                  </p>
+                  <p className="text-xs text-gray-500">PNG, JPG up to 10MB</p>
+                </div>
+                <input
+                  type="file"
+                  className="hidden"
+                  accept="image/*"
+                  onChange={handleFileUpload}
+                />
+              </label>
+            </div>
 
             {isProcessing && (
               <div className="text-sm text-gray-600 animate-pulse">
@@ -119,8 +140,58 @@ export default function ColorMatcher() {
         </CardContent>
       </Card>
 
-      {/* Rest of the component remains the same */}
-      {/* ... */}
+      {products.length > 0 && (
+        <Card>
+          <CardHeader>
+            <CardTitle>Matching Products</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {products.map((product) => (
+                <div
+                  key={product.id}
+                  className="flex gap-4 p-4 border rounded-lg hover:shadow-md transition-shadow bg-white"
+                >
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="w-24 h-24 object-cover rounded-md"
+                  />
+                  <div className="flex-1">
+                    <h3 className="font-medium text-gray-900 line-clamp-2">
+                      {product.title}
+                    </h3>
+                    <div className="flex justify-between items-center">
+                      <p className="text-sm text-gray-600">
+                        ${product.price.toFixed(2)}
+                      </p>
+                      <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
+                        {product.category}
+                      </span>
+                    </div>
+                    <p className="text-sm text-gray-500 line-clamp-2">
+                      {product.description}
+                    </p>
+                    {product.dominantColor && (
+                      <div className="flex items-center gap-2 mt-2">
+                        <div
+                          className="w-6 h-6 rounded-md shadow-sm"
+                          style={{ backgroundColor: product.dominantColor }}
+                        />
+                        {product.matchPercentage !== undefined && (
+                          <span className="text-xs text-gray-500">
+                            Match: {product.matchPercentage}%
+                          </span>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
     </div>
   );
 }
