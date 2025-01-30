@@ -73,7 +73,7 @@ export async function GET(request: Request) {
       return NextResponse.json([...targetColorProducts, ...otherProducts]);
     }
 
-    return NextResponse.json(productsWithProducts);
+    return NextResponse.json(productsWithColors);
   } catch (error) {
     console.error('Error:', error);
     return NextResponse.json({ error: 'Failed to fetch products' }, { status: 500 });
@@ -81,5 +81,19 @@ export async function GET(request: Request) {
 }
 
 function calculateColorDistance(color1: string, color2: string): number {
-  // ... (existing color distance calculation)
+  const hexToRGB = (hex: string) => {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    return { r, g, b };
+  };
+
+  const { r: r1, g: g1, b: b1 } = hexToRGB(color1);
+  const { r: r2, g: g2, b: b2 } = hexToRGB(color2);
+
+  return Math.sqrt(
+    Math.pow(r2 - r1, 2) +
+    Math.pow(g2 - g1, 2) +
+    Math.pow(b2 - b1, 2)
+  );
 }
