@@ -1,29 +1,11 @@
+// src/app/api/products/route.ts
 import { NextResponse } from 'next/server';
 import Vibrant from 'node-vibrant';
 
-const ALLOWED_CATEGORIES = ['clothing', 'jewelery', 'electronics'];
-
-function hexToRgb(hex: string) {
-  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return result ? {
-    r: parseInt(result[1], 16),
-    g: parseInt(result[2], 16),
-    b: parseInt(result[3], 16)
-  } : null;
-}
+const ALLOWED_CATEGORIES = ['clothing', 'jewelery', 'furniture', 'home decor'];
 
 function calculateColorDistance(color1: string, color2: string): number {
-  const rgb1 = hexToRgb(color1);
-  const rgb2 = hexToRgb(color2);
-  
-  if (!rgb1 || !rgb2) return 0;
-
-  const rmean = (rgb1.r + rgb2.r) / 2;
-  const r = rgb1.r - rgb2.r;
-  const g = rgb1.g - rgb2.g;
-  const b = rgb1.b - rgb2.b;
-  
-  return 100 - Math.sqrt((((512+rmean)*r*r)>>8) + 4*g*g + (((767-rmean)*b*b)>>8)) / 7.65;
+  // ... (keep your existing calculateColorDistance function)
 }
 
 async function extractProductColor(imageUrl: string): Promise<string> {
@@ -31,30 +13,29 @@ async function extractProductColor(imageUrl: string): Promise<string> {
     const palette = await Vibrant.from(imageUrl).getPalette();
     const colors = [
       palette.Vibrant,
-      palette.LightVibrant,
       palette.DarkVibrant,
+      palette.LightVibrant,
       palette.Muted,
-      palette.LightMuted,
-      palette.DarkMuted
+      palette.DarkMuted,
+      palette.LightMuted
     ].filter(Boolean);
 
-    colors.sort((a, b) => b!.population - a!.population);
+    colors.sort((a, b) => (b?.population || 0) - (a?.population || 0));
 
     for (const color of colors) {
       if (color) {
         const [r, g, b] = color.rgb;
         // Skip colors that are too light or too dark
-        if (r + g + b > 60 && r + g + b < 700) {
+        if ((r + g + b) / 3 > 30 && (r + g + b) / 3 < 225) {
           return `#${color.hex}`;
         }
       }
     }
 
-    // If no suitable color found, return the most dominant
-    return colors[0] ? `#${colors[0].hex}` : '#CCCCCC';
+    return colors[0] ? `#${colors[0].hex}` : '#000000';
   } catch (error) {
     console.error('Error extracting color:', error);
-    return '#CCCCCC'; // Default gray if extraction fails
+    return '#000000';
   }
 }
 
@@ -67,7 +48,7 @@ export async function GET(request: Request) {
     const products = await response.json();
 
     const filteredProducts = products.filter((product: any) => 
-      ALLOWED_CATEGORIES.includes(product.category)
+      ALLOWED_CATEGORIES.some(category => product.category.toLowerCase().includes(category))
     );
 
     const productsWithColors = await Promise.all(filteredProducts.map(async (product: any) => {
@@ -77,10 +58,11 @@ export async function GET(request: Request) {
       return {
         ...product,
         dominantColor,
-        matchPercentage: Math.round(matchPercentage)
+        matchPercentage
       };
     }));
 
+    // Sort by match percentage if target color is provided
     if (targetColor) {
       productsWithColors.sort((a, b) => b.matchPercentage - a.matchPercentage);
     }
