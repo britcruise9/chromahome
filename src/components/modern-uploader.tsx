@@ -3,7 +3,6 @@
 import React, { useState, useCallback } from 'react';
 import { Upload } from 'lucide-react';
 
-// Color conversion utilities
 const hexToRgb = (hex: string) => {
   const r = parseInt(hex.slice(1, 3), 16);
   const g = parseInt(hex.slice(3, 5), 16);
@@ -15,7 +14,6 @@ const rgbToHsl = (r: number, g: number, b: number) => {
   r /= 255;
   g /= 255;
   b /= 255;
-
   const max = Math.max(r, g, b);
   const min = Math.min(r, g, b);
   let h = 0;
@@ -25,7 +23,6 @@ const rgbToHsl = (r: number, g: number, b: number) => {
   if (max !== min) {
     const d = max - min;
     s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-    
     switch (max) {
       case r:
         h = (g - b) / d + (g < b ? 6 : 0);
@@ -47,7 +44,6 @@ const hslToRgb = (h: number, s: number, l: number) => {
   h /= 360;
   s /= 100;
   l /= 100;
-
   let r: number, g: number, b: number;
 
   if (s === 0) {
@@ -56,17 +52,16 @@ const hslToRgb = (h: number, s: number, l: number) => {
     const hue2rgb = (p: number, q: number, t: number) => {
       if (t < 0) t += 1;
       if (t > 1) t -= 1;
-      if (t < 1/6) return p + (q - p) * 6 * t;
-      if (t < 1/2) return q;
-      if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+      if (t < 1 / 6) return p + (q - p) * 6 * t;
+      if (t < 1 / 2) return q;
+      if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
       return p;
     };
-
     const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
     const p = 2 * l - q;
-    r = hue2rgb(p, q, h + 1/3);
+    r = hue2rgb(p, q, h + 1 / 3);
     g = hue2rgb(p, q, h);
-    b = hue2rgb(p, q, h - 1/3);
+    b = hue2rgb(p, q, h - 1 / 3);
   }
 
   return {
@@ -77,9 +72,7 @@ const hslToRgb = (h: number, s: number, l: number) => {
 };
 
 const rgbToHex = (r: number, g: number, b: number) => {
-  return '#' + [r, g, b]
-    .map(x => x.toString(16).padStart(2, '0'))
-    .join('');
+  return '#' + [r, g, b].map((x) => x.toString(16).padStart(2, '0')).join('');
 };
 
 const getComplementaryColor = (hex: string) => {
@@ -109,33 +102,27 @@ const ModernUploader = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [isDragging, setIsDragging] = useState(false);
 
+  // Updated extractColor function with image scaling
   const extractColor = async (file: File): Promise<string> => {
-    try {
+    return new Promise((resolve, reject) => {
       const canvas = document.createElement('canvas');
-      const ctx = canvas.getContext('2d');
-      if (!ctx) throw new Error('Could not get canvas context');
-
-      return new Promise((resolve, reject) => {
-        const img = new Image();
-        img.onload = () => {
-          canvas.width = img.width;
-          canvas.height = img.height;
-          ctx.drawImage(img, 0, 0);
-          
-          const centerX = Math.floor(img.width / 2);
-          const centerY = Math.floor(img.height / 2);
-          const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
-          
-          const hex = rgbToHex(pixel[0], pixel[1], pixel[2]);
-          resolve(hex);
-        };
-        img.onerror = reject;
-        img.src = URL.createObjectURL(file);
-      });
-    } catch (error) {
-      console.error('Error getting color:', error);
-      return '#000000';
-    }
+      const img = new Image();
+      img.onload = () => {
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return resolve('#000000');
+        const scaleFactor = 0.1; // Scale down to 10% for faster processing
+        canvas.width = img.width * scaleFactor;
+        canvas.height = img.height * scaleFactor;
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        const centerX = Math.floor(canvas.width / 2);
+        const centerY = Math.floor(canvas.height / 2);
+        const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
+        const hex = rgbToHex(pixel[0], pixel[1], pixel[2]);
+        resolve(hex);
+      };
+      img.onerror = reject;
+      img.src = URL.createObjectURL(file);
+    });
   };
 
   const fetchProducts = async (color: string) => {
@@ -167,7 +154,6 @@ const ModernUploader = () => {
   const handleDrop = useCallback(async (e: React.DragEvent) => {
     e.preventDefault();
     setIsDragging(false);
-    
     const file = e.dataTransfer.files[0];
     if (file && file.type.startsWith('image/')) {
       await handleFile(file);
@@ -211,12 +197,7 @@ const ModernUploader = () => {
               ${isDragging ? 'border-white/50 bg-white/10' : 'border-white/20 hover:border-white/30'}
               h-72 flex items-center justify-center`}
           >
-            <input
-              type="file"
-              accept="image/*"
-              onChange={handleFileInput}
-              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-            />
+            <input type="file" accept="image/*" onChange={handleFileInput} className="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
             <div className="text-center">
               <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
               <p className="text-lg text-white/80">Search your color by image</p>
@@ -229,18 +210,18 @@ const ModernUploader = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-center items-center gap-8 mb-12">
             <div className="flex flex-col items-center gap-2">
-              <div 
+              <div
                 className={`w-24 h-24 rounded-xl shadow-lg cursor-pointer transition-all
                   ${selectedColor === activeColor ? 'ring-2 ring-white scale-105' : 'hover:ring-2 hover:ring-white/20'}`}
                 style={{ backgroundColor: selectedColor || '#000000' }}
-                onClick={() => selectedColor && handleColorClick(selectedColor)} 
+                onClick={() => selectedColor && handleColorClick(selectedColor)}
               />
               <span className="text-sm text-white/60">Primary</span>
             </div>
 
             {complementaryColor && (
               <div className="flex flex-col items-center gap-2">
-                <div 
+                <div
                   className={`w-24 h-24 rounded-xl shadow-lg cursor-pointer transition-all
                     ${complementaryColor === activeColor ? 'ring-2 ring-white scale-105' : 'hover:ring-2 hover:ring-white/20'}`}
                   style={{ backgroundColor: complementaryColor }}
@@ -264,10 +245,7 @@ const ModernUploader = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {products.map((product) => (
-              <div 
-                key={product.id}
-                className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300"
-              >
+              <div key={product.id} className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src={product.image}
@@ -281,22 +259,14 @@ const ModernUploader = () => {
                   {product.dominantColor && (
                     <div className="mt-3 flex items-center gap-2">
                       <div className="flex items-center gap-2">
-                        <div
-                          className="w-4 h-4 rounded-full"
-                          style={{ backgroundColor: product.dominantColor }}
-                        />
+                        <div className="w-4 h-4 rounded-full" style={{ backgroundColor: product.dominantColor }} />
                         <span className="text-xs text-white/50">{product.dominantColor}</span>
                       </div>
                       <div className="flex items-center gap-2 ml-2">
-                        <div
-                          className="w-4 h-4 rounded-full"
-                          style={{ backgroundColor: activeColor || '#000000' }}
-                        />
+                        <div className="w-4 h-4 rounded-full" style={{ backgroundColor: activeColor || '#000000' }} />
                         <span className="text-xs text-white/50">{activeColor}</span>
                       </div>
-                      <span className="ml-auto text-xs text-white/50">
-                        {product.matchPercentage}% match
-                      </span>
+                      <span className="ml-auto text-xs text-white/50">{product.matchPercentage}% match</span>
                     </div>
                   )}
                 </div>
