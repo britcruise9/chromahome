@@ -3,6 +3,18 @@
 import React, { useState, useCallback } from 'react';
 import { Upload } from 'lucide-react';
 
+interface Product {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  image: string;
+  category: string;
+  dominantColor: string;
+  matchPercentage: number;
+  affiliateLink?: string; // Only for Amazon products
+}
+
 const hexToRgb = (hex: string) => {
   const r = parseInt(hex.slice(1, 3), 16);
   const g = parseInt(hex.slice(3, 5), 16);
@@ -11,15 +23,12 @@ const hexToRgb = (hex: string) => {
 };
 
 const rgbToHsl = (r: number, g: number, b: number) => {
-  r /= 255;
-  g /= 255;
-  b /= 255;
+  r /= 255; g /= 255; b /= 255;
   const max = Math.max(r, g, b);
   const min = Math.min(r, g, b);
   let h = 0;
   let s = 0;
   const l = (max + min) / 2;
-
   if (max !== min) {
     const d = max - min;
     s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
@@ -36,34 +45,29 @@ const rgbToHsl = (r: number, g: number, b: number) => {
     }
     h /= 6;
   }
-
   return { h: h * 360, s: s * 100, l: l * 100 };
 };
 
 const hslToRgb = (h: number, s: number, l: number) => {
-  h /= 360;
-  s /= 100;
-  l /= 100;
+  h /= 360; s /= 100; l /= 100;
   let r: number, g: number, b: number;
-
   if (s === 0) {
     r = g = b = l;
   } else {
     const hue2rgb = (p: number, q: number, t: number) => {
       if (t < 0) t += 1;
       if (t > 1) t -= 1;
-      if (t < 1 / 6) return p + (q - p) * 6 * t;
-      if (t < 1 / 2) return q;
-      if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+      if (t < 1/6) return p + (q - p) * 6 * t;
+      if (t < 1/2) return q;
+      if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
       return p;
     };
     const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
     const p = 2 * l - q;
-    r = hue2rgb(p, q, h + 1 / 3);
+    r = hue2rgb(p, q, h + 1/3);
     g = hue2rgb(p, q, h);
-    b = hue2rgb(p, q, h - 1 / 3);
+    b = hue2rgb(p, q, h - 1/3);
   }
-
   return {
     r: Math.round(r * 255),
     g: Math.round(g * 255),
@@ -83,17 +87,6 @@ const getComplementaryColor = (hex: string) => {
   return rgbToHex(complementaryRgb.r, complementaryRgb.g, complementaryRgb.b);
 };
 
-interface Product {
-  id: number;
-  title: string;
-  price: number;
-  description: string;
-  image: string;
-  category: string;
-  dominantColor: string;
-  matchPercentage: number;
-}
-
 const ModernUploader = () => {
   const [view, setView] = useState('initial');
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
@@ -101,6 +94,7 @@ const ModernUploader = () => {
   const [activeColor, setActiveColor] = useState<string | null>(null);
   const [products, setProducts] = useState<Product[]>([]);
   const [isDragging, setIsDragging] = useState(false);
+  const [useAmazon, setUseAmazon] = useState(false); // Toggle for product source
 
   // Updated extractColor function with image scaling
   const extractColor = async (file: File): Promise<string> => {
@@ -125,9 +119,11 @@ const ModernUploader = () => {
     });
   };
 
+  // Updated fetchProducts to include the source toggle.
   const fetchProducts = async (color: string) => {
     try {
-      const response = await fetch(`/api/products?color=${encodeURIComponent(color)}`);
+      const sourceParam = useAmazon ? 'source=amazon&' : '';
+      const response = await fetch(`/api/products?${sourceParam}color=${encodeURIComponent(color)}`);
       const data = await response.json();
       setProducts(data);
       setView('results');
@@ -187,6 +183,19 @@ const ModernUploader = () => {
         </h1>
       </div>
 
+      {/* Toggle for choosing product source */}
+      <div className="max-w-2xl mx-auto px-4 mb-6">
+        <label className="flex items-center gap-2 text-white">
+          <input
+            type="checkbox"
+            checked={useAmazon}
+            onChange={(e) => setUseAmazon(e.target.checked)}
+            className="accent-purple-500"
+          />
+          Use Amazon Products
+        </label>
+      </div>
+
       {view === 'initial' && (
         <div className="max-w-2xl mx-auto px-4">
           <div
@@ -197,7 +206,12 @@ const ModernUploader = () => {
               ${isDragging ? 'border-white/50 bg-white/10' : 'border-white/20 hover:border-white/30'}
               h-72 flex items-center justify-center`}
           >
-            <input type="file" accept="image/*" onChange={handleFileInput} className="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleFileInput}
+              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+            />
             <div className="text-center">
               <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
               <p className="text-lg text-white/80">Search your color by image</p>
@@ -258,20 +272,21 @@ const ModernUploader = () => {
                   <p className="text-white/60 mt-1 line-clamp-2">{product.description}</p>
                   {product.dominantColor && (
                     <div className="mt-3 flex items-center gap-2">
-                      <div className="flex items-center gap-2">
-                        <div className="w-4 h-4 rounded-full" style={{ backgroundColor: product.dominantColor }} />
-                        <span className="text-xs text-white/50">{product.dominantColor}</span>
-                      </div>
-                      <div className="flex items-center gap-2 ml-2">
-                        <div className="w-4 h-4 rounded-full" style={{ backgroundColor: activeColor || '#000000' }} />
-                        <span className="text-xs text-white/50">{activeColor}</span>
-                      </div>
+                      <div className="w-4 h-4 rounded-full" style={{ backgroundColor: product.dominantColor }} />
+                      <span className="text-xs text-white/50">{product.dominantColor}</span>
                       <span className="ml-auto text-xs text-white/50">{product.matchPercentage}% match</span>
                     </div>
                   )}
-                </div>
-                <div className="absolute top-2 right-2 bg-black/50 backdrop-blur-sm px-2 py-1 rounded text-xs text-white/90">
-                  ${product.price.toFixed(2)}
+                  {product.affiliateLink && (
+                    <a
+                      href={product.affiliateLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2 block text-sm text-blue-400 underline"
+                    >
+                      Buy Now
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
@@ -283,3 +298,4 @@ const ModernUploader = () => {
 };
 
 export default ModernUploader;
+
