@@ -4,48 +4,19 @@ import Vibrant from 'node-vibrant';
 
 const ALLOWED_CATEGORIES = ['clothing', 'jewelery', 'furniture', 'home decor'];
 
-function calculateColorDistance(color1: string, color2: string): number {
-  const rgb1 = {
-    r: parseInt(color1.slice(1, 3), 16),
-    g: parseInt(color1.slice(3, 5), 16),
-    b: parseInt(color1.slice(5, 7), 16)
-  };
-  
-  const rgb2 = {
-    r: parseInt(color2.slice(1, 3), 16),
-    g: parseInt(color2.slice(3, 5), 16),
-    b: parseInt(color2.slice(5, 7), 16)
-  };
-
-  // Using weighted RGB distance for better perceptual matching
-  const rMean = (rgb1.r + rgb2.r) / 2;
-  const weightR = 2 + rMean / 256;
-  const weightG = 4.0;
-  const weightB = 2 + (255 - rMean) / 256;
-  
-  const diffR = rgb1.r - rgb2.r;
-  const diffG = rgb1.g - rgb2.g;
-  const diffB = rgb1.b - rgb2.b;
-
-  const distance = Math.sqrt(
-    weightR * diffR * diffR +
-    weightG * diffG * diffG +
-    weightB * diffB * diffB
-  );
-
-  // Normalize to percentage
-  const maxDistance = Math.sqrt(255 * 255 * (weightR + weightG + weightB));
-  const matchPercentage = Math.round((1 - distance / maxDistance) * 100);
-  
-  return Math.max(0, Math.min(100, matchPercentage));
+function sleep(ms: number) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function extractProductColor(imageUrl: string): Promise<string> {
   try {
+    await sleep(100); // Rate limiting
     const palette = await Vibrant.from(imageUrl)
-      .quality(1)
-      .maxColorCount(32)
+      .maxColorCount(64)
+      .quality(10)
       .getPalette();
+
+    if (!palette) throw new Error('Failed to extract palette');
 
     const colors = [
       palette.Vibrant,
@@ -56,27 +27,53 @@ async function extractProductColor(imageUrl: string): Promise<string> {
       palette.LightMuted
     ].filter(Boolean);
 
-    // Sort by population only since Swatch doesn't have saturation
-    colors.sort((a, b) => {
-      if (!a || !b) return 0;
-      return (b.population || 0) - (a.population || 0);
-    });
+    if (colors.length === 0) {
+      console.error('No colors extracted from image:', imageUrl);
+      return '#000000';
+    }
 
-    // Find first color within acceptable brightness range
     for (const color of colors) {
-      if (color) {
+      if (color && color.rgb) {
         const [r, g, b] = color.rgb;
-        const brightness = (r + g + b) / 3;
-        if (brightness > 20 && brightness < 235) {
+        if ((r + g + b) / 3 > 30 && (r + g + b) / 3 < 240) {
           return `#${color.hex}`;
         }
       }
     }
 
-    return colors[0] ? `#${colors[0].hex}` : '#000000';
+    // Fallback to first color
+    return colors[0] && colors[0].hex ? `#${colors[0].hex}` : '#000000';
   } catch (error) {
-    console.error('Error extracting color:', error);
+    console.error('Error extracting color:', error, 'URL:', imageUrl);
     return '#000000';
+  }
+}
+
+function calculateColorDistance(color1: string, color2: string): number {
+  try {
+    const rgb1 = {
+      r: parseInt(color1.slice(1, 3), 16),
+      g: parseInt(color1.slice(3, 5), 16),
+      b: parseInt(color1.slice(5, 7), 16)
+    };
+    
+    const rgb2 = {
+      r: parseInt(color2.slice(1, 3), 16),
+      g: parseInt(color2.slice(3, 5), 16),
+      b: parseInt(color2.slice(5, 7), 16)
+    };
+
+    const distance = Math.sqrt(
+      Math.pow(rgb2.r - rgb1.r, 2) +
+      Math.pow(rgb2.g - rgb1.g, 2) +
+      Math.pow(rgb2.b - rgb1.b, 2)
+    );
+
+    const maxDistance = Math.sqrt(Math.pow(255, 2) * 3);
+    return Math.round((1 - distance / maxDistance) * 100);
+  } catch (error) {
+    console.error('Error calculating color distance:', error);
+    return 0;
   }
 }
 
@@ -84,26 +81,27 @@ export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const targetColor = searchParams.get('color');
+    
+    console.log('Target color:', targetColor);
 
     const response = await fetch('https://fakestoreapi.com/products');
+    if (!response.ok) throw new Error('Failed to fetch products');
+    
     const products = await response.json();
-
-    const filteredProducts = products.filter((product: any) => 
+    const filteredProducts = products.filter(product => 
       ALLOWED_CATEGORIES.some(category => 
-        product.category?.toLowerCase().includes(category))
+        product.category?.toLowerCase().includes(category)
+      )
     );
-
-    console.log(`Processing ${filteredProducts.length} products`);
 
     const productsWithColors = await Promise.all(
       filteredProducts.map(async (product: any) => {
+        console.log(`Processing ${product.title}`);
         const dominantColor = await extractProductColor(product.image);
+        console.log(`Extracted color for ${product.title}:`, dominantColor);
+        
         const matchPercentage = targetColor ? 
           calculateColorDistance(targetColor, dominantColor) : 100;
-
-        console.log(`Product ${product.id}: ${product.title}`);
-        console.log(`  Color: ${dominantColor}`);
-        console.log(`  Match: ${matchPercentage}%`);
 
         return {
           ...product,
@@ -119,7 +117,7 @@ export async function GET(request: Request) {
 
     return NextResponse.json(productsWithColors);
   } catch (error) {
-    console.error('Error processing products:', error);
+    console.error('Error:', error);
     return NextResponse.json(
       { error: 'Failed to process products' },
       { status: 500 }
