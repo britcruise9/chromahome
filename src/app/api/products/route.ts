@@ -50,7 +50,7 @@ async function extractProductColor(imageUrl: string): Promise<string> {
       if (color) {
         const [r, g, b] = color.rgb;
         // Skip colors that are too light or too dark
-        if ((r + g + b) / 3 > 30 && (r + g + b) / 3 < 225) {
+        if ((r + g + b) / 3 > 30 && (r + g + b) / 3 < 250) {
           return `#${color.hex}`;
         }
       }
