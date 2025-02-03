@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import Vibrant from 'node-vibrant';
-import { amazonProducts } from '@/lib/amazonProducts';
+import { amazonProducts } from '../../../lib/amazonProducts';
 
 const ALLOWED_CATEGORIES = ['clothing', 'jewelery', 'furniture', 'home decor'];
 const CACHE_DURATION = 3600; // seconds
@@ -77,7 +77,7 @@ export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const targetColor = searchParams.get('color');
-    const source = searchParams.get('source'); // 'amazon' or leave blank
+    const source = searchParams.get('source'); // 'amazon' or leave empty
 
     let products: any[] = [];
     if (source === 'amazon') {
