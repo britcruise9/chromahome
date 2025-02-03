@@ -36,7 +36,7 @@ async function extractProductColor(imageUrl: string): Promise<string> {
       if (color && color.rgb) {
         const [r, g, b] = color.rgb;
         if ((r + g + b) / 3 > 30 && (r + g + b) / 3 < 240) {
-          return `#${color.hex}`;
+          return color.hex;
         }
       }
     }
