@@ -85,7 +85,6 @@ const rgbToHex = (r: number, g: number, b: number) => {
 const getComplementaryColor = (hex: string) => {
   const rgb = hexToRgb(hex);
   const hsl = rgbToHsl(rgb.r, rgb.g, rgb.b);
-  // Rotate hue by 180 degrees for complementary color
   hsl.h = (hsl.h + 180) % 360;
   const complementaryRgb = hslToRgb(hsl.h, hsl.s, hsl.l);
   return rgbToHex(complementaryRgb.r, complementaryRgb.g, complementaryRgb.b);
@@ -98,7 +97,8 @@ interface Product {
   description: string;
   image: string;
   category: string;
-  dominantColor?: string;
+  dominantColor: string;
+  matchPercentage: number;
 }
 
 const ModernUploader = () => {
@@ -121,7 +121,7 @@ const ModernUploader = () => {
           canvas.width = img.width;
           canvas.height = img.height;
           ctx.drawImage(img, 0, 0);
-
+          
           const centerX = Math.floor(img.width / 2);
           const centerY = Math.floor(img.height / 2);
           const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
@@ -246,24 +246,23 @@ const ModernUploader = () => {
                   style={{ backgroundColor: complementaryColor }}
                   onClick={() => handleColorClick(complementaryColor)}
                 />
-                <span className="text-sm text-white/60">Complement</span>
+                <span className="text-sm text-white/60">Complementary</span>
               </div>
             )}
 
             <div className="flex flex-col items-center gap-2">
               <button
                 onClick={() => setView('initial')}
-                className="w-24 h-24 rounded-xl bg-white/10 hover:bg-white/20 text-white/80 transition-all
-                  flex flex-col items-center justify-center"
+                className="w-24 h-24 rounded-xl bg-white/10 hover:bg-white/20 text-white/80 transition-all flex flex-col items-center justify-center group"
               >
-                <span className="text-2xl">+</span>
-                <span className="text-sm">New</span>
+                <span className="text-2xl group-hover:scale-110 transition-transform">+</span>
+                <span className="text-sm mt-1">New Color</span>
               </button>
-              <span className="text-sm text-white/60">Color</span>
+              <span className="text-sm text-white/60">Upload</span>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {products.map((product) => (
               <div 
                 key={product.id}
@@ -278,7 +277,7 @@ const ModernUploader = () => {
                 </div>
                 <div className="p-4">
                   <h3 className="text-white/90 font-medium line-clamp-1">{product.title}</h3>
-                  <p className="text-white/60 mt-1">${product.price.toFixed(2)}</p>
+                  <p className="text-white/60 mt-1 line-clamp-2">{product.description}</p>
                   {product.dominantColor && (
                     <div className="mt-3 flex items-center gap-2">
                       <div
@@ -286,8 +285,14 @@ const ModernUploader = () => {
                         style={{ backgroundColor: product.dominantColor }}
                       />
                       <span className="text-xs text-white/50">{product.dominantColor}</span>
+                      <span className="ml-auto text-xs text-white/50">
+                        {product.matchPercentage}% match
+                      </span>
                     </div>
                   )}
+                </div>
+                <div className="absolute top-2 right-2 bg-black/50 backdrop-blur-sm px-2 py-1 rounded text-xs text-white/90">
+                  ${product.price.toFixed(2)}
                 </div>
               </div>
             ))}
