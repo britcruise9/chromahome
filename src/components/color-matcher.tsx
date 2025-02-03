@@ -100,6 +100,13 @@ export default function ColorMatcher() {
           canvas.width = img.width * scaleFactor;
           canvas.height = img.height * scaleFactor;
           ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+          const canvas = document.createElement('canvas');
+          const ctx = canvas.getContext('2d');
+          // ...load image...
+          const scaleFactor = 0.1; // reduce size for faster processing
+          canvas.width = img.width * scaleFactor;
+          canvas.height = img.height * scaleFactor;
+          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
           const centerX = Math.floor(canvas.width / 2);
           const centerY = Math.floor(canvas.height / 2);
