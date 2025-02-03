@@ -32,9 +32,9 @@ export const amazonProducts: AmazonProduct[] = [
     title: 'Amazon Product 3',
     price: 69.99,
     description: 'Description for Amazon Product 3',
-    image: 'https://images-na.ssl-images-amazon.com/images/I/51ySK6mX3WL._AC_UL232_SR232,232_.jpg', // Replace with actual image URL
+    image: 'https://images-na.ssl-images-amazon.com/images/I/71LEz8rT2uL._AC_UL232_SR232,232_.jpg', // Replace with actual image URL
     category: 'home decor',
-    affiliateLink: 'https://amzn.to/3WNWdt0'  // Use your affiliate link here
+    affiliateLink: 'https://amzn.to/3CpjnyZ'  // Use your affiliate link here
   },
   {
     id: 4,
