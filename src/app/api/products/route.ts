@@ -4,11 +4,18 @@ import Vibrant from 'node-vibrant';
 
 const ALLOWED_CATEGORIES = ['clothing', 'jewelery', 'furniture', 'home decor'];
 const CACHE_DURATION = 3600; // 1 hour caching
-const BATCH_SIZE = 5;
+const BATCH_SIZE = 10; // increase batch size to run more in parallel
+
+// In-memory cache for dominant colors (keyed by image URL)
+const colorCache: { [url: string]: string } = {};
 
 async function extractProductColor(imageUrl: string): Promise<string> {
+  // Return cached value if available
+  if (colorCache[imageUrl]) {
+    return colorCache[imageUrl];
+  }
+
   try {
-    // Removed the artificial delay here
     const palette = await Vibrant.from(imageUrl)
       .maxColorCount(64)
       .quality(10)
@@ -27,20 +34,27 @@ async function extractProductColor(imageUrl: string): Promise<string> {
 
     if (colors.length === 0) {
       console.error('No colors extracted from image:', imageUrl);
+      colorCache[imageUrl] = '#000000';
       return '#000000';
     }
 
+    let dominantColor = '#000000';
     for (const color of colors) {
       if (color && color.rgb) {
         const [r, g, b] = color.rgb;
         if ((r + g + b) / 3 > 30 && (r + g + b) / 3 < 240) {
-          return color.hex;
+          dominantColor = color.hex;
+          break;
         }
       }
     }
-    return colors[0] && colors[0].hex ? colors[0].hex : '#000000';
+
+    // Cache the computed color
+    colorCache[imageUrl] = dominantColor;
+    return dominantColor;
   } catch (error) {
     console.error('Error extracting color:', error, 'URL:', imageUrl);
+    colorCache[imageUrl] = '#000000';
     return '#000000';
   }
 }
@@ -89,9 +103,8 @@ export async function GET(request: Request) {
       )
     );
 
+    // Process products in batches concurrently
     let productsWithColors: any[] = [];
-
-    // Process products in batches without extra waiting time between batches
     for (let i = 0; i < filteredProducts.length; i += BATCH_SIZE) {
       const batch = filteredProducts.slice(i, i + BATCH_SIZE);
       const results = await Promise.all(
