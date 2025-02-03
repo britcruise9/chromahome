@@ -37,7 +37,7 @@ export const amazonProducts: AmazonProduct[] = [
     affiliateLink: 'https://amzn.to/3WNWdt0'  // Use your affiliate link here
   },
   {
-    id: 3,
+    id: 4,
     title: 'Amazon Product 3',
     price: 69.99,
     description: 'Description for Amazon Product 3',
@@ -46,7 +46,7 @@ export const amazonProducts: AmazonProduct[] = [
     affiliateLink: 'https://amzn.to/4hihVxi'  // Use your affiliate link here
   },
   {
-    id: 3,
+    id: 5,
     title: 'Amazon Product 3',
     price: 69.99,
     description: 'Description for Amazon Product 3',
