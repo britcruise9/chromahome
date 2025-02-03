@@ -24,7 +24,7 @@ export const amazonProducts: AmazonProduct[] = [
     price: 59.99,
     description: 'Description for Amazon Product 2',
     image: 'https://images-na.ssl-images-amazon.com/images/I/51ySK6mX3WL._AC_UL232_SR232,232_.jpg', // Replace with actual image URL
-    category: 'furniture',
+    category: 'home decor',
     affiliateLink: 'https://amzn.to/3WNWdt0'  // Use your short or long affiliate link here
   },
   {
@@ -35,5 +35,23 @@ export const amazonProducts: AmazonProduct[] = [
     image: 'https://images-na.ssl-images-amazon.com/images/I/51ySK6mX3WL._AC_UL232_SR232,232_.jpg', // Replace with actual image URL
     category: 'home decor',
     affiliateLink: 'https://amzn.to/3WNWdt0'  // Use your affiliate link here
+  },
+  {
+    id: 3,
+    title: 'Amazon Product 3',
+    price: 69.99,
+    description: 'Description for Amazon Product 3',
+    image: 'https://images-na.ssl-images-amazon.com/images/I/614BWnY8puL._AC_UL232_SR232,232_.jpg', // Replace with actual image URL
+    category: 'home decor',
+    affiliateLink: 'https://amzn.to/4hihVxi'  // Use your affiliate link here
+  },
+  {
+    id: 3,
+    title: 'Amazon Product 3',
+    price: 69.99,
+    description: 'Description for Amazon Product 3',
+    image: 'https://images-na.ssl-images-amazon.com/images/I/81MBARx2ULL._AC_UL232_SR232,232_.jpg', // Replace with actual image URL
+    category: 'home decor',
+    affiliateLink: 'https://amzn.to/3CK5fjF'  // Use your affiliate link here
   }
 ];
