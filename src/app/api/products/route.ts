@@ -5,7 +5,6 @@ import Vibrant from 'node-vibrant';
 const ALLOWED_CATEGORIES = ['clothing', 'jewelery', 'furniture', 'home decor'];
 
 function calculateColorDistance(color1: string, color2: string): number {
-  // Convert hex to RGB
   const rgb1 = {
     r: parseInt(color1.slice(1, 3), 16),
     g: parseInt(color1.slice(3, 5), 16),
@@ -18,17 +17,14 @@ function calculateColorDistance(color1: string, color2: string): number {
     b: parseInt(color2.slice(5, 7), 16)
   };
 
-  // Calculate Euclidean distance
   const distance = Math.sqrt(
     Math.pow(rgb2.r - rgb1.r, 2) +
     Math.pow(rgb2.g - rgb1.g, 2) +
     Math.pow(rgb2.b - rgb1.b, 2)
   );
 
-  // Convert to a percentage (0-100)
-  const maxDistance = Math.sqrt(Math.pow(255, 2) * 3); // Max possible distance
+  const maxDistance = Math.sqrt(Math.pow(255, 2) * 3);
   const matchPercentage = Math.round((1 - distance / maxDistance) * 100);
-
   return matchPercentage;
 }
 
@@ -49,7 +45,7 @@ async function extractProductColor(imageUrl: string): Promise<string> {
     for (const color of colors) {
       if (color) {
         const [r, g, b] = color.rgb;
-        // Skip colors that are too light or too dark
+        // Increased upper threshold to catch brighter colors
         if ((r + g + b) / 3 > 30 && (r + g + b) / 3 < 250) {
           return `#${color.hex}`;
         }
@@ -68,6 +64,8 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const targetColor = searchParams.get('color');
 
+    console.log('Target color:', targetColor);
+
     const response = await fetch('https://fakestoreapi.com/products');
     const products = await response.json();
 
@@ -79,6 +77,8 @@ export async function GET(request: Request) {
       const dominantColor = await extractProductColor(product.image);
       const matchPercentage = targetColor ? calculateColorDistance(targetColor, dominantColor) : 100;
 
+      console.log(`Product ${product.id}: ${dominantColor} - Match: ${matchPercentage}%`);
+
       return {
         ...product,
         dominantColor,
@@ -86,7 +86,6 @@ export async function GET(request: Request) {
       };
     }));
 
-    // Sort by match percentage if target color is provided
     if (targetColor) {
       productsWithColors.sort((a, b) => b.matchPercentage - a.matchPercentage);
     }
