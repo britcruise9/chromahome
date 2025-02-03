@@ -43,8 +43,8 @@ function calculateColorDistance(color1: string, color2: string): number {
 async function extractProductColor(imageUrl: string): Promise<string> {
   try {
     const palette = await Vibrant.from(imageUrl)
-      .quality(1) // Higher quality
-      .maxColorCount(32) // More colors to sample
+      .quality(1)
+      .maxColorCount(32)
       .getPalette();
 
     const colors = [
@@ -56,12 +56,10 @@ async function extractProductColor(imageUrl: string): Promise<string> {
       palette.LightMuted
     ].filter(Boolean);
 
-    // Sort by both population and saturation
+    // Sort by population only since Swatch doesn't have saturation
     colors.sort((a, b) => {
       if (!a || !b) return 0;
-      const aScore = a.population * (1 + a.saturation);
-      const bScore = b.population * (1 + b.saturation);
-      return bScore - aScore;
+      return (b.population || 0) - (a.population || 0);
     });
 
     // Find first color within acceptable brightness range
@@ -75,7 +73,6 @@ async function extractProductColor(imageUrl: string): Promise<string> {
       }
     }
 
-    // Fallback to most prominent color if none meet criteria
     return colors[0] ? `#${colors[0].hex}` : '#000000';
   } catch (error) {
     console.error('Error extracting color:', error);
@@ -116,7 +113,6 @@ export async function GET(request: Request) {
       })
     );
 
-    // Sort by match percentage if target color provided
     if (targetColor) {
       productsWithColors.sort((a, b) => b.matchPercentage - a.matchPercentage);
     }
