@@ -280,11 +280,20 @@ const ModernUploader = () => {
                   <p className="text-white/60 mt-1 line-clamp-2">{product.description}</p>
                   {product.dominantColor && (
                     <div className="mt-3 flex items-center gap-2">
-                      <div
-                        className="w-4 h-4 rounded-full"
-                        style={{ backgroundColor: product.dominantColor }}
-                      />
-                      <span className="text-xs text-white/50">{product.dominantColor}</span>
+                      <div className="flex items-center gap-2">
+                        <div
+                          className="w-4 h-4 rounded-full"
+                          style={{ backgroundColor: product.dominantColor }}
+                        />
+                        <span className="text-xs text-white/50">{product.dominantColor}</span>
+                      </div>
+                      <div className="flex items-center gap-2 ml-2">
+                        <div
+                          className="w-4 h-4 rounded-full"
+                          style={{ backgroundColor: activeColor || '#000000' }}
+                        />
+                        <span className="text-xs text-white/50">{activeColor}</span>
+                      </div>
                       <span className="ml-auto text-xs text-white/50">
                         {product.matchPercentage}% match
                       </span>
