@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useCallback } from 'react';
-import { Upload } from 'lucide-react';
+import React, { useState, useCallback } from "react";
+import { Upload } from "lucide-react";
 
 interface Product {
   id: number;
@@ -26,14 +26,22 @@ const rgbToHsl = (r: number, g: number, b: number) => {
   r /= 255; g /= 255; b /= 255;
   const max = Math.max(r, g, b);
   const min = Math.min(r, g, b);
-  let h = 0, s = 0, l = (max + min) / 2;
+  let h = 0,
+    s = 0,
+    l = (max + min) / 2;
   if (max !== min) {
     const d = max - min;
     s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
     switch (max) {
-      case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-      case g: h = (b - r) / d + 2; break;
-      case b: h = (r - g) / d + 4; break;
+      case r:
+        h = (g - b) / d + (g < b ? 6 : 0);
+        break;
+      case g:
+        h = (b - r) / d + 2;
+        break;
+      case b:
+        h = (r - g) / d + 4;
+        break;
     }
     h /= 6;
   }
@@ -41,7 +49,9 @@ const rgbToHsl = (r: number, g: number, b: number) => {
 };
 
 const hslToRgb = (h: number, s: number, l: number) => {
-  h /= 360; s /= 100; l /= 100;
+  h /= 360;
+  s /= 100;
+  l /= 100;
   let r: number, g: number, b: number;
   if (s === 0) {
     r = g = b = l;
@@ -64,7 +74,7 @@ const hslToRgb = (h: number, s: number, l: number) => {
 };
 
 const rgbToHex = (r: number, g: number, b: number) => {
-  return '#' + [r, g, b].map(x => x.toString(16).padStart(2, '0')).join('');
+  return "#" + [r, g, b].map((x) => x.toString(16).padStart(2, "0")).join("");
 };
 
 const getComplementaryColor = (hex: string) => {
@@ -76,7 +86,7 @@ const getComplementaryColor = (hex: string) => {
 };
 
 const ModernUploader = () => {
-  const [view, setView] = useState('initial');
+  const [view, setView] = useState("initial");
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
   const [activeColor, setActiveColor] = useState<string | null>(null);
@@ -84,14 +94,14 @@ const ModernUploader = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [useAmazon, setUseAmazon] = useState(false);
 
-  // Extract dominant color from an uploaded image (with scaling)
+  // Extract dominant color from uploaded image (scaled down for speed)
   const extractColor = async (file: File): Promise<string> => {
     return new Promise((resolve, reject) => {
-      const canvas = document.createElement('canvas');
+      const canvas = document.createElement("canvas");
       const img = new Image();
       img.onload = () => {
-        const ctx = canvas.getContext('2d');
-        if (!ctx) return resolve('#000000');
+        const ctx = canvas.getContext("2d");
+        if (!ctx) return resolve("#000000");
         const scaleFactor = 0.1;
         canvas.width = img.width * scaleFactor;
         canvas.height = img.height * scaleFactor;
@@ -107,18 +117,17 @@ const ModernUploader = () => {
     });
   };
 
-  // Fetch products based on the selected color; clear current products to prevent duplicates.
+  // Fetch products from the API, clearing previous products to avoid duplicates
   const fetchProducts = async (color: string) => {
-    // Clear previous products
     setProducts([]);
     try {
-      const sourceParam = useAmazon ? 'source=amazon&' : '';
+      const sourceParam = useAmazon ? "source=amazon&" : "";
       const response = await fetch(`/api/products?${sourceParam}color=${encodeURIComponent(color)}`);
       const data = await response.json();
       setProducts(data);
-      setView('results');
+      setView("results");
     } catch (error) {
-      console.error('Error fetching products:', error);
+      console.error("Error fetching products:", error);
     }
   };
 
@@ -139,4 +148,155 @@ const ModernUploader = () => {
 
   const handleDrop = useCallback(async (e: React.DragEvent) => {
     e.preventDefault();
-    setIsDragg
+    setIsDragging(false);
+    const file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith("image/")) {
+      await handleFile(file);
+    }
+  }, []);
+
+  const handleDragOver = useCallback((e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragging(true);
+  }, []);
+
+  const handleDragLeave = useCallback((e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragging(false);
+  }, []);
+
+  const handleFileInput = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      await handleFile(file);
+    }
+  };
+
+  return (
+    <div className="w-full min-h-screen bg-gradient-to-br from-[#0F172A] to-[#1E293B]">
+      <div className={`transition-all duration-500 ${view !== "initial" ? "pt-8 pb-4" : "pt-32 pb-16"}`}>
+        <h1 className="text-center text-6xl font-bold">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500 animate-gradient bg-[length:200%_auto]">
+            CHROMA
+          </span>
+        </h1>
+      </div>
+
+      {/* Toggle for selecting product source */}
+      <div className="max-w-2xl mx-auto px-4 mb-6">
+        <label className="flex items-center gap-2 text-white">
+          <input
+            type="checkbox"
+            checked={useAmazon}
+            onChange={(e) => setUseAmazon(e.target.checked)}
+            className="accent-purple-500"
+          />
+          Use Amazon Products
+        </label>
+      </div>
+
+      {view === "initial" && (
+        <div className="max-w-2xl mx-auto px-4">
+          <div
+            onDrop={handleDrop}
+            onDragOver={handleDragOver}
+            onDragLeave={handleDragLeave}
+            className={`relative rounded-2xl border-2 border-dashed transition-all duration-300 
+              ${isDragging ? "border-white/50 bg-white/10" : "border-white/20 hover:border-white/30"}
+              h-72 flex items-center justify-center`}
+          >
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleFileInput}
+              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+            />
+            <div className="text-center">
+              <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
+              <p className="text-lg text-white/80">Search your color by image</p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {view === "results" && products.length > 0 && (
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex justify-center items-center gap-8 mb-12">
+            <div className="flex flex-col items-center gap-2">
+              <div
+                className={`w-24 h-24 rounded-xl shadow-lg cursor-pointer transition-all
+                  ${selectedColor === activeColor ? "ring-2 ring-white scale-105" : "hover:ring-2 hover:ring-white/20"}`}
+                style={{ backgroundColor: selectedColor || "#000000" }}
+                onClick={() => selectedColor && handleColorClick(selectedColor)}
+              />
+              <span className="text-sm text-white/60">Primary</span>
+            </div>
+
+            {complementaryColor && (
+              <div className="flex flex-col items-center gap-2">
+                <div
+                  className={`w-24 h-24 rounded-xl shadow-lg cursor-pointer transition-all
+                    ${complementaryColor === activeColor ? "ring-2 ring-white scale-105" : "hover:ring-2 hover:ring-white/20"}`}
+                  style={{ backgroundColor: complementaryColor }}
+                  onClick={() => handleColorClick(complementaryColor)}
+                />
+                <span className="text-sm text-white/60">Complementary</span>
+              </div>
+            )}
+
+            <div className="flex flex-col items-center gap-2">
+              <button
+                onClick={() => setView("initial")}
+                className="w-24 h-24 rounded-xl bg-white/10 hover:bg-white/20 text-white/80 transition-all flex flex-col items-center justify-center group"
+              >
+                <span className="text-2xl group-hover:scale-110 transition-transform">+</span>
+                <span className="text-sm mt-1">New Color</span>
+              </button>
+              <span className="text-sm text-white/60">Upload</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {products.map((product) => (
+              <a
+                key={product.id}
+                href={product.affiliateLink ? product.affiliateLink : "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300">
+                  <div className="aspect-square overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={product.title}
+                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-white/90 font-medium line-clamp-1">{product.title}</h3>
+                    <p className="text-white/60 mt-1 line-clamp-2">{product.description}</p>
+                    {product.dominantColor && (
+                      <div className="mt-3 flex items-center gap-2">
+                        <div className="w-4 h-4 rounded-full" style={{ backgroundColor: product.dominantColor }} />
+                        <span className="text-xs text-white/50">{product.dominantColor}</span>
+                        <span className="ml-auto text-xs text-white/50">{product.matchPercentage}% match</span>
+                      </div>
+                    )}
+                    {product.affiliateLink && (
+                      <div className="mt-2">
+                        <span className="text-sm text-blue-400 underline">Buy Now</span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default ModernUploader;
