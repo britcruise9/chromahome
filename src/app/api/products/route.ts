@@ -17,20 +17,36 @@ function calculateColorDistance(color1: string, color2: string): number {
     b: parseInt(color2.slice(5, 7), 16)
   };
 
+  // Using weighted RGB distance for better perceptual matching
+  const rMean = (rgb1.r + rgb2.r) / 2;
+  const weightR = 2 + rMean / 256;
+  const weightG = 4.0;
+  const weightB = 2 + (255 - rMean) / 256;
+  
+  const diffR = rgb1.r - rgb2.r;
+  const diffG = rgb1.g - rgb2.g;
+  const diffB = rgb1.b - rgb2.b;
+
   const distance = Math.sqrt(
-    Math.pow(rgb2.r - rgb1.r, 2) +
-    Math.pow(rgb2.g - rgb1.g, 2) +
-    Math.pow(rgb2.b - rgb1.b, 2)
+    weightR * diffR * diffR +
+    weightG * diffG * diffG +
+    weightB * diffB * diffB
   );
 
-  const maxDistance = Math.sqrt(Math.pow(255, 2) * 3);
+  // Normalize to percentage
+  const maxDistance = Math.sqrt(255 * 255 * (weightR + weightG + weightB));
   const matchPercentage = Math.round((1 - distance / maxDistance) * 100);
-  return matchPercentage;
+  
+  return Math.max(0, Math.min(100, matchPercentage));
 }
 
 async function extractProductColor(imageUrl: string): Promise<string> {
   try {
-    const palette = await Vibrant.from(imageUrl).getPalette();
+    const palette = await Vibrant.from(imageUrl)
+      .quality(1) // Higher quality
+      .maxColorCount(32) // More colors to sample
+      .getPalette();
+
     const colors = [
       palette.Vibrant,
       palette.DarkVibrant,
@@ -40,18 +56,26 @@ async function extractProductColor(imageUrl: string): Promise<string> {
       palette.LightMuted
     ].filter(Boolean);
 
-    colors.sort((a, b) => (b?.population || 0) - (a?.population || 0));
+    // Sort by both population and saturation
+    colors.sort((a, b) => {
+      if (!a || !b) return 0;
+      const aScore = a.population * (1 + a.saturation);
+      const bScore = b.population * (1 + b.saturation);
+      return bScore - aScore;
+    });
 
+    // Find first color within acceptable brightness range
     for (const color of colors) {
       if (color) {
         const [r, g, b] = color.rgb;
-        // Increased upper threshold to catch brighter colors
-        if ((r + g + b) / 3 > 30 && (r + g + b) / 3 < 250) {
+        const brightness = (r + g + b) / 3;
+        if (brightness > 20 && brightness < 235) {
           return `#${color.hex}`;
         }
       }
     }
 
+    // Fallback to most prominent color if none meet criteria
     return colors[0] ? `#${colors[0].hex}` : '#000000';
   } catch (error) {
     console.error('Error extracting color:', error);
@@ -64,37 +88,44 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const targetColor = searchParams.get('color');
 
-    console.log('Target color:', targetColor);
-
     const response = await fetch('https://fakestoreapi.com/products');
     const products = await response.json();
 
     const filteredProducts = products.filter((product: any) => 
-      ALLOWED_CATEGORIES.some(category => product.category.toLowerCase().includes(category))
+      ALLOWED_CATEGORIES.some(category => 
+        product.category?.toLowerCase().includes(category))
     );
 
-    const productsWithColors = await Promise.all(filteredProducts.map(async (product: any) => {
-      const dominantColor = await extractProductColor(product.image);
-      const matchPercentage = targetColor ? calculateColorDistance(targetColor, dominantColor) : 100;
+    console.log(`Processing ${filteredProducts.length} products`);
 
-      console.log(`Product ${product.id}: ${dominantColor} - Match: ${matchPercentage}%`);
+    const productsWithColors = await Promise.all(
+      filteredProducts.map(async (product: any) => {
+        const dominantColor = await extractProductColor(product.image);
+        const matchPercentage = targetColor ? 
+          calculateColorDistance(targetColor, dominantColor) : 100;
 
-      return {
-        ...product,
-        dominantColor,
-        matchPercentage
-      };
-    }));
+        console.log(`Product ${product.id}: ${product.title}`);
+        console.log(`  Color: ${dominantColor}`);
+        console.log(`  Match: ${matchPercentage}%`);
 
+        return {
+          ...product,
+          dominantColor,
+          matchPercentage
+        };
+      })
+    );
+
+    // Sort by match percentage if target color provided
     if (targetColor) {
       productsWithColors.sort((a, b) => b.matchPercentage - a.matchPercentage);
     }
 
     return NextResponse.json(productsWithColors);
   } catch (error) {
-    console.error('Error fetching products:', error);
+    console.error('Error processing products:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch products' },
+      { error: 'Failed to process products' },
       { status: 500 }
     );
   }
