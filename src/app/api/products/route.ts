@@ -1,6 +1,5 @@
 /// <reference types="next" />
 
-
 import { NextResponse } from 'next/server';
 import { amazonProducts } from '../../../lib/amazonProducts';
 
