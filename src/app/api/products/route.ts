@@ -1,10 +1,16 @@
 import { NextResponse } from 'next/server';
 import { amazonProducts } from '../../../lib/amazonProducts';
-import chroma from 'chroma-js';
 
 declare const ColorThief: any;
 
-const BATCH_SIZE = 10;
+const BATCH_SIZE = 50; // Increased batch size
+
+// Pre-compile regex
+const hexRegex = /^%23/;
+
+// Memoize color distance calculations
+const distanceCache = new Map<string, number>();
+const getCacheKey = (c1: string, c2: string) => `${c1}-${c2}`;
 
 async function extractProductColor(imageUrl: string): Promise<string> {
   return new Promise((resolve) => {
@@ -14,7 +20,7 @@ async function extractProductColor(imageUrl: string): Promise<string> {
     img.addEventListener('load', () => {
       try {
         const [r, g, b] = colorThief.getColor(img);
-        resolve(chroma(r, g, b).hex());
+        resolve(`#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')}`);
       } catch (error) {
         console.error('Color extraction error:', error);
         resolve('#000000');
@@ -28,13 +34,34 @@ async function extractProductColor(imageUrl: string): Promise<string> {
 }
 
 function calculateColorDistance(color1: string, color2: string): number {
+  const cacheKey = getCacheKey(color1, color2);
+  if (distanceCache.has(cacheKey)) {
+    return distanceCache.get(cacheKey)!;
+  }
+
   try {
-    // Ensure color strings are properly formatted
-    color1 = decodeURIComponent(color1).replace(/^%23/, '#');
-    color2 = decodeURIComponent(color2).replace(/^%23/, '#');
+    color1 = decodeURIComponent(color1).replace(hexRegex, '#');
+    color2 = decodeURIComponent(color2).replace(hexRegex, '#');
     
-    const deltaE = chroma.deltaE(color1, color2);
-    return Math.max(0, Math.min(100, Math.round((1 - deltaE / 100) * 100)));
+    const r1 = parseInt(color1.slice(1, 3), 16);
+    const g1 = parseInt(color1.slice(3, 5), 16);
+    const b1 = parseInt(color1.slice(5, 7), 16);
+    const r2 = parseInt(color2.slice(1, 3), 16);
+    const g2 = parseInt(color2.slice(3, 5), 16);
+    const b2 = parseInt(color2.slice(5, 7), 16);
+
+    // Weighted RGB distance for better perceptual matching
+    const distance = Math.sqrt(
+      3 * Math.pow(r2 - r1, 2) + 
+      4 * Math.pow(g2 - g1, 2) + 
+      2 * Math.pow(b2 - b1, 2)
+    );
+    
+    const maxDistance = Math.sqrt(255 * 255 * 9);
+    const percentage = Math.round((1 - distance / maxDistance) * 100);
+    
+    distanceCache.set(cacheKey, percentage);
+    return percentage;
   } catch (error) {
     console.error('Color calculation error:', error);
     return 0;
@@ -44,7 +71,7 @@ function calculateColorDistance(color1: string, color2: string): number {
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
-    const targetColor = searchParams.get('color')?.replace(/^%23/, '#');
+    const targetColor = searchParams.get('color')?.replace(hexRegex, '#');
     const source = searchParams.get('source');
 
     let products = source === 'amazon' ? amazonProducts : [];
