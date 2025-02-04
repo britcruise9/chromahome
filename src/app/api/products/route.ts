@@ -2,7 +2,7 @@
 
 
 import { NextResponse } from 'next/server';
-import { amazonProducts } from '../../../lib/amazonProducts.js';
+import { amazonProducts } from '../../../lib/amazonProducts';
 
 declare const ColorThief: any;
 
