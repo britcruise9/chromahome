@@ -17,14 +17,21 @@ interface Product {
   matchPercentage: number;
 }
 
-function rgbToHsl(r: number, g: number, b: number): [number, number, number] {
+const hexToRgb = (hex: string): [number, number, number] => {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  return [r, g, b];
+};
+
+const rgbToHsl = (r: number, g: number, b: number): [number, number, number] => {
   r /= 255;
   g /= 255;
   b /= 255;
-  const max = Math.max(r, g, b),
-    min = Math.min(r, g, b);
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
   let h = 0,
-    s,
+    s = 0,
     l = (max + min) / 2;
 
   if (max !== min) {
@@ -43,11 +50,10 @@ function rgbToHsl(r: number, g: number, b: number): [number, number, number] {
     }
     h /= 6;
   }
-
   return [h * 360, s * 100, l * 100];
-}
+};
 
-function hslToRgb(h: number, s: number, l: number): [number, number, number] {
+const hslToRgb = (h: number, s: number, l: number): [number, number, number] => {
   h /= 360;
   s /= 100;
   l /= 100;
@@ -59,22 +65,30 @@ function hslToRgb(h: number, s: number, l: number): [number, number, number] {
     const hue2rgb = (p: number, q: number, t: number) => {
       if (t < 0) t += 1;
       if (t > 1) t -= 1;
-      if (t < 1/6) return p + (q - p) * 6 * t;
-      if (t < 1/2) return q;
-      if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+      if (t < 1 / 6) return p + (q - p) * 6 * t;
+      if (t < 1 / 2) return q;
+      if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
       return p;
     };
-
     const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
     const p = 2 * l - q;
-
-    r = hue2rgb(p, q, h + 1/3);
+    r = hue2rgb(p, q, h + 1 / 3);
     g = hue2rgb(p, q, h);
-    b = hue2rgb(p, q, h - 1/3);
+    b = hue2rgb(p, q, h - 1 / 3);
   }
-
   return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
-}
+};
+
+const rgbToHex = (r: number, g: number, b: number): string => {
+  return '#' + [r, g, b].map(x => x.toString(16).padStart(2, '0')).join('');
+};
+
+const getComplementaryColor = (hex: string): string => {
+  const rgb = hexToRgb(hex);
+  const [h, s, l] = rgbToHsl(rgb[0], rgb[1], rgb[2]);
+  const compRgb = hslToRgb((h + 180) % 360, s, l);
+  return rgbToHex(compRgb[0], compRgb[1], compRgb[2]);
+};
 
 const extractColor = async (file: File): Promise<string> => {
   return new Promise((resolve) => {
@@ -122,11 +136,7 @@ export default function ColorMatcher() {
     try {
       const color = await extractColor(file);
       setSelectedColor(color);
-      const rgb = hexToRgb(color);
-      const [h, s, l] = rgbToHsl(rgb[0], rgb[1], rgb[2]);
-      const compRgb = hslToRgb((h + 180) % 360, s, l);
-      const compHex = rgbToHex(compRgb[0], compRgb[1], compRgb[2]);
-      setComplementaryColor(compHex);
+      setComplementaryColor(getComplementaryColor(color));
       await fetchProducts(color);
     } catch (error) {
       console.error('Error processing image:', error);
@@ -137,11 +147,7 @@ export default function ColorMatcher() {
 
   const handleColorClick = async (color: string) => {
     setSelectedColor(color);
-    const rgb = hexToRgb(color);
-    const [h, s, l] = rgbToHsl(rgb[0], rgb[1], rgb[2]);
-    const compRgb = hslToRgb((h + 180) % 360, s, l);
-    const compHex = rgbToHex(compRgb[0], compRgb[1], compRgb[2]);
-    setComplementaryColor(compHex);
+    setComplementaryColor(getComplementaryColor(color));
     await fetchProducts(color);
   };
 
