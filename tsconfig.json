@@ -4,7 +4,6 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "types": ["next", "node"],
     "allowSyntheticDefaultImports": true,
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -13,14 +12,12 @@
     "noEmit": true,
     "incremental": true,
     "esModuleInterop": true,
-    "target": "ES2020",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "moduleSuffixes": [".ts", ".tsx", ".js", ".jsx"],
+    "module": "esnext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["src", ".next/types/**/*.ts", "next-server.d.ts"],
+  "include": ["src", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
