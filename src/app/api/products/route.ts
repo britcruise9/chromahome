@@ -33,10 +33,7 @@ function calculateColorDistance(color1: string, color2: string): number {
     color1 = decodeURIComponent(color1).replace(/^%23/, '#');
     color2 = decodeURIComponent(color2).replace(/^%23/, '#');
     
-    const lab1 = chroma(color1).lab();
-    const lab2 = chroma(color2).lab();
-    const deltaE = chroma.deltaE(lab1, lab2);
-    
+    const deltaE = chroma.deltaE(color1, color2);
     return Math.max(0, Math.min(100, Math.round((1 - deltaE / 100) * 100)));
   } catch (error) {
     console.error('Color calculation error:', error);
