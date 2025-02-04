@@ -8,6 +8,7 @@ export interface AmazonProduct {
   image: string;
   category: string;
   affiliateLink: string;
+  dominantColor?: string; // add this property (optional or required as needed)
 }
 
 export const amazonProducts: AmazonProduct[] = [
