@@ -96,29 +96,26 @@ export default function ColorMatcher() {
   const [products, setProducts] = useState<Product[]>([]);
 
   // Updated extractColor function with image scaling
-  const extractColor = async (file: File): Promise<string> => {
-    return new Promise((resolve) => {
-      const canvas = document.createElement('canvas');
-      const img = new Image();
-      img.onload = () => {
-        const ctx = canvas.getContext('2d', { willReadFrequently: true });
-        if (!ctx) return resolve('#000000');
-        const scaleFactor = 0.1; // Scale down to 10% for faster processing
-        canvas.width = img.width * scaleFactor;
-        canvas.height = img.height * scaleFactor;
-        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-        const centerX = Math.floor(canvas.width / 2);
-        const centerY = Math.floor(canvas.height / 2);
-        const pixel = ctx.getImageData(centerX, centerY, 1, 1).data;
-        const hex = '#' + [pixel[0], pixel[1], pixel[2]]
-          .map((x) => x.toString(16).padStart(2, '0'))
-          .join('');
-        resolve(hex);
-      };
-      img.onerror = () => resolve('#000000');
-      img.src = URL.createObjectURL(file);
+const extractColor = async (file: File): Promise<string> => {
+  return new Promise((resolve) => {
+    const img = new Image();
+    const colorThief = new ColorThief();
+    
+    img.addEventListener('load', () => {
+      try {
+        const [r, g, b] = colorThief.getColor(img);
+        resolve(`#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')}`);
+      } catch (error) {
+        console.error('Color extraction error:', error);
+        resolve('#000000');
+      }
     });
-  };
+
+    img.crossOrigin = 'Anonymous';
+    img.onerror = () => resolve('#000000');
+    img.src = URL.createObjectURL(file);
+  });
+};
 
   const fetchProducts = async (color?: string) => {
     try {
