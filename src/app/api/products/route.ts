@@ -1,100 +1,57 @@
 import { NextResponse } from 'next/server';
-import Vibrant from 'node-vibrant';
 import { amazonProducts } from '../../../lib/amazonProducts';
 
-const ALLOWED_CATEGORIES = ['clothing', 'jewelery', 'furniture', 'home decor'];
-const CACHE_DURATION = 3600; // seconds
+declare const ColorThief: any;
+
 const BATCH_SIZE = 10;
 
-// In-memory cache for dominant colors keyed by image URL.
-const colorCache: { [url: string]: string } = {};
-
 async function extractProductColor(imageUrl: string): Promise<string> {
-  if (colorCache[imageUrl]) return colorCache[imageUrl];
-  try {
-    const palette = await Vibrant.from(imageUrl)
-      .maxColorCount(64)
-      .quality(10)
-      .getPalette();
-    if (!palette) throw new Error('Failed to extract palette');
+  return new Promise((resolve) => {
+    const img = new Image();
+    const colorThief = new ColorThief();
 
-    const colors = [
-      palette.Vibrant,
-      palette.DarkVibrant,
-      palette.LightVibrant,
-      palette.Muted,
-      palette.DarkMuted,
-      palette.LightMuted
-    ].filter(Boolean);
-
-    let dominantColor = '#000000';
-    if (colors.length > 0) {
-      for (const color of colors) {
-        if (color && color.rgb) {
-          const [r, g, b] = color.rgb;
-          if ((r + g + b) / 3 > 30 && (r + g + b) / 3 < 240) {
-            dominantColor = color.hex;
-            break;
-          }
-        }
+    img.addEventListener('load', () => {
+      try {
+        const [r, g, b] = colorThief.getColor(img);
+        resolve(`#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')}`);
+      } catch (error) {
+        console.error('Color extraction error:', error);
+        resolve('#000000');
       }
-    }
-    colorCache[imageUrl] = dominantColor;
-    return dominantColor;
-  } catch (error) {
-    console.error('Error extracting color:', error, 'URL:', imageUrl);
-    colorCache[imageUrl] = '#000000';
-    return '#000000';
-  }
+    });
+
+    img.crossOrigin = 'Anonymous';
+    img.onerror = () => resolve('#000000');
+    img.src = imageUrl;
+  });
 }
 
 function calculateColorDistance(color1: string, color2: string): number {
-  try {
-    const rgb1 = {
-      r: parseInt(color1.slice(1, 3), 16),
-      g: parseInt(color1.slice(3, 5), 16),
-      b: parseInt(color1.slice(5, 7), 16)
-    };
-    const rgb2 = {
-      r: parseInt(color2.slice(1, 3), 16),
-      g: parseInt(color2.slice(3, 5), 16),
-      b: parseInt(color2.slice(5, 7), 16)
-    };
-    const distance = Math.sqrt(
-      Math.pow(rgb2.r - rgb1.r, 2) +
-      Math.pow(rgb2.g - rgb1.g, 2) +
-      Math.pow(rgb2.b - rgb1.b, 2)
-    );
-    const maxDistance = Math.sqrt(255 * 255 * 3);
-    return Math.round((1 - distance / maxDistance) * 100);
-  } catch (error) {
-    console.error('Error calculating color distance:', error);
-    return 0;
-  }
+  const r1 = parseInt(color1.slice(1, 3), 16);
+  const g1 = parseInt(color1.slice(3, 5), 16);
+  const b1 = parseInt(color1.slice(5, 7), 16);
+  const r2 = parseInt(color2.slice(1, 3), 16);
+  const g2 = parseInt(color2.slice(3, 5), 16);
+  const b2 = parseInt(color2.slice(5, 7), 16);
+
+  const distance = Math.sqrt(
+    Math.pow(r2 - r1, 2) +
+    Math.pow(g2 - g1, 2) +
+    Math.pow(b2 - b1, 2)
+  );
+  const maxDistance = Math.sqrt(255 * 255 * 3);
+  return Math.round((1 - distance / maxDistance) * 100);
 }
 
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const targetColor = searchParams.get('color');
-    const source = searchParams.get('source'); // 'amazon' or leave empty
+    const source = searchParams.get('source');
 
-    let products: any[] = [];
-    if (source === 'amazon') {
-      products = amazonProducts;
-    } else {
-      const response = await fetch('https://fakestoreapi.com/products');
-      if (!response.ok) throw new Error('Failed to fetch products');
-      products = await response.json();
-      products = products.filter((product: any) =>
-        ALLOWED_CATEGORIES.some(category =>
-          product.category?.toLowerCase().includes(category)
-        )
-      );
-    }
+    let products = source === 'amazon' ? amazonProducts : [];
 
-    let productsWithColors: any[] = [];
-    // Process products in batches to extract dominant colors.
+    let productsWithColors = [];
     for (let i = 0; i < products.length; i += BATCH_SIZE) {
       const batch = products.slice(i, i + BATCH_SIZE);
       const results = await Promise.all(
@@ -112,7 +69,7 @@ export async function GET(request: Request) {
     }
 
     return NextResponse.json(productsWithColors, {
-      headers: { 'Cache-Control': `public, max-age=${CACHE_DURATION}` }
+      headers: { 'Cache-Control': 'public, max-age=3600' }
     });
   } catch (error) {
     console.error('Error:', error);
