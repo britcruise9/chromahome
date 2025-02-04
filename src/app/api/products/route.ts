@@ -1,45 +1,45 @@
-/// <reference types="next" />
 
 import { NextResponse } from 'next/server';
 import { amazonProducts } from '../../../lib/amazonProducts';
 
 declare const ColorThief: any;
 
-const BATCH_SIZE = 50;
+const BATCH_SIZE = 50; // Increased batch size
+
+// Pre-compile regex
 const hexRegex = /^%23/;
+
+// Memoize color distance calculations
 const distanceCache = new Map<string, number>();
-const getCacheKey = (c1: string, c2: string) => `${c1}-${c2}`;
+const getCacheKey = (c1: string, c2: string) => ${c1}-${c2};
 
 async function extractProductColor(imageUrl: string): Promise<string> {
   return new Promise((resolve) => {
-    try {
-      const img = new Image();
-      const colorThief = new ColorThief();
-      
-      img.addEventListener('load', () => {
-        try {
-          const [r, g, b] = colorThief.getColor(img);
-          resolve(`#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`);
-        } catch (error) {
-          console.error('Color extraction error:', error);
-          resolve('#000000');
-        }
-      });
-      
-      img.crossOrigin = 'Anonymous';
-      img.onerror = () => resolve('#000000');
-      img.src = imageUrl;
-    } catch (error) {
-      console.error('Error in extractProductColor:', error);
-      resolve('#000000');
-    }
+    const img = new Image();
+    const colorThief = new ColorThief();
+
+    img.addEventListener('load', () => {
+      try {
+        const [r, g, b] = colorThief.getColor(img);
+        resolve(#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')});
+      } catch (error) {
+        console.error('Color extraction error:', error);
+        resolve('#000000');
+      }
+    });
+
+    img.crossOrigin = 'Anonymous';
+    img.onerror = () => resolve('#000000');
+    img.src = imageUrl;
   });
 }
 
 function calculateColorDistance(color1: string, color2: string): number {
   const cacheKey = getCacheKey(color1, color2);
-  if (distanceCache.has(cacheKey)) return distanceCache.get(cacheKey)!;
-  
+  if (distanceCache.has(cacheKey)) {
+    return distanceCache.get(cacheKey)!;
+  }
+
   try {
     color1 = decodeURIComponent(color1).replace(hexRegex, '#');
     color2 = decodeURIComponent(color2).replace(hexRegex, '#');
@@ -50,12 +50,14 @@ function calculateColorDistance(color1: string, color2: string): number {
     const r2 = parseInt(color2.slice(1, 3), 16);
     const g2 = parseInt(color2.slice(3, 5), 16);
     const b2 = parseInt(color2.slice(5, 7), 16);
-    
+
+    // Weighted RGB distance for better perceptual matching
     const distance = Math.sqrt(
-      3 * Math.pow(r2 - r1, 2) +
-      4 * Math.pow(g2 - g1, 2) +
+      3 * Math.pow(r2 - r1, 2) + 
+      4 * Math.pow(g2 - g1, 2) + 
       2 * Math.pow(b2 - b1, 2)
     );
+    
     const maxDistance = Math.sqrt(255 * 255 * 9);
     const percentage = Math.round((1 - distance / maxDistance) * 100);
     
@@ -80,14 +82,9 @@ export async function GET(request: Request) {
       const batch = products.slice(i, i + BATCH_SIZE);
       const results = await Promise.all(
         batch.map(async (product: any) => {
-          try {
-            const dominantColor = await extractProductColor(product.image);
-            const matchPercentage = targetColor ? calculateColorDistance(targetColor, dominantColor) : 100;
-            return { ...product, dominantColor, matchPercentage };
-          } catch (error) {
-            console.error('Error processing product', product.id, error);
-            return { ...product, dominantColor: "#000000", matchPercentage: 0 };
-          }
+          const dominantColor = await extractProductColor(product.image);
+          const matchPercentage = targetColor ? calculateColorDistance(targetColor, dominantColor) : 100;
+          return { ...product, dominantColor, matchPercentage };
         })
       );
       productsWithColors.push(...results);
@@ -99,7 +96,8 @@ export async function GET(request: Request) {
 
     return NextResponse.json(productsWithColors);
   } catch (error) {
-    console.error('Error in GET:', error);
+    console.error('Error:', error);
     return NextResponse.json({ error: 'Failed to process products' }, { status: 500 });
   }
 }
+
