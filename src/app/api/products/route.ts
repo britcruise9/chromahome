@@ -1,6 +1,5 @@
-// /src/lib/amazonProducts.ts remains unchanged
+/// <reference types="next" />
 
-// /src/app/api/products/route.ts
 
 import { NextResponse } from 'next/server';
 import { amazonProducts } from '../../../lib/amazonProducts';
