@@ -451,14 +451,5 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81xD7Sp72CL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08XYZZ5K4?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
-  },
-  {
-    "id": 50,
-    "title": "Amazon Product 50",
-    "price": 0.0,
-    "description": "MIULEE Premium Mustard Yellow Decorative Throw Pillow Covers 18x18 Inch, Soft Velvet Accent for Home Decor",
-    "image": "https://m.media-amazon.com/images/I/81newexample.jpg",
-    "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B0NEWEXAMPLE?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
   }
 ];
