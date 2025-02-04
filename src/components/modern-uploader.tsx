@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { Upload } from "lucide-react";
 
 declare const ColorThief: any;
@@ -25,7 +25,9 @@ const hexToRgb = (hex: string) => {
 };
 
 const rgbToHsl = (r: number, g: number, b: number) => {
-  r /= 255; g /= 255; b /= 255;
+  r /= 255; 
+  g /= 255; 
+  b /= 255;
   const max = Math.max(r, g, b);
   const min = Math.min(r, g, b);
   let h = 0, s = 0, l = (max + min) / 2;
@@ -33,9 +35,15 @@ const rgbToHsl = (r: number, g: number, b: number) => {
     const d = max - min;
     s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
     switch (max) {
-      case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-      case g: h = (b - r) / d + 2; break;
-      case b: h = (r - g) / d + 4; break;
+      case r: 
+        h = (g - b) / d + (g < b ? 6 : 0); 
+        break;
+      case g: 
+        h = (b - r) / d + 2; 
+        break;
+      case b: 
+        h = (r - g) / d + 4; 
+        break;
     }
     h /= 6;
   }
@@ -43,7 +51,9 @@ const rgbToHsl = (r: number, g: number, b: number) => {
 };
 
 const hslToRgb = (h: number, s: number, l: number) => {
-  h /= 360; s /= 100; l /= 100;
+  h /= 360; 
+  s /= 100; 
+  l /= 100;
   let r: number, g: number, b: number;
   if (s === 0) {
     r = g = b = l;
@@ -65,16 +75,15 @@ const hslToRgb = (h: number, s: number, l: number) => {
   return { r: Math.round(r * 255), g: Math.round(g * 255), b: Math.round(b * 255) };
 };
 
-const rgbToHex = (r: number, g: number, b: number) => {
-  return "#" + [r, g, b].map(x => x.toString(16).padStart(2, "0")).join("");
+const rgbToHex = (r: number, g: number, b: number): string => {
+  return '#' + [r, g, b].map(x => x.toString(16).padStart(2, '0')).join('');
 };
 
-const getComplementaryColor = (hex: string) => {
+const getComplementaryColor = (hex: string): string => {
   const rgb = hexToRgb(hex);
-  const hsl = rgbToHsl(rgb.r, rgb.g, rgb.b);
-  hsl.h = (hsl.h + 180) % 360;
-  const complementaryRgb = hslToRgb(hsl.h, hsl.s, hsl.l);
-  return rgbToHex(complementaryRgb.r, complementaryRgb.g, complementaryRgb.b);
+  const { h, s, l } = rgbToHsl(rgb.r, rgb.g, rgb.b);
+  const compRgb = hslToRgb((h + 180) % 360, s, l);
+  return rgbToHex(compRgb.r, compRgb.g, compRgb.b);
 };
 
 const extractColor = async (file: File): Promise<string> => {
@@ -85,7 +94,7 @@ const extractColor = async (file: File): Promise<string> => {
     img.addEventListener('load', () => {
       try {
         const [r, g, b] = colorThief.getColor(img);
-        resolve(`#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')}`);
+        resolve(`#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`);
       } catch (error) {
         console.error('Color extraction error:', error);
         resolve('#000000');
@@ -97,6 +106,8 @@ const extractColor = async (file: File): Promise<string> => {
     img.src = URL.createObjectURL(file);
   });
 };
+
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 const ModernUploader = () => {
   const [view, setView] = useState("initial");
@@ -179,12 +190,7 @@ const ModernUploader = () => {
               ${isDragging ? "border-white/50 bg-white/10" : "border-white/20 hover:border-white/30"}
               h-72 flex items-center justify-center`}
           >
-            <input
-              type="file"
-              accept="image/*"
-              onChange={handleFileInput}
-              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-            />
+            <input type="file" className="hidden" accept="image/*" onChange={handleFileInput} />
             <div className="text-center">
               <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
               <p className="text-lg text-white/80">Search your color by image</p>
@@ -243,7 +249,7 @@ const ModernUploader = () => {
                   <div className="aspect-square overflow-hidden">
                     <img
                       src={product.image}
-                      alt="Product"
+                      alt={product.title}
                       className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>

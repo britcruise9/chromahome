@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -98,7 +99,7 @@ const extractColor = async (file: File): Promise<string> => {
     img.addEventListener('load', () => {
       try {
         const [r, g, b] = colorThief.getColor(img);
-        resolve(`#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')}`);
+        resolve(#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')});
       } catch (error) {
         console.error('Color extraction error:', error);
         resolve('#000000');
@@ -119,7 +120,7 @@ export default function ColorMatcher() {
 
   const fetchProducts = async (color?: string) => {
     try {
-      const response = await fetch(`/api/products${color ? `?color=${encodeURIComponent(color)}` : ''}`);
+      const response = await fetch(/api/products${color ? ?color=${encodeURIComponent(color)} : ''});
       const data = await response.json();
       setProducts(data);
     } catch (error) {
