@@ -11,7 +11,7 @@ const hexRegex = /^%23/;
 
 // Memoize color distance calculations
 const distanceCache = new Map<string, number>();
-const getCacheKey = (c1: string, c2: string) => ${c1}-${c2};
+const getCacheKey = (c1: string, c2: string) => '${c1}-${c2}';
 
 async function extractProductColor(imageUrl: string): Promise<string> {
   return new Promise((resolve) => {
