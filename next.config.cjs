@@ -12,7 +12,12 @@ const nextConfig = {
         destination: '/api/:path*'
       }
     ];
+  },
+  webpack: (config) => {
+    // Ensure that Webpack will resolve .ts and .tsx files when no extension is provided.
+    config.resolve.extensions.push('.ts', '.tsx');
+    return config;
   }
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
