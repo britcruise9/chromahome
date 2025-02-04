@@ -1,3 +1,5 @@
+// /src/lib/amazonProducts.ts
+
 export interface AmazonProduct {
   id: number;
   title: string;
@@ -460,4 +462,3 @@ export const amazonProducts: AmazonProduct[] = [
     "affiliateLink": "https://www.amazon.com/dp/B0NEWEXAMPLE?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
   }
 ];
-
