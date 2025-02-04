@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "ts-node": "^10.9.1",
-    "get-image-colors": "3.0.0",
+    "get-image-colors": "4.0.1",
     "canvas": "^2.11.2"
   }
 }
