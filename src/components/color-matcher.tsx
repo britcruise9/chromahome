@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Upload } from 'lucide-react';
 
+declare const ColorThief: any;
+
 interface Product {
   id: number;
   title: string;
@@ -57,45 +59,23 @@ function hslToRgb(h: number, s: number, l: number): [number, number, number] {
     const hue2rgb = (p: number, q: number, t: number) => {
       if (t < 0) t += 1;
       if (t > 1) t -= 1;
-      if (t < 1 / 6) return p + (q - p) * 6 * t;
-      if (t < 1 / 2) return q;
-      if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+      if (t < 1/6) return p + (q - p) * 6 * t;
+      if (t < 1/2) return q;
+      if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
       return p;
     };
+
     const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
     const p = 2 * l - q;
-    r = hue2rgb(p, q, h + 1 / 3);
+
+    r = hue2rgb(p, q, h + 1/3);
     g = hue2rgb(p, q, h);
-    b = hue2rgb(p, q, h - 1 / 3);
+    b = hue2rgb(p, q, h - 1/3);
   }
 
   return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
 }
 
-function hexToRgb(hex: string): [number, number, number] {
-  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return result ? [parseInt(result[1], 16), parseInt(result[2], 16), parseInt(result[3], 16)] : [0, 0, 0];
-}
-
-function rgbToHex(r: number, g: number, b: number): string {
-  return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
-}
-
-function getComplementaryColor(hex: string): string {
-  const [r, g, b] = hexToRgb(hex);
-  let [h, s, l] = rgbToHsl(r, g, b);
-  h = (h + 180) % 360;
-  const [r2, g2, b2] = hslToRgb(h, s, l);
-  return rgbToHex(r2, g2, b2);
-}
-
-export default function ColorMatcher() {
-  const [selectedColor, setSelectedColor] = useState<string | null>(null);
-  const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
-  const [isProcessing, setIsProcessing] = useState(false);
-  const [products, setProducts] = useState<Product[]>([]);
-
-  // Updated extractColor function with image scaling
 const extractColor = async (file: File): Promise<string> => {
   return new Promise((resolve) => {
     const img = new Image();
@@ -117,6 +97,12 @@ const extractColor = async (file: File): Promise<string> => {
   });
 };
 
+export default function ColorMatcher() {
+  const [selectedColor, setSelectedColor] = useState<string | null>(null);
+  const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [products, setProducts] = useState<Product[]>([]);
+
   const fetchProducts = async (color?: string) => {
     try {
       const response = await fetch(`/api/products${color ? `?color=${encodeURIComponent(color)}` : ''}`);
@@ -136,7 +122,11 @@ const extractColor = async (file: File): Promise<string> => {
     try {
       const color = await extractColor(file);
       setSelectedColor(color);
-      setComplementaryColor(getComplementaryColor(color));
+      const rgb = hexToRgb(color);
+      const [h, s, l] = rgbToHsl(rgb[0], rgb[1], rgb[2]);
+      const compRgb = hslToRgb((h + 180) % 360, s, l);
+      const compHex = rgbToHex(compRgb[0], compRgb[1], compRgb[2]);
+      setComplementaryColor(compHex);
       await fetchProducts(color);
     } catch (error) {
       console.error('Error processing image:', error);
@@ -147,7 +137,11 @@ const extractColor = async (file: File): Promise<string> => {
 
   const handleColorClick = async (color: string) => {
     setSelectedColor(color);
-    setComplementaryColor(getComplementaryColor(color));
+    const rgb = hexToRgb(color);
+    const [h, s, l] = rgbToHsl(rgb[0], rgb[1], rgb[2]);
+    const compRgb = hslToRgb((h + 180) % 360, s, l);
+    const compHex = rgbToHex(compRgb[0], compRgb[1], compRgb[2]);
+    setComplementaryColor(compHex);
     await fetchProducts(color);
   };
 
