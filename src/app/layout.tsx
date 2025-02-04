@@ -1,12 +1,14 @@
+// src/app/layout.tsx
+import "./globals.css";
+import { Inter } from "next/font/google";
+import Script from "next/script";
+
+const inter = Inter({ subsets: ["latin"] });
+
 export const metadata = {
   title: "ChromaHome",
   description: "Turn Paint Colors Into Perfect Decor",
 };
-
-import "./globals.css";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -15,10 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
-      </head>
       <body className={inter.className}>
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js" />
         {children}
       </body>
     </html>
