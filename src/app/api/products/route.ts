@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { amazonProducts } from '../../../lib/amazonProducts';
+import chroma from 'chroma-js';
 
 declare const ColorThief: any;
 
@@ -13,7 +14,7 @@ async function extractProductColor(imageUrl: string): Promise<string> {
     img.addEventListener('load', () => {
       try {
         const [r, g, b] = colorThief.getColor(img);
-        resolve(`#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')}`);
+        resolve(chroma(r, g, b).hex());
       } catch (error) {
         console.error('Color extraction error:', error);
         resolve('#000000');
@@ -32,20 +33,11 @@ function calculateColorDistance(color1: string, color2: string): number {
     color1 = decodeURIComponent(color1).replace(/^%23/, '#');
     color2 = decodeURIComponent(color2).replace(/^%23/, '#');
     
-    const r1 = parseInt(color1.slice(1, 3), 16);
-    const g1 = parseInt(color1.slice(3, 5), 16);
-    const b1 = parseInt(color1.slice(5, 7), 16);
-    const r2 = parseInt(color2.slice(1, 3), 16);
-    const g2 = parseInt(color2.slice(3, 5), 16);
-    const b2 = parseInt(color2.slice(5, 7), 16);
-
-    const distance = Math.sqrt(
-      Math.pow(r2 - r1, 2) +
-      Math.pow(g2 - g1, 2) +
-      Math.pow(b2 - b1, 2)
-    );
-    const maxDistance = Math.sqrt(255 * 255 * 3);
-    return Math.round((1 - distance / maxDistance) * 100);
+    const lab1 = chroma(color1).lab();
+    const lab2 = chroma(color2).lab();
+    const deltaE = chroma.deltaE(lab1, lab2);
+    
+    return Math.max(0, Math.min(100, Math.round((1 - deltaE / 100) * 100)));
   } catch (error) {
     console.error('Color calculation error:', error);
     return 0;
