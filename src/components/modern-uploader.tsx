@@ -65,16 +65,15 @@ const hslToRgb = (h: number, s: number, l: number) => {
   return { r: Math.round(r * 255), g: Math.round(g * 255), b: Math.round(b * 255) };
 };
 
-const rgbToHex = (r: number, g: number, b: number) => {
-  return "#" + [r, g, b].map(x => x.toString(16).padStart(2, "0")).join("");
+const rgbToHex = (r: number, g: number, b: number): string => {
+  return '#' + [r, g, b].map(x => x.toString(16).padStart(2, '0')).join('');
 };
 
-const getComplementaryColor = (hex: string) => {
+const getComplementaryColor = (hex: string): string => {
   const rgb = hexToRgb(hex);
   const hsl = rgbToHsl(rgb.r, rgb.g, rgb.b);
-  hsl.h = (hsl.h + 180) % 360;
-  const complementaryRgb = hslToRgb(hsl.h, hsl.s, hsl.l);
-  return rgbToHex(complementaryRgb.r, complementaryRgb.g, complementaryRgb.b);
+  const compRgb = hslToRgb((hsl.h + 180) % 360, hsl.s, hsl.l);
+  return rgbToHex(compRgb.r, compRgb.g, compRgb.b);
 };
 
 const extractColor = async (file: File): Promise<string> => {
@@ -85,7 +84,7 @@ const extractColor = async (file: File): Promise<string> => {
     img.addEventListener('load', () => {
       try {
         const [r, g, b] = colorThief.getColor(img);
-        resolve(#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')});
+        resolve(`#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`);
       } catch (error) {
         console.error('Color extraction error:', error);
         resolve('#000000');
@@ -109,7 +108,7 @@ const ModernUploader = () => {
   const fetchProducts = async (color: string) => {
     setProducts([]);
     try {
-      const response = await fetch(/api/products?source=amazon&color=${encodeURIComponent(color)});
+      const response = await fetch(`/api/products?source=amazon&color=${encodeURIComponent(color)}`);
       const data = await response.json();
       setProducts(data);
       setView("results");
@@ -161,7 +160,7 @@ const ModernUploader = () => {
 
   return (
     <div className="w-full min-h-screen bg-gradient-to-br from-[#0F172A] to-[#1E293B]">
-      <div className={transition-all duration-500 ${view !== "initial" ? "pt-8 pb-4" : "pt-32 pb-16"}}>
+      <div className={`transition-all duration-500 ${view !== "initial" ? "pt-8 pb-4" : "pt-32 pb-16"}`}>
         <h1 className="text-center text-6xl font-bold">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500 animate-gradient bg-[length:200%_auto]">
             CHROMA
@@ -175,16 +174,11 @@ const ModernUploader = () => {
             onDrop={handleDrop}
             onDragOver={handleDragOver}
             onDragLeave={handleDragLeave}
-            className={relative rounded-2xl border-2 border-dashed transition-all duration-300 
+            className={`relative rounded-2xl border-2 border-dashed transition-all duration-300 
               ${isDragging ? "border-white/50 bg-white/10" : "border-white/20 hover:border-white/30"}
-              h-72 flex items-center justify-center}
+              h-72 flex items-center justify-center`}
           >
-            <input
-              type="file"
-              accept="image/*"
-              onChange={handleFileInput}
-              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-            />
+            <input type="file" className="hidden" accept="image/*" onChange={handleFileInput} />
             <div className="text-center">
               <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
               <p className="text-lg text-white/80">Search your color by image</p>
@@ -198,8 +192,8 @@ const ModernUploader = () => {
           <div className="flex justify-center items-center gap-8 mb-12">
             <div className="flex flex-col items-center gap-2">
               <div
-                className={w-24 h-24 rounded-xl shadow-lg cursor-pointer transition-all
-                  ${selectedColor === activeColor ? "ring-2 ring-white scale-105" : "hover:ring-2 hover:ring-white/20"}}
+                className={`w-24 h-24 rounded-xl shadow-lg cursor-pointer transition-all
+                  ${selectedColor === activeColor ? "ring-2 ring-white scale-105" : "hover:ring-2 hover:ring-white/20"}`}
                 style={{ backgroundColor: selectedColor || "#000000" }}
                 onClick={() => selectedColor && handleColorClick(selectedColor)}
               />
@@ -209,8 +203,8 @@ const ModernUploader = () => {
             {complementaryColor && (
               <div className="flex flex-col items-center gap-2">
                 <div
-                  className={w-24 h-24 rounded-xl shadow-lg cursor-pointer transition-all
-                    ${complementaryColor === activeColor ? "ring-2 ring-white scale-105" : "hover:ring-2 hover:ring-white/20"}}
+                  className={`w-24 h-24 rounded-xl shadow-lg cursor-pointer transition-all
+                    ${complementaryColor === activeColor ? "ring-2 ring-white scale-105" : "hover:ring-2 hover:ring-white/20"}`}
                   style={{ backgroundColor: complementaryColor }}
                   onClick={() => handleColorClick(complementaryColor)}
                 />
@@ -243,7 +237,7 @@ const ModernUploader = () => {
                   <div className="aspect-square overflow-hidden">
                     <img
                       src={product.image}
-                      alt="Product"
+                      alt={product.title}
                       className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
