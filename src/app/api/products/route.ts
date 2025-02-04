@@ -27,33 +27,40 @@ async function extractProductColor(imageUrl: string): Promise<string> {
 }
 
 function calculateColorDistance(color1: string, color2: string): number {
-  const r1 = parseInt(color1.slice(1, 3), 16);
-  const g1 = parseInt(color1.slice(3, 5), 16);
-  const b1 = parseInt(color1.slice(5, 7), 16);
-  const r2 = parseInt(color2.slice(1, 3), 16);
-  const g2 = parseInt(color2.slice(3, 5), 16);
-  const b2 = parseInt(color2.slice(5, 7), 16);
+  try {
+    // Ensure color strings are properly formatted
+    color1 = decodeURIComponent(color1).replace(/^%23/, '#');
+    color2 = decodeURIComponent(color2).replace(/^%23/, '#');
+    
+    const r1 = parseInt(color1.slice(1, 3), 16);
+    const g1 = parseInt(color1.slice(3, 5), 16);
+    const b1 = parseInt(color1.slice(5, 7), 16);
+    const r2 = parseInt(color2.slice(1, 3), 16);
+    const g2 = parseInt(color2.slice(3, 5), 16);
+    const b2 = parseInt(color2.slice(5, 7), 16);
 
-  // Weight the RGB channels according to human perception
-  const weightedDistance = Math.sqrt(
-    2 * Math.pow(r2 - r1, 2) + 
-    4 * Math.pow(g2 - g1, 2) + 
-    3 * Math.pow(b2 - b1, 2)
-  );
-  
-  const maxWeightedDistance = Math.sqrt(255 * 255 * 9); // Max possible weighted distance
-  return Math.round((1 - weightedDistance / maxWeightedDistance) * 100);
+    const distance = Math.sqrt(
+      Math.pow(r2 - r1, 2) +
+      Math.pow(g2 - g1, 2) +
+      Math.pow(b2 - b1, 2)
+    );
+    const maxDistance = Math.sqrt(255 * 255 * 3);
+    return Math.round((1 - distance / maxDistance) * 100);
+  } catch (error) {
+    console.error('Color calculation error:', error);
+    return 0;
+  }
 }
 
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
-    const targetColor = searchParams.get('color');
+    const targetColor = searchParams.get('color')?.replace(/^%23/, '#');
     const source = searchParams.get('source');
 
     let products = source === 'amazon' ? amazonProducts : [];
-
     let productsWithColors = [];
+    
     for (let i = 0; i < products.length; i += BATCH_SIZE) {
       const batch = products.slice(i, i + BATCH_SIZE);
       const results = await Promise.all(
@@ -70,9 +77,7 @@ export async function GET(request: Request) {
       productsWithColors.sort((a, b) => b.matchPercentage - a.matchPercentage);
     }
 
-    return NextResponse.json(productsWithColors, {
-      headers: { 'Cache-Control': 'public, max-age=3600' }
-    });
+    return NextResponse.json(productsWithColors);
   } catch (error) {
     console.error('Error:', error);
     return NextResponse.json({ error: 'Failed to process products' }, { status: 500 });
