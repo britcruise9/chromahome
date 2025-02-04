@@ -17,4 +17,4 @@ jobs:
           npm install
           npm install get-image-colors canvas ts-node typescript --save-dev
       - name: Run Color Extraction Script
-        run: npx ts-node extractColors.ts
+        run: npx ts-node --esm extractColors.ts
