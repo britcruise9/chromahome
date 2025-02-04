@@ -1,0 +1,20 @@
+name: Extract Product Colors
+
+on:
+  workflow_dispatch:
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Install Dependencies
+        run: |
+          npm install
+          npm install get-image-colors canvas ts-node typescript --save-dev
+      - name: Run Color Extraction Script
+        run: npx ts-node extractColors.ts
