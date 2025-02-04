@@ -4,7 +4,8 @@ import { amazonProducts, AmazonProduct } from './src/lib/amazonProducts';
 
 async function extractDominantColor(url: string): Promise<string> {
   try {
-    const colors = await getColors(url);
+    // Instruct get-image-colors to use sharp as its engine.
+    const colors = await getColors(url, { engine: 'sharp' });
     return colors[0].hex();
   } catch (error) {
     console.error('Error extracting color for:', url, error);
@@ -18,7 +19,7 @@ async function runBatchExtraction() {
     console.log(`Extracting color for product ${product.id}...`);
     const dominantColor = await extractDominantColor(product.image);
     console.log(`Product ${product.id}: ${dominantColor}`);
-    // Use type assertion so the object conforms to AmazonProduct
+    // Type assertion ensures the updated product fits the AmazonProduct interface.
     updatedProducts.push({ ...product, dominantColor } as AmazonProduct);
   }
   console.log('Updated Products JSON:');
