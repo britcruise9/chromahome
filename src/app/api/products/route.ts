@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { amazonProducts } from '../../../lib/amazonProducts';
+import chroma from 'chroma-js';
 
 declare const ColorThief: any;
 
@@ -27,20 +28,15 @@ async function extractProductColor(imageUrl: string): Promise<string> {
 }
 
 function calculateColorDistance(color1: string, color2: string): number {
-  const r1 = parseInt(color1.slice(1, 3), 16);
-  const g1 = parseInt(color1.slice(3, 5), 16);
-  const b1 = parseInt(color1.slice(5, 7), 16);
-  const r2 = parseInt(color2.slice(1, 3), 16);
-  const g2 = parseInt(color2.slice(3, 5), 16);
-  const b2 = parseInt(color2.slice(5, 7), 16);
-
-  const distance = Math.sqrt(
-    Math.pow(r2 - r1, 2) +
-    Math.pow(g2 - g1, 2) +
-    Math.pow(b2 - b1, 2)
-  );
-  const maxDistance = Math.sqrt(255 * 255 * 3);
-  return Math.round((1 - distance / maxDistance) * 100);
+  try {
+    const deltaE = chroma.deltaE(color1, color2);
+    // Convert deltaE to a percentage match (lower deltaE = higher match)
+    const maxDeltaE = 100;  // Maximum reasonable deltaE value
+    return Math.max(0, Math.min(100, Math.round((1 - deltaE / maxDeltaE) * 100)));
+  } catch (error) {
+    console.error('Color comparison error:', error);
+    return 0;
+  }
 }
 
 export async function GET(request: Request) {
