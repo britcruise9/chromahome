@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { Upload } from "lucide-react";
 
 declare const ColorThief: any;
@@ -25,7 +25,9 @@ const hexToRgb = (hex: string) => {
 };
 
 const rgbToHsl = (r: number, g: number, b: number) => {
-  r /= 255; g /= 255; b /= 255;
+  r /= 255; 
+  g /= 255; 
+  b /= 255;
   const max = Math.max(r, g, b);
   const min = Math.min(r, g, b);
   let h = 0, s = 0, l = (max + min) / 2;
@@ -33,9 +35,15 @@ const rgbToHsl = (r: number, g: number, b: number) => {
     const d = max - min;
     s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
     switch (max) {
-      case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-      case g: h = (b - r) / d + 2; break;
-      case b: h = (r - g) / d + 4; break;
+      case r: 
+        h = (g - b) / d + (g < b ? 6 : 0); 
+        break;
+      case g: 
+        h = (b - r) / d + 2; 
+        break;
+      case b: 
+        h = (r - g) / d + 4; 
+        break;
     }
     h /= 6;
   }
@@ -43,7 +51,9 @@ const rgbToHsl = (r: number, g: number, b: number) => {
 };
 
 const hslToRgb = (h: number, s: number, l: number) => {
-  h /= 360; s /= 100; l /= 100;
+  h /= 360; 
+  s /= 100; 
+  l /= 100;
   let r: number, g: number, b: number;
   if (s === 0) {
     r = g = b = l;
@@ -71,8 +81,8 @@ const rgbToHex = (r: number, g: number, b: number): string => {
 
 const getComplementaryColor = (hex: string): string => {
   const rgb = hexToRgb(hex);
-  const hsl = rgbToHsl(rgb.r, rgb.g, rgb.b);
-  const compRgb = hslToRgb((hsl.h + 180) % 360, hsl.s, hsl.l);
+  const { h, s, l } = rgbToHsl(rgb.r, rgb.g, rgb.b);
+  const compRgb = hslToRgb((h + 180) % 360, s, l);
   return rgbToHex(compRgb.r, compRgb.g, compRgb.b);
 };
 
@@ -96,6 +106,8 @@ const extractColor = async (file: File): Promise<string> => {
     img.src = URL.createObjectURL(file);
   });
 };
+
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 const ModernUploader = () => {
   const [view, setView] = useState("initial");
