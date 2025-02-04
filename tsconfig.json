@@ -16,6 +16,7 @@
     "target": "ES2020",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+    "moduleSuffixes": [".ts", ".tsx", ".js", ".jsx"],
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve"
