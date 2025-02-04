@@ -17,6 +17,87 @@ interface Product {
   affiliateLink?: string;
 }
 
+const hexToRgb = (hex: string) => {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  return { r, g, b };
+};
+
+const rgbToHsl = (r: number, g: number, b: number) => {
+  r /= 255; g /= 255; b /= 255;
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  let h = 0, s = 0, l = (max + min) / 2;
+  if (max !== min) {
+    const d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+    switch (max) {
+      case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+      case g: h = (b - r) / d + 2; break;
+      case b: h = (r - g) / d + 4; break;
+    }
+    h /= 6;
+  }
+  return { h: h * 360, s: s * 100, l: l * 100 };
+};
+
+const hslToRgb = (h: number, s: number, l: number) => {
+  h /= 360; s /= 100; l /= 100;
+  let r: number, g: number, b: number;
+  if (s === 0) {
+    r = g = b = l;
+  } else {
+    const hue2rgb = (p: number, q: number, t: number) => {
+      if (t < 0) t += 1;
+      if (t > 1) t -= 1;
+      if (t < 1/6) return p + (q - p) * 6 * t;
+      if (t < 1/2) return q;
+      if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+      return p;
+    };
+    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+    const p = 2 * l - q;
+    r = hue2rgb(p, q, h + 1/3);
+    g = hue2rgb(p, q, h);
+    b = hue2rgb(p, q, h - 1/3);
+  }
+  return { r: Math.round(r * 255), g: Math.round(g * 255), b: Math.round(b * 255) };
+};
+
+const rgbToHex = (r: number, g: number, b: number) => {
+  return "#" + [r, g, b].map(x => x.toString(16).padStart(2, "0")).join("");
+};
+
+const getComplementaryColor = (hex: string) => {
+  const rgb = hexToRgb(hex);
+  const hsl = rgbToHsl(rgb.r, rgb.g, rgb.b);
+  hsl.h = (hsl.h + 180) % 360;
+  const complementaryRgb = hslToRgb(hsl.h, hsl.s, hsl.l);
+  return rgbToHex(complementaryRgb.r, complementaryRgb.g, complementaryRgb.b);
+};
+
+const extractColor = async (file: File): Promise<string> => {
+  return new Promise((resolve) => {
+    const img = new Image();
+    const colorThief = new ColorThief();
+    
+    img.addEventListener('load', () => {
+      try {
+        const [r, g, b] = colorThief.getColor(img);
+        resolve(`#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')}`);
+      } catch (error) {
+        console.error('Color extraction error:', error);
+        resolve('#000000');
+      }
+    });
+
+    img.crossOrigin = 'Anonymous';
+    img.onerror = () => resolve('#000000');
+    img.src = URL.createObjectURL(file);
+  });
+};
+
 const ModernUploader = () => {
   const [view, setView] = useState("initial");
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
@@ -25,104 +106,10 @@ const ModernUploader = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [isDragging, setIsDragging] = useState(false);
 
-  const getComplementaryColor = (hex: string) => {
-    const r = parseInt(hex.slice(1, 3), 16);
-    const g = parseInt(hex.slice(3, 5), 16);
-    const b = parseInt(hex.slice(5, 7), 16);
-    
-    const hsl = rgbToHsl(r, g, b);
-    hsl.h = (hsl.h + 180) % 360;
-    const rgb = hslToRgb(hsl.h, hsl.s, hsl.l);
-    
-    return rgbToHex(rgb.r, rgb.g, rgb.b);
-  };
-
-  const rgbToHsl = (r: number, g: number, b: number) => {
-    r /= 255;
-    g /= 255;
-    b /= 255;
-    const max = Math.max(r, g, b);
-    const min = Math.min(r, g, b);
-    let h = 0,
-      s = 0,
-      l = (max + min) / 2;
-
-    if (max !== min) {
-      const d = max - min;
-      s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-      switch (max) {
-        case r:
-          h = (g - b) / d + (g < b ? 6 : 0);
-          break;
-        case g:
-          h = (b - r) / d + 2;
-          break;
-        case b:
-          h = (r - g) / d + 4;
-          break;
-      }
-      h /= 6;
-    }
-    return { h: h * 360, s: s * 100, l: l * 100 };
-  };
-
-  const hslToRgb = (h: number, s: number, l: number) => {
-    h /= 360;
-    s /= 100;
-    l /= 100;
-    let r, g, b;
-
-    if (s === 0) {
-      r = g = b = l;
-    } else {
-      const hue2rgb = (p: number, q: number, t: number) => {
-        if (t < 0) t += 1;
-        if (t > 1) t -= 1;
-        if (t < 1 / 6) return p + (q - p) * 6 * t;
-        if (t < 1 / 2) return q;
-        if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
-        return p;
-      };
-      const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-      const p = 2 * l - q;
-      r = hue2rgb(p, q, h + 1 / 3);
-      g = hue2rgb(p, q, h);
-      b = hue2rgb(p, q, h - 1 / 3);
-    }
-    return { r: Math.round(r * 255), g: Math.round(g * 255), b: Math.round(b * 255) };
-  };
-
-  const rgbToHex = (r: number, g: number, b: number) => {
-    return "#" + [r, g, b].map((x) => x.toString(16).padStart(2, "0")).join("");
-  };
-
-  const extractColor = async (file: File): Promise<string> => {
-    return new Promise((resolve) => {
-      const img = new Image();
-      const colorThief = new ColorThief();
-      
-      img.addEventListener('load', () => {
-        try {
-          const [r, g, b] = colorThief.getColor(img);
-          resolve(`#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')}`);
-        } catch (error) {
-          console.error('Color extraction error:', error);
-          resolve('#000000');
-        }
-      });
-
-      img.crossOrigin = 'Anonymous';
-      img.onerror = () => resolve('#000000');
-      img.src = URL.createObjectURL(file);
-    });
-  };
-
   const fetchProducts = async (color: string) => {
     setProducts([]);
     try {
-      const response = await fetch(
-        `/api/products?source=amazon&color=${encodeURIComponent(color)}`
-      );
+      const response = await fetch(`/api/products?source=amazon&color=${encodeURIComponent(color)}`);
       const data = await response.json();
       setProducts(data);
       setView("results");
@@ -263,11 +250,16 @@ const ModernUploader = () => {
                   <div className="p-4">
                     <h3 className="text-white/90 font-medium line-clamp-1">{product.title}</h3>
                     <p className="text-white/60 mt-1 line-clamp-2">{product.description}</p>
-                    {product.dominantColor && (
+                    {selectedColor && (
                       <div className="mt-3 flex items-center gap-2">
-                        <div className="w-4 h-4 rounded-full" style={{ backgroundColor: product.dominantColor }} />
-                        <span className="text-xs text-white/50">{product.dominantColor}</span>
-                        <span className="ml-auto text-xs text-white/50">{product.matchPercentage}% match</span>
+                        <div className="flex items-center gap-2">
+                          <div className="w-4 h-4 rounded-full" style={{ backgroundColor: product.dominantColor }} />
+                          <span className="text-xs text-white/50">{product.dominantColor}</span>
+                        </div>
+                        <div className="flex items-center gap-2 ml-auto">
+                          <div className="w-4 h-4 rounded-full" style={{ backgroundColor: activeColor || '' }} />
+                          <span className="text-xs text-white/50">{product.matchPercentage}% match</span>
+                        </div>
                       </div>
                     )}
                     {product.affiliateLink && (
