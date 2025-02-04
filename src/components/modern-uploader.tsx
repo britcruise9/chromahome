@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, useCallback } from "react";
 import { Upload } from "lucide-react";
 
@@ -243,28 +241,23 @@ const ModernUploader = () => {
                   <div className="aspect-square overflow-hidden">
                     <img
                       src={product.image}
-                      alt={product.title}
+                      alt="Product"
                       className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <div className="p-4">
-                    <h3 className="text-white/90 font-medium line-clamp-1">{product.title}</h3>
-                    <p className="text-white/60 mt-1 line-clamp-2">{product.description}</p>
                     {selectedColor && (
-                      <div className="mt-3 flex items-center gap-2">
+                      <div className="flex items-center gap-2 justify-between">
                         <div className="flex items-center gap-2">
                           <div className="w-4 h-4 rounded-full" style={{ backgroundColor: product.dominantColor }} />
-                          <span className="text-xs text-white/50">{product.dominantColor}</span>
-                        </div>
-                        <div className="flex items-center gap-2 ml-auto">
                           <div className="w-4 h-4 rounded-full" style={{ backgroundColor: activeColor || '' }} />
                           <span className="text-xs text-white/50">{product.matchPercentage}% match</span>
                         </div>
                       </div>
                     )}
                     {product.affiliateLink && (
-                      <div className="mt-2">
-                        <span className="text-sm text-blue-400 underline">Buy Now</span>
+                      <div className="mt-2 text-center">
+                        <span className="text-sm text-blue-400 hover:text-blue-300 underline">Shop on Amazon</span>
                       </div>
                     )}
                   </div>
