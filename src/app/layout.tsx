@@ -1,4 +1,3 @@
-// File: src/app/layout.tsx
 export const metadata = {
   title: "ChromaHome",
   description: "Turn Paint Colors Into Perfect Decor",
@@ -16,8 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+      </head>
       <body className={inter.className}>
-        {/* Global Layout Wrapper */}
         {children}
       </body>
     </html>
