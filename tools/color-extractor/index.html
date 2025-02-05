@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChromaHome Product Color Extractor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.4.0/color-thief.min.js"></script>
+    <style>
+        body {
+            font-family: system-ui;
+            padding: 20px;
+            background: #f5f5f5;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .input-section {
+            margin-bottom: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            border: 1px solid #eee;
+            padding: 1rem;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .color-swatch {
+            width: 100%;
+            height: 60px;
+            border-radius: 6px;
+            margin-top: 0.5rem;
+        }
+        .thumb {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+        textarea {
+            font-family: monospace;
+            width: 100%;
+            height: 150px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            resize: vertical;
+        }
+        .button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 6px;
+            background: #4F46E5;
+            color: white;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .button:hover {
+            background: #4338CA;
+        }
+        .button.secondary {
+            background: #9CA3AF;
+        }
+        .button.secondary:hover {
+            background: #6B7280;
+        }
+        #debug {
+            margin: 10px 0;
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 6px;
+            font-size: 0.9em;
+            color: #64748b;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .instructions {
+            background: #f0f9ff;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            font-size: 0.9em;
+            color: #0369a1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ChromaHome Product Color Extractor</h1>
+        
+        <div class="instructions">
+            <p><strong>Format:</strong> Paste products separated by ** with description followed by Amazon URL and image URL</p>
+            <p><strong>Example:</strong></p>
+            <code>Product description https://amazon.com/xxx https://image-url.jpg**Next product...</code>
+        </div>
+        
+        <div class="input-section">
+            <textarea id="input" placeholder="Paste product data (separated by **)"></textarea>
+            <div>
+                <button class="button" onclick="processProducts()">Extract Colors</button>
+                <button class="button secondary" onclick="copyJSON()">Copy JSON</button>
+                <button class="button secondary" onclick="clearAll()">Clear All</button>
+            </div>
+        </div>
+
+        <div id="debug"></div>
+        <div id="results" class="grid"></div>
+    </div>
+
+    <script>
+        let processedResults = [];
+        let currentId = 1;
+
+        function extractProductData(text) {
+            // Find URLs in the text
+            const urls = text.match(/(https?:\/\/[^\s]+)/g) || [];
+            if (urls.length < 2) return null;
+
+            // The description is everything before the first URL
+            const description = text.split(urls[0])[0].trim();
+            
+            return {
+                description,
+                amazonUrl: urls[0],
+                imageUrl: urls[1]
+            };
+        }
+
+        function formatAffiliateUrl(url) {
+            if (!url) return '';
+            try {
+                // Extract the ASIN from the URL using regex
+                const asinMatch = url.match(/\/dp\/([A-Z0-9]{10})/i);
+                if (!asinMatch) return url;
+                
+                const asin = asinMatch[1];
+                // Format according to official documentation
+                return `https://www.amazon.com/dp/${asin}/ref=nosim?tag=paintchipshop-20`;
+            } catch (error) {
+                console.error('URL formatting error:', error);
+                return url;
+            }
+        }
+
+        async function extractColor(url) {
+            return new Promise((resolve) => {
+                const img = new Image();
+                const colorThief = new ColorThief();
+                
+                img.crossOrigin = 'Anonymous';
+                img.onload = () => {
+                    try {
+                        const [r, g, b] = colorThief.getColor(img);
+                        const hex = `#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')}`;
+                        resolve({ success: true, color: hex });
+                    } catch (error) {
+                        resolve({ success: false, error: error.message });
+                    }
+                };
+                
+                img.onerror = () => resolve({ success: false, error: 'Failed to load image' });
+                img.src = url;
+            });
+        }
+
+        async function processProducts() {
+            const input = document.getElementById('input').value;
+            
+            // Find all Amazon product URLs in the input
+            const productMatches = input.match(/https:\/\/www\.amazon\.com\/dp\/[A-Z0-9]+[^\s]*/gi) || [];
+            
+            // Split input into products based on Amazon URLs
+            const products = [];
+            let lastIndex = 0;
+            
+            productMatches.forEach((amazonUrl) => {
+                // Find the start of this product (the text before this Amazon URL)
+                const productStart = input.lastIndexOf('\n', input.indexOf(amazonUrl)) + 1;
+                const productEnd = input.indexOf('\n', input.indexOf(amazonUrl));
+                
+                // Extract the product text
+                const productText = input.slice(
+                    productStart,
+                    productEnd > -1 ? productEnd : undefined
+                );
+                
+                // Find the image URL that follows the Amazon URL
+                const imageMatch = productText.match(/https:\/\/m\.media-amazon\.com\/[^\s]*/i);
+                
+                if (imageMatch) {
+                    products.push({
+                        description: productText.slice(0, productText.indexOf('http')).trim(),
+                        amazonUrl: amazonUrl,
+                        imageUrl: imageMatch[0]
+                    });
+                }
+            });
+
+            const resultsDiv = document.getElementById('results');
+            const debugDiv = document.getElementById('debug');
+            resultsDiv.innerHTML = '';
+            debugDiv.innerHTML = '<h3>Processing Log:</h3>';
+            processedResults = [];
+            currentId = 1;
+
+            for (let product of products) {
+                const { description, amazonUrl, imageUrl } = product;
+                
+                debugDiv.innerHTML += `Processing: ${description}<br>`;
+                
+                if (!amazonUrl || !imageUrl) {
+                    debugDiv.innerHTML += `<div style="color: red">Missing URL data</div><br>`;
+                    continue;
+                }
+
+                const colorResult = await extractColor(imageUrl);
+
+                const productData = {
+                    id: currentId++,
+                    title: `Amazon Product ${currentId-1}`,
+                    price: 0.0,
+                    description: description,
+                    image: imageUrl,
+                    category: "home decor",
+                    affiliateLink: formatAffiliateUrl(amazonUrl)
+                };
+
+                if (colorResult.success) {
+                    productData.dominantColor = colorResult.color;
+                }
+
+                processedResults.push(productData);
+                
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <img src="${imageUrl}" class="thumb" onerror="this.src='/api/placeholder/300/200'" />
+                    <div style="font-size: 0.9em; margin-bottom: 1em;">${description}</div>
+                    ${colorResult.success 
+                        ? `<div class="color-swatch" style="background-color: ${colorResult.color}"></div>
+                           <div style="text-align: center; margin-top: 0.5em;">${colorResult.color}</div>`
+                        : `<div style="color: red">Color extraction failed</div>`}
+                    <div style="margin-top: 1em; font-size: 0.8em;">
+                        <div><strong>Original URL:</strong></div>
+                        <div style="word-break: break-all; color: #666;">${amazonUrl}</div>
+                        <div style="margin-top: 0.5em;"><strong>Affiliate URL:</strong></div>
+                        <div style="word-break: break-all; color: #666;">${formatAffiliateUrl(amazonUrl)}</div>
+                    </div>
+                `;
+                resultsDiv.appendChild(card);
+            }
+        }
+
+        function copyJSON() {
+            const jsonStr = JSON.stringify(processedResults, null, 2);
+            navigator.clipboard.writeText(jsonStr);
+            alert('JSON copied to clipboard! You can now paste this into your amazonProducts.ts file.');
+        }
+
+        function clearAll() {
+            document.getElementById('input').value = '';
+            document.getElementById('results').innerHTML = '';
+            document.getElementById('debug').innerHTML = '';
+            processedResults = [];
+            currentId = 1;
+        }
+    </script>
+</body>
+</html>
