@@ -12,14 +12,15 @@ export interface AmazonProduct {
 }
 
 export const amazonProducts: AmazonProduct[] = [
-  {
+ {
     "id": 1,
     "title": "Amazon Product 1",
     "price": 0.0,
     "description": "MIULEE Mustard Yellow Pillow Covers 18x18 Inch with Splicing Set of 2 Super Soft Boho Striped Corduroy Pillow Covers Broadside Decorative Spring Throw Pillows for Couch Cushion Livingroom",
     "image": "https://m.media-amazon.com/images/I/818ClCd4Z-L._AC_SY355_.jpg",
     "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B0BLSPFRM9?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
+    "affiliateLink": "https://www.amazon.com/dp/B0BLSPFRM9?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl",
+    "dominantColor": "#c4a355"
   },
   {
     "id": 2,
@@ -28,7 +29,8 @@ export const amazonProducts: AmazonProduct[] = [
     "description": "MIULEE Pack of 2 Mustard Yellow Corduroy Decorative Throw Pillow Covers 20x20 Inch Soft Boho Striped Pillow Covers Spring Modern Farmhouse Home Decor for Sofa Living Room Couch Bed",
     "image": "https://m.media-amazon.com/images/I/81SsLCina1L._AC_SX425_.jpg",
     "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B0BKSJCT8C?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
+    "affiliateLink": "https://www.amazon.com/dp/B0BKSJCT8C?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl",
+    "dominantColor": "#d4aa4e"
   },
   {
     "id": 3,
@@ -37,7 +39,8 @@ export const amazonProducts: AmazonProduct[] = [
     "description": "MIULEE Pack of 2 Mustard Yellow Corduroy Decorative Throw Pillow Covers 18x18 Inch Soft Boho Striped Pillow Covers Spring Modern Farmhouse Home Decor for Sofa Living Room Couch Bed",
     "image": "https://m.media-amazon.com/images/I/8131MIlMOlL._AC_SX679_.jpg",
     "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B0BKSG34QX?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
+    "affiliateLink": "https://www.amazon.com/dp/B0BKSG34QX?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl",
+    "dominantColor": "#c19f4c"
   },
   {
     "id": 4,
@@ -46,7 +49,8 @@ export const amazonProducts: AmazonProduct[] = [
     "description": "MIULEE Pack of 2 Couch Throw Pillow Covers 18x18 Inch Soft Beige Yellow Chenille Pillow Covers for Sofa Living Room Solid Dyed Pillow Cases",
     "image": "https://m.media-amazon.com/images/I/81DS28VSthL._AC_SY450_.jpg",
     "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B0CX5B228W?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
+    "affiliateLink": "https://www.amazon.com/dp/B0CX5B228W?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl",
+    "dominantColor": "#e5c87b"
   },
   {
     "id": 5,
@@ -55,7 +59,8 @@ export const amazonProducts: AmazonProduct[] = [
     "description": "ZWJD Mustard Yellow Throw Pillow Covers 18x18 Set of 2 Chenille Pillow Covers with Elegant Design Soft and Luxurious Decorative Throw Pillows for Couch, Bed, and Home Decor",
     "image": "https://m.media-amazon.com/images/I/91PaDWUENmL._AC_SX466_.jpg",
     "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B0C784ZWCT?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
+    "affiliateLink": "https://www.amazon.com/dp/B0C784ZWCT?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl",
+    "dominantColor": "#dbb251"
   },
   {
     "id": 6,
@@ -64,7 +69,8 @@ export const amazonProducts: AmazonProduct[] = [
     "description": "decorUhome Decorative Throw Pillow Covers 18x18, Soft Plush Faux Wool Couch Pillow Covers for Home, Set of 2, Mustard Yellow",
     "image": "https://m.media-amazon.com/images/I/8163YirTEBL._AC_SY355_.jpg",
     "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B09J23JKNM?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
+    "affiliateLink": "https://www.amazon.com/dp/B09J23JKNM?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl",
+    "dominantColor": "#d6b156"
   },
   {
     "id": 7,
@@ -73,7 +79,8 @@ export const amazonProducts: AmazonProduct[] = [
     "description": "Topfinel Set of 2 Decorative Yellow Throw Pillow Covers 18x18 Inch for Couch Sofa Bed, Farmhouse Boho Rustic Home Decor, Soft Corduroy Windmill Textured Striped Patchwork Cushion Cases",
     "image": "https://m.media-amazon.com/images/I/81DsoITAH-L._AC_SX466_.jpg",
     "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B0D1VJ8M4J?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
+    "affiliateLink": "https://www.amazon.com/dp/B0D1VJ8M4J?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl",
+    "dominantColor": "#d1a84d"
   },
   {
     "id": 8,
@@ -82,7 +89,8 @@ export const amazonProducts: AmazonProduct[] = [
     "description": "Siluvia 18\"x18\" Pillow Inserts Set of 2 Decorative 18\" Pillow Inserts with 100% Cotton Cover Square Interior Sofa Throw Pillow Inserts Decorative White Pillow Insert Pair Couch Pillow",
     "image": "https://m.media-amazon.com/images/I/61khI6aybxS._AC_SX569_.jpg",
     "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B095PR8MM4?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
+    "affiliateLink": "https://www.amazon.com/dp/B095PR8MM4?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl",
+    "dominantColor": "#f7f7f7"
   },
   {
     "id": 9,
@@ -91,7 +99,8 @@ export const amazonProducts: AmazonProduct[] = [
     "description": "Topfinel Fall Burnt Orange Decorative Throw Pillows Covers 18x18 Inch Set of 4, Yellow Green Gradient Series Corduroy Striped Square Pillow Case, Western Modern Cushion Cover for Couch Sofa Bedroom",
     "image": "https://m.media-amazon.com/images/I/81c6jaLNTmL._AC_SX425_.jpg",
     "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B0C6DXL51S?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
+    "affiliateLink": "https://www.amazon.com/dp/B0C6DXL51S?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl",
+    "dominantColor": "#cf9849"
   },
   {
     "id": 10,
@@ -100,7 +109,8 @@ export const amazonProducts: AmazonProduct[] = [
     "description": "DEZENE Couch Pillow Covers 18x18 Yellow: 2 Pack Cozy Soft Velvet Square Throw Pillow Cases for Farmhouse Home Decor",
     "image": "https://m.media-amazon.com/images/I/51ySK6mX3WL._AC_SY450_.jpg",
     "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B07SFSR86C?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
+    "affiliateLink": "https://www.amazon.com/dp/B07SFSR86C?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl",
+    "dominantColor": "#deb74a"
   },
   {
     "id": 11,
@@ -109,7 +119,8 @@ export const amazonProducts: AmazonProduct[] = [
     "description": "MIULEE Pack of 2, Velvet Soft Solid Decorative Square Throw Pillow Covers Set Cushion Case for Spring Sofa Bedroom Car 18x18 Inch 45x45 Cm",
     "image": "https://m.media-amazon.com/images/I/71KYRt2hHcL._AC_SY355_.jpg",
     "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B076LWHV2Z?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
+    "affiliateLink": "https://www.amazon.com/dp/B076LWHV2Z?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl",
+    "dominantColor": "#d4b052"
   },
   {
     "id": 12,
@@ -118,7 +129,8 @@ export const amazonProducts: AmazonProduct[] = [
     "description": "MIULEE Pack of 2 Mustard Yellow Pillow Covers 18x18 Inch Decorative Velvet Throw Pillow Covers Modern Soft Couch Throw Pillows Farmhouse Home Decor for Fall Sofa Bedroom Living Room",
     "image": "https://m.media-amazon.com/images/I/61UmBxuCqfL._AC_SX569_.jpg",
     "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B0CKSBZ8VX?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
+    "affiliateLink": "https://www.amazon.com/dp/B0CKSBZ8VX?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl",
+    "dominantColor": "#d6b54e"
   },
   {
     "id": 13,
@@ -127,7 +139,8 @@ export const amazonProducts: AmazonProduct[] = [
     "description": "decorUhome Chenille Soft Throw Pillow Covers 18x18 Set of 2, Farmhouse Velvet Decorative Pillow Covers with Stitched Edge for Couch Sofa Bed, Mineral Yellow",
     "image": "https://m.media-amazon.com/images/I/81+3Bl3M9CL._AC_SX569_.jpg",
     "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B0892YCTWT?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
+    "affiliateLink": "https://www.amazon.com/dp/B0892YCTWT?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl",
+    "dominantColor": "#dcb953"
   },
   {
     "id": 14,
@@ -136,7 +149,8 @@ export const amazonProducts: AmazonProduct[] = [
     "description": "NiNi ALL Decorative Throw Pillow Covers Velvet Soft for Couch Sofa Bedroom Living Room Outdoor Pack of 2 18x18 Inch Yellow",
     "image": "https://m.media-amazon.com/images/I/81b0dJ5xeBL._AC_SX466_.jpg",
     "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B094N8XKKY?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
+    "affiliateLink": "https://www.amazon.com/dp/B094N8XKKY?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl",
+    "dominantColor": "#d5b155"
   },
   {
     "id": 15,
@@ -145,7 +159,8 @@ export const amazonProducts: AmazonProduct[] = [
     "description": "MIULEE Throw Pillow Covers Soft Corduroy Decorative Set of 2 Boho Striped Spring Pillow Covers Pillowcases Farmhouse Home Decor for Couch Bed Sofa Living Room 18x18 Inch Mustard Yellow",
     "image": "https://m.media-amazon.com/images/I/81oQPrcu6XL._AC_SX569_.jpg",
     "category": "home decor",
-    "affiliateLink": "https://www.amazon.com/dp/B0CKRXSCVV?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl"
+    "affiliateLink": "https://www.amazon.com/dp/B0CKRXSCVV?psc=1&linkCode=ll2&tag=paintchipshop-20&linkId=27b5a5cccd9d372eb4bac29a248e4b0e&language=en_US&ref_=as_li_ss_tl",
+    "dominantColor": "#d3ac4f"
   },
   {
     "id": 16,
