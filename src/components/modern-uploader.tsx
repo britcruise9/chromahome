@@ -17,7 +17,7 @@ interface Product {
   affiliateLink?: string;
 }
 
-// ---- Helper Functions (same as before) ----
+// ---- Helper Functions ----
 const hexToRgb = (hex: string) => {
   const r = parseInt(hex.slice(1, 3), 16);
   const g = parseInt(hex.slice(3, 5), 16);
@@ -29,8 +29,8 @@ const rgbToHsl = (r: number, g: number, b: number) => {
   r /= 255;
   g /= 255;
   b /= 255;
-  const max = Math.max(r, g, b),
-    min = Math.min(r, g, b);
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
   let h = 0,
     s = 0,
     l = (max + min) / 2;
@@ -123,10 +123,9 @@ const extractColor = async (file: File): Promise<string> => {
 
 // ---- Main Component ----
 const ModernUploader = () => {
-  // View states
   const [view, setView] = useState("initial");
 
-  // Color states
+  // Selected colors
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
   const [activeColor, setActiveColor] = useState<string | null>(null);
@@ -135,12 +134,11 @@ const ModernUploader = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [isDragging, setIsDragging] = useState(false);
 
-  // For eyedropper
+  // Eyedropper
   const [imagePreview, setImagePreview] = useState<string>("");
-
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  // Fetch and show products
+  // Load products
   const fetchProducts = async (color: string) => {
     setProducts([]);
     try {
@@ -160,18 +158,15 @@ const ModernUploader = () => {
     fetchProducts(color);
   };
 
-  // Handle the user dropping a file
-  const handleDrop = useCallback(
-    async (e: React.DragEvent) => {
-      e.preventDefault();
-      setIsDragging(false);
-      const file = e.dataTransfer.files[0];
-      if (file && file.type.startsWith("image/")) {
-        await handleFile(file);
-      }
-    },
-    []
-  );
+  // Drag & drop
+  const handleDrop = useCallback(async (e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragging(false);
+    const file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith("image/")) {
+      await handleFile(file);
+    }
+  }, []);
 
   const handleDragOver = useCallback((e: React.DragEvent) => {
     e.preventDefault();
@@ -183,20 +178,22 @@ const ModernUploader = () => {
     setIsDragging(false);
   }, []);
 
-  // Handle standard file input
+  // Standard file input
   const handleFileInput = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
-    if (file) await handleFile(file);
+    if (file) {
+      await handleFile(file);
+    }
   };
 
-  // The main file handler
+  // Main file handler
   const handleFile = async (file: File) => {
-    // Preview for eyedropper
+    // Preview
     const reader = new FileReader();
     reader.onload = () => setImagePreview(reader.result as string);
     reader.readAsDataURL(file);
 
-    // Extract overall dominant color for initial fetch
+    // Dominant color
     const color = await extractColor(file);
     const compColor = getComplementaryColor(color);
     setSelectedColor(color);
@@ -205,7 +202,7 @@ const ModernUploader = () => {
     await fetchProducts(color);
   };
 
-  // Once the imagePreview changes, draw it on the canvas for eyedropper
+  // Once we have an imagePreview, draw it on the canvas
   useEffect(() => {
     if (!imagePreview || !canvasRef.current) return;
     const canvas = canvasRef.current;
@@ -222,7 +219,7 @@ const ModernUploader = () => {
     img.src = imagePreview;
   }, [imagePreview]);
 
-  // Handle eyedropper clicks
+  // Eyedropper click
   const handleCanvasClick = (e: React.MouseEvent<HTMLCanvasElement>) => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -234,12 +231,15 @@ const ModernUploader = () => {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
+    // Access pixel data without destructuring
     const pixel = ctx.getImageData(x, y, 1, 1).data;
-    const [r, g, b] = pixel;
+    const r = pixel[0];
+    const g = pixel[1];
+    const b = pixel[2];
+
     const hex = `#${r.toString(16).padStart(2, "0")}${g
       .toString(16)
-      .padStart(2, "0")}${b.toString(16)
-      .padStart(2, "0")}`;
+      .padStart(2, "0")}${b.toString(16).padStart(2, "0")}`;
     setSelectedColor(hex);
     setComplementaryColor(getComplementaryColor(hex));
     setActiveColor(hex);
@@ -260,7 +260,6 @@ const ModernUploader = () => {
         </h1>
       </div>
 
-      {/* Initial view for file upload */}
       {view === "initial" && (
         <div className="max-w-2xl mx-auto px-4">
           <div
@@ -289,11 +288,9 @@ const ModernUploader = () => {
         </div>
       )}
 
-      {/* Canvas and image for eyedropper (display only after user uploads) */}
       {imagePreview && view !== "initial" && (
         <div className="max-w-2xl mx-auto px-4 my-8">
           <div className="relative flex flex-col items-center">
-            {/* Hidden or tiny canvas overlay for color picking */}
             <canvas
               ref={canvasRef}
               onClick={handleCanvasClick}
@@ -306,7 +303,6 @@ const ModernUploader = () => {
                 zIndex: 2,
               }}
             />
-            {/* The displayed image behind the canvas */}
             <img
               src={imagePreview}
               alt="Uploaded"
@@ -320,7 +316,6 @@ const ModernUploader = () => {
         </div>
       )}
 
-      {/* Results view */}
       {view === "results" && products.length > 0 && (
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-center items-center gap-8 mb-12">
@@ -352,9 +347,7 @@ const ModernUploader = () => {
                   style={{ backgroundColor: complementaryColor }}
                   onClick={() => handleColorClick(complementaryColor)}
                 />
-                <span className="text-sm text-white/60">
-                  Complementary
-                </span>
+                <span className="text-sm text-white/60">Complementary</span>
               </div>
             )}
 
@@ -372,7 +365,6 @@ const ModernUploader = () => {
             </div>
           </div>
 
-          {/* Product Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {products.map((product) => (
               <a
@@ -427,4 +419,3 @@ const ModernUploader = () => {
 };
 
 export default ModernUploader;
-
