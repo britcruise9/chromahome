@@ -162,11 +162,14 @@ const ModernUploader = () => {
   return (
     <div className="w-full min-h-screen bg-gradient-to-br from-[#0F172A] to-[#1E293B]">
       <div className={`transition-all duration-500 ${view !== "initial" ? "pt-8 pb-4" : "pt-32 pb-16"}`}>
-        <h1 className="text-center text-6xl font-bold">
+        <h1 className="text-center text-6xl font-bold mb-6">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500 animate-gradient bg-[length:200%_auto]">
             CHROMA
           </span>
         </h1>
+        <p className="text-center text-white/80 text-lg max-w-2xl mx-auto">
+          Snap any color in your space, find matching decor instantly
+        </p>
       </div>
 
       {view === "initial" && (
