@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import React, { useState, useCallback, useRef, useEffect } from "react";
+import React, { useState, useCallback } from "react";
 import { Upload } from "lucide-react";
 
 declare const ColorThief: any;
@@ -17,7 +17,6 @@ interface Product {
   affiliateLink?: string;
 }
 
-// ---- Helper Functions ----
 const hexToRgb = (hex: string) => {
   const r = parseInt(hex.slice(1, 3), 16);
   const g = parseInt(hex.slice(3, 5), 16);
@@ -26,27 +25,17 @@ const hexToRgb = (hex: string) => {
 };
 
 const rgbToHsl = (r: number, g: number, b: number) => {
-  r /= 255;
-  g /= 255;
-  b /= 255;
+  r /= 255; g /= 255; b /= 255;
   const max = Math.max(r, g, b);
   const min = Math.min(r, g, b);
-  let h = 0,
-    s = 0,
-    l = (max + min) / 2;
+  let h = 0, s = 0, l = (max + min) / 2;
   if (max !== min) {
     const d = max - min;
     s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
     switch (max) {
-      case r:
-        h = (g - b) / d + (g < b ? 6 : 0);
-        break;
-      case g:
-        h = (b - r) / d + 2;
-        break;
-      case b:
-        h = (r - g) / d + 4;
-        break;
+      case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+      case g: h = (b - r) / d + 2; break;
+      case b: h = (r - g) / d + 4; break;
     }
     h /= 6;
   }
@@ -54,9 +43,7 @@ const rgbToHsl = (r: number, g: number, b: number) => {
 };
 
 const hslToRgb = (h: number, s: number, l: number) => {
-  h /= 360;
-  s /= 100;
-  l /= 100;
+  h /= 360; s /= 100; l /= 100;
   let r: number, g: number, b: number;
   if (s === 0) {
     r = g = b = l;
@@ -64,87 +51,65 @@ const hslToRgb = (h: number, s: number, l: number) => {
     const hue2rgb = (p: number, q: number, t: number) => {
       if (t < 0) t += 1;
       if (t > 1) t -= 1;
-      if (t < 1 / 6) return p + (q - p) * 6 * t;
-      if (t < 1 / 2) return q;
-      if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+      if (t < 1/6) return p + (q - p) * 6 * t;
+      if (t < 1/2) return q;
+      if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
       return p;
     };
     const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
     const p = 2 * l - q;
-    r = hue2rgb(p, q, h + 1 / 3);
+    r = hue2rgb(p, q, h + 1/3);
     g = hue2rgb(p, q, h);
-    b = hue2rgb(p, q, h - 1 / 3);
+    b = hue2rgb(p, q, h - 1/3);
   }
-  return {
-    r: Math.round(r * 255),
-    g: Math.round(g * 255),
-    b: Math.round(b * 255),
-  };
+  return { r: Math.round(r * 255), g: Math.round(g * 255), b: Math.round(b * 255) };
 };
 
 const rgbToHex = (r: number, g: number, b: number) => {
-  return (
-    "#" +
-    [r, g, b].map((x) => x.toString(16).padStart(2, "0")).join("")
-  );
+  return "#" + [r, g, b].map(x => x.toString(16).padStart(2, "0")).join("");
 };
 
 const getComplementaryColor = (hex: string) => {
-  const { r, g, b } = hexToRgb(hex);
-  const hsl = rgbToHsl(r, g, b);
+  const rgb = hexToRgb(hex);
+  const hsl = rgbToHsl(rgb.r, rgb.g, rgb.b);
   hsl.h = (hsl.h + 180) % 360;
-  const compRgb = hslToRgb(hsl.h, hsl.s, hsl.l);
-  return rgbToHex(compRgb.r, compRgb.g, compRgb.b);
+  const complementaryRgb = hslToRgb(hsl.h, hsl.s, hsl.l);
+  return rgbToHex(complementaryRgb.r, complementaryRgb.g, complementaryRgb.b);
 };
 
 const extractColor = async (file: File): Promise<string> => {
   return new Promise((resolve) => {
     const img = new Image();
     const colorThief = new ColorThief();
-
-    img.addEventListener("load", () => {
+    
+    img.addEventListener('load', () => {
       try {
         const [r, g, b] = colorThief.getColor(img);
-        const hexColor = `#${r.toString(16).padStart(2, "0")}${g
-          .toString(16)
-          .padStart(2, "0")}${b.toString(16).padStart(2, "0")}`;
-        resolve(hexColor);
+        resolve(`#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')}`);
       } catch (error) {
-        console.error("Color extraction error:", error);
-        resolve("#000000");
+        console.error('Color extraction error:', error);
+        resolve('#000000');
       }
     });
 
-    img.crossOrigin = "Anonymous";
-    img.onerror = () => resolve("#000000");
+    img.crossOrigin = 'Anonymous';
+    img.onerror = () => resolve('#000000');
     img.src = URL.createObjectURL(file);
   });
 };
 
-// ---- Main Component ----
 const ModernUploader = () => {
   const [view, setView] = useState("initial");
-
-  // Selected colors
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
   const [activeColor, setActiveColor] = useState<string | null>(null);
-
-  // Product data
   const [products, setProducts] = useState<Product[]>([]);
   const [isDragging, setIsDragging] = useState(false);
 
-  // Eyedropper
-  const [imagePreview, setImagePreview] = useState<string>("");
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-
-  // Load products
   const fetchProducts = async (color: string) => {
     setProducts([]);
     try {
-      const response = await fetch(
-        `/api/products?source=amazon&color=${encodeURIComponent(color)}`
-      );
+      const response = await fetch(`/api/products?source=amazon&color=${encodeURIComponent(color)}`);
       const data = await response.json();
       setProducts(data);
       setView("results");
@@ -158,7 +123,16 @@ const ModernUploader = () => {
     fetchProducts(color);
   };
 
-  // Drag & drop
+  const handleFile = async (file: File) => {
+    if (!file) return;
+    const color = await extractColor(file);
+    const compColor = getComplementaryColor(color);
+    setSelectedColor(color);
+    setComplementaryColor(compColor);
+    setActiveColor(color);
+    await fetchProducts(color);
+  };
+
   const handleDrop = useCallback(async (e: React.DragEvent) => {
     e.preventDefault();
     setIsDragging(false);
@@ -178,7 +152,6 @@ const ModernUploader = () => {
     setIsDragging(false);
   }, []);
 
-  // Standard file input
   const handleFileInput = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
@@ -186,73 +159,9 @@ const ModernUploader = () => {
     }
   };
 
-  // Main file handler
-  const handleFile = async (file: File) => {
-    // Preview
-    const reader = new FileReader();
-    reader.onload = () => setImagePreview(reader.result as string);
-    reader.readAsDataURL(file);
-
-    // Dominant color
-    const color = await extractColor(file);
-    const compColor = getComplementaryColor(color);
-    setSelectedColor(color);
-    setComplementaryColor(compColor);
-    setActiveColor(color);
-    await fetchProducts(color);
-  };
-
-  // Once we have an imagePreview, draw it on the canvas
-  useEffect(() => {
-    if (!imagePreview || !canvasRef.current) return;
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-
-    const img = new Image();
-    img.crossOrigin = "Anonymous";
-    img.onload = () => {
-      canvas.width = img.width;
-      canvas.height = img.height;
-      ctx.drawImage(img, 0, 0);
-    };
-    img.src = imagePreview;
-  }, [imagePreview]);
-
-  // Eyedropper click
-  const handleCanvasClick = (e: React.MouseEvent<HTMLCanvasElement>) => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    const rect = canvas.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-
-    // Access pixel data without destructuring
-    const pixel = ctx.getImageData(x, y, 1, 1).data;
-    const r = pixel[0];
-    const g = pixel[1];
-    const b = pixel[2];
-
-    const hex = `#${r.toString(16).padStart(2, "0")}${g
-      .toString(16)
-      .padStart(2, "0")}${b.toString(16).padStart(2, "0")}`;
-    setSelectedColor(hex);
-    setComplementaryColor(getComplementaryColor(hex));
-    setActiveColor(hex);
-    fetchProducts(hex);
-  };
-
   return (
     <div className="w-full min-h-screen bg-gradient-to-br from-[#0F172A] to-[#1E293B]">
-      <div
-        className={`transition-all duration-500 ${
-          view !== "initial" ? "pt-8 pb-4" : "pt-32 pb-16"
-        }`}
-      >
+      <div className={`transition-all duration-500 ${view !== "initial" ? "pt-8 pb-4" : "pt-32 pb-16"}`}>
         <h1 className="text-center text-6xl font-bold">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500 animate-gradient bg-[length:200%_auto]">
             CHROMA
@@ -267,11 +176,7 @@ const ModernUploader = () => {
             onDragOver={handleDragOver}
             onDragLeave={handleDragLeave}
             className={`relative rounded-2xl border-2 border-dashed transition-all duration-300 
-              ${
-                isDragging
-                  ? "border-white/50 bg-white/10"
-                  : "border-white/20 hover:border-white/30"
-              }
+              ${isDragging ? "border-white/50 bg-white/10" : "border-white/20 hover:border-white/30"}
               h-72 flex items-center justify-center`}
           >
             <input
@@ -288,49 +193,15 @@ const ModernUploader = () => {
         </div>
       )}
 
-      {imagePreview && view !== "initial" && (
-        <div className="max-w-2xl mx-auto px-4 my-8">
-          <div className="relative flex flex-col items-center">
-            <canvas
-              ref={canvasRef}
-              onClick={handleCanvasClick}
-              style={{
-                cursor: "crosshair",
-                position: "absolute",
-                top: 0,
-                left: 0,
-                opacity: 0,
-                zIndex: 2,
-              }}
-            />
-            <img
-              src={imagePreview}
-              alt="Uploaded"
-              className="w-full rounded-lg"
-              style={{ zIndex: 1 }}
-            />
-            <p className="text-sm text-white/60 mt-2">
-              Click the image to pick an exact color
-            </p>
-          </div>
-        </div>
-      )}
-
       {view === "results" && products.length > 0 && (
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-center items-center gap-8 mb-12">
             <div className="flex flex-col items-center gap-2">
               <div
                 className={`w-24 h-24 rounded-xl shadow-lg cursor-pointer transition-all
-                  ${
-                    selectedColor === activeColor
-                      ? "ring-2 ring-white scale-105"
-                      : "hover:ring-2 hover:ring-white/20"
-                  }`}
+                  ${selectedColor === activeColor ? "ring-2 ring-white scale-105" : "hover:ring-2 hover:ring-white/20"}`}
                 style={{ backgroundColor: selectedColor || "#000000" }}
-                onClick={() =>
-                  selectedColor && handleColorClick(selectedColor)
-                }
+                onClick={() => selectedColor && handleColorClick(selectedColor)}
               />
               <span className="text-sm text-white/60">Primary</span>
             </div>
@@ -339,11 +210,7 @@ const ModernUploader = () => {
               <div className="flex flex-col items-center gap-2">
                 <div
                   className={`w-24 h-24 rounded-xl shadow-lg cursor-pointer transition-all
-                    ${
-                      complementaryColor === activeColor
-                        ? "ring-2 ring-white scale-105"
-                        : "hover:ring-2 hover:ring-white/20"
-                    }`}
+                    ${complementaryColor === activeColor ? "ring-2 ring-white scale-105" : "hover:ring-2 hover:ring-white/20"}`}
                   style={{ backgroundColor: complementaryColor }}
                   onClick={() => handleColorClick(complementaryColor)}
                 />
@@ -356,9 +223,7 @@ const ModernUploader = () => {
                 onClick={() => setView("initial")}
                 className="w-24 h-24 rounded-xl bg-white/10 hover:bg-white/20 text-white/80 transition-all flex flex-col items-center justify-center group"
               >
-                <span className="text-2xl group-hover:scale-110 transition-transform">
-                  +
-                </span>
+                <span className="text-2xl group-hover:scale-110 transition-transform">+</span>
                 <span className="text-sm mt-1">New Color</span>
               </button>
               <span className="text-sm text-white/60">Upload</span>
@@ -386,25 +251,15 @@ const ModernUploader = () => {
                     {selectedColor && (
                       <div className="flex items-center gap-2 justify-between">
                         <div className="flex items-center gap-2">
-                          <div
-                            className="w-4 h-4 rounded-full"
-                            style={{ backgroundColor: product.dominantColor }}
-                          />
-                          <div
-                            className="w-4 h-4 rounded-full"
-                            style={{ backgroundColor: activeColor || "" }}
-                          />
-                          <span className="text-xs text-white/50">
-                            {product.matchPercentage}% match
-                          </span>
+                          <div className="w-4 h-4 rounded-full" style={{ backgroundColor: product.dominantColor }} />
+                          <div className="w-4 h-4 rounded-full" style={{ backgroundColor: activeColor || '' }} />
+                          <span className="text-xs text-white/50">{product.matchPercentage}% match</span>
                         </div>
                       </div>
                     )}
                     {product.affiliateLink && (
                       <div className="mt-2 text-center">
-                        <span className="text-sm text-blue-400 hover:text-blue-300 underline">
-                          Shop on Amazon
-                        </span>
+                        <span className="text-sm text-blue-400 hover:text-blue-300 underline">Shop on Amazon</span>
                       </div>
                     )}
                   </div>
