@@ -19231,5 +19231,1095 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B00RKHWWTI/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#c39451"
+  },
+    {
+    "id": 1921,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "NicBex Modern Accent Chair for Living Room Upholstered Foam Filled Living Room Chairs with Metal Legs Velvet Cozy Lounge Armchair for Living Room Bedroom, Teal",
+    "image": "https://m.media-amazon.com/images/I/61E7-OZsZVL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQ7XF4JF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#03384a"
+  },
+  {
+    "id": 1922,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "Button-Tufted Living Room Chairs, WingBack Velvet Accent Chair Armchair with Lumbar Pillow, Bedroom Chairs Arm Chair with Golden Legs, Teal",
+    "image": "https://m.media-amazon.com/images/I/71sY-u7DWzL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BHQNYMNC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#439caa"
+  },
+  {
+    "id": 1923,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "YOUTASTE Light Green Dining Chairs Set of 2 Mid Century Modern PU Leather Diamond Upholstered Accent Guest Dinner Chair with Back Metal Legs for Kitchen Living Reception Waiting Room",
+    "image": "https://m.media-amazon.com/images/I/81J2cmozWZL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CDPVV8K1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b2d2c7"
+  },
+  {
+    "id": 1924,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "Giantex Set of 2 Velvet Accent Chair, Upholstered Modern Leisure Club Chairs w/Solid Wood Legs, Thick Sponge Seat, Adjustable Foot Pads, Armless Wingback Chairs for Bedroom Living Room (2, Turquoise)",
+    "image": "https://m.media-amazon.com/images/I/71Pt7tJDtAL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08G1HD5BM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7dd1db"
+  },
+  {
+    "id": 1925,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "Mid Century Modern Accent Chair Upholstered Armchair Comfy Velvet Fabric Single Sofa with Lined Wingback for Small Spaces Bedroom Living Room, Velvet Teal, 30.1D x 30.5W x 35H in",
+    "image": "https://m.media-amazon.com/images/I/81sAzW7ZZ3L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B5L6QLY5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#154851"
+  },
+  {
+    "id": 1926,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Christopher Knight Home Kassi Fabric Accent Chair, Dark Teal 29. 50”D x 22. 50”W x 32. 00”H",
+    "image": "https://m.media-amazon.com/images/I/61udMxF0dRL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01MTXC02D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#577c87"
+  },
+  {
+    "id": 1927,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "HULALA HOME Velvet Accent Chair Set of 2, Modern Wingback Arm Chair with Metal Gold Legs, Velvet Tufted Upholstered Single Sofa Chair for Living Room Bedroom, Club Guest Chair (Teal)",
+    "image": "https://m.media-amazon.com/images/I/71aGYB-1O-L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B6HSVFS5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0f2b27"
+  },
+  {
+    "id": 1928,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "Madison Park Tyler Accent Chair - Curved Back Swivel Accent Chair, 7-Inch Thick Cushion Comfy Chair for Bedroom, Upholstered with Nailhead Details, Living Room Chair Barrel Design, 28\" Wide, Teal",
+    "image": "https://m.media-amazon.com/images/I/71gyhsn56aL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07FQJXLVX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#5c726f"
+  },
+  {
+    "id": 1929,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "TINA'S HOME Velvet Armless Accent Chair, Upholstered Modern Small Side Chair with Golden Legs, Comfy Cute Wingback Slipper Chair for Living Room, Study, Beauty Room, Thickly Padded(Teal)",
+    "image": "https://m.media-amazon.com/images/I/7183PwVtNKL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B2D6JG15/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#026579"
+  },
+  {
+    "id": 1930,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "Accent Chair Upholstered Barrel Arm Chair for Living Room Bedroom Reception Room Office, Modern Soft Padded Single Sofa Chair with Golden Legs & Lumbar Pillow, Velvet Green",
+    "image": "https://m.media-amazon.com/images/I/81e5KKrWqZL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVBB2Q1X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#746e55"
+  },
+  {
+    "id": 1931,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "Accent Chair Upholstered Barrel Arm Chair for Living Room Bedroom Reception Room Office, Modern Soft Padded Single Sofa Chair with Golden Legs & Lumbar Pillow, Velvet Green",
+    "image": "https://m.media-amazon.com/images/I/81e5KKrWqZL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVBB2Q1X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#746e55"
+  },
+  {
+    "id": 1932,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "Ottomanson Dining Chair, Set of 2, Blue With Silver Legs",
+    "image": "https://m.media-amazon.com/images/I/61vM7tQ9x1L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09SJ2TBJT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1d4c81"
+  },
+  {
+    "id": 1933,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "US Pride Furniture Modern Accent Chair with Ergonomic High Wingback, Microfiber Upholstered Armchair with Metal Legs for Living Room, Bedroom, Office or Vanity, Dark Teal",
+    "image": "https://m.media-amazon.com/images/I/71eHFZD1pwL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D49757HB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1d636d"
+  },
+  {
+    "id": 1934,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "Modern Velvet Accent Chair for Living Room, Bedroom, or Entryway, Stylish and Comfortable Armless Design with Metal Legs, Teal",
+    "image": "https://m.media-amazon.com/images/I/81pR5vt+eNL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C6MXFNLJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4d6f71"
+  },
+  {
+    "id": 1935,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "Accent Chair Set of 2, Mid Century Modern Chair, Living Room Chair with Solid Wood Frame, Upholstered Fabric Arm Chair, Comfy Chair for Bedroom, Living Room (Teal)",
+    "image": "https://m.media-amazon.com/images/I/8108cniKqsL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D93H9D5Y/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#96adb3"
+  },
+  {
+    "id": 1936,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "Modern Velvet Accent Chair Comfy Armchair with Rose Golden Legs, One Size, Teal",
+    "image": "https://m.media-amazon.com/images/I/81mHRmr2seS._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09XQ525FK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0c3642"
+  },
+  {
+    "id": 1937,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "Christopher Knight Home Nour Fabric Mid-Century Modern Club Chair, Blue, Natural",
+    "image": "https://m.media-amazon.com/images/I/91r5IMqL9dL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07F69RFQ5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8bb4b5"
+  },
+  {
+    "id": 1938,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "HomSof Swviel Barrel Chair for Living Room, Teal Velvet Leisure Accent Armchair with Black Powder Coating Metal Ring",
+    "image": "https://m.media-amazon.com/images/I/71sVIenki1L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C5CZSSZR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#227a92"
+  },
+  {
+    "id": 1939,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "HUIMO Accent Chair with Ottoman, Upholstered Button Tufted Armchair, Linen Fabric Sofa Chairs Reading Chair for Living Room, Chair for Bedroom, Comfortable Mid-Century Modern Chair (Dark Teal)",
+    "image": "https://m.media-amazon.com/images/I/818-JSN0DCL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CGX5CQ8G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7aa0a9"
+  },
+  {
+    "id": 1940,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "BFZ Suede Leather Accent Chair with Solid Wooden Legs, Comfy Cushion Wide Arm Chair in Morden Style, Tufted Backrest Single Sofa Chair for Living Room, Bedroom, and Guest Room(Black)",
+    "image": "https://m.media-amazon.com/images/I/81kYD90XK4L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BX3WP6R5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#645b5c"
+  },
+  {
+    "id": 1941,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "BFZ Suede Leather Accent Chair with Solid Wooden Legs, Comfy Cushion Wide Arm Chair in Morden Style, Tufted Backrest Single Sofa Chair for Living Room, Bedroom, and Guest Room(Black)",
+    "image": "https://m.media-amazon.com/images/I/81kYD90XK4L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BX3WP6R5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#655959"
+  },
+  {
+    "id": 1942,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "BFZ Suede Leather Accent Chair with Solid Wooden Legs, Comfy Cushion Wide Arm Chair in Morden Style, Tufted Backrest Single Sofa Chair for Living Room, Bedroom, and Guest Room(Black)",
+    "image": "https://m.media-amazon.com/images/I/81kYD90XK4L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BX3WP6R5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c2b8b0"
+  },
+  {
+    "id": 1943,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "US Pride Furniture Modern Velvet Accent Chair for Living Room, Bedroom or Office with Stylish Metal Legs, Plush Upholstery and Wood Frame, Small-Medium, Blue",
+    "image": "https://m.media-amazon.com/images/I/71kqeR1lvgL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C1QLHWSW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#25364b"
+  },
+  {
+    "id": 1944,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "HomePop Modern Barrel Accent Chair, Aqua Green",
+    "image": "https://m.media-amazon.com/images/I/81xbQwuKlfL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3MZYLQ7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7d9e87"
+  },
+  {
+    "id": 1945,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "HUIMO Accent Chair with Ottoman, Upholstered Living Room Chairs and Ottoman Set, Reading Chair for Bedroom, Teal Swoop Accent Chairs, Mid Century Sofa Chair, Comfy Club Chair (Dark Teal Set)",
+    "image": "https://m.media-amazon.com/images/I/91fLkWXJJsL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C73W4R94/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3e6978"
+  },
+  {
+    "id": 1946,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "Ball & Cast Accent Chair, 23.5\"W x 25\"D x 32.25\"H, Teal",
+    "image": "https://m.media-amazon.com/images/I/71e6ic3RejL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08GKJHR2N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#06576d"
+  },
+  {
+    "id": 1947,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "Christopher Knight Home Darvis Fabric Recliner Club Chair, Dark Teal 26.75D x 34W x 36.25H in",
+    "image": "https://m.media-amazon.com/images/I/91ybIqMt8lL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01N8Q2O4M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#577d84"
+  },
+  {
+    "id": 1948,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "Christopher Knight Home Merel Mid Century Modern Fabric Club Chair, 28.30\" W x 27.60\" D x 31.50\" H, Dark Teal/Natural",
+    "image": "https://m.media-amazon.com/images/I/51IkT3JTtpL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07CDZNQHM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#345359"
+  },
+  {
+    "id": 1949,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "Velvet Accent Chairs Set of 2, Modern Armchairs for Living Room Bedroom, Tufted Vanity Chair for Dressing Room, Gold Finish, Dark Teal",
+    "image": "https://m.media-amazon.com/images/I/71cY6QjFPrL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B1MS1JPM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1a7e8d"
+  },
+  {
+    "id": 1950,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "Modern Armless Accent Chair, Modern Slipper Chair Living Room Chairs with Acrylic Legs, Makeup Vanity Chair Boucle Comfy Upholstered Accent Chairs for Bedroom, Reading Room, Reception, Apartments",
+    "image": "https://m.media-amazon.com/images/I/91FVvXoaJjL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFCRNDGC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d9d0c9"
+  },
+  {
+    "id": 1951,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "Modern Armless Accent Chair, Modern Slipper Chair Living Room Chairs with Acrylic Legs, Makeup Vanity Chair Boucle Comfy Upholstered Accent Chairs for Bedroom, Reading Room, Reception, Apartments",
+    "image": "https://m.media-amazon.com/images/I/91FVvXoaJjL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFCRNDGC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d9d0c9"
+  },
+  {
+    "id": 1952,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "Swivel Accent Chair with Lumbar Pillow, 360° Swivel Barrel Chairs Armchair with Curved Back and Sturdy Base, Round Comfy Living Room Chairs Reading Sofa Chair for Bedroom, Small Spaces, Office, Teal",
+    "image": "https://m.media-amazon.com/images/I/61BiH-iz27L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLZHG83G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#194161"
+  },
+  {
+    "id": 1953,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "HUIMO Upholstered Living Room Chairs, Accent Chair with Solid Wood Frame, Reading Chair for Bedroom, Tufted Armchair with Lumbar Pillow, Mid Century Sofa Chair, Comfy Club Chair for Living Room (Dark Teal)",
+    "image": "https://m.media-amazon.com/images/I/914QZXhqRAL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C73WWZQ5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#649ca9"
+  },
+  {
+    "id": 1954,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "Christopher Knight Home Toddman High-Back Fabric Club Chair, Dark Teal 33.75D x 27.25W x 38.5H in",
+    "image": "https://m.media-amazon.com/images/I/817qIe0v+uS._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01N3MP0CZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4e747b"
+  },
+  {
+    "id": 1955,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "Modway Curve Mid-Century Modern Upholstered Fabric with Nailhead Trim in Teal, One Chair",
+    "image": "https://m.media-amazon.com/images/I/81mI0T1+wFL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01N9F25HP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#487779"
+  },
+  {
+    "id": 1956,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "Christopher Knight Home Felicity Mid-Century Fabric Arm Chair, Teal 29.5D x 25W x 30.5H Inch",
+    "image": "https://m.media-amazon.com/images/I/A16yU1zzVQL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07BYDL23D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3faac2"
+  },
+  {
+    "id": 1957,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "Modern Accent Velvet Chairs Set of 2 Comfy Upholstered Vanity Chairs for Bedroom Shell-Shaped Armchair Dining Chairs with Golden Metal Legs Desk Chair Makeup Chairs for Living Room(Teal)",
+    "image": "https://m.media-amazon.com/images/I/71AJyK1PmvL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B216HP7S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#268ca2"
+  },
+  {
+    "id": 1958,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "US Pride Furniture Stylish Velvet Armchair with Gold Metal Legs, Comfortable Accent Chair for Modern Living Room, Bedroom, Vanity Desk, and Entryway in Small to Mid-Size Spaces, Greenish Blue",
+    "image": "https://m.media-amazon.com/images/I/711vZDOKhNL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKFCHXWX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#116c71"
+  },
+  {
+    "id": 1959,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "Christopher Knight Home Seigfried Velvet Arm Chair, Dark Teal 38.85D x 30W x 39H in",
+    "image": "https://m.media-amazon.com/images/I/71SdbiXamUL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07CDZ1SHH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#467680"
+  },
+  {
+    "id": 1960,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "Velvet Accent Chair Modern Ergonomics Armchair Living Room Chaise Lounge Single Sofa with Black Wood Legs, Teal",
+    "image": "https://m.media-amazon.com/images/I/81mojNZmnyS._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B4S7NQTR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#065e73"
+  },
+  {
+    "id": 1961,
+    "title": "Amazon Product 41",
+    "price": 0,
+    "description": "SLEERWAY Modern Velvet Single Sofa Chair, Upholstered Accent Living Room Chair, Comfy Armchair with Rose Golden Metal Legs, Tufted Chair for Reading or Lounging (Teal)",
+    "image": "https://m.media-amazon.com/images/I/71GY8Oxe+jS._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B094VPJ3V9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#346979"
+  },
+  {
+    "id": 1962,
+    "title": "Amazon Product 42",
+    "price": 0,
+    "description": "Kakotito Luxury Handmade Accent Chair with Gold Legs, Modern Velvet Armchair for Living Room and Bedroom, Silla de Acento (Teal)",
+    "image": "https://m.media-amazon.com/images/I/81r4fS6wASL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C746TGVX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#5cb3bd"
+  },
+  {
+    "id": 1963,
+    "title": "Amazon Product 43",
+    "price": 0,
+    "description": "Homelegance Charisma Fabric Accent Chair, Teal",
+    "image": "https://m.media-amazon.com/images/I/913qa4gHVRL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01MQMRG8U/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#578074"
+  },
+  {
+    "id": 1964,
+    "title": "Amazon Product 44",
+    "price": 0,
+    "description": "BELLEZE Mid Century Modern Accent Chair, Upholstered Oversized Living Room Chair Armchair Comfy Linen Reading Chair for Adults Sofa Chair for Bedroom Office - Erik (Mallard Teal)",
+    "image": "https://m.media-amazon.com/images/I/81mQM9qGDDS._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B098JXCP1P/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#24657b"
+  },
+  {
+    "id": 1965,
+    "title": "Amazon Product 45",
+    "price": 0,
+    "description": "Mid-Century Modern Accent Chair - Chenille Fabric Upholstered Accent Armchair, Oversized Living Room Accent Chair Reading Chair Bedroom Chair(Dark Teal, Set of 1)",
+    "image": "https://m.media-amazon.com/images/I/81mm5YJxVBL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D93CYGX2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#24373e"
+  },
+  {
+    "id": 1966,
+    "title": "Amazon Product 46",
+    "price": 0,
+    "description": "Aoowow Oversized Accent Chair Set of 1, Comfy Chenille Accent Chair for Living Room, Modern Arm Chairs with Removable Armrest, Cozy Reading Chair Single Lounge Sofa for Bedroom Waiting Room, Teal",
+    "image": "https://m.media-amazon.com/images/I/91o20P7b4BL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMNKFQHS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#51898f"
+  },
+  {
+    "id": 1967,
+    "title": "Amazon Product 47",
+    "price": 0,
+    "description": "Modern Accent Chair, Chenille Fabric Reading Living Room Side Chair, Single Sofa with Wood Legs, Armchair for Living Room Bedroom(Teal)",
+    "image": "https://m.media-amazon.com/images/I/91kQ++ZES2L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2KBT4MQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#467a87"
+  },
+  {
+    "id": 1968,
+    "title": "Amazon Product 48",
+    "price": 0,
+    "description": "Accent Chair Modern Velvet Upholstered Armchair with Button Tufted Back Lumbar Pillow Midcentury Single Sofa Chair with Solid Wood Frame for Living Room Waiting Room Office Club (Navy, 1 PCS)",
+    "image": "https://m.media-amazon.com/images/I/51lG2cnAkuL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DP4JX3ZV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1a2843"
+  },
+  {
+    "id": 1969,
+    "title": "Amazon Product 49",
+    "price": 0,
+    "description": "ANRODUO Pack of 2 Velvet Teal Throw Pillow Covers 20x20 Inch Decorative Pillow Covers Euro Cushion Case Soft Solid Square Cozy Modern Home Decor Pillowcase for Sofa Couch Bed Room Decor Home Decor",
+    "image": "https://m.media-amazon.com/images/I/81-JwLbotiL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3BP1N8B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#125e75"
+  },
+  {
+    "id": 1970,
+    "title": "Amazon Product 50",
+    "price": 0,
+    "description": "Teal and Gray Throw Pillow Covers Set of 4 18 x 18 Inches, Turquoise Modern Abstract Art Artwork Decorative Pillow Cushion Covers for Couch Bedroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/814M1ctMCLL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D69L1J6Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#398b8d"
+  },
+  {
+    "id": 1971,
+    "title": "Amazon Product 51",
+    "price": 0,
+    "description": "12x20 Teal Couch Throw Pillow Covers Rectangle Lumbar Velvet Decorative Soft Solid Cozy Cushion Cases Home Decor for Sofa Bedroom Living Room Set of 2",
+    "image": "https://m.media-amazon.com/images/I/51-p73Y8txL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07MH1BZ8S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#246d71"
+  },
+  {
+    "id": 1972,
+    "title": "Amazon Product 52",
+    "price": 0,
+    "description": "12x20 Lumbar Pillow Decorative Throw Pillows, Small Throw Pillows for Couch, Hand-Painted Outdoor Birds Pillowcases, Spring Summer Pillows Decorative Throw Cushion Covers Linen for Sofa Teal Blue",
+    "image": "https://m.media-amazon.com/images/I/61jAO27pK+L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BXKXHX41/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4dfd3"
+  },
+  {
+    "id": 1973,
+    "title": "Amazon Product 53",
+    "price": 0,
+    "description": "HWY 50 Teal Decorative Throw Pillow Covers Set 18x18 Inch for Couch Bed Bedroom Sofa Living Room, Chenille Soft Comfy Solid Square Throw Pillows Cases Cushion Cover Pack of 2",
+    "image": "https://m.media-amazon.com/images/I/81FoHAnkAAL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07Z5WKNW4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#31787e"
+  },
+  {
+    "id": 1974,
+    "title": "Amazon Product 54",
+    "price": 0,
+    "description": "CaliTime Throw Pillow Cases Pack of 2 Cozy Solid Dyed Soft Chenille Cushion Covers with Pom Poms for Couch Sofa Home Decoration 12 X 20 Inches Teal",
+    "image": "https://m.media-amazon.com/images/I/81HuhpmD6RL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B088FFT651/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#62a2ab"
+  },
+  {
+    "id": 1975,
+    "title": "Amazon Product 55",
+    "price": 0,
+    "description": "Tuft & Needle Premium Pillow, King Size with T&N Adaptive Foam, Sleeps Cooler & More Supportive Than Memory Foam Pillows, CertiPUR-US and Greenguard Gold Certified, 3-Year True Warranty, White",
+    "image": "https://m.media-amazon.com/images/I/51ooxZ2bxNL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B073H3TGTF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f4f4f5"
+  },
+  {
+    "id": 1976,
+    "title": "Amazon Product 56",
+    "price": 0,
+    "description": "Chenille and Cotton Long Pillow for Bed, Striped Textured Boho Long Lumbar Throw Pillow Cover 14x36, Neutral Accent Decorative Extra Long Body Pillow Case for Couch Sofa Bedroom, Turquoise",
+    "image": "https://m.media-amazon.com/images/I/81LBrLvv+fL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1N17LB7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#226d82"
+  },
+  {
+    "id": 1977,
+    "title": "Amazon Product 57",
+    "price": 0,
+    "description": "HAUSSY Teal Linen Decorative Throw Pillow Covers 20x20 Inch Set of 2, Square Cushion Case with 3 Vintage Buttons, Modern Farmhouse Home Decor for Couch, Bed",
+    "image": "https://m.media-amazon.com/images/I/91Y-X54EOJL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C5MJM1FS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#587f8e"
+  },
+  {
+    "id": 1978,
+    "title": "Amazon Product 58",
+    "price": 0,
+    "description": "MIULEE Teal Throw Pillow Covers 18x18 Inch Pack of 2 Cozy Chenille Pillow Covers with Tassels Solid Dyed Decorative Throw Pillows for Couch Sofa Bed Living Room Boho Home Decor",
+    "image": "https://m.media-amazon.com/images/I/91tZUq+JsfL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCZGSZFR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#406563"
+  },
+  {
+    "id": 1979,
+    "title": "Amazon Product 59",
+    "price": 0,
+    "description": "HYSEAS Velvet Soft Solid Square Pack of 2 Decorative Throw Pillow Covers Set Cushion Case for Home Sofa Bedroom Car, 18 x 18 Inches, Teal",
+    "image": "https://m.media-amazon.com/images/I/81AWD1oBVfL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKVG9KCP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0a5a55"
+  },
+  {
+    "id": 1980,
+    "title": "Amazon Product 60",
+    "price": 0,
+    "description": "Poise3EHome 18x18inches Teal Throw Pillow Covers Sequin Decorative Pillow Cases for Couch, Bed, Living Room, Christmas (Teal, 2PCS)",
+    "image": "https://m.media-amazon.com/images/I/81B-xHNPVxL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08G87MC7G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#104d5d"
+  },
+  {
+    "id": 1981,
+    "title": "Amazon Product 61",
+    "price": 0,
+    "description": "TOONOW Set of 2 Decorative Throw Pillow Covers 20\" x 20\", Aqua Teal Fluffy Pillow Covers New Luxury Faux Fur Square Pillow Covers for Sofa Couch Living Room Bedroom, No Pillow Insert",
+    "image": "https://m.media-amazon.com/images/I/91dHlsDrHVL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09FXLJT2C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#30dce7"
+  },
+  {
+    "id": 1982,
+    "title": "Amazon Product 62",
+    "price": 0,
+    "description": "CaliTime Throw Pillow Cases Pack of 2 Cozy Fleece Two-Tone Abstract Feather Decorative Cushion Covers for Couch Bed Sofa Farmhouse Decoration 18 X 18 Inches Teal Green Navy Somke Blue Grey",
+    "image": "https://m.media-amazon.com/images/I/715sC5bqLNL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BZP8CQ2T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0f2ff"
+  },
+  {
+    "id": 1983,
+    "title": "Amazon Product 63",
+    "price": 0,
+    "description": "Artcest Set of 2, Cozy Solid Velvet Throw Pillow Case Decorative Couch Cushion Cover Soft Sofa Euro Sham with Zipper Hidden, 18\"x18\" (Light Teal)",
+    "image": "https://m.media-amazon.com/images/I/61OIuGgIGEL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0791FD682/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#13939a"
+  },
+  {
+    "id": 1984,
+    "title": "Amazon Product 64",
+    "price": 0,
+    "description": "Set of 2 Teal Green Decorative Velvet Throw Pillow Covers 18x18 Inches, Soft Neutral Accent Pillow Cases with Vintage Textured Farmhouse Couch Cushion Covers for Luxurious Home Decor",
+    "image": "https://m.media-amazon.com/images/I/81bq8-ZLuML._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMPCRFG6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2a6664"
+  },
+  {
+    "id": 1985,
+    "title": "Amazon Product 65",
+    "price": 0,
+    "description": "Home Brilliant Throw Pillow Covers for Couch Tweed Chenille Throw Pillow Covers 18x18 Sofa Bench Winter Decorations, 2 Packs, 18 x 18 inches, Greenish Teal",
+    "image": "https://m.media-amazon.com/images/I/91Ov4InBMAS._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07CSQ63TZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c4c8c8"
+  },
+  {
+    "id": 1986,
+    "title": "Amazon Product 66",
+    "price": 0,
+    "description": "PANOD Boho Long Lumbar Throw Pillow Cover 14 x 36 Blue, Chenille Morocan Extra Long Pillow Case Cover, Decorative Long Pillow for Bed Couch Sofa Farmhouse",
+    "image": "https://m.media-amazon.com/images/I/81V8ZViX-uL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DBDLSFQ4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8dc2e3"
+  },
+  {
+    "id": 1987,
+    "title": "Amazon Product 67",
+    "price": 0,
+    "description": "Woaboy Pack of 2 Striped Velvet Throw Pillow Covers Teal Modern Decorative Couch Throws Square Soft Cozy Pillowcases for Spring Winter Bed Sofa Cushion Living Room 18x18 Inch",
+    "image": "https://m.media-amazon.com/images/I/719c+pCwFlL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C7MX9Q83/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0e89a2"
+  },
+  {
+    "id": 1988,
+    "title": "Amazon Product 68",
+    "price": 0,
+    "description": "Alerfa 18 x 18 Inch Teal White Geometric Striped Gold Leather Patchwork Velvet Cushion Case Luxury Modern Lumbar Throw Pillow Cover Decorative Pillow for Couch Sofa Living Room Bedroom Car",
+    "image": "https://m.media-amazon.com/images/I/81BwRw-rBFL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B091Q552VK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#295b61"
+  },
+  {
+    "id": 1989,
+    "title": "Amazon Product 69",
+    "price": 0,
+    "description": "GALMAXS7 Marble Texture Turquoise and Gold Silver Decorative Throw Pillow Covers Luxury Abstract Fluid Art Ink Soft Velvet Pillow Case Square Cushion Covers for Couch Sofa 18 x 18 Inch Set of 4",
+    "image": "https://m.media-amazon.com/images/I/61Uuq0BuQoL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08QM7XYSD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7fbebc"
+  },
+  {
+    "id": 1990,
+    "title": "Amazon Product 70",
+    "price": 0,
+    "description": "Plush Fleece Throw Blanket for Couch and Bed, Fluffy Fuzzy Cozy Anti-Static Soft Blankets All Season Use (50x60 Inches, Teal)",
+    "image": "https://m.media-amazon.com/images/I/81-aTEUo-gL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFBDN7Y8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#213c47"
+  },
+  {
+    "id": 1991,
+    "title": "Amazon Product 71",
+    "price": 0,
+    "description": "ETASOP Throw Pillows with Inserts Included 18x18, 2 Pack Velvet Decorative Pillow Covers with Inserts Farmhouse Home Decor (Teal)",
+    "image": "https://m.media-amazon.com/images/I/61mkCkyNZsL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVPFMRDF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#004863"
+  },
+  {
+    "id": 1992,
+    "title": "Amazon Product 72",
+    "price": 0,
+    "description": "Boho Pillow Covers 18X18 Inch Boho Tufted Throw Pillow Covers Decorative Tassels Cushion Cover Farmhouse Pillow Case for Couch Sofa Bed Living Room Bedroom, Teal",
+    "image": "https://m.media-amazon.com/images/I/91LnrSvKTnL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D69TT2H2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcd6cf"
+  },
+  {
+    "id": 1993,
+    "title": "Amazon Product 73",
+    "price": 0,
+    "description": "YUSOKI Luxury Faux Fur Throw Pillow Covers-18 x18, Set of 2-Decorative Fuzzy Fluffy Cozy Pillow Cases for Sofa Couch Bedroom Without Insert(Teal/Turquoise, 18\"x18\")",
+    "image": "https://m.media-amazon.com/images/I/916cliUwo4L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B9N4GJNQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#116786"
+  },
+  {
+    "id": 1994,
+    "title": "Amazon Product 74",
+    "price": 0,
+    "description": "CaliTime Throw Pillow Covers Pack of 2 Cozy Fleece Mandala Dahlia Floral Medallion Compass Style Cushion Cases for Couch Bed Sofa Farmhouse Decoration 18 X 18 Inches Teal Grey",
+    "image": "https://m.media-amazon.com/images/I/71nV5SG0vJL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B082TS6RYQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3f8492"
+  },
+  {
+    "id": 1995,
+    "title": "Amazon Product 75",
+    "price": 0,
+    "description": "Bonhause Turquoise Marble Throw Pillow Covers 18x18 Inch Set of 4 Two-Sided Teal Gold Abstract Art Modern Decorative Pillows Case Soft Velvet Outdoor Cushion Covers for Couch Sofa Bed Home Decor",
+    "image": "https://m.media-amazon.com/images/I/81-3HSwERML._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09S5YD1QB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#07656f"
+  },
+  {
+    "id": 1996,
+    "title": "Amazon Product 76",
+    "price": 0,
+    "description": "Turquoise Gold Teal Throw Pillow Covers 18x18 Set Of 4 Green Plant Leaf Floral Pillow Covers Farmhouse Decorative Outdoor Patio Pillow Cases Cushion Covers for Living Room Couch Sofa Home Decor",
+    "image": "https://m.media-amazon.com/images/I/81Tdr14PWvL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B1WR1KVL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#479e9f"
+  },
+  {
+    "id": 1997,
+    "title": "Amazon Product 77",
+    "price": 0,
+    "description": "Teal Gray Ethnic Boho Throw Pillow Covers 18X18 Inch Set of 2 Bohemian Carpet Vintage Pillow Cases Grey Floral Pillow Cover Farmhouse Home Decor for Sofa Couch Porch Outdoor",
+    "image": "https://m.media-amazon.com/images/I/91wlnTCAgNL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZNTYXQD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b8d1ce"
+  },
+  {
+    "id": 1998,
+    "title": "Amazon Product 78",
+    "price": 0,
+    "description": "Baidast Teal Decorative Throw Pillow Covers 18x18 Set of 4, Teal and Grey Modern Daisy Floral Pillows Linen Pillow Covers for Couch Sofa Living Room",
+    "image": "https://m.media-amazon.com/images/I/81bDFJM7epL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09XX12JQM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#33b49f"
+  },
+  {
+    "id": 1999,
+    "title": "Amazon Product 79",
+    "price": 0,
+    "description": "Comfort Spaces Luxurious & Fuzzy Soft Ruched Faux Fur Plush Throw Blanket Set with 2 Matching Square Pillow Covers, for Sofa, Chair, Couch, Living Room, Home Office, Teal 50\"x 60\"",
+    "image": "https://m.media-amazon.com/images/I/A15Ld5XUKfL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07GHD6YFV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4d7c95"
+  },
+  {
+    "id": 2000,
+    "title": "Amazon Product 80",
+    "price": 0,
+    "description": "Kinlop 4 Pcs Turquoise Pillow Covers Teal Valentine's Day Throw Pillow Case Velvet 18 x 18 Inch Anniversary Wedding Heart Gnome Cover Decor for Bed Sofa Couch",
+    "image": "https://m.media-amazon.com/images/I/71NZbvsK7yL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BNGZHPBC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#94bebd"
+  },
+  {
+    "id": 2001,
+    "title": "Amazon Product 81",
+    "price": 0,
+    "description": "1 Piece Euro Sham Blue Pillow Covers 24x24 Decorative Farmhouse Pillow Covers Velvet Square Cushion Covers Soft Bubble Texture Euro Shams for Couch Sofa Bed Living Room",
+    "image": "https://m.media-amazon.com/images/I/81Zynolx+DL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BYZD2WGW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#465d76"
+  },
+  {
+    "id": 2002,
+    "title": "Amazon Product 82",
+    "price": 0,
+    "description": "HOSTECCO Teal and Gold Throw Pillow Covers 18x18 inch Set of 4 Turquoise Gold Abstract Pillow Cases Modern Decorative Cushion Covers for Sofa Couch",
+    "image": "https://m.media-amazon.com/images/I/81sU-px1+sL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08F5JMNRL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3d4b1"
+  },
+  {
+    "id": 2003,
+    "title": "Amazon Product 83",
+    "price": 0,
+    "description": "Custom Embroidered Name Lumbar Pillow, Personalized Monogrammed Names Pillows for Kids Toddler Room, Customized 12''x20'' Bed Throw Pillow Cover Gifts for Women Girls Boy",
+    "image": "https://m.media-amazon.com/images/I/716k6JGZh-L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CBKCVS8W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0b547e"
+  },
+  {
+    "id": 2004,
+    "title": "Amazon Product 84",
+    "price": 0,
+    "description": "Turquoise Throw Pillow Covers 18x18 Set of 4 Farmhouse Grey Teal Rose Flower Decorative Pillow Cover for Couch Bed Linen Cotton Sofa Cushion Case Living Room Outdoor Patio Furniture Home Decorations",
+    "image": "https://m.media-amazon.com/images/I/81PVf8lnarL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B087BV81ZC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#188094"
+  },
+  {
+    "id": 2005,
+    "title": "Amazon Product 85",
+    "price": 0,
+    "description": "Kevin Textile Pack of 2 Faux Fur Pillow Covers Throw Pillows Cases, Luxury Series Plush Cushion Case Mongolian Style, Gradient Teal 18 x 18 inches 45 x 45 cm",
+    "image": "https://m.media-amazon.com/images/I/81O7MUTJ52L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08L51KGYK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#04606c"
+  },
+  {
+    "id": 2006,
+    "title": "Amazon Product 86",
+    "price": 0,
+    "description": "Embroidered Inspirational Quote Throw Pillow Cover with Dream Pattern, Dream Decorative Canvas Pillow Cover 12 X 20 Inches",
+    "image": "https://m.media-amazon.com/images/I/51itpgGb2GL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07TTJCMTJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eaeaeb"
+  },
+  {
+    "id": 2007,
+    "title": "Amazon Product 87",
+    "price": 0,
+    "description": "Avigers 18 x 18 Inch Square Green Teal Gold Abstract Striped Embroidery Cushion Case Luxury Modern Throw Pillow Cover Decorative Pillow for Couch Living Room Bedroom Car",
+    "image": "https://m.media-amazon.com/images/I/91VnUWEULJL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B082G8GBMF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4d7878"
+  },
+  {
+    "id": 2008,
+    "title": "Amazon Product 88",
+    "price": 0,
+    "description": "Window Groove Cleaning Brush, 2025 New Hand-held Magic Window Track Cleaner Tools Set, Groove Cleaning Brush Window or Sliding Door for Sliding Door, Sill, Tile Lines, Shutter (Gray)",
+    "image": "https://m.media-amazon.com/images/I/51TCTAaCBuL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DSTVVT31/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c7c9c9"
+  },
+  {
+    "id": 2009,
+    "title": "Amazon Product 89",
+    "price": 0,
+    "description": "Round Throw Pillows Velvet Teal 15.7in*15.7in Round Decoration Pillow Pleated Circular Pillows Small Round Floor Cushion for Bedroom, Living Room, Dorm",
+    "image": "https://m.media-amazon.com/images/I/71Z8epMdrYL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJTZN9GJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#387774"
+  },
+  {
+    "id": 2010,
+    "title": "Amazon Product 90",
+    "price": 0,
+    "description": "Custom Embroidered Name Lumbar Pillow, Personalized Monogrammed Names Linen Pillows for Sofa Bed, Customized 12''x20'' Farmhouse Linen Throw Pillow Cover Gifts for Women",
+    "image": "https://m.media-amazon.com/images/I/81pOeF6wXiL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DB5V3RW1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a79290"
+  },
+  {
+    "id": 2011,
+    "title": "Amazon Product 91",
+    "price": 0,
+    "description": "VROOMIUM Throw Pillow Covers 18X18, Teal Pillow Covers Room Decor, Velvet Soft Set of 2, Floral and Solid Accent Pillow Cushion Case for Couch Bed Sofa",
+    "image": "https://m.media-amazon.com/images/I/812sXagu++S._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B093RT8ZQ4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4fbabb"
+  },
+  {
+    "id": 2012,
+    "title": "Amazon Product 92",
+    "price": 0,
+    "description": "LLB Luxury Genuine Sheepskin Throw Pillow Covers Soft Fluffy Solid Decorative Square Couch Pillow Cover 18\"x18\" Pillowcase Cushion Case for Sofa Bedroom Car Bed No Pillow Insert Long Wool Ivory White",
+    "image": "https://m.media-amazon.com/images/I/71+yubr2fEL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B93NQ3WQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eee8e0"
+  },
+  {
+    "id": 2013,
+    "title": "Amazon Product 93",
+    "price": 0,
+    "description": "BETGINY Turquoise Grey Throw Pillow Covers, Teal Modern Abstract Art Painting Throw Pillows for Couch, Gray Blue Artwork Pillow Covers 18x18 Inch 2 Pcs Square Cushion Cover Gift for Couch Sofa",
+    "image": "https://m.media-amazon.com/images/I/81Z0mtYm44L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BFVSNL82/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#76a3a7"
+  },
+  {
+    "id": 2014,
+    "title": "Amazon Product 94",
+    "price": 0,
+    "description": "Sioloc Shell Pillows, Seashell Shaped Throw Pillows Soft Velvet Insert Decorative Pillows for Bed Couch Living Sofa Room Decor Accent Throw Pillow(Coral, 13 X 10 inches), Teal",
+    "image": "https://m.media-amazon.com/images/I/716I4PZL8xL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BG6TB6RB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1a5968"
+  },
+  {
+    "id": 2015,
+    "title": "Amazon Product 95",
+    "price": 0,
+    "description": "Spring Teal Dahlia Pillow Covers 18X18 in Navy Blue Teal Floral Couch Pillow Cases Modern Abstract Throw Pillows Set of 2 Summer Home Decor for Living Room Bedroom Bed Cushion Outdoor",
+    "image": "https://m.media-amazon.com/images/I/81qrMiiITkL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BPHK4ZGV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3a5275"
+  },
+  {
+    "id": 2016,
+    "title": "Amazon Product 96",
+    "price": 0,
+    "description": "JAUXIO Diamond Quilted Velvet Pillowcases 2 Pack Pillow Shams Tassels Decorative Fringe Decorative Cozy Soft Zipper Closure (Navy, Standard)",
+    "image": "https://m.media-amazon.com/images/I/81IAIc06QPL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09S5H96XJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#262c3b"
+  },
+  {
+    "id": 2017,
+    "title": "Amazon Product 97",
+    "price": 0,
+    "description": "Yeiotsy Pack of 2 Nordic Style Decorative Throw Pillow Covers for Sofa Bed Card Chair Geometric Cushion Cases Jacquard Chenille (Teal Stripes, 18 X 18 Inches)",
+    "image": "https://m.media-amazon.com/images/I/71nDW6RgKhL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MBRN8Q2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4ccc5"
+  },
+  {
+    "id": 2018,
+    "title": "Amazon Product 98",
+    "price": 0,
+    "description": "Teal Dahlia Pillow Cover 18x18 Inch Spring Summer Blue Throw Pillow Covers Gray Turquoise Geometric Floral Line Cushion Case Farmhouse Outdoor Home Decor for Sofa Bed Living Room, Set of 2",
+    "image": "https://m.media-amazon.com/images/I/71wV3mA8J+L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C3YRRYMZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2d6e75"
+  },
+  {
+    "id": 2019,
+    "title": "Amazon Product 99",
+    "price": 0,
+    "description": "CaliTime Throw Pillow Cases Pack of 2 Cozy Fleece Two-Tone Abstract Artistic Feather Decorative Cushion Covers for Couch Bed Sofa Farmhouse Decoration 18 X 18 Inches Teal Grey",
+    "image": "https://m.media-amazon.com/images/I/81uN-QHK16L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CDZLW9KL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5dddf"
+  },
+  {
+    "id": 2020,
+    "title": "Amazon Product 100",
+    "price": 0,
+    "description": "SARO LIFESTYLE Flower Design Poly Filled Throw Pillow, Teal, 13\"",
+    "image": "https://m.media-amazon.com/images/I/91na8nQmhBL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B005FTPU6U/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#417b95"
+  },
+  {
+    "id": 2021,
+    "title": "Amazon Product 101",
+    "price": 0,
+    "description": "Purple Teal Turquoise Galaxy Nebulous Velvet Throw Pillow Cover Cozy Square Throw Pillow Case Home Decor for Bed Couch Sofa Living Room Cushion Case 18\" X18“",
+    "image": "https://m.media-amazon.com/images/I/713e36OvN1L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08MF6QHBZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#36496b"
+  },
+  {
+    "id": 2022,
+    "title": "Amazon Product 102",
+    "price": 0,
+    "description": "Purple Teal Turquoise Galaxy Nebulous Velvet Throw Pillow Cover Cozy Square Throw Pillow Case Home Decor for Bed Couch Sofa Living Room Cushion Case 18\" X18“",
+    "image": "https://m.media-amazon.com/images/I/713e36OvN1L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08MF6QHBZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1f8991"
+  },
+  {
+    "id": 2023,
+    "title": "Amazon Product 103",
+    "price": 0,
+    "description": "Farmhouse Decorative Throw Pillow Covers 20x20 Inch Set of 4 - Soft Plush Beige with Snowman and Animal Print Designs for Winter Christmas Holiday Decor, Living Room Couch",
+    "image": "https://m.media-amazon.com/images/I/719p5hYZMkL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DPGJF4F3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8d3c5"
+  },
+  {
+    "id": 2024,
+    "title": "Amazon Product 104",
+    "price": 0,
+    "description": "AELS Geometric Textured Throw Pillow Covers 18x18, Set of 2, Decorative Pillow Case, Diamond Boho Farmhouse Cushion Case for Sofa, Bed, Couch, Teal (Covers Only)",
+    "image": "https://m.media-amazon.com/images/I/91e4mbLyJqL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKXHK36G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcd6d6"
+  },
+  {
+    "id": 2025,
+    "title": "Amazon Product 105",
+    "price": 0,
+    "description": "Factory Direct Partners Mauve 18\" x 18\" Square Microfiber Pillow with Piping, 2-Pack, 18x18, 2 Count",
+    "image": "https://m.media-amazon.com/images/I/614kY+oUuFL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMTY41R8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#99787d"
+  },
+  {
+    "id": 2026,
+    "title": "Amazon Product 106",
+    "price": 0,
+    "description": "Factory Direct Partners Mauve 12\" x 20\" Rectangle Lumbar Microfiber Pillow with Piping, 2-Pack, 12x20, 2 Count",
+    "image": "https://m.media-amazon.com/images/I/610Eip3nJqL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMTZR646/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#85646a"
+  },
+  {
+    "id": 2027,
+    "title": "Amazon Product 107",
+    "price": 0,
+    "description": "Velvet Throw Pillow Covers, 18x18 Couch Pillows for Living Room Sofa, Decorative Pillows for Bed Car Office Home Decor, Pack of 2(Teal)",
+    "image": "https://m.media-amazon.com/images/I/71AsVa6W22L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DN6SR42C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#05726c"
+  },
+  {
+    "id": 2028,
+    "title": "Amazon Product 108",
+    "price": 0,
+    "description": "Factory Direct Partners Bordeaux 15\" x 15\" Square Microfiber & Vinyl Pillow with Piping, 2-Pack, 15x15, 2 Count",
+    "image": "https://m.media-amazon.com/images/I/610WY-uHu1L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMTWNCP7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#49131f"
+  },
+  {
+    "id": 2029,
+    "title": "Amazon Product 109",
+    "price": 0,
+    "description": "Factory Direct Partners Mauve 12\" x 20\" Rectangle Lumbar Microfiber & Vinyl Pillow with Piping, 2-Pack, 12x20, 2 Count",
+    "image": "https://m.media-amazon.com/images/I/613pqZQXTsL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMV155KW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#806065"
   }
 ];
