@@ -12,6 +12,7 @@ export interface AmazonProduct {
 }
 
 export const amazonProducts: AmazonProduct[] = [
+[
   {
     "id": 1,
     "title": "Amazon Product 1",
@@ -3700,7 +3701,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81cz5uHDRLL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B01MQE0UFF/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ffffff"
+    "dominantColor": "#b7ab6e"
   },
   {
     "id": 370,
@@ -4410,7 +4411,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61GN4icVrdS._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0916TJ4SS/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e0dfdb"
+    "dominantColor": "#8b977f"
   },
   {
     "id": 441,
@@ -7550,7 +7551,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91Rg5lyUNbL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CVWY7B49/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ede3e1"
+    "dominantColor": "#364156"
   },
   {
     "id": 755,
@@ -8700,7 +8701,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71vxgigLjxL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D94Y4VXR/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#fefffe"
+    "dominantColor": "#345062"
   },
   {
     "id": 870,
@@ -9692,7 +9693,7 @@ export const amazonProducts: AmazonProduct[] = [
     "affiliateLink": "https://www.amazon.com/dp/B095PR8MM4/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#DEDDDF"
   },
- {
+  {
     "id": 967,
     "title": "Amazon Product 1",
     "price": 0,
@@ -9780,7 +9781,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91elxDBoVuL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BLSB48RL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#8f9c81"
+    "dominantColor": "#e0ac50"
   },
   {
     "id": 976,
@@ -9790,7 +9791,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71vEoZrW7EL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BN3D78X2/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e9b457"
+    "dominantColor": "#6a9196"
   },
   {
     "id": 977,
@@ -9830,7 +9831,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81YRkClC+TL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DLG7W6SK/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d5cabc"
+    "dominantColor": "#f1f2e2"
   },
   {
     "id": 981,
@@ -9840,7 +9841,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81xZeV21+5L._AC_SX522_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0B28C8115/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e8e9d9"
+    "dominantColor": "#001721"
   },
   {
     "id": 982,
@@ -9850,7 +9851,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71X+7oKGRgL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CM36YJNX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#1398b3"
+    "dominantColor": "#2a2f42"
   },
   {
     "id": 983,
@@ -9870,7 +9871,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71IlbUqeV7L._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CF26K1XN/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c8bebc"
+    "dominantColor": "#201f24"
   },
   {
     "id": 985,
@@ -9900,7 +9901,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81EcY2MhHDL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D7928FM3/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#525053"
+    "dominantColor": "#e9e8e3"
   },
   {
     "id": 988,
@@ -9910,7 +9911,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/819jmUN1YrL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B06ZYC7SZN/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d5d1c5"
+    "dominantColor": "#7fa2a8"
   },
   {
     "id": 989,
@@ -9920,7 +9921,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71oHtiPYlUL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BC19TVB1/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dad5d0"
+    "dominantColor": "#3592a2"
   },
   {
     "id": 990,
@@ -9930,7 +9931,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91isSxKrBxL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CNXND7F2/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#134b58"
+    "dominantColor": "#75877a"
   },
   {
     "id": 991,
@@ -9940,7 +9941,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/818aGgJk7IL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D2GHLSQK/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#5b6f60"
+    "dominantColor": "#548b96"
   },
   {
     "id": 992,
@@ -9950,7 +9951,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Iu7EQbqtL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DFQ1GN9Z/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#6ea8b5"
+    "dominantColor": "#cbd4d1"
   },
   {
     "id": 993,
@@ -9990,7 +9991,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71SaGCnj-pL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0B2R65CLF/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#2a2a2a"
+    "dominantColor": "#708b84"
   },
   {
     "id": 997,
@@ -10000,7 +10001,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81RE7cd-KUL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CMF3Z5FL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c3e0db"
+    "dominantColor": "#2b2b29"
   },
   {
     "id": 998,
@@ -10010,7 +10011,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/819Gdd80e1L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CMFDJ1JB/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7a7a78"
+    "dominantColor": "#a4a19a"
   },
   {
     "id": 999,
@@ -10020,7 +10021,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81RE7cd-KUL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CMF3Z5FL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dfdcd5"
+    "dominantColor": "#464644"
   },
   {
     "id": 1000,
@@ -10040,7 +10041,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61bpqnHkUwL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B074HS2XRF/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#838381"
+    "dominantColor": "#038c8a"
   },
   {
     "id": 1002,
@@ -10050,7 +10051,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81H9aknfulL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BR6W2PNX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cec2bb"
+    "dominantColor": "#396168"
   },
   {
     "id": 1003,
@@ -10080,7 +10081,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81ENOKmn1IL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09TSTR2WZ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cfc9c1"
+    "dominantColor": "#3d5658"
   },
   {
     "id": 1006,
@@ -10100,7 +10101,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71Yzz7y-5oL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CZLGW2MK/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#0c93af"
+    "dominantColor": "#81a098"
   },
   {
     "id": 1008,
@@ -10110,7 +10111,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/811L4W+uzKL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09YCPRTC7/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#59726c"
+    "dominantColor": "#915637"
   },
   {
     "id": 1009,
@@ -10120,7 +10121,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61d+M7ObL8L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DMZT7STY/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7d4a30"
+    "dominantColor": "#f0ece9"
   },
   {
     "id": 1010,
@@ -10160,7 +10161,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71dzbh3TW5L._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C7H2BM8W/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d3ccc2"
+    "dominantColor": "#487d81"
   },
   {
     "id": 1014,
@@ -10170,7 +10171,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/7138o7RtZfL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09LZ7QKJ7/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#407377"
+    "dominantColor": "#6d8e75"
   },
   {
     "id": 1015,
@@ -10200,7 +10201,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81fCLJquKvL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CYH3ZF5P/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#282828"
+    "dominantColor": "#70964b"
   },
   {
     "id": 1018,
@@ -10210,7 +10211,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71TMQUzayqL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C741XX4K/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7ba158"
+    "dominantColor": "#00191d"
   },
   {
     "id": 1019,
@@ -10260,7 +10261,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81e5MPC9YfL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CYT5NG4X/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cecab9"
+    "dominantColor": "#25352a"
   },
   {
     "id": 1024,
@@ -10290,7 +10291,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/7144CijWabL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BG2S7PTD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#3b4b3e"
+    "dominantColor": "#e4b54d"
   },
   {
     "id": 1027,
@@ -10300,7 +10301,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/9193ZgY7RSL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BJKK5SGH/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dca134"
+    "dominantColor": "#9bbfc5"
   },
   {
     "id": 1028,
@@ -10310,7 +10311,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71TP+9FIHkL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BB6YDFJT/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#47666b"
+    "dominantColor": "#02202b"
   },
   {
     "id": 1029,
@@ -10350,7 +10351,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61KWPsHMC+L._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09Z6PQDC7/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#2d8a9b"
+    "dominantColor": "#22a28b"
   },
   {
     "id": 1033,
@@ -10360,7 +10361,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71P272-kInL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DRCQ4B76/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#bfbfb5"
+    "dominantColor": "#7c9ea0"
   },
   {
     "id": 1034,
@@ -10370,7 +10371,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71h1G7pAI3L._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B071XPKWTQ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a0bcbf"
+    "dominantColor": "#5094a1"
   },
   {
     "id": 1035,
@@ -10390,7 +10391,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91fme+ZXi-L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CXT2X38V/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c6c3b8"
+    "dominantColor": "#226167"
   },
   {
     "id": 1037,
@@ -10400,7 +10401,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81-cVVNDpZL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DHV4B65M/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#629ca7"
+    "dominantColor": "#fcfcfa"
   },
   {
     "id": 1038,
@@ -10410,7 +10411,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/818M33vf26L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09ZYB4RL8/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d9d4cd"
+    "dominantColor": "#728d87"
   },
   {
     "id": 1039,
@@ -10430,7 +10431,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71Cxgliz6tL._AC_SX355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09YRLNY27/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c6bbae"
+    "dominantColor": "#b5572d"
   },
   {
     "id": 1041,
@@ -10440,7 +10441,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71NRApgRtML._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D7PY3N5V/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d55a17"
+    "dominantColor": "#253d50"
   },
   {
     "id": 1042,
@@ -10480,7 +10481,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71zhD34HInL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C4KHSJJ9/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cdc6b8"
+    "dominantColor": "#00718f"
   },
   {
     "id": 1046,
@@ -10500,7 +10501,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/A1nL8h0FfHL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BFB8JCZ6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#8a9c9a"
+    "dominantColor": "#427380"
   },
   {
     "id": 1048,
@@ -10560,7 +10561,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81UfTfckSbL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CZ71H7T4/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d9d7cd"
+    "dominantColor": "#78989d"
   },
   {
     "id": 1054,
@@ -10570,7 +10571,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Bu0nsrbHL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D1CBGMKP/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#97b6b9"
+    "dominantColor": "#bdd1c6"
   },
   {
     "id": 1055,
@@ -10590,7 +10591,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71X4l+ZfwEL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07SFSWM95/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#728782"
+    "dominantColor": "#0e6d7a"
   },
   {
     "id": 1057,
@@ -10630,7 +10631,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81FuJ8U4WtL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CV3Q3V33/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d8deda"
+    "dominantColor": "#0e5261"
   },
   {
     "id": 1061,
@@ -10640,7 +10641,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71e3k3yRNGL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C16RGRK1/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#56aab6"
+    "dominantColor": "#dbd8c9"
   },
   {
     "id": 1062,
@@ -10650,7 +10651,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91gBFDBZk+L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CKRZ7NNB/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cfcac6"
+    "dominantColor": "#064147"
   },
   {
     "id": 1063,
@@ -10710,7 +10711,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81zpmXT7eAL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CZ3XX2KJ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ccd1c9"
+    "dominantColor": "#738c93"
   },
   {
     "id": 1069,
@@ -10730,7 +10731,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Kb1QrphgL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CZMZBXKQ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#8eadb2"
+    "dominantColor": "#30797d"
   },
   {
     "id": 1071,
@@ -10740,7 +10741,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/710eIfmT32L._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DHCYJB1N/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#53a6aa"
+    "dominantColor": "#dda65d"
   },
   {
     "id": 1072,
@@ -10750,7 +10751,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71HdP6P4ktL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CR1HP64T/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e4d1b0"
+    "dominantColor": "#9dbec4"
   },
   {
     "id": 1073,
@@ -10790,7 +10791,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91aoGJqljnL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C7YF3L3S/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e3e2de"
+    "dominantColor": "#404447"
   },
   {
     "id": 1077,
@@ -10800,7 +10801,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91aoGJqljnL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C7YF3L3S/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e3e2de"
+    "dominantColor": "#768081"
   },
   {
     "id": 1078,
@@ -10820,7 +10821,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91h+prfSFLL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B099RTZNC4/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d6d4cd"
+    "dominantColor": "#395b5d"
   },
   {
     "id": 1080,
@@ -10840,7 +10841,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81sziUdT+OL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08H4KJPV7/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cdae8a"
+    "dominantColor": "#ec9835"
   },
   {
     "id": 1082,
@@ -10900,7 +10901,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81bdgMOKeYL._AC_SX522_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BMVC6B1L/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c4cccc"
+    "dominantColor": "#57adb4"
   },
   {
     "id": 1088,
@@ -10910,7 +10911,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91342j7+InL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08ZY1D83Y/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#69c4cc"
+    "dominantColor": "#08363e"
   },
   {
     "id": 1089,
@@ -10920,7 +10921,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91n4rsdKC+L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BWDBGN88/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#155d6b"
+    "dominantColor": "#9cb1b4"
   },
   {
     "id": 1090,
@@ -10930,7 +10931,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81nWh8ja6LL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DGQGRN58/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#95a9a8"
+    "dominantColor": "#233645"
   },
   {
     "id": 1091,
@@ -10950,7 +10951,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/711HTiOuVHL._AC_SX522_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CB14JL3G/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d9d4c9"
+    "dominantColor": "#769993"
   },
   {
     "id": 1093,
@@ -10960,7 +10961,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81+C0PLy7NL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CHXX5X6G/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#4d766e"
+    "dominantColor": "#015b64"
   },
   {
     "id": 1094,
@@ -10990,7 +10991,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71FA9y6RnvL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B088D7DXMC/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#1a282f"
+    "dominantColor": "#1b3e4c"
   },
   {
     "id": 1097,
@@ -11040,7 +11041,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81LAA5JjXpL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BTG9LGTH/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ccc8bf"
+    "dominantColor": "#094d62"
   },
   {
     "id": 1102,
@@ -11050,7 +11051,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81vZntT2p1L._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07QKY9BXH/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#0b7082"
+    "dominantColor": "#e6e6e6"
   },
   {
     "id": 1103,
@@ -11080,7 +11081,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71ii97tvOOL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07Z4N1ZJQ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d9d5ce"
+    "dominantColor": "#447d7c"
   },
   {
     "id": 1106,
@@ -11130,7 +11131,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Z9qf7QT3L._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DGFQ3KRX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cad1cf"
+    "dominantColor": "#8bacb3"
   },
   {
     "id": 1111,
@@ -11140,7 +11141,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/A1xqwZe4KyL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B086PVJL33/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b2dadc"
+    "dominantColor": "#d1d2cc"
   },
   {
     "id": 1112,
@@ -11170,7 +11171,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Io3AzOV5L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0B8HDDMZX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c6cac9"
+    "dominantColor": "#28a1a3"
   },
   {
     "id": 1115,
@@ -11190,7 +11191,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61NbIgJH4cL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07SB5365W/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#6192a1"
+    "dominantColor": "#d3b3b6"
   },
   {
     "id": 1117,
@@ -11210,7 +11211,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71sTQNTqeHL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09LGXFL6Z/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#bcbfbd"
+    "dominantColor": "#d3e0e4"
   },
   {
     "id": 1119,
@@ -11250,7 +11251,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71-ciBhiP7L._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0B58BKZCX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dfcdc3"
+    "dominantColor": "#ffffff"
   },
   {
     "id": 1123,
@@ -11260,7 +11261,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Ehpznyk4L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CJCBVKRC/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d7d3c9"
+    "dominantColor": "#001f27"
   },
   {
     "id": 1124,
@@ -11292,7 +11293,7 @@ export const amazonProducts: AmazonProduct[] = [
     "affiliateLink": "https://www.amazon.com/dp/B08FD537NJ/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#2d6a77"
   },
-   {
+  {
     "id": 1127,
     "title": "Amazon Product 1",
     "price": 0,
@@ -11360,7 +11361,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81v98E2nj9L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CMTW85YK/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d3bdb2"
+    "dominantColor": "#c71f51"
   },
   {
     "id": 1134,
@@ -11370,7 +11371,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81oI35tf2yL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CSFWS152/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ef2c6f"
+    "dominantColor": "#cda29c"
   },
   {
     "id": 1135,
@@ -11380,7 +11381,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81qOItq7iyL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CQ71N25S/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a97873"
+    "dominantColor": "#e9dfdf"
   },
   {
     "id": 1136,
@@ -11390,7 +11391,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71PEkJbA0FL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DFBTDWT8/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#fcdcdf"
+    "dominantColor": "#c7aca1"
   },
   {
     "id": 1137,
@@ -11400,7 +11401,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71OVXYOsSAS._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08BDB8FL5/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#f5dcdd"
+    "dominantColor": "#fde9ea"
   },
   {
     "id": 1138,
@@ -11410,7 +11411,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81FaqG-yAOL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D1QR5SMB/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e2d7d0"
+    "dominantColor": "#ec4b8a"
   },
   {
     "id": 1139,
@@ -11420,7 +11421,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91iDwAZGAOL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D22FHPWV/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#f965a7"
+    "dominantColor": "#e1c6bf"
   },
   {
     "id": 1140,
@@ -11470,7 +11471,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81f+yQfFKBL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D95GDW84/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d4c6c0"
+    "dominantColor": "#ba9a98"
   },
   {
     "id": 1145,
@@ -11500,7 +11501,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81OwkLjXRqL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CTFZS4TF/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b16b73"
+    "dominantColor": "#a1005e"
   },
   {
     "id": 1148,
@@ -11510,7 +11511,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Zx7yEDIqL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BY2QT2NM/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d91293"
+    "dominantColor": "#c79fa5"
   },
   {
     "id": 1149,
@@ -11550,7 +11551,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81RXF4+6GcL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DJJZK6LH/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d8b8b4"
+    "dominantColor": "#eeeae7"
   },
   {
     "id": 1153,
@@ -11620,7 +11621,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81g6TbQK7GL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BHBMS5Z9/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e9c8c7"
+    "dominantColor": "#d81b74"
   },
   {
     "id": 1160,
@@ -11630,7 +11631,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71IJSZcgpnL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CP347BW3/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ee2887"
+    "dominantColor": "#efd2cf"
   },
   {
     "id": 1161,
@@ -11670,7 +11671,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91aoGJqljnL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C7YF3L3S/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#deb8ae"
+    "dominantColor": "#eeeeee"
   },
   {
     "id": 1165,
@@ -11690,7 +11691,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81sziUdT+OL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08H4KJPV7/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#be7379"
+    "dominantColor": "#ef9f3e"
   },
   {
     "id": 1167,
@@ -11700,7 +11701,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71Z+5TwWkxL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D3J7FXW5/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e2c8c1"
+    "dominantColor": "#f8ccc9"
   },
   {
     "id": 1168,
@@ -11740,7 +11741,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/611n00iPQfL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07FXGBQCF/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c7a9a1"
+    "dominantColor": "#f5dfdb"
   },
   {
     "id": 1172,
@@ -11800,7 +11801,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81tdY1wEp5L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BN5Y8GFR/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#f9dde2"
+    "dominantColor": "#fa488d"
   },
   {
     "id": 1178,
@@ -11810,7 +11811,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71j079uQ-6L._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C5L8S6B6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c41d63"
+    "dominantColor": "#d7aba2"
   },
   {
     "id": 1179,
@@ -11890,7 +11891,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/611iBlmtDwL._AC_SX522_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07PN5S8DJ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b17c78"
+    "dominantColor": "#be9a8b"
   },
   {
     "id": 1187,
@@ -11920,7 +11921,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81OdhIHN1UL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DFWCN4W6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#f6d5d3"
+    "dominantColor": "#a54266"
   },
   {
     "id": 1190,
@@ -11930,7 +11931,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71MWH5GOkoL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CQ8CLTV4/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cc6a91"
+    "dominantColor": "#e5c6ce"
   },
   {
     "id": 1191,
@@ -11940,7 +11941,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Fl0iWjDtL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BZKW1WTS/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#f6dbe5"
+    "dominantColor": "#e85da7"
   },
   {
     "id": 1192,
@@ -11950,7 +11951,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/818q3JTeEDL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CXWVCMKB/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d84887"
+    "dominantColor": "#d0acb0"
   },
   {
     "id": 1193,
@@ -11960,7 +11961,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71arbOx4srL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CPXVV3VW/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d9b9be"
+    "dominantColor": "#d59d9e"
   },
   {
     "id": 1194,
@@ -11990,7 +11991,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91LTkGcMoIL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CF2KKFD4/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e7b0ae"
+    "dominantColor": "#f6b5b9"
   },
   {
     "id": 1197,
@@ -12000,7 +12001,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91LTkGcMoIL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CF2KKFD4/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#fdbcc0"
+    "dominantColor": "#ebaaae"
   },
   {
     "id": 1198,
@@ -12010,7 +12011,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81JLqeuWuxL._AC_SX522_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DFPW5LPZ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#fdbcc0"
+    "dominantColor": "#c6a09d"
   },
   {
     "id": 1199,
@@ -12060,7 +12061,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/718k7NmJjSL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CKSP67DY/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dac8c2"
+    "dominantColor": "#f83675"
   },
   {
     "id": 1204,
@@ -12070,7 +12071,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71FNaRKtIvL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DBGB23NQ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#fa346f"
+    "dominantColor": "#e3bec6"
   },
   {
     "id": 1205,
@@ -12080,7 +12081,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81jYgU47xJL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07Q4N4XSZ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#f4cfd7"
+    "dominantColor": "#f4d8d5"
   },
   {
     "id": 1206,
@@ -12090,7 +12091,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71NjgLQciqL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C7GDNJQ8/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#f0d8d4"
+    "dominantColor": "#cbc7c4"
   },
   {
     "id": 1207,
@@ -12100,9 +12101,9 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71UzqyhRjfL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BND5HFKY/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c598a3"
+    "dominantColor": "#cdb0aa"
   },
-    {
+  {
     "id": 1208,
     "title": "Amazon Product 1",
     "price": 0,
@@ -12110,7 +12111,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81v98E2nj9L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CMTW85YK/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ddbfbb"
+    "dominantColor": "#e11d5f"
   },
   {
     "id": 1209,
@@ -12120,7 +12121,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81HfheOMX5L._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0B69G39X6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#f14a87"
+    "dominantColor": "#d2b5a7"
   },
   {
     "id": 1210,
@@ -12130,7 +12131,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/51LLQNk8yEL._AC_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CKS9RGTZ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#edded7"
+    "dominantColor": "#fbe2c4"
   },
   {
     "id": 1211,
@@ -12140,7 +12141,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81KWy2ZW08L._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D1XT31X6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d5c7b7"
+    "dominantColor": "#d5b5ac"
   },
   {
     "id": 1212,
@@ -12150,7 +12151,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71knVePVJoL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D4ZBKRT4/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e8d9d5"
+    "dominantColor": "#cf998d"
   },
   {
     "id": 1213,
@@ -12160,7 +12161,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81uibAq9ccL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CLDBNSQK/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ceb19c"
+    "dominantColor": "#dfa694"
   },
   {
     "id": 1214,
@@ -12170,7 +12171,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61+SFpEMaFL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BJ5YPZYV/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dfa393"
+    "dominantColor": "#e6cece"
   },
   {
     "id": 1215,
@@ -12200,7 +12201,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81CnOtMAh6S._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B097B7NJ1N/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dbd3d3"
+    "dominantColor": "#e8d2d5"
   },
   {
     "id": 1218,
@@ -12210,7 +12211,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71n0Tzk0BJL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BN5Y5BR8/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e1cdce"
+    "dominantColor": "#ae7a7e"
   },
   {
     "id": 1219,
@@ -12260,7 +12261,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81PHs0L5FcL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DPHMCXKD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e4cfcc"
+    "dominantColor": "#c49989"
   },
   {
     "id": 1224,
@@ -12270,7 +12271,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/811sKBEFYxL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DPHPY7Z7/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#bd9185"
+    "dominantColor": "#ecebe7"
   },
   {
     "id": 1225,
@@ -12290,7 +12291,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71hzKobzzFL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09HC3F2JT/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c5adb2"
+    "dominantColor": "#a47f87"
   },
   {
     "id": 1227,
@@ -12310,7 +12311,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71NC5abmMAL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BN3H195L/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a37f62"
+    "dominantColor": "#c89790"
   },
   {
     "id": 1229,
@@ -12320,7 +12321,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71knpMCv6iL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BZ7GRHBB/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c59d95"
+    "dominantColor": "#edbac3"
   },
   {
     "id": 1230,
@@ -12330,7 +12331,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71b3yiopZCL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D3XNF1D7/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cab9ae"
+    "dominantColor": "#dac482"
   },
   {
     "id": 1231,
@@ -12340,7 +12341,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71kAsUd1s9S._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B094CGCM4N/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e6d1cc"
+    "dominantColor": "#9d6664"
   },
   {
     "id": 1232,
@@ -12360,7 +12361,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91ks-ed39hL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C81ZBNT9/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b7a194"
+    "dominantColor": "#c69586"
   },
   {
     "id": 1234,
@@ -12390,7 +12391,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/716V403pCwL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D7W8GLL7/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d6c9c1"
+    "dominantColor": "#cd8b8f"
   },
   {
     "id": 1237,
@@ -12400,7 +12401,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91A1EEOoh1L._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CG1FZM6K/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cb898c"
+    "dominantColor": "#e3cfce"
   },
   {
     "id": 1238,
@@ -12410,7 +12411,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/51Om1SMR93L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CMWRTTRM/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d4bab6"
+    "dominantColor": "#d7cdcb"
   },
   {
     "id": 1239,
@@ -12430,7 +12431,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81CdiHXxBxL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DQQ6LGKL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c99c8f"
+    "dominantColor": "#bd8c7e"
   },
   {
     "id": 1241,
@@ -12440,7 +12441,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/711rHyQDYPL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CWNVH263/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dcc9c2"
+    "dominantColor": "#be938d"
   },
   {
     "id": 1242,
@@ -12450,7 +12451,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/710emr9zrXL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C1BW4B4V/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d5b6bc"
+    "dominantColor": "#baa894"
   },
   {
     "id": 1243,
@@ -12460,7 +12461,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71X+7oKGRgL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CM36YJNX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d0c3b3"
+    "dominantColor": "#373c51"
   },
   {
     "id": 1244,
@@ -12470,7 +12471,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71MBiNCzf6L._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DFBMW9VG/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#282a38"
+    "dominantColor": "#e5afac"
   },
   {
     "id": 1245,
@@ -12490,7 +12491,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81PizNFj-4L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D792FRC7/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ae988c"
+    "dominantColor": "#d0b1b6"
   },
   {
     "id": 1247,
@@ -12500,7 +12501,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71oGXStWqnL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09VX48FHM/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a97c7f"
+    "dominantColor": "#dc9790"
   },
   {
     "id": 1248,
@@ -12520,7 +12521,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71HTBp3pC7L._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CW96WJL6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#8c5654"
+    "dominantColor": "#cba1a2"
   },
   {
     "id": 1250,
@@ -12530,7 +12531,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71PLEe9qifL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09ZK87ZMQ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c08e8f"
+    "dominantColor": "#da8298"
   },
   {
     "id": 1251,
@@ -12540,7 +12541,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91EIhZ05rOL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D52PGQG5/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d0657e"
+    "dominantColor": "#d8b2b1"
   },
   {
     "id": 1252,
@@ -12560,7 +12561,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81V3gVYW+wL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CF8NC73M/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b59580"
+    "dominantColor": "#d8b1a9"
   },
   {
     "id": 1254,
@@ -12580,7 +12581,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71KE9AGcuiL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09WTWR5CF/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b8837f"
+    "dominantColor": "#cb0332"
   },
   {
     "id": 1256,
@@ -12590,7 +12591,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71Q9uN25ykL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DMZX24Y5/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#f70565"
+    "dominantColor": "#d5cec4"
   },
   {
     "id": 1257,
@@ -12600,7 +12601,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71fh5FRuecL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D4TVNRRY/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c8bab9"
+    "dominantColor": "#c49ca5"
   },
   {
     "id": 1258,
@@ -12610,7 +12611,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81n5ccrEQqL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C998Z4NM/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d19daa"
+    "dominantColor": "#cbc2be"
   },
   {
     "id": 1259,
@@ -12620,7 +12621,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91ebUer2v1L._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C99B4VBY/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ddd6d0"
+    "dominantColor": "#be8785"
   },
   {
     "id": 1260,
@@ -12640,7 +12641,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71gGbyp2pwL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DBQH4GNW/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d19f9c"
+    "dominantColor": "#e0aa08"
   },
   {
     "id": 1262,
@@ -12660,7 +12661,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81f5Y8zr7dL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CMFB1B99/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ccc4be"
+    "dominantColor": "#1f2933"
   },
   {
     "id": 1264,
@@ -12670,7 +12671,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/819Gdd80e1L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CMFDJ1JB/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#222e3c"
+    "dominantColor": "#e2ddd7"
   },
   {
     "id": 1265,
@@ -12690,7 +12691,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81JXkifmUVL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DM1YYYYY/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d3b8b1"
+    "dominantColor": "#e4c4c7"
   },
   {
     "id": 1267,
@@ -12720,7 +12721,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71KxXQ7p8gL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D925P3QN/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#eeddd5"
+    "dominantColor": "#e2bfbc"
   },
   {
     "id": 1270,
@@ -12740,7 +12741,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81ja-1jEQ9L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DNJHMWP6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c59693"
+    "dominantColor": "#c5a99f"
   },
   {
     "id": 1272,
@@ -12750,7 +12751,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81GVfA+3aYL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C895SWKP/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dacac5"
+    "dominantColor": "#ecc9cf"
   },
   {
     "id": 1273,
@@ -12830,7 +12831,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91aGHebaruL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08621TKSR/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d68d87"
+    "dominantColor": "#d6bec4"
   },
   {
     "id": 1281,
@@ -12910,9 +12911,9 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81O1XKiAWAL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CJXF825K/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cca4a2"
+    "dominantColor": "#393939"
   },
-    {
+  {
     "id": 1289,
     "title": "Amazon Product 1",
     "price": 0,
@@ -12930,7 +12931,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71Fm8PBl9RL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CBBYZ1QK/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b4a796"
+    "dominantColor": "#8da2b5"
   },
   {
     "id": 1291,
@@ -12940,7 +12941,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71kUC2UckrL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CBC1GMF9/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#4d5e6e"
+    "dominantColor": "#7d7e5f"
   },
   {
     "id": 1292,
@@ -13030,7 +13031,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81lm7HfzFOL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C3B5LYYJ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d2cec7"
+    "dominantColor": "#c2b9a4"
   },
   {
     "id": 1301,
@@ -13160,7 +13161,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71eRqs-VyQL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D8J6M1PZ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#89772e"
+    "dominantColor": "#4f4d36"
   },
   {
     "id": 1314,
@@ -13170,7 +13171,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71m4W4uA2ZL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CVVM9LPJ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#48432d"
+    "dominantColor": "#937b4e"
   },
   {
     "id": 1315,
@@ -13180,7 +13181,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81d2IK+Wl+L._AC_SX522_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CXX7ZCZB/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7c643e"
+    "dominantColor": "#646650"
   },
   {
     "id": 1316,
@@ -13290,7 +13291,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81SMBcFwNGL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CR1G223T/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#2f3920"
+    "dominantColor": "#4a4c3f"
   },
   {
     "id": 1327,
@@ -13320,7 +13321,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71fVJQ2iI3L._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BNKK5SC9/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cdc3b8"
+    "dominantColor": "#84836f"
   },
   {
     "id": 1330,
@@ -13330,7 +13331,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91aoGJqljnL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C7YF3L3S/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#666552"
+    "dominantColor": "#e9e8e3"
   },
   {
     "id": 1331,
@@ -13340,7 +13341,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81B2ZQW+eeL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CLQX7GDK/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cfc7c0"
+    "dominantColor": "#404028"
   },
   {
     "id": 1332,
@@ -13400,7 +13401,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81CNP6H34zL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CVVWDV3Z/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#767c4e"
+    "dominantColor": "#a08161"
   },
   {
     "id": 1338,
@@ -13420,7 +13421,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/812r8KDBj-L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B076PYMHLD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b0b1a7"
+    "dominantColor": "#848f55"
   },
   {
     "id": 1340,
@@ -13470,7 +13471,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81+7aOqWzcL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CB15QYRG/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#5a5e00"
+    "dominantColor": "#716f60"
   },
   {
     "id": 1345,
@@ -13490,7 +13491,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Lol3LpFKL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D8Y33FJD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#727866"
+    "dominantColor": "#f7916b"
   },
   {
     "id": 1347,
@@ -13500,7 +13501,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61hekhEfGrL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D7T8LTNV/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b04b27"
+    "dominantColor": "#ffffff"
   },
   {
     "id": 1348,
@@ -13510,7 +13511,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71dtTR5aYtL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08H1SW9LX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#202020"
+    "dominantColor": "#898636"
   },
   {
     "id": 1349,
@@ -13540,7 +13541,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91ijJMzGHBL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D417NWF3/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#837c35"
+    "dominantColor": "#747860"
   },
   {
     "id": 1352,
@@ -13580,7 +13581,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81q1+TqeeLL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BQHGHV9C/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e0dadc"
+    "dominantColor": "#c0733d"
   },
   {
     "id": 1356,
@@ -13590,7 +13591,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61xNbaFHI+L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CQLL5CR8/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b97037"
+    "dominantColor": "#7b7f5c"
   },
   {
     "id": 1357,
@@ -13620,7 +13621,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81gMCMxN1FL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CM6D3MBL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d2cdc6"
+    "dominantColor": "#4e4f41"
   },
   {
     "id": 1360,
@@ -13640,7 +13641,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61j7goE1SDL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B076XXY1NK/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#5f5d43"
+    "dominantColor": "#c7b587"
   },
   {
     "id": 1362,
@@ -13670,7 +13671,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71X5p8XYg6L._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0993FVH2J/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#94947c"
+    "dominantColor": "#3d4313"
   },
   {
     "id": 1365,
@@ -13700,7 +13701,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81N6b4i7POL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D58B2VHF/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#8c9057"
+    "dominantColor": "#e1d9ce"
   },
   {
     "id": 1368,
@@ -13722,7 +13723,7 @@ export const amazonProducts: AmazonProduct[] = [
     "affiliateLink": "https://www.amazon.com/dp/B0CQKS1GFJ/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#dcd7cf"
   },
-   {
+  {
     "id": 1370,
     "title": "Amazon Product 1",
     "price": 0,
@@ -13760,7 +13761,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61xNbaFHI+L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CQLL5CR8/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ebe9e5"
+    "dominantColor": "#757958"
   },
   {
     "id": 1374,
@@ -13790,7 +13791,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81V6eBmdcuL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DDL3G4WH/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cbc7bd"
+    "dominantColor": "#867e3f"
   },
   {
     "id": 1377,
@@ -13800,7 +13801,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91ygISF55NL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BJTLN6H6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#6f6624"
+    "dominantColor": "#dbbe68"
   },
   {
     "id": 1378,
@@ -13840,7 +13841,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71DIHfZTjmL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C1686DY1/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c6beb9"
+    "dominantColor": "#4c4a3e"
   },
   {
     "id": 1382,
@@ -13850,7 +13851,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61d86be6S0L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09K79HH64/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#89877b"
+    "dominantColor": "#8c823b"
   },
   {
     "id": 1383,
@@ -13880,7 +13881,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71XUsTlvL3L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C1B437F5/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#93897b"
+    "dominantColor": "#4f543f"
   },
   {
     "id": 1386,
@@ -13890,7 +13891,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Jo72gI-UL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CJLH9MJ4/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#4b503c"
+    "dominantColor": "#737c61"
   },
   {
     "id": 1387,
@@ -13900,7 +13901,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/51+mHUzAEQL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BKVNXD97/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#525a42"
+    "dominantColor": "#323233"
   },
   {
     "id": 1388,
@@ -13910,7 +13911,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71AuM9h76nL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09KN78D15/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#242426"
+    "dominantColor": "#fffef8"
   },
   {
     "id": 1389,
@@ -13920,7 +13921,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/51xXpUC3gjL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CCTWYK8N/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#fdfefa"
+    "dominantColor": "#bba48d"
   },
   {
     "id": 1390,
@@ -13930,7 +13931,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91aDZ56S8fL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DTNZ1NHZ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a89d86"
+    "dominantColor": "#93a57d"
   },
   {
     "id": 1391,
@@ -13940,7 +13941,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71jWWl5WIRL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BN18PSRG/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#99ac7f"
+    "dominantColor": "#3d594d"
   },
   {
     "id": 1392,
@@ -13950,7 +13951,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81IbJvWIN1L._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DT6L1SNF/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d5d1c3"
+    "dominantColor": "#767d5e"
   },
   {
     "id": 1393,
@@ -13960,7 +13961,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81fZxtlyLVL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D8HF6XL3/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#545943"
+    "dominantColor": "#c8c2a2"
   },
   {
     "id": 1394,
@@ -13970,7 +13971,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81RRTl2CAML._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CDKQLF6H/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#968b6b"
+    "dominantColor": "#757c53"
   },
   {
     "id": 1395,
@@ -13980,7 +13981,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71kd7cDilLL._AC_SX522_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C64TQ7MZ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a6a28d"
+    "dominantColor": "#3d4425"
   },
   {
     "id": 1396,
@@ -13990,7 +13991,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81XHcd7MSPL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DMST661X/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a6ac8a"
+    "dominantColor": "#e3deda"
   },
   {
     "id": 1397,
@@ -14000,7 +14001,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81tsnN38D0L._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DR8Q8XFZ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cec3bb"
+    "dominantColor": "#be8f73"
   },
   {
     "id": 1398,
@@ -14010,7 +14011,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81UY7McoC8L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D7953MH6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#895430"
+    "dominantColor": "#8f8c61"
   },
   {
     "id": 1399,
@@ -14070,7 +14071,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/811h07GEZZL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D7MPYBLW/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b5a28b"
+    "dominantColor": "#aca66b"
   },
   {
     "id": 1405,
@@ -14080,7 +14081,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71T6Xk80kxL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DFY1MMXV/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b6b07e"
+    "dominantColor": "#514f38"
   },
   {
     "id": 1406,
@@ -14100,7 +14101,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71mObwXcSFL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CV3F2XTV/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#bebab3"
+    "dominantColor": "#6d6c58"
   },
   {
     "id": 1408,
@@ -14110,7 +14111,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81WJ1A55wbL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DRCX9JDF/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#878671"
+    "dominantColor": "#697337"
   },
   {
     "id": 1409,
@@ -14120,7 +14121,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81RIsm9UMtL._AC_SX522_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C7MVG827/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a6ae73"
+    "dominantColor": "#9a8d6d"
   },
   {
     "id": 1410,
@@ -14130,7 +14131,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81u8t+jI14L._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DFMPZC93/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#6f6144"
+    "dominantColor": "#d4cc8d"
   },
   {
     "id": 1411,
@@ -14140,7 +14141,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81kMrlVZX1L._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BVFMKMN6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c1b877"
+    "dominantColor": "#adb796"
   },
   {
     "id": 1412,
@@ -14160,7 +14161,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81kMrlVZX1L._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BVFMKMN6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#454930"
+    "dominantColor": "#879571"
   },
   {
     "id": 1414,
@@ -14180,7 +14181,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81kMrlVZX1L._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BVFMKMN6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#636b48"
+    "dominantColor": "#352f2e"
   },
   {
     "id": 1416,
@@ -14190,7 +14191,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81kMrlVZX1L._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BVFMKMN6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#79855f"
+    "dominantColor": "#98a383"
   },
   {
     "id": 1417,
@@ -14200,7 +14201,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81RE7cd-KUL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CMF3Z5FL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a9b294"
+    "dominantColor": "#3a3a38"
   },
   {
     "id": 1418,
@@ -14210,7 +14211,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81RE7cd-KUL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CMF3Z5FL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7b7b79"
+    "dominantColor": "#3f3f3d"
   },
   {
     "id": 1419,
@@ -14220,7 +14221,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81RE7cd-KUL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CMF3Z5FL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#6d6d6b"
+    "dominantColor": "#4f4f4d"
   },
   {
     "id": 1420,
@@ -14230,7 +14231,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81qCmKO41vL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BGRYSX8R/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#5e5e5c"
+    "dominantColor": "#089271"
   },
   {
     "id": 1421,
@@ -14250,7 +14251,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91H-YGZIeZL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B017UM93HG/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#4f645b"
+    "dominantColor": "#a8a770"
   },
   {
     "id": 1423,
@@ -14260,7 +14261,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91gp5MkdaBL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08HSKQRYN/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c1c297"
+    "dominantColor": "#1c554e"
   },
   {
     "id": 1424,
@@ -14270,7 +14271,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61zIil0nzCL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CNKJM82J/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#308679"
+    "dominantColor": "#7a8354"
   },
   {
     "id": 1425,
@@ -14280,7 +14281,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61zIil0nzCL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CNKJM82J/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#3e4326"
+    "dominantColor": "#3c4025"
   },
   {
     "id": 1426,
@@ -14290,7 +14291,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61zIil0nzCL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CNKJM82J/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#3e4326"
+    "dominantColor": "#788154"
   },
   {
     "id": 1427,
@@ -14300,7 +14301,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71X7-TlNhwL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CWGNLGXC/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a18e76"
+    "dominantColor": "#575c46"
   },
   {
     "id": 1428,
@@ -14310,7 +14311,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81sNIRFw+HL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DHS5S51D/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#535641"
+    "dominantColor": "#cbbe55"
   },
   {
     "id": 1429,
@@ -14320,7 +14321,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61d+M7ObL8L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DMZT7STY/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c5bf5d"
+    "dominantColor": "#e6e1dd"
   },
   {
     "id": 1430,
@@ -14360,7 +14361,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/8162m7bC9NL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D4LZPWMN/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e0dbd7"
+    "dominantColor": "#8f9981"
   },
   {
     "id": 1434,
@@ -14370,7 +14371,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/911OtRFbDDL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BN7VD9N6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#586553"
+    "dominantColor": "#8ea49a"
   },
   {
     "id": 1435,
@@ -14390,7 +14391,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81fCLJquKvL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CYH3ZF5P/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dddacf"
+    "dominantColor": "#71974e"
   },
   {
     "id": 1437,
@@ -14400,7 +14401,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71ENpW-dtqL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D3VJK8QD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7ca259"
+    "dominantColor": "#544911"
   },
   {
     "id": 1438,
@@ -14440,7 +14441,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71AieapCMnL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CVX7G3LJ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7b7960"
+    "dominantColor": "#a0a04f"
   },
   {
     "id": 1442,
@@ -14520,7 +14521,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/919a3HmYhyL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CKXFJTBZ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#9f9d7c"
+    "dominantColor": "#e68e56"
   },
   {
     "id": 1450,
@@ -14530,9 +14531,9 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71VQ7Drnu3L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D9Y892YD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e68e58"
+    "dominantColor": "#817948"
   },
- {
+  {
     "id": 1451,
     "title": "Amazon Product 1",
     "price": 0,
@@ -14550,7 +14551,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81iutmqJVUL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BLSN21TF/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d8c9c2"
+    "dominantColor": "#913c49"
   },
   {
     "id": 1453,
@@ -14580,7 +14581,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81JlsyLCOCL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CSK1Q14W/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#818473"
+    "dominantColor": "#ae737f"
   },
   {
     "id": 1456,
@@ -14600,7 +14601,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81W6xBj5POL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BWTJ212L/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e0d2c6"
+    "dominantColor": "#792d1f"
   },
   {
     "id": 1458,
@@ -14630,7 +14631,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81k4BXql9FL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C163NYGL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e4e0d4"
+    "dominantColor": "#46322b"
   },
   {
     "id": 1461,
@@ -14640,7 +14641,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91sS32HtYcL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C783V5NX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#4c3630"
+    "dominantColor": "#824033"
   },
   {
     "id": 1462,
@@ -14700,7 +14701,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81UHOBBFvlL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BFBLCC8B/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ddd8d2"
+    "dominantColor": "#600e22"
   },
   {
     "id": 1468,
@@ -14710,7 +14711,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71Nj2Xfe73L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D14RMSRQ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#740120"
+    "dominantColor": "#b76e4e"
   },
   {
     "id": 1469,
@@ -14720,7 +14721,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81q1lCFAHhL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C8HX2TGT/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b86f50"
+    "dominantColor": "#440008"
   },
   {
     "id": 1470,
@@ -14750,7 +14751,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/A188MB-3xrL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C8HQWNBH/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d2bdb2"
+    "dominantColor": "#360000"
   },
   {
     "id": 1473,
@@ -14760,7 +14761,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/51eex1ffxdL._AC_SX355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08J4BZZ5L/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7c393b"
+    "dominantColor": "#d4d0cd"
   },
   {
     "id": 1474,
@@ -14770,7 +14771,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81ipVzFk-uL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DJJZ7CWZ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dbd5cb"
+    "dominantColor": "#611e2e"
   },
   {
     "id": 1475,
@@ -14840,7 +14841,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/7199nowSuJL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08Q3GFB53/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cfcdcb"
+    "dominantColor": "#772237"
   },
   {
     "id": 1482,
@@ -14850,7 +14851,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71AgpmUqMpL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CF29PGW3/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#56171f"
+    "dominantColor": "#a02b43"
   },
   {
     "id": 1483,
@@ -14860,7 +14861,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/616CQK-GT5L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07PFVGWVC/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a73149"
+    "dominantColor": "#5f2c35"
   },
   {
     "id": 1484,
@@ -14910,7 +14911,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81xr3ruaSKL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B088R42PLD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#202f2f"
+    "dominantColor": "#9a5311"
   },
   {
     "id": 1489,
@@ -14920,7 +14921,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/714VRsyj76L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CB13Y49L/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a06719"
+    "dominantColor": "#76273d"
   },
   {
     "id": 1490,
@@ -14930,7 +14931,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Lol3LpFKL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D8Y33FJD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#610e28"
+    "dominantColor": "#f98f6d"
   },
   {
     "id": 1491,
@@ -15040,7 +15041,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81hKjNc+6yL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CPF2MGHT/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d6cec8"
+    "dominantColor": "#200104"
   },
   {
     "id": 1502,
@@ -15050,7 +15051,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81q1+TqeeLL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BQHGHV9C/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#9a3f58"
+    "dominantColor": "#b1653a"
   },
   {
     "id": 1503,
@@ -15060,7 +15061,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/817kEfIVyfL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D9JB27VJ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#9a4c1c"
+    "dominantColor": "#723636"
   },
   {
     "id": 1504,
@@ -15070,7 +15071,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Niv1gH81L._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D4D3TGLG/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#945556"
+    "dominantColor": "#ad0d19"
   },
   {
     "id": 1505,
@@ -15080,7 +15081,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71d4SSbm5mS._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B091T3HRXS/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d8d8d6"
+    "dominantColor": "#a03255"
   },
   {
     "id": 1506,
@@ -15170,7 +15171,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71EXk7-DtEL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C8MZ8T94/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e0d4c9"
+    "dominantColor": "#914540"
   },
   {
     "id": 1515,
@@ -15180,7 +15181,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71-ciBhiP7L._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0B58BKZCX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#6f2c23"
+    "dominantColor": "#f7c846"
   },
   {
     "id": 1516,
@@ -15190,7 +15191,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71ZtJfIcsOL._AC_SX522_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CF1W8Y41/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#fae7d7"
+    "dominantColor": "#bc505e"
   },
   {
     "id": 1517,
@@ -15200,7 +15201,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71hyOMudObL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C3BH5742/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#560911"
+    "dominantColor": "#223123"
   },
   {
     "id": 1518,
@@ -15210,7 +15211,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71zCBTj7C6L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C1Y48V3D/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#2c3a2b"
+    "dominantColor": "#560623"
   },
   {
     "id": 1519,
@@ -15300,7 +15301,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81B4Kpzl35L._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08T1FH7DS/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c4b8b6"
+    "dominantColor": "#451c3a"
   },
   {
     "id": 1528,
@@ -15310,7 +15311,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71WEZvoq1eL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B00DUG2MUW/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#4c2746"
+    "dominantColor": "#dad9d7"
   },
   {
     "id": 1529,
@@ -15330,7 +15331,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81TGzQLuUPL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CQY3R3PX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d6cbc8"
+    "dominantColor": "#6e536e"
   },
   {
     "id": 1531,
@@ -15370,7 +15371,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81bP85zRkkL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DMP7K7WH/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#4c4633"
+    "dominantColor": "#5c614a"
   },
   {
     "id": 1535,
@@ -15470,7 +15471,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71DIHfZTjmL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C1686DY1/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c6beb9"
+    "dominantColor": "#504e42"
   },
   {
     "id": 1545,
@@ -15480,7 +15481,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61zLfd4v9BL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B084YXBPVK/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#5c5a4e"
+    "dominantColor": "#9d0435"
   },
   {
     "id": 1546,
@@ -15500,7 +15501,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81YDl1uFSML._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DPHM5CSG/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c3b2aa"
+    "dominantColor": "#7c4548"
   },
   {
     "id": 1548,
@@ -15510,7 +15511,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91QBHRrhuKL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C7G8Y8H7/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#9d6566"
+    "dominantColor": "#8e5739"
   },
   {
     "id": 1549,
@@ -15520,7 +15521,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81+iiHjMJEL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09KXT3WWW/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c3bbba"
+    "dominantColor": "#969da7"
   },
   {
     "id": 1550,
@@ -15530,7 +15531,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71lMWIEMgIL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C2YWKBBX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a6adb7"
+    "dominantColor": "#d8d4c8"
   },
   {
     "id": 1551,
@@ -15540,7 +15541,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71Cxy39662L._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CTQ9GGDV/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d6d3ce"
+    "dominantColor": "#524242"
   },
   {
     "id": 1552,
@@ -15550,7 +15551,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81g7g+Ab10L._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DT6F1RHQ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#6a5555"
+    "dominantColor": "#dad5d1"
   },
   {
     "id": 1553,
@@ -15570,7 +15571,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81aiKvE7TqL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BVFKWQNX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b1a191"
+    "dominantColor": "#916855"
   },
   {
     "id": 1555,
@@ -15580,7 +15581,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71X+7oKGRgL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CM36YJNX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cbc4c0"
+    "dominantColor": "#262b3e"
   },
   {
     "id": 1556,
@@ -15590,7 +15591,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61rP+j2jSKL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DFBYK6J9/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#373d53"
+    "dominantColor": "#cdb133"
   },
   {
     "id": 1557,
@@ -15600,7 +15601,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81RRTl2CAML._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CDKQLF6H/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#5c613d"
+    "dominantColor": "#878e64"
   },
   {
     "id": 1558,
@@ -15640,7 +15641,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91QhJtCXi5L._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DQKNR7QN/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a09180"
+    "dominantColor": "#51514f"
   },
   {
     "id": 1562,
@@ -15650,7 +15651,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81tsnN38D0L._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DR8Q8XFZ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a9a9a7"
+    "dominantColor": "#9f7a61"
   },
   {
     "id": 1563,
@@ -15660,7 +15661,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/812FgmpyRGL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D796YZGL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#8b5330"
+    "dominantColor": "#fa8e50"
   },
   {
     "id": 1564,
@@ -15670,7 +15671,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81MM8RMc0aL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09SHKW6SY/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d2592e"
+    "dominantColor": "#ebe8eb"
   },
   {
     "id": 1565,
@@ -15700,7 +15701,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81cdbnP23GL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BLZGGQN4/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d3ccc9"
+    "dominantColor": "#53372d"
   },
   {
     "id": 1568,
@@ -15730,7 +15731,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71HmAwbTjcL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BJD8GQ44/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#bb7c5f"
+    "dominantColor": "#aa4e25"
   },
   {
     "id": 1571,
@@ -15740,7 +15741,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/618kdg3Zi5L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BDL9N4Z4/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d7744a"
+    "dominantColor": "#e5e0da"
   },
   {
     "id": 1572,
@@ -15810,7 +15811,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81kbaqUPsJL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D7MNZDNT/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cdb8a5"
+    "dominantColor": "#fdab74"
   },
   {
     "id": 1579,
@@ -15820,7 +15821,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81xu5LdZdZL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08WWJXHTM/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#df8249"
+    "dominantColor": "#fefdf9"
   },
   {
     "id": 1580,
@@ -15840,7 +15841,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71Q9uN25ykL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DMZX24Y5/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#1e1412"
+    "dominantColor": "#d1cbbf"
   },
   {
     "id": 1582,
@@ -15850,7 +15851,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71fL0iaKTML._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C3VPPHBB/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#928479"
+    "dominantColor": "#cf946c"
   },
   {
     "id": 1583,
@@ -15860,7 +15861,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71m9Jbex09L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D1BS51XJ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#bb815b"
+    "dominantColor": "#dbd6d0"
   },
   {
     "id": 1584,
@@ -15880,7 +15881,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91ebUer2v1L._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C99B4VBY/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#af9d91"
+    "dominantColor": "#79403f"
   },
   {
     "id": 1586,
@@ -15890,7 +15891,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81n5ccrEQqL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C998Z4NM/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d1999a"
+    "dominantColor": "#baada4"
   },
   {
     "id": 1587,
@@ -15900,7 +15901,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91ebUer2v1L._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C99B4VBY/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#af9d91"
+    "dominantColor": "#ac7271"
   },
   {
     "id": 1588,
@@ -15910,7 +15911,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71W5W5m9-LL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C3GGNYLG/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d39998"
+    "dominantColor": "#7e634e"
   },
   {
     "id": 1589,
@@ -15920,7 +15921,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71NKxiXwvuL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0B2R8VTLV/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#5b3718"
+    "dominantColor": "#952638"
   },
   {
     "id": 1590,
@@ -15950,7 +15951,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81RE7cd-KUL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CMF3Z5FL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#afa292"
+    "dominantColor": "#1f1f1d"
   },
   {
     "id": 1593,
@@ -15960,7 +15961,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/8150VFxPQOL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DFBP1SF9/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#4b4b49"
+    "dominantColor": "#815d11"
   },
   {
     "id": 1594,
@@ -15970,7 +15971,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/710EZVbeDJL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DMZTT58V/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#edc36f"
+    "dominantColor": "#fafafa"
   },
   {
     "id": 1595,
@@ -16020,7 +16021,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91VEL-xSH8L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08D5Z4G1Q/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c1bab1"
+    "dominantColor": "#b85558"
   },
   {
     "id": 1600,
@@ -16030,7 +16031,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81ZX+XsJHLL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D9KQ23YF/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#962528"
+    "dominantColor": "#9c8779"
   },
   {
     "id": 1601,
@@ -16040,7 +16041,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81NhaXGGFdL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DRTX754G/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#89634c"
+    "dominantColor": "#221e2c"
   },
   {
     "id": 1602,
@@ -16050,7 +16051,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81PolOO55aL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DC314MWF/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cfbeaf"
+    "dominantColor": "#8e4c35"
   },
   {
     "id": 1603,
@@ -16060,7 +16061,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Z872ZeTML._AC_SX522_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DKXF4SKY/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#703724"
+    "dominantColor": "#d9cfc5"
   },
   {
     "id": 1604,
@@ -16070,7 +16071,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81ht4rASwVL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D9KMYQXT/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cdc8bb"
+    "dominantColor": "#8e8d93"
   },
   {
     "id": 1605,
@@ -16080,7 +16081,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/811L4W+uzKL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09YCPRTC7/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#6a6a6d"
+    "dominantColor": "#b7996f"
   },
   {
     "id": 1606,
@@ -16100,7 +16101,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61vVPIZ38ZL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DFLL1J66/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#744c31"
+    "dominantColor": "#f6e4da"
   },
   {
     "id": 1608,
@@ -16140,9 +16141,9 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81CUQnok+hL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DKDXLB15/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cbc3bb"
+    "dominantColor": "#a37158"
   },
-   {
+  {
     "id": 1612,
     "title": "Amazon Product 1",
     "price": 0,
@@ -16152,7 +16153,7 @@ export const amazonProducts: AmazonProduct[] = [
     "affiliateLink": "https://www.amazon.com/dp/B0CY52CGM5/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#c0221f"
   },
-   {
+  {
     "id": 1613,
     "title": "Amazon Product 1",
     "price": 0,
@@ -16170,7 +16171,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81FZ48EMe3L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CX5DG2CM/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e6dedb"
+    "dominantColor": "#c95e7c"
   },
   {
     "id": 1615,
@@ -16200,7 +16201,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61StJhOuRbL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07SB4Z391/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ff7dbb"
+    "dominantColor": "#43274f"
   },
   {
     "id": 1618,
@@ -16230,7 +16231,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61r6Oq0MT6L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B077HMSX34/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c7bfbc"
+    "dominantColor": "#9f3c72"
   },
   {
     "id": 1621,
@@ -16240,7 +16241,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61ra+GC6waL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07MJPNZWW/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a9487d"
+    "dominantColor": "#c8c9cd"
   },
   {
     "id": 1622,
@@ -16250,7 +16251,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71Nj2Xfe73L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D14RMSRQ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e2dcd6"
+    "dominantColor": "#af6444"
   },
   {
     "id": 1623,
@@ -16260,7 +16261,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/813x0pNdhGL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C1B8QJYJ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a55c42"
+    "dominantColor": "#e1407d"
   },
   {
     "id": 1624,
@@ -16270,7 +16271,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71prxQ5L3qL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07FRJKR8Q/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e34581"
+    "dominantColor": "#35152a"
   },
   {
     "id": 1625,
@@ -16280,7 +16281,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/719zTgfIH2L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08MQ6HVZJ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dbd5d1"
+    "dominantColor": "#8c2e53"
   },
   {
     "id": 1626,
@@ -16320,7 +16321,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Zx7yEDIqL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BY2PF678/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c7548d"
+    "dominantColor": "#bc979e"
   },
   {
     "id": 1630,
@@ -16340,7 +16341,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Mbeq8QeyL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DHRQDQ7W/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dccdc8"
+    "dominantColor": "#8a2e45"
   },
   {
     "id": 1632,
@@ -16350,7 +16351,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81ipVzFk-uL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DJJZ7CWZ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d35d7d"
+    "dominantColor": "#480b19"
   },
   {
     "id": 1633,
@@ -16360,7 +16361,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81o9WWOHz7L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CZLCL345/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#652331"
+    "dominantColor": "#d32668"
   },
   {
     "id": 1634,
@@ -16380,7 +16381,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81xNPSC1m1L._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BW8D7KBN/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d2c5c4"
+    "dominantColor": "#a38e89"
   },
   {
     "id": 1636,
@@ -16400,7 +16401,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71yGmbcwaXL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D17ZPPT9/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e2dcd4"
+    "dominantColor": "#b4507e"
   },
   {
     "id": 1638,
@@ -16430,7 +16431,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61J82l+fuKL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08FX616H1/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e3689e"
+    "dominantColor": "#d26c39"
   },
   {
     "id": 1641,
@@ -16460,7 +16461,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71mJVNDi2PL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CJ8TKMCD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e8e2e0"
+    "dominantColor": "#8c1732"
   },
   {
     "id": 1644,
@@ -16470,7 +16471,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81lAnwmFqxL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D2HKWB8P/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7d0a1f"
+    "dominantColor": "#fc7d7e"
   },
   {
     "id": 1645,
@@ -16480,7 +16481,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81xr3ruaSKL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B088R42PLD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#fa7775"
+    "dominantColor": "#602a02"
   },
   {
     "id": 1646,
@@ -16490,7 +16491,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91Eslf5wvlL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0911V7KS5/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7b3e08"
+    "dominantColor": "#571c3a"
   },
   {
     "id": 1647,
@@ -16500,7 +16501,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81lAnwmFqxL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D2HKWB8P/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7d0a1f"
+    "dominantColor": "#f08086"
   },
   {
     "id": 1648,
@@ -16510,7 +16511,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81xr3ruaSKL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B088R42PLD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#fa7775"
+    "dominantColor": "#6a2f06"
   },
   {
     "id": 1649,
@@ -16520,7 +16521,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81eZHyuhtIL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C3728DSW/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c79c9d"
+    "dominantColor": "#c46b88"
   },
   {
     "id": 1650,
@@ -16542,7 +16543,7 @@ export const amazonProducts: AmazonProduct[] = [
     "affiliateLink": "https://www.amazon.com/dp/B07SFST41S/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#565614"
   },
-   {
+  {
     "id": 1652,
     "title": "Amazon Product 1",
     "price": 0,
@@ -16660,7 +16661,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/918LIGiTvrL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CWRDDYWN/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d3c9bb"
+    "dominantColor": "#45608d"
   },
   {
     "id": 1664,
@@ -16670,7 +16671,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71yiQFMamvL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09K7BQBNH/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#597aa7"
+    "dominantColor": "#7c2a5b"
   },
   {
     "id": 1665,
@@ -16680,7 +16681,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81EJ6XnAr1L._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DPHMTYT5/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cac1b7"
+    "dominantColor": "#bb958a"
   },
   {
     "id": 1666,
@@ -16690,7 +16691,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91elxDBoVuL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BLSB48RL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ae867c"
+    "dominantColor": "#e0ab4b"
   },
   {
     "id": 1667,
@@ -16700,7 +16701,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71knpMCv6iL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BZ7GRHBB/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#efbf5b"
+    "dominantColor": "#f4c6d3"
   },
   {
     "id": 1668,
@@ -16710,7 +16711,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71b3yiopZCL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D3XNF1D7/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cab9ae"
+    "dominantColor": "#e1c7c2"
   },
   {
     "id": 1669,
@@ -16720,7 +16721,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/816B2M+yOZL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08TM95X54/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ead5d5"
+    "dominantColor": "#caaf58"
   },
   {
     "id": 1670,
@@ -16740,7 +16741,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81T5gIqB1sL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CCV6HS13/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#6c6a6f"
+    "dominantColor": "#4b3742"
   },
   {
     "id": 1672,
@@ -16750,7 +16751,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91A1EEOoh1L._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CG1FZM6K/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#775c6b"
+    "dominantColor": "#f7f7f7"
   },
   {
     "id": 1673,
@@ -16760,7 +16761,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81zglPMUocL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0B285HW9H/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#bcac9a"
+    "dominantColor": "#f87aae"
   },
   {
     "id": 1674,
@@ -16770,7 +16771,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71MBiNCzf6L._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DFBMW9VG/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d7366c"
+    "dominantColor": "#de9b92"
   },
   {
     "id": 1675,
@@ -16780,7 +16781,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71HqdBt3cZL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07HVK2MFJ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a39272"
+    "dominantColor": "#c19a4b"
   },
   {
     "id": 1676,
@@ -16830,7 +16831,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71IlbUqeV7L._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CF26K1XN/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c8bebc"
+    "dominantColor": "#29282e"
   },
   {
     "id": 1681,
@@ -16840,7 +16841,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61EWX6P23kL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09T5RPM2W/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#2d2e33"
+    "dominantColor": "#eeb8bd"
   },
   {
     "id": 1682,
@@ -16850,7 +16851,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71mJVNDi2PL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CJ8TKMCD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e8e2e0"
+    "dominantColor": "#7d091e"
   },
   {
     "id": 1683,
@@ -16860,7 +16861,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81lAnwmFqxL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D2HKWB8P/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7d0a1f"
+    "dominantColor": "#ec6f6d"
   },
   {
     "id": 1684,
@@ -16870,7 +16871,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81xr3ruaSKL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B088R42PLD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#fa7775"
+    "dominantColor": "#763700"
   },
   {
     "id": 1685,
@@ -16880,7 +16881,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91Eslf5wvlL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0911V7KS5/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7b3e08"
+    "dominantColor": "#260112"
   },
   {
     "id": 1686,
@@ -16910,7 +16911,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81uGLyEMWJL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B088CXLRF6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#aa4082"
+    "dominantColor": "#548d9f"
   },
   {
     "id": 1689,
@@ -16930,7 +16931,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/612EcU8Ru3L._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08LHKLWFC/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#368694"
+    "dominantColor": "#d4b1b5"
   },
   {
     "id": 1691,
@@ -16940,7 +16941,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81eZHyuhtIL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C3728DSW/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c79c9d"
+    "dominantColor": "#e9609d"
   },
   {
     "id": 1692,
@@ -16980,7 +16981,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81OdhIHN1UL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DFWCN4W6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dec8cb"
+    "dominantColor": "#ac466e"
   },
   {
     "id": 1696,
@@ -17002,7 +17003,7 @@ export const amazonProducts: AmazonProduct[] = [
     "affiliateLink": "https://www.amazon.com/dp/B07SFST41S/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#565614"
   },
-   {
+  {
     "id": 1698,
     "title": "Amazon Product 1",
     "price": 0,
@@ -17020,7 +17021,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71Fm8PBl9RL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CBBYZ1QK/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d7d6d3"
+    "dominantColor": "#526176"
   },
   {
     "id": 1700,
@@ -17090,7 +17091,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81VqYnvOwZL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C3B4LD8V/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#98acab"
+    "dominantColor": "#4b5e77"
   },
   {
     "id": 1707,
@@ -17150,7 +17151,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81mFNO7o7eL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BFBM36S8/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ded9cf"
+    "dominantColor": "#071223"
   },
   {
     "id": 1713,
@@ -17160,7 +17161,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61iI0nu14WL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07GRTGQZZ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#192741"
+    "dominantColor": "#d4e5f5"
   },
   {
     "id": 1714,
@@ -17210,7 +17211,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71svI+iCCwL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07FRM2L19/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dcdcd9"
+    "dominantColor": "#8aa5b8"
   },
   {
     "id": 1719,
@@ -17260,7 +17261,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71Ab1Qak5yL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D1Y973RN/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#83878b"
+    "dominantColor": "#263450"
   },
   {
     "id": 1724,
@@ -17270,7 +17271,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81J-hVNxHcL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CZMZ9B4L/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#2e3f60"
+    "dominantColor": "#7b9da7"
   },
   {
     "id": 1725,
@@ -17280,7 +17281,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71RwxFOaCOL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BSD2Z4VL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#83a3ac"
+    "dominantColor": "#a6c3d5"
   },
   {
     "id": 1726,
@@ -17300,7 +17301,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/A1iLM3GbtNL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B076NJR8D6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a0acb8"
+    "dominantColor": "#aabad1"
   },
   {
     "id": 1728,
@@ -17310,7 +17311,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71D2jU2q-fL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CR1JJZ8Q/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e3ebf7"
+    "dominantColor": "#0a2844"
   },
   {
     "id": 1729,
@@ -17320,7 +17321,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71lqPTrAdyL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CRB8DPDY/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a5bbd3"
+    "dominantColor": "#a4dbfa"
   },
   {
     "id": 1730,
@@ -17340,7 +17341,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71mJVNDi2PL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CJ8TKMCD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e8e2e0"
+    "dominantColor": "#8b1734"
   },
   {
     "id": 1732,
@@ -17350,7 +17351,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81lAnwmFqxL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D2HKWB8P/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7d0a1f"
+    "dominantColor": "#f8878b"
   },
   {
     "id": 1733,
@@ -17360,7 +17361,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81xr3ruaSKL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B088R42PLD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#fa7775"
+    "dominantColor": "#6c481d"
   },
   {
     "id": 1734,
@@ -17370,7 +17371,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91Eslf5wvlL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0911V7KS5/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7b3e08"
+    "dominantColor": "#824564"
   },
   {
     "id": 1735,
@@ -17400,7 +17401,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81uGLyEMWJL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B088CXLRF6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#aa4082"
+    "dominantColor": "#398a9f"
   },
   {
     "id": 1738,
@@ -17420,7 +17421,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/612EcU8Ru3L._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08LHKLWFC/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#368694"
+    "dominantColor": "#cda4ac"
   },
   {
     "id": 1740,
@@ -17430,7 +17431,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81eZHyuhtIL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C3728DSW/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c79c9d"
+    "dominantColor": "#d04e82"
   },
   {
     "id": 1741,
@@ -17492,7 +17493,7 @@ export const amazonProducts: AmazonProduct[] = [
     "affiliateLink": "https://www.amazon.com/dp/B07SFST41S/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#565614"
   },
-    {
+  {
     "id": 1747,
     "title": "Amazon Product 1",
     "price": 0,
@@ -17630,7 +17631,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91elxDBoVuL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BLSB48RL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d1c8be"
+    "dominantColor": "#ecba57"
   },
   {
     "id": 1761,
@@ -17640,7 +17641,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61-rxwdDpML._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DBQ8ZW46/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#efc25d"
+    "dominantColor": "#2c2c2e"
   },
   {
     "id": 1762,
@@ -17660,7 +17661,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71AuM9h76nL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09KN78D15/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#bfc1bc"
+    "dominantColor": "#fffff7"
   },
   {
     "id": 1764,
@@ -17670,7 +17671,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/51xXpUC3gjL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CCTWYK8N/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#fffaf2"
+    "dominantColor": "#c7b59f"
   },
   {
     "id": 1765,
@@ -17680,7 +17681,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61yUgMtdm9L._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D3XMW2X7/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#bcb3aa"
+    "dominantColor": "#dad5cf"
   },
   {
     "id": 1766,
@@ -17690,7 +17691,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61GsM5Yj1gL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07Z8WB5VR/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dabf94"
+    "dominantColor": "#2e2e30"
   },
   {
     "id": 1767,
@@ -17790,7 +17791,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71pvrP+Ly8L._AC_SX522_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BQYMFHWQ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#bcb1a4"
+    "dominantColor": "#dfdcd7"
   },
   {
     "id": 1777,
@@ -17830,7 +17831,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71HqdBt3cZL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07HVK2MFJ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#a39272"
+    "dominantColor": "#bd9647"
   },
   {
     "id": 1781,
@@ -17850,7 +17851,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71mC73ps0tL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DGFSTY55/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e3d9cf"
+    "dominantColor": "#c29762"
   },
   {
     "id": 1783,
@@ -17860,7 +17861,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81EcY2MhHDL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D7928FM3/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c38e4c"
+    "dominantColor": "#e4e2d7"
   },
   {
     "id": 1784,
@@ -17870,7 +17871,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81uVwvmZ7zL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DTFJ4SL7/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d9d7ca"
+    "dominantColor": "#ac7874"
   },
   {
     "id": 1785,
@@ -17890,7 +17891,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81fUqO4fLcL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DSJ7ZVTT/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#be8d89"
+    "dominantColor": "#d3d1c4"
   },
   {
     "id": 1787,
@@ -17900,7 +17901,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71gQhTWyCUL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CKFHGDTR/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ccc4bb"
+    "dominantColor": "#dad7c8"
   },
   {
     "id": 1788,
@@ -17930,7 +17931,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71qBwAwWC7L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0B7KTPC2R/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d6d0cb"
+    "dominantColor": "#07080c"
   },
   {
     "id": 1791,
@@ -17940,7 +17941,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/813hPeS5hDL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DQ8LHHDX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#010103"
+    "dominantColor": "#d6d0c2"
   },
   {
     "id": 1792,
@@ -18010,7 +18011,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71dUajz2tCL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0948HZBFZ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#beab94"
+    "dominantColor": "#fda92f"
   },
   {
     "id": 1799,
@@ -18020,7 +18021,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61-iCke-kzL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CZ83QG9K/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#eaa033"
+    "dominantColor": "#fffffe"
   },
   {
     "id": 1800,
@@ -18030,7 +18031,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71naGN52CQL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D8PRDMSJ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#9f958f"
+    "dominantColor": "#ece2db"
   },
   {
     "id": 1801,
@@ -18040,7 +18041,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81nzcJfIAyL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D14476R3/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e9e0db"
+    "dominantColor": "#0d0d0d"
   },
   {
     "id": 1802,
@@ -18050,7 +18051,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81RE7cd-KUL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CMF3Z5FL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#afa292"
+    "dominantColor": "#1f1f1d"
   },
   {
     "id": 1803,
@@ -18060,7 +18061,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81CsxYsmH2L._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DC313NR9/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#21211f"
+    "dominantColor": "#e9e4de"
   },
   {
     "id": 1804,
@@ -18070,7 +18071,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/A1xh1O083CL._AC_SX522_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CG1BQZ8L/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dcd4cb"
+    "dominantColor": "#cdc3b9"
   },
   {
     "id": 1805,
@@ -18080,7 +18081,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71mWH8lY1IL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DQ8JJCW2/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dfd5c8"
+    "dominantColor": "#c29d4c"
   },
   {
     "id": 1806,
@@ -18090,7 +18091,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/7141f6PsfiL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CYP8CH3W/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cdb56b"
+    "dominantColor": "#d9d9d8"
   },
   {
     "id": 1807,
@@ -18110,7 +18111,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91cRfiP9dKL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CCDNDG3G/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d7d1cf"
+    "dominantColor": "#c8c4c1"
   },
   {
     "id": 1809,
@@ -18120,7 +18121,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Z872ZeTML._AC_SX522_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DKXF4SKY/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#bebbb4"
+    "dominantColor": "#9d7f59"
   },
   {
     "id": 1810,
@@ -18130,7 +18131,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61jgIq6xHVL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B091FG7G6V/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#f2e5dc"
+    "dominantColor": "#5d5e5a"
   },
   {
     "id": 1811,
@@ -18190,7 +18191,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/716X27RdoJL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DRBPL7ZV/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cac0b3"
+    "dominantColor": "#1a1712"
   },
   {
     "id": 1817,
@@ -18240,7 +18241,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81ChAFmyw8L._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D1KG78S1/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#4d4330"
+    "dominantColor": "#632a00"
   },
   {
     "id": 1822,
@@ -18250,7 +18251,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Gp0yoSejL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DFPCK78N/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b0722a"
+    "dominantColor": "#e1e1df"
   },
   {
     "id": 1823,
@@ -18260,7 +18261,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Gp0yoSejL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DFPCK78N/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ccc9be"
+    "dominantColor": "#8f846f"
   },
   {
     "id": 1824,
@@ -18270,7 +18271,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71SDDa6HLJL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CL6JP1BS/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#8c8165"
+    "dominantColor": "#b7aaa8"
   },
   {
     "id": 1825,
@@ -18280,7 +18281,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71SDDa6HLJL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CL6JP1BS/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b9afa7"
+    "dominantColor": "#a99f99"
   },
   {
     "id": 1826,
@@ -18310,7 +18311,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71TMQUzayqL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C741XX4K/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d0c7b9"
+    "dominantColor": "#011b1c"
   },
   {
     "id": 1829,
@@ -18320,7 +18321,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71G+ktxW6vL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C7H262CM/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#001f22"
+    "dominantColor": "#c17a3a"
   },
   {
     "id": 1830,
@@ -18330,7 +18331,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71c0nh9JG9L._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D4C564PR/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cb803d"
+    "dominantColor": "#ded4ca"
   },
   {
     "id": 1831,
@@ -18350,7 +18351,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/7144CijWabL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BG2S7PTD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#baa585"
+    "dominantColor": "#fdce5c"
   },
   {
     "id": 1833,
@@ -18360,7 +18361,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61ChFyLWPkL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C28F7CLM/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e9bb4c"
+    "dominantColor": "#064d47"
   },
   {
     "id": 1834,
@@ -18370,7 +18371,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81NY4yYRjFL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BB6X6PS1/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#7c756d"
+    "dominantColor": "#b36d15"
   },
   {
     "id": 1835,
@@ -18380,7 +18381,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/715Ts1t-4xL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D5MFVVRC/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cfa35b"
+    "dominantColor": "#e5e0da"
   },
   {
     "id": 1836,
@@ -18390,7 +18391,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91IyKaUH6oL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C8V4CR83/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e5d6d3"
+    "dominantColor": "#c9706a"
   },
   {
     "id": 1837,
@@ -18400,7 +18401,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81ZQkMInGvL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DNFK31VF/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c66c64"
+    "dominantColor": "#242329"
   },
   {
     "id": 1838,
@@ -18410,7 +18411,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81wRydG4+3L._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CKX5ZNG7/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#111216"
+    "dominantColor": "#cec3a7"
   },
   {
     "id": 1839,
@@ -18440,7 +18441,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/A1cn46hB4WL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B083W4GWDX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dddbd2"
+    "dominantColor": "#ded1b2"
   },
   {
     "id": 1842,
@@ -18490,7 +18491,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71U33-edZgL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08611XVF3/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dad8cc"
+    "dominantColor": "#dfcfad"
   },
   {
     "id": 1847,
@@ -18500,7 +18501,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81Vzh1aI05L._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D14SBPQV/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e2d8cb"
+    "dominantColor": "#8e6f27"
   },
   {
     "id": 1848,
@@ -18560,7 +18561,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/816kQV6zQ2L._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BNK7MHPY/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c99e69"
+    "dominantColor": "#dcc371"
   },
   {
     "id": 1854,
@@ -18570,7 +18571,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/51DCGNR217L._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B01MZ82SPD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e4cc82"
+    "dominantColor": "#8a683b"
   },
   {
     "id": 1855,
@@ -18600,7 +18601,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/719wj8uN7dL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CJRWFN7C/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e1d7cc"
+    "dominantColor": "#b18139"
   },
   {
     "id": 1858,
@@ -18630,7 +18631,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/814vKUkdFqL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09VGLWLNN/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e3d5c2"
+    "dominantColor": "#e8b54b"
   },
   {
     "id": 1861,
@@ -18650,7 +18651,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91aoGJqljnL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C7YF3L3S/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#eed495"
+    "dominantColor": "#6c665f"
   },
   {
     "id": 1863,
@@ -18660,7 +18661,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/710PR2cGOdL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08Q3MZR5B/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ddd9d4"
+    "dominantColor": "#b28b3c"
   },
   {
     "id": 1864,
@@ -18680,7 +18681,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81xr3ruaSKL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B088R42PLD/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#20302f"
+    "dominantColor": "#360f01"
   },
   {
     "id": 1866,
@@ -18700,7 +18701,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81JDfzcr8aL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DJNF4XN4/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e9e1d3"
+    "dominantColor": "#ffefae"
   },
   {
     "id": 1868,
@@ -18710,7 +18711,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91OBGHC2GEL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09B6RZ3GR/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#eeca86"
+    "dominantColor": "#e4e4e4"
   },
   {
     "id": 1869,
@@ -18720,7 +18721,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71eC2BSCMSL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09Y8DRK65/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#c5b989"
+    "dominantColor": "#f7b72b"
   },
   {
     "id": 1870,
@@ -18730,7 +18731,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81O-OtyKnWL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D7CM1HQ9/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d6cbb8"
+    "dominantColor": "#9f7625"
   },
   {
     "id": 1871,
@@ -18740,7 +18741,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71Zsw9cxKeL._AC_SX569_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CZNY3V63/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d5d6d8"
+    "dominantColor": "#c2a677"
   },
   {
     "id": 1872,
@@ -18750,7 +18751,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61xy3P8wETL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BDBFRBY6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#bfa479"
+    "dominantColor": "#fffdcb"
   },
   {
     "id": 1873,
@@ -18860,7 +18861,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81xd4WoXS4S._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B092ZJ76WL/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dcc168"
+    "dominantColor": "#1a191e"
   },
   {
     "id": 1884,
@@ -19000,7 +19001,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/A1cn46hB4WL._AC_SY450_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B083W4GWDX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dddbd2"
+    "dominantColor": "#d1c396"
   },
   {
     "id": 1898,
@@ -19020,7 +19021,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61s5VnMzGJL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08H8NJFNX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e1d3bd"
+    "dominantColor": "#e8c686"
   },
   {
     "id": 1900,
@@ -19070,7 +19071,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81x1S4hoRfL._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B086QYWT7F/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#cec1a6"
+    "dominantColor": "#ebdea2"
   },
   {
     "id": 1905,
@@ -19080,7 +19081,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81GsaqvIJCL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0B2K2D7HK/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d6c3ab"
+    "dominantColor": "#eeb365"
   },
   {
     "id": 1906,
@@ -19100,7 +19101,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91VSMP9iBHL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07Z3SGB2N/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#b99568"
+    "dominantColor": "#bfa95e"
   },
   {
     "id": 1908,
@@ -19110,7 +19111,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/71n1OmFLaHL._AC_SY355_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08NLKHCPQ/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#dbc071"
+    "dominantColor": "#f4c788"
   },
   {
     "id": 1909,
@@ -19130,7 +19131,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81GivgtJUSL._AC_SX679_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BNHB9XV6/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#d4c4a0"
+    "dominantColor": "#d6c6a6"
   },
   {
     "id": 1911,
@@ -19140,7 +19141,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61s5VnMzGJL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08H8NJFNX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e1d3bd"
+    "dominantColor": "#070707"
   },
   {
     "id": 1912,
@@ -19180,7 +19181,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/81X0py5KmWS._AC_SX425_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09435T82J/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#f8d8a9"
+    "dominantColor": "#70532b"
   },
   {
     "id": 1916,
@@ -19200,7 +19201,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/91sIk5y4WEL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09VKJPQ7H/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#ebc68a"
+    "dominantColor": "#e6dfd5"
   },
   {
     "id": 1918,
@@ -19220,7 +19221,7 @@ export const amazonProducts: AmazonProduct[] = [
     "image": "https://m.media-amazon.com/images/I/61s5VnMzGJL._AC_SX466_.jpg",
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08H8NJFNX/ref=nosim?tag=paintchipshop-20",
-    "dominantColor": "#e1d3bd"
+    "dominantColor": "#fff3c0"
   },
   {
     "id": 1920,
@@ -19232,5 +19233,6 @@ export const amazonProducts: AmazonProduct[] = [
     "affiliateLink": "https://www.amazon.com/dp/B00RKHWWTI/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#c39451"
   }
+]
 
 ];
