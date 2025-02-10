@@ -120,22 +120,26 @@ const ModernUploader = () => {
 
   // Initialize with a random palette
   useEffect(() => {
+    // Initialize with a random palette but don't switch to results view
     const randomPalette = PRESET_PALETTES[Math.floor(Math.random() * PRESET_PALETTES.length)];
     setCurrentPalette(randomPalette);
     setSelectedColor(randomPalette.primary);
     setComplementaryColor(randomPalette.complementary);
     setTriadicColors([randomPalette.triadic1, randomPalette.triadic2]);
     setActiveColor(randomPalette.primary);
-    fetchProducts(randomPalette.primary);
+    // Load products in background but don't switch view
+    fetchProducts(randomPalette.primary, false);
   }, []);
 
-  const fetchProducts = async (color: string) => {
+  const fetchProducts = async (color: string, switchView: boolean = true) => {
     setProducts([]);
     try {
       const response = await fetch(`/api/products?color=${encodeURIComponent(color)}`);
       const data = await response.json();
       setProducts(data);
-      setView("results");
+      if (switchView) {
+        setView("results");
+      }
     } catch (error) {
       console.error("Error fetching products:", error);
     }
