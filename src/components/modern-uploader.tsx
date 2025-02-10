@@ -175,7 +175,7 @@ const ModernUploader = () => {
   return (
     <div className="w-full min-h-screen bg-gradient-to-br from-[#0F172A] to-[#1E293B]">
       <div className={`px-4 transition-all duration-500 ${view !== "initial" ? "pt-8 pb-4" : "pt-32 pb-16"}`}>
-        <h1 className="text-center font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500" style={{ fontSize: '4rem' }}>
+        <h1 className="text-center font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 text-5xl md:text-6xl">
           SHOP BY COLOR
         </h1>
         <p className="text-center text-white/80 text-lg">
@@ -209,47 +209,49 @@ const ModernUploader = () => {
 
       {view === "results" && (
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-center gap-4 mb-12">
-            {/* Primary Color */}
-            <div className="flex flex-col items-center">
-              <div
-                className={`w-24 h-24 rounded-xl shadow-lg cursor-pointer transition-all
-                  ${selectedColor === activeColor ? "ring-2 ring-white" : ""}`}
-                style={{ backgroundColor: selectedColor || "#000000" }}
-                onClick={() => selectedColor && handleColorClick(selectedColor)}
-              />
-              <span className="text-sm text-white/60 mt-2">Primary</span>
-            </div>
-
-            {/* Complementary Color */}
-            {complementaryColor && (
+          <div className="flex flex-col items-center gap-4 mb-12">
+            <div className="flex justify-center gap-3 w-full">
+              {/* Primary Color */}
               <div className="flex flex-col items-center">
                 <div
-                  className={`w-24 h-24 rounded-xl shadow-lg cursor-pointer transition-all
-                    ${complementaryColor === activeColor ? "ring-2 ring-white" : ""}`}
-                  style={{ backgroundColor: complementaryColor }}
-                  onClick={() => handleColorClick(complementaryColor)}
+                  className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer transition-all
+                    ${selectedColor === activeColor ? "ring-2 ring-white" : ""}`}
+                  style={{ backgroundColor: selectedColor || "#000000" }}
+                  onClick={() => selectedColor && handleColorClick(selectedColor)}
                 />
-                <span className="text-sm text-white/60 mt-2">Complementary</span>
+                <span className="text-xs md:text-sm text-white/60 mt-2">Primary</span>
               </div>
-            )}
 
-            {/* Triadic Colors */}
-            {triadicColors?.map((color, index) => (
-              <div key={color} className="flex flex-col items-center">
-                <div
-                  className={`w-24 h-24 rounded-xl shadow-lg cursor-pointer transition-all
-                    ${color === activeColor ? "ring-2 ring-white" : ""}`}
-                  style={{ backgroundColor: color }}
-                  onClick={() => handleColorClick(color)}
-                />
-                <span className="text-sm text-white/60 mt-2">Triadic {index + 1}</span>
-              </div>
-            ))}
+              {/* Complementary Color */}
+              {complementaryColor && (
+                <div className="flex flex-col items-center">
+                  <div
+                    className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer transition-all
+                      ${complementaryColor === activeColor ? "ring-2 ring-white" : ""}`}
+                    style={{ backgroundColor: complementaryColor }}
+                    onClick={() => handleColorClick(complementaryColor)}
+                  />
+                  <span className="text-xs md:text-sm text-white/60 mt-2">Complementary</span>
+                </div>
+              )}
+
+              {/* Triadic Colors */}
+              {triadicColors?.map((color, index) => (
+                <div key={color} className="flex flex-col items-center">
+                  <div
+                    className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer transition-all
+                      ${color === activeColor ? "ring-2 ring-white" : ""}`}
+                    style={{ backgroundColor: color }}
+                    onClick={() => handleColorClick(color)}
+                  />
+                  <span className="text-xs md:text-sm text-white/60 mt-2">Triadic {index + 1}</span>
+                </div>
+              ))}
+            </div>
 
             {/* Upload Button */}
-            <div className="flex flex-col items-center">
-              <div className="w-24 h-24 rounded-xl bg-slate-800/50 flex items-center justify-center cursor-pointer hover:bg-slate-800/70 transition-all">
+            <div className="flex flex-col items-center mt-2">
+              <div className="w-16 h-16 md:w-24 md:h-24 rounded-xl bg-slate-800/50 flex items-center justify-center cursor-pointer hover:bg-slate-800/70 transition-all">
                 <input
                   type="file"
                   accept="image/*"
@@ -262,7 +264,7 @@ const ModernUploader = () => {
                   <div className="text-xs text-white/60">New Color</div>
                 </label>
               </div>
-              <span className="text-sm text-white/60 mt-2">Upload</span>
+              <span className="text-xs md:text-sm text-white/60 mt-2">Upload</span>
             </div>
           </div>
 
