@@ -11291,5 +11291,815 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B08FD537NJ/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#2d6a77"
+  },
+   {
+    "id": 1127,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "Bedsure Satin Pillowcase 2 Pack Similar to Silk Pillow Cases Standard Size, Pillow Case for Sleeping Women with Envelope Closure, Gifts for Women Men, Pink, 20x26 Inches",
+    "image": "https://m.media-amazon.com/images/I/81dAEDqiMDL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07MP4B8ZH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e5c2cb"
+  },
+  {
+    "id": 1128,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "Kitsch Satin Pillowcase with Zipper for Hair & Skin, Softer Than Silk Pillow Cases Queen, Wrinkle-Free, Smooth and Cooling Satin Pillow Covers, Standard Size 19\"x26\", Valentines Gift - Blush, 2pcs",
+    "image": "https://m.media-amazon.com/images/I/51dtkgGqyfL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MDG5ZQ7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e9d3ce"
+  },
+  {
+    "id": 1129,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "MIULEE Throw Pillow Insert Premium Pillow Stuffer Sham Rectangle for Decorative Cushion Bed Couch Sofa 12x20 Inch",
+    "image": "https://m.media-amazon.com/images/I/41RkQL40KML._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B083LMRXJC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e8e9f6"
+  },
+  {
+    "id": 1130,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "MIULEE Blush Pink Corduroy Pillow Covers with Splicing Set of 2 Super Soft Couch Pillow Covers Broadside Striped Decorative Spring Throw Pillows for Valentine's Day Cushion Bed Livingroom 18x18 inch",
+    "image": "https://m.media-amazon.com/images/I/81+wc6edMuL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BTHKNLTH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dacec7"
+  },
+  {
+    "id": 1131,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "MIULEE Pack of 2 Corduroy Decorative Throw Pillow Covers 18x18 Inch Soft Boho Striped Pillow Covers Spring Modern Farmhouse Home Decor for Sofa Living Room Couch Bed Cream White",
+    "image": "https://m.media-amazon.com/images/I/81jhzAwCvML._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BFVVKVSK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4ccc7"
+  },
+  {
+    "id": 1132,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Foindtower Set of 2 Decorative Linen Fringe Throw Pillow Covers Boho Farmhouse Cushion Cover with Tassels Soft Accent Pillowcase for Couch Chair Sofa Bed Living Room Home Decor, 18×18 Inch, Light Pink",
+    "image": "https://m.media-amazon.com/images/I/81Ek0sk8P+L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3GDLGKB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbd2cd"
+  },
+  {
+    "id": 1133,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Puncuntex Hot Pink Throw Blanket 50\"×60\" inches Gifts for Mom Fuzzy 3D Jacquard Decorative Flannel Fleece Super Soft Plush Cozy Blanket for Couch Sofa Chair Lightweight",
+    "image": "https://m.media-amazon.com/images/I/81v98E2nj9L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CMTW85YK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3bdb2"
+  },
+  {
+    "id": 1134,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "MIULEE Pack of 2 Couch Valentines Throw Pillow Covers 18x18 Inch Soft Spring Blush Pink Chenille Pillow Covers for Sofa Living Room Solid Dyed Pillow Cases",
+    "image": "https://m.media-amazon.com/images/I/81oI35tf2yL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSFWS152/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ef2c6f"
+  },
+  {
+    "id": 1135,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "NEWCOSPLAY Super Soft Throw Blanket Pink Premium Silky Flannel Fleece 3D Ribbed Jacquard Lightweight Bed Blanket All Season Use (Pink Ribbed, Throw(50\"x60\"))",
+    "image": "https://m.media-amazon.com/images/I/81qOItq7iyL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQ71N25S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a97873"
+  },
+  {
+    "id": 1136,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "MIULEE Decorative Linen Pillow Covers 24x24 Inch Light Pink ​Boho Farmhouse​ ​Neutral Couch Throw Pillows for Bed Pack of 2 Accent Pillowcase Spring Modern Sofa Cushion Livingroom Home Decor",
+    "image": "https://m.media-amazon.com/images/I/71PEkJbA0FL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFBTDWT8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fcdcdf"
+  },
+  {
+    "id": 1137,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "Amazon Basics Kids Pink Heart Pillow, Room Decor, 10.5 in x 4 in",
+    "image": "https://m.media-amazon.com/images/I/71OVXYOsSAS._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08BDB8FL5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f5dcdd"
+  },
+  {
+    "id": 1138,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "decorUhome Decorative Throw Pillow Covers 18x18 Set of 2, Soft Plush Faux Wool Couch Pillow Covers for Home, Hot Pink",
+    "image": "https://m.media-amazon.com/images/I/81FaqG-yAOL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1QR5SMB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e2d7d0"
+  },
+  {
+    "id": 1139,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "ZWJD Dusty Pink Pillow Covers 18x18 Set of 2 Chenille Throw Pillow Covers with Elegant Design Soft and Luxurious Decorative Throw Pillows for Couch, Bed, and Home Decor",
+    "image": "https://m.media-amazon.com/images/I/91iDwAZGAOL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D22FHPWV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f965a7"
+  },
+  {
+    "id": 1140,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "DEZENE 18x18 Throw Pillow Cases Purple: 2 Pack Cozy Soft Velvet Square Decorative Pillow Covers for Farmhouse Home Decor",
+    "image": "https://m.media-amazon.com/images/I/71QQtOHoWgL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07SFT9R2M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3d2549"
+  },
+  {
+    "id": 1141,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "DEZENE 18x18 Throw Pillow Cases Purple: 2 Pack Cozy Soft Velvet Square Decorative Pillow Covers for Farmhouse Home Decor",
+    "image": "https://m.media-amazon.com/images/I/71QQtOHoWgL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07SFT9R2M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3d2549"
+  },
+  {
+    "id": 1142,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "Thmyo 4-Pack 100% Cotton Comfortable Solid Decorative Throw Pillow Case Square Cushion Cover Pillowcases Sublimation Blank Valentine's Day DIY Pillow Covers for Sofa Bed(18x18 inch/ 45x45cm, Pink)",
+    "image": "https://m.media-amazon.com/images/I/61m9CyiW0lL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07HG3LKTW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ecb9cb"
+  },
+  {
+    "id": 1143,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "MIULEE Blush Pink Corduroy Pillow Covers Pack of 2 Boho Decorative Spliced Throw Pillow Covers Soft Solid Couch Pillowcases Patchwork Cushion Covers for Living Room Bed Sofa 18x18 inch Valentines Day",
+    "image": "https://m.media-amazon.com/images/I/71-DKl8FRDL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CL67QX43/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4cac4"
+  },
+  {
+    "id": 1144,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "JOJUSIS Pack of 2 Faux Fur Plush Decorative Throw Pillow Covers Couch Cushion Case Soft Pillowcases (Pink, 18 x 18 Inch)",
+    "image": "https://m.media-amazon.com/images/I/81f+yQfFKBL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D95GDW84/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4c6c0"
+  },
+  {
+    "id": 1145,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "NiNi ALL Decorative Throw Pillow Covers Velvet Soft for Couch Sofa Bedroom Living Room Outdoor Pack of 2 18x18 Inch Pink",
+    "image": "https://m.media-amazon.com/images/I/91hroLddOAL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09C3CSZP6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d9b9b6"
+  },
+  {
+    "id": 1146,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "NiNi ALL Decorative Throw Pillow Covers Velvet Soft for Couch Sofa Bedroom Living Room Outdoor Pack of 2 18x18 Inch Pink",
+    "image": "https://m.media-amazon.com/images/I/91hroLddOAL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09C3CSZP6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ce929a"
+  },
+  {
+    "id": 1147,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "GIGIZAZA 18x18 Pillow Covers Set of 2 Velvet Throw Pillows Decorative Hot Pink Covers for Couch Sofa Bedroom Pillowscase",
+    "image": "https://m.media-amazon.com/images/I/81OwkLjXRqL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CTFZS4TF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b16b73"
+  },
+  {
+    "id": 1148,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Pallene Faux Fur Plush Throw Pillow Covers 18x18 Set of 2, Luxury Soft Fluffy Striped Decorative Pillow Covers for Sofa, Couch, Living Room, Blush Pink",
+    "image": "https://m.media-amazon.com/images/I/81Zx7yEDIqL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BY2QT2NM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d91293"
+  },
+  {
+    "id": 1149,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "EverSnug Travel Blanket and Pillow - Ultra-Soft, Compact & Lightweight, 65x40 Inches, with Carry Case, Luggage Sleeve & Backpack Clip for Airplane Comfort (Light Pink)",
+    "image": "https://m.media-amazon.com/images/I/91HzODg2hCL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08D8F9PL6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcbabc"
+  },
+  {
+    "id": 1150,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "EverSnug Travel Blanket and Pillow - Ultra-Soft, Compact & Lightweight, 65x40 Inches, with Carry Case, Luggage Sleeve & Backpack Clip for Airplane Comfort (Light Pink)",
+    "image": "https://m.media-amazon.com/images/I/91HzODg2hCL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08D8F9PL6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcbabc"
+  },
+  {
+    "id": 1151,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "decorUhome Valentine's Day Faux Fur Spring Throw Pillow Covers 18x18 Set of 2, Decorative Soft Plush Striped Couch Pillow Covers with Velvet Back for Sofa, Bed, Living Room, Pink",
+    "image": "https://m.media-amazon.com/images/I/71U0evrV2DL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1YB3KZ2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbc9c6"
+  },
+  {
+    "id": 1152,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "Fancy Homi Set of 2 Boho Pink Lumbar Decorative Throw Pillow Cover 12x20 Inch for Couch Bed Sofa Chair, Modern Organic Farmhouse Home Decor, Soft Cotton Cute Accent Rectangle Cushion Case",
+    "image": "https://m.media-amazon.com/images/I/81RXF4+6GcL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJJZK6LH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8b8b4"
+  },
+  {
+    "id": 1153,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "MIULEE Blush Pink Couch Valentines Pillow Covers 18x18 Inch, Set of 2 Soft Spring Chenille Decorative Throw Pillow Covers Farmhouse for Sofa Living Room Bed",
+    "image": "https://m.media-amazon.com/images/I/81dadmsyjUL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHRP4MZ7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ecc1b7"
+  },
+  {
+    "id": 1154,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "Topfinel Aesthetic Pink Room Decor Throw Pillows Covers for Couch Living Room Bedroom, Coquette Room Decorative Fluffy Corduroy Cushion Cover 18x18 Inch Set of 4 (Blush/Rose/Hot Pink)",
+    "image": "https://m.media-amazon.com/images/I/81xNPSC1m1L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BW8D7KBN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cea19e"
+  },
+  {
+    "id": 1155,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "Topfinel Aesthetic Pink Room Decor Throw Pillows Covers for Couch Living Room Bedroom, Coquette Room Decorative Fluffy Corduroy Cushion Cover 18x18 Inch Set of 4 (Blush/Rose/Hot Pink)",
+    "image": "https://m.media-amazon.com/images/I/81xNPSC1m1L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BW8D7KBN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eac3c3"
+  },
+  {
+    "id": 1156,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "MIULEE Pack of 2 Decorative Throw Pillow Covers Soft Chenille Throw Pillows Solid Textured Cushion Covers for Spring Valentine's Day Couch Sofa Bedroom Living Room 18x18 Inch, Blush Pink",
+    "image": "https://m.media-amazon.com/images/I/81-pL8B6xaL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DF7FKL83/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfa6ad"
+  },
+  {
+    "id": 1157,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "18x18 Throw Pillow Covers Set of 2, Decorative Faux Fur Covers for Bed, Couch Soft Fluffy Pillow Cover with Velvet Back for Living Room, Neutral Home Décor Accent for Sofa - Pink",
+    "image": "https://m.media-amazon.com/images/I/81kZH1YnN2L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C7W42F3K/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c39a96"
+  },
+  {
+    "id": 1158,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "Home Brilliant Throw Pillow Covers Pink Couch Pillow Covers 18x18 Valentine's Decoration Supersoft Striped Velvet Corduroy Decorative Pillowcases for Bedroom Girls Gift, 18 x 18 inch, Baby Pink",
+    "image": "https://m.media-amazon.com/images/I/A1y4baEG7pL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B076NK59NB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e9d3d2"
+  },
+  {
+    "id": 1159,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "ZLINA Set of 2 Hot Pink Faux Fur Decorative Throw Pillow Covers Fluffy Striped Pillowcase Cushion Covers 18 x 18 Inch Decor Sofa Couch Bedroom",
+    "image": "https://m.media-amazon.com/images/I/81g6TbQK7GL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BHBMS5Z9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e9c8c7"
+  },
+  {
+    "id": 1160,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "MIULEE Light Pink Valentines Throw Pillow Covers 18x18 Inch, Soft Spring Plush Faux Wool Couch Pillow Covers Set of 2 Decorative Farmhouse Boho Throw Pillows for Sofa Living Room Bed",
+    "image": "https://m.media-amazon.com/images/I/71IJSZcgpnL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CP347BW3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ee2887"
+  },
+  {
+    "id": 1161,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "Fancy Homi Pack of 2 Decorative Throw Pillow Covers with Pom-poms, Soft Corduroy Solid Square Cushion Case Pillow Cases Set for Couch Sofa Bedroom Car Living Room (18x18 Inch/45x45 cm, Blush Pink)",
+    "image": "https://m.media-amazon.com/images/I/71yOZSHLX-L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08KZFNG8Y/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbb8bb"
+  },
+  {
+    "id": 1162,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "Neelvin Pink Faux Fur Cozy Soft Plaid Decorative Throw Pillow Covers 18x18 inch Set of 2, Velvet Pillowcase Cushion Case for Sofa Couch",
+    "image": "https://m.media-amazon.com/images/I/81QPc7yR9CL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BYP14X79/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f5e1e0"
+  },
+  {
+    "id": 1163,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "MIULEE Pack of 2 Corduroy Valentines Pillow Covers Soft Soild Striped Throw Pillow Covers Decorative Square Cushion Cases Pillowcases for Spring Couch Sofa Bedroom Car 18 x 18 Inch 45 x 45 cm Pink",
+    "image": "https://m.media-amazon.com/images/I/71Yiw3uO51L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B075B5WLZ5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e5c8c1"
+  },
+  {
+    "id": 1164,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "Coastal Blue Decorative Lumbar Pillow Cover 14x36 Boho Long Body Pillow for Bed Farmhouse Lumbar Throw Pillow for Couch Modern Accent Textured Throw Pillowcase",
+    "image": "https://m.media-amazon.com/images/I/91aoGJqljnL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C7YF3L3S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#deb8ae"
+  },
+  {
+    "id": 1165,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "MIULEE Aesthetic Pink Home Decor Pillow Covers 18x18 Inch Set of 4 Romantic Sweet Soft Throw Pillows Spring Corduroy Couch Pillowcases for Feminine Valentines Day Sofa Cushion Living Room Bed",
+    "image": "https://m.media-amazon.com/images/I/81gY-JB9dAL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DBM1FWKN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbc8c1"
+  },
+  {
+    "id": 1166,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "MONDAY MOOSE Decorative Throw Pillow Covers Cushion Cases, Set of 4 Soft Velvet Modern Double-Sided Designs, Mix and Match for Home Decor, Pillow Inserts Not Included (18x18 inch, Orange/Teal)",
+    "image": "https://m.media-amazon.com/images/I/81sziUdT+OL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08H4KJPV7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#be7379"
+  },
+  {
+    "id": 1167,
+    "title": "Amazon Product 41",
+    "price": 0,
+    "description": "Flower Pillow, Flower Shaped Pillow Decorative Throw Pillows for Bed Couch, Cute Daisy Pillow Dorm Decor Floor Seating Cushion (Pink, 15 Inches)",
+    "image": "https://m.media-amazon.com/images/I/71Z+5TwWkxL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3J7FXW5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e2c8c1"
+  },
+  {
+    "id": 1168,
+    "title": "Amazon Product 42",
+    "price": 0,
+    "description": "Round Throw Pillow Velvet Home Decoration Pleated Round Pillow Cushion for Couch Chair Bed Car Pink",
+    "image": "https://m.media-amazon.com/images/I/61+9eOF3xZL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08FT615X8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ad8c8d"
+  },
+  {
+    "id": 1169,
+    "title": "Amazon Product 43",
+    "price": 0,
+    "description": "Velvet Decorative Throw Pillow Covers, Soft Square Cushion Case Home Decor for Living Room Couch Bed Sofa, Set of 2 Pack, Hot Pink, 18x18 Inch",
+    "image": "https://m.media-amazon.com/images/I/61ISdmh2QJL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2GVMFCL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#911f5a"
+  },
+  {
+    "id": 1170,
+    "title": "Amazon Product 44",
+    "price": 0,
+    "description": "ZWJD Pillow Covers 18x18 Set of 2 Dusty Pink Throw Pillow Covers with Fringe Chic Cotton Decorative Pillows Square Cushion Covers for Sofa Couch Bed Living Room Farmhouse Boho Decor",
+    "image": "https://m.media-amazon.com/images/I/81IlJBFfoOL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQK3L2TY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfd1cb"
+  },
+  {
+    "id": 1171,
+    "title": "Amazon Product 45",
+    "price": 0,
+    "description": "NordECO HOME Luxury Soft Faux Fur Fleece Cushion Cover Pillowcase Decorative Throw Pillows Covers, Valentines Day Gift No Pillow Insert, 18\" x 18\" Inch, Pink, 2 Pack",
+    "image": "https://m.media-amazon.com/images/I/611n00iPQfL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07FXGBQCF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c7a9a1"
+  },
+  {
+    "id": 1172,
+    "title": "Amazon Product 46",
+    "price": 0,
+    "description": "Flower Throw Pillow, Soft Pink 14.9\" Flower Pillow for Home Decor, Cute Flower Shaped Floor Pillow Aesthetic Flower Plush Decorative Pillows for Bed Sofa Couch",
+    "image": "https://m.media-amazon.com/images/I/813kyq-QQ5L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSSDCP22/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6a7a3"
+  },
+  {
+    "id": 1173,
+    "title": "Amazon Product 47",
+    "price": 0,
+    "description": "WLNUI Set of 2 Valentines Day Pink Fluffy Pillow Covers New Luxury Series Merino Style Blush Faux Fur Decorative Throw Pillow Covers Square Fuzzy Cushion Case 18x18 Inch",
+    "image": "https://m.media-amazon.com/images/I/81PdrkvfylL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B087MBT4RR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c58188"
+  },
+  {
+    "id": 1174,
+    "title": "Amazon Product 48",
+    "price": 0,
+    "description": "Throw Pillow Covers Pink Set of 2 18x18 Inch Pillow Covers, Soft Velvet Cute Decorative Pillowcases for Couch Sofa Bed, Home Boho Decor, Modern Cushion Covers",
+    "image": "https://m.media-amazon.com/images/I/71mLfc1WguL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJ87PGVN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4c0c0"
+  },
+  {
+    "id": 1175,
+    "title": "Amazon Product 49",
+    "price": 0,
+    "description": "YRXRUS Heart Pillow, Pink Heart Pillows for Valentine's Day, Love Pillow Gifts, 14X17 Inch Large Heart Shaped Pillows, Faux Rabbit Fur Coquette Room Decor Throw Pillows, Living, Bedroom",
+    "image": "https://m.media-amazon.com/images/I/81UJSkrpRPL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09GM1CM47/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5bfb9"
+  },
+  {
+    "id": 1176,
+    "title": "Amazon Product 50",
+    "price": 0,
+    "description": "EastTree Heart Pillows, Valentine's Day Heart Pillow, Pink Heart Shaped Pillows, Love Throw Pillows Gifts, Ultra Soft Faux Rabbit Fur Cute Pillows, Women Girls Kid Valentine's Room Decor 10x13 Inch",
+    "image": "https://m.media-amazon.com/images/I/81ZbMsbsFbL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJJLC8HF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8a3a5"
+  },
+  {
+    "id": 1177,
+    "title": "Amazon Product 51",
+    "price": 0,
+    "description": "FUTEI Hot Pink Striped Decorative Throw Pillow Covers 18x18 Inch Set of 2, Square Spring Decorations Couch Pillow Case, Soft Cozy Faux Rabbit Fur & Velvet Back, Modern Home Decor for Bed",
+    "image": "https://m.media-amazon.com/images/I/81tdY1wEp5L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BN5Y8GFR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f9dde2"
+  },
+  {
+    "id": 1178,
+    "title": "Amazon Product 52",
+    "price": 0,
+    "description": "Pink Heart Pillows, Cute Heart Decorative Throw Pillow, Heart Shaped Plush Throw Pillows for Bed, 12.9\" Faux Rabbit Fur Room Decor Pillow Cushion for Couch Valentine's Day Xmas Gift",
+    "image": "https://m.media-amazon.com/images/I/71j079uQ-6L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C5L8S6B6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c41d63"
+  },
+  {
+    "id": 1179,
+    "title": "Amazon Product 53",
+    "price": 0,
+    "description": "Pink Flower Pillow, Cute Decorative Flower Shaped Throw Pillow with Faux Rabbit Fur, 14.9\" Soft Flower Plush Throw Pillow Floor Pillows Room Décor for Bedroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/71bo3BypQTL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSSH482D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcb0a5"
+  },
+  {
+    "id": 1180,
+    "title": "Amazon Product 54",
+    "price": 0,
+    "description": "Pink Flower Pillow, Cute Decorative Flower Shaped Throw Pillow with Faux Rabbit Fur, 14.9\" Soft Flower Plush Throw Pillow Floor Pillows Room Décor for Bedroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/71bo3BypQTL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSSH482D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e5d2d3"
+  },
+  {
+    "id": 1181,
+    "title": "Amazon Product 55",
+    "price": 0,
+    "description": "lalaLOOM Velvet Throw Pillow Covers, Set of 2, 18x18 Decorative Square Pillows Home Decor, Soft Accent Cases, Silky Machine Washable Pillowcases for Sofa, Couch, Bedroom, Living Room, Dusty Rose",
+    "image": "https://m.media-amazon.com/images/I/612EcU8Ru3L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08LHKLWFC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cebabd"
+  },
+  {
+    "id": 1182,
+    "title": "Amazon Product 56",
+    "price": 0,
+    "description": "Top Finel Blush Pink Throw Pillow Covers 18x18 Inches for Couch Aesthetic Decorative Sofa Pillow Covers Set of 2 Soft Velvet Cushion Cover Pillow Cases with Pom-poms for Bedroom Livingroom Office Car",
+    "image": "https://m.media-amazon.com/images/I/71YzxGsGNfL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07QRGKQPG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d1c2bd"
+  },
+  {
+    "id": 1183,
+    "title": "Amazon Product 57",
+    "price": 0,
+    "description": "Top Finel Blush Pink Throw Pillow Covers 18x18 Inches for Couch Aesthetic Decorative Sofa Pillow Covers Set of 2 Soft Velvet Cushion Cover Pillow Cases with Pom-poms for Bedroom Livingroom Office Car",
+    "image": "https://m.media-amazon.com/images/I/71YzxGsGNfL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07QRGKQPG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b08f8a"
+  },
+  {
+    "id": 1184,
+    "title": "Amazon Product 58",
+    "price": 0,
+    "description": "Top Finel Blush Pink Throw Pillow Covers 18x18 Inches for Couch Aesthetic Decorative Sofa Pillow Covers Set of 2 Soft Velvet Cushion Cover Pillow Cases with Pom-poms for Bedroom Livingroom Office Car",
+    "image": "https://m.media-amazon.com/images/I/71YzxGsGNfL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07QRGKQPG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4d0cf"
+  },
+  {
+    "id": 1185,
+    "title": "Amazon Product 59",
+    "price": 0,
+    "description": "MIULEE Dusty Pink Velvet Throw Pillow Cover 12 x 20 Inch Soft Decorative Pillow Cover Lumbar Cushion Case Home Decor for Spring Couch Sofa Bedroom for Valentine's Day",
+    "image": "https://m.media-amazon.com/images/I/61NrD5n+obL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CTZMZGLX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8c4c3"
+  },
+  {
+    "id": 1186,
+    "title": "Amazon Product 60",
+    "price": 0,
+    "description": "MIULEE 3D Decorative Romantic Valentines Stereo Chiffon Rose Flower Throw Pillow Cover Solid Pillowcase for Girl Women Wedding Sofa Bedroom Car Spring Decor 12x20 Inch 30x50cm Peach Pink",
+    "image": "https://m.media-amazon.com/images/I/611iBlmtDwL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07PN5S8DJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b17c78"
+  },
+  {
+    "id": 1187,
+    "title": "Amazon Product 61",
+    "price": 0,
+    "description": "DEZENE Gold Velvet Throw Pillow Covers: 2 Pack 18x18 Inch Square Decorative Pillow Cases for Bedroom Sofa Couch Living Room, Pink",
+    "image": "https://m.media-amazon.com/images/I/61WuhivWrUL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08BCFJ2N4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d59b8e"
+  },
+  {
+    "id": 1188,
+    "title": "Amazon Product 62",
+    "price": 0,
+    "description": "Petrella Knot Pillows Ball Round Throw Pillows Home Decor Cushion Decorative Aesthetic Throw Pillows，Pink 8inch",
+    "image": "https://m.media-amazon.com/images/I/81XcMNDfAyL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BQHJ1HHL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbb4b0"
+  },
+  {
+    "id": 1189,
+    "title": "Amazon Product 63",
+    "price": 0,
+    "description": "FUTEI Valentines Hot Pink Chenille Throw Pillow Covers 18x18 Inch Set of 2, Soft Velvet Cushion Case, Home Decor for Couch Bed Living Room",
+    "image": "https://m.media-amazon.com/images/I/81OdhIHN1UL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFWCN4W6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f6d5d3"
+  },
+  {
+    "id": 1190,
+    "title": "Amazon Product 64",
+    "price": 0,
+    "description": "Pink Flower Pillow，Flower Shaped Throw Pillow 15.7In Daisy Pillow Cushion Cute Flower Seating Cushion Home Decorative Pillows for Sofa Couch Bed",
+    "image": "https://m.media-amazon.com/images/I/71MWH5GOkoL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQ8CLTV4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cc6a91"
+  },
+  {
+    "id": 1191,
+    "title": "Amazon Product 65",
+    "price": 0,
+    "description": "MIULEE Hot Pink Throw Pillow Covers 18x18 Inch Set of 2 Fuzzy Striped Soft Pillowcase with Velvet Back Faux Rabbit Fur Cushion Cute Decorative Home Decor for Winter Couch Sofa Bedroom Livingroom",
+    "image": "https://m.media-amazon.com/images/I/81Fl0iWjDtL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BZKW1WTS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f6dbe5"
+  },
+  {
+    "id": 1192,
+    "title": "Amazon Product 66",
+    "price": 0,
+    "description": "MIULEE Light Pink Decorative Valentines Throw Pillow Covers 18x18 Inch Set of 2, Soft Spring Plush Faux Wool Couch Pillow Covers Farmhouse Throw Pillows for Couch Bed Sofa Living Room",
+    "image": "https://m.media-amazon.com/images/I/818q3JTeEDL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CXWVCMKB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d84887"
+  },
+  {
+    "id": 1193,
+    "title": "Amazon Product 67",
+    "price": 0,
+    "description": "Heart Pillow Pink Throw Pillows Decorative Pillows for Bed Couch Cute Faux Rabbit Fur Small Pillow for Women Valentine's Day Anniversary Fall Halloween Christmas Home Decor (Mini, 13\"x10\")",
+    "image": "https://m.media-amazon.com/images/I/71arbOx4srL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPXVV3VW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d9b9be"
+  },
+  {
+    "id": 1194,
+    "title": "Amazon Product 68",
+    "price": 0,
+    "description": "Heart Pillow Pink Throw Pillows Decorative Pillows for Bed Couch Cute Faux Rabbit Fur Small Pillow for Women Valentine's Day Anniversary Fall Halloween Christmas Home Decor (Mini, 13\"x10\")",
+    "image": "https://m.media-amazon.com/images/I/71arbOx4srL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPXVV3VW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dca3a9"
+  },
+  {
+    "id": 1195,
+    "title": "Amazon Product 69",
+    "price": 0,
+    "description": "HIG Set of 2 Decorative Round Pleated Throw Pillows, Classy Accent Pumpkin Throw Pillows with Center Button, Vintage Velvet Floor Pillows for Sofa Couch Vanity Chair Bed, Pink, 14.5\" Diameter(Ripple)",
+    "image": "https://m.media-amazon.com/images/I/71fktss9NsL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09Y8F2K4T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4adb0"
+  },
+  {
+    "id": 1196,
+    "title": "Amazon Product 70",
+    "price": 0,
+    "description": "Folkulture Throw Pillows for Couch Pillows for Living Room, Valentine Pillow Covers 20x20, Set of 2 Boho Throw Pillows, Accent Pillows, Decorative Pillows, Scalloped Pillow Cover, Pink Throw Pillows",
+    "image": "https://m.media-amazon.com/images/I/91LTkGcMoIL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CF2KKFD4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7b0ae"
+  },
+  {
+    "id": 1197,
+    "title": "Amazon Product 71",
+    "price": 0,
+    "description": "Folkulture Throw Pillows for Couch Pillows for Living Room, Valentine Pillow Covers 20x20, Set of 2 Boho Throw Pillows, Accent Pillows, Decorative Pillows, Scalloped Pillow Cover, Pink Throw Pillows",
+    "image": "https://m.media-amazon.com/images/I/91LTkGcMoIL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CF2KKFD4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fdbcc0"
+  },
+  {
+    "id": 1198,
+    "title": "Amazon Product 72",
+    "price": 0,
+    "description": "Mecatny Corduroy Decorative Throw Pillow Covers 18x18 Set of 2 for Sofa Bedroom Living Room, Stylish Soft Striped Couch Pillow Covers for Home Decor, Pink",
+    "image": "https://m.media-amazon.com/images/I/81JLqeuWuxL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFPW5LPZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fdbcc0"
+  },
+  {
+    "id": 1199,
+    "title": "Amazon Product 73",
+    "price": 0,
+    "description": "Kawani Pink and Cream Floral Pillow Covers 18x18 Inch Set of 2 Vintage Throw Chinoiserie Flower Pillowcases Farmhouse Cotton Linen Cushion for Couch Bed Sofa Chair Home Decor",
+    "image": "https://m.media-amazon.com/images/I/81OoIyHg+JL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CR7HDLZD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e9dad7"
+  },
+  {
+    "id": 1200,
+    "title": "Amazon Product 74",
+    "price": 0,
+    "description": "Jeneoo Decorative Fuschia Pink Throw Pillow Covers Rustic Farmhouse Super Soft Square Chenille Comfy Solid Cushion Couch Cases for Sofa Bedroom Chair (Set of 2, 18 x 18 Inches)",
+    "image": "https://m.media-amazon.com/images/I/714mezTb0tL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B34M5NB4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#872455"
+  },
+  {
+    "id": 1201,
+    "title": "Amazon Product 75",
+    "price": 0,
+    "description": "Jeneoo Decorative Fuschia Pink Throw Pillow Covers Rustic Farmhouse Super Soft Square Chenille Comfy Solid Cushion Couch Cases for Sofa Bedroom Chair (Set of 2, 18 x 18 Inches)",
+    "image": "https://m.media-amazon.com/images/I/714mezTb0tL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B34M5NB4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#872455"
+  },
+  {
+    "id": 1202,
+    "title": "Amazon Product 76",
+    "price": 0,
+    "description": "ANRODUO Pack of 2 Hot Pink Throw Pillow Covers Luxury Fluffy Pillows Faux Fur Decorative Pillows Plush Cushion Case Fuzzy Mongolian Merin Style for Bed Couch Sofa Living Room Spring Decor 18x18 Inch",
+    "image": "https://m.media-amazon.com/images/I/91tpCGko3JL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C5HG2CKK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b03b5d"
+  },
+  {
+    "id": 1203,
+    "title": "Amazon Product 77",
+    "price": 0,
+    "description": "Soft Heart Shaped Pillows, Cute Hot Pink Heart Decorative Pillow, 12.9\"x9.8\" Heart Plush Cushion, Faux Rabbit Fur Room Decor Throw Pillow for Couch Bed Women Valentine's Day Xmas Gift",
+    "image": "https://m.media-amazon.com/images/I/718k7NmJjSL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKSP67DY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dac8c2"
+  },
+  {
+    "id": 1204,
+    "title": "Amazon Product 78",
+    "price": 0,
+    "description": "Heart Pillow, Pink Heart Shaped Pillow, Soft Faux Rabbit Fur Love Pillow, 12.9\"x9.8\" Heart Pillows, Heart Plush Throw Pillows Cushion for Girls Women Valentine's Day Gift",
+    "image": "https://m.media-amazon.com/images/I/71FNaRKtIvL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DBGB23NQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fa346f"
+  },
+  {
+    "id": 1205,
+    "title": "Amazon Product 79",
+    "price": 0,
+    "description": "Stellhome Pack of 2 Super Soft Throw Pillow Covers Rectangle Solid Velvet Pillowcase for Bed Couch Sofa Bench, 12 x 20 inch (30 x 50 cm), Pink",
+    "image": "https://m.media-amazon.com/images/I/81jYgU47xJL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07Q4N4XSZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f4cfd7"
+  },
+  {
+    "id": 1206,
+    "title": "Amazon Product 80",
+    "price": 0,
+    "description": "Pack of 2 Lumbar Throw Pillow Covers with Tassels Cotton Boho Modern Decorative Cushion Case for Couch Bedroom, 12×20 Inch Pink",
+    "image": "https://m.media-amazon.com/images/I/71NjgLQciqL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C7GDNJQ8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f0d8d4"
+  },
+  {
+    "id": 1207,
+    "title": "Amazon Product 81",
+    "price": 0,
+    "description": "Fancy Homi 2 Packs Blush Pink Decorative Throw Pillow Covers 18x18 Inch for Couch Bed Sofa, Modern Farmhouse Boho Home Decor, Soft Cute Plush Corduroy Cushion Case 45x45 cm",
+    "image": "https://m.media-amazon.com/images/I/71UzqyhRjfL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BND5HFKY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c598a3"
   }
 ];
