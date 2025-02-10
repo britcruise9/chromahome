@@ -191,7 +191,7 @@ const ModernUploader = () => {
   return (
     <div className="w-full min-h-screen bg-gradient-to-br from-[#0F172A] to-[#1E293B]">
       <div className="px-4 pt-6 md:pt-8 pb-4">
-        <h1 className="text-center font-bold mb-4 text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500">
+        <h1 className="text-center font-bold mb-4 text-3xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 whitespace-nowrap">
           SHOP BY COLOR
         </h1>
         <p className="text-center text-white/80 text-lg mb-6">
