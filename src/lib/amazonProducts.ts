@@ -17001,5 +17001,495 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07SFST41S/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#565614"
+  },
+   {
+    "id": 1698,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "MIULEE Throw Pillow Insert Premium Pillow Stuffer Sham Rectangle for Decorative Cushion Bed Couch Sofa 12x20 Inch",
+    "image": "https://m.media-amazon.com/images/I/41RkQL40KML._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B083LMRXJC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e8e9f6"
+  },
+  {
+    "id": 1699,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "MIULEE Blue Corduroy Pillow Covers 18x18 inch with Splicing Set of 2 Super Soft Boho Striped Pillow Covers Broadside Decorative Spring Textured Throw Pillows for Couch Cushion Bed Livingroom",
+    "image": "https://m.media-amazon.com/images/I/71Fm8PBl9RL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CBBYZ1QK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7d6d3"
+  },
+  {
+    "id": 1700,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "Foindtower Pack of 2 Modern Textured Boucle Throw Pillow Covers Accent Solid Decorative Pillow Cases Cozy Woven Couch Cushion Case for Chair Sofa Bed Living Room Home Decor, 18 x 18 Inch, Light Blue",
+    "image": "https://m.media-amazon.com/images/I/81BLGlTGhFL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CM68LCLZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4d5c71"
+  },
+  {
+    "id": 1701,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "Foindtower Pack of 2 Modern Textured Boucle Throw Pillow Covers Accent Solid Decorative Pillow Cases Cozy Woven Couch Cushion Case for Chair Sofa Bed Living Room Home Decor, 18 x 18 Inch, Light Blue",
+    "image": "https://m.media-amazon.com/images/I/81BLGlTGhFL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CM68LCLZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3d7d8"
+  },
+  {
+    "id": 1702,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "Foindtower Pack of 2 Modern Textured Boucle Lumber Throw Pillow Covers Accent Solid Decorative Pillow Cases Cozy Couch Cushion Case for Sofa Bed Living Room Home Decor, 12 x 20 Inch, Light Blue",
+    "image": "https://m.media-amazon.com/images/I/81XSw05Vr4L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CM66BNFP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7f8c95"
+  },
+  {
+    "id": 1703,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Foindtower Pack of 2 Modern Textured Boucle Throw Pillow Covers Accent Solid Decorative Pillow Cases Cozy Woven Couch Cushion Case for Chair Sofa Bed Living Room Home Decor, 20 x 20 Inch, Light Blue",
+    "image": "https://m.media-amazon.com/images/I/81BLGlTGhFL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CM66Q18K/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a5adb8"
+  },
+  {
+    "id": 1704,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Foindtower Pack of 2 Modern Textured Boucle Throw Pillow Covers Accent Solid Decorative Pillow Cases Cozy Woven Couch Cushion Case for Chair Sofa Bed Living Room Home Decor, 20 x 20 Inch, Light Blue",
+    "image": "https://m.media-amazon.com/images/I/81BLGlTGhFL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CM66Q18K/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b4c2ca"
+  },
+  {
+    "id": 1705,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "MIULEE Pack of 2 Light Blue Throw Pillow Covers 18x18 Inch Soft Chenille Pillow Covers for Sofa Living Room Couch Solid Dyed Cases",
+    "image": "https://m.media-amazon.com/images/I/81EL7URlR9L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKFNKBP8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c0c6d2"
+  },
+  {
+    "id": 1706,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "Fancy Homi 2 Packs Dusty Blue Decorative Throw Pillow Covers 18x18 Inch for Living Room Couch Bed, Farmhouse Boho Home Decor, Soft Corss Patchwork Corduroy Patchwork Textured Square Cushion Case 45x45cm",
+    "image": "https://m.media-amazon.com/images/I/81VqYnvOwZL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C3B4LD8V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#98acab"
+  },
+  {
+    "id": 1707,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "MIULEE Decorative Linen Pillow Covers 24x24 Inch Light Blue ​Boho Farmhouse​ ​Neutral Couch Throw Pillows for Bed Pack of 2 Accent Pillowcase Spring Modern Sofa Cushion Livingroom Home Decor",
+    "image": "https://m.media-amazon.com/images/I/71E5MN2zDOL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFBQPYTY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ced3d6"
+  },
+  {
+    "id": 1708,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "ZWJD Throw Pillow Covers 18x18 Set of 2 Chenille Pillow Covers with Elegant Design Soft and Luxurious Decorative Throw Pillows for Couch, Bed, and Home Decor, Light Blue",
+    "image": "https://m.media-amazon.com/images/I/81A86OdUeJL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHZXFNN9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8ca2ad"
+  },
+  {
+    "id": 1709,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "decorUhome Chenille Soft Throw Pillow Covers 18x18 Set of 2, Farmhouse Velvet Decorative Pillow Covers with Stitched Edge for Couch Sofa Bed, Aqua Haze",
+    "image": "https://m.media-amazon.com/images/I/81xSWaN-lqL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08931HJQ8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cdd3ce"
+  },
+  {
+    "id": 1710,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "DEZENE Throw Pillow Cases 18x18 Light-Blue: 2 Pack Cozy Soft Velvet Square Decorative Pillow Covers for Farmhouse Home Decor",
+    "image": "https://m.media-amazon.com/images/I/41spgkDxdZL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07SDBYMBJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9eb1af"
+  },
+  {
+    "id": 1711,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "Oubonun 18\"x18\" Pillow Inserts (Set of 2) - Throw Pillow Inserts with 100% Cotton Cover - 18 Inch Square Interior Sofa Pillow Inserts - Decorative Pillow Insert Pair - White Couch Pillow",
+    "image": "https://m.media-amazon.com/images/I/61ra+GC6waL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07JHC42TS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0cfd3"
+  },
+  {
+    "id": 1712,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "GAWAMAY Decorative Square Throw Pillow Covers 18\"x18\" Inch Set of 2, Super Soft Chenille Pillows Cover Fall Pillowcase for Living Room Bedroom Sofa Couch Cushion Cover Navy Blue 45x45cm",
+    "image": "https://m.media-amazon.com/images/I/81mFNO7o7eL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BFBM36S8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ded9cf"
+  },
+  {
+    "id": 1713,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "Thmyo 4-Pack 100% Cotton Comfortable Solid Decorative Throw Pillow Case, Square Cushion Cover Pillowcase Sublimation Blank Pillow Covers DIY Throw Pillowcase for Sofa(18x18 inch/ 45x45cm, Light Blue)",
+    "image": "https://m.media-amazon.com/images/I/61iI0nu14WL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07GRTGQZZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#192741"
+  },
+  {
+    "id": 1714,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "Topfinel Dusty Blue Throw Pillow Covers 18x18 Set of 2, Soft Corduroy Couch Decorative Pillow Covers Windmill Textured Striped Patchwork Cushion Cover for Bedroom Living Room Boho Home Decor",
+    "image": "https://m.media-amazon.com/images/I/91Lz1+3-NkL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQ4336ZH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c4c7c6"
+  },
+  {
+    "id": 1715,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "Kevin Textile Throw Pillow Covers Soft Corduroy Decorative Set of 2 Boho Striped Pillow Covers Pillowcases Farmhouse Home Decor for Couch Bed Sofa Living Room 18x18 Inch Blue",
+    "image": "https://m.media-amazon.com/images/I/81T3CqNwPOL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CFDDP8Y8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#5e6973"
+  },
+  {
+    "id": 1716,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "Kevin Textile Throw Pillow Covers Soft Corduroy Decorative Set of 2 Boho Striped Pillow Covers Pillowcases Farmhouse Home Decor for Couch Bed Sofa Living Room 18x18 Inch Blue",
+    "image": "https://m.media-amazon.com/images/I/81T3CqNwPOL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CFDDP8Y8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#223443"
+  },
+  {
+    "id": 1717,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "Kevin Textile Throw Pillow Covers Soft Corduroy Decorative Set of 2 Boho Striped Pillow Covers Pillowcases Farmhouse Home Decor for Couch Bed Sofa Living Room 18x18 Inch Blue",
+    "image": "https://m.media-amazon.com/images/I/81T3CqNwPOL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CFDDP8Y8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#223443"
+  },
+  {
+    "id": 1718,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "JUSPURBET Light Blue Velvet Throw Pillow Covers 20x20 inch Set of 2 for Living Room Couch Bedroom Decorative Luxury Soft Cushion Cases with Invisible Zipper",
+    "image": "https://m.media-amazon.com/images/I/71svI+iCCwL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07FRM2L19/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcdcd9"
+  },
+  {
+    "id": 1719,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "MIULEE Pack of 2 Dusty Blue Decorative Pillow Covers 20x20 Inch Soft Chenille Couch Throw Pillows Farmhouse Cushion Covers with Elegant Design for Sofa Bedroom Living Room Home Decor",
+    "image": "https://m.media-amazon.com/images/I/81TMnPUUK+L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CTJP8X7X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#98b3c6"
+  },
+  {
+    "id": 1720,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "MIULEE Pack of 4 Couch Throw Pillow Covers 18x18 Inch Neutral Blue Soft Decorative Chenille Pillow Covers Farmhouse Accent Cushion Covers for Boho Western Home Decor Sofa Bedroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/81QyuRknWXL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D797C8HQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cdd2d3"
+  },
+  {
+    "id": 1721,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "YCOLL Pillow Covers 18x18 Set of 4, Modern Sofa Throw Pillow Cover, Decorative Outdoor Linen Fabric Pillow Case for Couch Bed Car，Light Blue",
+    "image": "https://m.media-amazon.com/images/I/81SoFvmKjrL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B083WMS4P4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#627e93"
+  },
+  {
+    "id": 1722,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "MIULEE Pack of 2 Decorative Burlap Linen Throw Pillow Covers Modern Farmhouse Pillowcase Rustic Woven Textured Cushion Cover for Sofa Couch Bed 18x18 Inch Blue",
+    "image": "https://m.media-amazon.com/images/I/71bVDpIvewL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07YTWXWY7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#465b75"
+  },
+  {
+    "id": 1723,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "decorUhome Faux Fur Throw Pillow Covers 18x18 Set of 2, Decorative Soft Plush Striped Couch Pillow Covers with Velvet Back for Sofa, Bed, Living Room, Blue",
+    "image": "https://m.media-amazon.com/images/I/71Ab1Qak5yL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1Y973RN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#83878b"
+  },
+  {
+    "id": 1724,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "MIULEE Smoke Blue Couch Pillow Covers 18x18 Inch, Set of 2 Soft Chenille Decorative Throw Pillow Covers Farmhouse for Sofa Living Room Bed",
+    "image": "https://m.media-amazon.com/images/I/81J-hVNxHcL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZMZ9B4L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2e3f60"
+  },
+  {
+    "id": 1725,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "JIAHANNHA Velvet Light Blue Throw Pillow Covers Pack of 2 Spring Decorative Soft for Couch Sofa Bed Livingroom Office 18×18 Inches, Sky Blue",
+    "image": "https://m.media-amazon.com/images/I/71RwxFOaCOL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BSD2Z4VL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#83a3ac"
+  },
+  {
+    "id": 1726,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "MIULEE Boho Farmhouse Pillow Covers Decorative Neutral Linen Throw Pillow Covers Set of 2 Light Blue Cushion Covers with Fringe for Couch Sofa Bed Living Room Home Decor 18x18 Inch",
+    "image": "https://m.media-amazon.com/images/I/81cvr4cms4L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D14SS1RZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b1ccdf"
+  },
+  {
+    "id": 1727,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "Home Brilliant Blue Throw Pillow Covers Set Supersoft Corduroy Decorative Pillow Covers Velvet Cushion Cover for Bed, 18x18 Inch, Baby Boy Blue",
+    "image": "https://m.media-amazon.com/images/I/A1iLM3GbtNL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B076NJR8D6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a0acb8"
+  },
+  {
+    "id": 1728,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "Boho Throw Pillow Covers 18x18 Set of 2 Farmhouse Decorative Cushion Case Striped Square Pillows Cover Chenille Pillow Cases Accent Neutral Pillowcase for Sofa Couch Bed, Sky Blue",
+    "image": "https://m.media-amazon.com/images/I/71D2jU2q-fL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CR1JJZ8Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3ebf7"
+  },
+  {
+    "id": 1729,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "Petrella Heart Pillow Cute Fuzzy Pillows Throw Pillows for Bed Livingroom Home Decor Cushion Decorative Aesthetic Preppy Pillows Blue, Small 13\"x10\"",
+    "image": "https://m.media-amazon.com/images/I/71lqPTrAdyL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CRB8DPDY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a5bbd3"
+  },
+  {
+    "id": 1730,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "DEELAND Pack of 2, Double-Sided Faux Fur Plush Decorative Throw Pillow Covers Fuzzy Striped Soft Pillowcase Cushion Covers for Sofa Couch Bedroom, 18x18 inch",
+    "image": "https://m.media-amazon.com/images/I/81BBKR-njXL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BGJ432JH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#98d4f8"
+  },
+  {
+    "id": 1731,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "Throw Pillow Covers Red Decorative Velvet Set of 2 20x20 Inch Pillow Covers, Soft Christmas Magenta Pillowcases for Couch Sofa Bed Living Room, Square Accent Cushion Covers",
+    "image": "https://m.media-amazon.com/images/I/71mJVNDi2PL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJ8TKMCD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e8e2e0"
+  },
+  {
+    "id": 1732,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "Phantoscope Pack of 2 Velvet Decorative Throw Decorative Pillow Cover Soft Solid Square Cushion Case for Couch Magenta 18 x 18 inches 45 x 45 cm",
+    "image": "https://m.media-amazon.com/images/I/81lAnwmFqxL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2HKWB8P/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7d0a1f"
+  },
+  {
+    "id": 1733,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "Velvet Throw Pillow Cover Soft Decorative Luxurious Solid Square Cushion Case for Sofa Couch Bedroom Farmhouse, Pack of 2, 18 x 18 Inches, Golden Camel",
+    "image": "https://m.media-amazon.com/images/I/81xr3ruaSKL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B088R42PLD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fa7775"
+  },
+  {
+    "id": 1734,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "Velvet Throw Pillow Cover Soft Decorative Luxurious Solid Square Cushion Case for Sofa Couch Bedroom Farmhouse, Pack of 2, 18 x 18 Inches, Amaranth",
+    "image": "https://m.media-amazon.com/images/I/91Eslf5wvlL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0911V7KS5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7b3e08"
+  },
+  {
+    "id": 1735,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "DEZENE 16x16 Purple Throw Pillow Cases: 2 Pack Original Striped Velvet Square Decorative Pillow Covers for Farmhouse Couch",
+    "image": "https://m.media-amazon.com/images/I/71l3A-UV95L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B088D3MBCZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3a041e"
+  },
+  {
+    "id": 1736,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "DEZENE 16x16 Purple Throw Pillow Cases: 2 Pack Original Striped Velvet Square Decorative Pillow Covers for Farmhouse Couch",
+    "image": "https://m.media-amazon.com/images/I/71l3A-UV95L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B088D3MBCZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ab4286"
+  },
+  {
+    "id": 1737,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "DEZENE 18x18 Teal Throw Pillow Cases: 2 Pack Original Striped Velvet Square Decorative Pillow Covers for Farmhouse Couch",
+    "image": "https://m.media-amazon.com/images/I/81uGLyEMWJL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B088CXLRF6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#aa4082"
+  },
+  {
+    "id": 1738,
+    "title": "Amazon Product 41",
+    "price": 0,
+    "description": "DEZENE 18x18 Teal Throw Pillow Cases: 2 Pack Original Striped Velvet Square Decorative Pillow Covers for Farmhouse Couch",
+    "image": "https://m.media-amazon.com/images/I/81uGLyEMWJL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B088CXLRF6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4ca8c2"
+  },
+  {
+    "id": 1739,
+    "title": "Amazon Product 42",
+    "price": 0,
+    "description": "lalaLOOM Velvet Throw Pillow Covers, Set of 2, 18x18 Decorative Square Pillows Home Decor, Soft Accent Cases, Silky Machine Washable Pillowcases for Sofa, Couch, Bedroom, Living Room, Dusty Rose",
+    "image": "https://m.media-amazon.com/images/I/612EcU8Ru3L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08LHKLWFC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#368694"
+  },
+  {
+    "id": 1740,
+    "title": "Amazon Product 43",
+    "price": 0,
+    "description": "Hot Pink Cream Pillow Covers 18x18 Set of 2 Boho Design Polka Dot Throw Pillows Modern Brush Strokes Print Decorative Outdoor Pillowcase Square Cushion Cover Linen Pillow Case for Home Sofa Couch Bed",
+    "image": "https://m.media-amazon.com/images/I/81eZHyuhtIL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C3728DSW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c79c9d"
+  },
+  {
+    "id": 1741,
+    "title": "Amazon Product 44",
+    "price": 0,
+    "description": "OTOSTAR Pack of 2 Velvet Soft Decorative Throw Pillow Covers 18 x 18 Inch Solid Square Cushion Case Couch Home Decor Pillow Covers for Sofa Bedroom Living Room (Hot Pink)",
+    "image": "https://m.media-amazon.com/images/I/71YrHW2HvtL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C6TKJ654/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bc3f6f"
+  },
+  {
+    "id": 1742,
+    "title": "Amazon Product 45",
+    "price": 0,
+    "description": "Homiest Decorative Knitted Throw with Fringe, Lightweight Acrylic Knit Blanket, Soft & Cozy Tassel for Couch Sofa Bed (Fuschia, 50 x 60 Inch)",
+    "image": "https://m.media-amazon.com/images/I/81AZWJx6b9L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BKPT54LV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bd3876"
+  },
+  {
+    "id": 1743,
+    "title": "Amazon Product 46",
+    "price": 0,
+    "description": "MIULEE Hot Pink Velvet Soft Soild Decorative Square Throw Pillow Cover Cushion Case for Spring Sofa Bedroom Car 12 x 20 Inch 30 x 50 Cm",
+    "image": "https://m.media-amazon.com/images/I/51w3BoP5ExL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07771G8KQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#873755"
+  },
+  {
+    "id": 1744,
+    "title": "Amazon Product 47",
+    "price": 0,
+    "description": "FUTEI Valentines Hot Pink Chenille Throw Pillow Covers 18x18 Inch Set of 2, Soft Velvet Cushion Case, Home Decor for Couch Bed Living Room",
+    "image": "https://m.media-amazon.com/images/I/81OdhIHN1UL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFWCN4W6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dec8cb"
+  },
+  {
+    "id": 1745,
+    "title": "Amazon Product 48",
+    "price": 0,
+    "description": "MIULEE Hot Pink Throw Pillow Covers 18x18 Inch Set of 2 Fuzzy Striped Soft Pillowcase with Velvet Back Faux Rabbit Fur Cushion Cute Decorative Home Decor for Winter Couch Sofa Bedroom Livingroom",
+    "image": "https://m.media-amazon.com/images/I/81Fl0iWjDtL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BZKW1WTS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ff9cc3"
+  },
+  {
+    "id": 1746,
+    "title": "Amazon Product 49",
+    "price": 0,
+    "description": "DEZENE Couch Pillow Cases 16x16 Chartreuse: 2 Pack Cozy Soft Pom-poms Velvet Square Throw Pillow Covers for Farmhouse Home Decor",
+    "image": "https://m.media-amazon.com/images/I/61X0toB050L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07SFST41S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#565614"
   }
 ];
