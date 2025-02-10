@@ -17491,5 +17491,6 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B07SFST41S/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#565614"
-  }
+  },
+  
 ];
