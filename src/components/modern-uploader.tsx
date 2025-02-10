@@ -2,7 +2,7 @@
 
 import React, { useState, useCallback, useEffect } from "react";
 import { Upload } from "lucide-react";
-import { PRESET_PALETTES, ColorPalette } from "@/lib/colors/color-palettes";
+import { PRESET_PALETTES, ColorPalette } from './color-palettes';
 
 declare const ColorThief: any;
 
