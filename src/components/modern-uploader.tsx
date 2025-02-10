@@ -209,12 +209,12 @@ const ModernUploader = () => {
 
       {view === "results" && (
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-col items-center gap-4 mb-12">
-            <div className="flex justify-center gap-3 w-full">
+          <div className="flex justify-center gap-4 mb-8">
+            <div className="flex justify-center gap-4 md:gap-4">
               {/* Primary Color */}
               <div className="flex flex-col items-center">
                 <div
-                  className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer transition-all
+                  className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer transition-all
                     ${selectedColor === activeColor ? "ring-2 ring-white" : ""}`}
                   style={{ backgroundColor: selectedColor || "#000000" }}
                   onClick={() => selectedColor && handleColorClick(selectedColor)}
@@ -226,7 +226,7 @@ const ModernUploader = () => {
               {complementaryColor && (
                 <div className="flex flex-col items-center">
                   <div
-                    className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer transition-all
+                    className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer transition-all
                       ${complementaryColor === activeColor ? "ring-2 ring-white" : ""}`}
                     style={{ backgroundColor: complementaryColor }}
                     onClick={() => handleColorClick(complementaryColor)}
@@ -239,7 +239,7 @@ const ModernUploader = () => {
               {triadicColors?.map((color, index) => (
                 <div key={color} className="flex flex-col items-center">
                   <div
-                    className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer transition-all
+                    className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer transition-all
                       ${color === activeColor ? "ring-2 ring-white" : ""}`}
                     style={{ backgroundColor: color }}
                     onClick={() => handleColorClick(color)}
@@ -247,24 +247,24 @@ const ModernUploader = () => {
                   <span className="text-xs md:text-sm text-white/60 mt-2">Triadic {index + 1}</span>
                 </div>
               ))}
-            </div>
 
-            {/* Upload Button */}
-            <div className="flex flex-col items-center mt-2">
-              <div className="w-16 h-16 md:w-24 md:h-24 rounded-xl bg-slate-800/50 flex items-center justify-center cursor-pointer hover:bg-slate-800/70 transition-all">
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={handleFileInput}
-                  className="hidden"
-                  id="newColorUpload"
-                />
-                <label htmlFor="newColorUpload" className="cursor-pointer text-center">
-                  <div className="text-2xl text-white/80 mb-1">+</div>
-                  <div className="text-xs text-white/60">New Color</div>
-                </label>
+              {/* Upload Button - Inline on same row */}
+              <div className="flex flex-col items-center">
+                <div className="w-14 h-14 md:w-24 md:h-24 rounded-xl bg-slate-800/50 flex items-center justify-center cursor-pointer hover:bg-slate-800/70 transition-all">
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={handleFileInput}
+                    className="hidden"
+                    id="newColorUpload"
+                  />
+                  <label htmlFor="newColorUpload" className="cursor-pointer text-center">
+                    <div className="text-2xl text-white/80">+</div>
+                    <div className="text-xs text-white/60">New Color</div>
+                  </label>
+                </div>
+                <span className="text-xs md:text-sm text-white/60 mt-2">Upload</span>
               </div>
-              <span className="text-xs md:text-sm text-white/60 mt-2">Upload</span>
             </div>
           </div>
 
