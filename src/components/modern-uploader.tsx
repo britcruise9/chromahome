@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useCallback } from "react";
-import { Upload } from "lucide-react";
+import { Upload, Camera } from "lucide-react";
 
 declare const ColorThief: any;
 
@@ -164,11 +164,11 @@ const ModernUploader = () => {
       <div className={`transition-all duration-500 ${view !== "initial" ? "pt-8 pb-4" : "pt-32 pb-16"}`}>
         <h1 className="text-center text-6xl font-bold mb-6">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500 animate-gradient bg-[length:200%_auto]">
-            CHROMA
+            SHOP BY COLOR
           </span>
         </h1>
         <p className="text-center text-white/80 text-lg max-w-2xl mx-auto">
-          Snap any color in your space, find matching decor instantly
+          Snap a photo of any color - paint, fabric, or wall - to find matching decor
         </p>
       </div>
 
@@ -185,12 +185,17 @@ const ModernUploader = () => {
             <input
               type="file"
               accept="image/*"
+              capture="environment"
               onChange={handleFileInput}
               className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
             />
-            <div className="text-center">
-              <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
-              <p className="text-lg text-white/80">Search your color by image</p>
+            <div className="text-center space-y-4">
+              <div className="flex justify-center space-x-4">
+                <Camera className="w-12 h-12 text-white/50" />
+                <Upload className="w-12 h-12 text-white/50" />
+              </div>
+              <p className="text-lg text-white/80">Take a photo or upload paint chip</p>
+              <p className="text-sm text-white/50">Works with any color source</p>
             </div>
           </div>
         </div>
