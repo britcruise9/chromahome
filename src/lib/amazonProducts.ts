@@ -12,7 +12,6 @@ export interface AmazonProduct {
 }
 
 export const amazonProducts: AmazonProduct[] = [
-[
   {
     "id": 1,
     "title": "Amazon Product 1",
@@ -19233,6 +19232,4 @@ export const amazonProducts: AmazonProduct[] = [
     "affiliateLink": "https://www.amazon.com/dp/B00RKHWWTI/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#c39451"
   }
-]
-
 ];
