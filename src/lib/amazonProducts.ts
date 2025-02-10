@@ -17492,5 +17492,1745 @@ export const amazonProducts: AmazonProduct[] = [
     "affiliateLink": "https://www.amazon.com/dp/B07SFST41S/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#565614"
   },
-  
+    {
+    "id": 1747,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "CangLong Modern Velvet Dining Chairs Set of 2, Tufted Vanity Chairs and Upholstered Accent Armchair with Gold Metal Legs for Living Room Restaurant, Beige",
+    "image": "https://m.media-amazon.com/images/I/61n8wHQdB-L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B77VW8CG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfd2c8"
+  },
+  {
+    "id": 1748,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "Sweetcrispy Cozy Saucer Chairs Faux Fur Living Room Reading Lounge Furniture Folding Comfy with Soft Thick Padded Seat Metal Frame Modern Style for Bedroom Home Adults, X-Large, Pink",
+    "image": "https://m.media-amazon.com/images/I/71knVePVJoL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4ZBKRT4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbb4ab"
+  },
+  {
+    "id": 1749,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "Home Office Chair Swivel Velvet Desk Chair Accent Armchair Upholstered Modern Tufted Chairs with Gold Base for Girls Women Ergonomic Study Seat Computer Task Stools for Living Room(Cream)",
+    "image": "https://m.media-amazon.com/images/I/61eb-V8RAuL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09KRL35YQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0d8d2"
+  },
+  {
+    "id": 1750,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "Home Office Chair Swivel Velvet Desk Chair Accent Armchair Upholstered Modern Tufted Chairs with Gold Base for Girls Women Ergonomic Study Seat Computer Task Stools for Living Room(Cream)",
+    "image": "https://m.media-amazon.com/images/I/61eb-V8RAuL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09KRL35YQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0d8d2"
+  },
+  {
+    "id": 1751,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "VINGLI Accent Chair for Living Room Chairs Olive Green Reading Chair for Bedroom Scooped Arm Chair Mid Century Modern Accent Chairs Upholstered Comfy Chair for Apartment, Waiting Room",
+    "image": "https://m.media-amazon.com/images/I/71pC0ZzN29L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7P5QLHK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#72764f"
+  },
+  {
+    "id": 1752,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Yaheetech Accent Chairs for Living Room, Furry Barrel Chairs Set of 2, Sherpa Chairs with Soft Padded Armrest, Club Chairs for Bedroom Waiting Room Office, Mustard Yellow",
+    "image": "https://m.media-amazon.com/images/I/A1F8GOfc+RL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CBKD7P8Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bf9154"
+  },
+  {
+    "id": 1753,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Karl home Accent Chair Mid-Century Modern Chair with Pillow Upholstered Lounge Arm Chair with Solid Wood Frame & Soft Cushion for Living Room, Bedroom, Balcony, Linen Beige (Low Back)",
+    "image": "https://m.media-amazon.com/images/I/716sPcnRsqL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BLP4W97Y/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3c8bd"
+  },
+  {
+    "id": 1754,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "Yaheetech Mid-Century Accent Chairs, Modern Upholstered Living Room Chair, Cozy Armchair Button Tufted Back and Wood Legs for Bedroom/Office/Cafe, Yellow",
+    "image": "https://m.media-amazon.com/images/I/91ygISF55NL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BJTLN6H6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ccad5a"
+  },
+  {
+    "id": 1755,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "Yaheetech Modern Velvet Vanity Chair Armchair, Flower Shaped Makeup Chair with Golden Metal Legs for Living Room/Makeup Room/Bedroom/Home Office/Kitchen, White",
+    "image": "https://m.media-amazon.com/images/I/61mot1rOvrL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C2K2GKRX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#deddda"
+  },
+  {
+    "id": 1756,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "Yaheetech Modern Velvet Vanity Chair Armchair, Flower Shaped Makeup Chair with Golden Metal Legs for Living Room/Makeup Room/Bedroom/Home Office/Kitchen, White",
+    "image": "https://m.media-amazon.com/images/I/61mot1rOvrL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C2K2GKRX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#deddda"
+  },
+  {
+    "id": 1757,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "Yaheetech Flower Shape Velvet Vanity Chair Armchair, Modern Side Chair Makeup Chair no Wheels with Golden Metal Legs for Living Room/Dressing Room/Bedroom/Home Office/Kitchen, Pink",
+    "image": "https://m.media-amazon.com/images/I/71wjRDtv4kL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BJKJS156/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfaea6"
+  },
+  {
+    "id": 1758,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "Yaheetech Flower Shape Velvet Vanity Chair, Modern Side Chair Armchair with Golden Metal Legs for Living Room/Dressing Room/Bedroom/Home Office/Kitchen, Gray",
+    "image": "https://m.media-amazon.com/images/I/81sI4DpsCoL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BJKHXGLQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b4b3b1"
+  },
+  {
+    "id": 1759,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "Westice Velvet Home Office Desk Chair Set of 1, Modern Tufted Vanity Chairs with Gold Metal Legs, Upholstered Accent Armchair for Living Room Restaurant, White",
+    "image": "https://m.media-amazon.com/images/I/61Afjgy2OBL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CW1QGVKL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddd7d0"
+  },
+  {
+    "id": 1760,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "COLAMY Modern Upholstered Accent Chair Armchair with Pillow, Fabric Reading Living Room Side Chair, Single Sofa with Lounge Seat and Wood Legs, Yellow",
+    "image": "https://m.media-amazon.com/images/I/91elxDBoVuL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BLSB48RL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d1c8be"
+  },
+  {
+    "id": 1761,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "Cable Organizer Clips, 2024 New Magnetic Cable Organizer Storage Holder with Strong Adhesive, Hide Phone Charging Cable Keeper for Home Office Car Desk Nightstand (12, Black)",
+    "image": "https://m.media-amazon.com/images/I/61-rxwdDpML._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DBQ8ZW46/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#efc25d"
+  },
+  {
+    "id": 1762,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "Meditation Chair Plus, Cross Legged Chair with Wheels, ADHD Chair, Criss Cross Desk Chair with Lumbar Support and Adjustable Stool, Flexible Design for Fidgety Sitters, Black",
+    "image": "https://m.media-amazon.com/images/I/51+mHUzAEQL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BKVNXD97/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#302f30"
+  },
+  {
+    "id": 1763,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "Meditation Chair, ADHD Chair, Cross Legged Office Chair with Wheels, Criss Cross Desk Chair with Lumbar Support and Adjustable Stool, Flexible Design for Fidgety Sitters, Ivory",
+    "image": "https://m.media-amazon.com/images/I/71AuM9h76nL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09KN78D15/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bfc1bc"
+  },
+  {
+    "id": 1764,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "Meditation Chair Pro, Home Office Desk Chair, Cross Legged Chair with Height Adjustable Backrest and Adjustable Stool, Flexible Design for Fidgety Sitters, Tan",
+    "image": "https://m.media-amazon.com/images/I/51xXpUC3gjL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CCTWYK8N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fffaf2"
+  },
+  {
+    "id": 1765,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "Velvet Accent Chair with Gold Metal Legs, Vanity Chair for Makeup Room, Upholstered Guest Chair for Living Room, Side Chair for Bedroom, White",
+    "image": "https://m.media-amazon.com/images/I/61yUgMtdm9L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3XMW2X7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bcb3aa"
+  },
+  {
+    "id": 1766,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "Reception Chairs No Wheels Leather Conference Chair Heavy Duty Back Support Office Guest Chair, Set of 2 (Black)",
+    "image": "https://m.media-amazon.com/images/I/61GsM5Yj1gL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07Z8WB5VR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dabf94"
+  },
+  {
+    "id": 1767,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "No Wheels Reception Chairs Waiting Room Chair Leather Conference Chairs Back Support Heavy Duty Office Chair with Arm, Set of 2 (Deep Red)",
+    "image": "https://m.media-amazon.com/images/I/51+ayKpMOBL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07Z8VRYB1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#be2e3e"
+  },
+  {
+    "id": 1768,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Office Heavy Duty Chair Guest Chair Leather Conference Chairs Reception Chairs Back Support, Set of 2 (Grey)",
+    "image": "https://m.media-amazon.com/images/I/51bKoMwYBgL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08MFDYQTH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9b9c9a"
+  },
+  {
+    "id": 1769,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "Yaheetech Modern Armchair, Mid Century Accent Sofa Chair with Sturdy Wood Legs and High Back, Upholstered Fabric Sofa Club Chair for Living Room/Bedroom/Office, Yellow",
+    "image": "https://m.media-amazon.com/images/I/816B2M+yOZL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08TM95X54/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cdae5a"
+  },
+  {
+    "id": 1770,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "Round Ottoman with Storage Set of 2, Off-White Velvet Storage Ottoman for Living Room, Round Storage Ottoman, Ottoman Chair, Gold Ottoman with Storage, Accent Chair, Modern Ottoman",
+    "image": "https://m.media-amazon.com/images/I/51QL0jreCHL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0953W7WFX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c8c1b0"
+  },
+  {
+    "id": 1771,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "Mid-Century Living Room Chair, Modern Wingback Accent Chairs, Upholstered Armchair with Button Tufted Back and Wood Legs for Bedroom/Reading Spaces/Office, Beige",
+    "image": "https://m.media-amazon.com/images/I/81g7g+Ab10L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DT6F1RHQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d2ccc4"
+  },
+  {
+    "id": 1772,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "Accent Chair Mid Century 360 Degree Swivel Chair, Modern Lounge Sofa Round Barrel Chair with Wide Upholstered, Fluffy Velvet Fabric Chairs for Home Sofa Living Room/Bedroom/Waiting Room (Beige)",
+    "image": "https://m.media-amazon.com/images/I/610f4sPrLIL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4P4VBM6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c0b59d"
+  },
+  {
+    "id": 1773,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "Nrizc Velvet Dining Chairs Set of 2, Woven Upholstered Dining Chairs with Gold Metal Legs, Modern Accent Chairs for Living Room, Dining Room, Kitchen",
+    "image": "https://m.media-amazon.com/images/I/61n1DFPQRiL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BJ2D29ML/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bbab95"
+  },
+  {
+    "id": 1774,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "Yaheetech Boucle Accent Chair and Ottoman Set, Sherpa Armchair with Golden Metal Legs, High Back Reading Chair and Footstool for Living Room, Bedroom, Lounge, Ivory",
+    "image": "https://m.media-amazon.com/images/I/916qlhxuPSL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BSKYK63R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3bc80"
+  },
+  {
+    "id": 1775,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "ABET Desk Chair with No Wheels, Velvet Home Office Armchair Gold Legs, Upholstered Modern Accent Chairs, Side Chair for Living Room Bedroom Vanity, Beige",
+    "image": "https://m.media-amazon.com/images/I/710Z0dVfFoL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZQWHZ2W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e8dcce"
+  },
+  {
+    "id": 1776,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "ABET Desk Chair with Wheels, Velvet Home Office Chair, Swivel Armchair Gold Base, Upholstered Modern Accent Chairs, Back Incline Adjustable for Living Room Bedroom Vanity, Off-White Cream",
+    "image": "https://m.media-amazon.com/images/I/71pvrP+Ly8L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BQYMFHWQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bcb1a4"
+  },
+  {
+    "id": 1777,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "HULALA HOME Velvet Dining Chairs, Modern Small Armless Accent Chair with Gold Metal Legs, Living Room Upholstered Cute Side Chair, Elegant Tufted Back Vanity Chair for Bedroom/Beauty Room-TAN",
+    "image": "https://m.media-amazon.com/images/I/81YBuU4x3VL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B2869WM5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbdcd4"
+  },
+  {
+    "id": 1778,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "Yaheetech Velvet Accent Chair, Cute Vanity Chair with Shell-Shaped Backrest, Modern Armchair Side Chair with Golden Legs for Living Room/Bedroom/Home Office/Makeup, White",
+    "image": "https://m.media-amazon.com/images/I/61rP+j2jSKL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFBYK6J9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e9e8e5"
+  },
+  {
+    "id": 1779,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "Yaheetech Velvet Accent Chair, Modern and Comfortable Armchairs, Upholstered Barrel Sofa Chair for Living Room, Bedroom, Reception Room, Office, Beige",
+    "image": "https://m.media-amazon.com/images/I/91CAoGRjtEL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CDKQQH74/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cecec9"
+  },
+  {
+    "id": 1780,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "Modern Accent Chair, Upholstered Arm Chair Linen Fabric Single Sofa Chair with Ottoman Foot Rest Mustard Yellow Comfy Armchair for Living Room Bedroom Small Spaces Apartment Office",
+    "image": "https://m.media-amazon.com/images/I/71HqdBt3cZL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07HVK2MFJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a39272"
+  },
+  {
+    "id": 1781,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "Furniliving Velvet Accent Chair for Living Room, Comfortable Upholstered Barrel Vanity Chair with Back, Mid Century Pink Makeup Chair with Gold Legs (White)",
+    "image": "https://m.media-amazon.com/images/I/71+6BPgLy2L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C42Q7FS8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cec0b3"
+  },
+  {
+    "id": 1782,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "Accent Chairs Set of 2 for Living Room, Velvet Upholstered Makeup Room Vanity Chair with Back, Golden Metal Legs Accent Side Chair for Bedroom, Cloud Chair Set, 2 Pcs Brown",
+    "image": "https://m.media-amazon.com/images/I/71mC73ps0tL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DGFSTY55/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3d9cf"
+  },
+  {
+    "id": 1783,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "Karl home Accent Chair Wide Armrest Mid-Century Lounge Chair Linen Fabric Armchair with Lumbar Pillow & Solid Wood Frame for Living Room, Bedroom, Balcony, Beige",
+    "image": "https://m.media-amazon.com/images/I/81EcY2MhHDL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7928FM3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c38e4c"
+  },
+  {
+    "id": 1784,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "LINSY Accent Chair with Ottoman, Modern Barrel Chair Comfy Armchair Reading Chair with Footrest, Round Arms Chair for Living Room Bedroom Reading Room, Velvet, Pink",
+    "image": "https://m.media-amazon.com/images/I/81uVwvmZ7zL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DTFJ4SL7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d9d7ca"
+  },
+  {
+    "id": 1785,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "LINSY Accent Chair with Ottoman, Modern Barrel Chair Comfy Armchair Reading Chair with Footrest, Round Arms Chair for Living Room Bedroom Reading Room, Velvet, Pink",
+    "image": "https://m.media-amazon.com/images/I/81uVwvmZ7zL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DTFJ4SL7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9d6362"
+  },
+  {
+    "id": 1786,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "COLAMY Upholstered Swivel Barrel Accent Chair with Ottoman, Modern Single Sofa Lounge Armchair Club Chair with Storage Space for Living Room Bedroom Office, Beige",
+    "image": "https://m.media-amazon.com/images/I/81fUqO4fLcL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DSJ7ZVTT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#be8d89"
+  },
+  {
+    "id": 1787,
+    "title": "Amazon Product 41",
+    "price": 0,
+    "description": "Velvet Accent Chairs Set of 2, Mid Century Modern Upholstered Barrel Armchair with Pillow for Living Room, Comfy Single Club Chair with Metal Gold Legs for Bedroom, White",
+    "image": "https://m.media-amazon.com/images/I/71gQhTWyCUL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKFHGDTR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ccc4bb"
+  },
+  {
+    "id": 1788,
+    "title": "Amazon Product 42",
+    "price": 0,
+    "description": "Velvet Accent Chairs Set of 2, Mid Century Modern Upholstered Barrel Armchair with Pillow for Living Room, Comfy Single Club Chair with Metal Gold Legs for Bedroom, White",
+    "image": "https://m.media-amazon.com/images/I/71gQhTWyCUL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKFHGDTR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#efede1"
+  },
+  {
+    "id": 1789,
+    "title": "Amazon Product 43",
+    "price": 0,
+    "description": "Velvet Accent Chairs Set of 2, Mid Century Modern Upholstered Barrel Armchair with Pillow for Living Room, Comfy Single Club Chair with Metal Gold Legs for Bedroom, White",
+    "image": "https://m.media-amazon.com/images/I/71gQhTWyCUL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKFHGDTR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cda764"
+  },
+  {
+    "id": 1790,
+    "title": "Amazon Product 44",
+    "price": 0,
+    "description": "Velvet Accent Chair with Adjustable Armrests and Backrest, Button Tufted Lounge Chair, Single Recliner Armchair with Ottoman and Pillow for Living Room, Bedroom, Black",
+    "image": "https://m.media-amazon.com/images/I/71qBwAwWC7L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B7KTPC2R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6d0cb"
+  },
+  {
+    "id": 1791,
+    "title": "Amazon Product 45",
+    "price": 0,
+    "description": "360°Swivel Accent Chair, Modern Living Room Chairs Comfy, Cozy Round Reading Chair, Bedroom Chair for Adults, Teen, Beige",
+    "image": "https://m.media-amazon.com/images/I/813hPeS5hDL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DQ8LHHDX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#010103"
+  },
+  {
+    "id": 1792,
+    "title": "Amazon Product 46",
+    "price": 0,
+    "description": "DUHOME Upholstered Dining Chair, Linen Accent Chair for Living Room, Single Sofa Chair with 4 Casters, Upholstered Arm Chair for Bedroom Reading Room Waiting Room Kitchen Dining Room",
+    "image": "https://m.media-amazon.com/images/I/91KGGTJBAnL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CB7KPJV8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ccc9c4"
+  },
+  {
+    "id": 1793,
+    "title": "Amazon Product 47",
+    "price": 0,
+    "description": "Yaheetech 30\" W Accent Chair Velvet Oversized Armchair Living Room Chair with Golden Frame & Cozy Pillow for Living Room, Bedroom, Office Light Gray",
+    "image": "https://m.media-amazon.com/images/I/81rK4t8YJqL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DRRQL11L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#898785"
+  },
+  {
+    "id": 1794,
+    "title": "Amazon Product 48",
+    "price": 0,
+    "description": "Andeworld Velvet Accent Chair, Upholstered Modern Single Sofa Side Chair, Comfy Barrel Club Living Room Armchair with Golden Metal Legs for Bedroom Living Reading Room Office, Black",
+    "image": "https://m.media-amazon.com/images/I/817G-Pfyy8L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BS3P2BYR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#272726"
+  },
+  {
+    "id": 1795,
+    "title": "Amazon Product 49",
+    "price": 0,
+    "description": "KCC Modern Velvet Upholstered Accent Chair Set of 2, Mid Century Living Room Chairs with Golden Legs, Comfy Armless Chair Wingback Single Sofa Side Chair for Bedroom, Beige",
+    "image": "https://m.media-amazon.com/images/I/61-e75xsXEL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C5387KTF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4ccc1"
+  },
+  {
+    "id": 1796,
+    "title": "Amazon Product 50",
+    "price": 0,
+    "description": "KCC Modern Velvet Upholstered Accent Chair Set of 2, Mid Century Living Room Chairs with Golden Legs, Comfy Armless Chair Wingback Single Sofa Side Chair for Bedroom, Black",
+    "image": "https://m.media-amazon.com/images/I/61J4NrgrBlL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CXDM4R68/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#282831"
+  },
+  {
+    "id": 1797,
+    "title": "Amazon Product 51",
+    "price": 0,
+    "description": "Oversized Pumpkin Couch Accent Chair, Modern Comfy Velvet Upholstered Barrel Chairs, Luxury Single Sofa Armchair for Living Room, Waiting Room, Office and Vanity, (Beige)",
+    "image": "https://m.media-amazon.com/images/I/81sKkUxHplL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C9SHNCFY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5c8b5"
+  },
+  {
+    "id": 1798,
+    "title": "Amazon Product 52",
+    "price": 0,
+    "description": "Velvet Accent Chair Set of 2 Comfy Living Room Chair Armless Slipper Chair Mid Century Side Chair Single Sofa Chair with Golden Legs Wingback for Bedroom Guest Room, Yellow",
+    "image": "https://m.media-amazon.com/images/I/71dUajz2tCL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0948HZBFZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#beab94"
+  },
+  {
+    "id": 1799,
+    "title": "Amazon Product 53",
+    "price": 0,
+    "description": "KCC Modern Velvet Desk Chair Accent Armchair Upholstered Tufted Chairs Dining Chairs, Tufted Vanity Chairs Side Chairs with Gold Metal Legs for Dinging Room Living Room Restaurant, 1 PC &Cream",
+    "image": "https://m.media-amazon.com/images/I/61-iCke-kzL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZ83QG9K/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eaa033"
+  },
+  {
+    "id": 1800,
+    "title": "Amazon Product 54",
+    "price": 0,
+    "description": "Velvet Dining Chairs Set of 2, Accent Chairs with Gold Metal Legs, Woven Upholstered Dining Chairs for Living Room/Bedroom/Kitchen",
+    "image": "https://m.media-amazon.com/images/I/71naGN52CQL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8PRDMSJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9f958f"
+  },
+  {
+    "id": 1801,
+    "title": "Amazon Product 55",
+    "price": 0,
+    "description": "TYBOATLE Accent Chairs Set of 2, Black Leather Accent Chair, Comfy Living Room Chair, Cozy Reading Sitting Chair, Mid Century Modern Accent Chairs, Arm Reception Chairs, Office Furniture",
+    "image": "https://m.media-amazon.com/images/I/81nzcJfIAyL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D14476R3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e9e0db"
+  },
+  {
+    "id": 1802,
+    "title": "Amazon Product 56",
+    "price": 0,
+    "description": "Swivel Accent Chair-Corduroy Ultra-Soft and Cozy, Round Swivel Chair for 360° Metal Base, Swivel Barrel Chair Modern for 3 Large Throw Pillows, Hidden Zippers, Oversized Swivel Chairs for Living Room",
+    "image": "https://m.media-amazon.com/images/I/81RE7cd-KUL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CMF3Z5FL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#afa292"
+  },
+  {
+    "id": 1803,
+    "title": "Amazon Product 57",
+    "price": 0,
+    "description": "Mid Century Modern 360 Degree Barrel Swivel Accent Sofa Chair, Fluffy Velvet Fabric Lounge Wide Upholstered Pumpkin Reading Chair, Round Cloud Armchair for Living Room, Bedroom, Vanity(Beige)",
+    "image": "https://m.media-amazon.com/images/I/81CsxYsmH2L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DC313NR9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#21211f"
+  },
+  {
+    "id": 1804,
+    "title": "Amazon Product 58",
+    "price": 0,
+    "description": "Yaheetech Sherpa Fabric Accent Chair, Modern Cozy Vanity Chair with Gold Metal Legs, Boucle Fabric Armchair with Removable Seat Cushion for Living Room Bedroom Office Guest Room, Ivory",
+    "image": "https://m.media-amazon.com/images/I/A1xh1O083CL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CG1BQZ8L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcd4cb"
+  },
+  {
+    "id": 1805,
+    "title": "Amazon Product 59",
+    "price": 0,
+    "description": "Velvet Accent Chair Modern Barrel Chair with Gold Legs Upholstered Armchair for Bedroom Living Room Sofa Chair Club Side Chairs Yellow",
+    "image": "https://m.media-amazon.com/images/I/71mWH8lY1IL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DQ8JJCW2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfd5c8"
+  },
+  {
+    "id": 1806,
+    "title": "Amazon Product 60",
+    "price": 0,
+    "description": "DUOMAY Modern Accent Chair Set of 2, White Velvet Slipper Chair with Gold Legs Wingback Side Chair for Living Room Bedroom Entryway Small Corner Chair for Space Saving",
+    "image": "https://m.media-amazon.com/images/I/7141f6PsfiL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYP8CH3W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cdb56b"
+  },
+  {
+    "id": 1807,
+    "title": "Amazon Product 61",
+    "price": 0,
+    "description": "ABET Accent Chairs Set of 2, Velvet Armless Living Room Chairs with Tufted Wingback Thicken Cushion Gold Metal Legs, Comfy Upholstered Side Chairs Slipper Chairs Club Chairs for Bedroom, Beige",
+    "image": "https://m.media-amazon.com/images/I/6172n15nAcL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C5CYFCFK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d1ccc6"
+  },
+  {
+    "id": 1808,
+    "title": "Amazon Product 62",
+    "price": 0,
+    "description": "Yaheetech Accent Chair, Modern Barrel Chair, Boucle Fabric Vanity Chair with Golden Legs, Cozy Fuzzy Armchair for Living Room Makeup Room Bedroom Reading Nook Ivory",
+    "image": "https://m.media-amazon.com/images/I/91cRfiP9dKL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CCDNDG3G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7d1cf"
+  },
+  {
+    "id": 1809,
+    "title": "Amazon Product 63",
+    "price": 0,
+    "description": "Accent Chair Sherpa Chair Upholstered Boucle Modern White Fluffy Chair Comfy Teddy Armchair Comfortable Reading Chair for Living Room Bedroom Office",
+    "image": "https://m.media-amazon.com/images/I/81Z872ZeTML._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKXF4SKY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bebbb4"
+  },
+  {
+    "id": 1810,
+    "title": "Amazon Product 64",
+    "price": 0,
+    "description": "CHITA Genuine Leather Power Swivel Glider Recliner Chair for Adults, FSC Certified Electric Nursery Rocker Recliner Chair for Living Room, Haze",
+    "image": "https://m.media-amazon.com/images/I/61jgIq6xHVL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B091FG7G6V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2e5dc"
+  },
+  {
+    "id": 1811,
+    "title": "Amazon Product 65",
+    "price": 0,
+    "description": "Modern Accent Chairs for Living Room, Beige Velvet Fabric Arm Chair, Single Sofa Chair Couch, Gold Metal Legs, for Living Room Bedroom Office Leisure",
+    "image": "https://m.media-amazon.com/images/I/71rmgIALL3L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DQ7FPLHR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0c8b8"
+  },
+  {
+    "id": 1812,
+    "title": "Amazon Product 66",
+    "price": 0,
+    "description": "Roundhill Furniture Slatina Green Silky Velvet Upholstered Accent Chair with Gold Tone Finished Base",
+    "image": "https://m.media-amazon.com/images/I/91gp5MkdaBL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08HSKQRYN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#475b53"
+  },
+  {
+    "id": 1813,
+    "title": "Amazon Product 67",
+    "price": 0,
+    "description": "Topeakmart Modern Vanity Chair, Boucle Fabric Accent Chair with Gold Metal Legs for Living Room Makeup Room, Black",
+    "image": "https://m.media-amazon.com/images/I/81TbnDIEFUL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPYH6T4V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#242423"
+  },
+  {
+    "id": 1814,
+    "title": "Amazon Product 68",
+    "price": 0,
+    "description": "COLAMY Accent Chair, Modern Fabric Accent Barrel Chair with Solid Rubberwood Legs, Comfy and Soft Armchair for Living Room, Bedroom, Reception Room, Office, Beige",
+    "image": "https://m.media-amazon.com/images/I/61d+M7ObL8L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMZT7STY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ded9d4"
+  },
+  {
+    "id": 1815,
+    "title": "Amazon Product 69",
+    "price": 0,
+    "description": "COLAMY Accent Chair, Modern Fabric Accent Barrel Chair with Solid Rubberwood Legs, Comfy and Soft Armchair for Living Room, Bedroom, Reception Room, Office, Beige",
+    "image": "https://m.media-amazon.com/images/I/61d+M7ObL8L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMZT7STY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ded9d4"
+  },
+  {
+    "id": 1816,
+    "title": "Amazon Product 70",
+    "price": 0,
+    "description": "Black Velvet Accent Chair Set of 2, Wingback Chair for Living Room, High Back Arm Chair with Golden Legs Lumbar Pillow, Upholstered Single Sofa Bedroom",
+    "image": "https://m.media-amazon.com/images/I/716X27RdoJL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DRBPL7ZV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cac0b3"
+  },
+  {
+    "id": 1817,
+    "title": "Amazon Product 71",
+    "price": 0,
+    "description": "Bonzy Home PU Leather Small Accent Chair, Mid Century Modern Comfy Chairs, Upholstered Armchair with Solid Wood Frame & Removable Cushions, Retro Leisure Chair Reading Chair for Living Room, Bedroom",
+    "image": "https://m.media-amazon.com/images/I/81y8GHyOFxL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C6F762K1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2e2c2d"
+  },
+  {
+    "id": 1818,
+    "title": "Amazon Product 72",
+    "price": 0,
+    "description": "Yaheetech Accent Chair Set of 2, Armchair Set, Side Chairs for Living Room, Boucle Fabric Vanity Chairs with Gold Legs for Bedroom Office Readig Nook, Ivory",
+    "image": "https://m.media-amazon.com/images/I/91qxY7p83CL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CCDR75M2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9c9497"
+  },
+  {
+    "id": 1819,
+    "title": "Amazon Product 73",
+    "price": 0,
+    "description": "Mid Century Sherpa Boucle Accent Chair, Round Upholstered Barrel Arm Chair for Small Spaces, Fluffy Side Corner Sofa Chair for Living Room, Bedroom, Vanity, Office, Reading Nook(Black)",
+    "image": "https://m.media-amazon.com/images/I/91ezcXLEkhL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BTV4JZ83/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3d3733"
+  },
+  {
+    "id": 1820,
+    "title": "Amazon Product 74",
+    "price": 0,
+    "description": "HomePop Modern Barrel Accent Chair, Aqua",
+    "image": "https://m.media-amazon.com/images/I/7138o7RtZfL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09LZ7QKJ7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#81a28c"
+  },
+  {
+    "id": 1821,
+    "title": "Amazon Product 75",
+    "price": 0,
+    "description": "LINSY Velvet Accent Chair, Barrel Chair with Ottoman, Modern Comfy Reading Chair Armchair for Living Room Study Room Office, Yellow",
+    "image": "https://m.media-amazon.com/images/I/81ChAFmyw8L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1KG78S1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4d4330"
+  },
+  {
+    "id": 1822,
+    "title": "Amazon Product 76",
+    "price": 0,
+    "description": "ELUCHANG Oversized Accent Chair Set of 2, High Back Modern Arm Chair with Thick Cushion & Golden Metal Legs, Leisure Chair Comfy Side Corner Chair for Living Room, Bedroom(Chenille - Line Beige)",
+    "image": "https://m.media-amazon.com/images/I/81Gp0yoSejL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFPCK78N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b0722a"
+  },
+  {
+    "id": 1823,
+    "title": "Amazon Product 77",
+    "price": 0,
+    "description": "ELUCHANG Oversized Accent Chair Set of 2, High Back Modern Arm Chair with Thick Cushion & Golden Metal Legs, Leisure Chair Comfy Side Corner Chair for Living Room, Bedroom(Chenille - Line Beige)",
+    "image": "https://m.media-amazon.com/images/I/81Gp0yoSejL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFPCK78N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ccc9be"
+  },
+  {
+    "id": 1824,
+    "title": "Amazon Product 78",
+    "price": 0,
+    "description": "BV Dining Chairs Set of 2, PU Leather Armless Kitchen Chair in Modern Walnut Style, Mid Century Bentwood Side Chair with Metal Legs, Retro Accent Guest Chair for Kitchen Dining Room(Beige)",
+    "image": "https://m.media-amazon.com/images/I/71SDDa6HLJL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CL6JP1BS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8c8165"
+  },
+  {
+    "id": 1825,
+    "title": "Amazon Product 79",
+    "price": 0,
+    "description": "BV Dining Chairs Set of 2, PU Leather Armless Kitchen Chair in Modern Walnut Style, Mid Century Bentwood Side Chair with Metal Legs, Retro Accent Guest Chair for Kitchen Dining Room(Beige)",
+    "image": "https://m.media-amazon.com/images/I/71SDDa6HLJL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CL6JP1BS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b9afa7"
+  },
+  {
+    "id": 1826,
+    "title": "Amazon Product 80",
+    "price": 0,
+    "description": "AODAILIHB Mid Century Sherpa Boucle Accent Chair Set of 2, Modern Upholstered Armchair Black Bucket Chair Comfy Side Chair Arm Chairs for Living Room, Office, Club, Reading Nook (2, Black)",
+    "image": "https://m.media-amazon.com/images/I/61ivO5b9aYL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DN1JWZXC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1b1a18"
+  },
+  {
+    "id": 1827,
+    "title": "Amazon Product 81",
+    "price": 0,
+    "description": "SLEERWAY 360° Swivel Barrel Chair Set of 2, Modern Velvet Round Accent Chair, Comfy Upholstered Small Armchair with Gold Metal Base for Living Room Bedroom Nursery Office Sillas para Sala, Black",
+    "image": "https://m.media-amazon.com/images/I/71-KHxBnOZL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3VP4MZH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#29302f"
+  },
+  {
+    "id": 1828,
+    "title": "Amazon Product 82",
+    "price": 0,
+    "description": "HULALA HOME Modern Velvet Accent Chair with Shell Shaped Back, Cute Living Room Bedroom Armchair Sofa Chair with Gold Legs, Comfy Upholstered Vanity Chair for Makeup Room, Teal",
+    "image": "https://m.media-amazon.com/images/I/71TMQUzayqL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C741XX4K/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0c7b9"
+  },
+  {
+    "id": 1829,
+    "title": "Amazon Product 83",
+    "price": 0,
+    "description": "Armchair Modern Velvet Accent Chair, Channel Tufted Bedroom, Office or Living Room Furniture with Elegant Metal Legs, Mustard Yellow",
+    "image": "https://m.media-amazon.com/images/I/71G+ktxW6vL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C7H262CM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#001f22"
+  },
+  {
+    "id": 1830,
+    "title": "Amazon Product 84",
+    "price": 0,
+    "description": "Modern Chic Mid-Century Velvet Accent Armchair for Living Room, Bedroom, or Home Office, Button-Tufted Wingback Design with Gold Flared Legs, Ivory",
+    "image": "https://m.media-amazon.com/images/I/71c0nh9JG9L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4C564PR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cb803d"
+  },
+  {
+    "id": 1831,
+    "title": "Amazon Product 85",
+    "price": 0,
+    "description": "Yaheetech Boucle Vanity Chair, Modern Tufted Accent Chair, Cozy Sherpa Barrel Chair with Gold Legs, Club Chair for Living Room Bedroom Makeup Room Home Office, Black",
+    "image": "https://m.media-amazon.com/images/I/81kSgKmGHnL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPDZZ7GY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#262625"
+  },
+  {
+    "id": 1832,
+    "title": "Amazon Product 86",
+    "price": 0,
+    "description": "Living Room Accent Chair with Ottoman Upholstered Wingback Bedroom Arm Chair with Lumbar Pillow & Golden Legs, Modern Chair for Dorms Reading Reception Waiting Room, Yellow",
+    "image": "https://m.media-amazon.com/images/I/7144CijWabL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BG2S7PTD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#baa585"
+  },
+  {
+    "id": 1833,
+    "title": "Amazon Product 87",
+    "price": 0,
+    "description": "Olela Accent Chair Set of 2, Velvet Armchair Single Sofa Modern Tufted Upholstered Side Reading Chairs with Arm and Gold Metal Leg for Living Room Bedroom Club Nursery Office(2, Green)",
+    "image": "https://m.media-amazon.com/images/I/61ChFyLWPkL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C28F7CLM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e9bb4c"
+  },
+  {
+    "id": 1834,
+    "title": "Amazon Product 88",
+    "price": 0,
+    "description": "Comfy Velvet Accent Chair, Upholstered Armless Side Chair for Living Room, Modern Small Lounger with Tufted Back and Rolled Edge Design, Comfy Reading Chaise Lounge with Solid Rubber Wood Legs, Yellow",
+    "image": "https://m.media-amazon.com/images/I/81NY4yYRjFL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BB6X6PS1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7c756d"
+  },
+  {
+    "id": 1835,
+    "title": "Amazon Product 89",
+    "price": 0,
+    "description": "Accent Chair with Arms Set of 2, Modern Tufted Square Armchair for with Gold Metal Legs, Upholstered Fabric Single Sofa Reading Side Chair for Living Room Bedroom Office Club, Beige",
+    "image": "https://m.media-amazon.com/images/I/715Ts1t-4xL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5MFVVRC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cfa35b"
+  },
+  {
+    "id": 1836,
+    "title": "Amazon Product 90",
+    "price": 0,
+    "description": "Velvet Barrel Accent Chair with Scalloped Silhouette and Gold Metal Legs, Decorative Piece Suitable for Traditional, Modern, and Contemporary Living Rooms, Rose",
+    "image": "https://m.media-amazon.com/images/I/91IyKaUH6oL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C8V4CR83/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e5d6d3"
+  },
+  {
+    "id": 1837,
+    "title": "Amazon Product 91",
+    "price": 0,
+    "description": "SZLIZCCC Velvet Accent Chair, Golden Metal Leg Single Sofa Chair, Living Room Chair, Bedroom Chair, Conference Chair (L-Black)",
+    "image": "https://m.media-amazon.com/images/I/81ZQkMInGvL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DNFK31VF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c66c64"
+  },
+  {
+    "id": 1838,
+    "title": "Amazon Product 92",
+    "price": 0,
+    "description": "BELLEZE Swivel Accent Chair, Modern Barrel Chair Comfy Velvet Curved Back Round Chair with Gold Base Wood Frame, 360 Degree Swivel Club Armchair for Living Room, Bedroom, Office - Crown Chair (Ivory)",
+    "image": "https://m.media-amazon.com/images/I/81wRydG4+3L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKX5ZNG7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#111216"
+  },
+  {
+    "id": 1839,
+    "title": "Amazon Product 93",
+    "price": 0,
+    "description": "MoNiBloom Accent Reading Chair - Single Sofa with Gold Metal Legs, Wide Armrest, Durable Upholstery - Warm Orange",
+    "image": "https://m.media-amazon.com/images/I/61KtSpR0SfL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C2CZ3LL1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d36312"
+  },
+  {
+    "id": 1840,
+    "title": "Amazon Product 94",
+    "price": 0,
+    "description": "US Pride Furniture Velvet Barrel Chair, Stylish Accent with Scalloped Backrest and Gold Metal Legs, Suitable for Traditional, Modern, and Contemporary Living Rooms, Black",
+    "image": "https://m.media-amazon.com/images/I/81W99+9EdWL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C8VBPV7K/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#323235"
+  },
+  {
+    "id": 1841,
+    "title": "Amazon Product 95",
+    "price": 0,
+    "description": "ODUWA Swivel Chairs for Living Room, Modern Round Teddy Sherpa Arm Chair with Gold Stainless Steel Base, Upholstered Comfy 360 Degree Swivel Accent Chair for Living Room Bedroom Nursery Office",
+    "image": "https://m.media-amazon.com/images/I/A1cn46hB4WL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B083W4GWDX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dddbd2"
+  },
+  {
+    "id": 1842,
+    "title": "Amazon Product 96",
+    "price": 0,
+    "description": "Thia Armless Accent Chair for Living Room, Elegant Seat with Nailhead Trim, Gold Metal Legs and Comfortable Curved Back, 28\" D x 25\" W x 29.5\" H, 02 Floral Print",
+    "image": "https://m.media-amazon.com/images/I/714iqEZTUcL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C9PJVV3C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dddada"
+  },
+  {
+    "id": 1843,
+    "title": "Amazon Product 97",
+    "price": 0,
+    "description": "Karl home 360° Swivel Accent Chair, Modern Velvet Fabric Living Room Armchair with Fluffy Cushions, Comfy Wide Upholstered, Barrel Accent Chairs for Living Room, Bedroom, Lounge, Office (Off-White)",
+    "image": "https://m.media-amazon.com/images/I/81-cVVNDpZL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHV4B65M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#edefee"
+  },
+  {
+    "id": 1844,
+    "title": "Amazon Product 98",
+    "price": 0,
+    "description": "VINGLI Modern PU Leather Accent Chair for Living Room, Bedroom Comfy Chair Arm Chair Reading Chair with Golden Metal Legs and Deep Seat for Office, Apartment, Small Space, Cognac",
+    "image": "https://m.media-amazon.com/images/I/61xd2AMccsL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CFTZH32Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a06e49"
+  },
+  {
+    "id": 1845,
+    "title": "Amazon Product 99",
+    "price": 0,
+    "description": "Homedraft Sherpa Accent Chair, Modern Upholstered Living Room Chair, Comfy Single Sofa with Golden Metal Legs, Boucle Reading Armchair for Bedroom Waiting Room, White",
+    "image": "https://m.media-amazon.com/images/I/710JyZp6E7L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DR5941L7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cecbc7"
+  },
+  {
+    "id": 1846,
+    "title": "Amazon Product 100",
+    "price": 0,
+    "description": "Bedsure Satin Pillowcase for Hair and Skin Queen - Champagne Gold Silky Pillowcase 2 Pack with Envelope Closure, Similar to Silk Pillow Cases, Gifts for Women Men, 20x30 Inches",
+    "image": "https://m.media-amazon.com/images/I/71U33-edZgL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08611XVF3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dad8cc"
+  },
+  {
+    "id": 1847,
+    "title": "Amazon Product 104",
+    "price": 0,
+    "description": "MIULEE Gold Pillow Covers 18x18 Inch with Splicing Set of 2 Super Soft Boho Striped Corduroy Pillow Covers Broadside Decorative Textured Throw Pillows for Couch Cushion Livingroom",
+    "image": "https://m.media-amazon.com/images/I/81Vzh1aI05L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D14SBPQV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e2d8cb"
+  },
+  {
+    "id": 1848,
+    "title": "Amazon Product 105",
+    "price": 0,
+    "description": "MIULEE Pack of 2 Corduroy Decorative Throw Pillow Covers 18x18 Inch Soft Boho Striped Pillow Covers Modern Farmhouse Home Decor for Sofa Living Room Couch Bed Gold Yellow",
+    "image": "https://m.media-amazon.com/images/I/81-7IyOhajL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D14LFCB9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ebc884"
+  },
+  {
+    "id": 1849,
+    "title": "Amazon Product 106",
+    "price": 0,
+    "description": "MIULEE Pack of 2 Couch Throw Pillow Covers 18x18 Inch Soft Gold Chenille Pillow Covers for Sofa Living Room Solid Dyed Pillow Cases",
+    "image": "https://m.media-amazon.com/images/I/81vuzf8ZnbL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C1YJ9XFB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e6ad5b"
+  },
+  {
+    "id": 1850,
+    "title": "Amazon Product 107",
+    "price": 0,
+    "description": "Elegant Comfort Luxury Ultra-Soft 2-Piece Pillowcase Set - 1500 Premium Hotel Quality Microfiber Double Brushed - Wrinkle Resistant, King Size, Gold",
+    "image": "https://m.media-amazon.com/images/I/81EjiGJ8cUL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07KQC522N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b7976c"
+  },
+  {
+    "id": 1851,
+    "title": "Amazon Product 108",
+    "price": 0,
+    "description": "decorUhome Decorative Throw Pillow Covers 18x18, Soft Plush Faux Wool Couch Spring Pillow Covers for Home, Set of 2, Beige",
+    "image": "https://m.media-amazon.com/images/I/71JxyzK6rNL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09J2454PV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3ccbc"
+  },
+  {
+    "id": 1852,
+    "title": "Amazon Product 109",
+    "price": 0,
+    "description": "DEZENE Throw Pillow Cases 18x18 Golden Brown: 2 Pack Cozy Soft Velvet Square Decorative Pillow Covers for Farmhouse Home Decor",
+    "image": "https://m.media-amazon.com/images/I/61sq-a-pNjL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07SB4YX2P/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7c5937"
+  },
+  {
+    "id": 1853,
+    "title": "Amazon Product 110",
+    "price": 0,
+    "description": "MIULEE Pack of 2 Velvet Soft Solid Decorative Square Throw Pillow Covers Set Fall Cushion Cases for Sofa Bedroom Couch 18 x 18 Inch Golden",
+    "image": "https://m.media-amazon.com/images/I/816kQV6zQ2L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BNK7MHPY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c99e69"
+  },
+  {
+    "id": 1854,
+    "title": "Amazon Product 111",
+    "price": 0,
+    "description": "ShopBedding Luxury Satin Pillowcase for Hair – Standard Satin Pillowcase with Zipper, Gold (Pillowcase Set of 2) – Blissford",
+    "image": "https://m.media-amazon.com/images/I/51DCGNR217L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01MZ82SPD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4cc82"
+  },
+  {
+    "id": 1855,
+    "title": "Amazon Product 116",
+    "price": 0,
+    "description": "MIULEE Pack of 4 Couch Throw Pillow Covers 18x18 Inch Neutral Gold/Brown Soft Decorative Chenille Pillow Covers Farmhouse Accent Cushion Covers for Boho Home Decor Sofa Bedroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/81O3NXfNRRL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D795CR9P/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4d0ca"
+  },
+  {
+    "id": 1856,
+    "title": "Amazon Product 117",
+    "price": 0,
+    "description": "NiNi ALL Decorative Throw Pillow Covers Pack of 2, Velvet Throw Pillow Cases for Couch Pillows Cover Bedroom Living Room Outdoor Pillow Covers 18x18 Inch Gold",
+    "image": "https://m.media-amazon.com/images/I/A1NPovhVQxL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4JY3W33/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c8a542"
+  },
+  {
+    "id": 1857,
+    "title": "Amazon Product 118",
+    "price": 0,
+    "description": "MIULEE Pack of 2 Couch Throw Pillow Covers 20x20 Inch Gold Farmhouse Decorative Pillow Covers with Stitched Edge Soft Chenille Solid Dyed Fall Pillow Covers for Sofa Bed Living Room",
+    "image": "https://m.media-amazon.com/images/I/719wj8uN7dL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJRWFN7C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1d7cc"
+  },
+  {
+    "id": 1858,
+    "title": "Amazon Product 121",
+    "price": 0,
+    "description": "Mellanni Pillow Cases - Luxury, Extra Soft, Cooling Pillow Covers - 2 PC Iconic Collection Pillowcases - Envelope Closure (Standard/Queen 20\" x 30\", Gold)",
+    "image": "https://m.media-amazon.com/images/I/61Rq5tIlWrL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00RKHWWTI/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c39451"
+  },
+  {
+    "id": 1859,
+    "title": "Amazon Product 126",
+    "price": 0,
+    "description": "Neelvin Cream White Faux Fur Cozy Soft Striped Decorative Throw Pillow Covers 18x18 inch Set of 2, Velvet Pillowcase Cushion Case for Sofa Couch",
+    "image": "https://m.media-amazon.com/images/I/61LOm-u8vSL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BYNZKYLC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcd9d3"
+  },
+  {
+    "id": 1860,
+    "title": "Amazon Product 127",
+    "price": 0,
+    "description": "MIULEE Pack of 2 Mustard Yellow Pillow Covers 18x18 Inch Soft Decorative Throw Pillow Covers Corduroy Pillowcases for Spring Sofa Bedroom Couch",
+    "image": "https://m.media-amazon.com/images/I/814vKUkdFqL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09VGLWLNN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3d5c2"
+  },
+  {
+    "id": 1861,
+    "title": "Amazon Product 128",
+    "price": 0,
+    "description": "MIULEE Pack of 2 Corduroy Soft Soild Decorative Square Throw Pillow Covers Cushion Cases Pillowcases for Sofa Bedroom Car 18 x 18 Inch 45 x 45 Cm Gold",
+    "image": "https://m.media-amazon.com/images/I/81upi0EpCNL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2HN4L6G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fac55d"
+  },
+  {
+    "id": 1862,
+    "title": "Amazon Product 129",
+    "price": 0,
+    "description": "Coastal Blue Decorative Lumbar Pillow Cover 14x36 Boho Long Body Pillow for Bed Farmhouse Lumbar Throw Pillow for Couch Modern Accent Textured Throw Pillowcase",
+    "image": "https://m.media-amazon.com/images/I/91aoGJqljnL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C7YF3L3S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eed495"
+  },
+  {
+    "id": 1863,
+    "title": "Amazon Product 130",
+    "price": 0,
+    "description": "Artscope Luxury Velvet Pillow Covers Super Soft Decorative Square Throw Pillow Covers Case Cushion Covers for Sofa Couch Bedroom Car Decor 12x20 Inch Gold",
+    "image": "https://m.media-amazon.com/images/I/710PR2cGOdL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08Q3MZR5B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddd9d4"
+  },
+  {
+    "id": 1864,
+    "title": "Amazon Product 131",
+    "price": 0,
+    "description": "2 Pack 18x18 Pillow Cover Velvet Pillow Covers, Faux Fur Square Throw Pillow Covers for Living Room Decorations Throw Pillow Case, Throw Pillow Cover Cushion Cover for Home Sofa Bedroom Car, Gold",
+    "image": "https://m.media-amazon.com/images/I/81KdmpVvhtL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DK4NH7ZR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bb9b52"
+  },
+  {
+    "id": 1865,
+    "title": "Amazon Product 132",
+    "price": 0,
+    "description": "Velvet Throw Pillow Cover Soft Decorative Luxurious Solid Square Cushion Case for Sofa Couch Bedroom Farmhouse, Pack of 2, 18 x 18 Inches, Golden Camel",
+    "image": "https://m.media-amazon.com/images/I/81xr3ruaSKL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B088R42PLD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#20302f"
+  },
+  {
+    "id": 1866,
+    "title": "Amazon Product 135",
+    "price": 0,
+    "description": "Phantoscope Pack of 2 Faux Fur Throw Pillow Covers Cushion Covers Luxury Soft Decorative Pillowcase Fuzzy Pillow Covers for Bed/Couch, Ginger 18 x 18 Inches",
+    "image": "https://m.media-amazon.com/images/I/81sLIQz2-zL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07CN4B2WR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6a64c"
+  },
+  {
+    "id": 1867,
+    "title": "Amazon Product 136",
+    "price": 0,
+    "description": "MIULEE Pack of 1 Gold Textured Boucle Throw Pillow Cover Soft Decorative Couch Accent Solid Lumbar Pillow Case for Spring Cushion Chair Sofa Bedroom Livingroom Home Decor，12x20 Inch",
+    "image": "https://m.media-amazon.com/images/I/81JDfzcr8aL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJNF4XN4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e9e1d3"
+  },
+  {
+    "id": 1868,
+    "title": "Amazon Product 137",
+    "price": 0,
+    "description": "YOUR SMILE Classical Embroidery Jacquard Yellow/Gold Square Decorative Throw Pillow Case Cushion Cover 18x18 inch",
+    "image": "https://m.media-amazon.com/images/I/91OBGHC2GEL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09B6RZ3GR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eeca86"
+  },
+  {
+    "id": 1869,
+    "title": "Amazon Product 141",
+    "price": 0,
+    "description": "HIG Set of 2 Decorative Round Pleated Throw Pillows, Classy Accent Pumpkin Throw Pillows with Center Button, Vintage Velvet Floor Pillow for Sofa Couch Vanity Chair Bed, Yellow, 14.5\" Diameter(RIPPLE)",
+    "image": "https://m.media-amazon.com/images/I/71eC2BSCMSL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09Y8DRK65/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c5b989"
+  },
+  {
+    "id": 1870,
+    "title": "Amazon Product 142",
+    "price": 0,
+    "description": "MIULEE Pack of 2 Gold Decorative Pillow Covers 18x18 Inch Soft Chenille Couch Throw Pillows Farmhouse Cushion Covers for Home Decor Sofa Bedroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/81O-OtyKnWL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7CM1HQ9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6cbb8"
+  },
+  {
+    "id": 1871,
+    "title": "Amazon Product 147",
+    "price": 0,
+    "description": "Black White and Gold Pillow Covers, Abstract Black and Gold Pillow Covers 18x18 Set of 2, Modern Boho Home Decor, Black and Gold Decorative Throw Pillows Cover for Couch Living Room Bedroom",
+    "image": "https://m.media-amazon.com/images/I/71Zsw9cxKeL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZNY3V63/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5d6d8"
+  },
+  {
+    "id": 1872,
+    "title": "Amazon Product 148",
+    "price": 0,
+    "description": "Tosleo Black Velvet Throw Pillow Covers 18 x18 inch Pack of 2 with Gold Leather Decorative Couch Pillow Cover Luxury Modern Pillowcases for Wedding Living Room Bedroom Sofa Cushion Bed",
+    "image": "https://m.media-amazon.com/images/I/61xy3P8wETL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BDBFRBY6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bfa479"
+  },
+  {
+    "id": 1873,
+    "title": "Amazon Product 149",
+    "price": 0,
+    "description": "Elegant Comfort Silky and Luxurious 2-Piece Satin Pillowcase Set for Healthier Skin and Hair, Hidden Zipper Closure and Beautifully Packaged, Satin Pillowcase Set, King, Gold",
+    "image": "https://m.media-amazon.com/images/I/61FIrtAwfnL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BPWCB97M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bc8f3a"
+  },
+  {
+    "id": 1874,
+    "title": "Amazon Product 150",
+    "price": 0,
+    "description": "BRAWARM Faux Leather Throw Pillow Covers 12 X 20 Inches - Gold Leather Lumbar Pilow Covers Pack of 2, Solid Dyed Leather Pillowcases for Couch Bed Sofa Garden Home Decorative",
+    "image": "https://m.media-amazon.com/images/I/51U7cPhaRlS._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07PT674ZP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#caaf7d"
+  },
+  {
+    "id": 1875,
+    "title": "Amazon Product 151",
+    "price": 0,
+    "description": "CaliTime Pack of 2 Throw Pillow Covers Cases for Couch Sofa Home Decoration Vintage Damask Floral Shining & Dull Contrast 18 X 18 Inches Gold",
+    "image": "https://m.media-amazon.com/images/I/81u+y24gOtL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07GCHDMQL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3bd8e"
+  },
+  {
+    "id": 1876,
+    "title": "Amazon Product 152",
+    "price": 0,
+    "description": "ZLINA Set of 2 Velvet Decorative Throw Pillow Covers Black White Patchwork with Gold Leather Pillow Covers 18 × 18 Inch Cushion Covers Decor Living Room Sofa Bedroom Car",
+    "image": "https://m.media-amazon.com/images/I/71fiu+wiTeL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BK14FYGD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#131314"
+  },
+  {
+    "id": 1877,
+    "title": "Amazon Product 153",
+    "price": 0,
+    "description": "Memory Foam Pillow, Neck Bed Contour Pillow for Sleeping, Ergonomic Orthopedic Cervical Pillow for Side Back Stomach Sleeper, Queen, Firm, Gold",
+    "image": "https://m.media-amazon.com/images/I/51TTsJidmOL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DK94XVYC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3e3e1"
+  },
+  {
+    "id": 1878,
+    "title": "Amazon Product 154",
+    "price": 0,
+    "description": "Memory Foam Pillow, Neck Bed Contour Pillow for Sleeping, Ergonomic Orthopedic Cervical Pillow for Side Back Stomach Sleeper, Queen, Firm, Gold",
+    "image": "https://m.media-amazon.com/images/I/51TTsJidmOL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DK94XVYC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3e3e1"
+  },
+  {
+    "id": 1879,
+    "title": "Amazon Product 155",
+    "price": 0,
+    "description": "CaliTime Pack of 2 Throw Pillow Covers Cases for Couch Sofa Home Decoration Vintage Damask Floral Shining & Dull Contrast 18 X 18 Inches Gold",
+    "image": "https://m.media-amazon.com/images/I/81u+y24gOtL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07GCHDMQL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3bd8e"
+  },
+  {
+    "id": 1880,
+    "title": "Amazon Product 156",
+    "price": 0,
+    "description": "BRAWARM Chenille Throw Pillow Covers 12x20 Inches - Gold Chenille Lumbar Pillow Covers Pack of 2, Solid Dyed Soft Chenille Pillow Cases for Couch Sofa Bed Home Decoration",
+    "image": "https://m.media-amazon.com/images/I/61dG-CwkmjL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08BZFH4WY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0c185"
+  },
+  {
+    "id": 1881,
+    "title": "Amazon Product 157",
+    "price": 0,
+    "description": "YONGLIU Pack of 2 Velvet Cushion Cases Decorative Gold Foil Geometric Pattern Throw Pillow Covers for Modern Homes Sofa Bedroom Couch Car Living Room(White and Gold, 18“X18”)",
+    "image": "https://m.media-amazon.com/images/I/81F7nebJt6L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08HLXZL4S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cdc7be"
+  },
+  {
+    "id": 1882,
+    "title": "Amazon Product 158",
+    "price": 0,
+    "description": "Artscope Black Velvet Throw Pillow Covers with Gold Leather Stitching Luxury Modern Minimalist Square Pillowcase Cushion Covers for Bed Couch Sofa 18x18Inch Set of 2",
+    "image": "https://m.media-amazon.com/images/I/71Xb4UbPePL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B092CMLYSX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#151517"
+  },
+  {
+    "id": 1883,
+    "title": "Amazon Product 159",
+    "price": 0,
+    "description": "Yangest Black Striped Patchwork Throw Pillow Cover Gold Leather Cushion Cover Zippered Rectangular Pillowcase for Sofa Couch Bedroom Living Room Home Decoration, 12x20 Inch",
+    "image": "https://m.media-amazon.com/images/I/81xd4WoXS4S._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B092ZJ76WL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcc168"
+  },
+  {
+    "id": 1884,
+    "title": "Amazon Product 160",
+    "price": 0,
+    "description": "BRAWARM Faux Leather Pillow Covers 20 X 20 Inches, Gold Leather Pillow Covers Pack of 2, Crocodile Leather Decorative Throw Pillows for Living Room Couch Bed Sofa Home",
+    "image": "https://m.media-amazon.com/images/I/710u19hLjhL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08BZDRZWP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#faeec5"
+  },
+  {
+    "id": 1885,
+    "title": "Amazon Product 161",
+    "price": 0,
+    "description": "YOUR SMILE Pack of 2, New Luxury Series Gold Bling Decorative Glitzy Sequin & Comfy Satin Throw Pillow Cover Cushion Case for Wedding/Christmas, 20\"x20\"",
+    "image": "https://m.media-amazon.com/images/I/91TSUrSR6AL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07ZNLVQMP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4b17b"
+  },
+  {
+    "id": 1886,
+    "title": "Amazon Product 162",
+    "price": 0,
+    "description": "GIGIZAZA Decorative Throw Pillow Covers 18 x 18, Gold Soft Pillow Covers Velvet, Set of 4 Decor Square Cushion Covers (Gold, 18x18inch(45x45cm)-4pcs)",
+    "image": "https://m.media-amazon.com/images/I/71Mx7oKtUrL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07RB2QK4Y/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c0a668"
+  },
+  {
+    "id": 1887,
+    "title": "Amazon Product 167",
+    "price": 0,
+    "description": "EUCIOR Gold Throw Pillows, Circular Pillow, Pumpkin Pleated Handmade Throw Pillows, Gold Pillows, Smooth Metallic Leather Decorative Pillows for Home Decor Bedroom Living Room Couch Bed Sofa(Gold)",
+    "image": "https://m.media-amazon.com/images/I/81Py0SjMo1L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C1SJQVCX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c6a87d"
+  },
+  {
+    "id": 1888,
+    "title": "Amazon Product 168",
+    "price": 0,
+    "description": "CaliTime Pillow Cases Pack of 2 Cozy Solid Dyed Soft Chenille Cushion Covers with Pom Poms for Couch Sofa Home Decoration 12 X 20 Inches Gold",
+    "image": "https://m.media-amazon.com/images/I/81Isxad9f4S._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B097QVG1WZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4b87a"
+  },
+  {
+    "id": 1889,
+    "title": "Amazon Product 169",
+    "price": 0,
+    "description": "Tuft & Needle Premium Pillow, King Size with T&N Adaptive Foam, Sleeps Cooler & More Supportive Than Memory Foam Pillows, CertiPUR-US and Greenguard Gold Certified, 3-Year True Warranty, White",
+    "image": "https://m.media-amazon.com/images/I/51ooxZ2bxNL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B073H3TGTF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f4f4f5"
+  },
+  {
+    "id": 1890,
+    "title": "Amazon Product 170",
+    "price": 0,
+    "description": "Tuft & Needle Premium Pillow, King Size with T&N Adaptive Foam, Sleeps Cooler & More Supportive Than Memory Foam Pillows, CertiPUR-US and Greenguard Gold Certified, 3-Year True Warranty, White",
+    "image": "https://m.media-amazon.com/images/I/51ooxZ2bxNL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B073H3TGTF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f4f4f5"
+  },
+  {
+    "id": 1891,
+    "title": "Amazon Product 171",
+    "price": 0,
+    "description": "Tuft & Needle Premium Pillow, King Size with T&N Adaptive Foam, Sleeps Cooler & More Supportive Than Memory Foam Pillows, CertiPUR-US and Greenguard Gold Certified, 3-Year True Warranty, White",
+    "image": "https://m.media-amazon.com/images/I/51ooxZ2bxNL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B073H3TGTF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f4f4f5"
+  },
+  {
+    "id": 1892,
+    "title": "Amazon Product 172",
+    "price": 0,
+    "description": "Tuft & Needle Premium Pillow, King Size with T&N Adaptive Foam, Sleeps Cooler & More Supportive Than Memory Foam Pillows, CertiPUR-US and Greenguard Gold Certified, 3-Year True Warranty, White",
+    "image": "https://m.media-amazon.com/images/I/51ooxZ2bxNL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B073H3TGTF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f4f4f5"
+  },
+  {
+    "id": 1893,
+    "title": "Amazon Product 173",
+    "price": 0,
+    "description": "AELS Heart Shaped Pillow, 20 Inches Heart Decorative Throw Pillows, Velvet Love Pillows Cute Pillow, Valentines Day Decorations, Wedding Decor, Living Room Bedroom Nursery Decor, Golden",
+    "image": "https://m.media-amazon.com/images/I/91zzw1syQhL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJJMRFRN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddd5c8"
+  },
+  {
+    "id": 1894,
+    "title": "Amazon Product 174",
+    "price": 0,
+    "description": "GIGIZAZA Decorative Velvet Pillow Covers 18x18, Set of 2 Gold Sofa Couch Throw Pillows Covers Cases, Living Room Square Cushion Accent Stripe Covers",
+    "image": "https://m.media-amazon.com/images/I/816UfZsTBNL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BGGRN9CP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8b7045"
+  },
+  {
+    "id": 1895,
+    "title": "Amazon Product 175",
+    "price": 0,
+    "description": "GIGIZAZA Decorative Velvet Pillow Covers 20x20, Set of 2 Gold Sofa Couch Throw Pillows Covers Cases, Living Room Square Cushion Accent Stripe Covers",
+    "image": "https://m.media-amazon.com/images/I/816UfZsTBNL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BGGNYYP6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0cb9b"
+  },
+  {
+    "id": 1896,
+    "title": "Amazon Product 176",
+    "price": 0,
+    "description": "TAOSON Pack of 2, Velvet Marble Pattern Lines Geometric Bronzing Printed Cozy Soft Throw Pillow Cases Cushion Covers Shells for Sofa Couch Bedroom, 18 x 18 Inches, White and Gold",
+    "image": "https://m.media-amazon.com/images/I/71IvzXPwcIL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B66C6BHW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8d6831"
+  },
+  {
+    "id": 1897,
+    "title": "Amazon Product 177",
+    "price": 0,
+    "description": "OTOSTAR Set of 4 Decorative Throw Pillow Covers, 18 x 18 Square Cushion Inner Soft Fluffy Plump Stuffer Cushion Pads White Decorative Pillow Inserts",
+    "image": "https://m.media-amazon.com/images/I/A1cn46hB4WL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B083W4GWDX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dddbd2"
+  },
+  {
+    "id": 1898,
+    "title": "Amazon Product 178",
+    "price": 0,
+    "description": "THE-TINOART Cream Pillow Covers Gold Splashed Throw Pillow Covers Reversed Soft Velvet Beige Gold Square Cushion Cover Pillow Cover for Couch Bed and Chair Cream Beige 18 x 18 inches",
+    "image": "https://m.media-amazon.com/images/I/81GivgtJUSL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BNHB9XV6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4c4a0"
+  },
+  {
+    "id": 1899,
+    "title": "Amazon Product 179",
+    "price": 0,
+    "description": "Alerfa Gold Leather Striped Black Throw Pillow Cover 18x18 Inch, Geometric Luxury Decorative Embroidered Velvet Pillow Cover for Couch Living Room Bedroom",
+    "image": "https://m.media-amazon.com/images/I/61s5VnMzGJL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08H8NJFNX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1d3bd"
+  },
+  {
+    "id": 1900,
+    "title": "Amazon Product 180",
+    "price": 0,
+    "description": "Alerfa Gold Leather Striped White Throw Pillow Cover 18x18 Inch, Geometric Luxury Decorative Embroidered Velvet Pillow Cover for Couch Living Room Bedroom",
+    "image": "https://m.media-amazon.com/images/I/61MiRnzCZ-L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08H7VRBKP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f7d596"
+  },
+  {
+    "id": 1901,
+    "title": "Amazon Product 181",
+    "price": 0,
+    "description": "JELLYMONI Set of 2 Sparkling Metallic Suede Throw Pillow Covers - 18 x 18 inch Glitter Decorative Pillow Shams White with Gold Streaks, Soft Pillowcases Home Decor for Sofa Couch Bed",
+    "image": "https://m.media-amazon.com/images/I/81U0c5MR+NL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3854L1T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d2ccc2"
+  },
+  {
+    "id": 1902,
+    "title": "Amazon Product 182",
+    "price": 0,
+    "description": "GIGIZAZA 18x18 Pillow Covers Set of 2, Gold Velvet Polka Dot Sofa Accent Throw Pillows Covers for Living Room Modern Cushion Pillows Covers",
+    "image": "https://m.media-amazon.com/images/I/91VdjFtQJpL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D498P5NV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c2b698"
+  },
+  {
+    "id": 1903,
+    "title": "Amazon Product 183",
+    "price": 0,
+    "description": "GIGIZAZA 20x20 Pillow Covers Set of 2, Gold Velvet Polka Dot Sofa Accent Throw Pillows Covers for Living Room Modern Cushion Pillows Covers",
+    "image": "https://m.media-amazon.com/images/I/811sD1xC2JL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D498FNPG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#aa8b57"
+  },
+  {
+    "id": 1904,
+    "title": "Amazon Product 184",
+    "price": 0,
+    "description": "ZLINA Home Decorative Set of 4 Throw Pillow Covers Gold Foil Pillow Covers 18 ×18 Inch Geometric Square Cushion Covers Decor Couch Sofa Bedroom(Black and Gold)",
+    "image": "https://m.media-amazon.com/images/I/81x1S4hoRfL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B086QYWT7F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cec1a6"
+  },
+  {
+    "id": 1905,
+    "title": "Amazon Product 185",
+    "price": 0,
+    "description": "HPUK Pack of 2 Throw Pillow Covers Cashmere Decorative Square Pillowcases, Solid Cushion Covers for Sofa Couch Bedroom Office, 18 x 18 inch, Gold",
+    "image": "https://m.media-amazon.com/images/I/81GsaqvIJCL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B2K2D7HK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6c3ab"
+  },
+  {
+    "id": 1906,
+    "title": "Amazon Product 186",
+    "price": 0,
+    "description": "EUCIOR Gold Throw Pillows, Circular Pillow, Pumpkin Pleated Handmade Throw Pillows, Gold Pillows, Smooth Metallic Leather Decorative Pillows for Home Decor Bedroom Living Room Couch Bed Sofa(Gold)",
+    "image": "https://m.media-amazon.com/images/I/81--kDaweTL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BZJ5TVFJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dca155"
+  },
+  {
+    "id": 1907,
+    "title": "Amazon Product 187",
+    "price": 0,
+    "description": "Eternal Beauty Set of 2 Sequin Decorative Pillow Cover Gold Pillow Covers for Couch Sofa Throw Pillows 18 X 18 Inches",
+    "image": "https://m.media-amazon.com/images/I/91VSMP9iBHL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07Z3SGB2N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b99568"
+  },
+  {
+    "id": 1908,
+    "title": "Amazon Product 188",
+    "price": 0,
+    "description": "Tresshouse European Round Throw Pillows, Soft Spandex Fabric Pumpkin Pleated Handmade Metallic Accent Circle Insert Cushion Diamond to Enhance for Sofa Bedroom Livingroom Couch Cover Chair Gold",
+    "image": "https://m.media-amazon.com/images/I/71n1OmFLaHL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08NLKHCPQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbc071"
+  },
+  {
+    "id": 1909,
+    "title": "Amazon Product 189",
+    "price": 0,
+    "description": "Pack of 4 Decorative Throw Pillow Case Cushion Cover Gold Stamping Leaves 18 x 18 inches 45 x 45 cm for Couch Bedroom Car…",
+    "image": "https://m.media-amazon.com/images/I/A1cn46hB4WL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B083W4GWDX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dddbd2"
+  },
+  {
+    "id": 1910,
+    "title": "Amazon Product 190",
+    "price": 0,
+    "description": "THE-TINOART Cream Pillow Covers Gold Splashed Throw Pillow Covers Reversed Soft Velvet Beige Gold Square Cushion Cover Pillow Cover for Couch Bed and Chair Cream Beige 18 x 18 inches",
+    "image": "https://m.media-amazon.com/images/I/81GivgtJUSL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BNHB9XV6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4c4a0"
+  },
+  {
+    "id": 1911,
+    "title": "Amazon Product 191",
+    "price": 0,
+    "description": "Alerfa Gold Leather Striped Black Throw Pillow Cover 18x18 Inch, Geometric Luxury Decorative Embroidered Velvet Pillow Cover for Couch Living Room Bedroom",
+    "image": "https://m.media-amazon.com/images/I/61s5VnMzGJL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08H8NJFNX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1d3bd"
+  },
+  {
+    "id": 1912,
+    "title": "Amazon Product 192",
+    "price": 0,
+    "description": "Alerfa Gold Leather Striped White Throw Pillow Cover 18x18 Inch, Geometric Luxury Decorative Embroidered Velvet Pillow Cover for Couch Living Room Bedroom",
+    "image": "https://m.media-amazon.com/images/I/61MiRnzCZ-L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08H7VRBKP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f7d596"
+  },
+  {
+    "id": 1913,
+    "title": "Amazon Product 193",
+    "price": 0,
+    "description": "NianEr Decorative Plush Velvet Throw Pillow Covers Sofa Accent Couch Pillows Set of 2 for Bed Living Room Square Pillow Cases 18X18 Gold",
+    "image": "https://m.media-amazon.com/images/I/81-7njRZ5hL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07WYCCW6Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f0c682"
+  },
+  {
+    "id": 1914,
+    "title": "Amazon Product 194",
+    "price": 0,
+    "description": "Alerfa 12 x 20 Inch Khaki White Geometric Striped Gold Leather Patchwork Velvet Cushion Case Luxury Modern Lumbar Throw Pillow Cover Decorative Pillow for Couch Sofa Living Room Bedroom Car",
+    "image": "https://m.media-amazon.com/images/I/71rtDPsJETL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B091Q4N249/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2eadb"
+  },
+  {
+    "id": 1915,
+    "title": "Amazon Product 195",
+    "price": 0,
+    "description": "Demetex Gold Throw Pillow Covers Super Soft Velvet Pillows Lumbar Modern Rectangle Decorative Bed Pillow Cover for Couch Patio, Set of 2, 12x20 inches, Gold",
+    "image": "https://m.media-amazon.com/images/I/81X0py5KmWS._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09435T82J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f8d8a9"
+  },
+  {
+    "id": 1916,
+    "title": "Amazon Product 196",
+    "price": 0,
+    "description": "AELS 3D Large Lips Throw Pillows Smooth Soft Velvet Decorative Throw Pillows Love Pillows Cute Pillow 24 X 12 inches for Couch Sofa Bed Living Room Bedroom, Gold",
+    "image": "https://m.media-amazon.com/images/I/81BubcwWETL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B5R6CRRG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#684c25"
+  },
+  {
+    "id": 1917,
+    "title": "Amazon Product 197",
+    "price": 0,
+    "description": "EUCIOR Champagne Throw Pillows 18x18, Gold and White Pillow Covers, Set of 2, Glitter Decorative Velvet Pillow Covers, Solid Color Cushion Covers for Sofa Bedroom Car",
+    "image": "https://m.media-amazon.com/images/I/91sIk5y4WEL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09VKJPQ7H/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ebc68a"
+  },
+  {
+    "id": 1918,
+    "title": "Amazon Product 198",
+    "price": 0,
+    "description": "Cervical Neck Pillow - Memory Foam Pillow for Neck Support and Pain Relief, Ergonomic Contour Pillow for Side Back and Stomach Sleepers, Soft and Cooling Ice Silk Washable Pillowcase",
+    "image": "https://m.media-amazon.com/images/I/71T7FgyaBtL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DB1S59RR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5d3dc"
+  },
+  {
+    "id": 1919,
+    "title": "Amazon Product 199",
+    "price": 0,
+    "description": "Alerfa Gold Leather Striped Black Throw Pillow Cover 18x18 Inch, Geometric Luxury Decorative Embroidered Velvet Pillow Cover for Couch Living Room Bedroom",
+    "image": "https://m.media-amazon.com/images/I/61s5VnMzGJL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08H8NJFNX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1d3bd"
+  },
+  {
+    "id": 1920,
+    "title": "Amazon Product 200",
+    "price": 0,
+    "description": "Mellanni Pillow Cases - Luxury, Extra Soft, Cooling Pillow Covers - 2 PC Iconic Collection Pillowcases - Envelope Closure (Standard/Queen 20\" x 30\", Gold)",
+    "image": "https://m.media-amazon.com/images/I/61Rq5tIlWrL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00RKHWWTI/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c39451"
+  }
+
 ];
