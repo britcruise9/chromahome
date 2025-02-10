@@ -13721,5 +13721,815 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CQKS1GFJ/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#dcd7cf"
+  },
+   {
+    "id": 1370,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "VINGLI Accent Chair for Living Room Chairs Olive Green Reading Chair for Bedroom Scooped Arm Chair Mid Century Modern Accent Chairs Upholstered Comfy Chair for Apartment, Waiting Room",
+    "image": "https://m.media-amazon.com/images/I/71pC0ZzN29L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7P5QLHK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#72764f"
+  },
+  {
+    "id": 1371,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "VINGLI Accent Chairs Set of 2 Living Room Chairs Olive Green Reading Chair for Bedroom Scooped Arm Chair Mid Century Modern Accent Chairs Upholstered Comfy Chair for Apartment, Waiting Room",
+    "image": "https://m.media-amazon.com/images/I/71yhjjKqq3L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7P8N785/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#72754f"
+  },
+  {
+    "id": 1372,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "Yaheetech Barrel Chairs, Furry Accent Chairs, Sherpa Chairs with Soft Padded Armrest, Fuzzy Club Chairs for Living Room Bedroom Waiting Room Office, Accent Chairs Set of 2, Dark Green",
+    "image": "https://m.media-amazon.com/images/I/81MxqEYkO7L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMSTS645/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#434735"
+  },
+  {
+    "id": 1373,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "MIULEE Pack of 1 Olive Green Textured Boucle Throw Pillow Cover Soft Decorative Couch Accent Solid Lumbar Pillow Case for Spring Cushion Chair Sofa Bedroom Livingroom Home Decor，12x20 Inch",
+    "image": "https://m.media-amazon.com/images/I/61xNbaFHI+L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQLL5CR8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ebe9e5"
+  },
+  {
+    "id": 1374,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "Yaheetech Corduroy Accent Chair, Mid-Century Modern Armchair with Solid Wood Legs, Reading Leisure Chair with High Back for Living Room Bedroom Waiting Room Dark Green",
+    "image": "https://m.media-amazon.com/images/I/81bP85zRkkL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMP7K7WH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#444825"
+  },
+  {
+    "id": 1375,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Yaheetech Accent Barrel Chair, Corduroy Fabric Club Chair, Furry Sherpa Elegant Armchair with Cozy Soft Padded, Suitable for Living Room Bedroom Reception Room Office, Dark Green",
+    "image": "https://m.media-amazon.com/images/I/91Ya35+T1UL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMSXXRF3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#454a37"
+  },
+  {
+    "id": 1376,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Karl home Mid-Century Modern Accent Chair, Living Room Chairs with Pillow Upholstered Lounge Armchair with Solid Wood Frame & Soft Cushion for Bedroom, Reading Room, Corduroy Green (Low Back)",
+    "image": "https://m.media-amazon.com/images/I/81V6eBmdcuL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DDL3G4WH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cbc7bd"
+  },
+  {
+    "id": 1377,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "Yaheetech Mid-Century Accent Chairs, Modern Upholstered Living Room Chair, Cozy Armchair Button Tufted Back and Wood Legs for Bedroom/Office/Cafe, Yellow",
+    "image": "https://m.media-amazon.com/images/I/91ygISF55NL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BJTLN6H6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6f6624"
+  },
+  {
+    "id": 1378,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "Yaheetech Corduroy Barrel Chair, Upholstered Club Chair Accent Chair, Round Armchair Waiting Room Chair with Soft Cushion for Living Room Bedroom Reading Room, Dark Green",
+    "image": "https://m.media-amazon.com/images/I/91ssj2YDS9L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DLP4PVW1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#464a37"
+  },
+  {
+    "id": 1379,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "Mid-Century Accent Chair, Modern Linen Fabric Armchair for Living Room, Comfy Upholstered Reading Accent Chairs for Bedroom, Single Sofa Chair with Wood Legs (Beige, 1 Pack)",
+    "image": "https://m.media-amazon.com/images/I/91CvB2f6yOL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQQ3R1VX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4cbc0"
+  },
+  {
+    "id": 1380,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "Mid-Century Accent Chair, Modern Linen Fabric Armchair for Living Room, Comfy Upholstered Reading Accent Chairs for Bedroom, Single Sofa Chair with Wood Legs (Beige, 1 Pack)",
+    "image": "https://m.media-amazon.com/images/I/91CvB2f6yOL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQQ3R1VX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4cbc0"
+  },
+  {
+    "id": 1381,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "INZOY Mid Century Modern Accent Chair with Wood Frame, Upholstered Living Room Chairs with Waist Cushion, Reading Armchair for Bedroom Sunroom (Green)",
+    "image": "https://m.media-amazon.com/images/I/71DIHfZTjmL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C1686DY1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c6beb9"
+  },
+  {
+    "id": 1382,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "HollyHOME Modern Fabric Large Lazy Chair, Accent Oversized Comfy Reading Chair, Thick Padded Cozy Lounge Chair with Armrest, Steel Frame Leisure Sofa Chair for Living Room, Bedroom, Dorm, Army Green",
+    "image": "https://m.media-amazon.com/images/I/61d86be6S0L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09K79HH64/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#89877b"
+  },
+  {
+    "id": 1383,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "COLAMY Modern Wingback Living Room Chair, Upholstered Fabric Accent Armchair, Single Sofa Chair with Lounge Seat and Wood Legs for Bedroom/Office/Reading Spaces, Green",
+    "image": "https://m.media-amazon.com/images/I/81ZBat4Q92L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CW2WMSQN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8d8c77"
+  },
+  {
+    "id": 1384,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "COLAMY Modern Wingback Living Room Chair, Upholstered Fabric Accent Armchair, Single Sofa Chair with Lounge Seat and Wood Legs for Bedroom/Office/Reading Spaces, Green",
+    "image": "https://m.media-amazon.com/images/I/81ZBat4Q92L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CW2WMSQN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8d8c77"
+  },
+  {
+    "id": 1385,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "ANJHOME Mid Century Modern Accent Chair, Comfy Fabric Reading Chair with Solid Wood Frame, Easy Assembly Armchair for Living Room Blackish Green",
+    "image": "https://m.media-amazon.com/images/I/71XUsTlvL3L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C1B437F5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#93897b"
+  },
+  {
+    "id": 1386,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "COLAMY Modern Upholstered Accent Chair Armchair with Pillow, Fabric Reading Living Room Side Chair, Single Sofa with Lounge Seat and Wood Legs, Green",
+    "image": "https://m.media-amazon.com/images/I/81Jo72gI-UL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJLH9MJ4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4b503c"
+  },
+  {
+    "id": 1387,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "Meditation Chair Plus, Cross Legged Chair with Wheels, ADHD Chair, Criss Cross Desk Chair with Lumbar Support and Adjustable Stool, Flexible Design for Fidgety Sitters, Black",
+    "image": "https://m.media-amazon.com/images/I/51+mHUzAEQL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BKVNXD97/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#525a42"
+  },
+  {
+    "id": 1388,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "Meditation Chair, ADHD Chair, Cross Legged Office Chair with Wheels, Criss Cross Desk Chair with Lumbar Support and Adjustable Stool, Flexible Design for Fidgety Sitters, Ivory",
+    "image": "https://m.media-amazon.com/images/I/71AuM9h76nL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09KN78D15/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#242426"
+  },
+  {
+    "id": 1389,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "Meditation Chair Pro, Home Office Desk Chair, Cross Legged Chair with Height Adjustable Backrest and Adjustable Stool, Flexible Design for Fidgety Sitters, Tan",
+    "image": "https://m.media-amazon.com/images/I/51xXpUC3gjL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CCTWYK8N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fdfefa"
+  },
+  {
+    "id": 1390,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "Art Leon Office Chair No Wheels - Mid Century Modern Desk Chair, Swivel Accent Chair with Oak Wood Legs, Fabric Upholstered Arm Chair, Green",
+    "image": "https://m.media-amazon.com/images/I/91aDZ56S8fL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DTNZ1NHZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a89d86"
+  },
+  {
+    "id": 1391,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Yaheetech Velvet Accent Chair, Modern Armchair Vanity Chair with Wing Side and Metal Legs, Cozy and Soft Padded and High Back for Living Room/Makeup/Office/Bedroom, Green",
+    "image": "https://m.media-amazon.com/images/I/71jWWl5WIRL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BN18PSRG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#99ac7f"
+  },
+  {
+    "id": 1392,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "Mid-Century Living Room Chair Set of 2, Modern Wingback Accent Chairs, Upholstered Armchair with Button Tufted Back and Wood Legs for Bedroom/Reading Spaces/Office, Green",
+    "image": "https://m.media-amazon.com/images/I/81IbJvWIN1L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DT6L1SNF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5d1c3"
+  },
+  {
+    "id": 1393,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "VINGLI Chenille Low Seat Rocking Chair, Upholstered Nursery Glider Chair with Side Pockets, Accent Arm Chair with High Backrest, Comfy Head Rest, Solid Wood, for Living Room Bedroom Balcony, Olive Green",
+    "image": "https://m.media-amazon.com/images/I/81fZxtlyLVL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8HF6XL3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#545943"
+  },
+  {
+    "id": 1394,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "Yaheetech Velvet Accent Chair, Modern and Comfortable Armchairs, Upholstered Barrel Sofa Chair for Living Room Bedroom Waiting Room, Olive Green",
+    "image": "https://m.media-amazon.com/images/I/81RRTl2CAML._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CDKQLF6H/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#968b6b"
+  },
+  {
+    "id": 1395,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "Mid Century Modern Chair, Accent Chair Barrel with Ottoman Comfy Arm Footrest Set Comfortable Living Room Chairs Upholstered Round Club Tub Sofa for Bedroom Reading Green, Set of 1",
+    "image": "https://m.media-amazon.com/images/I/71kd7cDilLL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C64TQ7MZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a6a28d"
+  },
+  {
+    "id": 1396,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "New Cozy Sherpa Accent Chairs for Living Room, 23” Wide Comfy Chair for Bedroom, Small Lounge Reading Chair, 108° Recliner Arm Chair, Mid Century Modern Armchair with Detachable Cover",
+    "image": "https://m.media-amazon.com/images/I/81XHcd7MSPL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMST661X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a6ac8a"
+  },
+  {
+    "id": 1397,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "Faux Leather Accent Chair, Mid Century Modern Chairs for Living Room, Upholstered Comfy Armchair Bedroom Side Arm Chair with Rubber Wood, 105° Ergonomic, Comfort Cushion and Wide Sitting",
+    "image": "https://m.media-amazon.com/images/I/81tsnN38D0L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DR8Q8XFZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cec3bb"
+  },
+  {
+    "id": 1398,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "Karl home Accent Chair Wide Armrest Mid-Century Lounge Chair Linen Fabric Armchair with Lumbar Pillow & Solid Wood Frame for Living Room, Bedroom, Balcony, Green",
+    "image": "https://m.media-amazon.com/images/I/81UY7McoC8L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7953MH6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#895430"
+  },
+  {
+    "id": 1399,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "Lohoms Mid Century Modern Fabric Accent Chair Single Sofa Comfy Upholstered Arm Chair Living Room Furniture, Green",
+    "image": "https://m.media-amazon.com/images/I/81i0DAYLp8L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09JWDNTYG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9c9868"
+  },
+  {
+    "id": 1400,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "LINSY Accent Chair with Ottoman, Modern Barrel Chair Comfy Armchair Reading Chair with Footrest, Round Arms Chair for Living Room Bedroom Reading Room, Velvet, Olive",
+    "image": "https://m.media-amazon.com/images/I/81KQb2r8CFL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DD3TTYXG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#898f6b"
+  },
+  {
+    "id": 1401,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "Velvet Accent Chair w/Adjustable Armrests and Backrest, Button Tufted Lounge Chair, Single Recliner Armchair with Ottoman and Pillow for Living Room, Bedroom, Olive Green",
+    "image": "https://m.media-amazon.com/images/I/71+d1Cq6A6L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BJD9CH77/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#45482c"
+  },
+  {
+    "id": 1402,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "Andeworld Velvet Accent Chair, Upholstered Modern Single Sofa Side Chair, Comfy Barrel Club Living Room Armchair with Golden Metal Legs for Bedroom Living Reading Room Office, Green",
+    "image": "https://m.media-amazon.com/images/I/8127mw-OLvL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BG28GVGH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2d4639"
+  },
+  {
+    "id": 1403,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "Armen Living Jaguar Mid Century Modern Dining Accent Chair for Kitchen Table Desk Vanity in Green Fabric and Walnut Wood Finish",
+    "image": "https://m.media-amazon.com/images/I/81cz5uHDRLL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01MQE0UFF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b49e65"
+  },
+  {
+    "id": 1404,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "VINGLI Solid Wood Wide Armrests Accent Chair, Upholstered Mid Century Modern Chair with Pillow, Comfy Reading Chair Farmhouse Arm Chair, Chairs Living Room, Bedroom, Guest Room, Linen Fabric, Dark Green",
+    "image": "https://m.media-amazon.com/images/I/811h07GEZZL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7MPYBLW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b5a28b"
+  },
+  {
+    "id": 1405,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "COLAMY Upholstered Velvet Barrel Accent Chair with Storage Ottoman, Morden Living Room Chair with Lounge Seat for Bedroom/Reading Spaces, Green",
+    "image": "https://m.media-amazon.com/images/I/71T6Xk80kxL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFY1MMXV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b6b07e"
+  },
+  {
+    "id": 1406,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "COLAMY Velvet Barrel Accent Chair, Mid Century Modern Living Room Chair, Upholstered Side Armchair with 3 Legs for Bedroom/Reading Spaces, Green",
+    "image": "https://m.media-amazon.com/images/I/81jQGH1dhnL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFYDHBD4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b1b099"
+  },
+  {
+    "id": 1407,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "Chenille Oversized Armchair - Modern Accent Chair & Single Sofa Lounge, 34\" Wide, Comfortable Seating for Living Room & Bedroom, Green",
+    "image": "https://m.media-amazon.com/images/I/71mObwXcSFL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CV3F2XTV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bebab3"
+  },
+  {
+    "id": 1408,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "VINGLI Olive Green Accent Chair 38\" Oversized Reading Chair Comfy Upholstered Lounge Armchair Soft Chenille Living Room Chairs Single Sofa Chair for Bedroom, Office",
+    "image": "https://m.media-amazon.com/images/I/81WJ1A55wbL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DRCX9JDF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#878671"
+  },
+  {
+    "id": 1409,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "Accent Arm Chairs for Living Room, Chenille Upholstered Mordern Armchair, Comfy Soft Padded Lounge Chair in Small Spaces, Bedroom, Pillow, Solid Wood Leg, Olive Green",
+    "image": "https://m.media-amazon.com/images/I/81RIsm9UMtL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C7MVG827/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a6ae73"
+  },
+  {
+    "id": 1410,
+    "title": "Amazon Product 41",
+    "price": 0,
+    "description": "VINGLI Upgraded Premium Corduroy Accent Chair, Upholstered Arm Chair, Solid Wood Comfy Reading Chair with Lumbar Pillow, Mid Century Modern Chairs for Living Room, Bedroom, Guest Room, Green",
+    "image": "https://m.media-amazon.com/images/I/81u8t+jI14L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFMPZC93/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6f6144"
+  },
+  {
+    "id": 1411,
+    "title": "Amazon Product 42",
+    "price": 0,
+    "description": "YOUNUOKE Green Dining Chairs Set of 2 Mid-Century Modern Kitchen Dining Room Chairs Armless Faux Leather Upholstered Accent Side Dinner Chair with Padded Back Metal Legs, Olive",
+    "image": "https://m.media-amazon.com/images/I/81kMrlVZX1L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVFMKMN6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c1b877"
+  },
+  {
+    "id": 1412,
+    "title": "Amazon Product 43",
+    "price": 0,
+    "description": "YOUNUOKE Green Dining Chairs Set of 2 Mid-Century Modern Kitchen Dining Room Chairs Armless Faux Leather Upholstered Accent Side Dinner Chair with Padded Back Metal Legs, Olive",
+    "image": "https://m.media-amazon.com/images/I/81kMrlVZX1L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVFMKMN6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8d9a6c"
+  },
+  {
+    "id": 1413,
+    "title": "Amazon Product 44",
+    "price": 0,
+    "description": "YOUNUOKE Green Dining Chairs Set of 2 Mid-Century Modern Kitchen Dining Room Chairs Armless Faux Leather Upholstered Accent Side Dinner Chair with Padded Back Metal Legs, Olive",
+    "image": "https://m.media-amazon.com/images/I/81kMrlVZX1L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVFMKMN6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#454930"
+  },
+  {
+    "id": 1414,
+    "title": "Amazon Product 45",
+    "price": 0,
+    "description": "YOUNUOKE Green Dining Chairs Set of 2 Mid-Century Modern Kitchen Dining Room Chairs Armless Faux Leather Upholstered Accent Side Dinner Chair with Padded Back Metal Legs, Olive",
+    "image": "https://m.media-amazon.com/images/I/81kMrlVZX1L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVFMKMN6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#859161"
+  },
+  {
+    "id": 1415,
+    "title": "Amazon Product 46",
+    "price": 0,
+    "description": "YOUNUOKE Green Dining Chairs Set of 2 Mid-Century Modern Kitchen Dining Room Chairs Armless Faux Leather Upholstered Accent Side Dinner Chair with Padded Back Metal Legs, Olive",
+    "image": "https://m.media-amazon.com/images/I/81kMrlVZX1L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVFMKMN6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#636b48"
+  },
+  {
+    "id": 1416,
+    "title": "Amazon Product 47",
+    "price": 0,
+    "description": "YOUNUOKE Green Dining Chairs Set of 2 Mid-Century Modern Kitchen Dining Room Chairs Armless Faux Leather Upholstered Accent Side Dinner Chair with Padded Back Metal Legs, Olive",
+    "image": "https://m.media-amazon.com/images/I/81kMrlVZX1L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVFMKMN6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#79855f"
+  },
+  {
+    "id": 1417,
+    "title": "Amazon Product 48",
+    "price": 0,
+    "description": "Swivel Accent Chair-Corduroy Ultra-Soft and Cozy, Round Swivel Chair for 360° Metal Base, Swivel Barrel Chair Modern for 3 Large Throw Pillows, Hidden Zippers, Oversized Swivel Chairs for Living Room",
+    "image": "https://m.media-amazon.com/images/I/81RE7cd-KUL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CMF3Z5FL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a9b294"
+  },
+  {
+    "id": 1418,
+    "title": "Amazon Product 49",
+    "price": 0,
+    "description": "Swivel Accent Chair-Corduroy Ultra-Soft and Cozy, Round Swivel Chair for 360° Metal Base, Swivel Barrel Chair Modern for 3 Large Throw Pillows, Hidden Zippers, Oversized Swivel Chairs for Living Room",
+    "image": "https://m.media-amazon.com/images/I/81RE7cd-KUL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CMF3Z5FL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7b7b79"
+  },
+  {
+    "id": 1419,
+    "title": "Amazon Product 50",
+    "price": 0,
+    "description": "Swivel Accent Chair-Corduroy Ultra-Soft and Cozy, Round Swivel Chair for 360° Metal Base, Swivel Barrel Chair Modern for 3 Large Throw Pillows, Hidden Zippers, Oversized Swivel Chairs for Living Room",
+    "image": "https://m.media-amazon.com/images/I/81RE7cd-KUL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CMF3Z5FL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6d6d6b"
+  },
+  {
+    "id": 1420,
+    "title": "Amazon Product 51",
+    "price": 0,
+    "description": "Yaheetech Accent Chair, Modern Barrel Vanity Chair with Gold Metal Legs, Tufted Accent Armchair for Living Room/Bedroom/Office/Makeup Room Green, Green",
+    "image": "https://m.media-amazon.com/images/I/81qCmKO41vL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BGRYSX8R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#5e5e5c"
+  },
+  {
+    "id": 1421,
+    "title": "Amazon Product 52",
+    "price": 0,
+    "description": "JOYBASE Lounge Arm Chair, Mid Century Modern Accent Chair, Wood Frame Armchair for Living Room, Bedroom (Emerald, Fabric)",
+    "image": "https://m.media-amazon.com/images/I/819ZhVdrMoL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BCR66F39/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#086f48"
+  },
+  {
+    "id": 1422,
+    "title": "Amazon Product 53",
+    "price": 0,
+    "description": "Roundhill Furniture Pisano Fabric Armless Contemporary Accent Chair with Kidney Pillow, Single, Green",
+    "image": "https://m.media-amazon.com/images/I/91H-YGZIeZL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B017UM93HG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4f645b"
+  },
+  {
+    "id": 1423,
+    "title": "Amazon Product 54",
+    "price": 0,
+    "description": "Roundhill Furniture Slatina Green Silky Velvet Upholstered Accent Chair with Gold Tone Finished Base",
+    "image": "https://m.media-amazon.com/images/I/91gp5MkdaBL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08HSKQRYN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c1c297"
+  },
+  {
+    "id": 1424,
+    "title": "Amazon Product 55",
+    "price": 0,
+    "description": "Olive Green Accent Chairs for Living Room, Modern Upholstered Accent Chair Comfy Velvet Armchair with Thick Cushion, Single Sofa/Side Chair for Bedroom Office Reading Chair",
+    "image": "https://m.media-amazon.com/images/I/61zIil0nzCL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNKJM82J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#308679"
+  },
+  {
+    "id": 1425,
+    "title": "Amazon Product 56",
+    "price": 0,
+    "description": "Olive Green Accent Chairs for Living Room, Modern Upholstered Accent Chair Comfy Velvet Armchair with Thick Cushion, Single Sofa/Side Chair for Bedroom Office Reading Chair",
+    "image": "https://m.media-amazon.com/images/I/61zIil0nzCL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNKJM82J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3e4326"
+  },
+  {
+    "id": 1426,
+    "title": "Amazon Product 57",
+    "price": 0,
+    "description": "Olive Green Accent Chairs for Living Room, Modern Upholstered Accent Chair Comfy Velvet Armchair with Thick Cushion, Single Sofa/Side Chair for Bedroom Office Reading Chair",
+    "image": "https://m.media-amazon.com/images/I/61zIil0nzCL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNKJM82J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3e4326"
+  },
+  {
+    "id": 1427,
+    "title": "Amazon Product 58",
+    "price": 0,
+    "description": "mopio Arthur Recliner Chair with 3 Positions, Accent Armchair, Mid Century Modern Reading Chair, High Back Padded Support Comfy Sleeper Armchair (Olive Green Velvet)",
+    "image": "https://m.media-amazon.com/images/I/71X7-TlNhwL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CWGNLGXC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a18e76"
+  },
+  {
+    "id": 1428,
+    "title": "Amazon Product 59",
+    "price": 0,
+    "description": "Swivel Accent Chair, Comfy Modern Barrel Chair with Skirt for Bedroom, 360°Upholstered Velvet Small Cozy Club Chair for Living Room Nursery Lounge Compact Space, Olive Green",
+    "image": "https://m.media-amazon.com/images/I/81sNIRFw+HL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHS5S51D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#535641"
+  },
+  {
+    "id": 1429,
+    "title": "Amazon Product 60",
+    "price": 0,
+    "description": "COLAMY Accent Chair, Modern Fabric Accent Barrel Chair with Solid Rubberwood Legs, Comfy and Soft Armchair for Living Room, Bedroom, Reception Room, Office, Beige",
+    "image": "https://m.media-amazon.com/images/I/61d+M7ObL8L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMZT7STY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c5bf5d"
+  },
+  {
+    "id": 1430,
+    "title": "Amazon Product 61",
+    "price": 0,
+    "description": "COLAMY Accent Chair, Modern Fabric Accent Barrel Chair with Solid Rubberwood Legs, Comfy and Soft Armchair for Living Room, Bedroom, Reception Room, Office, Beige",
+    "image": "https://m.media-amazon.com/images/I/61d+M7ObL8L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMZT7STY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ded9d4"
+  },
+  {
+    "id": 1431,
+    "title": "Amazon Product 62",
+    "price": 0,
+    "description": "COLAMY Accent Chair, Modern Fabric Accent Barrel Chair with Solid Rubberwood Legs, Comfy and Soft Armchair for Living Room, Bedroom, Reception Room, Office, Beige",
+    "image": "https://m.media-amazon.com/images/I/61d+M7ObL8L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMZT7STY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ded9d4"
+  },
+  {
+    "id": 1432,
+    "title": "Amazon Product 63",
+    "price": 0,
+    "description": "Button Tufted Beige Velvet Accent Chair, Mid Century Armchair with Solid Wood Legs, Upholstered Single Sofa for Living Room, Bedroom, Apartment, Office, Waiting Room",
+    "image": "https://m.media-amazon.com/images/I/81ehITPyn5L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DC64BQVS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d9d5cd"
+  },
+  {
+    "id": 1433,
+    "title": "Amazon Product 64",
+    "price": 0,
+    "description": "Furniliving Upholstered Swivel Accent Chair for Living Room, Modern Armchair Side Chair with Headrest Bedroom Chair with Metal Legs Comfy Sofa Chairs with Pillow, Large, Corduroy, Green",
+    "image": "https://m.media-amazon.com/images/I/8162m7bC9NL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4LZPWMN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0dbd7"
+  },
+  {
+    "id": 1434,
+    "title": "Amazon Product 65",
+    "price": 0,
+    "description": "CDCASA Accent Chair, Linen Fabric Oversized Mid Century Modern Chair Set of 1, Comfy Upholstered Armchair Reading Accent Chairs Sofa Chairs for Bedroom Living Room, Green",
+    "image": "https://m.media-amazon.com/images/I/911OtRFbDDL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BN7VD9N6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#586553"
+  },
+  {
+    "id": 1435,
+    "title": "Amazon Product 66",
+    "price": 0,
+    "description": "KERDOM Office Chair, Ergonomic Desk Chair with Adjustable Lumbar Support, Rolling Swivel Executive Computer Chair with Flip-up Armrest, Breathable Mesh Gaming Chair Home Office, Black Office Chair",
+    "image": "https://m.media-amazon.com/images/I/8176oT1NmhL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYGQ9RYL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#363434"
+  },
+  {
+    "id": 1436,
+    "title": "Amazon Product 67",
+    "price": 0,
+    "description": "KERDOM Ergonomic Mesh Office Chair with Flip-Up Armrests, Lumbar Support, Thickened Cushion, and Smooth-Gliding Wheels for Home Office Desk Computer, Green",
+    "image": "https://m.media-amazon.com/images/I/81fCLJquKvL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYH3ZF5P/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dddacf"
+  },
+  {
+    "id": 1437,
+    "title": "Amazon Product 68",
+    "price": 0,
+    "description": "360° Swivel Barrel Chair Set of 2, Modern Velvet Round Accent Chair, Comfy Upholstered Small Armchair with Gold Metal Base for Living Room Bedroom Nursery Office Sillas Para Sala, Olive Green",
+    "image": "https://m.media-amazon.com/images/I/71ENpW-dtqL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3VJK8QD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7ca259"
+  },
+  {
+    "id": 1438,
+    "title": "Amazon Product 69",
+    "price": 0,
+    "description": "Oversized Accent Chair with Armrest Organizer, Comfy Living Room Chairs with Thick Cushion, Upholstered Modern Armchair, Big Reading Chair, Sofa Chair for Bedroom, Green",
+    "image": "https://m.media-amazon.com/images/I/81RszQ2RgfL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCGLJB2V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#665c17"
+  },
+  {
+    "id": 1439,
+    "title": "Amazon Product 70",
+    "price": 0,
+    "description": "Chenille Oversized Armchair, 38.6” Wide Reading Accent Chair for Adults, Upholstered Mid Century Modern Lounge Chair for Living Room, Easily Assembled",
+    "image": "https://m.media-amazon.com/images/I/71htqMCJxDL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4Z98ZNV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#93936f"
+  },
+  {
+    "id": 1440,
+    "title": "Amazon Product 71",
+    "price": 0,
+    "description": "Chenille Oversized Armchair, 38.6” Wide Reading Accent Chair for Adults, Upholstered Mid Century Modern Lounge Chair for Living Room, Easily Assembled",
+    "image": "https://m.media-amazon.com/images/I/71htqMCJxDL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4Z98ZNV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#534e30"
+  },
+  {
+    "id": 1441,
+    "title": "Amazon Product 72",
+    "price": 0,
+    "description": "Velvet Swivel Accent Chair with Ottoman Set, Modern Tufted Armchair with Footrest for Living room, Reading TV Chair for adult, Comfy Chaise Lounge Chairs with 360 Degree Swiveling for bedroom, Olive Green",
+    "image": "https://m.media-amazon.com/images/I/71AieapCMnL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CVX7G3LJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7b7960"
+  },
+  {
+    "id": 1442,
+    "title": "Amazon Product 73",
+    "price": 0,
+    "description": "VINGLI Olive Green Velvet Accent Chairs Set of 2, Retro Mid Century Lounge Chairs for Living Room, Sturdy Upholstered Vintage Solid Wood Boho Farmhouse Armchairs for Bedroom/Apartment",
+    "image": "https://m.media-amazon.com/images/I/819AG0KuzIL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CWGWFSZ3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#948b47"
+  },
+  {
+    "id": 1443,
+    "title": "Amazon Product 74",
+    "price": 0,
+    "description": "Swivel Lounge Chair, Velvet Upholstered Accent Chair with 360 Degree Metal Base Comfy Recliner Chair Oversized Armchair for Living Room, Olive Green Velvet",
+    "image": "https://m.media-amazon.com/images/I/81rSoGfv4PL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DP2LYN33/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9ca471"
+  },
+  {
+    "id": 1444,
+    "title": "Amazon Product 75",
+    "price": 0,
+    "description": "LSSPAID Accent Chair, Green Fabric Upholstered Armchairs, Mid Century Modern Single Sofa Living Room Chairs with Wooden Legs, Set of 1",
+    "image": "https://m.media-amazon.com/images/I/81j-Uu9rgeL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BLVC1NH5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7f9a92"
+  },
+  {
+    "id": 1445,
+    "title": "Amazon Product 76",
+    "price": 0,
+    "description": "FelixKing Living Room Chairs with Ottoman - Modern Swivel Accent Chair Upholstered Lazy Chair Comfy Reading Chair for Bedroom/Living Room/Apartment Olive Green",
+    "image": "https://m.media-amazon.com/images/I/91r7bQzqQjL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKFK1DCJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7d5c9"
+  },
+  {
+    "id": 1446,
+    "title": "Amazon Product 77",
+    "price": 0,
+    "description": "SONGMICS Accent Leisure Chair, Mid-Century Modern Arm Chair with Solid Wood Armrests and Legs, 1-Seat Cushioned Sofa for Living Room Bedroom Balcony Studio, Olive Green ULAC001C01",
+    "image": "https://m.media-amazon.com/images/I/816eSRC3SML._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C6DFYT51/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#757355"
+  },
+  {
+    "id": 1447,
+    "title": "Amazon Product 78",
+    "price": 0,
+    "description": "Jennifer Taylor Home Pasadena 36\" Wide Modern Farmhouse Accent Arm Chair, Olive Green",
+    "image": "https://m.media-amazon.com/images/I/61dPT0R+d+L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DPY799HZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b1b09c"
+  },
+  {
+    "id": 1448,
+    "title": "Amazon Product 79",
+    "price": 0,
+    "description": "Teddy Cloud Sofa Couch, Modern Deep Seat Boucle Single Sofa Chair, Comfy Upholstered Sherpa Couch with Pillow, Oversized Accent Armchair for Living Room Apartment Office, Olive Green",
+    "image": "https://m.media-amazon.com/images/I/91Toh1ES-yL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8CMCWSF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c0c197"
+  },
+  {
+    "id": 1449,
+    "title": "Amazon Product 80",
+    "price": 0,
+    "description": "Modern Accent Chair, Upholstered Armchair with Pillow, Fabric Single Sofa Chair with Lounge Seat and Wood Legs Accent Chair for Living Room Bedroom Small Spaces (Orange, Set of 1)",
+    "image": "https://m.media-amazon.com/images/I/919a3HmYhyL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKXFJTBZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9f9d7c"
+  },
+  {
+    "id": 1450,
+    "title": "Amazon Product 81",
+    "price": 0,
+    "description": "AODAILIHB Green Velvet Accent Chair Set of 2 with Pillow, Mid Century Modern Accent Chair with Arms, Button Tufted Comfy Single Sofa Chair Side Chair for Living Room, Bedroom, Office(2, Green)",
+    "image": "https://m.media-amazon.com/images/I/71VQ7Drnu3L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9Y892YD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e68e58"
   }
 ];
