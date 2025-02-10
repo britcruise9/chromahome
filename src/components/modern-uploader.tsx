@@ -209,8 +209,8 @@ const ModernUploader = () => {
 
       {view === "results" && (
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-center gap-4 mb-8">
-            <div className="flex justify-center gap-4 md:gap-4">
+          <div className="flex justify-center mb-8">
+            <div className="w-full max-w-md px-4 flex justify-between md:gap-4">
               {/* Primary Color */}
               <div className="flex flex-col items-center">
                 <div
@@ -231,7 +231,7 @@ const ModernUploader = () => {
                     style={{ backgroundColor: complementaryColor }}
                     onClick={() => handleColorClick(complementaryColor)}
                   />
-                  <span className="text-xs md:text-sm text-white/60 mt-2">Complementary</span>
+                  <span className="text-xs md:text-sm text-white/60 mt-2">Compliment</span>
                 </div>
               )}
 
@@ -263,7 +263,6 @@ const ModernUploader = () => {
                     <div className="text-xs text-white/60">New Color</div>
                   </label>
                 </div>
-                <span className="text-xs md:text-sm text-white/60 mt-2">Upload</span>
               </div>
             </div>
           </div>
