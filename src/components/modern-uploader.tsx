@@ -253,7 +253,7 @@ const ModernUploader = () => {
                 <div className="w-14 h-14 md:w-24 md:h-24 rounded-xl bg-slate-800/50 flex items-center justify-center cursor-pointer hover:bg-slate-800/70 transition-all">
                   <input
                     type="file"
-                    accept="image/*"
+                    accept="image/*,capture=camera"
                     onChange={handleFileInput}
                     className="hidden"
                     id="newColorUpload"
