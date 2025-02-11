@@ -181,9 +181,9 @@ export default function ModernUploader() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
 
-      {/* HERO BANNER SECTION */}
+      {/* HERO BANNER SECTION (shrunken ~25%) */}
       <div
-        className="relative h-[50vh] md:h-[60vh] bg-cover bg-center mb-12"
+        className="relative h-[38vh] md:h-[45vh] bg-cover bg-center mb-12"
         style={{
           backgroundImage:
             "url('https://hips.hearstapps.com/hmg-prod/images/living-room-paint-colors-hbx040122inspoindex-012-copy-1655397674-653fda462b085.jpg?crop=0.752xw:1.00xh;0.120xw,0&resize=1120:*')",
