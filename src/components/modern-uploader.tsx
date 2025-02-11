@@ -5,17 +5,82 @@ import { Upload } from 'lucide-react';
 
 declare const ColorThief: any;
 
-// ---------- Color Utilities ----------
+// ----- Color Utilities -----
 const hexToHSL = (hex: string) => {
-  // ...
+  let r = parseInt(hex.slice(1, 3), 16) / 255;
+  let g = parseInt(hex.slice(3, 5), 16) / 255;
+  let b = parseInt(hex.slice(5, 7), 16) / 255;
+
+  let max = Math.max(r, g, b);
+  let min = Math.min(r, g, b);
+  let h = 0,
+    s = 0,
+    l = (max + min) / 2;
+
+  if (max !== min) {
+    const d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+
+    switch (max) {
+      case r:
+        h = (g - b) / d + (g < b ? 6 : 0);
+        break;
+      case g:
+        h = (b - r) / d + 2;
+        break;
+      case b:
+        h = (r - g) / d + 4;
+        break;
+    }
+    h /= 6;
+  }
+
+  // RETURN the h, s, l object:
+  return {
+    h: h * 360,
+    s: s * 100,
+    l: l * 100,
+  };
 };
+
 const hslToHex = (h: number, s: number, l: number) => {
-  // ...
+  h /= 360;
+  s /= 100;
+  l /= 100;
+  let r: number, g: number, b: number;
+
+  if (s === 0) {
+    r = g = b = l;
+  } else {
+    const hue2rgb = (p: number, q: number, t: number) => {
+      if (t < 0) t += 1;
+      if (t > 1) t -= 1;
+      if (t < 1 / 6) return p + (q - p) * 6 * t;
+      if (t < 1 / 2) return q;
+      if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+      return p;
+    };
+
+    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+    const p = 2 * l - q;
+    r = hue2rgb(p, q, h + 1 / 3);
+    g = hue2rgb(p, q, h);
+    b = hue2rgb(p, q, h - 1 / 3);
+  }
+
+  const toHex = (x: number) => {
+    const hex = Math.round(x * 255).toString(16);
+    return hex.length === 1 ? '0' + hex : hex;
+  };
+
+  return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
 };
+
 const getComplementaryColor = (hex: string) => {
   const hsl = hexToHSL(hex);
   return hslToHex((hsl.h + 180) % 360, hsl.s, hsl.l);
 };
+
 const getTriadicColors = (hex: string) => {
   const hsl = hexToHSL(hex);
   return [
@@ -23,10 +88,12 @@ const getTriadicColors = (hex: string) => {
     hslToHex((hsl.h + 240) % 360, hsl.s, hsl.l),
   ];
 };
+
 const extractColor = async (file: File): Promise<string> => {
   return new Promise((resolve) => {
     const img = new Image();
     const colorThief = new ColorThief();
+
     img.onload = () => {
       try {
         const [r, g, b] = colorThief.getColor(img);
@@ -45,7 +112,6 @@ const extractColor = async (file: File): Promise<string> => {
   });
 };
 
-// ---------- Main Component ----------
 const ModernUploader = () => {
   const [products, setProducts] = useState<any[]>([]);
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
@@ -54,38 +120,38 @@ const ModernUploader = () => {
   const [activeColor, setActiveColor] = useState<string | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
 
-  // 1) On first load, just fetch all products (random or full list).
+  // 1) On first load, fetch a default product list
   useEffect(() => {
-    const fetchInitialProducts = async () => {
+    const fetchProducts = async () => {
       try {
         const response = await fetch('/api/products');
         const data = await response.json();
         setProducts(data);
       } catch (error) {
-        console.error('Error fetching products:', error);
+        console.error('Error fetching initial products:', error);
       }
     };
-    fetchInitialProducts();
+    fetchProducts();
   }, []);
 
-  // 2) Upload handler: extract main color, compute extra swatches, fetch filtered products
+  // 2) Handle file upload → extract color → set swatches → fetch matching products
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
+
     setIsProcessing(true);
     try {
       const color = await extractColor(file);
-      // Set main color and swatches
       setSelectedColor(color);
       setComplementaryColor(getComplementaryColor(color));
-      const [t1, t2] = getTriadicColors(color);
-      setTriadicColors([t1, t2]);
-      // Make the uploaded color active (for highlighting + fetch)
+      const [triad1, triad2] = getTriadicColors(color);
+      setTriadicColors([triad1, triad2]);
       setActiveColor(color);
 
-      // Fetch newly filtered products
-      const res = await fetch(`/api/products?color=${encodeURIComponent(color)}`);
-      setProducts(await res.json());
+      // Fetch color-based products
+      const response = await fetch(`/api/products?color=${encodeURIComponent(color)}`);
+      const matchedProducts = await response.json();
+      setProducts(matchedProducts);
     } catch (error) {
       console.error('Error processing image:', error);
     } finally {
@@ -101,7 +167,7 @@ const ModernUploader = () => {
       const res = await fetch(`/api/products?color=${encodeURIComponent(swatchColor)}`);
       setProducts(await res.json());
     } catch (error) {
-      console.error('Error fetching swatch products:', error);
+      console.error('Error fetching for swatch color:', error);
     } finally {
       setIsProcessing(false);
     }
@@ -111,7 +177,7 @@ const ModernUploader = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
       <div className="max-w-6xl mx-auto px-4 pt-12 pb-20">
 
-        {/* Title & Subtitle */}
+        {/* Title and Subtitle */}
         <h1 className="text-center font-bold mb-2 text-4xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500">
           SHOP BY COLOR
         </h1>
@@ -119,7 +185,7 @@ const ModernUploader = () => {
           Find Home Decor in Your Color
         </h2>
 
-        {/* Upload Box */}
+        {/* Upload Section */}
         <div className="max-w-2xl mx-auto mb-16">
           <label className="block w-full">
             <div className="relative group cursor-pointer">
@@ -145,14 +211,14 @@ const ModernUploader = () => {
             </p>
           </div>
 
-          {/* Swatches Row (only if we have a selected color) */}
+          {/* Swatches row (visible only after extracting a color) */}
           {selectedColor && (
             <div className="flex justify-center mb-8">
               <div className="w-full max-w-md px-4 flex justify-between md:gap-4">
-                {/* Primary */}
+                {/* Primary swatch */}
                 <div className="flex flex-col items-center">
                   <div
-                    className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer
+                    className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer 
                       ${activeColor === selectedColor ? 'ring-4 ring-white' : ''}`}
                     style={{ backgroundColor: selectedColor }}
                     onClick={() => handleSwatchClick(selectedColor)}
@@ -160,11 +226,11 @@ const ModernUploader = () => {
                   <span className="text-xs md:text-sm text-white/60 mt-2">Primary</span>
                 </div>
 
-                {/* Complementary */}
+                {/* Complementary swatch */}
                 {complementaryColor && (
                   <div className="flex flex-col items-center">
                     <div
-                      className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer
+                      className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer 
                         ${activeColor === complementaryColor ? 'ring-4 ring-white' : ''}`}
                       style={{ backgroundColor: complementaryColor }}
                       onClick={() => handleSwatchClick(complementaryColor)}
@@ -173,17 +239,17 @@ const ModernUploader = () => {
                   </div>
                 )}
 
-                {/* Triadic Colors */}
-                {triadicColors?.map((col, index) => (
-                  <div key={col} className="flex flex-col items-center">
+                {/* Triadic swatches */}
+                {triadicColors?.map((color, i) => (
+                  <div key={color} className="flex flex-col items-center">
                     <div
-                      className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer
-                        ${activeColor === col ? 'ring-4 ring-white' : ''}`}
-                      style={{ backgroundColor: col }}
-                      onClick={() => handleSwatchClick(col)}
+                      className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer 
+                        ${activeColor === color ? 'ring-4 ring-white' : ''}`}
+                      style={{ backgroundColor: color }}
+                      onClick={() => handleSwatchClick(color)}
                     />
                     <span className="text-xs md:text-sm text-white/60 mt-2">
-                      Triadic {index + 1}
+                      Triadic {i + 1}
                     </span>
                   </div>
                 ))}
@@ -216,10 +282,12 @@ const ModernUploader = () => {
                       {product.description}
                     </p>
                     <div className="flex items-center gap-2">
+                      {/* Dominant product color */}
                       <div
                         className="w-4 h-4 rounded-full"
                         style={{ backgroundColor: product.dominantColor }}
                       />
+                      {/* If user selected a color, show match info */}
                       {activeColor ? (
                         <>
                           <div
