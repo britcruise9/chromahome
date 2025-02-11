@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Upload } from 'lucide-react';
+import { Upload } from 'lucide-react'; // or any other arrow icon
+import { ArrowRight } from 'lucide-react';
 
 declare const ColorThief: any;
 
@@ -123,17 +124,12 @@ export default function ModernUploader() {
   const [activeColor, setActiveColor] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
 
-  // 1) On page load, fetch a default list of products (no caching).
+  // Fetch initial products
   useEffect(() => {
     const fetchInitialProducts = async () => {
       try {
         const res = await fetch('/api/products', { cache: 'no-store' });
-        if (!res.ok) {
-          console.error('Initial fetch error, status:', res.status);
-        }
-        const data = await res.json();
-        console.log('Initial products:', data);
-        setProducts(data);
+        setProducts(await res.json());
       } catch (err) {
         console.error('Initial fetch error:', err);
       }
@@ -141,7 +137,7 @@ export default function ModernUploader() {
     fetchInitialProducts();
   }, []);
 
-  // 2) Handle file upload → extract color → set swatches → fetch matching products
+  // Handle file upload
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -157,41 +153,29 @@ export default function ModernUploader() {
 
       const comp = getComplementaryColor(color);
       setComplementaryColor(comp);
-      const [t1, t2] = getTriadicColors(color);
-      setTriadicColors([t1, t2]);
 
-      // Clear old products for clarity
+      const [acc1, acc2] = getTriadicColors(color);
+      setTriadicColors([acc1, acc2]);
+
       setProducts([]);
 
-      // Fetch color-based products with no caching
       const encoded = encodeURIComponent(color);
       const res = await fetch(`/api/products?color=${encoded}`, { cache: 'no-store' });
-      if (!res.ok) {
-        console.error('Color fetch error, status:', res.status);
-      }
-      const data = await res.json();
-      console.log('File upload fetch results:', data);
-      setProducts(data);
+      setProducts(await res.json());
     } catch (error) {
       console.error('Error processing file:', error);
     }
   };
 
-  // 3) Clicking any swatch re-fetches products
+  // Swatch click → fetch new results
   const handleSwatchClick = async (color: string) => {
     setActiveColor(color);
-    // Clear old items so you see fresh results
     setProducts([]);
 
     try {
       const encoded = encodeURIComponent(color);
       const res = await fetch(`/api/products?color=${encoded}`, { cache: 'no-store' });
-      if (!res.ok) {
-        console.error('Swatch fetch error, status:', res.status);
-      }
-      const data = await res.json();
-      console.log('Swatch click data:', data);
-      setProducts(data);
+      setProducts(await res.json());
     } catch (err) {
       console.error('Swatch fetch error:', err);
     }
@@ -209,112 +193,109 @@ export default function ModernUploader() {
           Find Home Decor in Your Color
         </h2>
 
-        {/* Upload Box */}
-        <div className="max-w-2xl mx-auto mb-16">
-          <label className="block w-full">
-            <div className="group cursor-pointer border-2 border-dashed border-white/20 rounded-xl p-8 text-center hover:border-white/30 transition">
-              <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
-              <h3 className="text-xl text-white/90 mb-2">
-                {hasUploaded ? 'Upload new color' : 'Upload any color inspiration'}
-              </h3>
-              <p className="text-white/60">
-                Photo, screenshot, or image of paint, fabric, or wall
+        {/* Big Upload Box - hidden after first upload */}
+        {!hasUploaded && (
+          <div className="max-w-2xl mx-auto mb-16">
+            <label className="block w-full">
+              <div className="group cursor-pointer border-2 border-dashed border-white/20 rounded-xl p-8 text-center hover:border-white/30 transition">
+                <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
+                <h3 className="text-xl text-white/90 mb-2">Upload any color inspiration</h3>
+                <p className="text-white/60">Photo, screenshot, or image of paint, fabric, or wall</p>
+              </div>
+              <input
+                type="file"
+                className="hidden"
+                accept="image/*"
+                onChange={handleFileUpload}
+              />
+            </label>
+            <div className="text-center mt-6 mb-12">
+              <p className="text-white/70 text-lg">
+                After adding your color, we'll show you the best matches from our collection
               </p>
             </div>
-            <input
-              type="file"
-              className="hidden"
-              accept="image/*"
-              onChange={handleFileUpload}
-            />
-          </label>
-          <div className="text-center mt-6 mb-12">
-            <p className="text-white/70 text-lg">
-              After adding your color, we'll show you the best matches from our collection
-            </p>
           </div>
+        )}
 
-          {/* Swatch row (only if user has selected a color) */}
-          {selectedColor && (
-            <div className="flex justify-center mb-8">
-              <div className="flex items-end gap-4">
-                {/* Primary: half image, half color */}
-                <div className="flex flex-col items-center">
-                  <div
-                    onClick={() => handleSwatchClick(selectedColor)}
-                    className={`relative w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer overflow-hidden
-                      ${activeColor === selectedColor ? 'ring-4 ring-white' : ''}`}
-                  >
-                    {/* Left half: uploaded image preview */}
-                    {uploadedImageUrl && (
-                      <img
-                        src={uploadedImageUrl}
-                        alt="upload preview"
-                        className="absolute top-0 left-0 w-1/2 h-full object-cover"
-                      />
-                    )}
-                    {/* Right half: extracted color */}
-                    <div
-                      className="absolute top-0 right-0 w-1/2 h-full"
-                      style={{ backgroundColor: selectedColor }}
-                    />
-                  </div>
-                  <span className="text-xs md:text-sm text-white/60 mt-2">Primary</span>
-                  {/* “Change color” link under Primary */}
-                  <label
-                    htmlFor="changeColorInput"
-                    className="text-xs md:text-sm text-blue-400 hover:underline cursor-pointer"
-                  >
-                    Change color
-                  </label>
-                  <input
-                    id="changeColorInput"
-                    type="file"
-                    className="hidden"
-                    accept="image/*"
-                    onChange={handleFileUpload}
+        {/* Once uploaded, show row: Image → arrow → Primary → Compliment → Accent 1 → Accent 2 */}
+        {hasUploaded && selectedColor && (
+          <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
+            {/* Uploaded Image + "Change color" */}
+            <div className="flex flex-col items-center">
+              <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
+                {uploadedImageUrl && (
+                  <img
+                    src={uploadedImageUrl}
+                    alt="Uploaded"
+                    className="w-full h-full object-cover"
                   />
-                </div>
-
-                {/* Complementary */}
-                {complementaryColor && (
-                  <div className="flex flex-col items-center">
-                    <div
-                      onClick={() => handleSwatchClick(complementaryColor)}
-                      className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer
-                        ${activeColor === complementaryColor ? 'ring-4 ring-white' : ''}`}
-                      style={{ backgroundColor: complementaryColor }}
-                    />
-                    <span className="text-xs md:text-sm text-white/60 mt-2">Compliment</span>
-                  </div>
                 )}
-
-                {/* Triadic Colors */}
-                {triadicColors?.map((col, i) => (
-                  <div key={col} className="flex flex-col items-center">
-                    <div
-                      onClick={() => handleSwatchClick(col)}
-                      className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer
-                        ${activeColor === col ? 'ring-4 ring-white' : ''}`}
-                      style={{ backgroundColor: col }}
-                    />
-                    <span className="text-xs md:text-sm text-white/60 mt-2">
-                      Triadic {i + 1}
-                    </span>
-                  </div>
-                ))}
               </div>
+              {/* Change color link */}
+              <label
+                htmlFor="changeColorInput"
+                className="text-xs md:text-sm text-blue-400 hover:underline cursor-pointer mt-2"
+              >
+                Change color
+              </label>
+              <input
+                id="changeColorInput"
+                type="file"
+                className="hidden"
+                accept="image/*"
+                onChange={handleFileUpload}
+              />
             </div>
-          )}
-        </div>
 
-        {/* Products Grid (no description, fallback for match%) */}
+            <ArrowRight className="w-6 h-6 text-white" />
+
+            {/* Primary Swatch */}
+            <div className="flex flex-col items-center">
+              <div
+                className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer 
+                  ${activeColor === selectedColor ? 'ring-4 ring-white' : ''}`}
+                style={{ backgroundColor: selectedColor }}
+                onClick={() => handleSwatchClick(selectedColor)}
+              />
+              <span className="text-xs md:text-sm text-white/60 mt-2">Primary</span>
+            </div>
+
+            {/* Compliment */}
+            {complementaryColor && (
+              <div className="flex flex-col items-center">
+                <div
+                  className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer 
+                    ${activeColor === complementaryColor ? 'ring-4 ring-white' : ''}`}
+                  style={{ backgroundColor: complementaryColor }}
+                  onClick={() => handleSwatchClick(complementaryColor)}
+                />
+                <span className="text-xs md:text-sm text-white/60 mt-2">Compliment</span>
+              </div>
+            )}
+
+            {/* Accent 1 & Accent 2 */}
+            {triadicColors?.map((col, i) => (
+              <div key={col} className="flex flex-col items-center">
+                <div
+                  className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer 
+                    ${activeColor === col ? 'ring-4 ring-white' : ''}`}
+                  style={{ backgroundColor: col }}
+                  onClick={() => handleSwatchClick(col)}
+                />
+                <span className="text-xs md:text-sm text-white/60 mt-2">
+                  Accent {i + 1}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Products Grid (no description, fallback match%) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => {
-            // Show “—% match” if undefined
             const matchText = Number.isFinite(product.matchPercentage)
               ? `${product.matchPercentage}% match`
-              : `—% match`;
+              : '—% match';
 
             return (
               <a
@@ -344,24 +325,18 @@ export default function ModernUploader() {
                             className="w-4 h-4 rounded-full"
                             style={{ backgroundColor: activeColor }}
                           />
-                          <span className="text-xs text-white/50">
-                            {matchText}
-                          </span>
+                          <span className="text-xs text-white/50">{matchText}</span>
                         </>
                       ) : (
                         <>
                           <div className="w-4 h-4 rounded-full bg-white/10" />
-                          <span className="text-xs text-white/50">
-                            Ready to match your color
-                          </span>
+                          <span className="text-xs text-white/50">Ready to match your color</span>
                         </>
                       )}
                     </div>
                     {product.affiliateLink && (
                       <div className="mt-2">
-                        <span className="text-sm text-blue-400 hover:text-blue-300">
-                          Shop on Amazon
-                        </span>
+                        <span className="text-sm text-blue-400 hover:text-blue-300">Shop on Amazon</span>
                       </div>
                     )}
                   </div>
@@ -375,3 +350,4 @@ export default function ModernUploader() {
     </div>
   );
 }
+
