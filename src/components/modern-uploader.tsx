@@ -289,7 +289,7 @@ export default function ModernUploader() {
           )}
         </div>
 
-        {/* Products Grid */}
+        {/* Products Grid (no description) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => (
             <a
@@ -308,14 +308,12 @@ export default function ModernUploader() {
                   />
                 </div>
                 <div className="p-4">
-                  <p className="text-white/90 text-sm line-clamp-2 mb-2">{product.description}</p>
+                  {/* Match Info */}
                   <div className="flex items-center gap-2">
-                    {/* Product's color */}
                     <div
                       className="w-4 h-4 rounded-full"
                       style={{ backgroundColor: product.dominantColor }}
                     />
-                    {/* Active color */}
                     {activeColor ? (
                       <>
                         <div
@@ -333,9 +331,12 @@ export default function ModernUploader() {
                       </>
                     )}
                   </div>
+                  {/* Shop Button */}
                   {product.affiliateLink && (
                     <div className="mt-2">
-                      <span className="text-sm text-blue-400 hover:text-blue-300">Shop on Amazon</span>
+                      <span className="text-sm text-blue-400 hover:text-blue-300">
+                        Shop on Amazon
+                      </span>
                     </div>
                   )}
                 </div>
