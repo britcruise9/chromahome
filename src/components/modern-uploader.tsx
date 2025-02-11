@@ -1,10 +1,9 @@
 'use client';
 
-import React, { useState, useCallback, useEffect } from "react";
-import { Upload } from "lucide-react";
+import React, { useState, useEffect, useCallback } from 'react';
+import { Upload } from 'lucide-react';
+import _ from 'lodash';
 import { PRESET_PALETTES, ColorPalette } from './color-palettes';
-
-declare const ColorThief: any;
 
 interface Product {
   id: number;
@@ -14,7 +13,7 @@ interface Product {
   image: string;
   category: string;
   dominantColor: string;
-  matchPercentage: number;
+  matchPercentage?: number;
   affiliateLink?: string;
 }
 
@@ -87,6 +86,8 @@ const getTriadicColors = (hex: string) => {
   ];
 };
 
+declare const ColorThief: any;
+
 const extractColor = async (file: File): Promise<string> => {
   return new Promise((resolve) => {
     const img = new Image();
@@ -109,65 +110,78 @@ const extractColor = async (file: File): Promise<string> => {
 };
 
 const ModernUploader = () => {
-  const [view, setView] = useState<"initial" | "results">("initial");
+  const [randomProducts, setRandomProducts] = useState<Product[]>([]);
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
   const [triadicColors, setTriadicColors] = useState<[string, string] | null>(null);
   const [activeColor, setActiveColor] = useState<string | null>(null);
-  const [products, setProducts] = useState<Product[]>([]);
+  const [isProcessing, setIsProcessing] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
   const [currentPalette, setCurrentPalette] = useState<ColorPalette | null>(null);
+  const [view, setView] = useState<"initial" | "results">("initial");
 
-  // Initialize with a random palette
   useEffect(() => {
-    // Initialize with a random palette but don't switch to results view
     const randomPalette = PRESET_PALETTES[Math.floor(Math.random() * PRESET_PALETTES.length)];
     setCurrentPalette(randomPalette);
     setSelectedColor(randomPalette.primary);
     setComplementaryColor(randomPalette.complementary);
     setTriadicColors([randomPalette.triadic1, randomPalette.triadic2]);
     setActiveColor(randomPalette.primary);
-    // Load products in background but don't switch view
     fetchProducts(randomPalette.primary, false);
   }, []);
 
   const fetchProducts = async (color: string, switchView: boolean = true) => {
-    setProducts([]);
     try {
       const response = await fetch(`/api/products?color=${encodeURIComponent(color)}`);
-      const data = await response.json();
-      setProducts(data);
+      const matchedProducts = await response.json();
+      setRandomProducts(matchedProducts.slice(0, 12));
       if (switchView) {
         setView("results");
       }
     } catch (error) {
-      console.error("Error fetching products:", error);
+      console.error('Error fetching products:', error);
     }
   };
 
-  const handleColorClick = (color: string) => {
-    setActiveColor(color);
-    fetchProducts(color);
-  };
-
-  const handleFile = async (file: File) => {
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
     if (!file) return;
-    const color = await extractColor(file);
-    setCurrentPalette(null); // Clear preset palette when uploading
-    setSelectedColor(color);
-    setComplementaryColor(getComplementaryColor(color));
-    const [triadic1, triadic2] = getTriadicColors(color);
-    setTriadicColors([triadic1, triadic2]);
-    setActiveColor(color);
-    await fetchProducts(color);
+
+    setIsProcessing(true);
+    try {
+      const color = await extractColor(file);
+      setSelectedColor(color);
+      setComplementaryColor(getComplementaryColor(color));
+      const [triadic1, triadic2] = getTriadicColors(color);
+      setTriadicColors([triadic1, triadic2]);
+      setActiveColor(color);
+      await fetchProducts(color);
+    } catch (error) {
+      console.error('Error processing image:', error);
+    } finally {
+      setIsProcessing(false);
+    }
   };
 
   const handleDrop = useCallback(async (e: React.DragEvent) => {
     e.preventDefault();
     setIsDragging(false);
     const file = e.dataTransfer.files[0];
-    if (file && file.type.startsWith("image/")) {
-      await handleFile(file);
+    if (file && file.type.startsWith('image/')) {
+      setIsProcessing(true);
+      try {
+        const color = await extractColor(file);
+        setSelectedColor(color);
+        setComplementaryColor(getComplementaryColor(color));
+        const [triadic1, triadic2] = getTriadicColors(color);
+        setTriadicColors([triadic1, triadic2]);
+        setActiveColor(color);
+        await fetchProducts(color);
+      } catch (error) {
+        console.error('Error processing image:', error);
+      } finally {
+        setIsProcessing(false);
+      }
     }
   }, []);
 
@@ -181,63 +195,84 @@ const ModernUploader = () => {
     setIsDragging(false);
   }, []);
 
-  const handleFileInput = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      await handleFile(file);
-    }
+  const handleColorClick = (color: string) => {
+    setActiveColor(color);
+    fetchProducts(color);
   };
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-[#0F172A] to-[#1E293B]">
-      <div className="px-4 pt-6 md:pt-8 pb-4">
-        <h1 className="text-center font-bold mb-4 text-4xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 whitespace-nowrap px-2">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
+      <div className="max-w-6xl mx-auto px-4 pt-12 pb-20">
+        {/* Hero Section */}
+        <h1 className="text-center font-bold mb-2 text-4xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500">
           SHOP BY COLOR
         </h1>
-        <p className="text-center text-white/80 text-lg mb-6">
-          Snap a photo of any color - paint, fabric, or wall - to find matching decor
-        </p>
+        <h2 className="text-center text-2xl md:text-3xl text-white/90 font-light mb-12">
+          Find Home Decor in Your Color
+        </h2>
 
-        {view === "initial" && (
-          <div className="max-w-2xl mx-auto mb-12">
-            <div
-              onDrop={handleDrop}
-              onDragOver={handleDragOver}
-              onDragLeave={handleDragLeave}
-              className={`relative rounded-2xl border-2 border-dashed transition-all duration-300 
-                ${isDragging ? "border-white/50 bg-white/10" : "border-white/20 hover:border-white/30"}
-                h-48 md:h-72 flex items-center justify-center`}
-            >
-              <input
-                type="file"
-                accept="image/*,capture=camera"
-                onChange={handleFileInput}
-                className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-              />
-              <div className="text-center">
-                <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
-                <p className="text-lg text-white/80">Upload an image to extract colors</p>
+        {/* Upload Section */}
+        <div className="max-w-2xl mx-auto mb-16">
+          <div
+            onDrop={handleDrop}
+            onDragOver={handleDragOver}
+            onDragLeave={handleDragLeave}
+            className="relative"
+          >
+            <label className="block w-full">
+              <div className="relative group cursor-pointer">
+                <div className={`border-2 border-dashed rounded-xl p-8 text-center transition-all duration-300 
+                  ${isDragging ? 'border-white/50 bg-white/10' : 'border-white/20 hover:border-white/30'}`}>
+                  <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
+                  <h3 className="text-xl text-white/90 mb-2">Upload any color inspiration</h3>
+                  <p className="text-white/60">
+                    Photo, screenshot, or image of paint, fabric, or wall
+                  </p>
+                </div>
+                <input
+                  type="file"
+                  className="hidden"
+                  accept="image/*"
+                  onChange={handleFileUpload}
+                />
               </div>
-            </div>
+            </label>
+          </div>
+          
+          <div className="text-center mt-6 mb-12">
+            <p className="text-white/70 text-lg">
+              After adding your color, we'll show you the best matches from our collection
+            </p>
+            {isProcessing && (
+              <p className="text-white/50 text-sm mt-2 animate-pulse">Processing your image...</p>
+            )}
+          </div>
+        </div>
+
+        {/* Color Palette Display */}
+        {view === "results" && currentPalette && (
+          <div className="text-center mb-8">
+            <h2 className="text-white/90 text-xl font-medium mb-2">{currentPalette.name}</h2>
+            <p className="text-white/60">{currentPalette.description}</p>
           </div>
         )}
 
-        {/* Color Palette Section */}
-        <div className="flex justify-center mb-8">
-          <div className="w-full max-w-md px-4 flex justify-between md:gap-4">
-            {/* Primary Color */}
-            <div className="flex flex-col items-center">
-              <div
-                className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer transition-all
-                  ${selectedColor === activeColor ? "ring-2 ring-white" : ""}`}
-                style={{ backgroundColor: selectedColor || "#000000" }}
-                onClick={() => selectedColor && handleColorClick(selectedColor)}
-              />
-              <span className="text-xs md:text-sm text-white/60 mt-2">Primary</span>
-            </div>
+        {/* Color Selection Display */}
+        {selectedColor && complementaryColor && triadicColors && (
+          <div className="flex justify-center mb-8">
+            <div className="w-full max-w-md px-4 flex justify-between md:gap-4">
+              {/* Primary Color */}
+              <div className="flex flex-col items-center">
+                <div
+                  className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer transition-all
+                    ${selectedColor === activeColor ? "ring-2 ring-white" : ""}`}
+                  style={{ backgroundColor: selectedColor }}
+                  onClick={() => handleColorClick(selectedColor)}
+                />
+                <span className="text-xs md:text-sm text-white/60 mt-2">Primary</span>
+              </div>
 
-            {/* Complementary Color */}
-            {complementaryColor && (
+              {/* Complementary Color */}
               <div className="flex flex-col items-center">
                 <div
                   className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer transition-all
@@ -247,54 +282,29 @@ const ModernUploader = () => {
                 />
                 <span className="text-xs md:text-sm text-white/60 mt-2">Compliment</span>
               </div>
-            )}
 
-            {/* Triadic Colors */}
-            {triadicColors?.map((color, index) => (
-              <div key={color} className="flex flex-col items-center">
-                <div
-                  className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer transition-all
-                    ${color === activeColor ? "ring-2 ring-white" : ""}`}
-                  style={{ backgroundColor: color }}
-                  onClick={() => handleColorClick(color)}
-                />
-                <span className="text-xs md:text-sm text-white/60 mt-2">Triadic {index + 1}</span>
-              </div>
-            ))}
-
-            {/* Upload Button */}
-            <div className="flex flex-col items-center">
-              <div className="w-14 h-14 md:w-24 md:h-24 rounded-xl bg-slate-800/50 flex items-center justify-center cursor-pointer hover:bg-slate-800/70 transition-all">
-                <input
-                  type="file"
-                  accept="image/*,capture=camera"
-                  onChange={handleFileInput}
-                  className="hidden"
-                  id="newColorUpload"
-                />
-                <label htmlFor="newColorUpload" className="cursor-pointer text-center">
-                  <div className="text-2xl text-white/80">+</div>
-                  <div className="text-xs text-white/60">New Color</div>
-                </label>
-              </div>
+              {/* Triadic Colors */}
+              {triadicColors.map((color, index) => (
+                <div key={color} className="flex flex-col items-center">
+                  <div
+                    className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer transition-all
+                      ${color === activeColor ? "ring-2 ring-white" : ""}`}
+                    style={{ backgroundColor: color }}
+                    onClick={() => handleColorClick(color)}
+                  />
+                  <span className="text-xs md:text-sm text-white/60 mt-2">Triadic {index + 1}</span>
+                </div>
+              ))}
             </div>
-          </div>
-        </div>
-
-        {/* Current Palette Info */}
-        {currentPalette && (
-          <div className="text-center mb-8">
-            <h2 className="text-white/90 text-xl font-medium mb-2">{currentPalette.name}</h2>
-            <p className="text-white/60">{currentPalette.description}</p>
           </div>
         )}
 
-        {/* Product Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto px-4">
-          {products.map((product) => (
+        {/* Products Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {randomProducts.map((product) => (
             <a
               key={product.id}
-              href={product.affiliateLink || "#"}
+              href={product.affiliateLink}
               target="_blank"
               rel="noopener noreferrer"
               className="block"
@@ -308,13 +318,29 @@ const ModernUploader = () => {
                   />
                 </div>
                 <div className="p-4">
-                  {activeColor && (
-                    <div className="flex items-center gap-2 mt-2">
-                      <div className="w-4 h-4 rounded-full" style={{ backgroundColor: product.dominantColor }} />
-                      <div className="w-4 h-4 rounded-full" style={{ backgroundColor: activeColor }} />
-                      <span className="text-xs text-white/50">{product.matchPercentage}% match</span>
-                    </div>
-                  )}
+                  <p className="text-white/90 text-sm line-clamp-2 mb-2">{product.description}</p>
+                  <div className="flex items-center gap-2">
+                    <div 
+                      className="w-4 h-4 rounded-full" 
+                      style={{ backgroundColor: product.dominantColor }} 
+                    />
+                    {activeColor ? (
+                      <>
+                        <div 
+                          className="w-4 h-4 rounded-full" 
+                          style={{ backgroundColor: activeColor }} 
+                        />
+                        <span className="text-xs text-white/50">
+                          {product.matchPercentage}% match
+                        </span>
+                      </>
+                    ) : (
+                      <>
+                        <div className="w-4 h-4 rounded-full bg-white/10" />
+                        <span className="text-xs text-white/50">Ready to match your color</span>
+                      </>
+                    )}
+                  </div>
                   {product.affiliateLink && (
                     <div className="mt-2">
                       <span className="text-sm text-blue-400 hover:text-blue-300">Shop on Amazon</span>
