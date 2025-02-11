@@ -50,7 +50,7 @@ function hslToHex(h: number, s: number, l: number) {
   let r: number, g: number, b: number;
 
   if (s === 0) {
-    r = g = b = l; // Achromatic
+    r = g = b = l;
   } else {
     const hue2rgb = (p: number, q: number, t: number) => {
       if (t < 0) t += 1;
@@ -181,7 +181,7 @@ export default function ModernUploader() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
 
-      {/* HERO BANNER SECTION (shrunken ~25%) */}
+      {/* HERO BANNER SECTION */}
       <div
         className="relative h-[38vh] md:h-[45vh] bg-cover bg-center mb-12"
         style={{
@@ -192,14 +192,22 @@ export default function ModernUploader() {
           backgroundSize: 'cover',
         }}
       >
-        {/* Dark overlay to improve text contrast */}
+        {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/40" />
 
-        {/* Centered text */}
+        {/* Centered text with text-shadow */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-white">SHOP BY COLOR</h1>
-          <p className="mt-2 text-xl md:text-2xl text-white/90 font-light">
-            Find Home Decor in Your Color
+          <h1
+            className="text-4xl md:text-6xl font-bold text-white 
+                       [text-shadow:0_2px_5px_rgba(0,0,0,0.7)]"
+          >
+            SHOP BY COLOR
+          </h1>
+          <p
+            className="mt-2 text-xl md:text-2xl text-white/90 font-light
+                       [text-shadow:0_2px_4px_rgba(0,0,0,0.6)]"
+          >
+            Find Home Decor in Your Exact Color
           </p>
         </div>
       </div>
@@ -212,7 +220,7 @@ export default function ModernUploader() {
               <div className="group cursor-pointer border-2 border-dashed border-white/20 rounded-xl p-8 text-center 
                               hover:border-white/30 transition-transform duration-300 ease-out hover:scale-105">
                 <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
-                <h3 className="text-xl text-white/90 mb-2">Upload any color inspiration</h3>
+                <h3 className="text-xl text-white/90 mb-2">Upload your color</h3>
                 <p className="text-white/60">Photo, screenshot, or image of paint, fabric, or wall</p>
               </div>
               <input
@@ -364,3 +372,4 @@ export default function ModernUploader() {
     </div>
   );
 }
+
