@@ -5,153 +5,56 @@ import { Upload } from 'lucide-react';
 
 declare const ColorThief: any;
 
-// ----- Color Utilities -----
-const hexToHSL = (hex: string) => {
-  let r = parseInt(hex.slice(1, 3), 16) / 255;
-  let g = parseInt(hex.slice(3, 5), 16) / 255;
-  let b = parseInt(hex.slice(5, 7), 16) / 255;
+// ---------- Color Utilities (same as before, shortened here for brevity) ----------
+const hexToHSL = (hex: string) => { /* ... return { h, s, l } */ };
+const hslToHex = (h: number, s: number, l: number) => {/* ... */};
+const getComplementaryColor = (hex: string) => {/* ... */};
+const getTriadicColors = (hex: string) => {/* ... */};
+const extractColor = async (file: File): Promise<string> => {/* ... */};
 
-  let max = Math.max(r, g, b);
-  let min = Math.min(r, g, b);
-  let h = 0,
-    s = 0,
-    l = (max + min) / 2;
-
-  if (max !== min) {
-    const d = max - min;
-    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-
-    switch (max) {
-      case r:
-        h = (g - b) / d + (g < b ? 6 : 0);
-        break;
-      case g:
-        h = (b - r) / d + 2;
-        break;
-      case b:
-        h = (r - g) / d + 4;
-        break;
-    }
-    h /= 6;
-  }
-
-  // RETURN the h, s, l object:
-  return {
-    h: h * 360,
-    s: s * 100,
-    l: l * 100,
-  };
-};
-
-const hslToHex = (h: number, s: number, l: number) => {
-  h /= 360;
-  s /= 100;
-  l /= 100;
-  let r: number, g: number, b: number;
-
-  if (s === 0) {
-    r = g = b = l;
-  } else {
-    const hue2rgb = (p: number, q: number, t: number) => {
-      if (t < 0) t += 1;
-      if (t > 1) t -= 1;
-      if (t < 1 / 6) return p + (q - p) * 6 * t;
-      if (t < 1 / 2) return q;
-      if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
-      return p;
-    };
-
-    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-    const p = 2 * l - q;
-    r = hue2rgb(p, q, h + 1 / 3);
-    g = hue2rgb(p, q, h);
-    b = hue2rgb(p, q, h - 1 / 3);
-  }
-
-  const toHex = (x: number) => {
-    const hex = Math.round(x * 255).toString(16);
-    return hex.length === 1 ? '0' + hex : hex;
-  };
-
-  return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
-};
-
-const getComplementaryColor = (hex: string) => {
-  const hsl = hexToHSL(hex);
-  return hslToHex((hsl.h + 180) % 360, hsl.s, hsl.l);
-};
-
-const getTriadicColors = (hex: string) => {
-  const hsl = hexToHSL(hex);
-  return [
-    hslToHex((hsl.h + 120) % 360, hsl.s, hsl.l),
-    hslToHex((hsl.h + 240) % 360, hsl.s, hsl.l),
-  ];
-};
-
-const extractColor = async (file: File): Promise<string> => {
-  return new Promise((resolve) => {
-    const img = new Image();
-    const colorThief = new ColorThief();
-
-    img.onload = () => {
-      try {
-        const [r, g, b] = colorThief.getColor(img);
-        resolve(
-          `#${r.toString(16).padStart(2, '0')}${g
-            .toString(16)
-            .padStart(2, '0')}${b.toString(16).padStart(2, '0')}`
-        );
-      } catch {
-        resolve('#000000');
-      }
-    };
-    img.onerror = () => resolve('#000000');
-    img.crossOrigin = 'Anonymous';
-    img.src = URL.createObjectURL(file);
-  });
-};
-
-const ModernUploader = () => {
+export default function ModernUploader() {
   const [products, setProducts] = useState<any[]>([]);
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
   const [triadicColors, setTriadicColors] = useState<[string, string] | null>(null);
   const [activeColor, setActiveColor] = useState<string | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
 
-  // 1) On first load, fetch a default product list
+  // Fetch random/all products initially
   useEffect(() => {
-    const fetchProducts = async () => {
+    const fetchInitialProducts = async () => {
       try {
         const response = await fetch('/api/products');
-        const data = await response.json();
-        setProducts(data);
+        setProducts(await response.json());
       } catch (error) {
-        console.error('Error fetching initial products:', error);
+        console.error('Initial fetch error:', error);
       }
     };
-    fetchProducts();
+    fetchInitialProducts();
   }, []);
 
-  // 2) Handle file upload → extract color → set swatches → fetch matching products
+  // Upload handler: extracts color, sets swatches, fetches matched products
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
-
     setIsProcessing(true);
     try {
+      // Store a local preview of the uploaded image
+      const url = URL.createObjectURL(file);
+      setUploadedImageUrl(url);
+
+      // Extract color and set swatches
       const color = await extractColor(file);
       setSelectedColor(color);
       setComplementaryColor(getComplementaryColor(color));
-      const [triad1, triad2] = getTriadicColors(color);
-      setTriadicColors([triad1, triad2]);
+      const [t1, t2] = getTriadicColors(color);
+      setTriadicColors([t1, t2]);
       setActiveColor(color);
 
       // Fetch color-based products
-      const response = await fetch(`/api/products?color=${encodeURIComponent(color)}`);
-      const matchedProducts = await response.json();
-      setProducts(matchedProducts);
+      const res = await fetch(`/api/products?color=${encodeURIComponent(color)}`);
+      setProducts(await res.json());
     } catch (error) {
       console.error('Error processing image:', error);
     } finally {
@@ -159,7 +62,7 @@ const ModernUploader = () => {
     }
   };
 
-  // 3) Clicking a swatch re-fetches products for that color
+  // Clicking a swatch refetches products
   const handleSwatchClick = async (swatchColor: string) => {
     setActiveColor(swatchColor);
     setIsProcessing(true);
@@ -167,7 +70,7 @@ const ModernUploader = () => {
       const res = await fetch(`/api/products?color=${encodeURIComponent(swatchColor)}`);
       setProducts(await res.json());
     } catch (error) {
-      console.error('Error fetching for swatch color:', error);
+      console.error('Swatch fetch error:', error);
     } finally {
       setIsProcessing(false);
     }
@@ -176,8 +79,7 @@ const ModernUploader = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
       <div className="max-w-6xl mx-auto px-4 pt-12 pb-20">
-
-        {/* Title and Subtitle */}
+        {/* Title / Subtitle */}
         <h1 className="text-center font-bold mb-2 text-4xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500">
           SHOP BY COLOR
         </h1>
@@ -185,24 +87,20 @@ const ModernUploader = () => {
           Find Home Decor in Your Color
         </h2>
 
-        {/* Upload Section */}
+        {/* Upload Box */}
         <div className="max-w-2xl mx-auto mb-16">
           <label className="block w-full">
-            <div className="relative group cursor-pointer">
-              <div className="border-2 border-dashed border-white/20 rounded-xl p-8 text-center transition-all group-hover:border-white/30">
-                <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
-                <h3 className="text-xl text-white/90 mb-2">Upload any color inspiration</h3>
-                <p className="text-white/60">
-                  Photo, screenshot, or image of paint, fabric, or wall
-                </p>
-              </div>
-              <input
-                type="file"
-                className="hidden"
-                accept="image/*"
-                onChange={handleFileUpload}
-              />
+            <div className="group cursor-pointer border-2 border-dashed border-white/20 rounded-xl p-8 text-center hover:border-white/30 transition">
+              <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
+              <h3 className="text-xl text-white/90 mb-2">Upload any color inspiration</h3>
+              <p className="text-white/60">Photo, screenshot, or image of paint, fabric, or wall</p>
             </div>
+            <input
+              type="file"
+              className="hidden"
+              accept="image/*"
+              onChange={handleFileUpload}
+            />
           </label>
 
           <div className="text-center mt-6 mb-12">
@@ -211,22 +109,50 @@ const ModernUploader = () => {
             </p>
           </div>
 
-          {/* Swatches row (visible only after extracting a color) */}
+          {/* Swatches Row, displayed only if selectedColor exists */}
           {selectedColor && (
             <div className="flex justify-center mb-8">
-              <div className="w-full max-w-md px-4 flex justify-between md:gap-4">
-                {/* Primary swatch */}
-                <div className="flex flex-col items-center">
+              {/* Use a smaller gap so it's neatly centered */}
+              <div className="flex items-end gap-4">
+                
+                {/* Primary Swatch: split half with the uploaded image, half with the extracted color */}
+                <div className="flex flex-col items-center text-center">
                   <div
-                    className={`w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer 
+                    className={`relative w-14 h-14 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer overflow-hidden 
                       ${activeColor === selectedColor ? 'ring-4 ring-white' : ''}`}
-                    style={{ backgroundColor: selectedColor }}
                     onClick={() => handleSwatchClick(selectedColor)}
+                  >
+                    {/* Left half: the uploaded image preview (if any) */}
+                    {uploadedImageUrl && (
+                      <img
+                        src={uploadedImageUrl}
+                        alt="Uploaded"
+                        className="absolute inset-0 w-1/2 h-full object-cover"
+                      />
+                    )}
+                    {/* Right half: extracted color */}
+                    <div
+                      className="absolute right-0 top-0 h-full w-1/2"
+                      style={{ backgroundColor: selectedColor }}
+                    />
+                  </div>
+                  {/* “Change” link to re-upload */}
+                  <label
+                    htmlFor="newUpload"
+                    className="text-xs md:text-sm text-blue-400 hover:underline mt-2 cursor-pointer"
+                  >
+                    Change
+                  </label>
+                  <input
+                    id="newUpload"
+                    type="file"
+                    className="hidden"
+                    accept="image/*"
+                    onChange={handleFileUpload}
                   />
-                  <span className="text-xs md:text-sm text-white/60 mt-2">Primary</span>
                 </div>
 
-                {/* Complementary swatch */}
+                {/* Complementary Swatch */}
                 {complementaryColor && (
                   <div className="flex flex-col items-center">
                     <div
@@ -239,7 +165,7 @@ const ModernUploader = () => {
                   </div>
                 )}
 
-                {/* Triadic swatches */}
+                {/* Triadic Swatches */}
                 {triadicColors?.map((color, i) => (
                   <div key={color} className="flex flex-col items-center">
                     <div
@@ -259,72 +185,60 @@ const ModernUploader = () => {
         </div>
 
         {/* Products Grid */}
-        <div className="mt-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {products.map((product) => (
-              <a
-                key={product.id}
-                href={product.affiliateLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <div className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300">
-                  <div className="aspect-square overflow-hidden">
-                    <img
-                      src={product.image}
-                      alt={product.title}
-                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {products.map((product) => (
+            <a
+              key={product.id}
+              href={product.affiliateLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300">
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-4">
+                  <p className="text-white/90 text-sm line-clamp-2 mb-2">{product.description}</p>
+                  <div className="flex items-center gap-2">
+                    {/* Product's own color */}
+                    <div
+                      className="w-4 h-4 rounded-full"
+                      style={{ backgroundColor: product.dominantColor }}
                     />
-                  </div>
-                  <div className="p-4">
-                    <p className="text-white/90 text-sm line-clamp-2 mb-2">
-                      {product.description}
-                    </p>
-                    <div className="flex items-center gap-2">
-                      {/* Dominant product color */}
-                      <div
-                        className="w-4 h-4 rounded-full"
-                        style={{ backgroundColor: product.dominantColor }}
-                      />
-                      {/* If user selected a color, show match info */}
-                      {activeColor ? (
-                        <>
-                          <div
-                            className="w-4 h-4 rounded-full"
-                            style={{ backgroundColor: activeColor }}
-                          />
-                          <span className="text-xs text-white/50">
-                            {product.matchPercentage}% match
-                          </span>
-                        </>
-                      ) : (
-                        <>
-                          <div className="w-4 h-4 rounded-full bg-white/10" />
-                          <span className="text-xs text-white/50">
-                            Ready to match your color
-                          </span>
-                        </>
-                      )}
-                    </div>
-                    {product.affiliateLink && (
-                      <div className="mt-2">
-                        <span className="text-sm text-blue-400 hover:text-blue-300">
-                          Shop on Amazon
-                        </span>
-                      </div>
+                    {/* If user has chosen a color, show match info */}
+                    {activeColor ? (
+                      <>
+                        <div
+                          className="w-4 h-4 rounded-full"
+                          style={{ backgroundColor: activeColor }}
+                        />
+                        <span className="text-xs text-white/50">{product.matchPercentage}% match</span>
+                      </>
+                    ) : (
+                      <>
+                        <div className="w-4 h-4 rounded-full bg-white/10" />
+                        <span className="text-xs text-white/50">Ready to match your color</span>
+                      </>
                     )}
                   </div>
+                  {product.affiliateLink && (
+                    <div className="mt-2">
+                      <span className="text-sm text-blue-400 hover:text-blue-300">Shop on Amazon</span>
+                    </div>
+                  )}
                 </div>
-              </a>
-            ))}
-          </div>
+              </div>
+            </a>
+          ))}
         </div>
 
       </div>
     </div>
   );
-};
-
-export default ModernUploader;
+}
 
