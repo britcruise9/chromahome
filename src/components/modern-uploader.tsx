@@ -62,7 +62,6 @@ function hslToHex(h: number, s: number, l: number) {
     };
     const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
     const p = 2 * l - q;
-
     r = hue2rgb(p, q, h + 1 / 3);
     g = hue2rgb(p, q, h);
     b = hue2rgb(p, q, h - 1 / 3);
@@ -113,7 +112,6 @@ async function extractColor(file: File): Promise<string> {
   });
 }
 
-// ---------- Main Component ----------
 export default function ModernUploader() {
   const [products, setProducts] = useState<any[]>([]);
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
@@ -156,8 +154,7 @@ export default function ModernUploader() {
       const [acc1, acc2] = getTriadicColors(color);
       setTriadicColors([acc1, acc2]);
 
-      // Clear products before re-fetch
-      setProducts([]);
+      setProducts([]); // Clear old products for clarity
 
       const encoded = encodeURIComponent(color);
       const res = await fetch(`/api/products?color=${encoded}`, { cache: 'no-store' });
@@ -167,7 +164,7 @@ export default function ModernUploader() {
     }
   };
 
-  // Swatch click → fetch new results
+  // If user clicks a swatch
   const handleSwatchClick = async (color: string) => {
     setActiveColor(color);
     setProducts([]);
@@ -183,16 +180,32 @@ export default function ModernUploader() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
-      <div className="max-w-6xl mx-auto px-4 pt-12 pb-20">
-        {/* Title */}
-        <h1 className="text-center font-bold mb-2 text-4xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500">
-          SHOP BY COLOR
-        </h1>
-        <h2 className="text-center text-2xl md:text-3xl text-white/90 font-light mb-12">
-          Find Home Decor in Your Color
-        </h2>
 
-        {/* Big Upload Box - hidden after first upload */}
+      {/* HERO BANNER SECTION */}
+      <div
+        className="relative h-[50vh] md:h-[60vh] bg-cover bg-center mb-12"
+        style={{
+          backgroundImage:
+            "url('https://hips.hearstapps.com/hmg-prod/images/living-room-paint-colors-hbx040122inspoindex-012-copy-1655397674-653fda462b085.jpg?crop=0.752xw:1.00xh;0.120xw,0&resize=1120:*')",
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+        }}
+      >
+        {/* Dark overlay to improve text contrast */}
+        <div className="absolute inset-0 bg-black/40" />
+
+        {/* Centered text */}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-white">SHOP BY COLOR</h1>
+          <p className="mt-2 text-xl md:text-2xl text-white/90 font-light">
+            Find Home Decor in Your Color
+          </p>
+        </div>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 pb-20">
+        {/* Upload Box - hidden after first upload */}
         {!hasUploaded && (
           <div className="max-w-2xl mx-auto mb-16">
             <label className="block w-full">
@@ -211,13 +224,13 @@ export default function ModernUploader() {
             </label>
             <div className="text-center mt-6 mb-12">
               <p className="text-white/70 text-lg">
-                After adding your color, we'll show you the best matches from our collection
+                After adding your color, we'll show you the best matches from products around the world
               </p>
             </div>
           </div>
         )}
 
-        {/* Once uploaded, show row: Image → arrow → Primary → Compliment → Accent 1 → Accent 2 */}
+        {/* If user has uploaded a color, show swatches */}
         {hasUploaded && selectedColor && (
           <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
             {/* Uploaded Image + "Change color" */}
@@ -260,7 +273,7 @@ export default function ModernUploader() {
               <span className="text-xs md:text-sm text-white/60 mt-2">Primary</span>
             </div>
 
-            {/* Compliment */}
+            {/* Complementary Swatch */}
             {complementaryColor && (
               <div className="flex flex-col items-center">
                 <div
@@ -273,7 +286,7 @@ export default function ModernUploader() {
               </div>
             )}
 
-            {/* Accent 1 & Accent 2 (renamed from triadic) */}
+            {/* Accent (Triadic) Colors */}
             {triadicColors?.map((col, i) => (
               <div key={col} className="flex flex-col items-center">
                 <div
@@ -282,15 +295,13 @@ export default function ModernUploader() {
                   style={{ backgroundColor: col }}
                   onClick={() => handleSwatchClick(col)}
                 />
-                <span className="text-xs md:text-sm text-white/60 mt-2">
-                  Accent {i + 1}
-                </span>
+                <span className="text-xs md:text-sm text-white/60 mt-2">Accent {i + 1}</span>
               </div>
             ))}
           </div>
         )}
 
-        {/* Products Grid (subtle hover animations) */}
+        {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => {
             const matchText = Number.isFinite(product.matchPercentage)
@@ -305,8 +316,7 @@ export default function ModernUploader() {
                 rel="noopener noreferrer"
                 className="block"
               >
-                <div className="group relative bg-white/5 rounded-xl overflow-hidden 
-                               hover:bg-white/10 transition-all duration-300 ease-out">
+                <div className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300 ease-out">
                   <div className="aspect-square overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105">
                     <img
                       src={product.image}
@@ -331,7 +341,9 @@ export default function ModernUploader() {
                       ) : (
                         <>
                           <div className="w-4 h-4 rounded-full bg-white/10" />
-                          <span className="text-xs text-white/50">Ready to match your color</span>
+                          <span className="text-xs text-white/50">
+                            Ready to match your color
+                          </span>
                         </>
                       )}
                     </div>
