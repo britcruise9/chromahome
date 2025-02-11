@@ -1,8 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Upload } from 'lucide-react'; // or any other arrow icon
-import { ArrowRight } from 'lucide-react';
+import { Upload, ArrowRight } from 'lucide-react';
 
 declare const ColorThief: any;
 
@@ -157,6 +156,7 @@ export default function ModernUploader() {
       const [acc1, acc2] = getTriadicColors(color);
       setTriadicColors([acc1, acc2]);
 
+      // Clear products before re-fetch
       setProducts([]);
 
       const encoded = encodeURIComponent(color);
@@ -184,7 +184,6 @@ export default function ModernUploader() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
       <div className="max-w-6xl mx-auto px-4 pt-12 pb-20">
-
         {/* Title */}
         <h1 className="text-center font-bold mb-2 text-4xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500">
           SHOP BY COLOR
@@ -197,7 +196,8 @@ export default function ModernUploader() {
         {!hasUploaded && (
           <div className="max-w-2xl mx-auto mb-16">
             <label className="block w-full">
-              <div className="group cursor-pointer border-2 border-dashed border-white/20 rounded-xl p-8 text-center hover:border-white/30 transition">
+              <div className="group cursor-pointer border-2 border-dashed border-white/20 rounded-xl p-8 text-center 
+                              hover:border-white/30 transition-transform duration-300 ease-out hover:scale-105">
                 <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
                 <h3 className="text-xl text-white/90 mb-2">Upload any color inspiration</h3>
                 <p className="text-white/60">Photo, screenshot, or image of paint, fabric, or wall</p>
@@ -273,7 +273,7 @@ export default function ModernUploader() {
               </div>
             )}
 
-            {/* Accent 1 & Accent 2 */}
+            {/* Accent 1 & Accent 2 (renamed from triadic) */}
             {triadicColors?.map((col, i) => (
               <div key={col} className="flex flex-col items-center">
                 <div
@@ -290,7 +290,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Products Grid (no description, fallback match%) */}
+        {/* Products Grid (subtle hover animations) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => {
             const matchText = Number.isFinite(product.matchPercentage)
@@ -305,12 +305,13 @@ export default function ModernUploader() {
                 rel="noopener noreferrer"
                 className="block"
               >
-                <div className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300">
-                  <div className="aspect-square overflow-hidden">
+                <div className="group relative bg-white/5 rounded-xl overflow-hidden 
+                               hover:bg-white/10 transition-all duration-300 ease-out">
+                  <div className="aspect-square overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105">
                     <img
                       src={product.image}
                       alt={product.title}
-                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="p-4">
@@ -336,7 +337,9 @@ export default function ModernUploader() {
                     </div>
                     {product.affiliateLink && (
                       <div className="mt-2">
-                        <span className="text-sm text-blue-400 hover:text-blue-300">Shop on Amazon</span>
+                        <span className="text-sm text-blue-400 hover:text-blue-300">
+                          Shop on Amazon
+                        </span>
                       </div>
                     )}
                   </div>
@@ -345,9 +348,7 @@ export default function ModernUploader() {
             );
           })}
         </div>
-
       </div>
     </div>
   );
 }
-
