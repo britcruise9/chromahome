@@ -33,7 +33,6 @@ function hexToHSL(hex: string) {
         h = (r - g) / d + 4;
         break;
     }
-
     h /= 6;
   }
 
@@ -61,7 +60,6 @@ function hslToHex(h: number, s: number, l: number) {
       if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
       return p;
     };
-
     const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
     const p = 2 * l - q;
 
@@ -125,12 +123,17 @@ export default function ModernUploader() {
   const [activeColor, setActiveColor] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
 
-  // 1) On page load, fetch a default list of products
+  // 1) On page load, fetch a default list of products (no caching).
   useEffect(() => {
     const fetchInitialProducts = async () => {
       try {
-        const res = await fetch('/api/products');
-        setProducts(await res.json());
+        const res = await fetch('/api/products', { cache: 'no-store' });
+        if (!res.ok) {
+          console.error('Initial fetch error, status:', res.status);
+        }
+        const data = await res.json();
+        console.log('Initial products:', data);
+        setProducts(data);
       } catch (err) {
         console.error('Initial fetch error:', err);
       }
@@ -144,35 +147,51 @@ export default function ModernUploader() {
     if (!file) return;
 
     try {
-      // Keep a local copy of the image URL so we can preview it
       const url = URL.createObjectURL(file);
       setUploadedImageUrl(url);
 
-      // Extract the main color
       const color = await extractColor(file);
       setSelectedColor(color);
       setActiveColor(color);
       setHasUploaded(true);
 
-      // Compute complementary + triadic
-      setComplementaryColor(getComplementaryColor(color));
+      const comp = getComplementaryColor(color);
+      setComplementaryColor(comp);
       const [t1, t2] = getTriadicColors(color);
       setTriadicColors([t1, t2]);
 
-      // Fetch color-matched products
-      const res = await fetch(`/api/products?color=${encodeURIComponent(color)}`);
-      setProducts(await res.json());
+      // Clear old products for clarity
+      setProducts([]);
+
+      // Fetch color-based products with no caching
+      const encoded = encodeURIComponent(color);
+      const res = await fetch(`/api/products?color=${encoded}`, { cache: 'no-store' });
+      if (!res.ok) {
+        console.error('Color fetch error, status:', res.status);
+      }
+      const data = await res.json();
+      console.log('File upload fetch results:', data);
+      setProducts(data);
     } catch (error) {
       console.error('Error processing file:', error);
     }
   };
 
-  // 3) Clicking any swatch re-fetches products for that color
+  // 3) Clicking any swatch re-fetches products
   const handleSwatchClick = async (color: string) => {
     setActiveColor(color);
+    // Clear old items so you see fresh results
+    setProducts([]);
+
     try {
-      const res = await fetch(`/api/products?color=${encodeURIComponent(color)}`);
-      setProducts(await res.json());
+      const encoded = encodeURIComponent(color);
+      const res = await fetch(`/api/products?color=${encoded}`, { cache: 'no-store' });
+      if (!res.ok) {
+        console.error('Swatch fetch error, status:', res.status);
+      }
+      const data = await res.json();
+      console.log('Swatch click data:', data);
+      setProducts(data);
     } catch (err) {
       console.error('Swatch fetch error:', err);
     }
@@ -289,65 +308,70 @@ export default function ModernUploader() {
           )}
         </div>
 
-        {/* Products Grid (no description) */}
+        {/* Products Grid (no description, fallback for match%) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {products.map((product) => (
-            <a
-              key={product.id}
-              href={product.affiliateLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block"
-            >
-              <div className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300">
-                <div className="aspect-square overflow-hidden">
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-4">
-                  {/* Match Info */}
-                  <div className="flex items-center gap-2">
-                    <div
-                      className="w-4 h-4 rounded-full"
-                      style={{ backgroundColor: product.dominantColor }}
+          {products.map((product) => {
+            // Show “—% match” if undefined
+            const matchText = Number.isFinite(product.matchPercentage)
+              ? `${product.matchPercentage}% match`
+              : `—% match`;
+
+            return (
+              <a
+                key={product.id}
+                href={product.affiliateLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300">
+                  <div className="aspect-square overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={product.title}
+                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                     />
-                    {activeColor ? (
-                      <>
-                        <div
-                          className="w-4 h-4 rounded-full"
-                          style={{ backgroundColor: activeColor }}
-                        />
-                        <span className="text-xs text-white/50">
-                          {product.matchPercentage}% match
+                  </div>
+                  <div className="p-4">
+                    <div className="flex items-center gap-2">
+                      <div
+                        className="w-4 h-4 rounded-full"
+                        style={{ backgroundColor: product.dominantColor }}
+                      />
+                      {activeColor ? (
+                        <>
+                          <div
+                            className="w-4 h-4 rounded-full"
+                            style={{ backgroundColor: activeColor }}
+                          />
+                          <span className="text-xs text-white/50">
+                            {matchText}
+                          </span>
+                        </>
+                      ) : (
+                        <>
+                          <div className="w-4 h-4 rounded-full bg-white/10" />
+                          <span className="text-xs text-white/50">
+                            Ready to match your color
+                          </span>
+                        </>
+                      )}
+                    </div>
+                    {product.affiliateLink && (
+                      <div className="mt-2">
+                        <span className="text-sm text-blue-400 hover:text-blue-300">
+                          Shop on Amazon
                         </span>
-                      </>
-                    ) : (
-                      <>
-                        <div className="w-4 h-4 rounded-full bg-white/10" />
-                        <span className="text-xs text-white/50">Ready to match your color</span>
-                      </>
+                      </div>
                     )}
                   </div>
-                  {/* Shop Button */}
-                  {product.affiliateLink && (
-                    <div className="mt-2">
-                      <span className="text-sm text-blue-400 hover:text-blue-300">
-                        Shop on Amazon
-                      </span>
-                    </div>
-                  )}
                 </div>
-              </div>
-            </a>
-          ))}
+              </a>
+            );
+          })}
         </div>
 
       </div>
     </div>
   );
 }
-
-
