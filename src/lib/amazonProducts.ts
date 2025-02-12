@@ -25851,5 +25851,415 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0B1ZP645F/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#cfcbbf"
+  },
+{
+    "id": 2583,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "Valentines Day Gifts for Her Him Couple - Birthday Gifts for Women Men Boyfriend Girlfriend Husband and Wife Anniversary - Fleece Throw Blankets 60x80 in",
+    "image": "https://m.media-amazon.com/images/I/81+LoqdvYmL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJV8ZH95/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e2d3be"
+  },
+  {
+    "id": 2584,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "Cozy Bliss Faux Fur Throw Blanket for Couch, Cozy Warm Plush Striped Blanket for Sofa Bedroom Living Room, 50 * 60 Inches Beige",
+    "image": "https://m.media-amazon.com/images/I/71SC9bi87sL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CRYSRN9W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cfc0ab"
+  },
+  {
+    "id": 2585,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "Custom Blankets with Photo, Personalized Photo Blankets Using My Own Photo, Customized Blankets with Picture, Personalized Gifts for Women Men Baby Child, Personalized Gifts for Christmas",
+    "image": "https://m.media-amazon.com/images/I/81SUCUqy9ML._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BKZT71PB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cabfb6"
+  },
+  {
+    "id": 2586,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "Heated Throw Blanket, Electric Blanket Throw with 5 Heating Levels & 4 Hours Auto Off, Double Sided Super Soft Sherpa Fast Heating Blanket with ETL Certified for Bedding, 50\"x60\", Dark Gray",
+    "image": "https://m.media-amazon.com/images/I/81lvqOHOGyL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYT4PHPS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3a3939"
+  },
+  {
+    "id": 2587,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "Bigacogo Chunky Knit Throw Blanket for Couch, 40x60 inches, 100% Hand Knitted with Thick Jumbo Chenille Yarn, Cozy Soft Large Rope Knot Cable Crochet Blankets for Sofa Bed Living Room, Beige",
+    "image": "https://m.media-amazon.com/images/I/816ZAiT1G0L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BXPF5D4T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3d7c5"
+  },
+  {
+    "id": 2588,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Bedsure Fleece Throw Blanket for Women - Super Soft & Cozy, Fluffy Blankets for Girls, Ideal for Couch & Bed, White, 50x60 Inches",
+    "image": "https://m.media-amazon.com/images/I/81Mlf7bCECL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CM6L9QDV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1d3c1"
+  },
+  {
+    "id": 2589,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Longhui bedding Chunky Cable Knit Throw Blanket Lightweight Olive Green 100% Organic Cotton Blanket for Sofa Couch Bed Baby Nursery, Rustic Shabby Chic Modern Farmhouse, 51” x 63” Give Laundering Bag",
+    "image": "https://m.media-amazon.com/images/I/81P+LJAS9KL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B38Y9LRG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cabfac"
+  },
+  {
+    "id": 2590,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "DISSA Fleece Blanket Throw Size – 51x63, Yellow Soft, Plush, Fluffy, Fuzzy, Warm, Cozy Perfect for Couch, Bed, Sofa - with Pompom Fringe Flannel",
+    "image": "https://m.media-amazon.com/images/I/81IKim5nZiL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08R5JRXBW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c08b26"
+  },
+  {
+    "id": 2591,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "GONAAP Fuzzy Faux Fur Throw Blanket Tie-dye Beige Super Soft Cozy Plush Fuzzy Shaggy Blanket for Couch Sofa Bed (Tie-dye Beige, Throw(50\"x60\"))",
+    "image": "https://m.media-amazon.com/images/I/81h-ZlU0kRL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B091PGM3JL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b8ab96"
+  },
+  {
+    "id": 2592,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "Sunbeam Electric Throw, Soft, Warm, Flannel Heated Blanket, 4 Heat Settings, 4-Hour Auto Shut-Off, Fast Heating, Comfy and Cozy, Grey Color, 50\" x 60\"",
+    "image": "https://m.media-amazon.com/images/I/81ktQ-0pYqL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D87RLDT7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#817e81"
+  }
+]
+
+
+
+You said:
+please do all 30
+Thought for a second
+json
+Copy
+[
+  {
+    "id": 2583,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "Valentines Day Gifts for Her Him Couple - Birthday Gifts for Women Men Boyfriend Girlfriend Husband and Wife Anniversary - Fleece Throw Blankets 60x80 in",
+    "image": "https://m.media-amazon.com/images/I/81+LoqdvYmL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJV8ZH95/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e2d3be"
+  },
+  {
+    "id": 2584,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "Cozy Bliss Faux Fur Throw Blanket for Couch, Cozy Warm Plush Striped Blanket for Sofa Bedroom Living Room, 50 * 60 Inches Beige",
+    "image": "https://m.media-amazon.com/images/I/71SC9bi87sL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CRYSRN9W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cfc0ab"
+  },
+  {
+    "id": 2585,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "Custom Blankets with Photo, Personalized Photo Blankets Using My Own Photo, Customized Blankets with Picture, Personalized Gifts for Women Men Baby Child, Personalized Gifts for Christmas",
+    "image": "https://m.media-amazon.com/images/I/81SUCUqy9ML._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BKZT71PB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cabfb6"
+  },
+  {
+    "id": 2586,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "Heated Throw Blanket, Electric Blanket Throw with 5 Heating Levels & 4 Hours Auto Off, Double Sided Super Soft Sherpa Fast Heating Blanket with ETL Certified for Bedding, 50\"x60\", Dark Gray",
+    "image": "https://m.media-amazon.com/images/I/81lvqOHOGyL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYT4PHPS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3a3939"
+  },
+  {
+    "id": 2587,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "Bigacogo Chunky Knit Throw Blanket for Couch, 40x60 inches, 100% Hand Knitted with Thick Jumbo Chenille Yarn, Cozy Soft Large Rope Knot Cable Crochet Blankets for Sofa Bed Living Room, Beige",
+    "image": "https://m.media-amazon.com/images/I/816ZAiT1G0L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BXPF5D4T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3d7c5"
+  },
+  {
+    "id": 2588,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Bedsure Fleece Throw Blanket for Women - Super Soft & Cozy, Fluffy Blankets for Girls, Ideal for Couch & Bed, White, 50x60 Inches",
+    "image": "https://m.media-amazon.com/images/I/81Mlf7bCECL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CM6L9QDV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1d3c1"
+  },
+  {
+    "id": 2589,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Longhui bedding Chunky Cable Knit Throw Blanket Lightweight Olive Green 100% Organic Cotton Blanket for Sofa Couch Bed Baby Nursery, Rustic Shabby Chic Modern Farmhouse, 51” x 63” Give Laundering Bag",
+    "image": "https://m.media-amazon.com/images/I/81P+LJAS9KL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B38Y9LRG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cabfac"
+  },
+  {
+    "id": 2590,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "DISSA Fleece Blanket Throw Size – 51x63, Yellow Soft, Plush, Fluffy, Fuzzy, Warm, Cozy Perfect for Couch, Bed, Sofa - with Pompom Fringe Flannel",
+    "image": "https://m.media-amazon.com/images/I/81IKim5nZiL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08R5JRXBW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c08b26"
+  },
+  {
+    "id": 2591,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "GONAAP Fuzzy Faux Fur Throw Blanket Tie-dye Beige Super Soft Cozy Plush Fuzzy Shaggy Blanket for Couch Sofa Bed (Tie-dye Beige, Throw(50\"x60\"))",
+    "image": "https://m.media-amazon.com/images/I/81h-ZlU0kRL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B091PGM3JL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b8ab96"
+  },
+  {
+    "id": 2592,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "Northwest Hello Kitty Silk Touch Throw Blanket, 50\" x 70\", Love You Much",
+    "image": "https://m.media-amazon.com/images/I/81UdGYe7p1L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSHGTK8C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#de88ac"
+  },
+  {
+    "id": 2593,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "Zulay Extra Large Burritos Tortilla Throw Blanket – Wrap Yourself Like a Giant Taco! Double-Sided 71 Inches, Funny & Ultra Cozy Novelty Blanket, Super Soft 285 GSM Flannel",
+    "image": "https://m.media-amazon.com/images/I/81coLcweURL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4RD3V4Z/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4d9c8"
+  },
+  {
+    "id": 2594,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "EMME Cotton Throw Blanket Large 50\"x70\" Gifts for Women 100% Muslin for Couch Breathable Gauze All Season Soft and Lightweight Pre-Washed (Light Tan)",
+    "image": "https://m.media-amazon.com/images/I/81RMQzFXmhL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07SRY7GBK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8cfbc"
+  },
+  {
+    "id": 2595,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "Exclusivo Mezcla Pink Fleece Throw Blanket for Couch and Bed, 50x70 Inches Soft Cozy Jacquard Flannel Blankets, Lightweight Fuzzy Plush Warm Throws for All Seasons",
+    "image": "https://m.media-amazon.com/images/I/81pQwIXJjLL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B086GBK55N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6bcbc"
+  },
+  {
+    "id": 2596,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "Bedsure Checkered Throw Blanket for Couch - Super Soft, Cozy & Warm Knit Blanket, Breathable, Lightweight & Fluffy for Bed & Sofa, Checkered Beige, 50x60 Inches",
+    "image": "https://m.media-amazon.com/images/I/815KJ0po6FL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C7QCGNJ9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c5a98c"
+  },
+  {
+    "id": 2597,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "Vessia Flannel Fleece Throw Blanket(50X70 Inch), 300GSM Cozy Brown Stripe Throw Blanket for Couch, Sofa and Bed, Warm and Soft Chocolate Microfiber Ribbed Blanket for All Season",
+    "image": "https://m.media-amazon.com/images/I/81RFayJRRrL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09C1C9RK2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#473929"
+  },
+  {
+    "id": 2598,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "Daughter Gifts Daughter Birthday Gift Daughter Gifts from Mom Dad Birthday Gifts for Daughter Adult Christmas Valentines Day Mothers Day Birthday Gifts for Daughter to My Daughter Blanket 50\"x60\"",
+    "image": "https://m.media-amazon.com/images/I/81fpzdUgiwL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DDST3QM1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#252021"
+  },
+  {
+    "id": 2599,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "LOMAO Throw Blankets Flannel Blanket with Checkerboard Grid Pattern Soft Throw Blanket for Couch, Bed, Sofa Luxurious Warm and Cozy for All Seasons (Black, 50\"x60\")",
+    "image": "https://m.media-amazon.com/images/I/81iOd5cdgQL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09P5YZR5S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5d2d3"
+  },
+  {
+    "id": 2600,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "Exclusivo Mezcla Fleece Throw Blanket for Couch, Super Soft Striped Jacquard Bed Blanket, Lightweight Fuzzy Cozy for All Seasons, 50x60 Inches, Navy Blue",
+    "image": "https://m.media-amazon.com/images/I/71LudBO6rDL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D25VCG9J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#162237"
+  },
+  {
+    "id": 2601,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "UFOORO Throw Blanket for Daughter Gifts, Gifts for Daughter from Dad, to My Daughter Valentines Day Gifts for Daughter from Dad, Birthday Gifts for Daughter Adult 55\"X70\"",
+    "image": "https://m.media-amazon.com/images/I/81A28R2FvbL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08DK1VDCP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#efe4d6"
+  },
+  {
+    "id": 2602,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "Throw Blankets Anniversary Birthday Gift for Mom from Daughter Son, Dear Mom Blanket for Mother's Day, Super Soft Flannel Throw Blankets for Christmas Valentines Day for Bed Couch(50x60)",
+    "image": "https://m.media-amazon.com/images/I/71DIhM5+-RL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C1NJSCRD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2ebdf"
+  },
+  {
+    "id": 2603,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "Amélie Home Chenille Waffle Throw Blanket for Couch, Reversible Soft Cozy Knit Blanket Lightweight Warm Decorative Throw for Sofa, Bed, Living Room, Beige, 50 x 60 inch",
+    "image": "https://m.media-amazon.com/images/I/81+pVmJ1dRL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1K5JMKV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1dad2"
+  },
+  {
+    "id": 2604,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Bedsure Sherpa Throw Blanket for Couch - Super Soft Cozy Fleece Thick Warm Blanket for Winter, Plush Beige Throw Gift for Women, 50x60 Inches",
+    "image": "https://m.media-amazon.com/images/I/91I559EsRvL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPS22JVK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a49482"
+  },
+  {
+    "id": 2605,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "Anniversary Romantic Gift for Wife, Ultra-Soft Micro Fleece Sherpa Throw Blanket, Christmas Valentines Day Gifts for Her, Wife Birthday Gifts from Husband, for Bedding Sofa and Travel",
+    "image": "https://m.media-amazon.com/images/I/81pIbajY6FL._AC_SY879_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MFRCKKT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bec0c1"
+  },
+  {
+    "id": 2606,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "KMUSET Fleece Blanket Throw Size White Lightweight Super Soft Cozy Luxury Bed Blanket Microfiber",
+    "image": "https://m.media-amazon.com/images/I/71RzzgU7+nL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07YQ2SQGN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ccc9c4"
+  },
+  {
+    "id": 2607,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "Valentines Day Gifts for Her, Gifts for Wife, Anniversary Wedding Gifts for Women Men Boyfriend Girlfriend Husband and Wife Anniversary Wedding Gifts for Wife from Husband, I Love You Gifts, Wife Blanket 50x60",
+    "image": "https://m.media-amazon.com/images/I/81yuBrm6k1L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D926VTC7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#edd2af"
+  },
+  {
+    "id": 2608,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "PU MEI Sherpa Fleece Throw Blanket 60\" x 80\" Reversible Plush Fluffy Large Big Blanket Lattice Flannel Blankets for Sofa Couch Bed (Grey-Soft Blue, 60\"*80\")",
+    "image": "https://m.media-amazon.com/images/I/81-S45p1I5L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08P8GXHLF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c4c3be"
+  },
+  {
+    "id": 2609,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "Custom Blanket with Photos Personalized Blanket Customized Blanket and Thows Customizable Blanket Picture Blankets Customize for Valentines Day Gifts for Mom Dad Couple Girlfriend Boyfriend Wife Husband",
+    "image": "https://m.media-amazon.com/images/I/81zZ1dSdy1L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CT2CCTTZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbb89c"
+  },
+  {
+    "id": 2610,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "Tuddrom Decorative Extra Soft Fuzzy Faux Fur Throw Blanket 50\" x 60\", Solid Reversible Long Hair Shaggy Blanket, Fluffy Cozy Plush Comfy Microfiber Fleece Blankets for Couch Sofa Bedroom, Cream White",
+    "image": "https://m.media-amazon.com/images/I/81+KAQGG9TL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07WC8V7D4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ccc1b9"
+  },
+  {
+    "id": 2611,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "Homemate Electric Heated Blanket Twin - 62\"x84\" Heating Blanket Twin Size 1/2/4/6/8 Hours Auto-Off 10 Heat Level Heat Blanket Over-Heat Protection Soft Flannel Sherpa Heater Blanket ETL Certification",
+    "image": "https://m.media-amazon.com/images/I/815EAlQReoL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B5GKV9XN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#929293"
+  },
+  {
+    "id": 2612,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "EXQ Home Fleece Throw Blanket for Couch or Bed - 3D Imitation Turtle Shell Jacquard Decorative Blankets - Cozy Soft Lightweight Fuzzy Flannel Blanket Suitable for All Seasons(50\"×60\", Beige)",
+    "image": "https://m.media-amazon.com/images/I/91brxXR1OYL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BNBGZQ6B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0c5bb"
   }
 ];
