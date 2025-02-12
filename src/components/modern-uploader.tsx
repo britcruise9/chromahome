@@ -4,14 +4,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Upload, ArrowRight, Pin, PinOff, Palette } from 'lucide-react';
 
 ////////////////////////////////////////////////////
-// 1) COLOR EXTRACT & UTIL
+// 1) COLOR UTILS
 ////////////////////////////////////////////////////
 declare const ColorThief: any;
 
-function hexToHSL(hex: string) { /* same as before */ }
-function hslToHex(h: number, s: number, l: number) { /* same as before */ }
-function getComplementaryColor(hex: string) { /* same as before */ }
-function getTriadicColors(hex: string) { /* same as before */ }
+function hexToHSL(hex: string) { /* unchanged */}
+function hslToHex(h: number, s: number, l: number) { /* unchanged */}
+function getComplementaryColor(hex: string) { /* unchanged */}
+function getTriadicColors(hex: string) { /* unchanged */}
 
 async function extractColor(file: File): Promise<string> {
   return new Promise((resolve) => {
@@ -32,7 +32,7 @@ async function extractColor(file: File): Promise<string> {
 }
 
 ////////////////////////////////////////////////////
-// 2) HERO IMAGES (5 total)
+// 2) HERO IMAGES
 ////////////////////////////////////////////////////
 const heroImages = [
   "https://hips.hearstapps.com/hmg-prod/images/living-room-paint-colors-hbx040122inspoindex-012-copy-1655397674-653fda462b085.jpg?crop=0.752xw:1.00xh;0.120xw,0&resize=1120:*",
@@ -63,14 +63,14 @@ export default function ModernUploader() {
   // If user uploaded a photo
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
 
-  // Have we chosen color yet?
+  // For the color wheel on first page
+  const [manualHex, setManualHex] = useState('#ffffff');
+
+  // Has a color been chosen?
   const [hasUploaded, setHasUploaded] = useState(false);
 
-  // Which color we are searching (may differ from original palette)
+  // The color we are currently searching with
   const [activeSearchColor, setActiveSearchColor] = useState<string | null>(null);
-
-  // Color Wheel
-  const [manualHex, setManualHex] = useState('#ffffff');
 
   // Hero rotation
   const [currentHero, setCurrentHero] = useState(0);
@@ -81,8 +81,6 @@ export default function ModernUploader() {
   const [limit] = useState(12);
   const [hasMore, setHasMore] = useState(true);
   const [isFetching, setIsFetching] = useState(false);
-
-  // Sentinel ref
   const sentinelRef = useRef<HTMLDivElement>(null);
 
   ////////////////////////////////////////////////////
@@ -101,7 +99,7 @@ export default function ModernUploader() {
   }, []);
 
   ////////////////////////////////////////////////////
-  // 5) Intersection observer => infinite scroll
+  // 5) Intersection Observer => infinite scroll
   ////////////////////////////////////////////////////
   useEffect(() => {
     if (!sentinelRef.current) return;
@@ -122,19 +120,19 @@ export default function ModernUploader() {
   }, [hasMore, isFetching]);
 
   ////////////////////////////////////////////////////
-  // 6) Page changes => fetch next
+  // 6) If page changes => fetch next
   ////////////////////////////////////////////////////
   useEffect(() => {
-    if (page === 1) return; // already fetched once
+    if (page === 1) return;
     fetchProducts(page, activeSearchColor);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
   ////////////////////////////////////////////////////
-  // 7) activeSearchColor changes => reset
+  // 7) If active search color changes => reset
   ////////////////////////////////////////////////////
   useEffect(() => {
-    if (activeSearchColor === null) return;
+    if (!activeSearchColor) return;
     setProducts([]);
     setPage(1);
     setHasMore(true);
@@ -172,7 +170,7 @@ export default function ModernUploader() {
   }
 
   ////////////////////////////////////////////////////
-  // 8) Handle Upload => extract => set palette
+  // 8) Upload => extract => set original palette
   ////////////////////////////////////////////////////
   async function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
@@ -184,7 +182,7 @@ export default function ModernUploader() {
 
       const color = await extractColor(file);
 
-      // set palette
+      // set up original palette
       setSelectedColor(color);
       setComplementaryColor(getComplementaryColor(color));
       setTriadicColors(getTriadicColors(color));
@@ -198,7 +196,7 @@ export default function ModernUploader() {
   }
 
   ////////////////////////////////////////////////////
-  // 9) Color Wheel => "Search This Color"
+  // 9) Color wheel => "Search This Color"
   ////////////////////////////////////////////////////
   function handleManualColor() {
     setSelectedColor(manualHex);
@@ -209,9 +207,10 @@ export default function ModernUploader() {
   }
 
   ////////////////////////////////////////////////////
-  // 10) Clicking a palette swatch => only search color
+  // 10) Clicking a palette swatch => ONLY update search color
   ////////////////////////////////////////////////////
   function handleSwatchClick(color: string) {
+    // We do NOT recalc the entire palette
     setActiveSearchColor(color);
   }
 
@@ -232,10 +231,9 @@ export default function ModernUploader() {
   }
 
   ////////////////////////////////////////////////////
-  // 12) "Change color" link => reset everything
+  // 12) "Change color" => reset everything
   ////////////////////////////////////////////////////
   function resetAll() {
-    // Return user to the "first page"
     setHasUploaded(false);
     setUploadedImageUrl(null);
     setSelectedColor(null);
@@ -243,14 +241,18 @@ export default function ModernUploader() {
     setTriadicColors(null);
     setActiveSearchColor(null);
 
-    // Optionally re-fetch default
     setProducts([]);
     setPage(1);
     setHasMore(true);
     fetchProducts(1, null);
   }
 
-  // small helper for pinned row text
+  // ring highlight if color is the activeSearchColor
+  function getSwatchRingStyle(testColor: string) {
+    return activeSearchColor === testColor ? 'ring-4 ring-white' : '';
+  }
+
+  // pinned row snippet
   function getShortDescription(desc: string) {
     if (!desc) return '';
     const words = desc.trim().split(/\s+/);
@@ -258,14 +260,9 @@ export default function ModernUploader() {
     return snippet.length < desc.length ? snippet + '...' : snippet;
   }
 
-  // ring highlight if color is active search color
-  function getSwatchRingStyle(testColor: string) {
-    return activeSearchColor === testColor ? 'ring-4 ring-white' : '';
-  }
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
-      
+
       {/* A) ROTATING HERO */}
       <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
         {heroImages.map((imgSrc, i) => (
@@ -284,6 +281,7 @@ export default function ModernUploader() {
             <div className="absolute inset-0 bg-black/40" />
           </div>
         ))}
+
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-30 px-4">
           <h1
             className="
@@ -304,18 +302,17 @@ export default function ModernUploader() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-20">
-
-        {/* B) FIRST PAGE: upload vs color wheel (equal height) */}
+        {/* B) FIRST PAGE: Upload vs. Color Wheel (equal height) */}
         {!hasUploaded && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
 
-            {/* LEFT: Upload Box */}
+            {/* LEFT: Upload */}
             <div className="max-w-md mx-auto min-h-[320px] flex items-center justify-center">
               <label className="block w-full">
                 <div className="
                   group cursor-pointer border-2 border-dashed border-white/20 
                   rounded-xl p-8 text-center 
-                  hover:border-white/30
+                  hover:border-white/30 
                   transition-transform duration-300 ease-out hover:scale-105
                 ">
                   <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
@@ -335,15 +332,14 @@ export default function ModernUploader() {
               </label>
             </div>
 
-            {/* RIGHT: Big color wheel + big swatch */}
+            {/* RIGHT: Big color wheel + swatch */}
             <div className="max-w-md mx-auto min-h-[320px] bg-white/10 border border-white/20 
                             rounded-xl p-6 flex flex-col gap-4 items-center justify-center">
               <div className="flex items-center gap-2 text-white/80 mb-1">
                 <Palette className="w-6 h-6 text-white/50" />
-                <span className="font-semibold">Pick a color below:</span>
+                <span className="font-semibold">Or pick a color below:</span>
               </div>
 
-              {/* "color wheel" => just a big <input type="color"> */}
               <input
                 type="color"
                 value={manualHex}
@@ -351,7 +347,6 @@ export default function ModernUploader() {
                 className="h-20 w-20 cursor-pointer rounded-full border-none shadow-md"
               />
 
-              {/* Large preview swatch */}
               <div
                 className="w-28 h-28 rounded-xl border border-white/30 shadow-md"
                 style={{ backgroundColor: manualHex }}
@@ -370,7 +365,7 @@ export default function ModernUploader() {
         {/* C) SECOND PAGE: palette row, pinned, product grid */}
         {selectedColor && (
           <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
-            {/* If user uploaded */}
+            {/* If user used upload */}
             {uploadedImageUrl && (
               <>
                 <div className="flex flex-col items-center">
@@ -445,7 +440,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Pinned Row */}
+        {/* Pinned row */}
         {pinned.length > 0 && (
           <div className="bg-transparent border border-white/40 text-white py-3 px-4 mb-8 rounded-md">
             <h3 className="font-bold mb-2">Your Pinned Items</h3>
@@ -488,7 +483,7 @@ export default function ModernUploader() {
         {/* Product Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => {
-            // If user has chosen a color, show match%. Otherwise show "—% match"
+            // If user has chosen a color, show match%. Otherwise "—% match"
             const matchText =
               activeSearchColor && Number.isFinite(product.matchPercentage)
                 ? `${product.matchPercentage}% match`
@@ -571,7 +566,7 @@ export default function ModernUploader() {
           })}
         </div>
 
-        {/* Infinite Scroll Sentinel */}
+        {/* Infinite scroll sentinel */}
         <div
           ref={sentinelRef}
           className="mt-8 h-8 flex justify-center items-center"
@@ -591,4 +586,5 @@ export default function ModernUploader() {
     </div>
   );
 }
+
 
