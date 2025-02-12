@@ -120,6 +120,7 @@ const heroImages = [
 // 3) MAIN COMPONENT
 ////////////////////////////////////////////////////
 export default function ModernUploader() {
+  // Pinned items
   const [pinned, setPinned] = useState<number[]>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('pinnedProducts');
@@ -128,17 +129,28 @@ export default function ModernUploader() {
     return [];
   });
 
+  // Palette and search states
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
   const [triadicColors, setTriadicColors] = useState<[string, string] | null>(null);
+  const [activeSearchColor, setActiveSearchColor] = useState<string | null>(null);
+
+  // Uploaded image and upload state
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
-  const [activeSearchColor, setActiveSearchColor] = useState<string | null>(null);
+
+  // Desktop color wheel states
   const [desktopHsl, setDesktopHsl] = useState({ h: 0, s: 0, l: 1 });
+  const [desktopConfirmedColor, setDesktopConfirmedColor] = useState<string | null>(null);
   const [showWheel, setShowWheel] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
+
+  // Mobile color state
   const [tempMobileColor, setTempMobileColor] = useState("#ffffff");
 
+  ////////////////////////////////////////////////////
+  // Hero rotation + initial fetch
+  ////////////////////////////////////////////////////
   const [currentHero, setCurrentHero] = useState(0);
   const [products, setProducts] = useState<any[]>([]);
   const [page, setPage] = useState(1);
@@ -155,6 +167,7 @@ export default function ModernUploader() {
     return () => clearInterval(interval);
   }, []);
 
+  // Intersection Observer for infinite scroll
   useEffect(() => {
     if (!sentinelRef.current) return;
     const observer = new IntersectionObserver(
@@ -184,7 +197,7 @@ export default function ModernUploader() {
     fetchProducts(1, activeSearchColor);
   }, [activeSearchColor]);
 
-  // Use 50 items for page 1 and 12 for subsequent pages
+  // Load 50 items for page 1, 12 for subsequent pages.
   async function fetchProducts(pageNum: number, color: string | null) {
     const currentLimit = pageNum === 1 ? 50 : 12;
     try {
@@ -211,6 +224,9 @@ export default function ModernUploader() {
     }
   }
 
+  ////////////////////////////////////////////////////
+  // FILE UPLOAD => EXTRACT COLOR
+  ////////////////////////////////////////////////////
   async function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -218,6 +234,7 @@ export default function ModernUploader() {
       const url = URL.createObjectURL(file);
       setUploadedImageUrl(url);
       const color = await extractColor(file);
+      // Immediately set these so the palette row shows after file upload.
       setSelectedColor(color);
       setComplementaryColor(getComplementaryColor(color));
       setTriadicColors(getTriadicColors(color));
@@ -228,10 +245,10 @@ export default function ModernUploader() {
     }
   }
 
-  function handleConfirmMobileColor() {
-    handleManualColor(tempMobileColor);
-  }
-
+  ////////////////////////////////////////////////////
+  // MANUAL COLOR => MOBILE and Desktop
+  ////////////////////////////////////////////////////
+  // Called when user finally clicks "Select Color" (search) button.
   function handleManualColor(hex: string) {
     setSelectedColor(hex);
     setComplementaryColor(getComplementaryColor(hex));
@@ -240,11 +257,17 @@ export default function ModernUploader() {
     setHasUploaded(true);
   }
 
+  function handleConfirmMobileColor() {
+    handleManualColor(tempMobileColor);
+  }
+
+  // Swatch click => only changes activeSearchColor
   function handleSwatchClick(color: string | null) {
     if (!color) return;
     setActiveSearchColor(color);
   }
 
+  // Pin toggle
   function togglePin(productId: number) {
     setPinned((prev) => {
       let updated;
@@ -269,6 +292,7 @@ export default function ModernUploader() {
     return activeSearchColor === testColor ? 'ring-4 ring-white' : '';
   }
 
+  // "Change color" => reset all
   function resetAll() {
     setHasUploaded(false);
     setUploadedImageUrl(null);
@@ -321,7 +345,7 @@ export default function ModernUploader() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* B) FIRST PAGE: Upload or color wheel? */}
+        {/* B) FIRST PAGE: Upload or color picker */}
         {!hasUploaded && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             {/* LEFT: Upload */}
@@ -352,7 +376,7 @@ export default function ModernUploader() {
               </label>
             </div>
 
-            {/* RIGHT: color picking box */}
+            {/* RIGHT: Color picking box */}
             <div
               className="
                 max-w-md mx-auto min-h-[320px] bg-white/10 border border-white/20 
@@ -366,34 +390,31 @@ export default function ModernUploader() {
 
               {isDesktop ? (
                 <>
-                  {/* Desktop: color square toggles wheel */}
+                  {/* Desktop: Color square (shows confirmed color if available) */}
                   <div
                     className="w-28 h-28 rounded-xl border border-white/30 shadow-md cursor-pointer"
                     style={{
-                      backgroundColor: hslToHex(
-                        desktopHsl.h,
-                        desktopHsl.s * 100,
-                        desktopHsl.l * 100
-                      ),
+                      backgroundColor: desktopConfirmedColor
+                        ? desktopConfirmedColor
+                        : hslToHex(
+                            desktopHsl.h,
+                            desktopHsl.s * 100,
+                            desktopHsl.l * 100
+                          ),
                     }}
                     onClick={() => setShowWheel(true)}
                   />
-                  <button
-                    onClick={() =>
-                      handleManualColor(
-                        hslToHex(
-                          desktopHsl.h,
-                          desktopHsl.s * 100,
-                          desktopHsl.l * 100
-                        )
-                      )
-                    }
-                    className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
-                  >
-                    Select Color
-                  </button>
+                  {/* Show "Select Color" button only if a color is confirmed */}
+                  {desktopConfirmedColor && (
+                    <button
+                      onClick={() => handleManualColor(desktopConfirmedColor)}
+                      className="mt-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
+                    >
+                      Select Color
+                    </button>
+                  )}
 
-                  {/* Color wheel overlay with confirm button */}
+                  {/* Color wheel overlay */}
                   {showWheel && (
                     <div
                       className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
@@ -409,7 +430,7 @@ export default function ModernUploader() {
                         />
                         <button
                           onClick={() => {
-                            handleManualColor(
+                            setDesktopConfirmedColor(
                               hslToHex(
                                 desktopHsl.h,
                                 desktopHsl.s * 100,
@@ -427,7 +448,7 @@ export default function ModernUploader() {
                   )}
                 </>
               ) : (
-                // Mobile: color input with confirm button
+                // Mobile: Color input with confirm button
                 <>
                   <input
                     type="color"
@@ -447,7 +468,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* C) SECOND PAGE: palette row, pinned, product grid */}
+        {/* C) SECOND PAGE: Palette row, pinned, product grid */}
         {selectedColor && (
           <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
             {uploadedImageUrl && (
