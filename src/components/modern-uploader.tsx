@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Upload, ArrowRight } from 'lucide-react';
+import { Upload, ArrowRight, Pin } from 'lucide-react';
 
 declare const ColorThief: any;
 
@@ -36,11 +36,7 @@ function hexToHSL(hex: string) {
     h /= 6;
   }
 
-  return {
-    h: h * 360,
-    s: s * 100,
-    l: l * 100,
-  };
+  return { h: h * 360, s: s * 100, l: l * 100 };
 }
 
 function hslToHex(h: number, s: number, l: number) {
@@ -50,7 +46,7 @@ function hslToHex(h: number, s: number, l: number) {
   let r: number, g: number, b: number;
 
   if (s === 0) {
-    r = g = b = l;
+    r = g = b = l; // Achromatic
   } else {
     const hue2rgb = (p: number, q: number, t: number) => {
       if (t < 0) t += 1;
@@ -88,6 +84,7 @@ function getTriadicColors(hex: string) {
   ];
 }
 
+// Extract the main color from an uploaded file
 async function extractColor(file: File): Promise<string> {
   return new Promise((resolve) => {
     const img = new Image();
@@ -96,11 +93,7 @@ async function extractColor(file: File): Promise<string> {
     img.onload = () => {
       try {
         const [r, g, b] = colorThief.getColor(img);
-        resolve(
-          `#${r.toString(16).padStart(2, '0')}${g
-            .toString(16)
-            .padStart(2, '0')}${b.toString(16).padStart(2, '0')}`
-        );
+        resolve(`#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`);
       } catch {
         resolve('#000000');
       }
@@ -121,7 +114,18 @@ export default function ModernUploader() {
   const [activeColor, setActiveColor] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
 
-  // Fetch initial products
+  // --------- Pinned Items State ---------
+  // We'll store product IDs that the user pinned.
+  // We read from localStorage on initial render.
+  const [pinned, setPinned] = useState<number[]>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('pinnedProducts');
+      return saved ? JSON.parse(saved) : [];
+    }
+    return [];
+  });
+
+  // --------- Fetch initial products ---------
   useEffect(() => {
     const fetchInitialProducts = async () => {
       try {
@@ -134,7 +138,24 @@ export default function ModernUploader() {
     fetchInitialProducts();
   }, []);
 
-  // Handle file upload
+  // --------- Toggle pin/unpin ---------
+  function togglePin(productId: number) {
+    // prevent <a> navigation in the product card, so do e.preventDefault() in the button
+    setPinned((prev) => {
+      let updated: number[];
+      if (prev.includes(productId)) {
+        // unpin
+        updated = prev.filter((id) => id !== productId);
+      } else {
+        // pin
+        updated = [...prev, productId];
+      }
+      localStorage.setItem('pinnedProducts', JSON.stringify(updated));
+      return updated;
+    });
+  }
+
+  // --------- Handle file upload + color extraction ---------
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -148,14 +169,15 @@ export default function ModernUploader() {
       setActiveColor(color);
       setHasUploaded(true);
 
+      // compute complementary & triadic
       const comp = getComplementaryColor(color);
       setComplementaryColor(comp);
 
       const [acc1, acc2] = getTriadicColors(color);
       setTriadicColors([acc1, acc2]);
 
-      setProducts([]); // Clear old products for clarity
-
+      // fetch color-based products
+      setProducts([]); // Clear old
       const encoded = encodeURIComponent(color);
       const res = await fetch(`/api/products?color=${encoded}`, { cache: 'no-store' });
       setProducts(await res.json());
@@ -164,7 +186,7 @@ export default function ModernUploader() {
     }
   };
 
-  // If user clicks a swatch
+  // --------- Clicking a swatch re-fetches products ---------
   const handleSwatchClick = async (color: string) => {
     setActiveColor(color);
     setProducts([]);
@@ -181,7 +203,7 @@ export default function ModernUploader() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
 
-      {/* HERO BANNER SECTION */}
+      {/* --- Hero Banner Section --- */}
       <div
         className="relative h-[38vh] md:h-[45vh] bg-cover bg-center mb-12"
         style={{
@@ -192,35 +214,27 @@ export default function ModernUploader() {
           backgroundSize: 'cover',
         }}
       >
-        {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/40" />
-
-        {/* Centered text with text-shadow */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-          <h1
-            className="text-4xl md:text-6xl font-bold text-white 
-                       [text-shadow:0_2px_5px_rgba(0,0,0,0.7)]"
-          >
+          <h1 className="text-4xl md:text-6xl font-bold text-white [text-shadow:0_2px_5px_rgba(0,0,0,0.7)]">
             SHOP BY COLOR
           </h1>
-          <p
-            className="mt-2 text-xl md:text-2xl text-white/90 font-light
-                       [text-shadow:0_2px_4px_rgba(0,0,0,0.6)]"
-          >
-            Find Home Decor in Your Exact Color
+          <p className="mt-2 text-xl md:text-2xl text-white/90 font-light [text-shadow:0_2px_4px_rgba(0,0,0,0.6)]">
+            Find Home Decor in Your Color
           </p>
         </div>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* Upload Box - hidden after first upload */}
+
+        {/* --- Upload box (hidden after first upload) --- */}
         {!hasUploaded && (
           <div className="max-w-2xl mx-auto mb-16">
             <label className="block w-full">
               <div className="group cursor-pointer border-2 border-dashed border-white/20 rounded-xl p-8 text-center 
                               hover:border-white/30 transition-transform duration-300 ease-out hover:scale-105">
                 <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
-                <h3 className="text-xl text-white/90 mb-2">Upload your color</h3>
+                <h3 className="text-xl text-white/90 mb-2">Upload any color inspiration</h3>
                 <p className="text-white/60">Photo, screenshot, or image of paint, fabric, or wall</p>
               </div>
               <input
@@ -238,7 +252,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* If user has uploaded a color, show swatches */}
+        {/* --- Color Swatch row (only after user has selected a color) --- */}
         {hasUploaded && selectedColor && (
           <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
             {/* Uploaded Image + "Change color" */}
@@ -252,7 +266,6 @@ export default function ModernUploader() {
                   />
                 )}
               </div>
-              {/* Change color link */}
               <label
                 htmlFor="changeColorInput"
                 className="text-xs md:text-sm text-blue-400 hover:underline cursor-pointer mt-2"
@@ -309,12 +322,14 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Products Grid */}
+        {/* --- Products Grid --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => {
             const matchText = Number.isFinite(product.matchPercentage)
               ? `${product.matchPercentage}% match`
               : '—% match';
+
+            const isPinned = pinned.includes(product.id);
 
             return (
               <a
@@ -325,6 +340,24 @@ export default function ModernUploader() {
                 className="block"
               >
                 <div className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300 ease-out">
+                  
+                  {/* Pin icon at top-right */}
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault(); // stop <a> from navigating
+                      togglePin(product.id);
+                    }}
+                    className="absolute top-2 right-2 z-20 bg-black/40 text-white p-1 rounded hover:bg-black/60 transition"
+                    title={isPinned ? 'Unpin item' : 'Pin item'}
+                  >
+                    <Pin
+                      className={`w-5 h-5 ${
+                        isPinned ? 'fill-white text-yellow-300' : ''
+                      }`}
+                    />
+                  </button>
+
                   <div className="aspect-square overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105">
                     <img
                       src={product.image}
@@ -369,6 +402,32 @@ export default function ModernUploader() {
           })}
         </div>
       </div>
+
+      {/* --- Pinned Items Panel (shows if user has pinned anything) --- */}
+      {pinned.length > 0 && (
+        <div className="fixed bottom-8 right-8 bg-black/50 text-white p-4 rounded-lg w-64 shadow-xl z-50">
+          <h3 className="font-bold mb-2">Pinned Items</h3>
+          <ul className="space-y-1 text-sm">
+            {pinned.map((id) => {
+              const prod = products.find((p) => p.id === id);
+              if (!prod) return null;
+              return (
+                <li key={id} className="flex justify-between items-center">
+                  <span className="mr-2 line-clamp-1">
+                    {prod.title || `Product ${id}`}
+                  </span>
+                  <button
+                    onClick={() => togglePin(id)}
+                    className="text-xs bg-white/10 hover:bg-white/20 px-2 py-1 rounded"
+                  >
+                    Unpin
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
