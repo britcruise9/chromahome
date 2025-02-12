@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Upload, ArrowRight, Pin, PinOff, Palette } from 'lucide-react';
 import { HslColorPicker } from 'react-colorful';
-// Import the local products JSON
+// Import local JSON data
 import { amazonProducts } from '../lib/amazonProducts';
 
 ////////////////////////////////////////////////////
@@ -45,7 +45,6 @@ function hslToHex(h: number, s: number, l: number): string {
   s = s / 100;
   l = l / 100;
   let r, g, b;
-
   if (s === 0) {
     r = g = b = l;
   } else {
@@ -63,12 +62,10 @@ function hslToHex(h: number, s: number, l: number): string {
     g = hue2rgb(p, q, h);
     b = hue2rgb(p, q, h - 1 / 3);
   }
-
   const toHex = (val: number) => {
     const hx = Math.round(val * 255).toString(16);
     return hx.length === 1 ? '0' + hx : hx;
   };
-
   return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
 }
 
@@ -108,13 +105,12 @@ async function extractColor(file: File): Promise<string> {
 }
 
 ////////////////////////////////////////////////////
-// Helper: Calculate match percentage between two hex colors
+// Helper: Calculate color match percentage
 ////////////////////////////////////////////////////
 
 const hexRegex = /^%23/;
 function calculateColorMatch(color1: string, color2: string): number {
   try {
-    // Ensure both colors start with "#"
     color1 = decodeURIComponent(color1).replace(hexRegex, '#');
     color2 = decodeURIComponent(color2).replace(hexRegex, '#');
     const r1 = parseInt(color1.slice(1, 3), 16);
@@ -123,7 +119,6 @@ function calculateColorMatch(color1: string, color2: string): number {
     const r2 = parseInt(color2.slice(1, 3), 16);
     const g2 = parseInt(color2.slice(3, 5), 16);
     const b2 = parseInt(color2.slice(5, 7), 16);
-    // Weighted Euclidean distance (perceptually tuned)
     const distance = Math.sqrt(
       3 * Math.pow(r2 - r1, 2) +
       4 * Math.pow(g2 - g1, 2) +
@@ -179,8 +174,8 @@ export default function ModernUploader() {
   const [hasUploaded, setHasUploaded] = useState(false);
 
   // ---------- DESKTOP COLOR WHEEL STATES ----------
-  // Initialize to a mid-tone so that the square isn’t white by default.
-  const [desktopHsl, setDesktopHsl] = useState({ h: 0, s: 0.5, l: 0.5 });
+  // Start with a mid-tone to avoid a white square initially.
+  const [desktopHsl, setDesktopHsl] = useState({ h: 0, s: 50, l: 50 });
   const [showWheel, setShowWheel] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
 
@@ -195,7 +190,7 @@ export default function ModernUploader() {
   const [isFetching, setIsFetching] = useState(false);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
-  // Hold the entire dataset (shuffled on initial load)
+  // Hold the entire dataset (shuffled once on initial load)
   const [allProducts, setAllProducts] = useState<any[]>([]);
 
   // ---------- INITIALIZATION ----------
@@ -204,15 +199,12 @@ export default function ModernUploader() {
     const interval = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroImages.length);
     }, 6000);
-
-    // Shuffle the locally imported products and save in state.
+    // Shuffle the locally imported products
     const shuffled = [...amazonProducts].sort(() => Math.random() - 0.5);
     setAllProducts(shuffled);
-    // Load the initial batch (page 1). If no color is selected, use the shuffled list.
+    // Load the initial batch (page 1) using the shuffled list
     loadProducts(1, activeSearchColor, shuffled);
-
     return () => clearInterval(interval);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // ---------- INFINITE SCROLL: Intersection Observer ----------
@@ -232,26 +224,24 @@ export default function ModernUploader() {
     };
   }, [hasMore, isFetching]);
 
-  // ---------- Load next page when "page" changes (except for page 1) ----------
+  // ---------- When page changes (except page 1), load additional products ----------
   useEffect(() => {
     if (page === 1) return;
     loadProducts(page, activeSearchColor);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
   // ---------- When the active search color changes, reset products & pagination ----------
   useEffect(() => {
-    // Only run if the full dataset is available.
     if (allProducts.length === 0) return;
+    // Clear the current product list and reset pagination
     setProducts([]);
     setPage(1);
     setHasMore(true);
     loadProducts(1, activeSearchColor);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeSearchColor, allProducts]);
 
   // ---------- LOAD PRODUCTS FUNCTION ----------
-  // If a search color is active, compute matchPercentage for every product and sort descending.
+  // If a search color is active, compute matchPercentage for each product and sort descending.
   // Otherwise, use the random (shuffled) order.
   function loadProducts(pageNum: number, color: string | null, data?: any[]) {
     setIsFetching(true);
@@ -289,11 +279,8 @@ export default function ModernUploader() {
       const url = URL.createObjectURL(file);
       setUploadedImageUrl(url);
       const color = await extractColor(file);
-      // Update palette & trigger search
-      setSelectedColor(color);
-      setComplementaryColor(getComplementaryColor(color));
-      setTriadicColors(getTriadicColors(color));
-      setActiveSearchColor(color);
+      // When a file is uploaded, update palette and trigger search
+      handleManualColor(color);
       setHasUploaded(true);
     } catch (error) {
       console.error('extract color error:', error);
@@ -305,6 +292,10 @@ export default function ModernUploader() {
     setSelectedColor(hex);
     setComplementaryColor(getComplementaryColor(hex));
     setTriadicColors(getTriadicColors(hex));
+    // Reset pagination when the active search color changes
+    setProducts([]);
+    setPage(1);
+    setHasMore(true);
     setActiveSearchColor(hex);
     setHasUploaded(true);
   }
@@ -313,9 +304,13 @@ export default function ModernUploader() {
     handleManualColor(tempMobileColor);
   }
 
-  // Swatch click: simply change activeSearchColor
+  // ---------- SWATCH CLICK: Reset pagination and update search immediately ----------
   function handleSwatchClick(color: string | null) {
     if (!color) return;
+    // Clear results and reset pagination before switching color
+    setProducts([]);
+    setPage(1);
+    setHasMore(true);
     setActiveSearchColor(color);
   }
 
@@ -447,33 +442,18 @@ export default function ModernUploader() {
 
               {isDesktop ? (
                 <>
-                  {/* Desktop: Color square toggles the wheel */}
+                  {/* Desktop: Show only a color square that opens the color wheel overlay */}
                   <div
                     className="w-28 h-28 rounded-xl border border-white/30 shadow-md cursor-pointer"
                     style={{
                       backgroundColor: hslToHex(
                         desktopHsl.h,
-                        desktopHsl.s * 100,
-                        desktopHsl.l * 100
+                        desktopHsl.s,
+                        desktopHsl.l
                       ),
                     }}
                     onClick={() => setShowWheel(true)}
                   />
-                  <button
-                    onClick={() =>
-                      handleManualColor(
-                        hslToHex(
-                          desktopHsl.h,
-                          desktopHsl.s * 100,
-                          desktopHsl.l * 100
-                        )
-                      )
-                    }
-                    className="mt-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
-                  >
-                    Select Color
-                  </button>
-
                   {showWheel && (
                     <div
                       className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
@@ -489,11 +469,12 @@ export default function ModernUploader() {
                         />
                         <button
                           onClick={() => {
+                            // Confirm the selected color and update the search
                             handleManualColor(
                               hslToHex(
                                 desktopHsl.h,
-                                desktopHsl.s * 100,
-                                desktopHsl.l * 100
+                                desktopHsl.s,
+                                desktopHsl.l
                               )
                             );
                             setShowWheel(false);
@@ -546,7 +527,6 @@ export default function ModernUploader() {
                   <ArrowRight className="w-6 h-6 text-white" />
                 </>
               )}
-
               {/* Primary */}
               <div className="flex flex-col items-center">
                 <div
@@ -564,7 +544,6 @@ export default function ModernUploader() {
                   Change
                 </button>
               </div>
-
               {/* Complementary */}
               {complementaryColor && (
                 <div className="flex flex-col items-center">
@@ -574,11 +553,10 @@ export default function ModernUploader() {
                     onClick={() => handleSwatchClick(complementaryColor)}
                   />
                   <span className="text-xs md:text-sm text-white/60 mt-2">
-                    Compliment
+                    Complement
                   </span>
                 </div>
               )}
-
               {/* Triadic */}
               {triadicColors?.map((col, i) => (
                 <div key={col} className="flex flex-col items-center">
@@ -718,10 +696,7 @@ export default function ModernUploader() {
         )}
 
         {/* Infinite Scroll Sentinel */}
-        <div
-          ref={sentinelRef}
-          className="mt-8 h-8 flex justify-center items-center"
-        >
+        <div ref={sentinelRef} className="mt-8 h-8 flex justify-center items-center">
           {isFetching && hasMore && (
             <div className="text-sm text-white/60 animate-pulse">
               Loading more...
