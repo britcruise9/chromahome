@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Upload, ArrowRight, Pin, PinOff, Palette } from 'lucide-react';
 import { HslColorPicker } from 'react-colorful';
-// Import local JSON data
 import { amazonProducts } from '../lib/amazonProducts';
 
 ////////////////////////////////////////////////////
@@ -17,7 +16,8 @@ function hexToHSL(hex: string): { h: number; s: number; l: number } {
   const b = parseInt(hex.slice(5, 7), 16) / 255;
   const max = Math.max(r, g, b);
   const min = Math.min(r, g, b);
-  let h = 0, s = 0;
+  let h = 0,
+    s = 0;
   const l = (max + min) / 2;
   if (max !== min) {
     const d = max - min;
@@ -147,6 +147,11 @@ const heroImages = [
 ////////////////////////////////////////////////////
 // 3) MAIN COMPONENT
 ////////////////////////////////////////////////////
+
+// A shared box style for both the upload and pick–a–color boxes
+const boxStyle =
+  "max-w-md mx-auto h-[320px] flex items-center justify-center bg-blue-600/10 border border-blue-300 rounded-xl p-8";
+
 export default function ModernUploader() {
   // ---------- PINNED ITEMS ----------
   const [pinned, setPinned] = useState<number[]>(() => {
@@ -237,8 +242,6 @@ export default function ModernUploader() {
   }, [activeSearchColor, allProducts]);
 
   // ---------- LOAD PRODUCTS FUNCTION ----------
-  // If a search color is active, calculate matchPercentage for each product and sort descending.
-  // Otherwise, simply use the random (shuffled) order.
   function loadProducts(pageNum: number, color: string | null, data?: any[]) {
     setIsFetching(true);
     const productsData = data || allProducts;
@@ -392,110 +395,114 @@ export default function ModernUploader() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* B) FIRST PAGE: Upload or Color Picker */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-          {/* LEFT: Upload Box */}
-          <div className="max-w-md mx-auto h-[320px] flex items-center justify-center">
-            <label className="block w-full">
-              <div
-                className="
-                  group cursor-pointer border-2 border-dashed border-white/20 
-                  rounded-xl p-8 text-center 
-                  hover:border-white/30 
-                  transition-transform duration-300 ease-out hover:scale-105
-                "
-              >
-                <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
-                <h3 className="text-xl text-white/90 mb-2">
-                  Upload your color & discover matching furniture & decor
-                </h3>
-                <p className="text-white/60">
-                  (Works with paint chips, fabrics, or any surface photo)
-                </p>
-              </div>
-              <input
-                type="file"
-                className="hidden"
-                accept="image/*"
-                onChange={handleFileUpload}
-              />
-            </label>
-          </div>
-
-          {/* RIGHT: Color Picking Box */}
-          <div className="max-w-md mx-auto h-[320px] bg-white/10 border border-white/20 rounded-xl p-6 flex flex-col gap-4 items-center justify-center">
-            <div className="flex items-center gap-2 text-white/80 mb-1">
-              <Palette className="w-6 h-6 text-white/50" />
-              <span className="font-semibold">Or pick a color below:</span>
-            </div>
-            {isDesktop ? (
-              <>
-                {/* Desktop: Color square that opens the color wheel overlay */}
-                <div
-                  className="w-28 h-28 rounded-xl border border-white/30 shadow-md cursor-pointer"
-                  style={{
-                    background: activeSearchColor
-                      ? activeSearchColor
-                      : defaultGradient,
-                  }}
-                  onClick={() => setShowWheel(true)}
-                />
-                {showWheel && (
-                  <div
-                    className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
-                    onClick={() => setShowWheel(false)}
-                  >
-                    <div
-                      className="bg-white p-4 rounded shadow-md"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <HslColorPicker
-                        color={desktopHsl}
-                        onChange={setDesktopHsl}
-                      />
-                      <button
-                        onClick={() => {
-                          // Confirm the selected color and update the search results
-                          handleManualColor(
-                            hslToHex(desktopHsl.h, desktopHsl.s, desktopHsl.l)
-                          );
-                          setShowWheel(false);
-                        }}
-                        className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
-                      >
-                        Confirm
-                      </button>
-                    </div>
-                  </div>
-                )}
-              </>
-            ) : (
-              // Mobile: Custom styled color input with radial gradient fallback
-              <>
+        {/* B) FIRST PAGE: Upload or Color Picker (hide if a color has been selected) */}
+        {!hasUploaded && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            {/* LEFT: Upload Box */}
+            <div className={boxStyle}>
+              <label className="block w-full">
+                <div className="group cursor-pointer border-2 border-dashed border-white/20 rounded-xl p-8 text-center hover:border-white/30 transition-transform duration-300 ease-out hover:scale-105">
+                  <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
+                  <h3 className="text-xl text-white/90 mb-2">
+                    Upload your color & discover matching furniture & decor
+                  </h3>
+                  <p className="text-white/60">
+                    (Works with paint chips, fabrics, or any surface photo)
+                  </p>
+                </div>
                 <input
-                  type="color"
-                  className="h-20 w-20 cursor-pointer rounded-full border-none shadow-md appearance-none"
-                  style={{
-                    background:
-                      tempMobileColor === "#ffffff" ? defaultGradient : tempMobileColor,
-                    WebkitAppearance: "none",
-                    appearance: "none",
-                  }}
-                  value={tempMobileColor}
-                  onChange={(e) => setTempMobileColor(e.target.value)}
+                  type="file"
+                  className="hidden"
+                  accept="image/*"
+                  onChange={handleFileUpload}
                 />
-                <button
-                  onClick={handleConfirmMobileColor}
-                  className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
-                >
-                  Select Color
-                </button>
-              </>
-            )}
-          </div>
-        </div>
+              </label>
+            </div>
 
-        {/* C) OPTIONAL PALETTE ROW (only when a color is selected) */}
+            {/* RIGHT: Pick a Color Box */}
+            <div className={boxStyle + " bg-blue-600/10"}>
+              <div className="flex flex-col items-center gap-4">
+                <div className="flex items-center gap-2 text-white/80 mb-1">
+                  <Palette className="w-6 h-6 text-white/50" />
+                  <span className="font-semibold">Or pick a color below:</span>
+                </div>
+                {isDesktop ? (
+                  <>
+                    {/* Desktop: Enlarged color square */}
+                    <div
+                      className="w-36 h-36 rounded-xl border border-white/30 shadow-md cursor-pointer"
+                      style={{
+                        background: activeSearchColor
+                          ? activeSearchColor
+                          : defaultGradient,
+                      }}
+                      onClick={() => setShowWheel(true)}
+                    />
+                    {showWheel && (
+                      <div
+                        className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
+                        onClick={() => setShowWheel(false)}
+                      >
+                        <div
+                          className="bg-white p-4 rounded shadow-md"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <HslColorPicker
+                            color={desktopHsl}
+                            onChange={setDesktopHsl}
+                          />
+                          <button
+                            onClick={() => {
+                              handleManualColor(
+                                hslToHex(desktopHsl.h, desktopHsl.s, desktopHsl.l)
+                              );
+                              setShowWheel(false);
+                            }}
+                            className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
+                          >
+                            Confirm
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  // Mobile: Use a square that shows the current color
+                  <>
+                    <div
+                      className="w-36 h-36 rounded-xl border border-white/30 shadow-md cursor-pointer"
+                      style={{
+                        background:
+                          tempMobileColor === "#ffffff" ? defaultGradient : tempMobileColor,
+                      }}
+                      onClick={() => {
+                        document.getElementById('mobileColorInput')?.click();
+                      }}
+                    />
+                    <input
+                      id="mobileColorInput"
+                      type="color"
+                      className="hidden"
+                      value={tempMobileColor}
+                      onChange={(e) => setTempMobileColor(e.target.value)}
+                    />
+                    {/* Only show the "Select Color" button if the user has changed the default */}
+                    {tempMobileColor !== "#ffffff" && (
+                      <button
+                        onClick={handleConfirmMobileColor}
+                        className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
+                      >
+                        Select Color
+                      </button>
+                    )}
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* C) PALETTE ROW (when a color is selected) */}
         {selectedColor && (
           <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
             {uploadedImageUrl && (
@@ -519,9 +526,7 @@ export default function ModernUploader() {
                 style={{ backgroundColor: selectedColor }}
                 onClick={() => handleSwatchClick(selectedColor)}
               />
-              <span className="text-xs md:text-sm text-white/60 mt-2">
-                Primary
-              </span>
+              <span className="text-xs md:text-sm text-white/60 mt-2">Primary</span>
               <button
                 onClick={resetAll}
                 className="mt-1 text-blue-400 hover:underline text-xs"
@@ -558,7 +563,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* D) PINNED ROW (if there are any pinned items) */}
+        {/* D) PINNED ROW */}
         {pinned.length > 0 && (
           <div className="bg-transparent border border-white/40 text-white py-3 px-4 mb-8 rounded-md">
             <h3 className="font-bold mb-2">Your Pinned Items</h3>
@@ -614,12 +619,7 @@ export default function ModernUploader() {
                 rel="noopener noreferrer"
                 className="block"
               >
-                <div
-                  className="
-                    group relative bg-white/5 rounded-xl overflow-hidden 
-                    hover:bg-white/10 transition-all duration-300 ease-out
-                  "
-                >
+                <div className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300 ease-out">
                   <button
                     type="button"
                     onClick={(e) => {
@@ -650,16 +650,12 @@ export default function ModernUploader() {
                             className="w-4 h-4 rounded-full"
                             style={{ backgroundColor: activeSearchColor }}
                           />
-                          <span className="text-xs text-white/50">
-                            {matchText}
-                          </span>
+                          <span className="text-xs text-white/50">{matchText}</span>
                         </>
                       ) : (
                         <>
                           <div className="w-4 h-4 rounded-full bg-white/10" />
-                          <span className="text-xs text-white/50">
-                            Ready to match your color
-                          </span>
+                          <span className="text-xs text-white/50">Ready to match your color</span>
                         </>
                       )}
                     </div>
@@ -680,9 +676,7 @@ export default function ModernUploader() {
         {/* F) INFINITE SCROLL SENTINEL */}
         <div ref={sentinelRef} className="mt-8 h-8 flex justify-center items-center">
           {isFetching && hasMore && (
-            <div className="text-sm text-white/60 animate-pulse">
-              Loading more...
-            </div>
+            <div className="text-sm text-white/60 animate-pulse">Loading more...</div>
           )}
           {!hasMore && (
             <div className="text-sm text-white/50">~ End of results ~</div>
@@ -692,4 +686,3 @@ export default function ModernUploader() {
     </div>
   );
 }
-
