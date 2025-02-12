@@ -21591,5 +21591,605 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0C8JQG2ML/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#ddd3cb"
+  },
+   {
+    "id": 2157,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "OLANLY Area Rugs for Living Room Bedroom, Machine Washable 4x5.9 Feet Soft Fluffy Shaggy Bedside Rug, Indoor Floor Carpet for Kids Girls and Boys, Dorms, Nursery Rooms, Home Decor Aesthetic, Grey",
+    "image": "https://m.media-amazon.com/images/I/91tpF-73gYL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9GFYJBV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6c6d6d"
+  },
+  {
+    "id": 2158,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "Ophanie Area Rugs for Bedroom Living Room, Grey Fluffy Fuzzy Shag Shaggy Soft Plush Carpet, 4x6 Indoor Floor Gray Rug for Kids Home Dorm Decor Aesthetic",
+    "image": "https://m.media-amazon.com/images/I/81KiYQpFF-L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0852WLH7M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#746f68"
+  },
+  {
+    "id": 2159,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "Zentavio Area Rugs for Living Room Grey Rugs for Bedroom 4x6 Carpet Fluffy Fuzzy Soft Shag Aesthetic Plush High Pile Gray Throw Rug for Nursery Kids Room Dorm",
+    "image": "https://m.media-amazon.com/images/I/816FqtJiOPL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5L39SJQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6b645e"
+  },
+  {
+    "id": 2160,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "PURRUGS Absorbent Non-Slip Machine Washable Entry Rug and Mat, Shoes Scraper and Dog Mat, Super Absorbent Welcome Mat for Front and Back Doors, Muddy Wet Shoes and Paws",
+    "image": "https://m.media-amazon.com/images/I/81aQ-d0GLAL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B28HM6PX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#78767b"
+  },
+  {
+    "id": 2161,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "5x7 Washable Area Rug Gray Vintage Rug Traditional Floor Cover Foldable Thin Rug Kitchen Accent Rug Indoor Distressed Non Slip Carpet Floral Print Mat Bedroom Living Room Bathroom",
+    "image": "https://m.media-amazon.com/images/I/81MXcVgPPWL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN9SVLDY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ccc8c4"
+  },
+  {
+    "id": 2162,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Washable Area Rug 8x10, Large Soft Rugs for Living Room Vintage Beige Rug 8x10 Area Rugs for Bedroom Dining Room Non-Slip Stain Resistant Under Table Rug",
+    "image": "https://m.media-amazon.com/images/I/815AYKzXnGL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYT2LXHC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5cbba"
+  },
+  {
+    "id": 2163,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Ottomanson Solid Design Non-Slip Rubberback 2x6 Indoor/Outdoor Runner Rug for Hallway, Kitchen, Living Room, Garage, Patio, 2' x 6', Black",
+    "image": "https://m.media-amazon.com/images/I/91vdua6u8AL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C21CWMVM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#343434"
+  },
+  {
+    "id": 2164,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "GENIMO 8x10 Area Rugs for Living Room, Machine Washable Non Slip Vintage Retro Rugs, Low Pile Lightweight Chenille Print Rug for Bedroom, Dining Room, Home Office, Light Taupe Brown",
+    "image": "https://m.media-amazon.com/images/I/91ZNFtzD2fL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CP3YJRY4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c9c3b8"
+  },
+  {
+    "id": 2165,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "PURRUGS Dirt Trapper Door Mat 24\" x 35.5\", Non-Slip Machine Washable Entry Rug, Shoe Scraper, Dog Door Mat, Super Absorbent Welcome Mat for Front & Back Door, Muddy Shoes & Paws, Charcoal",
+    "image": "https://m.media-amazon.com/images/I/91+f5hojtXL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B28BSXTY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#484848"
+  },
+  {
+    "id": 2166,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "Istana Rugs 3x5 - White Cream/Grey Area Rugs - Kid & Pet Friendly Washable Rugs 3x5-3x5 Area Rugs - Foldable 3 x 5 Area Rug Washable Non Slip - Eco-Friendly 3x5 Rugs with Rubber Backing",
+    "image": "https://m.media-amazon.com/images/I/91r8o7vewAL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN52BMG3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7e3db"
+  },
+  {
+    "id": 2167,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "Lahome Moroccan Trellis Washable Rug, 2x3 Kitchen Rugs for Entryway Bathroom, Non-Slip Indoor Door Mat Ultra-Thin, Small Oriental Throw Carpet for Bedroom Entry, Cream/Multi",
+    "image": "https://m.media-amazon.com/images/I/81wvfCFuRhL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BP9MZQW7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c2a585"
+  },
+  {
+    "id": 2168,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "Washable Area Rugs - Perfect for Living Room, Bedroom, Kids Room, Nursery - Stain & Water Resistant Non-Slip, Pet & Child Friendly, Vintage Tribal Area Rugs (Green, 8' x 10')",
+    "image": "https://m.media-amazon.com/images/I/814m6ZcpnML._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CGR3NP8J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#443d31"
+  },
+  {
+    "id": 2169,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "Door Mat Indoor Entrance 2x3 Rug Machine Washable Boho Floral Small Area Rug Non-Slip Low Pile Throw Rugs for Entryway, Kitchen, Front Door Indoor Entrance, Entry, Kids Room (Beige)",
+    "image": "https://m.media-amazon.com/images/I/91nfqaaJ6aL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CT5CJ4MW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ac4340"
+  },
+  {
+    "id": 2170,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "Ultra Soft Rug for Living Room, 5X8 Fluffy Shag Area Rug for Bedroom, Modern Shaggy Carpets Fuzzy Rug for Teens Dorm Nursery Home Decor Aesthetic, Upgrade Anti-Skid Durable, Grey",
+    "image": "https://m.media-amazon.com/images/I/91fG3UdN0LL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CHML98RQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#837d76"
+  },
+  {
+    "id": 2171,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "zesthome 8x10 Area Rugs for Living Room, Non-Slip Backing Washable Rugs, Vintage Large Area Rug，Stain Resistant Home Decor Rug (Orange, 8'x10')",
+    "image": "https://m.media-amazon.com/images/I/81ZCxYcUZLL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C5MJMPVR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ae9f92"
+  },
+  {
+    "id": 2172,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "Large Shag Area Rugs 6 x 9, Tie-Dyed Plush Fuzzy Rugs for Living Room, Ultra Soft Fluffy Furry Rugs for Bedroom, Indoor Carpet Nursery Rugs for Kids Room Home Decor, Light Grey",
+    "image": "https://m.media-amazon.com/images/I/81dIropQt7L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJ9DSPMB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#959493"
+  },
+  {
+    "id": 2173,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "Amdrebio Pink Round Area Rug for Girls Bedroom, Fluffy Circle Rug 4ft for Kids Room, Nursery, Teens, Dorm, Office, Plush Fibers, Furry Shaggy Circular Fuzzy Carpet, 4'X4', Cute Room Decor for Baby",
+    "image": "https://m.media-amazon.com/images/I/81doeAtY-bS._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B085C9LRJB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fdd6db"
+  },
+  {
+    "id": 2174,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "PURRUGS Dirt Trapper Door Mat 20\" x 31.5\", Non-Slip/Skid Machine Washable Entryway Rug, Dog Door Mat, Super Absorbent Welcome Mat for Muddy Wet Shoes and Paws, Beige",
+    "image": "https://m.media-amazon.com/images/I/81h2rDQlkHL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BFDZHG6M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#beab9c"
+  },
+  {
+    "id": 2175,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "Collive Small Bathroom Rug, 2' x 3' Hand-Woven Low Profile Front Entryway Rug, Tan Cotton Reversible Washable Kitchen Mat Modern Farmhouse Carpet for Foyer Bedroom Back Door Decor",
+    "image": "https://m.media-amazon.com/images/I/810qjmUosQL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B185VF76/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b69f86"
+  },
+  {
+    "id": 2176,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "KOZYFLY Boho Rugs for Entryway 3x5 ft Washable Front Door Area Rug Indoor Rubber Backed Kitchen Area Rug Front Porch Mat Non Slip Woven Cotton Floor Carpet for Entryway Living Room, Tan/Orange/Brown",
+    "image": "https://m.media-amazon.com/images/I/81oXx3jDGdL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CC26KYRL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5c5b7"
+  },
+  {
+    "id": 2177,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "Lahome Modern Abstract Area Rug - 2x3 Washable Small Entryway Rug Kitchen Sink Mat Contemporary Faux Wool Non-Slip Soft Floor Indoor Carpet for Front Door Kitchen Bathroom Pet RV, Red/Multi",
+    "image": "https://m.media-amazon.com/images/I/81Bdu0Ut5-L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09SFRXKG2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8c7a6c"
+  },
+  {
+    "id": 2178,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Area Rug Living Room Rugs: 5x7 Washable Boho Large Neutral Farmhouse Soft Moroccan Stain Resistant Indoor Floor Carpet for Bedroom Nursery Kids Playroom Office Dining Room Home House Decor- Brown",
+    "image": "https://m.media-amazon.com/images/I/81xcmkpWHtL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C2Z1T5GV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7e2dc"
+  },
+  {
+    "id": 2179,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "LOCHAS Ultra Soft Indoor Modern Area Rugs Fluffy Living Room Carpets for Children Bedroom Home Decor Nursery Rug 4x5.3 Feet, Gray",
+    "image": "https://m.media-amazon.com/images/I/81Ru4Az6E2L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B06XCF7QFR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dddddd"
+  },
+  {
+    "id": 2180,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "Loloi Layla Collection, LAY-13, Antique/Moss, 7'-6\" x 9'-6\", .13\" Thick, Area Rug, Soft, Durable, Vintage Inspired, Distressed, Low Pile, Non-Shedding, Easy Clean, Printed, Living Room Rug",
+    "image": "https://m.media-amazon.com/images/I/911D+p3fPIL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08CNLPNNC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6d0c7"
+  },
+  {
+    "id": 2181,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "PAGISOFE 4x6 Rainbow Fluffy Soft Plush Area Rugs for Girls Bedroom, Shaggy Rugs for Kids Playroom, Kawaii Princess Fuzzy Rugs for Nursery Baby Toddler, Cute Colorful Room Decor for Teenage",
+    "image": "https://m.media-amazon.com/images/I/81z1r6PNskL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09JG5TNKG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cdc3c1"
+  },
+  {
+    "id": 2182,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "Gertmenian Indoor Boho Area Rug - 8x10 Large, Non Slip, Super Strong, Ideal for High Traffic Areas in Bedroom, Living Room, Kitchen - Cullen, Cream/Multi, 28548",
+    "image": "https://m.media-amazon.com/images/I/91EoOVlgH7L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C9V8ZHT1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8cfc4"
+  },
+  {
+    "id": 2183,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "Moynesa Ultra-Thin Washable Vintage Area Rug - 3x5 Boho Entry Throw Rug Non-Slip Oriental Medallion Bedroom Mat Non-Shedding Indoor Floor Carpet for Living Laundry Room, Teal/Mutil",
+    "image": "https://m.media-amazon.com/images/I/91qk6tcCTdL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09YXTN8JP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7b9692"
+  },
+  {
+    "id": 2184,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "nuLOOM 10' x 12' Outdoor Area Rug, Casual Design With Striped Border, Stain Resistant, Highly Durable, For Patio, Balcony, Bedroom, Living Room, Dining Room, Bathroom, Light Brown",
+    "image": "https://m.media-amazon.com/images/I/918ugY6akTL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B088CT5ZRZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b9a995"
+  },
+  {
+    "id": 2185,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "Merelax Soft Modern Indoor Shaggy Area Rug for Bedroom Livingroom Dorm Kids Room Home Decorative, Non-Slip Plush Fluffy Furry Fur Rugs Comfy Nursery Accent Floor Carpet 2x3 Feet, Black",
+    "image": "https://m.media-amazon.com/images/I/81S5w6aZjFL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08MLN8KW7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1a191c"
+  },
+  {
+    "id": 2186,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "8x10 Area Rugs, Ultra-Thin Foldable Low Pile Machine Washable Rug, Lightweight Machine Washable Rugs for Living Room Bedroom, Sound Absorbing Vintage Sage Rectangle Rug",
+    "image": "https://m.media-amazon.com/images/I/6146a4RxJpL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCW9YCQ8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a1927b"
+  },
+  {
+    "id": 2187,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "EasyJoy Ultra Soft Fluffy/Fuzzy Shaggy Area Rug Faux Fur Chair Cover Seat Pad for Bedroom Floor Sofa Living Room (2 x 6 ft Sheepskin, Beige)",
+    "image": "https://m.media-amazon.com/images/I/81g2xRIlMGL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B083J5CC4M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ece0d3"
+  },
+  {
+    "id": 2188,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "BESTSWEETIE 6x9 Area Rug Machine Washable Non-Slip Low Pile Print Pattern Western and Aztec Rug for Living Room Bedroom Entryway-Cream/Camel",
+    "image": "https://m.media-amazon.com/images/I/81lhDUeZ1cL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKPCJD35/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#baad8f"
+  },
+  {
+    "id": 2189,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "Lahome Modern Rainbow 2x8 Runner Rug, Washable Hallway Kitchen Runner Rugs with Rubber Backing Farmhouse Indoor Outdoor Carpet, Contemporary Non Slip Carpet for Entry Bedroom Porch",
+    "image": "https://m.media-amazon.com/images/I/81fTq2noacL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQ23XV5B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bfb7ad"
+  },
+  {
+    "id": 2190,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "Keen Home Design 2x3 Rug - Machine Washable Entry Rug with Non-Slip Backing, Ideal for Enteryway, Kitchen, Bathroom, Laundry Room - Vintage, Easy Clean, Durable, Low Pile Rug - (2' x 3')",
+    "image": "https://m.media-amazon.com/images/I/81sITmkTx1L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CM4WPQC5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6e1726"
+  },
+  {
+    "id": 2191,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "Soft Runner Rugs for Bedroom Hallways, 2x6 Beige Fluffy Shag Throw Area Rug Non Slip for Bedside Dorm, Long Shaggy Furry Carpet for Nursery Living Room",
+    "image": "https://m.media-amazon.com/images/I/91GApXWuyHL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZ3J9GFV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8c4b3"
+  },
+  {
+    "id": 2192,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "Chicrug Soft Runner Rugs for Bedroom Living Room Plush Fluffy Rug 2x6 Feet, Shag Furry Area Rug Carpet Non Shedding for Nursery Children Kids Girls Room Home Decorative, Grey",
+    "image": "https://m.media-amazon.com/images/I/81P4e+zxnHL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B097479QQY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c5c1c0"
+  },
+  {
+    "id": 2193,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "Ottomanson Machine Washable Bordered Design Non-Slip Rubberback 2x7 Traditional Runner Rug for Hallway, Kitchen, Bedroom, Living Room, 1'10\" x 7', Light Gray",
+    "image": "https://m.media-amazon.com/images/I/91QI6rF9lIL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07TPQFB6F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b4aca3"
+  },
+  {
+    "id": 2194,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "Brown Entryway Rug 2x3 Vintage Area Carpet Indoor Kitchen Washable Door Mat Living Room Entrance Small Low Pile Traditional Distressed Retro Accent Throw Rug Non Slip Office Bathroom",
+    "image": "https://m.media-amazon.com/images/I/91I2WIn33IL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQSVTMYQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b5b1a4"
+  },
+  {
+    "id": 2195,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "Noahas Fluffy Bedroom Rug Carpet, 4x5.3 Feet Shaggy Fuzzy Rugs for Bedroom, Soft Rug for Kids Room, Plush Nursery Rug for Baby, Thick Black Area Rugs for Living Room, Cute Room Decor for Girls Boys",
+    "image": "https://m.media-amazon.com/images/I/81jbe3OpfGL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09TDC6XJL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#201c1f"
+  },
+  {
+    "id": 2196,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "nuLOOM 9x12 Becca Traditional Tiled Area Rug, Beige, Faded Transitional Design, Stain Resistant, For Bedroom, Dining Room, Living Room, Hallway, Office, Kitchen, Entryway",
+    "image": "https://m.media-amazon.com/images/I/61lRDmI0loL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07R1NKD88/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b1a493"
+  },
+  {
+    "id": 2197,
+    "title": "Amazon Product 41",
+    "price": 0,
+    "description": "Runner Rug 2x5 Boho Geometric Area Rug: Small Washable Kitchen Rug Entryway Rug, Soft Non Slip Moroccan Long Hallway Rug for Bedroom Bathroom Laundry Entryway Staircase Foyer(Beige, 2X5)",
+    "image": "https://m.media-amazon.com/images/I/81zeD4AelKL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYKVJF8K/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eae6db"
+  },
+  {
+    "id": 2198,
+    "title": "Amazon Product 42",
+    "price": 0,
+    "description": "SERISSA Boho Rugs for Entryway, 2x3 Rust Entryway Rug Non-Slip Washable Small Area Rug, Ultra Soft Oriental Vintage Low-Pile Indoor Door Mat Floor Carpet for Entrance Bedroom Kitchen Bathroom",
+    "image": "https://m.media-amazon.com/images/I/81Z-XqzUFeL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLLLDTF9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b9998c"
+  },
+  {
+    "id": 2199,
+    "title": "Amazon Product 43",
+    "price": 0,
+    "description": "PURRUGS Dirt Trapper Door Mat 20\" x 32\", Non-Slip/Skid Machine Washable Entryway Rug, Shoes Scraper, Area Rug, Super Absorbent Welcome Mat for Muddy Wet Shoes and Paws, Light Grey & Dark Grey",
+    "image": "https://m.media-amazon.com/images/I/819QlFSqCdL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNVV2N7G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#aeaeae"
+  },
+  {
+    "id": 2200,
+    "title": "Amazon Product 44",
+    "price": 0,
+    "description": "duduta Small White Faux Sheepskin Throw Rug 2x3 ft, Fluffy Shag Fur Chair Cover Washable",
+    "image": "https://m.media-amazon.com/images/I/7100ndrNA8L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08CDM1XGL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f6f6f6"
+  },
+  {
+    "id": 2201,
+    "title": "Amazon Product 45",
+    "price": 0,
+    "description": "nuLOOM 8x10 Elfriede Jute & Cotton Hand Woven Area Rug, Natural, Solid Rustic Farmhouse Style, Weaved Design, Natural Fiber, For Bedroom, Living Room, Dining Room, Hallway, Office, Entryway",
+    "image": "https://m.media-amazon.com/images/I/618GITXnS0L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B077JHRYPS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b7a997"
+  },
+  {
+    "id": 2202,
+    "title": "Amazon Product 46",
+    "price": 0,
+    "description": "AROGAN Premium Faux Cowhide Rug 4.6 x 5.2 Feet, Sturdy and Large Size Cow Print Rugs, Suitable for Bedroom Living Room Western Decor, Faux Fur Animal Cow Hide Carpet, Brown",
+    "image": "https://m.media-amazon.com/images/I/81s2oyj9LYL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08LZPKJRN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8f5d38"
+  },
+  {
+    "id": 2203,
+    "title": "Amazon Product 47",
+    "price": 0,
+    "description": "SAFAVIEH Arizona Shag Collection Area Rug - 8' x 10', Ivory & Beige, Moroccan Design, Non-Shedding & Easy Care, 1.6-inch Thick Ideal for High Traffic Areas in Living Room, Bedroom (ASG741A)",
+    "image": "https://m.media-amazon.com/images/I/A1s5j+Ndt5L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01M0FB151/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6cec7"
+  },
+  {
+    "id": 2204,
+    "title": "Amazon Product 48",
+    "price": 0,
+    "description": "Modern Abstract Runner Rug 2x6, Blue Washable Kitchen Runner Non-Slip Soft Hallway Rug Runner Thin Print Faux Wool Carpet for Entryway Bedroom Laundry Room Indoor Home Decor",
+    "image": "https://m.media-amazon.com/images/I/61B3j5-N9pL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSSVLWHG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#527893"
+  },
+  {
+    "id": 2205,
+    "title": "Amazon Product 49",
+    "price": 0,
+    "description": "Vintage 5' x 7' Washable Area Rug - Stylish Indoor Rug for Living, Dining or Bedroom - Lightweight Carpet with Non-Slip Backing - Foldable for Easy Placement and Maintenance - Grey",
+    "image": "https://m.media-amazon.com/images/I/A1eqmC4jVbL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLNS53QD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c0bab4"
+  },
+  {
+    "id": 2206,
+    "title": "Amazon Product 50",
+    "price": 0,
+    "description": "Area Rug 2x3 Vintage Rug: Small Washable Indoor Medallion Entryway Rug Low Pile Distressed Floor Carpet Retro Accent Doormat for Bedroom Bathroom Hallway Kitchen Home Office(Beige, 2'x3')",
+    "image": "https://m.media-amazon.com/images/I/91s6ypeAYJL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D14TVCZG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8cfc5"
+  },
+  {
+    "id": 2207,
+    "title": "Amazon Product 51",
+    "price": 0,
+    "description": "Shag Area Rug 5x7 Feet Extra Soft Rugs for Living Room, High Pile Indoor Carpet for Bedroom, Playroom, Nursery, Home Decor, Geometric, Dark Grey/White",
+    "image": "https://m.media-amazon.com/images/I/81k2yXHqnHL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CWZW3BSP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#726e66"
+  },
+  {
+    "id": 2208,
+    "title": "Amazon Product 52",
+    "price": 0,
+    "description": "SAFAVIEH Adirondack Collection Area Rug - 8' x 10', Ivory & Sage, Oriental Distressed Design, Non-Shedding & Easy Care, Ideal for High Traffic Areas in Living Room, Bedroom (ADR109V)",
+    "image": "https://m.media-amazon.com/images/I/A1P9Tuf3pSL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01B9A3038/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c8c0b4"
+  },
+  {
+    "id": 2209,
+    "title": "Amazon Product 53",
+    "price": 0,
+    "description": "vivorug Washable Rug, Ultra Soft Area Rug 8x10, Non Slip Abstract Rug Foldable, Stain Resistant Rugs for Living Room Bedroom, Modern Fuzzy Rug (Gray/Rust, 8'x10')",
+    "image": "https://m.media-amazon.com/images/I/91NjvuOBuoL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BJ63P1H8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c6beb8"
+  },
+  {
+    "id": 2210,
+    "title": "Amazon Product 54",
+    "price": 0,
+    "description": "PURRUGS Dirt Trapper Door Mat 24\" x 36\", Non-Slip/Skid Machine Washable Entryway Rug, Shoes Scraper, Throw Rug, Super Absorbent Area Rug for Muddy Wet Shoes and Paws, Beige & Grayish Brown",
+    "image": "https://m.media-amazon.com/images/I/91hv4WnQCNL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CS31Y997/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#93857a"
+  },
+  {
+    "id": 2211,
+    "title": "Amazon Product 55",
+    "price": 0,
+    "description": "EARTHALL Woven Area Rug 2x3 Ft Washable Rugs for Entryway Braided Non Slip Throw Rugs Door Mat Indoor Outdoor Entrance Small Cotton Woven Carpet for Kitchen Foyer Front Door, Orange/Tan/Brown",
+    "image": "https://m.media-amazon.com/images/I/81PQYqo39tL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C3HNC5VQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b09578"
+  },
+  {
+    "id": 2212,
+    "title": "Amazon Product 56",
+    "price": 0,
+    "description": "Lahome Floral Rugs for Entryway, 2X3 Washable Kitchen Rugs Ultra-Thin Soft Rug, Non Slip Indoor Door Mat Stain Resistant Boho Small Rug Low-Pile Throw Rug for Bathroom Bedroom(2x3ft, Green)",
+    "image": "https://m.media-amazon.com/images/I/81U4H8l0XKL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CS9RMV43/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7e8671"
+  },
+  {
+    "id": 2213,
+    "title": "Amazon Product 57",
+    "price": 0,
+    "description": "ONASAR Large Modern Area Rug for Living Room Bedroom, 6x9 Floor Rug, Grey and Black Rug, Moroccan Geometric Shag Rug for Office, Playroom, Kids Room, Fluffy Plush Fuzzy Rug, Big Throw Carpet",
+    "image": "https://m.media-amazon.com/images/I/913agX2rMQL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CBVK5BQV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7e7e7e"
+  },
+  {
+    "id": 2214,
+    "title": "Amazon Product 58",
+    "price": 0,
+    "description": "Gray Area Rug 5x7 Machine Washable Vintage Living Room Distressed Non Slip Carpet Traditional Indoor Bedroom Grey Retro Floral Accent Throw Large Rug for Office Kitchen Bathroom Dining Room",
+    "image": "https://m.media-amazon.com/images/I/91cL+wcVZdL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CHMNLVWC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c4bbb5"
+  },
+  {
+    "id": 2215,
+    "title": "Amazon Product 59",
+    "price": 0,
+    "description": "Nursery Rug for Baby Girl, Neutral Blush Pink Boho Cute Floral Foldable Machine Washable Soft Faux Wool Carpet Area Rugs for Living Room Bedroom Dorm Kids Playroom, 5x7",
+    "image": "https://m.media-amazon.com/images/I/81fmqAk5EOL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CGVRLR97/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7dfd8"
+  },
+  {
+    "id": 2216,
+    "title": "Amazon Product 60",
+    "price": 0,
+    "description": "Lahome Pink Rug for Living Room - 5x7 Area Rug Washable Non-Slip Boho Rugs for Bedroom Throw Cute Soft Kids Nursery Rug, Abstract Botanical Print Carpet for Classroom Dorm Entryway Office Dining Room",
+    "image": "https://m.media-amazon.com/images/I/81mZCQuErgL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C8JQG2ML/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddd3cb"
   }
 ];
