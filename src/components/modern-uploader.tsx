@@ -84,7 +84,7 @@ function getTriadicColors(hex: string) {
   ];
 }
 
-// Extract the main color from an uploaded file
+// ---------- Extract Color from Uploaded File ----------
 async function extractColor(file: File): Promise<string> {
   return new Promise((resolve) => {
     const img = new Image();
@@ -114,9 +114,7 @@ export default function ModernUploader() {
   const [activeColor, setActiveColor] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
 
-  // --------- Pinned Items State ---------
-  // We'll store product IDs that the user pinned.
-  // We read from localStorage on initial render.
+  // ----- Pinned Items (store product IDs in localStorage) -----
   const [pinned, setPinned] = useState<number[]>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('pinnedProducts');
@@ -125,7 +123,7 @@ export default function ModernUploader() {
     return [];
   });
 
-  // --------- Fetch initial products ---------
+  // ----- Fetch initial products -----
   useEffect(() => {
     const fetchInitialProducts = async () => {
       try {
@@ -138,9 +136,8 @@ export default function ModernUploader() {
     fetchInitialProducts();
   }, []);
 
-  // --------- Toggle pin/unpin ---------
+  // ----- Toggle Pin/Unpin -----
   function togglePin(productId: number) {
-    // prevent <a> navigation in the product card, so do e.preventDefault() in the button
     setPinned((prev) => {
       let updated: number[];
       if (prev.includes(productId)) {
@@ -155,7 +152,7 @@ export default function ModernUploader() {
     });
   }
 
-  // --------- Handle file upload + color extraction ---------
+  // ----- Handle file upload + color extraction -----
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -169,15 +166,15 @@ export default function ModernUploader() {
       setActiveColor(color);
       setHasUploaded(true);
 
-      // compute complementary & triadic
+      // complementary + triadic
       const comp = getComplementaryColor(color);
       setComplementaryColor(comp);
 
       const [acc1, acc2] = getTriadicColors(color);
       setTriadicColors([acc1, acc2]);
 
-      // fetch color-based products
-      setProducts([]); // Clear old
+      // fetch matching products
+      setProducts([]); // clear old
       const encoded = encodeURIComponent(color);
       const res = await fetch(`/api/products?color=${encoded}`, { cache: 'no-store' });
       setProducts(await res.json());
@@ -186,11 +183,10 @@ export default function ModernUploader() {
     }
   };
 
-  // --------- Clicking a swatch re-fetches products ---------
+  // ----- Clicking a swatch re-fetches products for that color -----
   const handleSwatchClick = async (color: string) => {
     setActiveColor(color);
     setProducts([]);
-
     try {
       const encoded = encodeURIComponent(color);
       const res = await fetch(`/api/products?color=${encoded}`, { cache: 'no-store' });
@@ -203,7 +199,7 @@ export default function ModernUploader() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
 
-      {/* --- Hero Banner Section --- */}
+      {/* --- Hero Banner --- */}
       <div
         className="relative h-[38vh] md:h-[45vh] bg-cover bg-center mb-12"
         style={{
@@ -226,8 +222,7 @@ export default function ModernUploader() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-20">
-
-        {/* --- Upload box (hidden after first upload) --- */}
+        {/* --- Upload Box (hidden after upload) --- */}
         {!hasUploaded && (
           <div className="max-w-2xl mx-auto mb-16">
             <label className="block w-full">
@@ -252,10 +247,9 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* --- Color Swatch row (only after user has selected a color) --- */}
+        {/* --- Color Swatches --- */}
         {hasUploaded && selectedColor && (
           <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
-            {/* Uploaded Image + "Change color" */}
             <div className="flex flex-col items-center">
               <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
                 {uploadedImageUrl && (
@@ -283,7 +277,7 @@ export default function ModernUploader() {
 
             <ArrowRight className="w-6 h-6 text-white" />
 
-            {/* Primary Swatch */}
+            {/* Primary Color */}
             <div className="flex flex-col items-center">
               <div
                 className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer 
@@ -294,7 +288,7 @@ export default function ModernUploader() {
               <span className="text-xs md:text-sm text-white/60 mt-2">Primary</span>
             </div>
 
-            {/* Complementary Swatch */}
+            {/* Complementary */}
             {complementaryColor && (
               <div className="flex flex-col items-center">
                 <div
@@ -307,7 +301,7 @@ export default function ModernUploader() {
               </div>
             )}
 
-            {/* Accent (Triadic) Colors */}
+            {/* Triadic (Accent) Colors */}
             {triadicColors?.map((col, i) => (
               <div key={col} className="flex flex-col items-center">
                 <div
@@ -319,6 +313,39 @@ export default function ModernUploader() {
                 <span className="text-xs md:text-sm text-white/60 mt-2">Accent {i + 1}</span>
               </div>
             ))}
+          </div>
+        )}
+
+        {/* --- Pinned Items Row (IF pinned items exist) --- */}
+        {pinned.length > 0 && (
+          <div className="bg-black/50 text-white py-3 px-4 mb-8 rounded-md">
+            <h3 className="font-bold mb-2">Your Pinned Items</h3>
+            <div className="flex gap-3 overflow-x-auto scrollbar-hide">
+              {pinned.map((id) => {
+                const product = products.find((p) => p.id === id);
+                if (!product) return null;
+
+                return (
+                  <div
+                    key={id}
+                    className="min-w-[120px] relative border border-white/20 rounded p-2 shrink-0"
+                  >
+                    <button
+                      onClick={() => togglePin(id)}
+                      className="absolute top-1 right-1 bg-black/40 px-1 rounded text-xs hover:bg-black/60"
+                    >
+                      Unpin
+                    </button>
+                    <img
+                      src={product.image}
+                      alt={product.title}
+                      className="h-20 w-auto object-cover mx-auto"
+                    />
+                    <p className="text-xs mt-2 line-clamp-1 text-center">{product.title}</p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         )}
 
@@ -340,12 +367,11 @@ export default function ModernUploader() {
                 className="block"
               >
                 <div className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300 ease-out">
-                  
-                  {/* Pin icon at top-right */}
+                  {/* Pin Icon at top-right */}
                   <button
                     type="button"
                     onClick={(e) => {
-                      e.preventDefault(); // stop <a> from navigating
+                      e.preventDefault(); // stops navigation
                       togglePin(product.id);
                     }}
                     className="absolute top-2 right-2 z-20 bg-black/40 text-white p-1 rounded hover:bg-black/60 transition"
@@ -402,33 +428,8 @@ export default function ModernUploader() {
           })}
         </div>
       </div>
-
-      {/* --- Pinned Items Panel (shows if user has pinned anything) --- */}
-      {pinned.length > 0 && (
-        <div className="fixed bottom-8 right-8 bg-black/50 text-white p-4 rounded-lg w-64 shadow-xl z-50">
-          <h3 className="font-bold mb-2">Pinned Items</h3>
-          <ul className="space-y-1 text-sm">
-            {pinned.map((id) => {
-              const prod = products.find((p) => p.id === id);
-              if (!prod) return null;
-              return (
-                <li key={id} className="flex justify-between items-center">
-                  <span className="mr-2 line-clamp-1">
-                    {prod.title || `Product ${id}`}
-                  </span>
-                  <button
-                    onClick={() => togglePin(id)}
-                    className="text-xs bg-white/10 hover:bg-white/20 px-2 py-1 rounded"
-                  >
-                    Unpin
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      )}
     </div>
   );
 }
+
 
