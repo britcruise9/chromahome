@@ -24351,5 +24351,305 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B00XBPH5JU/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#252525"
+  },
+  {
+    "id": 2433,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "Joydeco Linen Curtains 2 Panel Set, Light Filtering, Ivory on Linen Curtains 96 Inch Curtains for Living Room, Cream Drapes 96 Inches Long Rod Pocket Back Tab Curtains (96\" L x 52\" W)",
+    "image": "https://m.media-amazon.com/images/I/81XdPuPD-UL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BYD1BPNB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f1eee7"
+  },
+  {
+    "id": 2434,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "NICETOWN Natural 100% Blackout Linen Curtains 84 inch Long Burg for Living Room, 2 Panels, 52\" Wide, Farmhouse Thick Completely Blackout Window Treatment Thermal Insulated Warm Drapes for Winter",
+    "image": "https://m.media-amazon.com/images/I/814son247CL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B7DX7C51/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cdc7be"
+  },
+  {
+    "id": 2435,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "XTMYI Linen Cotton Farmhouse Curtains for Living Room Bedroom 84 Inches Long Two Sheer Hook Belt Pleated Back Tab Birch Off White Ivory Neutral Boho Sour Cream Curtain Drapes 84 Length 2 Panels Set",
+    "image": "https://m.media-amazon.com/images/I/81HHM7bbikL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BYYZVJC4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbd9d5"
+  },
+  {
+    "id": 2436,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "BGment Rod Pocket and Back Tab Blackout Curtains for Bedroom - Thermal Insulated Room Darkening Curtains for Living Room, 42x63 inch, 2 Window Curtain Panels, Navy Blue",
+    "image": "https://m.media-amazon.com/images/I/61O1tH2E4yL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07MHTK3XK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#272c41"
+  },
+  {
+    "id": 2437,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "Joydeco Blackout Room Divider Curtains for Sliding Glass Doors 84 Inches Long 1 Panel, Extra Wide Sliding Door Curtains for Patio Bedroom Living Room (Black, 100Wx84L)",
+    "image": "https://m.media-amazon.com/images/I/61xmTy5XtpL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BYSNXPR5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1f1f1f"
+  },
+  {
+    "id": 2438,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "INOVADAY 100% Blackout Curtains for Bedroom, Black Out Curtains 84 Inch Long, Clip Rings/Rod Pocket Linen Blackout Drapes 2 Panels Set, Thermal Insulated Drapes for Living Room- Beige, W50xL84",
+    "image": "https://m.media-amazon.com/images/I/71onJU0CVkL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MT485FQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7e3e0"
+  },
+  {
+    "id": 2439,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "HOMEIDEAS Sage Green Sheer Curtains 52 X 63 Inches Length 2 Panels Embroidered Leaf Pattern Pocket Faux Linen Floral Semi Sheer Voile Window Curtains/Drapes for Bedroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/71LPRcGrBCL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08L4S8CBV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#99a398"
+  },
+  {
+    "id": 2440,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "DONREN Christmas Dark Green Blackout Thermal Insulating Window Curtain Panels for Bedroom -Room Darkening 84 inch Length Rod Pocket Drapes for Living Room (Emerald Green, 42 x 84 inches Long, 2 Panels)",
+    "image": "https://m.media-amazon.com/images/I/71GxbifiwHL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07MF6GXNB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1b382f"
+  },
+  {
+    "id": 2441,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "ChrisDowa 100% Blackout Curtains for Bedroom with Black Liner, 2 Thick Layers Total Blackout Thermal Insulated Grommet Window Curtains 63 Inch Length 2 Panels Set (Light Grey, 42 x 63 Inch)",
+    "image": "https://m.media-amazon.com/images/I/71zEAmbaSLL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09Y33WCRM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c5c3c1"
+  },
+  {
+    "id": 2442,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "MIULEE Velvet Curtains 84 inches 2 Panels - Luxury Blackout Curtains for Bedroom Living Room Thermal Insulated Super Soft Window Drapes Rod Pocket & Back Tab, Olive Green, W52 x L84 inches",
+    "image": "https://m.media-amazon.com/images/I/71sVfRFc32L._AC_SX569_PIbundle-2,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09TT6C82J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8f9c82"
+  },
+  {
+    "id": 2443,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "Lecloud Doris Faux Linen Sheer White Curtains 96 Inches Long 2 Panels, Outdoor Living Room Bedroom Curtains Balance Privacy & Light, Dual Rod Pocket Long Texture Drapes Window/Home Decor, 40W x 96L",
+    "image": "https://m.media-amazon.com/images/I/81iOjiaFBKL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C9MHKQMC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bab8b9"
+  },
+  {
+    "id": 2444,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "MIULEE Room Darkening Curtains Thermal Insulated Black Out Drapes Solid Window Treatment Long Grommet Light Blocking Blackout Curtain for Living Room Bedroom 2 Panels Set 52 x 84 inch Length Beige",
+    "image": "https://m.media-amazon.com/images/I/71oUOOrNJ2L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B086HF8ZXH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b4a08c"
+  },
+  {
+    "id": 2445,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "CUCRAF Full Blackout Window Curtains 84 inches Long, Faux Linen Look Thermal Insulated Grommet Drapes Panels for Bedroom Living Room, Set of 2(52 x 84 inches, Light Khaki)",
+    "image": "https://m.media-amazon.com/images/I/81wuucAFrCL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08V8HD2WT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a69989"
+  },
+  {
+    "id": 2446,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "BGment Thermal Insulated 100% Blackout Curtains for Bedroom with Black Liner, Double Layer Full Room Darkening Noise Reducing Rod Pocket Curtain (52 x 63 Inch, Pure White, 2 Panels)",
+    "image": "https://m.media-amazon.com/images/I/61wKso1otDL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0947RBHTX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dddcd5"
+  },
+  {
+    "id": 2447,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "HOMEIDEAS Non-See-Through White Privacy Sheer Curtains 52 X 84 Inches Long 2 Panels Sheer Curtains Light Filtering Window Curtains Drapes for Bedroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/61Rjw4NYJ2L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BQ36PN9V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4e2de"
+  },
+  {
+    "id": 2448,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "MIULEE Velvet Curtains Olive Green Elegant Grommet Curtains Thermal Insulated Soundproof Room Darkening Curtains/Drapes for Classical Living Room Bedroom Decor 52 x 84 Inch Set of 2",
+    "image": "https://m.media-amazon.com/images/I/71eRdpHhpCL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08NZ55C6C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#30392c"
+  },
+  {
+    "id": 2449,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "BGment Short Blackout Curtains for Bedroom - Room Darkening Curtain Rod Pocket 45 Inch Length Thermal Insulated Window Drapes for Rv Bathroom Cafe Privacy Blind, 42 x 45 Inch, 2 Panels, Navy Blue",
+    "image": "https://m.media-amazon.com/images/I/61IzB-Y2K1L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07RRH1X3N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1b2542"
+  },
+  {
+    "id": 2450,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "HPD Half Price Drapes Faux Linen Textured Room Darkening Curtains for Bedroom 96 Inches Long (1 Panel), 50W X 96L Curtains for Living Room Home Decor, Birch",
+    "image": "https://m.media-amazon.com/images/I/81y0uj9-yQL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B078JLWJ9G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bbb7b1"
+  },
+  {
+    "id": 2451,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "RYB HOME Bedroom Blackout Curtains - Small Window Treatment Set Energy Saving Thermal Insulated Drapes for Living Room/Nursery/Kitchen, 42-inch Wide x 45-inch Long, Black, 2 Panels",
+    "image": "https://m.media-amazon.com/images/I/71hH+CwZNjL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B074HZNZ5C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#29292b"
+  },
+  {
+    "id": 2452,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "Yakamok Room Darkening Gray Blackout Curtains, Light Blocking Thermal Insulated Grommet Drapes for Bedroom Living Room, 52W x 84L, Grey Curtains, 2 Panels, 2 Tie Backs Included",
+    "image": "https://m.media-amazon.com/images/I/61OdXGWmdvL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B072HWC79L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7c7a7f"
+  },
+  {
+    "id": 2453,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "Easy-Going Blackout Curtains for Bedroom, Solid Thermal Insulated Grommet and Noise Reduction Window Drapes, Room Darkening Curtains for Living Room, 2 Panels (52x63 in, Gray)",
+    "image": "https://m.media-amazon.com/images/I/51qPQRv-bpL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08F9LZ5L8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#666767"
+  },
+  {
+    "id": 2454,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Sage Lace Green Curtains 63 Inch Length for Bedroom 2 Panels Elegant Flowered Light Filtering Semi Sheer Embroiderd Drapes for Living Room Dining Room Easter Decor 1 Pair Set W52 X L63 Light Green",
+    "image": "https://m.media-amazon.com/images/I/61en5VnpdrL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CFY4L3LK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a2a384"
+  },
+  {
+    "id": 2455,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "100% Blackout Curtains 84 Inch Length 2 Panels Set Farmhouse Style for Bedroom Windows/Living Room Thermal Insulated Neutral Boho Drapes Linen Blend Natural Ivory 7ft Long Hook Belt Pleated/Back Tab",
+    "image": "https://m.media-amazon.com/images/I/91ioBwrxXrL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQYSVL2S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c3bdb5"
+  },
+  {
+    "id": 2456,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "Tollpiz Short Linen Tier Curtains Rod Pocket Semi Sheer Half Kitchen Curtain Burlap Light Filtering Thick Linen Drapes for Bathroom, 30 x 24 inches Long, Natural, Set of 2 Panels",
+    "image": "https://m.media-amazon.com/images/I/81b5T3l-VtL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLGTVHPF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c4b8ac"
+  },
+  {
+    "id": 2457,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "DUALIFE Baby Pink Curtains Blackout 63 Inch Length - Rose Blush Curtains for Nursery Thermal Insulated Room Darkening Curtain Panel Pair with Grommet Top 42 x 63 Inches Long, 2 Panels",
+    "image": "https://m.media-amazon.com/images/I/71FdXuDjlJL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08QCY8VCM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e8dad9"
+  },
+  {
+    "id": 2458,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "H.VERSAILTEX Blackout Curtains Thermal Insulated Window Treatment Panels Room Darkening Blackout Drapes for Living Room Back Tab/Rod Pocket Bedroom Draperies, 52 x 84 Inch, Light Sage, 2 Panels",
+    "image": "https://m.media-amazon.com/images/I/616pmRf3jmL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01M8QAWA9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#50584a"
+  },
+  {
+    "id": 2459,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "Joydeco Black Velvet Curtains 90 inch Length 2 Panels, Luxury Blackout Rod Pocket Thermal Insulated Window Curtains, Super Soft Room Darkening Drapes for Living Dining Room Bedroom, W52 x L90 inches",
+    "image": "https://m.media-amazon.com/images/I/61bRAqkrihL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09ZF4X21M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#171615"
+  },
+  {
+    "id": 2460,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "H.VERSAILTEX Blackout Curtains for Bedroom Thermal Insulated Room Darkening Living Room Curtains 63 Inch Long Grommet Privacy Protection Window Curtain Panels/Drapes for Nursery, 2 Panels, Ivory/Cream",
+    "image": "https://m.media-amazon.com/images/I/61xvWZeINcL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08NBC34VS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a8a594"
+  },
+  {
+    "id": 2461,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "Hiasan Short Blackout Curtains for Bedroom - Thermal Insulated & Light Blocking Window Curtains for Living Room, 2 Drape Panels Sewn with Tiebacks, Dark Grey, 42 x 45 Inch",
+    "image": "https://m.media-amazon.com/images/I/61h+HhudELS._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08PYGMZN3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#49484d"
+  },
+  {
+    "id": 2462,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "RYB HOME White Curtains Sheer - Linen Texture Sheer Window Covering, Light & Airy Translucent Panels for Bedroom Living Room Patio Glass Door, 52 inch Width x 95 inch Length, Set of 2",
+    "image": "https://m.media-amazon.com/images/I/71REuLDVgVL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07H7FTXVV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcdad7"
   }
 ];
