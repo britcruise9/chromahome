@@ -3,8 +3,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Upload, ArrowRight, Pin, PinOff, Palette } from 'lucide-react';
 import { HslColorPicker } from 'react-colorful';
-// Adjust the path below to point to your local JSON file of products.
-import amazonProducts from '../path/to/amazonproducts';
+// Import the products JSON from the specified file.
+import amazonProducts from '/src/lib/amazonProducts';
 
 // ===================================================
 // 1) COLOR UTILS
@@ -749,3 +749,4 @@ export default function ModernUploader() {
     </div>
   );
 }
+
