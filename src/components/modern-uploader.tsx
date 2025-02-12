@@ -118,13 +118,13 @@ function calculateColorMatch(color1: string, color2: string): number {
     const b2 = parseInt(color2.slice(5, 7), 16);
     const distance = Math.sqrt(
       3 * Math.pow(r2 - r1, 2) +
-      4 * Math.pow(g2 - g1, 2) +
-      2 * Math.pow(b2 - b1, 2)
+        4 * Math.pow(g2 - g1, 2) +
+        2 * Math.pow(b2 - b1, 2)
     );
     const maxDistance = Math.sqrt(
       3 * Math.pow(255, 2) +
-      4 * Math.pow(255, 2) +
-      2 * Math.pow(255, 2)
+        4 * Math.pow(255, 2) +
+        2 * Math.pow(255, 2)
     );
     return Math.round((1 - distance / maxDistance) * 100);
   } catch (error) {
@@ -172,13 +172,9 @@ export default function ModernUploader() {
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
 
-  // ---------- DESKTOP COLOR WHEEL STATES ----------
-  const [desktopHsl, setDesktopHsl] = useState({ h: 0, s: 50, l: 50 });
+  // ---------- COLOR PICKER (ALL DEVICES) ----------
   const [showWheel, setShowWheel] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(false);
-
-  // ---------- MOBILE COLOR STATE ----------
-  const [tempMobileColor, setTempMobileColor] = useState("#ffffff");
+  const [colorWheelHsl, setColorWheelHsl] = useState({ h: 0, s: 50, l: 50 });
 
   // ---------- HERO & PRODUCTS ----------
   const [currentHero, setCurrentHero] = useState(0);
@@ -197,7 +193,6 @@ export default function ModernUploader() {
 
   // ---------- INITIALIZATION ----------
   useEffect(() => {
-    setIsDesktop(window.innerWidth >= 768);
     const interval = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroImages.length);
     }, 6000);
@@ -226,7 +221,7 @@ export default function ModernUploader() {
     };
   }, [hasMore, isFetching]);
 
-  // ---------- When page changes (except page 1), load additional products ----------
+  // ---------- When page changes, load additional products ----------
   useEffect(() => {
     if (page === 1) return;
     loadProducts(page, activeSearchColor);
@@ -286,12 +281,12 @@ export default function ModernUploader() {
     }
   }
 
-  // ---------- MANUAL COLOR SELECTION (Desktop & Mobile) ----------
+  // ---------- MANUAL COLOR SELECTION ----------
   function handleManualColor(hex: string) {
     setSelectedColor(hex);
     setComplementaryColor(getComplementaryColor(hex));
     setTriadicColors(getTriadicColors(hex));
-    // Reset the products and update active search color (this triggers a new load)
+    // Reset the products and update active search color
     setProducts([]);
     setPage(1);
     setHasMore(true);
@@ -299,11 +294,7 @@ export default function ModernUploader() {
     setHasUploaded(true);
   }
 
-  function handleConfirmMobileColor() {
-    handleManualColor(tempMobileColor);
-  }
-
-  // ---------- SWATCH CLICK: Update active search color immediately ----------
+  // ---------- SWATCH CLICK: Update active search color ----------
   function handleSwatchClick(color: string | null) {
     if (!color) return;
     setProducts([]);
@@ -420,84 +411,51 @@ export default function ModernUploader() {
             </div>
 
             {/* RIGHT: Pick a Color Box */}
-            <div className={boxStyle + " bg-blue-600/10"}>
+            <div className={boxStyle}>
               <div className="flex flex-col items-center gap-4">
                 <div className="flex items-center gap-2 text-white/80 mb-1">
                   <Palette className="w-6 h-6 text-white/50" />
                   <span className="font-semibold">Or pick a color below:</span>
                 </div>
-                {isDesktop ? (
-                  <>
-                    {/* Desktop: Enlarged color square */}
-                    <div
-                      className="w-36 h-36 rounded-xl border border-white/30 shadow-md cursor-pointer"
-                      style={{
-                        background: activeSearchColor
-                          ? activeSearchColor
-                          : defaultGradient,
-                      }}
-                      onClick={() => setShowWheel(true)}
-                    />
-                    {showWheel && (
-                      <div
-                        className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
-                        onClick={() => setShowWheel(false)}
-                      >
-                        <div
-                          className="bg-white p-4 rounded shadow-md"
-                          onClick={(e) => e.stopPropagation()}
-                        >
-                          <HslColorPicker
-                            color={desktopHsl}
-                            onChange={setDesktopHsl}
-                          />
-                          <button
-                            onClick={() => {
-                              handleManualColor(
-                                hslToHex(desktopHsl.h, desktopHsl.s, desktopHsl.l)
-                              );
-                              setShowWheel(false);
-                            }}
-                            className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
-                          >
-                            Confirm
-                          </button>
-                        </div>
-                      </div>
-                    )}
-                  </>
-                ) : (
-                  // Mobile: Use a square that shows the current color
-                  <>
-                    <div
-                      className="w-36 h-36 rounded-xl border border-white/30 shadow-md cursor-pointer"
-                      style={{
-                        background:
-                          tempMobileColor === "#ffffff" ? defaultGradient : tempMobileColor,
-                      }}
-                      onClick={() => {
-                        document.getElementById('mobileColorInput')?.click();
-                      }}
-                    />
-                    <input
-                      id="mobileColorInput"
-                      type="color"
-                      className="hidden"
-                      value={tempMobileColor}
-                      onChange={(e) => setTempMobileColor(e.target.value)}
-                    />
-                    {/* Only show the "Select Color" button if the user has changed the default */}
-                    {tempMobileColor !== "#ffffff" && (
-                      <button
-                        onClick={handleConfirmMobileColor}
-                        className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
-                      >
-                        Select Color
-                      </button>
-                    )}
-                  </>
-                )}
+                <div
+                  className="w-36 h-36 rounded-xl border border-white/30 shadow-md cursor-pointer"
+                  style={{
+                    background: selectedColor
+                      ? selectedColor
+                      : defaultGradient,
+                  }}
+                  onClick={() => setShowWheel(true)}
+                />
               </div>
+            </div>
+          </div>
+        )}
+
+        {/* Color Picker Modal */}
+        {showWheel && (
+          <div
+            className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
+            onClick={() => setShowWheel(false)}
+          >
+            <div
+              className="bg-white p-4 rounded shadow-md"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <HslColorPicker
+                color={colorWheelHsl}
+                onChange={setColorWheelHsl}
+              />
+              <button
+                onClick={() => {
+                  handleManualColor(
+                    hslToHex(colorWheelHsl.h, colorWheelHsl.s, colorWheelHsl.l)
+                  );
+                  setShowWheel(false);
+                }}
+                className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
+              >
+                Confirm
+              </button>
             </div>
           </div>
         )}
@@ -569,7 +527,8 @@ export default function ModernUploader() {
             <h3 className="font-bold mb-2">Your Pinned Items</h3>
             <div className="flex gap-3 overflow-x-auto scrollbar-hide">
               {pinned.map((id) => {
-                const product = products.find((p) => p.id === id);
+                // Use allProducts (global) so pinned items remain visible
+                const product = allProducts.find((p) => p.id === id);
                 if (!product) return null;
                 return (
                   <a
@@ -629,7 +588,11 @@ export default function ModernUploader() {
                     className="absolute top-2 right-2 z-20 bg-black/40 text-white p-1 rounded hover:bg-black/60 transition"
                     title={isPinned ? 'Unpin item' : 'Pin item'}
                   >
-                    <Pin className={`w-5 h-5 ${isPinned ? 'fill-white text-yellow-300' : ''}`} />
+                    <Pin
+                      className={`w-5 h-5 ${
+                        isPinned ? 'fill-white text-yellow-300' : ''
+                      }`}
+                    />
                   </button>
                   <div className="aspect-square overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105">
                     <img
@@ -655,7 +618,9 @@ export default function ModernUploader() {
                       ) : (
                         <>
                           <div className="w-4 h-4 rounded-full bg-white/10" />
-                          <span className="text-xs text-white/50">Ready to match your color</span>
+                          <span className="text-xs text-white/50">
+                            Ready to match your color
+                          </span>
                         </>
                       )}
                     </div>
@@ -676,7 +641,9 @@ export default function ModernUploader() {
         {/* F) INFINITE SCROLL SENTINEL */}
         <div ref={sentinelRef} className="mt-8 h-8 flex justify-center items-center">
           {isFetching && hasMore && (
-            <div className="text-sm text-white/60 animate-pulse">Loading more...</div>
+            <div className="text-sm text-white/60 animate-pulse">
+              Loading more...
+            </div>
           )}
           {!hasMore && (
             <div className="text-sm text-white/50">~ End of results ~</div>
@@ -686,3 +653,4 @@ export default function ModernUploader() {
     </div>
   );
 }
+
