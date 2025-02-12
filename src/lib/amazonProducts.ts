@@ -21592,6 +21592,4 @@ export const amazonProducts: AmazonProduct[] = [
     "affiliateLink": "https://www.amazon.com/dp/B0C8JQG2ML/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#ddd3cb"
   }
-]
-
 ];
