@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { Upload, ArrowRight, Pin, PinOff, Palette } from 'lucide-react';
-// NEW: we’ll import `HslColorPicker` from react-colorful for a wheel
 import { HslColorPicker } from 'react-colorful';
 
 ////////////////////////////////////////////////////
@@ -121,7 +120,6 @@ const heroImages = [
 // 3) MAIN COMPONENT
 ////////////////////////////////////////////////////
 export default function ModernUploader() {
-  // Pinned items
   const [pinned, setPinned] = useState<number[]>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('pinnedProducts');
@@ -130,60 +128,33 @@ export default function ModernUploader() {
     return [];
   });
 
-  // Original palette states
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
-  const [complementaryColor, setComplementaryColor] = useState<string | null>(
-    null
-  );
-  const [triadicColors, setTriadicColors] = useState<[string, string] | null>(
-    null
-  );
-
-  // If user uploaded a photo
+  const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
+  const [triadicColors, setTriadicColors] = useState<[string, string] | null>(null);
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
-
-  // Has user chosen color yet?
   const [hasUploaded, setHasUploaded] = useState(false);
-
-  // The color used for searching
-  const [activeSearchColor, setActiveSearchColor] = useState<string | null>(
-    null
-  );
-
-  // For color-wheel approach (desktop)
+  const [activeSearchColor, setActiveSearchColor] = useState<string | null>(null);
   const [desktopHsl, setDesktopHsl] = useState({ h: 0, s: 0, l: 1 });
   const [showWheel, setShowWheel] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
-
-  // If user wants a manual "Confirm" color on mobile
   const [tempMobileColor, setTempMobileColor] = useState("#ffffff");
 
-  ////////////////////////////////////////////////////
-  // 5) Hero rotation + initial fetch
-  ////////////////////////////////////////////////////
   const [currentHero, setCurrentHero] = useState(0);
-
-  // Product states
   const [products, setProducts] = useState<any[]>([]);
   const [page, setPage] = useState(1);
-  const [limit] = useState(12);
   const [hasMore, setHasMore] = useState(true);
   const [isFetching, setIsFetching] = useState(false);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Check if desktop
     setIsDesktop(window.innerWidth >= 768);
-    // Hero auto-rotate
     const interval = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroImages.length);
     }, 6000);
     fetchProducts(1, null);
     return () => clearInterval(interval);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Intersection Observer => infinite scroll
   useEffect(() => {
     if (!sentinelRef.current) return;
     const observer = new IntersectionObserver(
@@ -200,27 +171,25 @@ export default function ModernUploader() {
     };
   }, [hasMore, isFetching]);
 
-  // Page change => fetch next
   useEffect(() => {
     if (page === 1) return;
     fetchProducts(page, activeSearchColor);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
-  // If activeSearchColor changes => reset pagination
   useEffect(() => {
     if (!activeSearchColor) return;
     setProducts([]);
     setPage(1);
     setHasMore(true);
     fetchProducts(1, activeSearchColor);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeSearchColor]);
 
+  // Use 50 items for page 1 and 12 for subsequent pages
   async function fetchProducts(pageNum: number, color: string | null) {
+    const currentLimit = pageNum === 1 ? 50 : 12;
     try {
       setIsFetching(true);
-      let url = `/api/products?page=${pageNum}&limit=${limit}`;
+      let url = `/api/products?page=${pageNum}&limit=${currentLimit}`;
       if (color) {
         url += `&color=${encodeURIComponent(color)}`;
       }
@@ -231,7 +200,7 @@ export default function ModernUploader() {
       } else {
         setProducts((prev) => [...prev, ...data]);
       }
-      if (data.length < limit) {
+      if (data.length < currentLimit) {
         setHasMore(false);
       }
     } catch (error) {
@@ -242,9 +211,6 @@ export default function ModernUploader() {
     }
   }
 
-  ////////////////////////////////////////////////////
-  // FILE UPLOAD => EXTRACT COLOR => set search color
-  ////////////////////////////////////////////////////
   async function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -262,9 +228,6 @@ export default function ModernUploader() {
     }
   }
 
-  ////////////////////////////////////////////////////
-  // MANUAL COLOR => WAIT FOR "SELECT COLOR" (MOBILE)
-  ////////////////////////////////////////////////////
   function handleConfirmMobileColor() {
     handleManualColor(tempMobileColor);
   }
@@ -277,13 +240,11 @@ export default function ModernUploader() {
     setHasUploaded(true);
   }
 
-  // Swatch click => only changes activeSearchColor
   function handleSwatchClick(color: string | null) {
     if (!color) return;
     setActiveSearchColor(color);
   }
 
-  // Pin toggle
   function togglePin(productId: number) {
     setPinned((prev) => {
       let updated;
@@ -297,7 +258,6 @@ export default function ModernUploader() {
     });
   }
 
-  // For pinned snippet
   function getShortDescription(desc: string) {
     if (!desc) return '';
     const words = desc.trim().split(/\s+/);
@@ -305,12 +265,10 @@ export default function ModernUploader() {
     return snippet.length < desc.length ? snippet + '...' : snippet;
   }
 
-  // highlight ring if color is active
   function getSwatchRingStyle(testColor: string | null) {
     return activeSearchColor === testColor ? 'ring-4 ring-white' : '';
   }
 
-  // "Change color" => reset all
   function resetAll() {
     setHasUploaded(false);
     setUploadedImageUrl(null);
@@ -324,9 +282,6 @@ export default function ModernUploader() {
     fetchProducts(1, null);
   }
 
-  ////////////////////////////////////////////////////
-  // RENDER
-  ////////////////////////////////////////////////////
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
       {/* A) ROTATING HERO */}
@@ -346,7 +301,6 @@ export default function ModernUploader() {
             <div className="absolute inset-0 bg-black/40" />
           </div>
         ))}
-
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-30 px-4">
           <h1
             className="
@@ -412,7 +366,7 @@ export default function ModernUploader() {
 
               {isDesktop ? (
                 <>
-                  {/* Desktop => color square toggles wheel */}
+                  {/* Desktop: color square toggles wheel */}
                   <div
                     className="w-28 h-28 rounded-xl border border-white/30 shadow-md cursor-pointer"
                     style={{
@@ -439,7 +393,7 @@ export default function ModernUploader() {
                     Select Color
                   </button>
 
-                  {/* Color wheel overlay */}
+                  {/* Color wheel overlay with confirm button */}
                   {showWheel && (
                     <div
                       className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
@@ -451,14 +405,29 @@ export default function ModernUploader() {
                       >
                         <HslColorPicker
                           color={desktopHsl}
-                          onChange={(newHsl) => setDesktopHsl(newHsl)}
+                          onChange={setDesktopHsl}
                         />
+                        <button
+                          onClick={() => {
+                            handleManualColor(
+                              hslToHex(
+                                desktopHsl.h,
+                                desktopHsl.s * 100,
+                                desktopHsl.l * 100
+                              )
+                            );
+                            setShowWheel(false);
+                          }}
+                          className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
+                        >
+                          Confirm
+                        </button>
                       </div>
                     </div>
                   )}
                 </>
               ) : (
-                // Mobile => <input type="color"> + confirm button
+                // Mobile: color input with confirm button
                 <>
                   <input
                     type="color"
@@ -701,3 +670,4 @@ export default function ModernUploader() {
     </div>
   );
 }
+
