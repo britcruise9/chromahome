@@ -84,7 +84,7 @@ function getTriadicColors(hex: string) {
   ];
 }
 
-// Extract color from uploaded file
+// Extract the main color from an uploaded file
 async function extractColor(file: File): Promise<string> {
   return new Promise((resolve) => {
     const img = new Image();
@@ -114,7 +114,7 @@ export default function ModernUploader() {
   const [activeColor, setActiveColor] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
 
-  // Store pinned product IDs in localStorage
+  // ----- Pinned Items -----
   const [pinned, setPinned] = useState<number[]>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('pinnedProducts');
@@ -123,7 +123,7 @@ export default function ModernUploader() {
     return [];
   });
 
-  // Initial fetch
+  // ----- Initial Fetch -----
   useEffect(() => {
     const fetchInitialProducts = async () => {
       try {
@@ -136,10 +136,10 @@ export default function ModernUploader() {
     fetchInitialProducts();
   }, []);
 
-  // Toggle Pin/Unpin
+  // ----- Toggle Pin/Unpin -----
   function togglePin(productId: number) {
     setPinned((prev) => {
-      let updated: number[];
+      let updated;
       if (prev.includes(productId)) {
         updated = prev.filter((id) => id !== productId);
       } else {
@@ -150,7 +150,7 @@ export default function ModernUploader() {
     });
   }
 
-  // File upload + color extraction
+  // ----- Handle File Upload -----
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -180,7 +180,7 @@ export default function ModernUploader() {
     }
   };
 
-  // Clicking a swatch re-fetches matching products
+  // ----- Swatch Click => Re-fetch -----
   const handleSwatchClick = async (color: string) => {
     setActiveColor(color);
     setProducts([]);
@@ -193,18 +193,18 @@ export default function ModernUploader() {
     }
   };
 
-  // Show only the first few words of a product title
-  function getShortTitle(title: string): string {
-    if (!title) return '';
-    const words = title.trim().split(/\s+/);
+  // ----- Show only first few words of "description" -----
+  function getShortDescription(desc: string): string {
+    if (!desc) return '';
+    const words = desc.trim().split(/\s+/);
     const snippet = words.slice(0, 4).join(' ');
-    return snippet.length < title.length ? snippet + '...' : snippet;
+    return snippet.length < desc.length ? snippet + '...' : snippet;
   }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
 
-      {/* --- Hero Banner --- */}
+      {/* Hero Banner */}
       <div
         className="relative h-[38vh] md:h-[45vh] bg-cover bg-center mb-12"
         style={{
@@ -226,7 +226,8 @@ export default function ModernUploader() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* --- Upload Box (hidden after upload) --- */}
+
+        {/* Upload Box */}
         {!hasUploaded && (
           <div className="max-w-2xl mx-auto mb-16">
             <label className="block w-full">
@@ -251,16 +252,15 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* --- Swatches row (only if user has selected a color) --- */}
+        {/* Swatches Row */}
         {hasUploaded && selectedColor && (
           <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
-            {/* Uploaded Image */}
             <div className="flex flex-col items-center">
               <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
                 {uploadedImageUrl && (
                   <img
                     src={uploadedImageUrl}
-                    alt="Uploaded"
+                    alt="Uploaded Inspiration"
                     className="w-full h-full object-cover"
                   />
                 )}
@@ -321,7 +321,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* --- Pinned Row if we have pinned items --- */}
+        {/* Pinned Row */}
         {pinned.length > 0 && (
           <div className="bg-transparent border border-white/40 text-white py-3 px-4 mb-8 rounded-md">
             <h3 className="font-bold mb-2">Your Pinned Items</h3>
@@ -330,7 +330,8 @@ export default function ModernUploader() {
                 const product = products.find((p) => p.id === id);
                 if (!product) return null;
 
-                const shortTitle = getShortTitle(product.title);
+                // Use product.description snippet
+                const shortDesc = getShortDescription(product.description);
 
                 return (
                   <div
@@ -347,10 +348,12 @@ export default function ModernUploader() {
                     </button>
                     <img
                       src={product.image}
-                      alt={product.title}
+                      alt={product.description}
                       className="h-20 w-auto object-cover mx-auto"
                     />
-                    <p className="text-xs mt-2 text-center line-clamp-1">{shortTitle}</p>
+                    <p className="text-xs mt-2 text-center line-clamp-1">
+                      {shortDesc}
+                    </p>
                   </div>
                 );
               })}
@@ -358,12 +361,13 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* --- Products Grid --- */}
+        {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => {
             const matchText = Number.isFinite(product.matchPercentage)
               ? `${product.matchPercentage}% match`
               : '—% match';
+
             const isPinned = pinned.includes(product.id);
 
             return (
@@ -393,7 +397,7 @@ export default function ModernUploader() {
                   <div className="aspect-square overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105">
                     <img
                       src={product.image}
-                      alt={product.title}
+                      alt={product.description}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -437,4 +441,3 @@ export default function ModernUploader() {
     </div>
   );
 }
-
