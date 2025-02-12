@@ -84,7 +84,7 @@ function getTriadicColors(hex: string) {
   ];
 }
 
-// ---------- Extract Color from Uploaded File ----------
+// Extract color from uploaded file
 async function extractColor(file: File): Promise<string> {
   return new Promise((resolve) => {
     const img = new Image();
@@ -93,7 +93,11 @@ async function extractColor(file: File): Promise<string> {
     img.onload = () => {
       try {
         const [r, g, b] = colorThief.getColor(img);
-        resolve(`#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`);
+        resolve(
+          `#${r.toString(16).padStart(2, '0')}${g
+            .toString(16)
+            .padStart(2, '0')}${b.toString(16).padStart(2, '0')}`
+        );
       } catch {
         resolve('#000000');
       }
@@ -114,7 +118,7 @@ export default function ModernUploader() {
   const [activeColor, setActiveColor] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
 
-  // ----- Pinned Items (store product IDs in localStorage) -----
+  // Pinned items (storing product IDs)
   const [pinned, setPinned] = useState<number[]>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('pinnedProducts');
@@ -123,7 +127,7 @@ export default function ModernUploader() {
     return [];
   });
 
-  // ----- Fetch initial products -----
+  // Initial fetch
   useEffect(() => {
     const fetchInitialProducts = async () => {
       try {
@@ -136,7 +140,7 @@ export default function ModernUploader() {
     fetchInitialProducts();
   }, []);
 
-  // ----- Toggle Pin/Unpin -----
+  // Toggle pin/unpin
   function togglePin(productId: number) {
     setPinned((prev) => {
       let updated: number[];
@@ -152,7 +156,7 @@ export default function ModernUploader() {
     });
   }
 
-  // ----- Handle file upload + color extraction -----
+  // Handle file upload
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -166,7 +170,6 @@ export default function ModernUploader() {
       setActiveColor(color);
       setHasUploaded(true);
 
-      // complementary + triadic
       const comp = getComplementaryColor(color);
       setComplementaryColor(comp);
 
@@ -174,7 +177,7 @@ export default function ModernUploader() {
       setTriadicColors([acc1, acc2]);
 
       // fetch matching products
-      setProducts([]); // clear old
+      setProducts([]);
       const encoded = encodeURIComponent(color);
       const res = await fetch(`/api/products?color=${encoded}`, { cache: 'no-store' });
       setProducts(await res.json());
@@ -183,7 +186,7 @@ export default function ModernUploader() {
     }
   };
 
-  // ----- Clicking a swatch re-fetches products for that color -----
+  // Clicking a swatch refetches for that color
   const handleSwatchClick = async (color: string) => {
     setActiveColor(color);
     setProducts([]);
@@ -196,10 +199,19 @@ export default function ModernUploader() {
     }
   };
 
+  // Helper: Show first few words of the product title
+  function getShortTitle(title: string): string {
+    if (!title) return '';
+    const words = title.split(' ');
+    // e.g., first 4 words
+    const snippet = words.slice(0, 4).join(' ');
+    return snippet.length < title.length ? snippet + '...' : snippet;
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
 
-      {/* --- Hero Banner --- */}
+      {/* Hero Banner */}
       <div
         className="relative h-[38vh] md:h-[45vh] bg-cover bg-center mb-12"
         style={{
@@ -222,7 +234,7 @@ export default function ModernUploader() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* --- Upload Box (hidden after upload) --- */}
+        {/* Upload Box */}
         {!hasUploaded && (
           <div className="max-w-2xl mx-auto mb-16">
             <label className="block w-full">
@@ -247,7 +259,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* --- Color Swatches --- */}
+        {/* Swatches row */}
         {hasUploaded && selectedColor && (
           <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
             <div className="flex flex-col items-center">
@@ -277,7 +289,7 @@ export default function ModernUploader() {
 
             <ArrowRight className="w-6 h-6 text-white" />
 
-            {/* Primary Color */}
+            {/* Primary */}
             <div className="flex flex-col items-center">
               <div
                 className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer 
@@ -301,7 +313,7 @@ export default function ModernUploader() {
               </div>
             )}
 
-            {/* Triadic (Accent) Colors */}
+            {/* Triadic (Accent) */}
             {triadicColors?.map((col, i) => (
               <div key={col} className="flex flex-col items-center">
                 <div
@@ -316,14 +328,17 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* --- Pinned Items Row (IF pinned items exist) --- */}
+        {/* Pinned Row if we have pinned items */}
         {pinned.length > 0 && (
-          <div className="bg-black/50 text-white py-3 px-4 mb-8 rounded-md">
+          <div className="bg-white/10 border border-pink-400 text-white py-3 px-4 mb-8 rounded-md backdrop-blur-sm">
             <h3 className="font-bold mb-2">Your Pinned Items</h3>
             <div className="flex gap-3 overflow-x-auto scrollbar-hide">
               {pinned.map((id) => {
                 const product = products.find((p) => p.id === id);
                 if (!product) return null;
+
+                // Just show first few words
+                const shortTitle = getShortTitle(product.title);
 
                 return (
                   <div
@@ -332,7 +347,7 @@ export default function ModernUploader() {
                   >
                     <button
                       onClick={() => togglePin(id)}
-                      className="absolute top-1 right-1 bg-black/40 px-1 rounded text-xs hover:bg-black/60"
+                      className="absolute top-1 right-1 text-xs bg-white/10 px-1 py-0.5 rounded hover:bg-white/20"
                     >
                       Unpin
                     </button>
@@ -341,7 +356,7 @@ export default function ModernUploader() {
                       alt={product.title}
                       className="h-20 w-auto object-cover mx-auto"
                     />
-                    <p className="text-xs mt-2 line-clamp-1 text-center">{product.title}</p>
+                    <p className="text-xs mt-2 text-center line-clamp-1">{shortTitle}</p>
                   </div>
                 );
               })}
@@ -349,7 +364,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* --- Products Grid --- */}
+        {/* Product Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => {
             const matchText = Number.isFinite(product.matchPercentage)
@@ -367,20 +382,18 @@ export default function ModernUploader() {
                 className="block"
               >
                 <div className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300 ease-out">
-                  {/* Pin Icon at top-right */}
+                  {/* Pin icon top-right */}
                   <button
                     type="button"
                     onClick={(e) => {
-                      e.preventDefault(); // stops navigation
+                      e.preventDefault();
                       togglePin(product.id);
                     }}
                     className="absolute top-2 right-2 z-20 bg-black/40 text-white p-1 rounded hover:bg-black/60 transition"
                     title={isPinned ? 'Unpin item' : 'Pin item'}
                   >
                     <Pin
-                      className={`w-5 h-5 ${
-                        isPinned ? 'fill-white text-yellow-300' : ''
-                      }`}
+                      className={`w-5 h-5 ${isPinned ? 'fill-white text-yellow-300' : ''}`}
                     />
                   </button>
 
