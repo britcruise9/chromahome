@@ -26151,5 +26151,715 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BNBGZQ6B/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#d0c5bb"
+  },
+  {
+    "id": 2613,
+    "title": "Amazon Product 146",
+    "price": 0,
+    "description": "Wall Clock, 12\" Dial Non-Ticking Silent Battery Operated Analog with LCD Display for Perpetual Calendar and F° Temperature, Ideal Modern Home, Bedroom, Kitchen, Office Decor (Blue)",
+    "image": "https://m.media-amazon.com/images/I/71MR-fFC4+L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQ1YZ5DT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#224f68"
+  },
+  {
+    "id": 2614,
+    "title": "Amazon Product 147",
+    "price": 0,
+    "description": "HZDHCLH Wall Clocks Battery Operated, 12 inch Silent Non Ticking Modern Wall Clock for Living Room Bedroom Kitchen Office Classroom Decor (Olive Green and Gold)",
+    "image": "https://m.media-amazon.com/images/I/61Cmqo0mSuL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09F6FXGWJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#747a53"
+  },
+  {
+    "id": 2615,
+    "title": "Amazon Product 148",
+    "price": 0,
+    "description": "Mosewa Wall Clock Battery Operated 8 Inch White Silent Non Ticking Simple Minimalist Wooden Decorative for Kitchen Bathroom Bedroom Living Room Office",
+    "image": "https://m.media-amazon.com/images/I/51DQ7BGGd+L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CGLSNNJR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4e4e3"
+  },
+  {
+    "id": 2616,
+    "title": "Amazon Product 149",
+    "price": 0,
+    "description": "Wall Clock 12 Inch Vintage Wall Clocks Battery Operated Quartz Silent Non-Ticking Retro Rustic Style Clock Decorative for Living Room, Home Office, Kitchen, Bedroom (Bronze)",
+    "image": "https://m.media-amazon.com/images/I/81-DlESS8EL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7H5QCNG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#332321"
+  },
+  {
+    "id": 2617,
+    "title": "Amazon Product 150",
+    "price": 0,
+    "description": "Wall Clock Silent Non-Ticking Wooden Clocks Battery Operated 8 Inch Small Country Retro Rustic and Beach Style Decorative for Kitchen, Home, Bathroom, Bedroom (Blue)",
+    "image": "https://m.media-amazon.com/images/I/716j3XNiAFL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D93S4GT4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5dadc"
+  },
+  {
+    "id": 2618,
+    "title": "Amazon Product 151",
+    "price": 0,
+    "description": "WallarGe Night Light Wall Clock for Bedroom - Silent Lighted up Wall Clock Glow in The Dark, Battery Operated for Living Room/Kitchen, Easy to Read Large Digital Display, 12 Inch",
+    "image": "https://m.media-amazon.com/images/I/61hc3q7-ieL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08DRBTPGY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2e3e41"
+  },
+  {
+    "id": 2619,
+    "title": "Amazon Product 152",
+    "price": 0,
+    "description": "Wall Clock, Vintage Wall Clocks Battery Operated Quartz Silent Non-Ticking 8 Inch Retro Rustic Style Clock Decorative for Kitchen, Bathroom Home Office (Bronze)",
+    "image": "https://m.media-amazon.com/images/I/81-DlESS8EL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7GQZ48F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#332321"
+  },
+  {
+    "id": 2620,
+    "title": "Amazon Product 153",
+    "price": 0,
+    "description": "Digital Wall Clock Large Display 16\", Digital Clock with 11 RGB Colors Changing Remote Control, LED Clocks with Night Lights for Living Room Bedroom Office Classroom Decor, Auto DST (Multicolor)",
+    "image": "https://m.media-amazon.com/images/I/61yXdYSIhYL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHPLYMDK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2d3b48"
+  },
+  {
+    "id": 2621,
+    "title": "Amazon Product 154",
+    "price": 0,
+    "description": "Wall Clock Green-Silent Wall Clocks Battery Operated 8 Inch-Modern Non Ticking Analog Clock Decorative for Kitchen Office Bathroom Bedroom(Gold)",
+    "image": "https://m.media-amazon.com/images/I/71RhJ-czd4L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJ89RFW6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6a7541"
+  },
+  {
+    "id": 2622,
+    "title": "Amazon Product 155",
+    "price": 0,
+    "description": "WallarGe 14.5'' Large Digital Wall Clock Battery Operated with Jumbo Numbers, Temperature and Date - Easy to Read and Set, Auto DST",
+    "image": "https://m.media-amazon.com/images/I/610-yGvAXhL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09WR2YZFF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9ba5a3"
+  },
+  {
+    "id": 2623,
+    "title": "Amazon Product 156",
+    "price": 0,
+    "description": "La Crosse Technology Atomic Analog WT-3102S-INT Wall Clock, 10 Inch, Silver",
+    "image": "https://m.media-amazon.com/images/I/61riJUx4t2L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B000AMCAUG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3e5e6"
+  },
+  {
+    "id": 2624,
+    "title": "Amazon Product 157",
+    "price": 0,
+    "description": "Westclox Traditional Large Wall Clock Battery-Operated Clock for Living Room, Bedroom, Office | Ideal Housewarming Gift (20 Inch, Black-Brown)",
+    "image": "https://m.media-amazon.com/images/I/91EgJFlmoJL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08SY9253G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0d9cf"
+  },
+  {
+    "id": 2625,
+    "title": "Amazon Product 158",
+    "price": 0,
+    "description": "WallarGe Backlight Digital Wall Clock Battery Operated - with Temperature and Date 14.5'' Large Digital Wall Clock, Easy to Read and Set, Auto DST",
+    "image": "https://m.media-amazon.com/images/I/61j6VNtnbML._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D66ZSFYW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dce0e5"
+  },
+  {
+    "id": 2626,
+    "title": "Amazon Product 159",
+    "price": 0,
+    "description": "12 Inch Wall Clock Silent Non Ticking, Preciser Modern Style Decor Clock for Home, Office, School, Kitchen, Bedroom, Living Room (Black)",
+    "image": "https://m.media-amazon.com/images/I/618PIzHogaL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BMQ58QX5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2b2b2b"
+  },
+  {
+    "id": 2627,
+    "title": "Amazon Product 160",
+    "price": 0,
+    "description": "12 Inch Wall Clock Silent Non Ticking, Preciser Modern Style Decor Clock for Home, Office, School, Kitchen, Bedroom, Living Room (Black)",
+    "image": "https://m.media-amazon.com/images/I/618PIzHogaL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BMQ58QX5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2b2b2b"
+  },
+  {
+    "id": 2628,
+    "title": "Amazon Product 161",
+    "price": 0,
+    "description": "12 Inch Wall Clock Silent Non Ticking, Preciser Modern Style Decor Clock for Home, Office, School, Kitchen, Bedroom, Living Room (Black)",
+    "image": "https://m.media-amazon.com/images/I/618PIzHogaL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BMQ58QX5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2b2b2b"
+  },
+  {
+    "id": 2629,
+    "title": "Amazon Product 162",
+    "price": 0,
+    "description": "mooas Flatwood Wall Clock, 12\" Wood Non-Ticking Sweep Movement Decorative Battery Operated Wall Clock for Home Living Room Kitchen Bedroom Office School Hotel",
+    "image": "https://m.media-amazon.com/images/I/51S2M-IQqMS._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08CRPLNCV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2f1f1"
+  },
+  {
+    "id": 2630,
+    "title": "Amazon Product 163",
+    "price": 0,
+    "description": "JALL 16.2\" Large Digital Wall Clock with Bluetooth Sync, Alarm, Big LED, 8 RGB Color, Auto DST, Temperature for Living Room Bedroom Desk Mount, Xmas, Birthday Gift for Aged Elderly Mother Father",
+    "image": "https://m.media-amazon.com/images/I/71bCZrFh7+L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DP7GYKCW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#362a23"
+  },
+  {
+    "id": 2631,
+    "title": "Amazon Product 164",
+    "price": 0,
+    "description": "JALL 16.2\" Large Digital Wall Clock with Bluetooth Sync, Alarm, Big LED, 8 RGB Color, Auto DST, Temperature for Living Room Bedroom Desk Mount, Xmas, Birthday Gift for Aged Elderly Mother Father",
+    "image": "https://m.media-amazon.com/images/I/71bCZrFh7+L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DP7GYKCW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#362a23"
+  },
+  {
+    "id": 2632,
+    "title": "Amazon Product 165",
+    "price": 0,
+    "description": "La Crosse Technology W88631 Digital Atomic Black Wall Clock with Temperature",
+    "image": "https://m.media-amazon.com/images/I/71lcvwu+qJL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0798F7FZT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b4bead"
+  },
+  {
+    "id": 2633,
+    "title": "Amazon Product 166",
+    "price": 0,
+    "description": "Wall Clock Battery Operated Silent Non-Ticking Vintage Wall Clocks for Kitchen, School, Living Room (12Inch, Bronze)",
+    "image": "https://m.media-amazon.com/images/I/717MywYodvL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C58JDKZD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#393026"
+  },
+  {
+    "id": 2634,
+    "title": "Amazon Product 167",
+    "price": 0,
+    "description": "The Gears Clock The Original Real Moving Gear Wall Clock Vintage Industrial Oversized Rustic Farmhouse (24 inch (60cm), Wood e Stone",
+    "image": "https://m.media-amazon.com/images/I/816CUrYhxGL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09PJP277J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d2ccc0"
+  },
+  {
+    "id": 2635,
+    "title": "Amazon Product 168",
+    "price": 0,
+    "description": "Lumuasky 4 Pack Black Wall Clock, 12 Inch Silent Non Ticking Quartz Battery Operated Round Analog Classic Clock for Classroom School Office Living Room Bedroom Home",
+    "image": "https://m.media-amazon.com/images/I/71WELmG5qQL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQ1SNSQV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dedddd"
+  },
+  {
+    "id": 2636,
+    "title": "Amazon Product 169",
+    "price": 0,
+    "description": "Lumuasky 4 Pack Black Wall Clock, 12 Inch Silent Non Ticking Quartz Battery Operated Round Analog Classic Clock for Classroom School Office Living Room Bedroom Home",
+    "image": "https://m.media-amazon.com/images/I/71WELmG5qQL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQ1SNSQV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dedddd"
+  },
+  {
+    "id": 2637,
+    "title": "Amazon Product 170",
+    "price": 0,
+    "description": "Sharp Atomic Clock - Never Needs Setting! –Easy to Read Numbers - Indoor/Outdoor Temperature, Wireless Outdoor Sensor - Battery Powered - Easy Set-Up!! (4\" Numbers)",
+    "image": "https://m.media-amazon.com/images/I/71GqaS29+lL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08S31FRDQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#161617"
+  },
+  {
+    "id": 2638,
+    "title": "Amazon Product 171",
+    "price": 0,
+    "description": "La Crosse Technology WT-3129B 12 Inch Atomic Analog Wall Clock, Pack of 1, Black",
+    "image": "https://m.media-amazon.com/images/I/71BUiKHygUL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0080JIVMW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#35373a"
+  },
+  {
+    "id": 2639,
+    "title": "Amazon Product 172",
+    "price": 0,
+    "description": "Menterry Small Retro Oval Wall Clock, Antique Old Design, White Vintage Style, Battery Operated Silent Decor Wall Clocks for Kitchen, Bedroom, Farmhouse, Bathroom (11.2\" H x 6.7\" W)",
+    "image": "https://m.media-amazon.com/images/I/61ej-Eh8+0L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09V5C7ZLS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0ddd8"
+  },
+  {
+    "id": 2640,
+    "title": "Amazon Product 173",
+    "price": 0,
+    "description": "AcuRite 14.5\" Large Digital LED Oversized Wall Clock with Date and Temperature, Perfect for Home or Office (75127M)",
+    "image": "https://m.media-amazon.com/images/I/61mItKANqQL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B015E5U424/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f12c33"
+  },
+  {
+    "id": 2641,
+    "title": "Amazon Product 174",
+    "price": 0,
+    "description": "Wall Clock, Glow in Dark Wall Clock, 12 Inch Wall Clock Battery Operated, 3D Numbers Night Light Wall Clock, Silent Non-Ticking Wall Clocks for Living Room Kitchen Office Bedroom",
+    "image": "https://m.media-amazon.com/images/I/61Ii2vf5zsL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5J4TY8G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#08f217"
+  },
+  {
+    "id": 2642,
+    "title": "Amazon Product 175",
+    "price": 0,
+    "description": "Soobest Large Display Digital Wall Calendar Clock with Date Day of Week, Alarm Clock for Bedroom Desk, Timer for Home Gym Workout 6 Dimmer Auto DST 12/24hr with Remote and Temperature(White)",
+    "image": "https://m.media-amazon.com/images/I/61XoIr+goBL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJ8KQ9B1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1d1d22"
+  },
+  {
+    "id": 2643,
+    "title": "Amazon Product 176",
+    "price": 0,
+    "description": "Sharp Atomic Analog Wall Clock - 12\" Black Stylish Frame - Sets Automatically- Battery Operated - Easy to Read - Easy to Use – Modern Design and Style",
+    "image": "https://m.media-amazon.com/images/I/71h--WM0BAL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09F3RQ7KJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#121111"
+  },
+  {
+    "id": 2644,
+    "title": "Amazon Product 177",
+    "price": 0,
+    "description": "Presentime & Co. 12.6\" Illuminated Farmhouse Wall Clock, Silent Battery Operated Night Light Wall Clock with Smart LED Sensor for Living Room, Bathroom, Kitchen, Home Office, Oil Rubbed Bronze Finish",
+    "image": "https://m.media-amazon.com/images/I/71zjOb7anaL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08QMSJKPJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2f2724"
+  },
+  {
+    "id": 2645,
+    "title": "Amazon Product 178",
+    "price": 0,
+    "description": "CLXEAST Moving Gear Wall Clock for Modern Farmhouse Living Room Decor, Large Industrial Steampunk Wall Clock for Home Office, Metal Copper (21 Inch)",
+    "image": "https://m.media-amazon.com/images/I/919VGiQARML._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09Z2CNQQM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c8b599"
+  },
+  {
+    "id": 2646,
+    "title": "Amazon Product 179",
+    "price": 0,
+    "description": "Sharp Wall Clock – Silver/Chrome, Silent Non Ticking 10 Inch Quality Quartz Battery Operated Round Easy to Read Home/Kitchen/Office/Classroom/School Clocks, Sweep Movement",
+    "image": "https://m.media-amazon.com/images/I/71cGnB+waTL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B092RMCVPD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#333232"
+  },
+  {
+    "id": 2647,
+    "title": "Amazon Product 180",
+    "price": 0,
+    "description": "La Crosse Technology 512-85937-INT Atomic Digital Wall Clock with Temperature & Forecast in Gray/Silver",
+    "image": "https://m.media-amazon.com/images/I/71P8EVn3KFL._SX342_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BJLBV78Y/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#92908b"
+  },
+  {
+    "id": 2648,
+    "title": "Amazon Product 181",
+    "price": 0,
+    "description": "Wooden Wall Clock with Retro Design, 11 Inches Round Wall Clock Battery Operated Silent Non-Ticking, Big Arabic Numerals, for Kitchen Living Room Classroom Gym and Pool, Brown",
+    "image": "https://m.media-amazon.com/images/I/81n6KmYhcKL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BF47V8V8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a87f65"
+  },
+  {
+    "id": 2649,
+    "title": "Amazon Product 182",
+    "price": 0,
+    "description": "Presentime & Co. 12.6\" Illuminated Farmhouse Wall Clock, Silent Battery Operated Night Light Wall Clock with Smart LED Sensor for Living Room, Bathroom, Kitchen, Home Office, Sage Green",
+    "image": "https://m.media-amazon.com/images/I/61fPCEXF77L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09WQSXV4R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8bea3"
+  },
+  {
+    "id": 2650,
+    "title": "Amazon Product 183",
+    "price": 0,
+    "description": "Wall Clock, Classic Wood Style Finish, 16 Inch Non-Ticking Silent Battery Operated Analog Clock, Ideal Retro Decor for Home, Bedroom, Living Room, Kitchen, Bathroom, Office(Wood Yellow)",
+    "image": "https://m.media-amazon.com/images/I/61xo+Fj-P3L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D99S69MJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4e2916"
+  },
+  {
+    "id": 2651,
+    "title": "Amazon Product 184",
+    "price": 0,
+    "description": "Menterry Retro Round Wall Clock. White Vintage Antique Style. Battery Operated Silent Wall Clocks for Farmhouse, Bathroom, Kitchen, Bedroom, Office, (11.8\" H x 9.3\" W)",
+    "image": "https://m.media-amazon.com/images/I/71Yp6apaiyL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09V379GV1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4e2e1"
+  },
+  {
+    "id": 2652,
+    "title": "Amazon Product 185",
+    "price": 0,
+    "description": "14\" Atomic Wall Clock, Black, Easy to Read, Perfect for Home, Office, School, Indoor/Outdoor…",
+    "image": "https://m.media-amazon.com/images/I/81nUFx9sXoL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07HVN4BVQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e6e2e2"
+  },
+  {
+    "id": 2653,
+    "title": "Amazon Product 186",
+    "price": 0,
+    "description": "14\" Atomic Wall Clock, Black, Easy to Read, Perfect for Home, Office, School, Indoor/Outdoor…",
+    "image": "https://m.media-amazon.com/images/I/81nUFx9sXoL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07HVN4BVQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e6e2e2"
+  },
+  {
+    "id": 2654,
+    "title": "Amazon Product 187",
+    "price": 0,
+    "description": "14\" Atomic Wall Clock, Black, Easy to Read, Perfect for Home, Office, School, Indoor/Outdoor…",
+    "image": "https://m.media-amazon.com/images/I/81nUFx9sXoL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07HVN4BVQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e6e2e2"
+  },
+  {
+    "id": 2655,
+    "title": "Amazon Product 188",
+    "price": 0,
+    "description": "CLXEAST 30 Inch Large Wall Clock Modern, Oversized Roman Numeral Decorative Black Metal Wall Clock for Living Room Decor, Farmhouse Decor",
+    "image": "https://m.media-amazon.com/images/I/71KKKpZQOvL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09PN217QM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3e2e8"
+  },
+  {
+    "id": 2656,
+    "title": "Amazon Product 189",
+    "price": 0,
+    "description": "La Crosse Technology Wall Clock, Plastic, 14-inch Dia. (WT-3143A) (WT-3143A-INT)",
+    "image": "https://m.media-amazon.com/images/I/71yoyiMJ6wL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0002WZRJK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f1f0f0"
+  },
+  {
+    "id": 2657,
+    "title": "Amazon Product 190",
+    "price": 0,
+    "description": "Digital Wall Clock 16\", Wall Clocks with 11 RGB Colors, Alarm Clock with Night Lights, Large Digital Clock for Living Room Bedroom Office Classroom Decor, Auto DST, Temperature, Remote Control",
+    "image": "https://m.media-amazon.com/images/I/61cv1Yg+WXL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHPKM43S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3d3a35"
+  },
+  {
+    "id": 2658,
+    "title": "Amazon Product 191",
+    "price": 0,
+    "description": "La Crosse Technology 513-1419BLv4-INT Backlight Atomic Full Calendar Clock with Extra Large Digits",
+    "image": "https://m.media-amazon.com/images/I/713n4Ei3DeL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01EZ3C7L2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b7c3c1"
+  },
+  {
+    "id": 2659,
+    "title": "Amazon Product 192",
+    "price": 0,
+    "description": "Driini Modern Pendulum Wall Clock - Decorative and Unique Metal Frame, with 8 Inch Face - Contemporary, Minimalist Design, with Silent Battery Operation - Includes Both Black and Gold Pendelum",
+    "image": "https://m.media-amazon.com/images/I/71xBEIDHUzL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MSR3W5Z/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3a3938"
+  },
+  {
+    "id": 2660,
+    "title": "Amazon Product 193",
+    "price": 0,
+    "description": "Bulova Atomic Time 2 Analog Wall Clock C5004 | 12.4\" Wooden Frame, Sets Time Automatically | Quartz Movement | Battery Operated | Classic Design",
+    "image": "https://m.media-amazon.com/images/I/710L17Yhb8L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BWZL2BQ8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#552e20"
+  },
+  {
+    "id": 2661,
+    "title": "Amazon Product 194",
+    "price": 0,
+    "description": "Sharp Wall Clock – Silver/Chrome, Silent Non Ticking 12 Inch Quality Quartz Battery Operated Round Easy to Read Home/Kitchen/Office/Classroom/School Clocks, Sweep Movement",
+    "image": "https://m.media-amazon.com/images/I/71cGnB+waTL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B092RLSYKM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#333232"
+  },
+  {
+    "id": 2662,
+    "title": "Amazon Product 195",
+    "price": 0,
+    "description": "La Crosse Technology 513-1419-WA-INT Atomic Large Full Digital Calendar Clock, Walnut, 9.84\"L x 1.14\"W x 7.48\"H",
+    "image": "https://m.media-amazon.com/images/I/91cxN-DOGQL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B06XDSQRMJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#705c43"
+  },
+  {
+    "id": 2663,
+    "title": "Amazon Product 196",
+    "price": 0,
+    "description": "FirsTime & Co. Gray Arlo Wall Clock, Large Vintage Decor for Living Room, Home Office, Round, Plastic, Farmhouse, 20 inches",
+    "image": "https://m.media-amazon.com/images/I/81rQX6fYJpL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07S3L9N7D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7b7b7c"
+  },
+  {
+    "id": 2664,
+    "title": "Amazon Product 197",
+    "price": 0,
+    "description": "DaguyS Wooden Retro Wall Clocks, 18 Inches Square Clocks Rectangular Wall Clock Battery Operated Silent Non-Ticking, for Kitchen Living Room Office Home Desk Bedroom (Brown)",
+    "image": "https://m.media-amazon.com/images/I/61-i+GR96eL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCN87X95/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#56312a"
+  },
+  {
+    "id": 2665,
+    "title": "Amazon Product 198",
+    "price": 0,
+    "description": "[Oversized] 18\" Digital Wall Clock Large Display, 11 RGB Color Changing Large Digital Wall Clock with Remote, Date, DST, Temperature, Auto Brightness Digital Alarm Clock for All Large Spaces Use",
+    "image": "https://m.media-amazon.com/images/I/712Wjbd0eFL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C8HBQH7X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#252627"
+  },
+  {
+    "id": 2666,
+    "title": "Amazon Product 199",
+    "price": 0,
+    "description": "DORBOKER Real Moving Gears Wall Clock Large Modern Metal Clocks for Living Room Decor, Industrial Steampunk Unique Vintage Rustic Decorative Clock for Home Farmhouse Office, 21 Inch, Gunmetal Arabic",
+    "image": "https://m.media-amazon.com/images/I/811V7YCWlhL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BCKB29KJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4c4c45"
+  },
+  {
+    "id": 2667,
+    "title": "Amazon Product 200",
+    "price": 0,
+    "description": "Bernhard Products Black Wall Clocks 2 Pack Silent Non Ticking - 12 Inch Quality Quartz Battery Operated Round Easy to Read Home/Office/Classroom/Business/Kitchen/School Clock",
+    "image": "https://m.media-amazon.com/images/I/81XAWJP04NL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07RJZFWZX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#18171b"
+  },
+  {
+    "id": 2668,
+    "title": "Amazon Product 201",
+    "price": 0,
+    "description": "Abdurey Retro Old Telephone Wall Clock with Hidden Safe, Battery Operated Quartz Metal Wall Clocks, Large Rectangular Vintage Decor Clocks, for Farmhouse, Living Room(16\" H x 12\" W x 4\" D)",
+    "image": "https://m.media-amazon.com/images/I/611rinkL2XL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B6VXX67S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#483a36"
+  },
+  {
+    "id": 2669,
+    "title": "Amazon Product 202",
+    "price": 0,
+    "description": "Bernhard Products Black Wall Clock, Silent Non Ticking - 16 Inch Extra Large Quality Quartz Battery Operated Round Easy to Read Home/Office/Business/Kitchen/Classroom/School Clocks",
+    "image": "https://m.media-amazon.com/images/I/81Kn8ODu8jL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B081J2T7PB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1b1a1c"
+  },
+  {
+    "id": 2670,
+    "title": "Amazon Product 203",
+    "price": 0,
+    "description": "Bernhard Products Black Wall Clock, Silent Non Ticking - 16 Inch Extra Large Quality Quartz Battery Operated Round Easy to Read Home/Office/Business/Kitchen/Classroom/School Clocks",
+    "image": "https://m.media-amazon.com/images/I/81Kn8ODu8jL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B081J2T7PB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1b1a1c"
+  },
+  {
+    "id": 2671,
+    "title": "Amazon Product 204",
+    "price": 0,
+    "description": "FirsTime & Co. Gray Numeral Windmill Wall Clock, Large Vintage Decor for Living Room, Home Office, Round, Plastic, Farmhouse, 24 Inches",
+    "image": "https://m.media-amazon.com/images/I/71UKftdFZML._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B085FLZT95/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#949191"
+  },
+  {
+    "id": 2672,
+    "title": "Amazon Product 205",
+    "price": 0,
+    "description": "SEIKO Melodies in Motion Musical Wall Clock, Festival",
+    "image": "https://m.media-amazon.com/images/I/81NOgKpkx9L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQTT2GYP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c2bda5"
+  },
+  {
+    "id": 2673,
+    "title": "Amazon Product 206",
+    "price": 0,
+    "description": "Bulova Winston Wall Clock C4844 | 10\" Diameter | Metal Design with Diamond Cut Edges | Silent Sweep Quartz Movement | Easy-to-Read Arabic Numerals",
+    "image": "https://m.media-amazon.com/images/I/71Nda5bjQZL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B071HH8QQ7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c9c9c8"
+  },
+  {
+    "id": 2674,
+    "title": "Amazon Product 207",
+    "price": 0,
+    "description": "SEIKO Stately Dark Brown Solid Oak Case Wall Clock with Pendulum and Chime",
+    "image": "https://m.media-amazon.com/images/I/61O2AOTe4UL._AC_SY606_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0027FGBGI/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#36221e"
+  },
+  {
+    "id": 2675,
+    "title": "Amazon Product 208",
+    "price": 0,
+    "description": "Wood Wall Clock with Retro Design, 12 Inch Round, Big Arabic Numerals, for Living Room Kitchen Classroom Gym and Pool, Brown",
+    "image": "https://m.media-amazon.com/images/I/71exuJ+zPNL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09ZV66NHH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bdb49c"
+  },
+  {
+    "id": 2676,
+    "title": "Amazon Product 209",
+    "price": 0,
+    "description": "SEIKO 11 Inch St James Brushed Metal Wall Clock, Black",
+    "image": "https://m.media-amazon.com/images/I/81i560ar6OL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B006ZMHUP0/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6f6f6f"
+  },
+  {
+    "id": 2677,
+    "title": "Amazon Product 210",
+    "price": 0,
+    "description": "FirsTime & Co. White Shiplap Gears Wall Clock, Large Vintage Decor for Living Room, Home Office, Round, Wood and Plastic, Farmhouse, 27 inches",
+    "image": "https://m.media-amazon.com/images/I/81IiFKgd3FS._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07GFXL8ZS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#89888a"
+  },
+  {
+    "id": 2678,
+    "title": "Amazon Product 211",
+    "price": 0,
+    "description": "The Gears Clock Real Moving Gear Wall Clock England Line (Vintage Black, 36 inches (90 cm))",
+    "image": "https://m.media-amazon.com/images/I/911aI4sQQ7L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CWFJFKC5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d2d3cc"
+  },
+  {
+    "id": 2679,
+    "title": "Amazon Product 212",
+    "price": 0,
+    "description": "Braun Classic Large Analogue Wall Clock with Silent Sweep Movement, Easy to Read, 30cm Diameter in Black, Model BC17B.",
+    "image": "https://m.media-amazon.com/images/I/91c+N09XBXL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07SS4WKNW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#252525"
+  },
+  {
+    "id": 2680,
+    "title": "Amazon Product 213",
+    "price": 0,
+    "description": "OCEST 16 Inch Moving Gear Wall Clock, Vintage Industrial Steampunk Wall Clock, Retro Moving Mechanical Decor for Living Room, Office, Farmhouse",
+    "image": "https://m.media-amazon.com/images/I/71WQi2JCbhL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJTG9KPT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#343336"
+  },
+  {
+    "id": 2681,
+    "title": "Amazon Product 214",
+    "price": 0,
+    "description": "OCEST 16 Inch Moving Gear Wall Clock, Vintage Industrial Steampunk Wall Clock, Retro Moving Mechanical Decor for Living Room, Office, Farmhouse",
+    "image": "https://m.media-amazon.com/images/I/71WQi2JCbhL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJTG9KPT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#343336"
+  },
+  {
+    "id": 2682,
+    "title": "Amazon Product 215",
+    "price": 0,
+    "description": "FirsTime & Co.® Kensington Wall Clock, Brown",
+    "image": "https://m.media-amazon.com/images/I/81r3QMVJ8mL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00NQA1DAM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cecac6"
+  },
+  {
+    "id": 2683,
+    "title": "Amazon Product 216",
+    "price": 0,
+    "description": "YISITEONE Classical Large Decorative Wall Clock with Pendulum, Modern Non-Ticking Silent Metal Wall Clocks for Living Room, Bedroom, Study, Office, 23.6\" (Black)",
+    "image": "https://m.media-amazon.com/images/I/61VoAJ8fxZL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09RZRCDSV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0c8c0"
   }
 ];
