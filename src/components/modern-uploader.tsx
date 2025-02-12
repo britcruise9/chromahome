@@ -4,27 +4,114 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Upload, ArrowRight, Pin, PinOff, Palette } from 'lucide-react';
 
 ////////////////////////////////////////////////////
-// 1) COLOR UTILS
+// 1) COLOR UTILS (Fully typed, always returning string)
 ////////////////////////////////////////////////////
 declare const ColorThief: any;
 
-function hexToHSL(hex: string) { /* unchanged */}
-function hslToHex(h: number, s: number, l: number) { /* unchanged */}
-function getComplementaryColor(hex: string) { /* unchanged */}
-function getTriadicColors(hex: string) { /* unchanged */}
+function hexToHSL(hex: string): { h: number; s: number; l: number } {
+  // parse hex to [0..1] floats
+  const r = parseInt(hex.slice(1, 3), 16) / 255;
+  const g = parseInt(hex.slice(3, 5), 16) / 255;
+  const b = parseInt(hex.slice(5, 7), 16) / 255;
+
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+
+  let h = 0, s = 0;
+  let l = (max + min) / 2;
+
+  if (max !== min) {
+    const d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+
+    switch (max) {
+      case r:
+        h = (g - b) / d + (g < b ? 6 : 0);
+        break;
+      case g:
+        h = (b - r) / d + 2;
+        break;
+      case b:
+        h = (r - g) / d + 4;
+        break;
+    }
+    h /= 6;
+  }
+
+  return {
+    h: h * 360,
+    s: s * 100,
+    l: l * 100,
+  };
+}
+
+function hslToHex(h: number, s: number, l: number): string {
+  h = h / 360;
+  s = s / 100;
+  l = l / 100;
+  let r, g, b;
+
+  if (s === 0) {
+    // Achromatic
+    r = g = b = l;
+  } else {
+    const hue2rgb = (p: number, q: number, t: number) => {
+      if (t < 0) t += 1;
+      if (t > 1) t -= 1;
+      if (t < 1/6) return p + (q - p) * 6 * t;
+      if (t < 1/2) return q;
+      if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+      return p;
+    };
+
+    const q = l < 0.5 ? l * (1 + s) : l + s - l*s;
+    const p = 2*l - q;
+    r = hue2rgb(p, q, h + 1/3);
+    g = hue2rgb(p, q, h);
+    b = hue2rgb(p, q, h - 1/3);
+  }
+
+  const toHex = (val: number) => {
+    const hex = Math.round(val * 255).toString(16);
+    return hex.length === 1 ? '0' + hex : hex;
+  };
+
+  return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+}
+
+function getComplementaryColor(hex: string): string {
+  // convert to HSL
+  const hsl = hexToHSL(hex);
+  // add 180 deg to hue, keep s & l
+  return hslToHex((hsl.h + 180) % 360, hsl.s, hsl.l);
+}
+
+function getTriadicColors(hex: string): [string, string] {
+  const hsl = hexToHSL(hex);
+  const color1 = hslToHex((hsl.h + 120) % 360, hsl.s, hsl.l);
+  const color2 = hslToHex((hsl.h + 240) % 360, hsl.s, hsl.l);
+  return [color1, color2];
+}
 
 async function extractColor(file: File): Promise<string> {
   return new Promise((resolve) => {
     const img = new Image();
     const colorThief = new ColorThief();
+
     img.onload = () => {
       try {
         const [r, g, b] = colorThief.getColor(img);
-        resolve(`#${r.toString(16).padStart(2,'0')}${g.toString(16).padStart(2,'0')}${b.toString(16).padStart(2,'0')}`);
+        const hex =
+          '#' +
+          r.toString(16).padStart(2, '0') +
+          g.toString(16).padStart(2, '0') +
+          b.toString(16).padStart(2, '0');
+        resolve(hex);
       } catch {
         resolve('#000000');
       }
     };
+
     img.onerror = () => resolve('#000000');
     img.crossOrigin = 'Anonymous';
     img.src = URL.createObjectURL(file);
@@ -46,7 +133,7 @@ const heroImages = [
 // 3) MAIN COMPONENT
 ////////////////////////////////////////////////////
 export default function ModernUploader() {
-  // Pinned items
+  // PINNED
   const [pinned, setPinned] = useState<number[]>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('pinnedProducts');
@@ -55,7 +142,7 @@ export default function ModernUploader() {
     return [];
   });
 
-  // Original palette states (once set, remain fixed)
+  // Original palette states
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
   const [triadicColors, setTriadicColors] = useState<[string, string] | null>(null);
@@ -63,14 +150,14 @@ export default function ModernUploader() {
   // If user uploaded a photo
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
 
-  // For the color wheel on first page
-  const [manualHex, setManualHex] = useState('#ffffff');
-
-  // Has a color been chosen?
+  // Has user chosen color yet?
   const [hasUploaded, setHasUploaded] = useState(false);
 
-  // The color we are currently searching with
+  // The color used for searching
   const [activeSearchColor, setActiveSearchColor] = useState<string | null>(null);
+
+  // For color wheel
+  const [manualHex, setManualHex] = useState('#ffffff');
 
   // Hero rotation
   const [currentHero, setCurrentHero] = useState(0);
@@ -84,7 +171,7 @@ export default function ModernUploader() {
   const sentinelRef = useRef<HTMLDivElement>(null);
 
   ////////////////////////////////////////////////////
-  // 4) On mount => rotate hero + fetch default
+  // On mount => rotate hero + initial fetch
   ////////////////////////////////////////////////////
   useEffect(() => {
     const interval = setInterval(() => {
@@ -99,7 +186,7 @@ export default function ModernUploader() {
   }, []);
 
   ////////////////////////////////////////////////////
-  // 5) Intersection Observer => infinite scroll
+  // Intersection observer => infinite scroll
   ////////////////////////////////////////////////////
   useEffect(() => {
     if (!sentinelRef.current) return;
@@ -120,16 +207,16 @@ export default function ModernUploader() {
   }, [hasMore, isFetching]);
 
   ////////////////////////////////////////////////////
-  // 6) If page changes => fetch next
+  // Page changes => fetch next
   ////////////////////////////////////////////////////
   useEffect(() => {
-    if (page === 1) return;
+    if (page === 1) return; // already fetched once
     fetchProducts(page, activeSearchColor);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
   ////////////////////////////////////////////////////
-  // 7) If active search color changes => reset
+  // activeSearchColor => reset pagination
   ////////////////////////////////////////////////////
   useEffect(() => {
     if (!activeSearchColor) return;
@@ -162,7 +249,7 @@ export default function ModernUploader() {
         setHasMore(false);
       }
     } catch (error) {
-      console.error('Fetch error:', error);
+      console.error('fetch error:', error);
       setHasMore(false);
     } finally {
       setIsFetching(false);
@@ -170,7 +257,7 @@ export default function ModernUploader() {
   }
 
   ////////////////////////////////////////////////////
-  // 8) Upload => extract => set original palette
+  // Upload => extract => set palette => set search color
   ////////////////////////////////////////////////////
   async function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
@@ -182,7 +269,7 @@ export default function ModernUploader() {
 
       const color = await extractColor(file);
 
-      // set up original palette
+      // set palette
       setSelectedColor(color);
       setComplementaryColor(getComplementaryColor(color));
       setTriadicColors(getTriadicColors(color));
@@ -191,12 +278,12 @@ export default function ModernUploader() {
       setActiveSearchColor(color);
       setHasUploaded(true);
     } catch (error) {
-      console.error('Error extracting color:', error);
+      console.error('extract color error:', error);
     }
   }
 
   ////////////////////////////////////////////////////
-  // 9) Color wheel => "Search This Color"
+  // "Search This Color" from color wheel
   ////////////////////////////////////////////////////
   function handleManualColor() {
     setSelectedColor(manualHex);
@@ -207,15 +294,15 @@ export default function ModernUploader() {
   }
 
   ////////////////////////////////////////////////////
-  // 10) Clicking a palette swatch => ONLY update search color
+  // Clicking a palette swatch => only changes active color
   ////////////////////////////////////////////////////
   function handleSwatchClick(color: string) {
-    // We do NOT recalc the entire palette
+    // do not recalc palette
     setActiveSearchColor(color);
   }
 
   ////////////////////////////////////////////////////
-  // 11) Pin toggle
+  // Pin toggle
   ////////////////////////////////////////////////////
   function togglePin(productId: number) {
     setPinned((prev) => {
@@ -231,7 +318,7 @@ export default function ModernUploader() {
   }
 
   ////////////////////////////////////////////////////
-  // 12) "Change color" => reset everything
+  // "Change" => reset all
   ////////////////////////////////////////////////////
   function resetAll() {
     setHasUploaded(false);
@@ -247,12 +334,12 @@ export default function ModernUploader() {
     fetchProducts(1, null);
   }
 
-  // ring highlight if color is the activeSearchColor
-  function getSwatchRingStyle(testColor: string) {
+  // highlight ring if color is active search color
+  function getSwatchRingStyle(testColor: string | null) {
     return activeSearchColor === testColor ? 'ring-4 ring-white' : '';
   }
 
-  // pinned row snippet
+  // pinned items snippet
   function getShortDescription(desc: string) {
     if (!desc) return '';
     const words = desc.trim().split(/\s+/);
@@ -302,10 +389,9 @@ export default function ModernUploader() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* B) FIRST PAGE: Upload vs. Color Wheel (equal height) */}
+        {/* B) FIRST PAGE: Upload or color wheel */}
         {!hasUploaded && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-
             {/* LEFT: Upload */}
             <div className="max-w-md mx-auto min-h-[320px] flex items-center justify-center">
               <label className="block w-full">
@@ -332,7 +418,7 @@ export default function ModernUploader() {
               </label>
             </div>
 
-            {/* RIGHT: Big color wheel + swatch */}
+            {/* RIGHT: Big color wheel + preview */}
             <div className="max-w-md mx-auto min-h-[320px] bg-white/10 border border-white/20 
                             rounded-xl p-6 flex flex-col gap-4 items-center justify-center">
               <div className="flex items-center gap-2 text-white/80 mb-1">
@@ -362,10 +448,10 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* C) SECOND PAGE: palette row, pinned, product grid */}
+        {/* C) SECOND PAGE: Show palette row, pinned, product grid */}
         {selectedColor && (
           <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
-            {/* If user used upload */}
+            {/* If user uploaded */}
             {uploadedImageUrl && (
               <>
                 <div className="flex flex-col items-center">
@@ -394,8 +480,7 @@ export default function ModernUploader() {
               <span className="text-xs md:text-sm text-white/60 mt-2">
                 Primary
               </span>
-
-              {/* "Change" link => resets entire UI */}
+              {/* "Change" => reset */}
               <button
                 onClick={resetAll}
                 className="mt-1 text-blue-400 hover:underline text-xs"
@@ -440,7 +525,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Pinned row */}
+        {/* Pinned Row */}
         {pinned.length > 0 && (
           <div className="bg-transparent border border-white/40 text-white py-3 px-4 mb-8 rounded-md">
             <h3 className="font-bold mb-2">Your Pinned Items</h3>
@@ -483,7 +568,7 @@ export default function ModernUploader() {
         {/* Product Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => {
-            // If user has chosen a color, show match%. Otherwise "—% match"
+            // show match % if we have activeSearchColor
             const matchText =
               activeSearchColor && Number.isFinite(product.matchPercentage)
                 ? `${product.matchPercentage}% match`
@@ -503,6 +588,7 @@ export default function ModernUploader() {
                   group relative bg-white/5 rounded-xl overflow-hidden 
                   hover:bg-white/10 transition-all duration-300 ease-out
                 ">
+                  {/* pin button */}
                   <button
                     type="button"
                     onClick={(e) => {
@@ -566,11 +652,8 @@ export default function ModernUploader() {
           })}
         </div>
 
-        {/* Infinite scroll sentinel */}
-        <div
-          ref={sentinelRef}
-          className="mt-8 h-8 flex justify-center items-center"
-        >
+        {/* Infinite Scroll Sentinel */}
+        <div ref={sentinelRef} className="mt-8 h-8 flex justify-center items-center">
           {isFetching && hasMore && (
             <div className="text-sm text-white/60 animate-pulse">
               Loading more...
@@ -586,5 +669,4 @@ export default function ModernUploader() {
     </div>
   );
 }
-
 
