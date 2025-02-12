@@ -25551,5 +25551,305 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0B1ZP645F/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#cfcbbf"
+  },
+  {
+    "id": 2553,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "Bedsure White Throw Blanket for Couch - GentleSoft Cozy Soft Blankets for Women, Cute Small Fleece Throws for Girls, Off White, 50x60 Inches",
+    "image": "https://m.media-amazon.com/images/I/617jWhurG3L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BPLB81LX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e9e8e5"
+  },
+  {
+    "id": 2554,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "Eddie Bauer - Blanket, Super Soft Reversible Sherpa & Brushed Fleece Bedding, Throw Blankets for Couch, Ideal for Lounging (Edgewood Red)",
+    "image": "https://m.media-amazon.com/images/I/81fzdVxDX3L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00NA83RYU/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c9b3a9"
+  },
+  {
+    "id": 2555,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "Bedsure Sherpa Fleece Throw Blanket for Couch - Thick and Warm Blanket for Winter, Soft Fuzzy Plush Throw Gift for Women, Grey, 50x60 Inches",
+    "image": "https://m.media-amazon.com/images/I/81-x+F2EsHL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0158EQJSY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8d8c91"
+  },
+  {
+    "id": 2556,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "NEWCOSPLAY Super Soft Throw Blanket Pink Premium Silky Flannel Fleece 3D Ribbed Jacquard Lightweight Bed Blanket All Season Use (Pink Ribbed, Throw(50\"x60\"))",
+    "image": "https://m.media-amazon.com/images/I/81qOItq7iyL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQ71N25S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4cfc2"
+  },
+  {
+    "id": 2557,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "Bedsure Fluffy Throw Blanket Gifts for Women Men, Soft Fleece Sherpa Cozy Fuzzy Plush Warm Minky Thick Faux Fur Throw for Couch, Bed, Home Living Room Decor Valentines Blanket Gifts for Her Him, Grey",
+    "image": "https://m.media-amazon.com/images/I/A1Ajfh3EvtL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07X3BX7WM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#424248"
+  },
+  {
+    "id": 2558,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "BEDELITE Fleece Throw Blanket for Couch – 3D Ribbed Jacquard Soft and Warm Decorative Fuzzy Blanket – Cozy, Fluffy, Plush Lightweight Pink Throw Blankets for Bed, Sofa, 50x60 inches",
+    "image": "https://m.media-amazon.com/images/I/814+n858WIL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09SKZYYDQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8b6b1"
+  },
+  {
+    "id": 2559,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Utopia Bedding Fleece Blanket Throw Size Black 300 GSM Luxury Anti-Static Fuzzy Soft Microfiber Blanket for Couch, Sofa and Bed (60x50 Inch)",
+    "image": "https://m.media-amazon.com/images/I/81gfi1g0WVL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08XYWR6JC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#191c20"
+  },
+  {
+    "id": 2560,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "Puncuntex Hot Pink Throw Blanket 50\"×60\" inches Gifts for Mom Fuzzy 3D Jacquard Decorative Flannel Fleece Super Soft Plush Cozy Blanket for Couch Sofa Chair Lightweight",
+    "image": "https://m.media-amazon.com/images/I/81v98E2nj9L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CMTW85YK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ea2566"
+  },
+  {
+    "id": 2561,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "NEWCOSPLAY Super Soft Throw Blanket Light Purple Premium Silky Flannel Fleece Leaves Pattern Lightweight Bed Blanket All Season Use (Light Purple, Throw(50\"x60\"))",
+    "image": "https://m.media-amazon.com/images/I/81+Nfu2o3EL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07MR4FSPT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#947e85"
+  },
+  {
+    "id": 2562,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "NEWCOSPLAY Super Soft Throw Blanket Ivory Premium Silky Flannel Fleece 3D Checkered Lightweight Bed Blanket All Season Use (Ivory Checkered, Throw(50\"x70\"))",
+    "image": "https://m.media-amazon.com/images/I/615CibT1f7L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CMTB1YHN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbd9d3"
+  },
+  {
+    "id": 2563,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "Bedsure Sage Green Fleece Blanket for Couch - Checkered Throw Blanket for Women, Cute Soft Cozy Throw for Girls, 50x60 Inches",
+    "image": "https://m.media-amazon.com/images/I/91fs+B3lv8L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BPLFGJ3B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b1c3bd"
+  },
+  {
+    "id": 2564,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "BEDELITE Fleece Blanket Black Throw Blankets for Couch & Bed, Luxury Plush Cozy Fuzzy Blanket 50x60 inches, Super Soft Warm Lightweight Throw Blanket for Travel Camping",
+    "image": "https://m.media-amazon.com/images/I/81t0B0SukmL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08FY9JCXV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1f1f1f"
+  },
+  {
+    "id": 2565,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "Snuggle Sac Buttery Ivory Throw Blanket for Couch, Reversible Super Soft Knitted Blankets, Warm Cozy Knit Fuzzy Plush Lightweight Throws Dupes for Sofa, Bed, Picnic, Ivory, 50 x 60 inches",
+    "image": "https://m.media-amazon.com/images/I/71WXPkjG3uL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN2K5S7K/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#efe9e3"
+  },
+  {
+    "id": 2566,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "Bedsure Heated Blanket Electric Throw - Soft Ribbed Flannel GentleSoft Electric Blanket, Heating with 4 Time Settings, 6 Heat Settings, 3 hrs Timer Auto Shut Off, Gift for Grandma (50x60 inches, Grey)",
+    "image": "https://m.media-amazon.com/images/I/81EpxobJNPL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BZSCS613/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#535f6c"
+  },
+  {
+    "id": 2567,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "BEDELITE Fleece Blanket - 3D Jacquard Decorative Pink Throw Blankets for Women's Couch & Bed, Soft and Cozy Warm Plush Fuzzy Blanket, Perfect for Valentine, Suitable for All Seasons, 50x60 Inches",
+    "image": "https://m.media-amazon.com/images/I/81i8JY5PjnL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CGW9KT6X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7cdc6"
+  },
+  {
+    "id": 2568,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "Bedsure 100% Cotton Large Throw Blanket for Couch 50x70 inches - Breathable and Soft, Waffle Weave Throw Blanket for Office, Light Beige",
+    "image": "https://m.media-amazon.com/images/I/81RGBhpN3aL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BL76GW3N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8d1cb"
+  },
+  {
+    "id": 2569,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "BEDELITE Fleece Blanket - 3D Jacquard Decorative Pink Throw Blankets for Women's Couch & Bed, Soft and Cozy Warm Plush Fuzzy Blanket, Perfect for Valentine, Suitable for All Seasons, 50x60 Inches",
+    "image": "https://m.media-amazon.com/images/I/81i8JY5PjnL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CGW9KT6X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7cdc6"
+  },
+  {
+    "id": 2570,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "Custom Blanket with Photos Personalized Blanket Customized Blanket and Thows Customizable Blanket Picture Blankets Customize for Valentines Day Gifts for Mom Dad Couple Girlfriend Boyfriend Wife Husband",
+    "image": "https://m.media-amazon.com/images/I/81zZ1dSdy1L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CT2CCTTZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbb89c"
+  },
+  {
+    "id": 2571,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "NEWCOSPLAY Super Soft Throw Blanket Ivory Premium Silky Flannel Fleece 3D Checkered Lightweight Bed Blanket All Season Use (Ivory Checkered, Throw(50\"x70\"))",
+    "image": "https://m.media-amazon.com/images/I/615CibT1f7L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CMTB1YHN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbd9d3"
+  },
+  {
+    "id": 2572,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "Snuggle Sac Blue Throw Blankets for Couch, Reversible Super Soft Warm Blankets Cozy Knit Blanket Fuzzy Plush Throws for Sofa, Bed, Gift, Heather Blue, 50 x 60 inches",
+    "image": "https://m.media-amazon.com/images/I/81cU6sNj2ZL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BW3SHGHW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#5f6f7c"
+  },
+  {
+    "id": 2573,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "Bedsure Sage Green Fleece Blanket for Couch - Checkered Throw Blanket for Women, Cute Soft Cozy Throw for Girls, 50x60 Inches",
+    "image": "https://m.media-amazon.com/images/I/91fs+B3lv8L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BPLFGJ3B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b1c3bd"
+  },
+  {
+    "id": 2574,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Bedsure Sage Green Fleece Blanket for Couch - Checkered Throw Blanket for Women, Cute Soft Cozy Throw for Girls, 50x60 Inches",
+    "image": "https://m.media-amazon.com/images/I/91fs+B3lv8L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BPLFGJ3B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#caded5"
+  },
+  {
+    "id": 2575,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "BEDELITE Fleece Blanket Black Throw Blankets for Couch & Bed, Luxury Plush Cozy Fuzzy Blanket 50x60 inches, Super Soft Warm Lightweight Throw Blanket for Travel Camping",
+    "image": "https://m.media-amazon.com/images/I/81t0B0SukmL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08FY9JCXV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1f1f1f"
+  },
+  {
+    "id": 2576,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "Bedsure 100% Cotton Large Throw Blanket for Couch 50x70 inches - Breathable and Soft, Waffle Weave Throw Blanket for Office, Light Beige",
+    "image": "https://m.media-amazon.com/images/I/81RGBhpN3aL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BL76GW3N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8d1cb"
+  },
+  {
+    "id": 2577,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "BEDELITE Fleece Blanket - 3D Jacquard Decorative Pink Throw Blankets for Women's Couch & Bed, Soft and Cozy Warm Plush Fuzzy Blanket, Perfect for Valentine, Suitable for All Seasons, 50x60 Inches",
+    "image": "https://m.media-amazon.com/images/I/81i8JY5PjnL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CGW9KT6X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7cdc6"
+  },
+  {
+    "id": 2578,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "Bedsure 100% Cotton Large Throw Blanket for Couch 50x70 inches - Breathable and Soft, Waffle Weave Throw Blanket for Office, Light Beige",
+    "image": "https://m.media-amazon.com/images/I/81RGBhpN3aL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BL76GW3N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8d1cb"
+  },
+  {
+    "id": 2579,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "Chyhomenyc Sheer White Valances for Windows 2 Pack, Small Window Curtains for Living Room Bathroom Cafe Laundry Basement, Modern Top Dual Rod Pocket Voile Curtain, 42W x 14L inches, White",
+    "image": "https://m.media-amazon.com/images/I/71iZYgzLvmL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B8L954LG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6d5d8"
+  },
+  {
+    "id": 2580,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "MIULEE 100% Blackout Linen Textured Curtains for Bedroom Solid Thermal Insulated Natural Beige Grommet Room Darkening Curtains & Drapes Luxury Decor for Living Room Nursery 52 x 84 Inch (2 Panels)",
+    "image": "https://m.media-amazon.com/images/I/812kUwGK2qL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08SBYPF14/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddd1c4"
+  },
+  {
+    "id": 2581,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "NICETOWN Grey Kitchen Blackout Short Curtain Panels for Bedroom, Thermal Insulated Grommet Top Blackout Draperies and Drapes (2 Panels, W42 x L45 -Inch, Grey)",
+    "image": "https://m.media-amazon.com/images/I/51-wrKfBbSS._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01NAOM85J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#737375"
+  },
+  {
+    "id": 2582,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "Natural Linen Back Tab Curtains 84 Inch Length for Living Room 2 Panel Pocket Drape Light Filtering Semi Sheer Neutral Country Rustic Farmhouse Boho Curtain Bedroom Muslin Look Ivory Cream Colored",
+    "image": "https://m.media-amazon.com/images/I/81-CE330lnL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B1ZP645F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cfcbbf"
   }
 ];
