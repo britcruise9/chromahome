@@ -3,12 +3,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Upload, ArrowRight, Pin, PinOff, Palette } from 'lucide-react';
 import { HslColorPicker } from 'react-colorful';
-// Use a named import (adjust path as needed)
+// Import the local products JSON
 import { amazonProducts } from '../lib/amazonProducts';
 
 ////////////////////////////////////////////////////
 // 1) COLOR UTILS
 ////////////////////////////////////////////////////
+
 declare const ColorThief: any;
 
 function hexToHSL(hex: string): { h: number; s: number; l: number } {
@@ -17,8 +18,7 @@ function hexToHSL(hex: string): { h: number; s: number; l: number } {
   const b = parseInt(hex.slice(5, 7), 16) / 255;
   const max = Math.max(r, g, b);
   const min = Math.min(r, g, b);
-  let h = 0,
-    s = 0;
+  let h = 0, s = 0;
   const l = (max + min) / 2;
 
   if (max !== min) {
@@ -107,20 +107,45 @@ async function extractColor(file: File): Promise<string> {
   });
 }
 
-// --------------------------------------------------
-// Helper: Compare two hex colors by their hue difference
-// --------------------------------------------------
-function isColorSimilar(hex1: string, hex2: string, tolerance = 15): boolean {
-  const hsl1 = hexToHSL(hex1);
-  const hsl2 = hexToHSL(hex2);
-  let hueDiff = Math.abs(hsl1.h - hsl2.h);
-  hueDiff = Math.min(hueDiff, 360 - hueDiff);
-  return hueDiff <= tolerance;
+////////////////////////////////////////////////////
+// Helper: Calculate match percentage between two hex colors
+////////////////////////////////////////////////////
+
+const hexRegex = /^%23/;
+function calculateColorMatch(color1: string, color2: string): number {
+  try {
+    // Ensure both colors start with "#"
+    color1 = decodeURIComponent(color1).replace(hexRegex, '#');
+    color2 = decodeURIComponent(color2).replace(hexRegex, '#');
+    const r1 = parseInt(color1.slice(1, 3), 16);
+    const g1 = parseInt(color1.slice(3, 5), 16);
+    const b1 = parseInt(color1.slice(5, 7), 16);
+    const r2 = parseInt(color2.slice(1, 3), 16);
+    const g2 = parseInt(color2.slice(3, 5), 16);
+    const b2 = parseInt(color2.slice(5, 7), 16);
+    // Weighted Euclidean distance (perceptually tuned)
+    const distance = Math.sqrt(
+      3 * Math.pow(r2 - r1, 2) +
+      4 * Math.pow(g2 - g1, 2) +
+      2 * Math.pow(b2 - b1, 2)
+    );
+    const maxDistance = Math.sqrt(
+      3 * Math.pow(255, 2) +
+      4 * Math.pow(255, 2) +
+      2 * Math.pow(255, 2)
+    );
+    const percentage = Math.round((1 - distance / maxDistance) * 100);
+    return percentage;
+  } catch (error) {
+    console.error('Color calculation error:', error);
+    return 0;
+  }
 }
 
 ////////////////////////////////////////////////////
 // 2) HERO IMAGES
 ////////////////////////////////////////////////////
+
 const heroImages = [
   "https://hips.hearstapps.com/hmg-prod/images/living-room-paint-colors-hbx040122inspoindex-012-copy-1655397674-653fda462b085.jpg?crop=0.752xw:1.00xh;0.120xw,0&resize=1120:*",
   "https://i.imgur.com/oH0sLxE.jpeg",
@@ -132,10 +157,9 @@ const heroImages = [
 ////////////////////////////////////////////////////
 // 3) MAIN COMPONENT
 ////////////////////////////////////////////////////
+
 export default function ModernUploader() {
-  // -------------------------------
-  // PINNED items (saved in localStorage)
-  // -------------------------------
+  // ---------- PINNED ITEMS ----------
   const [pinned, setPinned] = useState<number[]>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('pinnedProducts');
@@ -144,67 +168,54 @@ export default function ModernUploader() {
     return [];
   });
 
-  // -------------------------------
-  // Palette, search, upload states
-  // -------------------------------
+  // ---------- PALETTE & SEARCH STATES ----------
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
   const [triadicColors, setTriadicColors] = useState<[string, string] | null>(null);
   const [activeSearchColor, setActiveSearchColor] = useState<string | null>(null);
+
+  // ---------- UPLOAD STATE ----------
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
 
-  // -------------------------------
-  // Desktop color wheel states
-  // (Initial value changed from {h:0,s:0,l:1} to a mid-tone)
-  // -------------------------------
+  // ---------- DESKTOP COLOR WHEEL STATES ----------
+  // Initialize to a mid-tone so that the square isn’t white by default.
   const [desktopHsl, setDesktopHsl] = useState({ h: 0, s: 0.5, l: 0.5 });
-  const [desktopConfirmedColor, setDesktopConfirmedColor] = useState<string | null>(null);
   const [showWheel, setShowWheel] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
 
-  // -------------------------------
-  // Mobile color state
-  // -------------------------------
+  // ---------- MOBILE COLOR STATE ----------
   const [tempMobileColor, setTempMobileColor] = useState("#ffffff");
 
-  // -------------------------------
-  // Hero rotation & Products data
-  // -------------------------------
+  // ---------- HERO & PRODUCTS ----------
   const [currentHero, setCurrentHero] = useState(0);
-  // "allProducts" holds the full (shuffled) dataset.
-  const [allProducts, setAllProducts] = useState<any[]>([]);
-  // "products" holds only the currently displayed batch.
   const [products, setProducts] = useState<any[]>([]);
-  // Pagination: page number, hasMore flag, and fetching state.
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
   const [isFetching, setIsFetching] = useState(false);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
-  // -------------------------------
-  // INITIALIZATION
-  // -------------------------------
+  // Hold the entire dataset (shuffled on initial load)
+  const [allProducts, setAllProducts] = useState<any[]>([]);
+
+  // ---------- INITIALIZATION ----------
   useEffect(() => {
     setIsDesktop(window.innerWidth >= 768);
     const interval = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroImages.length);
     }, 6000);
 
-    // Shuffle the locally imported products.
+    // Shuffle the locally imported products and save in state.
     const shuffled = [...amazonProducts].sort(() => Math.random() - 0.5);
     setAllProducts(shuffled);
-
-    // Load the initial batch (page 1) from the full dataset.
+    // Load the initial batch (page 1). If no color is selected, use the shuffled list.
     loadProducts(1, activeSearchColor, shuffled);
 
     return () => clearInterval(interval);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // -------------------------------
-  // INFINITE SCROLL: Intersection Observer
-  // -------------------------------
+  // ---------- INFINITE SCROLL: Intersection Observer ----------
   useEffect(() => {
     if (!sentinelRef.current) return;
     const observer = new IntersectionObserver(
@@ -221,58 +232,56 @@ export default function ModernUploader() {
     };
   }, [hasMore, isFetching]);
 
-  // -------------------------------
-  // Load next batch when page changes (except for initial page).
-  // -------------------------------
+  // ---------- Load next page when "page" changes (except for page 1) ----------
   useEffect(() => {
     if (page === 1) return;
-    loadProducts(page, activeSearchColor, allProducts);
+    loadProducts(page, activeSearchColor);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
-  // -------------------------------
-  // When the active search color changes, reset products and pagination.
-  // -------------------------------
+  // ---------- When the active search color changes, reset products & pagination ----------
   useEffect(() => {
+    // Only run if the full dataset is available.
+    if (allProducts.length === 0) return;
     setProducts([]);
     setPage(1);
     setHasMore(true);
-    loadProducts(1, activeSearchColor, allProducts);
+    loadProducts(1, activeSearchColor);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeSearchColor]);
+  }, [activeSearchColor, allProducts]);
 
-  // -------------------------------
-  // Load products from the full dataset (with optional color filtering)
-  // -------------------------------
-  function loadProducts(pageNum: number, color: string | null, productsData: any[]) {
-    if (!productsData || productsData.length === 0) return;
+  // ---------- LOAD PRODUCTS FUNCTION ----------
+  // If a search color is active, compute matchPercentage for every product and sort descending.
+  // Otherwise, use the random (shuffled) order.
+  function loadProducts(pageNum: number, color: string | null, data?: any[]) {
     setIsFetching(true);
-    const batchSize = pageNum === 1 ? 50 : 10;
-    let filtered = productsData;
+    const productsData = data || allProducts;
+    let sortedProducts = [];
     if (color) {
-      filtered = productsData.filter((product) => {
-        const prodColor = (product.dominantColor || product.color || '').trim();
-        if (!prodColor) return false;
-        // Use fuzzy hue matching (within 15° tolerance)
-        return isColorSimilar(prodColor, color, 15);
+      sortedProducts = productsData.map((product) => {
+        const prodColor = (product.dominantColor || '#000000').trim();
+        const matchPercentage = calculateColorMatch(color, prodColor);
+        return { ...product, matchPercentage };
       });
+      sortedProducts.sort((a, b) => b.matchPercentage - a.matchPercentage);
+    } else {
+      sortedProducts = productsData;
     }
-    const startIndex = (pageNum - 1) * batchSize;
-    const newBatch = filtered.slice(startIndex, startIndex + batchSize);
+    const pageSize = pageNum === 1 ? 50 : 12;
+    const startIndex = (pageNum - 1) * pageSize;
+    const newBatch = sortedProducts.slice(startIndex, startIndex + pageSize);
     if (pageNum === 1) {
       setProducts(newBatch);
     } else {
       setProducts((prev) => [...prev, ...newBatch]);
     }
-    if (newBatch.length < batchSize || startIndex + batchSize >= filtered.length) {
+    if (newBatch.length < pageSize) {
       setHasMore(false);
     }
     setIsFetching(false);
   }
 
-  // -------------------------------
-  // FILE UPLOAD => EXTRACT COLOR
-  // -------------------------------
+  // ---------- FILE UPLOAD => EXTRACT COLOR ----------
   async function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -280,7 +289,7 @@ export default function ModernUploader() {
       const url = URL.createObjectURL(file);
       setUploadedImageUrl(url);
       const color = await extractColor(file);
-      // Immediately update palette & search color.
+      // Update palette & trigger search
       setSelectedColor(color);
       setComplementaryColor(getComplementaryColor(color));
       setTriadicColors(getTriadicColors(color));
@@ -291,9 +300,7 @@ export default function ModernUploader() {
     }
   }
 
-  // -------------------------------
-  // MANUAL COLOR SELECTION (Desktop & Mobile)
-  // -------------------------------
+  // ---------- MANUAL COLOR SELECTION (Desktop & Mobile) ----------
   function handleManualColor(hex: string) {
     setSelectedColor(hex);
     setComplementaryColor(getComplementaryColor(hex));
@@ -306,15 +313,13 @@ export default function ModernUploader() {
     handleManualColor(tempMobileColor);
   }
 
-  // Swatch click (applies the color as the active search color)
+  // Swatch click: simply change activeSearchColor
   function handleSwatchClick(color: string | null) {
     if (!color) return;
     setActiveSearchColor(color);
   }
 
-  // -------------------------------
-  // PIN TOGGLING
-  // -------------------------------
+  // ---------- PIN TOGGLING ----------
   function togglePin(productId: number) {
     setPinned((prev) => {
       let updated;
@@ -328,9 +333,7 @@ export default function ModernUploader() {
     });
   }
 
-  // -------------------------------
-  // Utility: Shorten product description
-  // -------------------------------
+  // ---------- Utility: Shorten description ----------
   function getShortDescription(desc: string) {
     if (!desc) return '';
     const words = desc.trim().split(/\s+/);
@@ -338,16 +341,12 @@ export default function ModernUploader() {
     return snippet.length < desc.length ? snippet + '...' : snippet;
   }
 
-  // -------------------------------
-  // Utility: Swatch ring styling (for active color)
-  // -------------------------------
+  // ---------- Utility: Swatch ring style ----------
   function getSwatchRingStyle(testColor: string | null) {
     return activeSearchColor === testColor ? 'ring-4 ring-white' : '';
   }
 
-  // -------------------------------
-  // "Change color" => reset all
-  // -------------------------------
+  // ---------- "Change color" => reset all ----------
   function resetAll() {
     setHasUploaded(false);
     setUploadedImageUrl(null);
@@ -358,11 +357,11 @@ export default function ModernUploader() {
     setProducts([]);
     setPage(1);
     setHasMore(true);
-    loadProducts(1, null, allProducts);
+    loadProducts(1, null);
   }
 
   //////////////////////////////////////////////////////
-  // 4) RENDER THE COMPONENT
+  // 4) RENDER COMPONENT
   //////////////////////////////////////////////////////
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
@@ -403,7 +402,7 @@ export default function ModernUploader() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* B) FIRST PAGE: Upload or color picker */}
+        {/* B) FIRST PAGE: Upload or Color Picker */}
         {!hasUploaded && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             {/* LEFT: Upload */}
@@ -434,7 +433,7 @@ export default function ModernUploader() {
               </label>
             </div>
 
-            {/* RIGHT: Color picking box */}
+            {/* RIGHT: Color Picking Box */}
             <div
               className="
                 max-w-md mx-auto min-h-[320px] bg-white/10 border border-white/20 
@@ -448,28 +447,33 @@ export default function ModernUploader() {
 
               {isDesktop ? (
                 <>
-                  {/* Desktop: Color square */}
+                  {/* Desktop: Color square toggles the wheel */}
                   <div
                     className="w-28 h-28 rounded-xl border border-white/30 shadow-md cursor-pointer"
                     style={{
-                      backgroundColor: desktopConfirmedColor
-                        ? desktopConfirmedColor
-                        : hslToHex(
-                            desktopHsl.h,
-                            desktopHsl.s * 100,
-                            desktopHsl.l * 100
-                          ),
+                      backgroundColor: hslToHex(
+                        desktopHsl.h,
+                        desktopHsl.s * 100,
+                        desktopHsl.l * 100
+                      ),
                     }}
                     onClick={() => setShowWheel(true)}
                   />
-                  {desktopConfirmedColor && (
-                    <button
-                      onClick={() => handleManualColor(desktopConfirmedColor)}
-                      className="mt-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
-                    >
-                      Select Color
-                    </button>
-                  )}
+                  <button
+                    onClick={() =>
+                      handleManualColor(
+                        hslToHex(
+                          desktopHsl.h,
+                          desktopHsl.s * 100,
+                          desktopHsl.l * 100
+                        )
+                      )
+                    }
+                    className="mt-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
+                  >
+                    Select Color
+                  </button>
+
                   {showWheel && (
                     <div
                       className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
@@ -485,7 +489,7 @@ export default function ModernUploader() {
                         />
                         <button
                           onClick={() => {
-                            setDesktopConfirmedColor(
+                            handleManualColor(
                               hslToHex(
                                 desktopHsl.h,
                                 desktopHsl.s * 100,
@@ -523,192 +527,197 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* C) PALETTE ROW (shown once a color is selected) */}
+        {/* C) PALETTE ROW, PINNED ROW, & PRODUCT GRID */}
         {selectedColor && (
-          <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
-            {uploadedImageUrl && (
-              <>
-                <div className="flex flex-col items-center">
-                  <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
-                    <img
-                      src={uploadedImageUrl}
-                      alt="Uploaded Inspiration"
-                      className="w-full h-full object-cover"
-                    />
+          <>
+            {/* Palette Row */}
+            <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
+              {uploadedImageUrl && (
+                <>
+                  <div className="flex flex-col items-center">
+                    <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
+                      <img
+                        src={uploadedImageUrl}
+                        alt="Uploaded Inspiration"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
-                </div>
-                <ArrowRight className="w-6 h-6 text-white" />
-              </>
-            )}
+                  <ArrowRight className="w-6 h-6 text-white" />
+                </>
+              )}
 
-            {/* Primary */}
-            <div className="flex flex-col items-center">
-              <div
-                className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(selectedColor)}`}
-                style={{ backgroundColor: selectedColor }}
-                onClick={() => handleSwatchClick(selectedColor)}
-              />
-              <span className="text-xs md:text-sm text-white/60 mt-2">
-                Primary
-              </span>
-              <button
-                onClick={resetAll}
-                className="mt-1 text-blue-400 hover:underline text-xs"
-              >
-                Change
-              </button>
-            </div>
-
-            {/* Complementary */}
-            {complementaryColor && (
+              {/* Primary */}
               <div className="flex flex-col items-center">
                 <div
-                  className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(complementaryColor)}`}
-                  style={{ backgroundColor: complementaryColor }}
-                  onClick={() => handleSwatchClick(complementaryColor)}
+                  className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(selectedColor)}`}
+                  style={{ backgroundColor: selectedColor }}
+                  onClick={() => handleSwatchClick(selectedColor)}
                 />
                 <span className="text-xs md:text-sm text-white/60 mt-2">
-                  Compliment
+                  Primary
                 </span>
+                <button
+                  onClick={resetAll}
+                  className="mt-1 text-blue-400 hover:underline text-xs"
+                >
+                  Change
+                </button>
+              </div>
+
+              {/* Complementary */}
+              {complementaryColor && (
+                <div className="flex flex-col items-center">
+                  <div
+                    className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(complementaryColor)}`}
+                    style={{ backgroundColor: complementaryColor }}
+                    onClick={() => handleSwatchClick(complementaryColor)}
+                  />
+                  <span className="text-xs md:text-sm text-white/60 mt-2">
+                    Compliment
+                  </span>
+                </div>
+              )}
+
+              {/* Triadic */}
+              {triadicColors?.map((col, i) => (
+                <div key={col} className="flex flex-col items-center">
+                  <div
+                    className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(col)}`}
+                    style={{ backgroundColor: col }}
+                    onClick={() => handleSwatchClick(col)}
+                  />
+                  <span className="text-xs md:text-sm text-white/60 mt-2">
+                    Accent {i + 1}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* Pinned Row */}
+            {pinned.length > 0 && (
+              <div className="bg-transparent border border-white/40 text-white py-3 px-4 mb-8 rounded-md">
+                <h3 className="font-bold mb-2">Your Pinned Items</h3>
+                <div className="flex gap-3 overflow-x-auto scrollbar-hide">
+                  {pinned.map((id) => {
+                    const product = products.find((p) => p.id === id);
+                    if (!product) return null;
+                    return (
+                      <a
+                        key={id}
+                        href={product.affiliateLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="min-w-[120px] relative border border-white/20 rounded p-2 shrink-0"
+                      >
+                        <button
+                          onClick={(e) => {
+                            e.preventDefault();
+                            togglePin(id);
+                          }}
+                          className="absolute top-1 right-1 text-xs px-1 py-0.5 bg-black/50 rounded hover:bg-black/70"
+                        >
+                          <PinOff className="w-3 h-3" />
+                        </button>
+                        <img
+                          src={product.image}
+                          alt={product.description}
+                          className="h-20 w-auto object-cover mx-auto"
+                        />
+                        <p className="text-xs mt-2 text-center line-clamp-1">
+                          {getShortDescription(product.description || '')}
+                        </p>
+                      </a>
+                    );
+                  })}
+                </div>
               </div>
             )}
 
-            {/* Triadic */}
-            {triadicColors?.map((col, i) => (
-              <div key={col} className="flex flex-col items-center">
-                <div
-                  className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(col)}`}
-                  style={{ backgroundColor: col }}
-                  onClick={() => handleSwatchClick(col)}
-                />
-                <span className="text-xs md:text-sm text-white/60 mt-2">
-                  Accent {i + 1}
-                </span>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* D) PINNED ROW */}
-        {pinned.length > 0 && (
-          <div className="bg-transparent border border-white/40 text-white py-3 px-4 mb-8 rounded-md">
-            <h3 className="font-bold mb-2">Your Pinned Items</h3>
-            <div className="flex gap-3 overflow-x-auto scrollbar-hide">
-              {pinned.map((id) => {
-                const product = products.find((p) => p.id === id);
-                if (!product) return null;
+            {/* Product Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {products.map((product) => {
+                const matchText =
+                  activeSearchColor && Number.isFinite(product.matchPercentage)
+                    ? `${product.matchPercentage}% match`
+                    : '—% match';
+                const isPinned = pinned.includes(product.id);
                 return (
                   <a
-                    key={id}
+                    key={product.id}
                     href={product.affiliateLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="min-w-[120px] relative border border-white/20 rounded p-2 shrink-0"
+                    className="block"
                   >
-                    <button
-                      onClick={(e) => {
-                        e.preventDefault();
-                        togglePin(id);
-                      }}
-                      className="absolute top-1 right-1 text-xs px-1 py-0.5 bg-black/50 rounded hover:bg-black/70"
+                    <div
+                      className="
+                        group relative bg-white/5 rounded-xl overflow-hidden 
+                        hover:bg-white/10 transition-all duration-300 ease-out
+                      "
                     >
-                      <PinOff className="w-3 h-3" />
-                    </button>
-                    <img
-                      src={product.image}
-                      alt={product.description}
-                      className="h-20 w-auto object-cover mx-auto"
-                    />
-                    <p className="text-xs mt-2 text-center line-clamp-1">
-                      {getShortDescription(product.description || '')}
-                    </p>
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          togglePin(product.id);
+                        }}
+                        className="absolute top-2 right-2 z-20 bg-black/40 text-white p-1 rounded hover:bg-black/60 transition"
+                        title={isPinned ? 'Unpin item' : 'Pin item'}
+                      >
+                        <Pin
+                          className={`w-5 h-5 ${isPinned ? 'fill-white text-yellow-300' : ''}`}
+                        />
+                      </button>
+                      <div className="aspect-square overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105">
+                        <img
+                          src={product.image}
+                          alt={product.description}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <div className="flex items-center gap-2">
+                          <div
+                            className="w-4 h-4 rounded-full"
+                            style={{ backgroundColor: product.dominantColor }}
+                          />
+                          {activeSearchColor ? (
+                            <>
+                              <div
+                                className="w-4 h-4 rounded-full"
+                                style={{ backgroundColor: activeSearchColor }}
+                              />
+                              <span className="text-xs text-white/50">
+                                {matchText}
+                              </span>
+                            </>
+                          ) : (
+                            <>
+                              <div className="w-4 h-4 rounded-full bg-white/10" />
+                              <span className="text-xs text-white/50">
+                                Ready to match your color
+                              </span>
+                            </>
+                          )}
+                        </div>
+                        {product.affiliateLink && (
+                          <div className="mt-2">
+                            <span className="text-sm text-blue-400 hover:text-blue-300">
+                              Shop on Amazon
+                            </span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
                   </a>
                 );
               })}
             </div>
-          </div>
+          </>
         )}
 
-        {/* E) PRODUCT GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {products.map((product) => {
-            const matchText =
-              activeSearchColor && Number.isFinite(product.matchPercentage)
-                ? `${product.matchPercentage}% match`
-                : '—% match';
-            const isPinned = pinned.includes(product.id);
-            return (
-              <a
-                key={product.id}
-                href={product.affiliateLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <div
-                  className="
-                    group relative bg-white/5 rounded-xl overflow-hidden 
-                    hover:bg-white/10 transition-all duration-300 ease-out
-                  "
-                >
-                  <button
-                    type="button"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      togglePin(product.id);
-                    }}
-                    className="absolute top-2 right-2 z-20 bg-black/40 text-white p-1 rounded hover:bg-black/60 transition"
-                    title={isPinned ? 'Unpin item' : 'Pin item'}
-                  >
-                    <Pin className={`w-5 h-5 ${isPinned ? 'fill-white text-yellow-300' : ''}`} />
-                  </button>
-                  <div className="aspect-square overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105">
-                    <img
-                      src={product.image}
-                      alt={product.description}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <div className="flex items-center gap-2">
-                      <div
-                        className="w-4 h-4 rounded-full"
-                        style={{ backgroundColor: product.dominantColor }}
-                      />
-                      {activeSearchColor ? (
-                        <>
-                          <div
-                            className="w-4 h-4 rounded-full"
-                            style={{ backgroundColor: activeSearchColor }}
-                          />
-                          <span className="text-xs text-white/50">
-                            {matchText}
-                          </span>
-                        </>
-                      ) : (
-                        <>
-                          <div className="w-4 h-4 rounded-full bg-white/10" />
-                          <span className="text-xs text-white/50">
-                            Ready to match your color
-                          </span>
-                        </>
-                      )}
-                    </div>
-                    {product.affiliateLink && (
-                      <div className="mt-2">
-                        <span className="text-sm text-blue-400 hover:text-blue-300">
-                          Shop on Amazon
-                        </span>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </a>
-            );
-          })}
-        </div>
-
-        {/* F) INFINITE SCROLL SENTINEL */}
+        {/* Infinite Scroll Sentinel */}
         <div
           ref={sentinelRef}
           className="mt-8 h-8 flex justify-center items-center"
@@ -726,5 +735,3 @@ export default function ModernUploader() {
     </div>
   );
 }
-
-
