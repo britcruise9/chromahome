@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Upload, ArrowDown, Pin, PinOff, Palette } from 'lucide-react';
+import { Upload, ArrowRight, ArrowDown, Pin, PinOff, Palette } from 'lucide-react';
 import { HslColorPicker } from 'react-colorful';
 import { amazonProducts } from '../lib/amazonProducts';
 
@@ -136,11 +136,8 @@ function calculateColorMatch(color1: string, color2: string): number {
 ////////////////////////////////////////////////////
 // 2) HERO IMAGES
 ////////////////////////////////////////////////////
-// Removed the first low-res image; added your new ones instead.
 const heroImages = [
-  "https://i.imgur.com/vWfmveW.png",
-  "https://i.imgur.com/JXEAxnr.png",
-  "https://i.imgur.com/66fWpLs.png",
+  "https://hips.hearstapps.com/hmg-prod/images/living-room-paint-colors-hbx040122inspoindex-012-copy-1655397674-653fda462b085.jpg?crop=0.752xw:1.00xh;0.120xw,0&resize=1120:*",
   "https://i.imgur.com/oH0sLxE.jpeg",
   "https://i.imgur.com/UzYfvqA.png",
   "https://imgur.com/83d57027-21bd-4515-abd0-c7e3d724dc23",
@@ -179,45 +176,33 @@ export default function ModernUploader() {
   const [colorWheelHsl, setColorWheelHsl] = useState({ h: 0, s: 50, l: 50 });
 
   // ---------- HERO & PRODUCTS ----------
-  // Start at -1 so we show blank for 0.5s, then fade in heroImages
-  const [currentHero, setCurrentHero] = useState(-1);
+  const [currentHero, setCurrentHero] = useState(0);
   const [products, setProducts] = useState<any[]>([]);
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
   const [isFetching, setIsFetching] = useState(false);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
-  // ---------- Full dataset (shuffled once) ----------
+  // ---------- Hold the entire dataset (shuffled once on initial load) ----------
   const [allProducts, setAllProducts] = useState<any[]>([]);
 
-  // ---------- DEFAULT GRADIENT (pre-color pick) ----------
+  // ---------- DEFAULT GRADIENT (for the color box before picking a color) ----------
   const defaultGradient =
     "radial-gradient(circle at center, #ffadad 0%, #ffd6a5 16%, #fdffb6 33%, #caffbf 50%, #9bf6ff 66%, #a0c4ff 83%, #bdb2ff 100%)";
 
-  // 1) On mount, shuffle products & prep hero images
+  // ---------- INITIALIZATION ----------
   useEffect(() => {
-    // Delay 0.5s before showing first hero image (fade-in effect)
-    const timeout = setTimeout(() => {
-      setCurrentHero(0);
-    }, 500);
-
-    const shuffled = [...amazonProducts].sort(() => Math.random() - 0.5);
-    setAllProducts(shuffled);
-    loadProducts(1, activeSearchColor, shuffled);
-
-    return () => clearTimeout(timeout);
-  }, []);
-
-  // 2) Once currentHero >= 0, start rotating images
-  useEffect(() => {
-    if (currentHero < 0) return; // wait until we set it to 0
     const interval = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroImages.length);
     }, 6000);
+    // Shuffle the imported products
+    const shuffled = [...amazonProducts].sort(() => Math.random() - 0.5);
+    setAllProducts(shuffled);
+    loadProducts(1, activeSearchColor, shuffled);
     return () => clearInterval(interval);
-  }, [currentHero]);
+  }, []);
 
-  // 3) INFINITE SCROLL: Intersection Observer
+  // ---------- INFINITE SCROLL: Intersection Observer ----------
   useEffect(() => {
     if (!sentinelRef.current) return;
     const observer = new IntersectionObserver(
@@ -234,15 +219,15 @@ export default function ModernUploader() {
     };
   }, [hasMore, isFetching]);
 
-  // 4) When page changes, load additional products
+  // ---------- When page changes, load additional products ----------
   useEffect(() => {
     if (page === 1) return;
     loadProducts(page, activeSearchColor);
   }, [page]);
 
-  // 5) When activeSearchColor changes, reset products & pagination
+  // ---------- When activeSearchColor changes, reset products & pagination ----------
   useEffect(() => {
-    if (!allProducts.length) return;
+    if (allProducts.length === 0) return;
     setProducts([]);
     setPage(1);
     setHasMore(true);
@@ -305,7 +290,7 @@ export default function ModernUploader() {
     setHasUploaded(true);
   }
 
-  // ---------- SWATCH CLICK ----------
+  // ---------- SWATCH CLICK: Update active search color ----------
   function handleSwatchClick(color: string | null) {
     if (!color) return;
     setProducts([]);
@@ -341,7 +326,7 @@ export default function ModernUploader() {
     return activeSearchColor === testColor ? 'ring-4 ring-white' : '';
   }
 
-  // ---------- RESET ----------
+  // ---------- "Change color" => Reset all ----------
   function resetAll() {
     setHasUploaded(false);
     setUploadedImageUrl(null);
@@ -356,66 +341,51 @@ export default function ModernUploader() {
   }
 
   //////////////////////////////////////////////////////
-  // 4) RENDER
+  // 4) RENDER COMPONENT
   //////////////////////////////////////////////////////
   return (
-    <div className="min-h-screen bg-blue-900"> 
-      {/* 
-        The container starts with a solid blue background. 
-        We'll fade in the hero images after 0.5s. 
-      */}
-
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
+      {/* A) ROTATING HERO */}
       <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
-        {/* Only render hero images if currentHero >= 0 */}
-        {currentHero >= 0 &&
-          heroImages.map((imgSrc, i) => (
-            <div
-              key={i}
-              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                currentHero === i ? 'opacity-100 z-20' : 'opacity-0 z-10'
-              }`}
-              style={{
-                backgroundImage: `url('${imgSrc}')`,
-                backgroundPosition: 'center',
-                backgroundSize: 'cover',
-              }}
-            >
-              {/* Slightly darker overlay to help text readability */}
-              <div className="absolute inset-0 bg-black/30" />
-            </div>
-          ))}
-
-        {/* Hero Text */}
+        {heroImages.map((imgSrc, i) => (
+          <div
+            key={i}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              currentHero === i ? 'opacity-100 z-20' : 'opacity-0 z-10'
+            }`}
+            style={{
+              backgroundImage: `url('${imgSrc}')`,
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+            }}
+          >
+            <div className="absolute inset-0 bg-black/40" />
+          </div>
+        ))}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-30 px-4">
           <h1
             className="
-              text-5xl md:text-7xl font-extrabold text-white leading-tight
-              mb-2
-              // COOL shadow/glow for readability
+              text-4xl md:text-6xl font-extrabold 
+              text-transparent bg-clip-text 
+              bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500
+              bg-[length:200%_200%]
+              animate-gradient-x
+              drop-shadow-lg
             "
-            style={{
-              textShadow:
-                '0 0 16px rgba(0, 0, 0, 0.9), 0 0 8px rgba(0, 0, 0, 0.5)',
-            }}
           >
             SHOP BY COLOR
           </h1>
-          <p
-            className="text-xl md:text-2xl text-white font-light max-w-xl"
-            style={{
-              textShadow:
-                '0 0 10px rgba(0, 0, 0, 0.8), 0 0 4px rgba(0, 0, 0, 0.6)',
-            }}
-          >
-            Discover Furniture & Decor That Match Your Style
+          <p className="mt-2 text-xl md:text-2xl text-white font-light [text-shadow:0_2px_4px_rgba(0,0,0,0.6)]">
+            Decorate Like a Pro
           </p>
         </div>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* A) FIRST PAGE: Upload or Color Picker */}
+        {/* B) FIRST PAGE: Upload or Color Picker (hide if a color has been selected) */}
         {!hasUploaded && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            {/* LEFT: Upload Box */}
             <div className={boxStyle}>
               <label className="block w-full">
                 <div className="group cursor-pointer border-2 border-dashed border-white/20 rounded-xl p-8 text-center hover:border-white/30 transition-transform duration-300 ease-out hover:scale-105">
@@ -436,6 +406,7 @@ export default function ModernUploader() {
               </label>
             </div>
 
+            {/* RIGHT: Pick a Color Box */}
             <div className={boxStyle}>
               <div className="flex flex-col items-center gap-4">
                 <div className="flex items-center gap-2 text-white/80 mb-1">
@@ -445,7 +416,9 @@ export default function ModernUploader() {
                 <div
                   className="w-36 h-36 rounded-xl border border-white/30 shadow-md cursor-pointer"
                   style={{
-                    background: selectedColor ? selectedColor : defaultGradient,
+                    background: selectedColor
+                      ? selectedColor
+                      : defaultGradient,
                   }}
                   onClick={() => setShowWheel(true)}
                 />
@@ -454,7 +427,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* B) COLOR PICKER MODAL */}
+        {/* COLOR PICKER MODAL */}
         {showWheel && (
           <div
             className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
@@ -483,9 +456,10 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* C) PALETTE ROW */}
+        {/* C) PALETTE ROW (Cleaner mobile layout) */}
         {selectedColor && (
           <div className="mb-10 flex flex-col items-center">
+            {/* Image on top */}
             {uploadedImageUrl && (
               <div className="flex flex-col items-center mb-4">
                 <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
@@ -498,13 +472,12 @@ export default function ModernUploader() {
                 <ArrowDown className="w-6 h-6 text-white mt-2" />
               </div>
             )}
+            {/* Four colors in one horizontal row */}
             <div className="flex items-center justify-center gap-6">
               {/* Primary */}
               <div className="flex flex-col items-center">
                 <div
-                  className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(
-                    selectedColor
-                  )}`}
+                  className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(selectedColor)}`}
                   style={{ backgroundColor: selectedColor }}
                   onClick={() => handleSwatchClick(selectedColor)}
                 />
@@ -560,6 +533,7 @@ export default function ModernUploader() {
             <h3 className="font-bold mb-2">Your Pinned Items</h3>
             <div className="flex gap-3 overflow-x-auto scrollbar-hide">
               {pinned.map((id) => {
+                // Use allProducts (global) so pinned items remain visible
                 const product = allProducts.find((p) => p.id === id);
                 if (!product) return null;
                 return (
@@ -645,9 +619,7 @@ export default function ModernUploader() {
                             className="w-4 h-4 rounded-full"
                             style={{ backgroundColor: activeSearchColor }}
                           />
-                          <span className="text-xs text-white/50">
-                            {matchText}
-                          </span>
+                          <span className="text-xs text-white/50">{matchText}</span>
                         </>
                       ) : (
                         <>
@@ -687,4 +659,5 @@ export default function ModernUploader() {
     </div>
   );
 }
+
 
