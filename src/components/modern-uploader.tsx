@@ -3,8 +3,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Upload, ArrowRight, Pin, PinOff, Palette } from 'lucide-react';
 import { HslColorPicker } from 'react-colorful';
-// Import the products JSON from the specified file.
-import amazonProducts from '/src/lib/amazonProducts';
+// Use a named import (adjust the relative path as needed)
+import { amazonProducts } from '../lib/amazonProducts';
 
 // ===================================================
 // 1) COLOR UTILS
