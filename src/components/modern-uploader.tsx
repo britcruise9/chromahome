@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Upload, ArrowRight, Pin, PinOff, Palette } from 'lucide-react';
+import { Upload, ArrowRight, ArrowDown, Pin, PinOff, Palette } from 'lucide-react';
 import { HslColorPicker } from 'react-colorful';
 import { amazonProducts } from '../lib/amazonProducts';
 
@@ -148,7 +148,6 @@ const heroImages = [
 // 3) MAIN COMPONENT
 ////////////////////////////////////////////////////
 
-// A shared box style for both the upload and pick–a–color boxes
 const boxStyle =
   "max-w-md mx-auto h-[320px] flex items-center justify-center bg-blue-600/10 border border-blue-300 rounded-xl p-8";
 
@@ -187,7 +186,7 @@ export default function ModernUploader() {
   // ---------- Hold the entire dataset (shuffled once on initial load) ----------
   const [allProducts, setAllProducts] = useState<any[]>([]);
 
-  // ---------- DEFAULT GRADIENT (softer pastel rainbow) ----------
+  // ---------- DEFAULT GRADIENT (for the color box before picking a color) ----------
   const defaultGradient =
     "radial-gradient(circle at center, #ffadad 0%, #ffd6a5 16%, #fdffb6 33%, #caffbf 50%, #9bf6ff 66%, #a0c4ff 83%, #bdb2ff 100%)";
 
@@ -196,10 +195,9 @@ export default function ModernUploader() {
     const interval = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroImages.length);
     }, 6000);
-    // Shuffle the imported products and save as our full dataset
+    // Shuffle the imported products
     const shuffled = [...amazonProducts].sort(() => Math.random() - 0.5);
     setAllProducts(shuffled);
-    // Load the initial batch (page 1) using the shuffled data (no active color)
     loadProducts(1, activeSearchColor, shuffled);
     return () => clearInterval(interval);
   }, []);
@@ -273,7 +271,6 @@ export default function ModernUploader() {
       const url = URL.createObjectURL(file);
       setUploadedImageUrl(url);
       const color = await extractColor(file);
-      // Update palette and trigger search based on uploaded image color
       handleManualColor(color);
       setHasUploaded(true);
     } catch (error) {
@@ -286,7 +283,6 @@ export default function ModernUploader() {
     setSelectedColor(hex);
     setComplementaryColor(getComplementaryColor(hex));
     setTriadicColors(getTriadicColors(hex));
-    // Reset the products and update active search color
     setProducts([]);
     setPage(1);
     setHasMore(true);
@@ -431,7 +427,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Color Picker Modal */}
+        {/* COLOR PICKER MODAL */}
         {showWheel && (
           <div
             className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
@@ -460,64 +456,74 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* C) PALETTE ROW (when a color is selected) */}
+        {/* C) PALETTE ROW (Cleaner mobile layout) */}
         {selectedColor && (
-          <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
+          <div className="mb-10 flex flex-col items-center">
+            {/* Image on top */}
             {uploadedImageUrl && (
-              <>
-                <div className="flex flex-col items-center">
-                  <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
-                    <img
-                      src={uploadedImageUrl}
-                      alt="Uploaded Inspiration"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+              <div className="flex flex-col items-center mb-4">
+                <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
+                  <img
+                    src={uploadedImageUrl}
+                    alt="Uploaded Inspiration"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <ArrowRight className="w-6 h-6 text-white" />
-              </>
+                <ArrowDown className="w-6 h-6 text-white mt-2" />
+              </div>
             )}
-            {/* Primary */}
-            <div className="flex flex-col items-center">
-              <div
-                className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(selectedColor)}`}
-                style={{ backgroundColor: selectedColor }}
-                onClick={() => handleSwatchClick(selectedColor)}
-              />
-              <span className="text-xs md:text-sm text-white/60 mt-2">Primary</span>
-              <button
-                onClick={resetAll}
-                className="mt-1 text-blue-400 hover:underline text-xs"
-              >
-                Change
-              </button>
-            </div>
-            {/* Complementary */}
-            {complementaryColor && (
+            {/* Four colors in one horizontal row */}
+            <div className="flex items-center justify-center gap-6">
+              {/* Primary */}
               <div className="flex flex-col items-center">
                 <div
-                  className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(complementaryColor)}`}
-                  style={{ backgroundColor: complementaryColor }}
-                  onClick={() => handleSwatchClick(complementaryColor)}
+                  className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(selectedColor)}`}
+                  style={{ backgroundColor: selectedColor }}
+                  onClick={() => handleSwatchClick(selectedColor)}
                 />
                 <span className="text-xs md:text-sm text-white/60 mt-2">
-                  Complement
+                  Primary
                 </span>
+                <button
+                  onClick={resetAll}
+                  className="mt-1 text-blue-400 hover:underline text-xs"
+                >
+                  Change
+                </button>
               </div>
-            )}
-            {/* Triadic */}
-            {triadicColors?.map((col, i) => (
-              <div key={col} className="flex flex-col items-center">
-                <div
-                  className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(col)}`}
-                  style={{ backgroundColor: col }}
-                  onClick={() => handleSwatchClick(col)}
-                />
-                <span className="text-xs md:text-sm text-white/60 mt-2">
-                  Accent {i + 1}
-                </span>
-              </div>
-            ))}
+
+              {/* Complement */}
+              {complementaryColor && (
+                <div className="flex flex-col items-center">
+                  <div
+                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(
+                      complementaryColor
+                    )}`}
+                    style={{ backgroundColor: complementaryColor }}
+                    onClick={() => handleSwatchClick(complementaryColor)}
+                  />
+                  <span className="text-xs md:text-sm text-white/60 mt-2">
+                    Complement
+                  </span>
+                </div>
+              )}
+
+              {/* Triadic */}
+              {triadicColors?.map((col, i) => (
+                <div key={col} className="flex flex-col items-center">
+                  <div
+                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(
+                      col
+                    )}`}
+                    style={{ backgroundColor: col }}
+                    onClick={() => handleSwatchClick(col)}
+                  />
+                  <span className="text-xs md:text-sm text-white/60 mt-2">
+                    Accent {i + 1}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         )}
 
