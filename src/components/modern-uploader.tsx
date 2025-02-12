@@ -134,10 +134,12 @@ function calculateColorMatch(color1: string, color2: string): number {
 }
 
 ////////////////////////////////////////////////////
-// 2) HERO IMAGES
+// 2) HERO IMAGES (NEW)
 ////////////////////////////////////////////////////
 const heroImages = [
-  "https://hips.hearstapps.com/hmg-prod/images/living-room-paint-colors-hbx040122inspoindex-012-copy-1655397674-653fda462b085.jpg?crop=0.752xw:1.00xh;0.120xw,0&resize=1120:*",
+  "https://i.imgur.com/pHjncHD.png",
+  "https://i.imgur.com/W1RnTGZ.png",
+  "https://i.imgur.com/6uZrs0j.png",
   "https://i.imgur.com/oH0sLxE.jpeg",
   "https://i.imgur.com/UzYfvqA.png",
   "https://imgur.com/83d57027-21bd-4515-abd0-c7e3d724dc23",
@@ -147,7 +149,6 @@ const heroImages = [
 ////////////////////////////////////////////////////
 // 3) MAIN COMPONENT
 ////////////////////////////////////////////////////
-
 const boxStyle =
   "max-w-md mx-auto h-[320px] flex items-center justify-center bg-blue-600/10 border border-blue-300 rounded-xl p-8";
 
@@ -190,19 +191,30 @@ export default function ModernUploader() {
   const defaultGradient =
     "radial-gradient(circle at center, #ffadad 0%, #ffd6a5 16%, #fdffb6 33%, #caffbf 50%, #9bf6ff 66%, #a0c4ff 83%, #bdb2ff 100%)";
 
-  // ---------- INITIALIZATION ----------
+  // ---------- DARK OVERLAY (for 0.5s on load) ----------
+  const [colorOverlay, setColorOverlay] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => setColorOverlay(false), 500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // ---------- HERO IMAGE ROTATION ----------
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroImages.length);
     }, 6000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // ---------- INITIALIZATION: SHUFFLE PRODUCTS, LOAD FIRST PAGE ----------
+  useEffect(() => {
     // Shuffle the imported products
     const shuffled = [...amazonProducts].sort(() => Math.random() - 0.5);
     setAllProducts(shuffled);
     loadProducts(1, activeSearchColor, shuffled);
-    return () => clearInterval(interval);
   }, []);
 
-  // ---------- INFINITE SCROLL: Intersection Observer ----------
+  // ---------- INFINITE SCROLL OBSERVER ----------
   useEffect(() => {
     if (!sentinelRef.current) return;
     const observer = new IntersectionObserver(
@@ -219,13 +231,13 @@ export default function ModernUploader() {
     };
   }, [hasMore, isFetching]);
 
-  // ---------- When page changes, load additional products ----------
+  // ---------- WHEN PAGE CHANGES, LOAD MORE ----------
   useEffect(() => {
     if (page === 1) return;
     loadProducts(page, activeSearchColor);
   }, [page]);
 
-  // ---------- When activeSearchColor changes, reset products & pagination ----------
+  // ---------- WHEN activeSearchColor CHANGES, RESET PRODUCTS/PAGINATION ----------
   useEffect(() => {
     if (allProducts.length === 0) return;
     setProducts([]);
@@ -290,7 +302,7 @@ export default function ModernUploader() {
     setHasUploaded(true);
   }
 
-  // ---------- SWATCH CLICK: Update active search color ----------
+  // ---------- SWATCH CLICK ----------
   function handleSwatchClick(color: string | null) {
     if (!color) return;
     setProducts([]);
@@ -313,7 +325,7 @@ export default function ModernUploader() {
     });
   }
 
-  // ---------- Utility: Shorten description ----------
+  // ---------- SHORT DESCRIPTION ----------
   function getShortDescription(desc: string) {
     if (!desc) return '';
     const words = desc.trim().split(/\s+/);
@@ -321,12 +333,12 @@ export default function ModernUploader() {
     return snippet.length < desc.length ? snippet + '...' : snippet;
   }
 
-  // ---------- Utility: Swatch ring style ----------
+  // ---------- SWATCH RING STYLE ----------
   function getSwatchRingStyle(testColor: string | null) {
     return activeSearchColor === testColor ? 'ring-4 ring-white' : '';
   }
 
-  // ---------- "Change color" => Reset all ----------
+  // ---------- RESET ALL ----------
   function resetAll() {
     setHasUploaded(false);
     setUploadedImageUrl(null);
@@ -345,8 +357,19 @@ export default function ModernUploader() {
   //////////////////////////////////////////////////////
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
-      {/* A) ROTATING HERO */}
+      {/* A) ROTATING HERO WITH 0.5s COLOR OVERLAY */}
       <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
+        {/* Dark-blue overlay for 0.5s */}
+        <div
+          className={`
+            absolute inset-0
+            ${colorOverlay ? 'opacity-100' : 'opacity-0'}
+            transition-opacity duration-500 z-30
+          `}
+          style={{ backgroundColor: '#0f172a' }}
+        />
+
+        {/* Carousel images underneath */}
         {heroImages.map((imgSrc, i) => (
           <div
             key={i}
@@ -362,7 +385,9 @@ export default function ModernUploader() {
             <div className="absolute inset-0 bg-black/40" />
           </div>
         ))}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-30 px-4">
+
+        {/* Hero Text */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-40 px-4">
           <h1
             className="
               text-4xl md:text-6xl font-extrabold 
@@ -375,14 +400,14 @@ export default function ModernUploader() {
           >
             SHOP BY COLOR
           </h1>
-          <p className="mt-2 text-xl md:text-2xl text-white font-light [text-shadow:0_2px_4px_rgba(0,0,0,0.6)]">
+          <p className="mt-2 text-xl md:text-2xl text-white font-light">
             Decorate Like a Pro
           </p>
         </div>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* B) FIRST PAGE: Upload or Color Picker (hide if a color has been selected) */}
+        {/* B) FIRST PAGE: Upload or Color Picker (hidden after picking/upload) */}
         {!hasUploaded && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             {/* LEFT: Upload Box */}
@@ -456,10 +481,9 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* C) PALETTE ROW (Cleaner mobile layout) */}
+        {/* C) PALETTE ROW (after picking/uploading color) */}
         {selectedColor && (
           <div className="mb-10 flex flex-col items-center">
-            {/* Image on top */}
             {uploadedImageUrl && (
               <div className="flex flex-col items-center mb-4">
                 <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
@@ -472,7 +496,6 @@ export default function ModernUploader() {
                 <ArrowDown className="w-6 h-6 text-white mt-2" />
               </div>
             )}
-            {/* Four colors in one horizontal row */}
             <div className="flex items-center justify-center gap-6">
               {/* Primary */}
               <div className="flex flex-col items-center">
@@ -533,7 +556,7 @@ export default function ModernUploader() {
             <h3 className="font-bold mb-2">Your Pinned Items</h3>
             <div className="flex gap-3 overflow-x-auto scrollbar-hide">
               {pinned.map((id) => {
-                // Use allProducts (global) so pinned items remain visible
+                // Use allProducts so pinned items remain visible even if filtered
                 const product = allProducts.find((p) => p.id === id);
                 if (!product) return null;
                 return (
@@ -659,5 +682,6 @@ export default function ModernUploader() {
     </div>
   );
 }
+
 
 
