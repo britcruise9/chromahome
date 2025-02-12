@@ -3,27 +3,28 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Upload, ArrowRight, Pin, PinOff, Palette } from 'lucide-react';
 
+// NEW: we’ll import `HslColorPicker` from react-colorful for a wheel
+import { HslColorPicker } from 'react-colorful';
+
 ////////////////////////////////////////////////////
-// 1) COLOR UTILS (Fully typed, always returning string)
+// 1) COLOR UTILS (always returning valid strings)
 ////////////////////////////////////////////////////
 declare const ColorThief: any;
 
 function hexToHSL(hex: string): { h: number; s: number; l: number } {
-  // parse hex to [0..1] floats
   const r = parseInt(hex.slice(1, 3), 16) / 255;
   const g = parseInt(hex.slice(3, 5), 16) / 255;
   const b = parseInt(hex.slice(5, 7), 16) / 255;
 
   const max = Math.max(r, g, b);
   const min = Math.min(r, g, b);
-
-  let h = 0, s = 0;
+  let h = 0,
+    s = 0;
   let l = (max + min) / 2;
 
   if (max !== min) {
     const d = max - min;
     s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-
     switch (max) {
       case r:
         h = (g - b) / d + (g < b ? 6 : 0);
@@ -52,37 +53,34 @@ function hslToHex(h: number, s: number, l: number): string {
   let r, g, b;
 
   if (s === 0) {
-    // Achromatic
-    r = g = b = l;
+    r = g = b = l; // Achromatic
   } else {
     const hue2rgb = (p: number, q: number, t: number) => {
       if (t < 0) t += 1;
       if (t > 1) t -= 1;
-      if (t < 1/6) return p + (q - p) * 6 * t;
-      if (t < 1/2) return q;
-      if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+      if (t < 1 / 6) return p + (q - p) * 6 * t;
+      if (t < 1 / 2) return q;
+      if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
       return p;
     };
+    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+    const p = 2 * l - q;
 
-    const q = l < 0.5 ? l * (1 + s) : l + s - l*s;
-    const p = 2*l - q;
-    r = hue2rgb(p, q, h + 1/3);
+    r = hue2rgb(p, q, h + 1 / 3);
     g = hue2rgb(p, q, h);
-    b = hue2rgb(p, q, h - 1/3);
+    b = hue2rgb(p, q, h - 1 / 3);
   }
 
   const toHex = (val: number) => {
-    const hex = Math.round(val * 255).toString(16);
-    return hex.length === 1 ? '0' + hex : hex;
+    const hx = Math.round(val * 255).toString(16);
+    return hx.length === 1 ? '0' + hx : hx;
   };
 
   return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
 }
 
 function getComplementaryColor(hex: string): string {
-  // convert to HSL
   const hsl = hexToHSL(hex);
-  // add 180 deg to hue, keep s & l
   return hslToHex((hsl.h + 180) % 360, hsl.s, hsl.l);
 }
 
@@ -97,7 +95,6 @@ async function extractColor(file: File): Promise<string> {
   return new Promise((resolve) => {
     const img = new Image();
     const colorThief = new ColorThief();
-
     img.onload = () => {
       try {
         const [r, g, b] = colorThief.getColor(img);
@@ -111,7 +108,6 @@ async function extractColor(file: File): Promise<string> {
         resolve('#000000');
       }
     };
-
     img.onerror = () => resolve('#000000');
     img.crossOrigin = 'Anonymous';
     img.src = URL.createObjectURL(file);
@@ -133,7 +129,7 @@ const heroImages = [
 // 3) MAIN COMPONENT
 ////////////////////////////////////////////////////
 export default function ModernUploader() {
-  // PINNED
+  // Pinned items
   const [pinned, setPinned] = useState<number[]>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('pinnedProducts');
@@ -156,10 +152,21 @@ export default function ModernUploader() {
   // The color used for searching
   const [activeSearchColor, setActiveSearchColor] = useState<string | null>(null);
 
-  // For color wheel
-  const [manualHex, setManualHex] = useState('#ffffff');
+  ////////////////////////////////////////////////////
+  // 4) Additional states for color-wheel approach
+  ////////////////////////////////////////////////////
+  // This is the color we’re editing with the color wheel. We store it as an HSL object for react-colorful
+  const [desktopHsl, setDesktopHsl] = useState({ h: 0, s: 0, l: 1 });
 
-  // Hero rotation
+  // Show/hide the color wheel overlay on desktop
+  const [showWheel, setShowWheel] = useState(false);
+
+  // isDesktop => we’ll do a simple check in useEffect
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  ////////////////////////////////////////////////////
+  // 5) Hero rotation + initial fetch
+  ////////////////////////////////////////////////////
   const [currentHero, setCurrentHero] = useState(0);
 
   // Infinite scroll
@@ -170,15 +177,14 @@ export default function ModernUploader() {
   const [isFetching, setIsFetching] = useState(false);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
-  ////////////////////////////////////////////////////
-  // On mount => rotate hero + initial fetch
-  ////////////////////////////////////////////////////
   useEffect(() => {
+    // Check if desktop
+    setIsDesktop(window.innerWidth >= 768);
+
     const interval = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroImages.length);
     }, 6000);
 
-    // fetch page=1 with no color initially
     fetchProducts(1, null);
 
     return () => clearInterval(interval);
@@ -186,7 +192,7 @@ export default function ModernUploader() {
   }, []);
 
   ////////////////////////////////////////////////////
-  // Intersection observer => infinite scroll
+  // Intersection Observer => infinite scroll
   ////////////////////////////////////////////////////
   useEffect(() => {
     if (!sentinelRef.current) return;
@@ -206,30 +212,23 @@ export default function ModernUploader() {
     };
   }, [hasMore, isFetching]);
 
-  ////////////////////////////////////////////////////
-  // Page changes => fetch next
-  ////////////////////////////////////////////////////
+  // Page change => fetch next
   useEffect(() => {
-    if (page === 1) return; // already fetched once
+    if (page === 1) return;
     fetchProducts(page, activeSearchColor);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
-  ////////////////////////////////////////////////////
-  // activeSearchColor => reset pagination
-  ////////////////////////////////////////////////////
+  // If activeSearchColor changes => reset pagination
   useEffect(() => {
     if (!activeSearchColor) return;
     setProducts([]);
     setPage(1);
     setHasMore(true);
     fetchProducts(1, activeSearchColor);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeSearchColor]);
 
-  ////////////////////////////////////////////////////
-  // fetchProducts => /api/products
-  ////////////////////////////////////////////////////
   async function fetchProducts(pageNum: number, color: string | null) {
     try {
       setIsFetching(true);
@@ -257,7 +256,7 @@ export default function ModernUploader() {
   }
 
   ////////////////////////////////////////////////////
-  // Upload => extract => set palette => set search color
+  // 6) File Upload => set original palette => set search color
   ////////////////////////////////////////////////////
   async function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
@@ -268,13 +267,9 @@ export default function ModernUploader() {
       setUploadedImageUrl(url);
 
       const color = await extractColor(file);
-
-      // set palette
       setSelectedColor(color);
       setComplementaryColor(getComplementaryColor(color));
       setTriadicColors(getTriadicColors(color));
-
-      // set search color
       setActiveSearchColor(color);
       setHasUploaded(true);
     } catch (error) {
@@ -283,27 +278,25 @@ export default function ModernUploader() {
   }
 
   ////////////////////////////////////////////////////
-  // "Search This Color" from color wheel
+  // 7) If user picks color from "manual color" => Search
   ////////////////////////////////////////////////////
-  function handleManualColor() {
-    setSelectedColor(manualHex);
-    setComplementaryColor(getComplementaryColor(manualHex));
-    setTriadicColors(getTriadicColors(manualHex));
-    setActiveSearchColor(manualHex);
+  function handleManualColor(hex: string) {
+    setSelectedColor(hex);
+    setComplementaryColor(getComplementaryColor(hex));
+    setTriadicColors(getTriadicColors(hex));
+    setActiveSearchColor(hex);
     setHasUploaded(true);
   }
 
   ////////////////////////////////////////////////////
-  // Clicking a palette swatch => only changes active color
+  // 8) Swatch click => only changes activeSearchColor
   ////////////////////////////////////////////////////
-  function handleSwatchClick(color: string) {
-    // do not recalc palette
+  function handleSwatchClick(color: string | null) {
+    if (!color) return;
     setActiveSearchColor(color);
   }
 
-  ////////////////////////////////////////////////////
   // Pin toggle
-  ////////////////////////////////////////////////////
   function togglePin(productId: number) {
     setPinned((prev) => {
       let updated;
@@ -317,9 +310,7 @@ export default function ModernUploader() {
     });
   }
 
-  ////////////////////////////////////////////////////
-  // "Change" => reset all
-  ////////////////////////////////////////////////////
+  // "Change color" => reset all
   function resetAll() {
     setHasUploaded(false);
     setUploadedImageUrl(null);
@@ -327,7 +318,6 @@ export default function ModernUploader() {
     setComplementaryColor(null);
     setTriadicColors(null);
     setActiveSearchColor(null);
-
     setProducts([]);
     setPage(1);
     setHasMore(true);
@@ -339,7 +329,7 @@ export default function ModernUploader() {
     return activeSearchColor === testColor ? 'ring-4 ring-white' : '';
   }
 
-  // pinned items snippet
+  // pinned snippet
   function getShortDescription(desc: string) {
     if (!desc) return '';
     const words = desc.trim().split(/\s+/);
@@ -347,9 +337,11 @@ export default function ModernUploader() {
     return snippet.length < desc.length ? snippet + '...' : snippet;
   }
 
+  ////////////////////////////////////////////////////
+  // 9) Render
+  ////////////////////////////////////////////////////
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
-
       {/* A) ROTATING HERO */}
       <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
         {heroImages.map((imgSrc, i) => (
@@ -389,18 +381,21 @@ export default function ModernUploader() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* B) FIRST PAGE: Upload or color wheel */}
+        {/* B) FIRST PAGE: Upload or color wheel? */}
         {!hasUploaded && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+
             {/* LEFT: Upload */}
             <div className="max-w-md mx-auto min-h-[320px] flex items-center justify-center">
               <label className="block w-full">
-                <div className="
-                  group cursor-pointer border-2 border-dashed border-white/20 
-                  rounded-xl p-8 text-center 
-                  hover:border-white/30 
-                  transition-transform duration-300 ease-out hover:scale-105
-                ">
+                <div
+                  className="
+                    group cursor-pointer border-2 border-dashed border-white/20 
+                    rounded-xl p-8 text-center 
+                    hover:border-white/30 
+                    transition-transform duration-300 ease-out hover:scale-105
+                  "
+                >
                   <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
                   <h3 className="text-xl text-white/90 mb-2">
                     Upload your color & discover matching furniture & decor
@@ -418,40 +413,86 @@ export default function ModernUploader() {
               </label>
             </div>
 
-            {/* RIGHT: Big color wheel + preview */}
+            {/* RIGHT: color picking box */}
             <div className="max-w-md mx-auto min-h-[320px] bg-white/10 border border-white/20 
                             rounded-xl p-6 flex flex-col gap-4 items-center justify-center">
+
               <div className="flex items-center gap-2 text-white/80 mb-1">
                 <Palette className="w-6 h-6 text-white/50" />
                 <span className="font-semibold">Or pick a color below:</span>
               </div>
 
-              <input
-                type="color"
-                value={manualHex}
-                onChange={(e) => setManualHex(e.target.value)}
-                className="h-20 w-20 cursor-pointer rounded-full border-none shadow-md"
-              />
+              {/* MOBILE => input type="color" (like before).
+                  DESKTOP => a single color square that toggles color wheel. */}
 
-              <div
-                className="w-28 h-28 rounded-xl border border-white/30 shadow-md"
-                style={{ backgroundColor: manualHex }}
-              />
+              {isDesktop ? (
+                <>
+                  {/* The color square (click => show wheel) */}
+                  <div
+                    className="w-28 h-28 rounded-xl border border-white/30 shadow-md cursor-pointer"
+                    style={{
+                      backgroundColor: hslToHex(
+                        desktopHsl.h,
+                        desktopHsl.s * 100,
+                        desktopHsl.l * 100
+                      ),
+                    }}
+                    onClick={() => setShowWheel(true)}
+                  />
 
-              <button
-                onClick={handleManualColor}
-                className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
-              >
-                Search This Color
-              </button>
+                  {/* The "Search This Color" button */}
+                  <button
+                    onClick={() =>
+                      handleManualColor(
+                        hslToHex(
+                          desktopHsl.h,
+                          desktopHsl.s * 100,
+                          desktopHsl.l * 100
+                        )
+                      )
+                    }
+                    className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
+                  >
+                    Search This Color
+                  </button>
+
+                  {/* The color wheel overlay if showWheel is true */}
+                  {showWheel && (
+                    <div
+                      className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
+                      onClick={() => setShowWheel(false)}
+                    >
+                      <div
+                        className="bg-white p-4 rounded shadow-md"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        {/* We store the color in desktopHsl. 
+                            react-colorful uses HSL with 0..1 for s/l, 0..360 for h. */}
+                        <HslColorPicker
+                          color={desktopHsl}
+                          onChange={(newHsl) => setDesktopHsl(newHsl)}
+                        />
+                      </div>
+                    </div>
+                  )}
+                </>
+              ) : (
+                // On mobile => just a normal <input type="color" />
+                <>
+                  <input
+                    type="color"
+                    className="h-20 w-20 cursor-pointer rounded-full border-none shadow-md"
+                    onChange={(e) => handleManualColor(e.target.value)}
+                  />
+                </>
+              )}
             </div>
           </div>
         )}
 
-        {/* C) SECOND PAGE: Show palette row, pinned, product grid */}
+        {/* C) SECOND PAGE: palette row, pinned, product grid */}
         {selectedColor && (
           <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
-            {/* If user uploaded */}
             {uploadedImageUrl && (
               <>
                 <div className="flex flex-col items-center">
@@ -480,7 +521,6 @@ export default function ModernUploader() {
               <span className="text-xs md:text-sm text-white/60 mt-2">
                 Primary
               </span>
-              {/* "Change" => reset */}
               <button
                 onClick={resetAll}
                 className="mt-1 text-blue-400 hover:underline text-xs"
@@ -525,7 +565,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Pinned Row */}
+        {/* Pinned row */}
         {pinned.length > 0 && (
           <div className="bg-transparent border border-white/40 text-white py-3 px-4 mb-8 rounded-md">
             <h3 className="font-bold mb-2">Your Pinned Items</h3>
@@ -533,7 +573,6 @@ export default function ModernUploader() {
               {pinned.map((id) => {
                 const product = products.find((p) => p.id === id);
                 if (!product) return null;
-
                 const snippet = getShortDescription(product.description || '');
                 return (
                   <div
@@ -568,12 +607,10 @@ export default function ModernUploader() {
         {/* Product Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => {
-            // show match % if we have activeSearchColor
             const matchText =
               activeSearchColor && Number.isFinite(product.matchPercentage)
                 ? `${product.matchPercentage}% match`
                 : '—% match';
-
             const isPinned = pinned.includes(product.id);
 
             return (
@@ -584,11 +621,12 @@ export default function ModernUploader() {
                 rel="noopener noreferrer"
                 className="block"
               >
-                <div className="
-                  group relative bg-white/5 rounded-xl overflow-hidden 
-                  hover:bg-white/10 transition-all duration-300 ease-out
-                ">
-                  {/* pin button */}
+                <div
+                  className="
+                    group relative bg-white/5 rounded-xl overflow-hidden 
+                    hover:bg-white/10 transition-all duration-300 ease-out
+                  "
+                >
                   <button
                     type="button"
                     onClick={(e) => {
@@ -599,14 +637,18 @@ export default function ModernUploader() {
                     title={isPinned ? 'Unpin item' : 'Pin item'}
                   >
                     <Pin
-                      className={`w-5 h-5 ${isPinned ? 'fill-white text-yellow-300' : ''}`}
+                      className={`w-5 h-5 ${
+                        isPinned ? 'fill-white text-yellow-300' : ''
+                      }`}
                     />
                   </button>
 
-                  <div className="
-                    aspect-square overflow-hidden 
-                    transition-transform duration-300 ease-out group-hover:scale-105
-                  ">
+                  <div
+                    className="
+                      aspect-square overflow-hidden 
+                      transition-transform duration-300 ease-out group-hover:scale-105
+                    "
+                  >
                     <img
                       src={product.image}
                       alt={product.description}
@@ -652,21 +694,21 @@ export default function ModernUploader() {
           })}
         </div>
 
-        {/* Infinite Scroll Sentinel */}
-        <div ref={sentinelRef} className="mt-8 h-8 flex justify-center items-center">
+        {/* Infinite scroll sentinel */}
+        <div
+          ref={sentinelRef}
+          className="mt-8 h-8 flex justify-center items-center"
+        >
           {isFetching && hasMore && (
             <div className="text-sm text-white/60 animate-pulse">
               Loading more...
             </div>
           )}
           {!hasMore && (
-            <div className="text-sm text-white/50">
-              ~ End of results ~
-            </div>
+            <div className="text-sm text-white/50">~ End of results ~</div>
           )}
         </div>
       </div>
     </div>
   );
 }
-
