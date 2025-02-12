@@ -186,6 +186,10 @@ export default function ModernUploader() {
   // ---------- Hold the entire dataset (shuffled once on initial load) ----------
   const [allProducts, setAllProducts] = useState<any[]>([]);
 
+  // ---------- DEFAULT GRADIENT (softer pastel rainbow) ----------
+  const defaultGradient =
+    "radial-gradient(circle at center, #ffadad 0%, #ffd6a5 16%, #fdffb6 33%, #caffbf 50%, #9bf6ff 66%, #a0c4ff 83%, #bdb2ff 100%)";
+
   // ---------- INITIALIZATION ----------
   useEffect(() => {
     setIsDesktop(window.innerWidth >= 768);
@@ -432,7 +436,7 @@ export default function ModernUploader() {
                   style={{
                     background: activeSearchColor
                       ? activeSearchColor
-                      : "radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet)",
+                      : defaultGradient,
                   }}
                   onClick={() => setShowWheel(true)}
                 />
@@ -453,11 +457,7 @@ export default function ModernUploader() {
                         onClick={() => {
                           // Confirm the selected color and update the search results
                           handleManualColor(
-                            hslToHex(
-                              desktopHsl.h,
-                              desktopHsl.s,
-                              desktopHsl.l
-                            )
+                            hslToHex(desktopHsl.h, desktopHsl.s, desktopHsl.l)
                           );
                           setShowWheel(false);
                         }}
@@ -477,9 +477,9 @@ export default function ModernUploader() {
                   className="h-20 w-20 cursor-pointer rounded-full border-none shadow-md appearance-none"
                   style={{
                     background:
-                      tempMobileColor === "#ffffff"
-                        ? "radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet)"
-                        : tempMobileColor,
+                      tempMobileColor === "#ffffff" ? defaultGradient : tempMobileColor,
+                    WebkitAppearance: "none",
+                    appearance: "none",
                   }}
                   value={tempMobileColor}
                   onChange={(e) => setTempMobileColor(e.target.value)}
@@ -692,5 +692,4 @@ export default function ModernUploader() {
     </div>
   );
 }
-
 
