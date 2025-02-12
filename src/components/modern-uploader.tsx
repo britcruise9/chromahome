@@ -3,12 +3,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Upload, ArrowRight, Pin, PinOff, Palette } from 'lucide-react';
 import { HslColorPicker } from 'react-colorful';
-// Use a named import (adjust the relative path as needed)
+// Use a named import (adjust path as needed)
 import { amazonProducts } from '../lib/amazonProducts';
 
-// ===================================================
+////////////////////////////////////////////////////
 // 1) COLOR UTILS
-// ===================================================
+////////////////////////////////////////////////////
 declare const ColorThief: any;
 
 function hexToHSL(hex: string): { h: number; s: number; l: number } {
@@ -107,36 +107,20 @@ async function extractColor(file: File): Promise<string> {
   });
 }
 
-// ===================================================
-// 2) HELPER FUNCTIONS FOR PRODUCTS & COLORS
-// ===================================================
-
-// Returns an array of the top 5 most frequent colors (using product.dominantColor or product.color)
-function getMostRelevantColors(products: any[]): string[] {
-  const colorCount: { [key: string]: number } = {};
-  products.forEach((product) => {
-    const color = (product.dominantColor || product.color || '').trim().toLowerCase();
-    if (color) {
-      colorCount[color] = (colorCount[color] || 0) + 1;
-    }
-  });
-  const sorted = Object.entries(colorCount).sort((a, b) => b[1] - a[1]);
-  return sorted.slice(0, 5).map((entry) => entry[0]);
+// --------------------------------------------------
+// Helper: Compare two hex colors by their hue difference
+// --------------------------------------------------
+function isColorSimilar(hex1: string, hex2: string, tolerance = 15): boolean {
+  const hsl1 = hexToHSL(hex1);
+  const hsl2 = hexToHSL(hex2);
+  let hueDiff = Math.abs(hsl1.h - hsl2.h);
+  hueDiff = Math.min(hueDiff, 360 - hueDiff);
+  return hueDiff <= tolerance;
 }
 
-// Simple Fisher–Yates shuffle
-function shuffleArray(array: any[]): any[] {
-  const arr = [...array];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
-
-// ===================================================
-// 3) HERO IMAGES
-// ===================================================
+////////////////////////////////////////////////////
+// 2) HERO IMAGES
+////////////////////////////////////////////////////
 const heroImages = [
   "https://hips.hearstapps.com/hmg-prod/images/living-room-paint-colors-hbx040122inspoindex-012-copy-1655397674-653fda462b085.jpg?crop=0.752xw:1.00xh;0.120xw,0&resize=1120:*",
   "https://i.imgur.com/oH0sLxE.jpeg",
@@ -145,12 +129,12 @@ const heroImages = [
   "https://imgur.com/edc74bc2-7468-4c24-a88c-e1470a6188a2",
 ];
 
-// ===================================================
-// 4) MAIN COMPONENT
-// ===================================================
+////////////////////////////////////////////////////
+// 3) MAIN COMPONENT
+////////////////////////////////////////////////////
 export default function ModernUploader() {
   // -------------------------------
-  // State for PINNED items
+  // PINNED items (saved in localStorage)
   // -------------------------------
   const [pinned, setPinned] = useState<number[]>(() => {
     if (typeof window !== 'undefined') {
@@ -161,7 +145,7 @@ export default function ModernUploader() {
   });
 
   // -------------------------------
-  // Palette, search, and upload states
+  // Palette, search, upload states
   // -------------------------------
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
@@ -169,30 +153,37 @@ export default function ModernUploader() {
   const [activeSearchColor, setActiveSearchColor] = useState<string | null>(null);
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
-  const [desktopHsl, setDesktopHsl] = useState({ h: 0, s: 0, l: 1 });
+
+  // -------------------------------
+  // Desktop color wheel states
+  // (Initial value changed from {h:0,s:0,l:1} to a mid-tone)
+  // -------------------------------
+  const [desktopHsl, setDesktopHsl] = useState({ h: 0, s: 0.5, l: 0.5 });
   const [desktopConfirmedColor, setDesktopConfirmedColor] = useState<string | null>(null);
   const [showWheel, setShowWheel] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
+
+  // -------------------------------
+  // Mobile color state
+  // -------------------------------
   const [tempMobileColor, setTempMobileColor] = useState("#ffffff");
 
   // -------------------------------
   // Hero rotation & Products data
   // -------------------------------
   const [currentHero, setCurrentHero] = useState(0);
-  // "allProducts" holds the full (shuffled) dataset imported from amazonProducts.
+  // "allProducts" holds the full (shuffled) dataset.
   const [allProducts, setAllProducts] = useState<any[]>([]);
   // "products" holds only the currently displayed batch.
   const [products, setProducts] = useState<any[]>([]);
-  // Pagination state: page number, whether more products exist, and whether we’re fetching.
+  // Pagination: page number, hasMore flag, and fetching state.
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
   const [isFetching, setIsFetching] = useState(false);
-  // "mostRelevantColors" computed from the entire dataset.
-  const [mostRelevantColors, setMostRelevantColors] = useState<string[]>([]);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
   // -------------------------------
-  // INITIALIZATION: set hero rotation, load products, compute colors.
+  // INITIALIZATION
   // -------------------------------
   useEffect(() => {
     setIsDesktop(window.innerWidth >= 768);
@@ -200,15 +191,11 @@ export default function ModernUploader() {
       setCurrentHero((prev) => (prev + 1) % heroImages.length);
     }, 6000);
 
-    // Shuffle the locally imported products and save them.
-    const shuffled = shuffleArray(amazonProducts);
+    // Shuffle the locally imported products.
+    const shuffled = [...amazonProducts].sort(() => Math.random() - 0.5);
     setAllProducts(shuffled);
 
-    // Compute most relevant colors from the entire dataset.
-    const mrc = getMostRelevantColors(shuffled);
-    setMostRelevantColors(mrc);
-
-    // Load the initial batch (page 1) using the full (or filtered) dataset.
+    // Load the initial batch (page 1) from the full dataset.
     loadProducts(1, activeSearchColor, shuffled);
 
     return () => clearInterval(interval);
@@ -235,10 +222,10 @@ export default function ModernUploader() {
   }, [hasMore, isFetching]);
 
   // -------------------------------
-  // When page number changes (after initial page) load next batch.
+  // Load next batch when page changes (except for initial page).
   // -------------------------------
   useEffect(() => {
-    if (page === 1) return; // Already loaded page 1
+    if (page === 1) return;
     loadProducts(page, activeSearchColor, allProducts);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
@@ -264,8 +251,10 @@ export default function ModernUploader() {
     let filtered = productsData;
     if (color) {
       filtered = productsData.filter((product) => {
-        const prodColor = (product.dominantColor || product.color || '').trim().toLowerCase();
-        return prodColor === color.trim().toLowerCase();
+        const prodColor = (product.dominantColor || product.color || '').trim();
+        if (!prodColor) return false;
+        // Use fuzzy hue matching (within 15° tolerance)
+        return isColorSimilar(prodColor, color, 15);
       });
     }
     const startIndex = (pageNum - 1) * batchSize;
@@ -291,6 +280,7 @@ export default function ModernUploader() {
       const url = URL.createObjectURL(file);
       setUploadedImageUrl(url);
       const color = await extractColor(file);
+      // Immediately update palette & search color.
       setSelectedColor(color);
       setComplementaryColor(getComplementaryColor(color));
       setTriadicColors(getTriadicColors(color));
@@ -316,7 +306,7 @@ export default function ModernUploader() {
     handleManualColor(tempMobileColor);
   }
 
-  // Swatch click (used in both the palette row and the "Most Relevant Colors" row)
+  // Swatch click (applies the color as the active search color)
   function handleSwatchClick(color: string | null) {
     if (!color) return;
     setActiveSearchColor(color);
@@ -339,7 +329,7 @@ export default function ModernUploader() {
   }
 
   // -------------------------------
-  // Utility: Shorten Product Description
+  // Utility: Shorten product description
   // -------------------------------
   function getShortDescription(desc: string) {
     if (!desc) return '';
@@ -349,14 +339,14 @@ export default function ModernUploader() {
   }
 
   // -------------------------------
-  // Utility: Swatch ring styling (for active color selection)
+  // Utility: Swatch ring styling (for active color)
   // -------------------------------
   function getSwatchRingStyle(testColor: string | null) {
     return activeSearchColor === testColor ? 'ring-4 ring-white' : '';
   }
 
   // -------------------------------
-  // "Change color" => reset everything
+  // "Change color" => reset all
   // -------------------------------
   function resetAll() {
     setHasUploaded(false);
@@ -371,9 +361,9 @@ export default function ModernUploader() {
     loadProducts(1, null, allProducts);
   }
 
-  // ===================================================
-  // 5) RENDER THE COMPONENT
-  // ===================================================
+  //////////////////////////////////////////////////////
+  // 4) RENDER THE COMPONENT
+  //////////////////////////////////////////////////////
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
       {/* A) ROTATING HERO */}
@@ -513,6 +503,7 @@ export default function ModernUploader() {
                   )}
                 </>
               ) : (
+                // Mobile: Color input with confirm button
                 <>
                   <input
                     type="color"
@@ -532,7 +523,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* C) PALETTE ROW: Shown once a color is selected */}
+        {/* C) PALETTE ROW (shown once a color is selected) */}
         {selectedColor && (
           <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
             {uploadedImageUrl && (
@@ -598,21 +589,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* D) MOST RELEVANT COLORS: Shown when no active search color is set */}
-        {!activeSearchColor && mostRelevantColors.length > 0 && (
-          <div className="flex flex-wrap justify-center items-center gap-4 mb-10">
-            {mostRelevantColors.map((color) => (
-              <div
-                key={color}
-                className={`w-10 h-10 rounded-full cursor-pointer ${getSwatchRingStyle(color)}`}
-                style={{ backgroundColor: color }}
-                onClick={() => handleSwatchClick(color)}
-              />
-            ))}
-          </div>
-        )}
-
-        {/* E) PINNED ROW */}
+        {/* D) PINNED ROW */}
         {pinned.length > 0 && (
           <div className="bg-transparent border border-white/40 text-white py-3 px-4 mb-8 rounded-md">
             <h3 className="font-bold mb-2">Your Pinned Items</h3>
@@ -652,7 +629,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* F) PRODUCT GRID */}
+        {/* E) PRODUCT GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => {
             const matchText =
@@ -731,7 +708,7 @@ export default function ModernUploader() {
           })}
         </div>
 
-        {/* G) INFINITE SCROLL SENTINEL */}
+        {/* F) INFINITE SCROLL SENTINEL */}
         <div
           ref={sentinelRef}
           className="mt-8 h-8 flex justify-center items-center"
@@ -749,4 +726,5 @@ export default function ModernUploader() {
     </div>
   );
 }
+
 
