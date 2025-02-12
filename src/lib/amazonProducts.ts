@@ -26861,5 +26861,1265 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09RZRCDSV/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#d0c8c0"
+  },
+  {
+    "id": 2684,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "Utopia Bedding Throw Pillows (Set of 4, White), 18 x 18 Inches Pillows for Sofa, Bed and Couch Decorative Stuffer Pillow",
+    "image": "https://m.media-amazon.com/images/I/61u4r0RektL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0714K41PB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e8e6ed"
+  },
+  {
+    "id": 2685,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "DAYBETTER LED Strip Lights 130ft Lights Strip for Bedroom, Desk, Indoor Room Bedroom Brithday Gifts RGB Decor with Remote and 24V Power Supply",
+    "image": "https://m.media-amazon.com/images/I/813vxzjiChL._AC_SX679_PIbundle-2,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4DJ6BRR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0adb8"
+  },
+  {
+    "id": 2686,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "BAYKA Floating Shelves for Wall, Wall Mounted Rustic Wood Shelves for Bathroom, Bedroom, Living Room, Kitchen, Hanging Shelf for Books/Storage/Room Decor with 22lbs Capacity (Black, Set of 3, 15.7in)",
+    "image": "https://m.media-amazon.com/images/I/81sfHlueLIL._AC_SX466_PIbundle-3,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BQHV84H6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#292727"
+  },
+  {
+    "id": 2687,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "Govee RGBIC Floor Lamp, LED Corner Lamp Works with Alexa, 1000 Lumen Smart Modern Floor Lamp with Music Sync and 16 Million DIY Colors, Color Changing Standing Floor Lamp for Bedroom Living Room Black",
+    "image": "https://m.media-amazon.com/images/I/615Yog6t9nL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B099WTN2TR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7e3e33"
+  },
+  {
+    "id": 2688,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "NICETOWN Halloween Pitch Black Solid Thermal Insulated Grommet Blackout Curtains/Drapes for Bedroom Window (2 Panels, 42 inches Wide by 63 inches Long, Black)",
+    "image": "https://m.media-amazon.com/images/I/61Xsz1yLEML._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01CS31R94/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#18181d"
+  },
+  {
+    "id": 2689,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Modern Floor Lamp Simple Design with White Shade, Foot Pedal Switch, 60\" Small Tall Lamps for Living Room Bedroom Office Dining Room Kitchen, Black Pole Lamp(Without Bulb)",
+    "image": "https://m.media-amazon.com/images/I/41M4oGNowVL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07Z5NQPDS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#efeff0"
+  },
+  {
+    "id": 2690,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Led Lights for Bedroom 100 ft (2 Rolls of 50ft) Music Sync Color Changing RGB Led Strip Lights with Remote App Control Bluetooth Led Strip, Led Lights for Room Home Kitchen Party Decor",
+    "image": "https://m.media-amazon.com/images/I/815sBbUN7LL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C2MHG632/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fdf761"
+  },
+  {
+    "id": 2691,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "COCORRÍNA Reed Diffuser Set, 6.7 oz Clean Linen Scented Diffuser with Sticks Home Fragrance Reed Diffuser for Bathroom Shelf Decor",
+    "image": "https://m.media-amazon.com/images/I/71G8H9JSwXL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B24QJ217/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e2d4ca"
+  },
+  {
+    "id": 2692,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "OLANLY Area Rugs for Living Room Bedroom, Machine Washable 4x5.9 Feet Soft Fluffy Shaggy Bedside Rug, Indoor Floor Carpet for Kids Girls and Boys, Dorms, Nursery Rooms, Home Decor Aesthetic, Grey",
+    "image": "https://m.media-amazon.com/images/I/91tpF-73gYL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9GFYJBV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6c6d6d"
+  },
+  {
+    "id": 2693,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "Bedsure Fluffy Throw Blanket Gifts for Women Men, Soft Fleece Sherpa Cozy Fuzzy Plush Warm Minky Thick Faux Fur Throw for Couch, Bed, Home Living Room Decor Valentines Blanket Gifts for Her Him, Grey",
+    "image": "https://m.media-amazon.com/images/I/A1Ajfh3EvtL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07X3BX7WM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#424248"
+  },
+  {
+    "id": 2694,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "Bedsure Fluffy Throw Blanket Gifts for Women Men, Soft Fleece Sherpa Cozy Fuzzy Plush Warm Minky Thick Faux Fur Throw for Couch, Bed, Home Living Room Decor Valentines Blanket Gifts for Her Him, Grey",
+    "image": "https://m.media-amazon.com/images/I/A1Ajfh3EvtL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07X3BX7WM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#424248"
+  },
+  {
+    "id": 2695,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "Ophanie Area Rugs for Bedroom Living Room, Grey Fluffy Fuzzy Shag Shaggy Soft Plush Carpet, 4x6 Indoor Floor Gray Rug for Kids Home Dorm Decor Aesthetic",
+    "image": "https://m.media-amazon.com/images/I/81KiYQpFF-L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0852WLH7M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#746f68"
+  },
+  {
+    "id": 2696,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "TJOY Edison Light Bulbs 60W Equivalent, Dimmable Vintage LED Light Bulbs, E26 Medium Base, Warm White 2700K, ST58, 8W, 800LM, 80+ CRI, Antique Decorative Filament LED Bulb, Clear Glass, 6 Pack",
+    "image": "https://m.media-amazon.com/images/I/71OS04aqzkL._AC_SX385_PIbundle-6,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B5KYTX52/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfdbd2"
+  },
+  {
+    "id": 2697,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "DORESshop LED Night Light, Night Lights Plug Into Wall [2 Pack] with Dusk-to-Dawn Sensor, Dimmable Nightlights, Adjustable Brightness for Bathroom, Hallway, Bedroom, Kids Room, Stairway, Soft White",
+    "image": "https://m.media-amazon.com/images/I/71Y0SEq9m4L._AC_SX385_PIbundle-2,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B096XYXY5H/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6f5e4d"
+  },
+  {
+    "id": 2698,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "OIAHOMY Large Blanket Basket, Rectangle Woven Baskets for Storage, Nursery Blanket Basket Living Room, Toy Basket With Handle, Large Baskets for Organizing-22”x17”x12”-Gradient Yellow",
+    "image": "https://m.media-amazon.com/images/I/81oiVV7hbbL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BPSGQHLY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c7bdb6"
+  },
+  {
+    "id": 2699,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "ROTTOGOON Floor Lamp for Living Room with 3 Color Temperatures LED Bulb, Standing Lamp Tall Industrial Floor Lamp Reading for Bedroom, Office (9W LED Bulb, Beige Lampshade Included) -Black",
+    "image": "https://m.media-amazon.com/images/I/61pJwYkeP9L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B086ZLGLV3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7d3b3"
+  },
+  {
+    "id": 2700,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "FEXIA Boho Table Runner for Christmas Home Decor with Tassels 72 Inches Long Farmhouse Rustic Table Runner Macrame Burlap Table Decoration for Living Room Bridal Shower(12x72 Inches)",
+    "image": "https://m.media-amazon.com/images/I/819tlu7DkFL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B27WGC8Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d9cabb"
+  },
+  {
+    "id": 2701,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "SUNMORY Floor Lamp with Shelves, Modern Square Standing Lamp with 3 Color Temperature Bulb, Corner Display Bookshelf Lamp for Living Room and Bedroom(Black)",
+    "image": "https://m.media-amazon.com/images/I/71YNhyHG-IL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08Z36X6B4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfd4be"
+  },
+  {
+    "id": 2702,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "SUNMORY Floor Lamp with Shelves, Modern Square Standing Lamp with 3 Color Temperature Bulb, Corner Display Bookshelf Lamp for Living Room and Bedroom(Black)",
+    "image": "https://m.media-amazon.com/images/I/71YNhyHG-IL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08Z36X6B4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfd4be"
+  },
+  {
+    "id": 2703,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "Joydeco Natural Linen Curtains 84 inch Length 2 Panels Set Burg 100% Blackout Long Drapes for Bedroom Living Room Blackout Darkening Curtain Thermal Insulated Back tab Rod Pocket(52x84 inch, Linen)",
+    "image": "https://m.media-amazon.com/images/I/81tYHhNtfyL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BZDLT95R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9e968d"
+  },
+  {
+    "id": 2704,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "Area Rug 8x10 Washable Rug Brown Vintage Traditional Mat Distressed Indoor Foldable Thin Retro Accent Floral Non Slip Carpet Living Room Dining Room Office",
+    "image": "https://m.media-amazon.com/images/I/91DPQOovkqL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNB733VF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a79882"
+  },
+  {
+    "id": 2705,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Corner Floor Lamp - Smart RGB LED Corner Lamp with App and Remote Control, 16 Million Colors & 68+ Scene, Music Sync, Timer Setting - Ideal for Living Rooms, Bedrooms, and Gaming Rooms",
+    "image": "https://m.media-amazon.com/images/I/61ff09oRxJL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BXWQHYVQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#413150"
+  },
+  {
+    "id": 2706,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "Corner Floor Lamp - Smart RGB LED Corner Lamp with App and Remote Control, 16 Million Colors & 68+ Scene, Music Sync, Timer Setting - Ideal for Living Rooms, Bedrooms, and Gaming Rooms",
+    "image": "https://m.media-amazon.com/images/I/61ff09oRxJL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BXWQHYVQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fb58f3"
+  },
+  {
+    "id": 2707,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "【Upgraded】 Dimmable Floor Lamp, 1000 Lumens LED Edison Bulb Included, Arc Floor Lamps for Living Room Modern Standing Lamp with Linen Shade, Tall Lamp for Bedroom Office Dining Room- Black",
+    "image": "https://m.media-amazon.com/images/I/619pHvEWo2L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B095NXXP8C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddd9d2"
+  },
+  {
+    "id": 2708,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "Yarra-Decor Bedside Table Lamp with USB Port - Touch Control for Bedroom Wood 3 Way Dimmable Nightstand Lamp with Round Flaxen Fabric Shade for Living Room, Dorm, Home Office (LED Bulb Included)",
+    "image": "https://m.media-amazon.com/images/I/519u2nJaUAL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B087CDBKCH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7aa79"
+  },
+  {
+    "id": 2709,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "Flameless LED Candles with Timer 5 Pc Flickering Flameless Candles for Romantic Ambiance and Home Decoration Stable Acrylic Shell, with Embedded Star String，Battery Operated Candles（Grey）",
+    "image": "https://m.media-amazon.com/images/I/71OGdS2e7ML._AC_SX679_PIbundle-5,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BXCYHTGN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7c4d1b"
+  },
+  {
+    "id": 2710,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "MIULEE Pack of 2 Corduroy Decorative Throw Pillow Covers 18x18 Inch Soft Boho Striped Pillow Covers Spring Modern Farmhouse Home Decor for Sofa Living Room Couch Bed Cream White",
+    "image": "https://m.media-amazon.com/images/I/81jhzAwCvML._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BFVVKVSK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4ccc7"
+  },
+  {
+    "id": 2711,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "PoKat 23\" Modern Ceramic Table Lamp Set of 2 for Living Room White Desk Lamps for Bedroom Farmhouse Bedside Nightstand Bedside Lamp End Table Lamps Beige",
+    "image": "https://m.media-amazon.com/images/I/710mJWK3xzL._AC_SX385_PIbundle-2,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4SZBN64/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcd3c7"
+  },
+  {
+    "id": 2712,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "Dried Pampas Grass Decor, 100 Stems Pampas Grass Contains Bunny Tails Dried Flowers, Reed Grass Bouquet for Wedding Boho Flowers Home Table Decor, Rustic Farmhouse Party (17\", White and Brown)",
+    "image": "https://m.media-amazon.com/images/I/7173mks7XtL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09H5JZC97/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ede6e0"
+  },
+  {
+    "id": 2713,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "Candle Warmer Lamp with Timer Dimmer Adjustable Height for New Home Bedroom, Birthday Gifts for Women, Vintage Home Decor for Scented Jar, Valentines Day for Her",
+    "image": "https://m.media-amazon.com/images/I/71g34doUsNL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CDRDK6MR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#89684e"
+  },
+  {
+    "id": 2714,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "H.VERSAILTEX Linen 100% Blackout Curtains for Bedroom Full Light Blocking Curtains, Textured Window Curtains for Living Room 84 inch Grommet, Energy Efficient Curtains White Liner(2 Panels, Natural)",
+    "image": "https://m.media-amazon.com/images/I/71vhA-t8PDL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07C9HL1G1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cbc5be"
+  },
+  {
+    "id": 2715,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "MIULEE Corduroy Pillow Covers with Splicing Set of 2 Super Soft Boho Striped Pillow Covers Broadside Decorative Spring Throw Pillows for Couch Cushion Livingroom 18x18 inch, Beige",
+    "image": "https://m.media-amazon.com/images/I/812YWmge58L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BLSN6FTZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbd2ca"
+  },
+  {
+    "id": 2716,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "Key Holder for Wall, Decorative Key and Mail Holder with Shelf Has Large Hooks for Bags, Coats, Umbrella – Paulownia Wood Key Hanger with Mounting Hardware (9.8”W x 6.7”H x 4.2”D)",
+    "image": "https://m.media-amazon.com/images/I/61sHXVsbXAL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09ZRT5QPG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#333434"
+  },
+  {
+    "id": 2717,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "KAKAMAY Large Blanket Basket (20\"x13\"), Woven Baskets for storage Baby Laundry Hamper, Cotton Rope Blanket Basket for Living Room, Laundry, Nursery, Pillows, Baby Toy chest (White/Brown)",
+    "image": "https://m.media-amazon.com/images/I/81b272jMzrL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09Z2SYJQD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d9d2cb"
+  },
+  {
+    "id": 2718,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "Sweetcrispy 64\"x21\" Arched Full Length Mirror, Standing or Leaning Full Body Mirror with Aluminum Alloy Thin Frame, Suitable for Bedroom or Cloakroom, Black",
+    "image": "https://m.media-amazon.com/images/I/71KPeu6bLTL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DNSXFJTV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cec7be"
+  },
+  {
+    "id": 2719,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "YGEOMER Floating Shelves for Wall Different Sizes Farmhouse Wall Shelf for Bedroom, Bathroom Shelves for Storage, Hanging Shelves for Living Room, Wood Floating Shelf for Kitchen Decor(Set of 4)",
+    "image": "https://m.media-amazon.com/images/I/81qlqf49xIL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08NSFV92Z/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ece8e5"
+  },
+  {
+    "id": 2720,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "DreamSky Wooden Digital Alarm Clock for Bedroom - Living Room Desk Clock with Large Numbers, Bedside Nightstand Clock with USB Port, Adjustable Volume, Dimmer, Snooze, DST, Office Wood Décor, Gifts",
+    "image": "https://m.media-amazon.com/images/I/51OZTrdfbjL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BYSQPLJN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7dbd7"
+  },
+  {
+    "id": 2721,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "Estelar Textiler Navy Blue and Greyish White Blackout Curtains for Bedroom 84 Inches Long, Full Room Darkening Grommet Curtains for Living Room, Thermal Insulated Ombre Drapes, 52Wx84L, 2 Panels",
+    "image": "https://m.media-amazon.com/images/I/710JIZe0yOL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BWDK5RNZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#394253"
+  },
+  {
+    "id": 2722,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "BAYKA Wall Shelves for Bedroom Decor, Floating Shelves for Wall Storage, Wall Mounted Rustic Wood Shelf for Books, Plants, Small Wall Shelf for Bathroom, Kitchen, Living Room(Black，Set of 3)",
+    "image": "https://m.media-amazon.com/images/I/716uOBUIxuL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08J6NQMQ5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#363635"
+  },
+  {
+    "id": 2723,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "RUNTOP Floor Lamp with Shelves, Modern Shelf Lamp for Display Storage, 3 Color Temperature Wood Narrow Standing Corner Lamp with 8W Bulb for Living Room Decor, Bedroom, Office, Home Decor(Brown)",
+    "image": "https://m.media-amazon.com/images/I/61IzUdfkdFL._AC_SX342_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09F9B3BCY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcc7a9"
+  },
+  {
+    "id": 2724,
+    "title": "Amazon Product 41",
+    "price": 0,
+    "description": "RUNTOP Floor Lamp with Shelves, Modern Shelf Lamp for Display Storage, 3 Color Temperature Wood Narrow Standing Corner Lamp with 8W Bulb for Living Room Decor, Bedroom, Office, Home Decor(Brown)",
+    "image": "https://m.media-amazon.com/images/I/61IzUdfkdFL._AC_SX342_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09F9B3BCY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcc7a9"
+  },
+  {
+    "id": 2725,
+    "title": "Amazon Product 42",
+    "price": 0,
+    "description": "Fancy Homi 4 Packs Neutral Decorative Throw Pillow Covers 18x18 Inch for Living Room Couch Bed Sofa, Rustic Farmhouse Boho Home Decor, Soft Plush Striped Corduroy Square Cushion Case 45x45 cm",
+    "image": "https://m.media-amazon.com/images/I/71YAboIsyAL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C2PS76FG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#beaf9b"
+  },
+  {
+    "id": 2726,
+    "title": "Amazon Product 43",
+    "price": 0,
+    "description": "Coasters for Drinks, Coasters for Coffee Table, 8 Pack Coaster, Coasters for Drinks Absorbent, Boho Coasters, Coaster Set 4 - Color Cup Coasters, Coasters for Wooden Table, Living Room Decor",
+    "image": "https://m.media-amazon.com/images/I/81z2SBE3vuL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BTRZBGGZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2e2d2b"
+  },
+  {
+    "id": 2727,
+    "title": "Amazon Product 44",
+    "price": 0,
+    "description": "96PCS Natural Dried Pampas Grass Boho Home Decor Bouquet Phragmites Dried Flowers Bouquet for Wedding Floral Arrangements Home Decorations (96PCS)",
+    "image": "https://m.media-amazon.com/images/I/81FOHQHFPzL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09KGVJNRW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbd9da"
+  },
+  {
+    "id": 2728,
+    "title": "Amazon Product 45",
+    "price": 0,
+    "description": "Der Rose 4 Pack Fake Plants Mini Artificial Greenery Potted Plants for Home Decor Indoor Office Table Room Farmhouse",
+    "image": "https://m.media-amazon.com/images/I/71YUh1Ig0cL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B099596F3B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3ddcb"
+  },
+  {
+    "id": 2729,
+    "title": "Amazon Product 46",
+    "price": 0,
+    "description": "Dimmable Floor Lamp, 3 x 800LM LED Edison Bulbs Included, Farmhouse Industrial Floor Lamp Standing Tree Lamp with Elegant Teardrop Cage Tall Lamps for Living Room Bedroom Office Dining Room-Black",
+    "image": "https://m.media-amazon.com/images/I/61ZJHqVr7YL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08LVZH9H1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3cec6"
+  },
+  {
+    "id": 2730,
+    "title": "Amazon Product 47",
+    "price": 0,
+    "description": "Siluvia 22\"x22\" Pillow Inserts Set of 2 Decorative 22 Pillow Inserts-Square Interior Sofa Throw Pillow Inserts with 100% Cotton Cover White Couch Pillow (2, 22\"x22\", 2Pack)",
+    "image": "https://m.media-amazon.com/images/I/61khI6aybxS._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B095PV6KQH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dedddf"
+  },
+  {
+    "id": 2731,
+    "title": "Amazon Product 48",
+    "price": 0,
+    "description": "2 Pack Small Fake Plants Eucalyptus Potted Artificial Plants for Shelf Desk Home Bathroom Farmhouse Room Coffee Table Decor (Sage Green)",
+    "image": "https://m.media-amazon.com/images/I/81b0GCf0zdL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08ZSXD1BR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c4c9b4"
+  },
+  {
+    "id": 2732,
+    "title": "Amazon Product 49",
+    "price": 0,
+    "description": "Dimmable Industrial Floor Lamps for Living Room, Gold Tree Standing Tall Lamps with 3 Elegant Teardrop Cage Head & 800 Lumens LED Bulbs for Bedroom Office",
+    "image": "https://m.media-amazon.com/images/I/71RVSyO86GL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09F2PMZ5N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#efe8d5"
+  },
+  {
+    "id": 2733,
+    "title": "Amazon Product 50",
+    "price": 0,
+    "description": "Ambimall 60\" Floor Lamps for Living Room with 3 Color Temperatures Bulb & Adjustable Linen Shade, Tall Lamp for Living Room Bedroom Office Classroom Dorm Room(9W Bulb Included)",
+    "image": "https://m.media-amazon.com/images/I/81OkUcWhMvL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4DGFFCM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6b58c"
+  },
+  {
+    "id": 2734,
+    "title": "Amazon Product 51",
+    "price": 0,
+    "description": "WOPITUES Wood Floating Shelves Set of 6, Shelves for Wall Decor, Farmhouse Shelf for Bedroom, Bathroom Storage Shelves, Book Shelves for Living Room - Rustic Brown",
+    "image": "https://m.media-amazon.com/images/I/71G7N2u54uL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4T4BVT3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ab9681"
+  },
+  {
+    "id": 2735,
+    "title": "Amazon Product 52",
+    "price": 0,
+    "description": "Fixwal 15.8in Floating Shelves, Rustic Wood Finish Wall Shelves Set of 4, Shelves for Wall Decor, with Invisible Brackets for Bathroom, Living Room, Bedroom and Kitchen(Rustic Brown)",
+    "image": "https://m.media-amazon.com/images/I/81uUSjJMChL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C7KJH33V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6d4c37"
+  },
+  {
+    "id": 2736,
+    "title": "Amazon Product 53",
+    "price": 0,
+    "description": "O’Bright Portable LED Table Lamp with Touch Sensor, 3-Levels Brightness, Rechargeable Battery Up to 48 Hours Usage, Night Light for Kids Nursery, Nightstand Lamp, Bedside Lamp (Gold)",
+    "image": "https://m.media-amazon.com/images/I/61v47BwBHkL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B087LWCGPS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cbac74"
+  },
+  {
+    "id": 2737,
+    "title": "Amazon Product 54",
+    "price": 0,
+    "description": "Globe Electric 67135 72\" Torchiere Floor Lamp + Adjustable Reading Light, Matte Black, Frosted Plastic Shade, 3-Step Rotary Switch on Socket, Living Room Décor, Reading Light, Home Essentials",
+    "image": "https://m.media-amazon.com/images/I/41ZhW3MHEvL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07R9FZHLQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2a2a2a"
+  },
+  {
+    "id": 2738,
+    "title": "Amazon Product 55",
+    "price": 0,
+    "description": "Olive Trees Artificial Indoor, 6FT Tall Faux Olive Tree with White Tall Planter, Artificial Plants with Natural Wood Trunk and Lifelike Fruits for Home Office Decor",
+    "image": "https://m.media-amazon.com/images/I/61L1KzJYEYL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5HL3HP5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8d7c7"
+  },
+  {
+    "id": 2739,
+    "title": "Amazon Product 56",
+    "price": 0,
+    "description": "Tv Led Backlight, Maylit 8.2ft Led Strip Lights for 40-60in Tv, USB Powered Tv Lights kit with Remote, RGB Bias Lighting for Room Decor",
+    "image": "https://m.media-amazon.com/images/I/71V7jRrIvtL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B074KFP426/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0ebec"
+  },
+  {
+    "id": 2740,
+    "title": "Amazon Product 57",
+    "price": 0,
+    "description": "Art3dwallpanels 33 Pack 3D Wall Panel Diamond for Interior Wall Décor, PVC Flower Textured Wall Panels for Living Room Lobby Bedroom Hotel Office, Black, 12''x12'' Cover 32.Sq.Ft.",
+    "image": "https://m.media-amazon.com/images/I/51h-oPgZS8L._SX342_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09T9MYVWS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3b3b3b"
+  },
+  {
+    "id": 2741,
+    "title": "Amazon Product 58",
+    "price": 0,
+    "description": "MIULEE 100% Blackout Linen Textured Curtains for Bedroom Solid Thermal Insulated Natural Beige Grommet Room Darkening Curtains & Drapes Luxury Decor for Living Room Nursery 52 x 84 Inch (2 Panels)",
+    "image": "https://m.media-amazon.com/images/I/812kUwGK2qL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08SBYPF14/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c5bcb1"
+  },
+  {
+    "id": 2742,
+    "title": "Amazon Product 59",
+    "price": 0,
+    "description": "BLEUM CADE Fake Hanging Plants, 2pcs Artificial Hanging Plant, Faux Pothos Vines Hanging Plant Greenery for Wall Home Living Room Indoor Outdoor Decor (No Baskets)",
+    "image": "https://m.media-amazon.com/images/I/811asVGuPdL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BY8X5GFY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#446d1f"
+  },
+  {
+    "id": 2743,
+    "title": "Amazon Product 60",
+    "price": 0,
+    "description": "Reed Diffusers Set, 3.7 Oz Scent Diffuser, 6 Reed Diffuser Sticks, Home Fragrance Hyacinth, Peony & Citrus, Aromatherapy Oil Diffuser Reeds, More Masculine Scent, Bathroom & Office Decor 110ml",
+    "image": "https://m.media-amazon.com/images/I/81gDG50Q6eL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09SFZJM67/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1439a1"
+  },
+  {
+    "id": 2744,
+    "title": "Amazon Product 61",
+    "price": 0,
+    "description": "Arc Floor Lamp for Living Room with 3 Color Temperatures, Farmhouse Floor Lamps with Remote & Dimmable Bulb, Boho Standing Lamp with Rattan & Fabric Shades, Adjustable Tall Lamp for Bedroom, Office",
+    "image": "https://m.media-amazon.com/images/I/71LC9-M5eyL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C3GY2PJ2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b5987e"
+  },
+  {
+    "id": 2745,
+    "title": "Amazon Product 62",
+    "price": 0,
+    "description": "Flameless LED Candles with Remote Set of 3 Battery-Operated Acrylic Gray Pillars, 4\", 5\", 6\" x 3\" Diameter Flickering Effect with Timer Ideal for Home Décor Weddings Parties, Restaurants",
+    "image": "https://m.media-amazon.com/images/I/61cmtk9JedL._AC_SX466_PIbundle-3,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2RNVW2R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#79543b"
+  },
+  {
+    "id": 2746,
+    "title": "Amazon Product 63",
+    "price": 0,
+    "description": "AMADA HOMEFURNISHING Floating Shelves, Wall Shelves for Bathroom/Living Room/Bedroom/Kitchen Decor, White Shelves with Invisible Brackets Set of 3 - AMFS08",
+    "image": "https://m.media-amazon.com/images/I/617Jcb+JQsL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B088ZYNX1J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e5e4e5"
+  },
+  {
+    "id": 2747,
+    "title": "Amazon Product 64",
+    "price": 0,
+    "description": "Candle Warmer Lamp, Dimmable Candle Lamp Warmer, Adjustable Height, Timer, Bedroom Living Room Home Decor Wax Melt Warmer for Scented Wax with 2 Bulbs, Gold",
+    "image": "https://m.media-amazon.com/images/I/71CBnDmJQ2L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQQLYD3W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bc8e63"
+  },
+  {
+    "id": 2748,
+    "title": "Amazon Product 65",
+    "price": 0,
+    "description": "Homedics Tabletop Water Fountain, Home Décor Soothing Sound Machine - Automatic Pump, Deep Basin & Natural River Rocks. Indoor Zen Relaxation for Office, Living Room, or Bedroom, 8.25” Tall",
+    "image": "https://m.media-amazon.com/images/I/61vEjplUwlL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B000QTUJXS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#473f3e"
+  },
+  {
+    "id": 2749,
+    "title": "Amazon Product 66",
+    "price": 0,
+    "description": "Large Shag Area Rugs 5 x 8, Tie-Dyed Plush Fuzzy Rugs for Living Room, Ultra Soft Fluffy Furry Rugs for Bedroom, Indoor Carpet Nursery Rugs for Kids Room Home Decor, Light Grey",
+    "image": "https://m.media-amazon.com/images/I/81dIropQt7L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJ9D6RT2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#959493"
+  },
+  {
+    "id": 2750,
+    "title": "Amazon Product 67",
+    "price": 0,
+    "description": "Large Shag Area Rugs 5 x 8, Tie-Dyed Plush Fuzzy Rugs for Living Room, Ultra Soft Fluffy Furry Rugs for Bedroom, Indoor Carpet Nursery Rugs for Kids Room Home Decor, Light Grey",
+    "image": "https://m.media-amazon.com/images/I/81dIropQt7L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJ9D6RT2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#959493"
+  },
+  {
+    "id": 2751,
+    "title": "Amazon Product 68",
+    "price": 0,
+    "description": "FANTESTICRYAN Small Birds Statues Gold Home Decor Modern Style Figurine Decorative Ornaments for Living Room, Bedroom, Office Desktop, Cabinets",
+    "image": "https://m.media-amazon.com/images/I/71SKqRaBtwL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07SPKC554/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7c096"
+  },
+  {
+    "id": 2752,
+    "title": "Amazon Product 69",
+    "price": 0,
+    "description": "HARRITPURE 64\"x21\" Arched Full Length Mirror Free Standing Leaning Mirror Hanging Mounted Mirror Aluminum Frame Modern Simple Home Decor for Living Room Bedroom Cloakroom, Gold",
+    "image": "https://m.media-amazon.com/images/I/81srWhZnbeL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09GFSN4HW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ded2ca"
+  },
+  {
+    "id": 2753,
+    "title": "Amazon Product 70",
+    "price": 0,
+    "description": "Gertmenian Indoor Boho Area Rug - 8x10 Large, Non Slip, Super Strong, Ideal for High Traffic Areas in Bedroom, Living Room, Kitchen - Cullen, Cream/Multi, 28548",
+    "image": "https://m.media-amazon.com/images/I/91EoOVlgH7L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C9V8ZHT1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8cfc4"
+  },
+  {
+    "id": 2754,
+    "title": "Amazon Product 71",
+    "price": 0,
+    "description": "Nearly Natural 48\" Dracaena Silk Plant (Real Touch) Green",
+    "image": "https://m.media-amazon.com/images/I/71ZVBahlftS._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00B3LO53S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3c4c1d"
+  },
+  {
+    "id": 2755,
+    "title": "Amazon Product 72",
+    "price": 0,
+    "description": "Mckanti 8 Pcs Drink Coasters with Holder, Minimalist Cotton Woven 4 Colors Absorbent Coaster Set for Home Decor Tabletop Protection Suitable for Kinds of Cups, 4.3 Inches.(NO.2)",
+    "image": "https://m.media-amazon.com/images/I/81D9ybwtAEL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B2RC15TS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e8dcd1"
+  },
+  {
+    "id": 2756,
+    "title": "Amazon Product 73",
+    "price": 0,
+    "description": "Der Rose Set of 6 Succulents Plants Artificial in Pots Small Fake Plants for Bedroom Aesthetic Living Room Office Shelf Bathroom Decor",
+    "image": "https://m.media-amazon.com/images/I/71-V-N2TpoL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09V7XC4VV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1e1df"
+  },
+  {
+    "id": 2757,
+    "title": "Amazon Product 74",
+    "price": 0,
+    "description": "Matchless Candle Co. by Luminara Set of 3 (3\" x 4.5\", 5.5\", 6.5\") Flameless LED Flickering Battery Candle Moving Flame Pillar, Melted Edge, Real Wax Smooth Finish (Unscented)",
+    "image": "https://m.media-amazon.com/images/I/71ewFtEg8NL._AC_SX342_PIbundle-3,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C758JXVT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b4aca0"
+  },
+  {
+    "id": 2758,
+    "title": "Amazon Product 75",
+    "price": 0,
+    "description": "Matchless Candle Co. by Luminara Set of 3 (3\" x 4.5\", 5.5\", 6.5\") Flameless LED Flickering Battery Candle Moving Flame Pillar, Melted Edge, Real Wax Smooth Finish (Unscented)",
+    "image": "https://m.media-amazon.com/images/I/71ewFtEg8NL._AC_SX342_PIbundle-3,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C758JXVT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b4aca0"
+  },
+  {
+    "id": 2759,
+    "title": "Amazon Product 76",
+    "price": 0,
+    "description": "Der Rose 3 Pack Mini Potted Fake Plants Artificial Plastic Eucalyptus Plants Topiaries for Home Office Desk Farmhouse Room Decor",
+    "image": "https://m.media-amazon.com/images/I/71X-tWosqML._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07VKJKFN2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a6ab92"
+  },
+  {
+    "id": 2760,
+    "title": "Amazon Product 77",
+    "price": 0,
+    "description": "BSIRI Tic Tac Toe for Kids and Adults Coffee Table Living Room Decor and Desk Decor Family Games Night Classic Board Games Wood Rustic for Families Size 4 Inch",
+    "image": "https://m.media-amazon.com/images/I/71Y1dHfvd7L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B084RCCDXK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b88053"
+  },
+  {
+    "id": 2761,
+    "title": "Amazon Product 78",
+    "price": 0,
+    "description": "upsimples 10 Pack Picture Frames Collage Wall Decor for Mounting or Tabletop Display, Photo Gallery Frame Set for Family, Multi Sizes Including 8x10, 5x7, 4x6, Black",
+    "image": "https://m.media-amazon.com/images/I/81BAlv5mkOL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C9T1SB3D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2f2f2b"
+  },
+  {
+    "id": 2762,
+    "title": "Amazon Product 79",
+    "price": 0,
+    "description": "Sweetcrispy Coffee Table, Lift Top Coffee Tables for Living Room, Small Rising Wooden Dining Center Tables with Storage Shelf and Hidden Compartment, Brown",
+    "image": "https://m.media-amazon.com/images/I/71EnvG1FKAL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKF2MKCH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8d3cf"
+  },
+  {
+    "id": 2763,
+    "title": "Amazon Product 80",
+    "price": 0,
+    "description": "zesthome 8x10 Area Rugs for Living Room, Non-Slip Backing Washable Rugs, Vintage Large Area Rug，Stain Resistant Home Decor Rug (Orange, 8'x10')",
+    "image": "https://m.media-amazon.com/images/I/81ZCxYcUZLL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C5MJMPVR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ae9f92"
+  },
+  {
+    "id": 2764,
+    "title": "Amazon Product 81",
+    "price": 0,
+    "description": "Floor Lamp for Living Room, 75.5 Inch Tall Standing Lamp for Bedroom with 2 312° Rotatable Ring Lights, 36W Bright Stepless Dimmable LED Floor Light with Remote Control for Office Dining Room",
+    "image": "https://m.media-amazon.com/images/I/713uPZ1Tz8L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DF5DWK98/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b9a67a"
+  },
+  {
+    "id": 2765,
+    "title": "Amazon Product 82",
+    "price": 0,
+    "description": "Yalikop 3 Link Wood Knot Decor - Hand Carved Coffee Table Decoration, Boho Chain Link Decor, Modern Shelf, Rustic Objects for Home Living Room Bedroom(White)",
+    "image": "https://m.media-amazon.com/images/I/71xPtXlo4NL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BBH5ZDP4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e5e5e3"
+  },
+  {
+    "id": 2766,
+    "title": "Amazon Product 83",
+    "price": 0,
+    "description": "Yoobure Tree Bookshelf - 6 Shelf Retro Floor Standing Bookcase, Tall Wood Book Storage Rack for CDs/Movies/Books, Utility Book Organizer Shelves for Bedroom, Living Room, Home Office",
+    "image": "https://m.media-amazon.com/images/I/61pfi70XekL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BQBZSK7F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#483a2c"
+  },
+  {
+    "id": 2767,
+    "title": "Amazon Product 84",
+    "price": 0,
+    "description": "vivorug Washable Rug, Ultra Soft Area Rug 6x9, Non Slip Abstract Rug Foldable, Stain Resistant Rugs for Living Room Bedroom, Modern Fuzzy Rug (Gray/Rust, 6'x9')",
+    "image": "https://m.media-amazon.com/images/I/91yEYUFI81L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BJ6N49Y5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c8c3be"
+  },
+  {
+    "id": 2768,
+    "title": "Amazon Product 85",
+    "price": 0,
+    "description": "Snuggle Hollow Ceramic Vase Set of 2, Nordic Modern Boho ins Style Decorative Ceramic Aesthetic Flower Vase for Home Decor",
+    "image": "https://m.media-amazon.com/images/I/811ZeNw+9PL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C7WH88W7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d9d3c4"
+  },
+  {
+    "id": 2769,
+    "title": "Amazon Product 86",
+    "price": 0,
+    "description": "Sullivans White Ceramic Vase Set, Farmhouse Decor, Home Decorative Vase, Vases For Your Kitchen, Bedroom, Office, Living Room, Bathroom, & Shelf Centerpiece Table Decorations (CM2333)",
+    "image": "https://m.media-amazon.com/images/I/51YNi10LwNL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07DQCJ84X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d9d3cc"
+  },
+  {
+    "id": 2770,
+    "title": "Amazon Product 87",
+    "price": 0,
+    "description": "Hanobe Decorative Serving Tray Wood: White Washed Bead Round Tray Decor for Coffee Table Rustic Wooden Trays Farmhouse Centerpiece for Living Room Kitchen Counter",
+    "image": "https://m.media-amazon.com/images/I/813bdjNmeuL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BCPZYRSY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7ccc2"
+  },
+  {
+    "id": 2771,
+    "title": "Amazon Product 88",
+    "price": 0,
+    "description": "Rustic Farmhouse Lantern Decor Set of 2 - Stylish Decorative Lanterns for Your Living Room, Fireplace Mantle or Kitchen Dining Table - Modern Upscale Beauty for Your Entire Home",
+    "image": "https://m.media-amazon.com/images/I/91Rbc9-Ts4L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09NC1VGTW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d2c7b9"
+  },
+  {
+    "id": 2772,
+    "title": "Amazon Product 89",
+    "price": 0,
+    "description": "Room Decor, 20\" 108 LED Tabletop Bonsai Tree Light, DIY Artificial Tree Lamp, Battery/USB Operated, Aesthetic Lamps for Living Room Bedroom Christmas Home Gifts House Decor (Warm White)",
+    "image": "https://m.media-amazon.com/images/I/71niFs5YqKL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08CXGRPL3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a67b29"
+  },
+  {
+    "id": 2773,
+    "title": "Amazon Product 90",
+    "price": 0,
+    "description": "Carrot's Den Donut Vase, Set of 2 - Minimalist Nordic, White Ceramic Hollow Donut Vase Decor | Table Centerpiece, Olive Plant, Wedding, Living Room, Bookshelf, Office, Modern Home, Entryway, Console",
+    "image": "https://m.media-amazon.com/images/I/81p83067jIL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BDR1X6PT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7d4cf"
+  },
+  {
+    "id": 2774,
+    "title": "Amazon Product 91",
+    "price": 0,
+    "description": "UGG 10484 Adalee Soft Faux Fur Reversible Accent Throw Blanket Fluffy Fuzzy Luxury Cozy Hotel Style Luxurious Soft Boho Home Decor Blankets for Bed and Living Room, 50 x 70-inch, Oyster",
+    "image": "https://m.media-amazon.com/images/I/81NsHefMzjL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08KTQWMBR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#978881"
+  },
+  {
+    "id": 2775,
+    "title": "Amazon Product 92",
+    "price": 0,
+    "description": "Jetec 2 Pcs Rustic Table Decorations for Living Room Home Decor Farmhouse Valentines Day Centerpiece Small Love Wooden Heart Decor for Dining Room Shelf Valentines Gift Decoration(Grateful Style)",
+    "image": "https://m.media-amazon.com/images/I/81NnuwC6hnL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09XGVFPXM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c9c8c2"
+  },
+  {
+    "id": 2776,
+    "title": "Amazon Product 93",
+    "price": 0,
+    "description": "102 Inches Long Pinch Pleated Linen Blackout Curtains for Bedroom Back Tab Track Memory Trained Shape Farmhouse Light Blocking Curtains 102 Inch Length for Living Dining Room Darkening Drapes Cream",
+    "image": "https://m.media-amazon.com/images/I/81L8n7zerDL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8L1HJ4C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dddbd2"
+  },
+  {
+    "id": 2777,
+    "title": "Amazon Product 94",
+    "price": 0,
+    "description": "FENLO Fantasy Plus - Tall Display Shelf with Dimmable LED Floor Lamp, Sturdy Curio Cabinet with Glass Bookcase, Glass Display Shelves for Bedroom Decor, Open Bookshelf with Color Changing Temps",
+    "image": "https://m.media-amazon.com/images/I/81y0kHChEOL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BL757Z4H/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b39f8a"
+  },
+  {
+    "id": 2778,
+    "title": "Amazon Product 95",
+    "price": 0,
+    "description": "VELOVA Set of 3 White Ceramic Vase with 65 PCS Dried Pampas Grass Flowers Aesthetic Boho Modern Small Round Cute Vases for Decor Living Room Coffee Table Shelf Bedroom Office Desk Home Gifts Women Mom",
+    "image": "https://m.media-amazon.com/images/I/61Kuew3I5GL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CD59K7PX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eae5e2"
+  },
+  {
+    "id": 2779,
+    "title": "Amazon Product 96",
+    "price": 0,
+    "description": "Faux Olive Tree 6ft，Olive Trees Artificial Indoor with Natural Wood Trunk and Realistic Leaves and Fruits. 6 Feet(72in) Fake Olive Tree for Home House Office Décor.",
+    "image": "https://m.media-amazon.com/images/I/61RC3C3CLPL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C1HC9Z3N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1e1d5"
+  },
+  {
+    "id": 2780,
+    "title": "Amazon Product 97",
+    "price": 0,
+    "description": "Loving Pair of Elephants in Beige & Grey - Modern Ceramic Sculpture - Figurine as a Set - Decoration Figure 6.3\" high - Ornament Elephant in Love",
+    "image": "https://m.media-amazon.com/images/I/71jnfUJtmnL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09DTNGRF3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#726c64"
+  },
+  {
+    "id": 2781,
+    "title": "Amazon Product 98",
+    "price": 0,
+    "description": "Loving Pair of Elephants in Beige & Grey - Modern Ceramic Sculpture - Figurine as a Set - Decoration Figure 6.3\" high - Ornament Elephant in Love",
+    "image": "https://m.media-amazon.com/images/I/71jnfUJtmnL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09DTNGRF3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#726c64"
+  },
+  {
+    "id": 2782,
+    "title": "Amazon Product 99",
+    "price": 0,
+    "description": "Sullivans Ceramic Jug Vase Set, Farmhouse Decor, Kitchen, Bedroom, Office, Living Room, Bathroom, & Coffee Table Centerpiece Decorations, Vases for Decor, Mantle & Shelf",
+    "image": "https://m.media-amazon.com/images/I/71pxOB93j+L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00WT2VF38/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#867f72"
+  },
+  {
+    "id": 2783,
+    "title": "Amazon Product 100",
+    "price": 0,
+    "description": "YATSKIA 7 Chakra Tree of Life, Crystals and Healing Stones, Birthday Gifts for Women - Crystal Tree for Positive Energy, Office Decor, Gifts for Women, Mom Birthday Gifts for Women",
+    "image": "https://m.media-amazon.com/images/I/91dlnHJHzML._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0813NPTWB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e2d6ca"
+  },
+  {
+    "id": 2784,
+    "title": "Amazon Product 101",
+    "price": 0,
+    "description": "Pink Fluffy Blanket for Couch Living Room Faux Fur 50x60 Fuzzy Throw Blanket for Bed Soft Furry Bed Cozy Comforter Home Decor Gifts 860 GSM",
+    "image": "https://m.media-amazon.com/images/I/71cibMMyVTL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DF2QWBDJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddc7ba"
+  },
+  {
+    "id": 2785,
+    "title": "Amazon Product 102",
+    "price": 0,
+    "description": "Pink Fluffy Blanket for Couch Living Room Faux Fur 50x60 Fuzzy Throw Blanket for Bed Soft Furry Bed Cozy Comforter Home Decor Gifts 860 GSM",
+    "image": "https://m.media-amazon.com/images/I/71cibMMyVTL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DF2QWBDJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddc7ba"
+  },
+  {
+    "id": 2786,
+    "title": "Amazon Product 103",
+    "price": 0,
+    "description": "100pcs Artificial Flower Arrangements with Vase Included, Dining Table Centerpiece, Thanksgiving Christmas Pampas Grass Floral Centerpieces, Coffee Table Decor, Faux Flowers in Vase, Centro de Mesa",
+    "image": "https://m.media-amazon.com/images/I/91+Y6XaDa9L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BJNZV8LM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e8dec8"
+  },
+  {
+    "id": 2787,
+    "title": "Amazon Product 104",
+    "price": 0,
+    "description": "Alpine Corporation WCT202 Indoor Tabletop Tiered Water Fountain Featuring 3 Candles for Desktop and Table, 11\", Brown",
+    "image": "https://m.media-amazon.com/images/I/81CDqgqIaeL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B002YKMPQ6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#786148"
+  },
+  {
+    "id": 2788,
+    "title": "Amazon Product 105",
+    "price": 0,
+    "description": "Nearly Natural 6.5FT Artificial Golden Cane Palm Tree, Fake Palm Tree with Three Realistic Trunks and 333 Lifelike Palm Leaves, Faux Palm Plant for Indoor Home Décor with Black Nursery Planter",
+    "image": "https://m.media-amazon.com/images/I/71h7PGain8L._AC_SY879_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B004XWCZXQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#49503e"
+  },
+  {
+    "id": 2789,
+    "title": "Amazon Product 106",
+    "price": 0,
+    "description": "Jetec I Still Remember The Days I Prayed Sign Inspirational Table Blessed Signs Motivational Decor Farmhouse Table Home Centerpieces Faith Wooden Shelf for Living Room Office(Classic Style)",
+    "image": "https://m.media-amazon.com/images/I/71LaGlzZDQL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09WVQZX16/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cacbcd"
+  },
+  {
+    "id": 2790,
+    "title": "Amazon Product 107",
+    "price": 0,
+    "description": "Vintage Living Room Area Rug 8x10 - Large Soft Washable Oriental Traditional Distressed Farmhouse Rugs for Bedroom - Indoor Floor Accent Carpet for Home Office House Decor - Dark Brown",
+    "image": "https://m.media-amazon.com/images/I/91BGgRj5osL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLG2PLS8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5cfc4"
+  },
+  {
+    "id": 2791,
+    "title": "Amazon Product 108",
+    "price": 0,
+    "description": "Wood Home Sign with Artificial Eucalyptus Wreath for O, Hanging Farmhouse Wall House Decor Wood Home Letters for Wall Art Rustic Home Decor, Home Wall Decor for Living Room Kitchen Entryway",
+    "image": "https://m.media-amazon.com/images/I/61BErV2ejWL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08QFHGYLT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#272924"
+  },
+  {
+    "id": 2792,
+    "title": "Amazon Product 109",
+    "price": 0,
+    "description": "Coffee Table Decorative Books for Home Decor, Fake Books for Decoration, Aesthetic Bookshelf Decor for Living Room Office Bedroom, 3 Piece, Black, White, Beige",
+    "image": "https://m.media-amazon.com/images/I/61PMFpLyb0L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKXC86CJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c6bdb5"
+  },
+  {
+    "id": 2793,
+    "title": "Amazon Product 110",
+    "price": 0,
+    "description": "Umbra Exhibit Picture Frame Gallery Set, Adjustable Wall Collage Displays Five Photos (Two 4x6\" and Three 5x7\"), Set of 5, Black",
+    "image": "https://m.media-amazon.com/images/I/61CrL1m2MfL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07WTRTLML/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#494b4b"
+  },
+  {
+    "id": 2794,
+    "title": "Amazon Product 111",
+    "price": 0,
+    "description": "Best Choice Products Vintage Multipurpose Hyacinth Storage Basket, Plant Décor, Handwoven Organizer Tote for Bedroom, Living Room, Bathroom, w/Lid - Transparent White",
+    "image": "https://m.media-amazon.com/images/I/811YcxXztVL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CBWBRN6K/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c2ad9c"
+  },
+  {
+    "id": 2795,
+    "title": "Amazon Product 112",
+    "price": 0,
+    "description": "Bookshelf Decor Thinker Statue - Abstract Art Reading Thinker Sculpture Figurine Room Decor Aesthetic, Modern Home Decoration for Living Room Office Shelves Coffee Table Desk Decor(Beige A)",
+    "image": "https://m.media-amazon.com/images/I/61OVQe73t1L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D26F6FNN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#af9883"
+  },
+  {
+    "id": 2796,
+    "title": "Amazon Product 113",
+    "price": 0,
+    "description": "Jetec Home Sweet Home Sign, Rustic Wood Room Wall Decor, Farmhouse Plaque Wall Hanging Wooden Sign for Bedroom, Living Room, Wedding Decor(Gray)",
+    "image": "https://m.media-amazon.com/images/I/81I01cSlFkS._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B092QXGZYP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c1bcb6"
+  },
+  {
+    "id": 2797,
+    "title": "Amazon Product 114",
+    "price": 0,
+    "description": "YoungsTex Natural Linen Curtains 84 inch Length 2 Panels Set for Living Room - Grommet Light Filtering Drapes for Bedroom Dining Farmhouse Boho Burlap Decorative Privacy, 2 Panels, 52 X 84 Inch",
+    "image": "https://m.media-amazon.com/images/I/81HqX84k1HL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4Y1L4PN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddd9ca"
+  },
+  {
+    "id": 2798,
+    "title": "Amazon Product 115",
+    "price": 0,
+    "description": "Silk Flowers in Vase, Artificial Flowers with Vase Fake Flowers Arrangement Faux Dahlia for Decoration Table Centerpiece (Dahlia)",
+    "image": "https://m.media-amazon.com/images/I/61nZbsw13BL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BCJ5BZYP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c7c4c3"
+  },
+  {
+    "id": 2799,
+    "title": "Amazon Product 116",
+    "price": 0,
+    "description": "Family Wall Decor Letter Signs Acrylic Mirror Wall Stickers Wall Decorations for Living Room Bedroom Home Decor Wall Decals (Silver, 61 X 23)",
+    "image": "https://m.media-amazon.com/images/I/61JMLxpuxgL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B095JSX4KY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b8a593"
+  },
+  {
+    "id": 2800,
+    "title": "Amazon Product 117",
+    "price": 0,
+    "description": "2Pcs Golden Heart Hands Statue - Love Finger Sculptures for Modern Aesthetic Home Decor: Perfect Living Room, Bedroom and Office Display - Elegant Wedding Gift for Love and Anniversaries(No Bracelets)",
+    "image": "https://m.media-amazon.com/images/I/711izbtdQgL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3H8RGZ6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ebe1c9"
+  },
+  {
+    "id": 2801,
+    "title": "Amazon Product 118",
+    "price": 0,
+    "description": "Nogrit Border Collie Throw Pillow Cover 18x18 Set of 2, Border Collie Dog Puppy Decor for Home Bedroom Living Room Girls Room, Border Collie Owners Gifts",
+    "image": "https://m.media-amazon.com/images/I/71QVm5A-ubL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BX6SD2TX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5d5d5"
+  },
+  {
+    "id": 2802,
+    "title": "Amazon Product 119",
+    "price": 0,
+    "description": "Nogrit Border Collie Throw Pillow Cover 18x18 Set of 2, Border Collie Dog Puppy Decor for Home Bedroom Living Room Girls Room, Border Collie Owners Gifts",
+    "image": "https://m.media-amazon.com/images/I/71QVm5A-ubL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BX6SD2TX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5d5d5"
+  },
+  {
+    "id": 2803,
+    "title": "Amazon Product 120",
+    "price": 0,
+    "description": "Jetec 3 Pieces Rustic Wood Sign Wall Decor Live Love Blessed Family and Love Quote Sign Farmhouse Wall Mount Decoration for Home Kitchen Living Room, 12 x 3 x 0.2 Inch(Blue Series, Classic)",
+    "image": "https://m.media-amazon.com/images/I/81vrQK1ZN3L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B092MCM8K3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8ea6b9"
+  },
+  {
+    "id": 2804,
+    "title": "Amazon Product 121",
+    "price": 0,
+    "description": "Ceramic Vase, Small Vases for Decor, Set 3 Modern Boho Vases for Flower Pampas, Fit for Living Room Desk Shelf Decor (Beige)",
+    "image": "https://m.media-amazon.com/images/I/51unpGZsDUL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BPH4WG9M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d9ceba"
+  },
+  {
+    "id": 2805,
+    "title": "Amazon Product 122",
+    "price": 0,
+    "description": "Arched Wall Mirror, 30\"x36\" Vintage Bronze Baroque Mirror, Wall Vanity Mirror Brass Mirror French Mirror, Home Decor for Living Room Bedroom Cloakroom-Bronze",
+    "image": "https://m.media-amazon.com/images/I/7174ktwi8fL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DK33XHC2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d1ccc3"
+  },
+  {
+    "id": 2806,
+    "title": "Amazon Product 123",
+    "price": 0,
+    "description": "Artificial Palm Tree 6Ft Tall Fake Plants Faux Silk Tropical Areca Floor Potted Plants for Home Living Room Ofiice Patio Decor Indoor Outdoor",
+    "image": "https://m.media-amazon.com/images/I/71xhBkJDGUL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4F8QW91/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#374422"
+  },
+  {
+    "id": 2807,
+    "title": "Amazon Product 124",
+    "price": 0,
+    "description": "Wall Art Light modern Abstract Canvas wall art Black and white leaves Frames - Canvas Painting artwork Wall Art Print Poster for Living Room Decoration 20\"x40\" with Framed",
+    "image": "https://m.media-amazon.com/images/I/91RyCdO4jTL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C16W11BQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c9c7c2"
+  },
+  {
+    "id": 2808,
+    "title": "Amazon Product 125",
+    "price": 0,
+    "description": "Elite Wood 63\" x 13.8\" x 3.5\" Wooden Floor Lamp (Alaska Collection) - Room Decor, Wood Floor Lamp, Living Room Lamp, Room Lamp, Floor Lamp",
+    "image": "https://m.media-amazon.com/images/I/51rNbcwPp9L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DV1LLZG3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#60442e"
+  },
+  {
+    "id": 2809,
+    "title": "Amazon Product 126",
+    "price": 0,
+    "description": "Storage Ottoman Bench, Versatile Boucle Upholstered Ottoman End of Bed Bench Seat, Long Ottoman with Storage for Bedroom Living Room Entryway Hallway Home Decor, Weight Capacity 300 lb White 19\"H",
+    "image": "https://m.media-amazon.com/images/I/91TLcDBnewL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DQPQQ4SH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c4beb9"
   }
 ];
