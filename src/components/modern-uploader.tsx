@@ -9,7 +9,6 @@ import { amazonProducts } from '../lib/amazonProducts';
 ////////////////////////////////////////////////////
 // 1) COLOR UTILS
 ////////////////////////////////////////////////////
-
 declare const ColorThief: any;
 
 function hexToHSL(hex: string): { h: number; s: number; l: number } {
@@ -433,7 +432,7 @@ export default function ModernUploader() {
                   style={{
                     background: activeSearchColor
                       ? activeSearchColor
-                      : "linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet)",
+                      : "radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet)",
                   }}
                   onClick={() => setShowWheel(true)}
                 />
@@ -471,11 +470,17 @@ export default function ModernUploader() {
                 )}
               </>
             ) : (
-              // Mobile: Color input with confirm button
+              // Mobile: Custom styled color input with radial gradient fallback
               <>
                 <input
                   type="color"
-                  className="h-20 w-20 cursor-pointer rounded-full border-none shadow-md"
+                  className="h-20 w-20 cursor-pointer rounded-full border-none shadow-md appearance-none"
+                  style={{
+                    background:
+                      tempMobileColor === "#ffffff"
+                        ? "radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet)"
+                        : tempMobileColor,
+                  }}
                   value={tempMobileColor}
                   onChange={(e) => setTempMobileColor(e.target.value)}
                 />
@@ -687,4 +692,5 @@ export default function ModernUploader() {
     </div>
   );
 }
+
 
