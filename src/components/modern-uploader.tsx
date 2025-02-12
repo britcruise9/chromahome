@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Upload, ArrowRight, Pin, PinOff, Palette } from 'lucide-react';
 import { HslColorPicker } from 'react-colorful';
-// Import local JSON data
+// Import the local JSON data
 import { amazonProducts } from '../lib/amazonProducts';
 
 ////////////////////////////////////////////////////
@@ -129,8 +129,7 @@ function calculateColorMatch(color1: string, color2: string): number {
       4 * Math.pow(255, 2) +
       2 * Math.pow(255, 2)
     );
-    const percentage = Math.round((1 - distance / maxDistance) * 100);
-    return percentage;
+    return Math.round((1 - distance / maxDistance) * 100);
   } catch (error) {
     console.error('Color calculation error:', error);
     return 0;
@@ -174,7 +173,6 @@ export default function ModernUploader() {
   const [hasUploaded, setHasUploaded] = useState(false);
 
   // ---------- DESKTOP COLOR WHEEL STATES ----------
-  // Start with a mid-tone to avoid a white square initially.
   const [desktopHsl, setDesktopHsl] = useState({ h: 0, s: 50, l: 50 });
   const [showWheel, setShowWheel] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
@@ -190,7 +188,7 @@ export default function ModernUploader() {
   const [isFetching, setIsFetching] = useState(false);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
-  // Hold the entire dataset (shuffled once on initial load)
+  // ---------- Hold the entire dataset (shuffled once on initial load) ----------
   const [allProducts, setAllProducts] = useState<any[]>([]);
 
   // ---------- INITIALIZATION ----------
@@ -199,10 +197,10 @@ export default function ModernUploader() {
     const interval = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroImages.length);
     }, 6000);
-    // Shuffle the locally imported products
+    // Shuffle the imported products and save as our full dataset
     const shuffled = [...amazonProducts].sort(() => Math.random() - 0.5);
     setAllProducts(shuffled);
-    // Load the initial batch (page 1) using the shuffled list
+    // Load the initial batch (page 1) using the shuffled data (no active color)
     loadProducts(1, activeSearchColor, shuffled);
     return () => clearInterval(interval);
   }, []);
@@ -230,10 +228,9 @@ export default function ModernUploader() {
     loadProducts(page, activeSearchColor);
   }, [page]);
 
-  // ---------- When the active search color changes, reset products & pagination ----------
+  // ---------- When activeSearchColor changes, reset products & pagination ----------
   useEffect(() => {
     if (allProducts.length === 0) return;
-    // Clear the current product list and reset pagination
     setProducts([]);
     setPage(1);
     setHasMore(true);
@@ -241,8 +238,8 @@ export default function ModernUploader() {
   }, [activeSearchColor, allProducts]);
 
   // ---------- LOAD PRODUCTS FUNCTION ----------
-  // If a search color is active, compute matchPercentage for each product and sort descending.
-  // Otherwise, use the random (shuffled) order.
+  // If a search color is active, calculate matchPercentage for each product and sort descending.
+  // Otherwise, simply use the random (shuffled) order.
   function loadProducts(pageNum: number, color: string | null, data?: any[]) {
     setIsFetching(true);
     const productsData = data || allProducts;
@@ -279,7 +276,7 @@ export default function ModernUploader() {
       const url = URL.createObjectURL(file);
       setUploadedImageUrl(url);
       const color = await extractColor(file);
-      // When a file is uploaded, update palette and trigger search
+      // Update palette and trigger search based on uploaded image color
       handleManualColor(color);
       setHasUploaded(true);
     } catch (error) {
@@ -292,7 +289,7 @@ export default function ModernUploader() {
     setSelectedColor(hex);
     setComplementaryColor(getComplementaryColor(hex));
     setTriadicColors(getTriadicColors(hex));
-    // Reset pagination when the active search color changes
+    // Reset the products and update active search color (this triggers a new load)
     setProducts([]);
     setPage(1);
     setHasMore(true);
@@ -304,10 +301,9 @@ export default function ModernUploader() {
     handleManualColor(tempMobileColor);
   }
 
-  // ---------- SWATCH CLICK: Reset pagination and update search immediately ----------
+  // ---------- SWATCH CLICK: Update active search color immediately ----------
   function handleSwatchClick(color: string | null) {
     if (!color) return;
-    // Clear results and reset pagination before switching color
     setProducts([]);
     setPage(1);
     setHasMore(true);
@@ -341,7 +337,7 @@ export default function ModernUploader() {
     return activeSearchColor === testColor ? 'ring-4 ring-white' : '';
   }
 
-  // ---------- "Change color" => reset all ----------
+  // ---------- "Change color" => Reset all ----------
   function resetAll() {
     setHasUploaded(false);
     setUploadedImageUrl(null);
@@ -439,10 +435,9 @@ export default function ModernUploader() {
                 <Palette className="w-6 h-6 text-white/50" />
                 <span className="font-semibold">Or pick a color below:</span>
               </div>
-
               {isDesktop ? (
                 <>
-                  {/* Desktop: Show only a color square that opens the color wheel overlay */}
+                  {/* Desktop: A color square that opens the color wheel overlay */}
                   <div
                     className="w-28 h-28 rounded-xl border border-white/30 shadow-md cursor-pointer"
                     style={{
@@ -469,7 +464,7 @@ export default function ModernUploader() {
                         />
                         <button
                           onClick={() => {
-                            // Confirm the selected color and update the search
+                            // Confirm the selected color and update the search results
                             handleManualColor(
                               hslToHex(
                                 desktopHsl.h,
@@ -488,7 +483,7 @@ export default function ModernUploader() {
                   )}
                 </>
               ) : (
-                // Mobile: Color input with confirm button
+                // Mobile: Color input with a confirm button
                 <>
                   <input
                     type="color"
@@ -508,192 +503,187 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* C) PALETTE ROW, PINNED ROW, & PRODUCT GRID */}
+        {/* C) Optional Palette Row (only when a color is selected) */}
         {selectedColor && (
-          <>
-            {/* Palette Row */}
-            <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
-              {uploadedImageUrl && (
-                <>
-                  <div className="flex flex-col items-center">
-                    <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
-                      <img
-                        src={uploadedImageUrl}
-                        alt="Uploaded Inspiration"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
+          <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
+            {uploadedImageUrl && (
+              <>
+                <div className="flex flex-col items-center">
+                  <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
+                    <img
+                      src={uploadedImageUrl}
+                      alt="Uploaded Inspiration"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <ArrowRight className="w-6 h-6 text-white" />
-                </>
-              )}
-              {/* Primary */}
+                </div>
+                <ArrowRight className="w-6 h-6 text-white" />
+              </>
+            )}
+            {/* Primary */}
+            <div className="flex flex-col items-center">
+              <div
+                className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(selectedColor)}`}
+                style={{ backgroundColor: selectedColor }}
+                onClick={() => handleSwatchClick(selectedColor)}
+              />
+              <span className="text-xs md:text-sm text-white/60 mt-2">
+                Primary
+              </span>
+              <button
+                onClick={resetAll}
+                className="mt-1 text-blue-400 hover:underline text-xs"
+              >
+                Change
+              </button>
+            </div>
+            {/* Complementary */}
+            {complementaryColor && (
               <div className="flex flex-col items-center">
                 <div
-                  className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(selectedColor)}`}
-                  style={{ backgroundColor: selectedColor }}
-                  onClick={() => handleSwatchClick(selectedColor)}
+                  className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(complementaryColor)}`}
+                  style={{ backgroundColor: complementaryColor }}
+                  onClick={() => handleSwatchClick(complementaryColor)}
                 />
                 <span className="text-xs md:text-sm text-white/60 mt-2">
-                  Primary
+                  Complement
                 </span>
-                <button
-                  onClick={resetAll}
-                  className="mt-1 text-blue-400 hover:underline text-xs"
-                >
-                  Change
-                </button>
-              </div>
-              {/* Complementary */}
-              {complementaryColor && (
-                <div className="flex flex-col items-center">
-                  <div
-                    className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(complementaryColor)}`}
-                    style={{ backgroundColor: complementaryColor }}
-                    onClick={() => handleSwatchClick(complementaryColor)}
-                  />
-                  <span className="text-xs md:text-sm text-white/60 mt-2">
-                    Complement
-                  </span>
-                </div>
-              )}
-              {/* Triadic */}
-              {triadicColors?.map((col, i) => (
-                <div key={col} className="flex flex-col items-center">
-                  <div
-                    className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(col)}`}
-                    style={{ backgroundColor: col }}
-                    onClick={() => handleSwatchClick(col)}
-                  />
-                  <span className="text-xs md:text-sm text-white/60 mt-2">
-                    Accent {i + 1}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            {/* Pinned Row */}
-            {pinned.length > 0 && (
-              <div className="bg-transparent border border-white/40 text-white py-3 px-4 mb-8 rounded-md">
-                <h3 className="font-bold mb-2">Your Pinned Items</h3>
-                <div className="flex gap-3 overflow-x-auto scrollbar-hide">
-                  {pinned.map((id) => {
-                    const product = products.find((p) => p.id === id);
-                    if (!product) return null;
-                    return (
-                      <a
-                        key={id}
-                        href={product.affiliateLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="min-w-[120px] relative border border-white/20 rounded p-2 shrink-0"
-                      >
-                        <button
-                          onClick={(e) => {
-                            e.preventDefault();
-                            togglePin(id);
-                          }}
-                          className="absolute top-1 right-1 text-xs px-1 py-0.5 bg-black/50 rounded hover:bg-black/70"
-                        >
-                          <PinOff className="w-3 h-3" />
-                        </button>
-                        <img
-                          src={product.image}
-                          alt={product.description}
-                          className="h-20 w-auto object-cover mx-auto"
-                        />
-                        <p className="text-xs mt-2 text-center line-clamp-1">
-                          {getShortDescription(product.description || '')}
-                        </p>
-                      </a>
-                    );
-                  })}
-                </div>
               </div>
             )}
+            {/* Triadic */}
+            {triadicColors?.map((col, i) => (
+              <div key={col} className="flex flex-col items-center">
+                <div
+                  className={`w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(col)}`}
+                  style={{ backgroundColor: col }}
+                  onClick={() => handleSwatchClick(col)}
+                />
+                <span className="text-xs md:text-sm text-white/60 mt-2">
+                  Accent {i + 1}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
 
-            {/* Product Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {products.map((product) => {
-                const matchText =
-                  activeSearchColor && Number.isFinite(product.matchPercentage)
-                    ? `${product.matchPercentage}% match`
-                    : '—% match';
-                const isPinned = pinned.includes(product.id);
+        {/* D) Pinned Row (always shown if there are any pinned items) */}
+        {pinned.length > 0 && (
+          <div className="bg-transparent border border-white/40 text-white py-3 px-4 mb-8 rounded-md">
+            <h3 className="font-bold mb-2">Your Pinned Items</h3>
+            <div className="flex gap-3 overflow-x-auto scrollbar-hide">
+              {pinned.map((id) => {
+                const product = products.find((p) => p.id === id);
+                if (!product) return null;
                 return (
                   <a
-                    key={product.id}
+                    key={id}
                     href={product.affiliateLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block"
+                    className="min-w-[120px] relative border border-white/20 rounded p-2 shrink-0"
                   >
-                    <div
-                      className="
-                        group relative bg-white/5 rounded-xl overflow-hidden 
-                        hover:bg-white/10 transition-all duration-300 ease-out
-                      "
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        togglePin(id);
+                      }}
+                      className="absolute top-1 right-1 text-xs px-1 py-0.5 bg-black/50 rounded hover:bg-black/70"
                     >
-                      <button
-                        type="button"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          togglePin(product.id);
-                        }}
-                        className="absolute top-2 right-2 z-20 bg-black/40 text-white p-1 rounded hover:bg-black/60 transition"
-                        title={isPinned ? 'Unpin item' : 'Pin item'}
-                      >
-                        <Pin
-                          className={`w-5 h-5 ${isPinned ? 'fill-white text-yellow-300' : ''}`}
-                        />
-                      </button>
-                      <div className="aspect-square overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105">
-                        <img
-                          src={product.image}
-                          alt={product.description}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <div className="p-4">
-                        <div className="flex items-center gap-2">
-                          <div
-                            className="w-4 h-4 rounded-full"
-                            style={{ backgroundColor: product.dominantColor }}
-                          />
-                          {activeSearchColor ? (
-                            <>
-                              <div
-                                className="w-4 h-4 rounded-full"
-                                style={{ backgroundColor: activeSearchColor }}
-                              />
-                              <span className="text-xs text-white/50">
-                                {matchText}
-                              </span>
-                            </>
-                          ) : (
-                            <>
-                              <div className="w-4 h-4 rounded-full bg-white/10" />
-                              <span className="text-xs text-white/50">
-                                Ready to match your color
-                              </span>
-                            </>
-                          )}
-                        </div>
-                        {product.affiliateLink && (
-                          <div className="mt-2">
-                            <span className="text-sm text-blue-400 hover:text-blue-300">
-                              Shop on Amazon
-                            </span>
-                          </div>
-                        )}
-                      </div>
-                    </div>
+                      <PinOff className="w-3 h-3" />
+                    </button>
+                    <img
+                      src={product.image}
+                      alt={product.description}
+                      className="h-20 w-auto object-cover mx-auto"
+                    />
+                    <p className="text-xs mt-2 text-center line-clamp-1">
+                      {getShortDescription(product.description || '')}
+                    </p>
                   </a>
                 );
               })}
             </div>
-          </>
+          </div>
         )}
+
+        {/* E) PRODUCT GRID (always displayed if products are loaded) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {products.map((product) => {
+            const matchText =
+              activeSearchColor && Number.isFinite(product.matchPercentage)
+                ? `${product.matchPercentage}% match`
+                : '—% match';
+            const isPinned = pinned.includes(product.id);
+            return (
+              <a
+                key={product.id}
+                href={product.affiliateLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div
+                  className="
+                    group relative bg-white/5 rounded-xl overflow-hidden 
+                    hover:bg-white/10 transition-all duration-300 ease-out
+                  "
+                >
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      togglePin(product.id);
+                    }}
+                    className="absolute top-2 right-2 z-20 bg-black/40 text-white p-1 rounded hover:bg-black/60 transition"
+                    title={isPinned ? 'Unpin item' : 'Pin item'}
+                  >
+                    <Pin className={`w-5 h-5 ${isPinned ? 'fill-white text-yellow-300' : ''}`} />
+                  </button>
+                  <div className="aspect-square overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105">
+                    <img
+                      src={product.image}
+                      alt={product.description}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="flex items-center gap-2">
+                      <div
+                        className="w-4 h-4 rounded-full"
+                        style={{ backgroundColor: product.dominantColor }}
+                      />
+                      {activeSearchColor ? (
+                        <>
+                          <div
+                            className="w-4 h-4 rounded-full"
+                            style={{ backgroundColor: activeSearchColor }}
+                          />
+                          <span className="text-xs text-white/50">
+                            {matchText}
+                          </span>
+                        </>
+                      ) : (
+                        <>
+                          <div className="w-4 h-4 rounded-full bg-white/10" />
+                          <span className="text-xs text-white/50">
+                            Ready to match your color
+                          </span>
+                        </>
+                      )}
+                    </div>
+                    {product.affiliateLink && (
+                      <div className="mt-2">
+                        <span className="text-sm text-blue-400 hover:text-blue-300">
+                          Shop on Amazon
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </a>
+            );
+          })}
+        </div>
 
         {/* Infinite Scroll Sentinel */}
         <div ref={sentinelRef} className="mt-8 h-8 flex justify-center items-center">
