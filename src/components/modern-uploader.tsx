@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { Upload, ArrowRight, Pin, PinOff } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Upload, ArrowRight, Pin, PinOff, Palette } from 'lucide-react';
 
 /////////////////////////////////////////////////////////
-// 1) COLOR-EXTRACTION UTILITIES (unchanged)
+// 1) COLOR-EXTRACTION UTILITIES
 /////////////////////////////////////////////////////////
 declare const ColorThief: any;
 
@@ -35,25 +35,25 @@ function hslToHex(h: number, s: number, l: number) {
   let r: number, g: number, b: number;
 
   if (s === 0) {
-    r = g = b = l; // Achromatic
+    r = g = b = l;
   } else {
     const hue2rgb = (p: number, q: number, t: number) => {
       if (t < 0) t += 1;
       if (t > 1) t -= 1;
-      if (t < 1 / 6) return p + (q - p) * 6 * t;
-      if (t < 1 / 2) return q;
-      if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+      if (t < 1/6) return p + (q - p) * 6 * t;
+      if (t < 1/2) return q;
+      if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
       return p;
     };
-    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-    const p = 2 * l - q;
-    r = hue2rgb(p, q, h + 1 / 3);
+    const q = l < 0.5 ? l * (1 + s) : l + s - l*s;
+    const p = 2*l - q;
+    r = hue2rgb(p, q, h + 1/3);
     g = hue2rgb(p, q, h);
-    b = hue2rgb(p, q, h - 1 / 3);
+    b = hue2rgb(p, q, h - 1/3);
   }
   const toHex = (x: number) => {
     const hx = Math.round(x * 255).toString(16);
-    return hx.length === 1 ? '0' + hx : hx;
+    return hx.length === 1 ? '0'+hx : hx;
   };
   return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
 }
@@ -90,31 +90,21 @@ async function extractColor(file: File): Promise<string> {
 }
 
 /////////////////////////////////////////////////////////
-// 2) HERO IMAGE ROTATION
+// 2) HERO IMAGES (5 total)
 /////////////////////////////////////////////////////////
 const heroImages = [
-  // Original hero:
   "https://hips.hearstapps.com/hmg-prod/images/living-room-paint-colors-hbx040122inspoindex-012-copy-1655397674-653fda462b085.jpg?crop=0.752xw:1.00xh;0.120xw,0&resize=1120:*",
-
-  // Additional images user provided:
   "https://i.imgur.com/oH0sLxE.jpeg",
   "https://i.imgur.com/UzYfvqA.png",
+  "https://imgur.com/83d57027-21bd-4515-abd0-c7e3d724dc23",
+  "https://imgur.com/edc74bc2-7468-4c24-a88c-e1470a6188a2",
 ];
 
 /////////////////////////////////////////////////////////
 // 3) MAIN COMPONENT
 /////////////////////////////////////////////////////////
 export default function ModernUploader() {
-  // Your states remain the same
-  const [products, setProducts] = useState<any[]>([]);
-  const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
-  const [selectedColor, setSelectedColor] = useState<string | null>(null);
-  const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
-  const [triadicColors, setTriadicColors] = useState<[string, string] | null>(null);
-  const [activeColor, setActiveColor] = useState<string | null>(null);
-  const [hasUploaded, setHasUploaded] = useState(false);
-
-  // Pinned items (storing product IDs in localStorage)
+  // 3a) Pinned Items
   const [pinned, setPinned] = useState<number[]>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('pinnedProducts');
@@ -123,32 +113,122 @@ export default function ModernUploader() {
     return [];
   });
 
-  // Hero rotation index
+  // 3b) Color states
+  const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
+  const [selectedColor, setSelectedColor] = useState<string | null>(null);
+  const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
+  const [triadicColors, setTriadicColors] = useState<[string, string] | null>(null);
+  const [activeColor, setActiveColor] = useState<string | null>(null);
+  const [hasUploaded, setHasUploaded] = useState(false);
+
+  // 3c) Hero rotation
   const [currentHero, setCurrentHero] = useState(0);
 
-  // On mount, fetch products + start rotating hero images
-  useEffect(() => {
-    // initial fetch
-    const fetchInitialProducts = async () => {
-      try {
-        const res = await fetch('/api/products', { cache: 'no-store' });
-        setProducts(await res.json());
-      } catch (err) {
-        console.error('Initial fetch error:', err);
-      }
-    };
-    fetchInitialProducts();
+  // 3d) Manual color input (color wheel)
+  const [manualHex, setManualHex] = useState('#ffffff');
 
-    // interval for rotating hero images every 6s
+  // 3e) Infinite scroll pagination
+  const [products, setProducts] = useState<any[]>([]);
+  const [page, setPage] = useState(1);
+  const [limit] = useState(12);
+  const [hasMore, setHasMore] = useState(true);
+  const [isFetching, setIsFetching] = useState(false);
+
+  // 3f) Intersection observer ref
+  const sentinelRef = useRef<HTMLDivElement>(null);
+
+  /////////////////////////////////////////////////////////
+  // 4) On mount => hero rotation + initial fetch
+  /////////////////////////////////////////////////////////
+  useEffect(() => {
+    // rotate hero images every 6s
     const interval = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroImages.length);
     }, 6000);
 
+    // initial fetch if no color
+    fetchProducts(1, activeColor);
+
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   /////////////////////////////////////////////////////////
-  // PIN TOGGLE
+  // 5) Intersection observer => load next page
+  /////////////////////////////////////////////////////////
+  useEffect(() => {
+    if (!sentinelRef.current) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (!hasMore || isFetching) return;
+        const firstEntry = entries[0];
+        if (firstEntry.isIntersecting) {
+          setPage((prev) => prev + 1);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(sentinelRef.current);
+    return () => {
+      if (sentinelRef.current) observer.unobserve(sentinelRef.current);
+    };
+  }, [hasMore, isFetching]);
+
+  /////////////////////////////////////////////////////////
+  // 6) If page changes => fetch
+  /////////////////////////////////////////////////////////
+  useEffect(() => {
+    if (page === 1) return; // page=1 handled on mount
+    fetchProducts(page, activeColor);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [page]);
+
+  /////////////////////////////////////////////////////////
+  // 7) If active color changes => reset pagination
+  /////////////////////////////////////////////////////////
+  useEffect(() => {
+    if (!activeColor) return;
+    setProducts([]);
+    setPage(1);
+    setHasMore(true);
+    fetchProducts(1, activeColor);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeColor]);
+
+  /////////////////////////////////////////////////////////
+  // 8) fetchProducts => calls /api/products?color=&page=&limit=
+  /////////////////////////////////////////////////////////
+  async function fetchProducts(pageNum: number, color: string | null) {
+    try {
+      setIsFetching(true);
+      let url = `/api/products?page=${pageNum}&limit=${limit}`;
+      if (color) {
+        url += `&color=${encodeURIComponent(color)}`;
+      }
+      const res = await fetch(url, { cache: 'no-store' });
+      const data = await res.json();
+
+      if (pageNum === 1) {
+        setProducts(data);
+      } else {
+        setProducts((prev) => [...prev, ...data]);
+      }
+
+      if (data.length < limit) {
+        setHasMore(false);
+      }
+    } catch (error) {
+      console.error('Error fetching products:', error);
+      setHasMore(false);
+    } finally {
+      setIsFetching(false);
+    }
+  }
+
+  /////////////////////////////////////////////////////////
+  // 9) Toggle Pin
   /////////////////////////////////////////////////////////
   function togglePin(productId: number) {
     setPinned((prev) => {
@@ -164,9 +244,9 @@ export default function ModernUploader() {
   }
 
   /////////////////////////////////////////////////////////
-  // FILE UPLOAD => EXTRACT COLOR => FETCH PRODUCTS
+  // 10) Upload => Extract => set color => refetch
   /////////////////////////////////////////////////////////
-  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+  async function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
 
@@ -175,47 +255,41 @@ export default function ModernUploader() {
       setUploadedImageUrl(url);
 
       const color = await extractColor(file);
-      setSelectedColor(color);
-      setActiveColor(color);
-      setHasUploaded(true);
-
-      // complementary + triadic
-      const comp = getComplementaryColor(color);
-      setComplementaryColor(comp);
-
-      const [acc1, acc2] = getTriadicColors(color);
-      setTriadicColors([acc1, acc2]);
-
-      // fetch color-based products
-      setProducts([]);
-      const encoded = encodeURIComponent(color);
-      const res = await fetch(`/api/products?color=${encoded}`, { cache: 'no-store' });
-      setProducts(await res.json());
+      setManualColor(color);
     } catch (error) {
       console.error('Error processing file:', error);
     }
-  };
+  }
 
   /////////////////////////////////////////////////////////
-  // WHEN SWATCH CLICKED => REFETCH PRODUCTS
+  // 11) Manual color picking => set color => refetch
   /////////////////////////////////////////////////////////
-  const handleSwatchClick = async (color: string) => {
-    setActiveColor(color);
-    setProducts([]);
+  function handleManualColor(hex: string) {
+    setManualColor(hex);
+  }
 
-    try {
-      const encoded = encodeURIComponent(color);
-      const res = await fetch(`/api/products?color=${encoded}`, { cache: 'no-store' });
-      setProducts(await res.json());
-    } catch (err) {
-      console.error('Swatch fetch error:', err);
-    }
-  };
+  // Helper: do everything to set color, comps, triad, reset product list
+  function setManualColor(hex: string) {
+    setSelectedColor(hex);
+    setActiveColor(hex);
+    setHasUploaded(true);
+
+    // comps
+    const comp = getComplementaryColor(hex);
+    setComplementaryColor(comp);
+    const [acc1, acc2] = getTriadicColors(hex);
+    setTriadicColors([acc1, acc2]);
+  }
 
   /////////////////////////////////////////////////////////
-  // HELPER: Short snippet of product.description
+  // 12) Swatch clicked => set activeColor => triggers refetch
   /////////////////////////////////////////////////////////
-  function getShortDescription(desc: string): string {
+  function handleSwatchClick(color: string) {
+    setManualColor(color);
+  }
+
+  // For pinned row
+  function getShortDescription(desc: string) {
     if (!desc) return '';
     const words = desc.trim().split(/\s+/);
     const snippet = words.slice(0, 4).join(' ');
@@ -225,10 +299,7 @@ export default function ModernUploader() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
 
-      {/* 
-        4) ROTATING HERO SECTION 
-        We crossfade each heroImages[currentHero]
-      */}
+      {/*  A) ROTATING HERO SECTION */}
       <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
         {heroImages.map((imgSrc, i) => (
           <div
@@ -243,12 +314,10 @@ export default function ModernUploader() {
               backgroundSize: 'cover',
             }}
           >
-            {/* Dark overlay so text is visible */}
             <div className="absolute inset-0 bg-black/40" />
           </div>
         ))}
 
-        {/* Centered text + shimmering gradient */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-30 px-4">
           <h1
             className="
@@ -262,7 +331,6 @@ export default function ModernUploader() {
           >
             SHOP BY COLOR
           </h1>
-
           <p className="mt-2 text-xl md:text-2xl text-white font-light [text-shadow:0_2px_4px_rgba(0,0,0,0.6)]">
             Decorate Like a Pro
           </p>
@@ -270,68 +338,98 @@ export default function ModernUploader() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        
-        {/* 5) UPLOAD BOX (HIDDEN AFTER UPLOAD) */}
+        {/* B) CHOOSE COLOR AREA: Upload vs. Color Wheel */}
+        {/* We'll use a 2-column layout on md+ screens. */}
         {!hasUploaded && (
-          <div className="max-w-2xl mx-auto mb-16">
-            <label className="block w-full">
-              <div className="
-                group cursor-pointer border-2 border-dashed border-white/20 
-                rounded-xl p-8 text-center 
-                hover:border-white/30 
-                transition-transform duration-300 ease-out hover:scale-105
-              ">
-                <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            
+            {/* 1) LEFT: Upload Box */}
+            <div className="max-w-md mx-auto">
+              <label className="block w-full">
+                <div className="
+                  group cursor-pointer border-2 border-dashed border-white/20 
+                  rounded-xl p-8 text-center 
+                  hover:border-white/30 
+                  transition-transform duration-300 ease-out hover:scale-105
+                ">
+                  <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
+                  <h3 className="text-xl text-white/90 mb-2">
+                    Upload your color & discover matching furniture & decor
+                  </h3>
+                  <p className="text-white/60">
+                    (Works with paint chips, fabrics, or any surface photo)
+                  </p>
+                </div>
+                <input
+                  type="file"
+                  className="hidden"
+                  accept="image/*"
+                  onChange={handleFileUpload}
+                />
+              </label>
+            </div>
 
-                <h3 className="text-xl text-white/90 mb-2">
-                  Upload your color & discover matching furniture & decor
-                </h3>
-                <p className="text-white/60">
-                  (Works with paint chips, fabrics, or any surface photo)
-                </p>
+            {/* 2) RIGHT: Color Wheel */}
+            <div className="max-w-md mx-auto bg-white/10 border border-white/20 rounded-xl p-6 flex flex-col gap-4 items-center justify-center">
+              <div className="flex items-center gap-2 text-white/80">
+                <Palette className="w-6 h-6 text-white/50" />
+                <span className="font-semibold">Pick a color below:</span>
               </div>
+
               <input
-                type="file"
-                className="hidden"
-                accept="image/*"
-                onChange={handleFileUpload}
+                type="color"
+                value={manualHex}
+                onChange={(e) => setManualHex(e.target.value)}
+                className="h-14 w-14 cursor-pointer rounded-lg border-none shadow-md"
               />
-            </label>
+
+              <button
+                onClick={() => handleManualColor(manualHex)}
+                className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-md"
+              >
+                Use This Color
+              </button>
+              <p className="text-xs text-white/60 text-center">
+                Perfect if you already know a hex code or want to fine-tune by hand.
+              </p>
+            </div>
           </div>
         )}
 
-        {/* 6) SWATCHES ROW (IF USER UPLOADED A COLOR) */}
+        {/* C) SWATCHES ROW (only if user has color) */}
         {hasUploaded && selectedColor && (
           <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
-            {/* Uploaded Image Preview */}
-            <div className="flex flex-col items-center">
-              <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
-                {uploadedImageUrl && (
-                  <img
-                    src={uploadedImageUrl}
-                    alt="Uploaded Inspiration"
-                    className="w-full h-full object-cover"
+            {/* Uploaded image (if they did upload) */}
+            {uploadedImageUrl && (
+              <>
+                <div className="flex flex-col items-center">
+                  <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
+                    <img
+                      src={uploadedImageUrl}
+                      alt="Uploaded Inspiration"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <label
+                    htmlFor="changeColorInput"
+                    className="text-xs md:text-sm text-blue-400 hover:underline cursor-pointer mt-2"
+                  >
+                    Change color
+                  </label>
+                  <input
+                    id="changeColorInput"
+                    type="file"
+                    className="hidden"
+                    accept="image/*"
+                    onChange={handleFileUpload}
                   />
-                )}
-              </div>
-              <label
-                htmlFor="changeColorInput"
-                className="text-xs md:text-sm text-blue-400 hover:underline cursor-pointer mt-2"
-              >
-                Change color
-              </label>
-              <input
-                id="changeColorInput"
-                type="file"
-                className="hidden"
-                accept="image/*"
-                onChange={handleFileUpload}
-              />
-            </div>
+                </div>
 
-            <ArrowRight className="w-6 h-6 text-white" />
+                <ArrowRight className="w-6 h-6 text-white" />
+              </>
+            )}
 
-            {/* Primary Swatch */}
+            {/* Primary */}
             <div className="flex flex-col items-center">
               <div
                 className={`
@@ -344,12 +442,12 @@ export default function ModernUploader() {
               <span className="text-xs md:text-sm text-white/60 mt-2">Primary</span>
             </div>
 
-            {/* Complementary Swatch */}
+            {/* Complementary */}
             {complementaryColor && (
               <div className="flex flex-col items-center">
                 <div
                   className={`
-                    w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer 
+                    w-16 h-16 md:w-24 md:h-24 rounded-xl shadow-lg cursor-pointer
                     ${activeColor === complementaryColor ? 'ring-4 ring-white' : ''}
                   `}
                   style={{ backgroundColor: complementaryColor }}
@@ -359,7 +457,7 @@ export default function ModernUploader() {
               </div>
             )}
 
-            {/* Triadic (Accent) Swatches */}
+            {/* Triadic */}
             {triadicColors?.map((col, i) => (
               <div key={col} className="flex flex-col items-center">
                 <div
@@ -378,7 +476,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* 7) PINNED ROW (IF ANY PINS) */}
+        {/* D) PINNED ROW */}
         {pinned.length > 0 && (
           <div className="bg-transparent border border-white/40 text-white py-3 px-4 mb-8 rounded-md">
             <h3 className="font-bold mb-2">Your Pinned Items</h3>
@@ -387,9 +485,7 @@ export default function ModernUploader() {
                 const product = products.find((p) => p.id === id);
                 if (!product) return null;
 
-                // snippet from product.description
                 const snippet = getShortDescription(product.description || '');
-
                 return (
                   <div
                     key={id}
@@ -420,7 +516,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* 8) PRODUCTS GRID */}
+        {/* E) PRODUCTS GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => {
             const matchText = Number.isFinite(product.matchPercentage)
@@ -436,12 +532,14 @@ export default function ModernUploader() {
                 rel="noopener noreferrer"
                 className="block"
               >
-                <div className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300 ease-out">
-                  {/* Pin icon top-right */}
+                <div className="
+                  group relative bg-white/5 rounded-xl overflow-hidden 
+                  hover:bg-white/10 transition-all duration-300 ease-out
+                ">
                   <button
                     type="button"
                     onClick={(e) => {
-                      e.preventDefault(); // stop link nav
+                      e.preventDefault();
                       togglePin(product.id);
                     }}
                     className="absolute top-2 right-2 z-20 bg-black/40 text-white p-1 rounded hover:bg-black/60 transition"
@@ -452,15 +550,16 @@ export default function ModernUploader() {
                     />
                   </button>
 
-                  {/* Product Image */}
-                  <div className="aspect-square overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105">
+                  <div className="
+                    aspect-square overflow-hidden 
+                    transition-transform duration-300 ease-out group-hover:scale-105
+                  ">
                     <img
                       src={product.image}
                       alt={product.description}
                       className="w-full h-full object-cover"
                     />
                   </div>
-
                   <div className="p-4">
                     <div className="flex items-center gap-2">
                       <div
@@ -496,6 +595,20 @@ export default function ModernUploader() {
               </a>
             );
           })}
+        </div>
+
+        {/* F) INFINITE SCROLL SENTINEL */}
+        <div ref={sentinelRef} className="mt-8 h-8 flex justify-center items-center">
+          {isFetching && hasMore && (
+            <div className="text-sm text-white/60 animate-pulse">
+              Loading more...
+            </div>
+          )}
+          {!hasMore && (
+            <div className="text-sm text-white/50">
+              ~ End of results ~
+            </div>
+          )}
         </div>
       </div>
     </div>
