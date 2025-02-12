@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Upload, ArrowRight, Pin } from 'lucide-react';
+import { Upload, ArrowRight, Pin, PinOff } from 'lucide-react';
 
 declare const ColorThief: any;
 
@@ -93,11 +93,7 @@ async function extractColor(file: File): Promise<string> {
     img.onload = () => {
       try {
         const [r, g, b] = colorThief.getColor(img);
-        resolve(
-          `#${r.toString(16).padStart(2, '0')}${g
-            .toString(16)
-            .padStart(2, '0')}${b.toString(16).padStart(2, '0')}`
-        );
+        resolve(`#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`);
       } catch {
         resolve('#000000');
       }
@@ -118,7 +114,7 @@ export default function ModernUploader() {
   const [activeColor, setActiveColor] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
 
-  // Pinned items (storing product IDs)
+  // Store pinned product IDs in localStorage
   const [pinned, setPinned] = useState<number[]>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('pinnedProducts');
@@ -140,15 +136,13 @@ export default function ModernUploader() {
     fetchInitialProducts();
   }, []);
 
-  // Toggle pin/unpin
+  // Toggle Pin/Unpin
   function togglePin(productId: number) {
     setPinned((prev) => {
       let updated: number[];
       if (prev.includes(productId)) {
-        // unpin
         updated = prev.filter((id) => id !== productId);
       } else {
-        // pin
         updated = [...prev, productId];
       }
       localStorage.setItem('pinnedProducts', JSON.stringify(updated));
@@ -156,7 +150,7 @@ export default function ModernUploader() {
     });
   }
 
-  // Handle file upload
+  // File upload + color extraction
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -176,7 +170,7 @@ export default function ModernUploader() {
       const [acc1, acc2] = getTriadicColors(color);
       setTriadicColors([acc1, acc2]);
 
-      // fetch matching products
+      // fetch color-based products
       setProducts([]);
       const encoded = encodeURIComponent(color);
       const res = await fetch(`/api/products?color=${encoded}`, { cache: 'no-store' });
@@ -186,7 +180,7 @@ export default function ModernUploader() {
     }
   };
 
-  // Clicking a swatch refetches for that color
+  // Clicking a swatch re-fetches matching products
   const handleSwatchClick = async (color: string) => {
     setActiveColor(color);
     setProducts([]);
@@ -199,11 +193,10 @@ export default function ModernUploader() {
     }
   };
 
-  // Helper: Show first few words of the product title
+  // Show only the first few words of a product title
   function getShortTitle(title: string): string {
     if (!title) return '';
-    const words = title.split(' ');
-    // e.g., first 4 words
+    const words = title.trim().split(/\s+/);
     const snippet = words.slice(0, 4).join(' ');
     return snippet.length < title.length ? snippet + '...' : snippet;
   }
@@ -211,14 +204,13 @@ export default function ModernUploader() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
 
-      {/* Hero Banner */}
+      {/* --- Hero Banner --- */}
       <div
         className="relative h-[38vh] md:h-[45vh] bg-cover bg-center mb-12"
         style={{
           backgroundImage:
             "url('https://hips.hearstapps.com/hmg-prod/images/living-room-paint-colors-hbx040122inspoindex-012-copy-1655397674-653fda462b085.jpg?crop=0.752xw:1.00xh;0.120xw,0&resize=1120:*')",
           backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
         }}
       >
@@ -234,7 +226,7 @@ export default function ModernUploader() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* Upload Box */}
+        {/* --- Upload Box (hidden after upload) --- */}
         {!hasUploaded && (
           <div className="max-w-2xl mx-auto mb-16">
             <label className="block w-full">
@@ -259,9 +251,10 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Swatches row */}
+        {/* --- Swatches row (only if user has selected a color) --- */}
         {hasUploaded && selectedColor && (
           <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
+            {/* Uploaded Image */}
             <div className="flex flex-col items-center">
               <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
                 {uploadedImageUrl && (
@@ -328,16 +321,15 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Pinned Row if we have pinned items */}
+        {/* --- Pinned Row if we have pinned items --- */}
         {pinned.length > 0 && (
-          <div className="bg-white/10 border border-pink-400 text-white py-3 px-4 mb-8 rounded-md backdrop-blur-sm">
+          <div className="bg-transparent border border-white/40 text-white py-3 px-4 mb-8 rounded-md">
             <h3 className="font-bold mb-2">Your Pinned Items</h3>
             <div className="flex gap-3 overflow-x-auto scrollbar-hide">
               {pinned.map((id) => {
                 const product = products.find((p) => p.id === id);
                 if (!product) return null;
 
-                // Just show first few words
                 const shortTitle = getShortTitle(product.title);
 
                 return (
@@ -347,9 +339,11 @@ export default function ModernUploader() {
                   >
                     <button
                       onClick={() => togglePin(id)}
-                      className="absolute top-1 right-1 text-xs bg-white/10 px-1 py-0.5 rounded hover:bg-white/20"
+                      className="absolute top-1 right-1 text-xs px-1 py-0.5 
+                                 bg-black/50 rounded hover:bg-black/70 flex items-center gap-1"
                     >
-                      Unpin
+                      <PinOff className="w-3 h-3" />
+                      <span className="hidden sm:inline">Unpin</span>
                     </button>
                     <img
                       src={product.image}
@@ -364,13 +358,12 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Product Grid */}
+        {/* --- Products Grid --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => {
             const matchText = Number.isFinite(product.matchPercentage)
               ? `${product.matchPercentage}% match`
               : '—% match';
-
             const isPinned = pinned.includes(product.id);
 
             return (
@@ -444,5 +437,4 @@ export default function ModernUploader() {
     </div>
   );
 }
-
 
