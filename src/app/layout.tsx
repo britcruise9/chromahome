@@ -59,7 +59,7 @@ export default function RootLayout({
                 }
               };
               gtag('event', 'conversion', {
-                'send_to': 'AW-16873561102/JehDCOr41Z0aEI64-O0-',
+                'send_to': 'AW-16873561102/RSrFCLrK550aEI64-O0-',
                 'value': 1.0,
                 'currency': 'CAD',
                 'event_callback': callback
