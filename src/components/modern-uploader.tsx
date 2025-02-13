@@ -79,6 +79,7 @@ function getComplementaryColor(hex: string) {
   const { h, s, l } = hexToHSL(hex);
   return hslToHex((h + 180) % 360, s, l);
 }
+
 function getTriadicColors(hex: string): [string, string] {
   const { h, s, l } = hexToHSL(hex);
   return [
@@ -122,7 +123,9 @@ function calculateColorMatch(color1: string, color2: string): number {
     const dist = Math.sqrt(
       3 * (r2 - r1) ** 2 + 4 * (g2 - g1) ** 2 + 2 * (b2 - b1) ** 2
     );
-    const max = Math.sqrt(3 * 255 ** 2 + 4 * 255 ** 2 + 2 * 255 ** 2);
+    const max = Math.sqrt(
+      3 * 255 ** 2 + 4 * 255 ** 2 + 2 * 255 ** 2
+    );
     return Math.round((1 - dist / max) * 100);
   } catch {
     return 0;
@@ -397,6 +400,7 @@ export default function ModernUploader() {
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 pb-20">
+        {/* If no color chosen/uploaded, show upload & pick-color UI */}
         {!hasUploaded && !selectedColor && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             {/* Upload Box */}
@@ -411,11 +415,11 @@ export default function ModernUploader() {
                     (Paint chips, fabrics, or any surface photo)
                   </p>
                 </div>
+                {/* Removed capture="environment" so iOS can choose library or camera */}
                 <input
                   type="file"
                   className="hidden"
                   accept="image/*"
-                  capture="environment"
                   onChange={handleFileUpload}
                 />
               </label>
@@ -638,11 +642,11 @@ export default function ModernUploader() {
                     </button>
                     <label className="bg-white/90 hover:bg-white p-1 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer">
                       <Upload className="w-4 h-4 text-gray-800" />
+                      {/* Also remove capture="environment" here */}
                       <input
                         type="file"
                         className="hidden"
                         accept="image/*"
-                        capture="environment"
                         onChange={handleFileUpload}
                       />
                     </label>
@@ -792,3 +796,4 @@ export default function ModernUploader() {
     </div>
   );
 }
+
