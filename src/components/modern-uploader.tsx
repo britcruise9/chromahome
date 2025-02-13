@@ -336,7 +336,6 @@ export default function ModernUploader() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
       {/* HERO SECTION */}
       <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
-        {/* Dark overlay for initial load */}
         <div
           className={`
             absolute inset-0 bg-slate-900
@@ -344,8 +343,6 @@ export default function ModernUploader() {
             transition-opacity duration-500 z-30
           `}
         />
-
-        {/* Hero Images */}
         {heroImages.map((imgSrc, i) => (
           <div
             key={i}
@@ -362,8 +359,6 @@ export default function ModernUploader() {
             <div className="absolute inset-0 bg-black/40" />
           </div>
         ))}
-
-        {/* Hero Text */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-40 px-4">
           <h1
             className="
@@ -387,7 +382,6 @@ export default function ModernUploader() {
         {/* UPLOAD/COLOR PICKER */}
         {!hasUploaded && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-            {/* Upload Box */}
             <div className={boxStyle}>
               <label className="block w-full">
                 <div
@@ -413,8 +407,6 @@ export default function ModernUploader() {
                 />
               </label>
             </div>
-
-            {/* Color Picker Box */}
             <div className={boxStyle}>
               <div className="flex flex-col items-center gap-4">
                 <div className="flex items-center gap-2 text-white/80 mb-1">
@@ -458,15 +450,20 @@ export default function ModernUploader() {
             ref={pinnedContainerRef}
             className={`
               bg-transparent border-b border-white/20 text-white py-2 px-4 mb-8
-              origin-top transition-all duration-500 ease-out group/vision
-              ${isPinnedFloating ? 
-                'fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-900/90 border-none shadow-lg hover:pt-8 hover:pb-12 hover:scale-[1.33] hover:bg-slate-900/95' 
-                : 'hover:scale-[1.33] hover:pt-8 hover:pb-12 hover:bg-slate-900/95 hover:rounded-xl hover:border-none hover:shadow-2xl'}
+              origin-top transition-all duration-500 ease-out
+              ${isPinnedFloating
+                ? 'group/vision fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-900/90 border-none shadow-lg hover:pt-8 hover:pb-12 hover:scale-[1.33] hover:translate-x-8 hover:bg-slate-900/95'
+                : ''
+              }
             `}
           >
             <div className="flex items-center justify-between mb-1.5 px-4">
-              <h3 className="text-sm font-medium text-white/80 group-hover/vision:text-lg group-hover/vision:text-white transition-all duration-500">Vision Board</h3>
-              <span className="text-xs text-white/50 group-hover/vision:text-sm transition-all duration-500">{pinned.length} items</span>
+              <h3 className="text-sm font-medium text-white/80 transition-all duration-500 group-hover/vision:text-lg group-hover/vision:text-white">
+                Vision Board
+              </h3>
+              <span className="text-xs text-white/50 transition-all duration-500 group-hover/vision:text-sm">
+                {pinned.length} items
+              </span>
             </div>
             <div className="flex gap-3 overflow-x-auto scrollbar-hide py-1 px-8 transition-all duration-500">
               {pinned.map((id) => {
@@ -489,7 +486,7 @@ export default function ModernUploader() {
                     >
                       <PinOff className="w-3 h-3" />
                     </button>
-                    <div className="h-[100px] w-[100px] overflow-hidden group-hover/vision:h-[133px] group-hover/vision:w-[133px] transition-all duration-500">
+                    <div className="h-[100px] w-[100px] overflow-hidden transition-all duration-500 group-hover/vision:h-[133px] group-hover/vision:w-[133px]">
                       <img
                         src={product.image}
                         alt={product.description}
@@ -497,7 +494,7 @@ export default function ModernUploader() {
                       />
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
-                      <p className="text-[10px] text-white/90 line-clamp-1 group-hover/vision:text-sm transition-all duration-500">
+                      <p className="text-[10px] text-white/90 line-clamp-1 transition-all duration-500 group-hover/vision:text-sm">
                         {getShortDescription(product.description || '')}
                       </p>
                     </div>
@@ -531,7 +528,6 @@ export default function ModernUploader() {
                   {activeEditingColor ? 'Modify Color' : 'Choose Color'}
                 </h3>
                 <div className="flex gap-2">
-                  {/* Quick color presets */}
                   <button
                     onClick={() => setColorWheelHsl({ h: 0, s: 0, l: 0 })}
                     className="w-6 h-6 rounded-full bg-black border border-gray-300"
@@ -566,7 +562,6 @@ export default function ModernUploader() {
                   onClick={() => {
                     const newColor = hslToHex(colorWheelHsl.h, colorWheelHsl.s, colorWheelHsl.l);
                     if (activeEditingColor) {
-                      // Handle modifying existing colors
                       if (activeEditingColor === 'primary') {
                         setSelectedColor(newColor);
                         setComplementaryColor(getComplementaryColor(newColor));
@@ -583,7 +578,6 @@ export default function ModernUploader() {
                       }
                       setActiveSearchColor(newColor);
                     } else {
-                      // Handle new color selection
                       handleManualColor(newColor);
                     }
                     setShowWheel(false);
@@ -612,7 +606,6 @@ export default function ModernUploader() {
                     />
                   </div>
                   <div className="absolute -top-2 -right-2 flex gap-1">
-                    {/* Edit extracted color */}
                     <button
                       onClick={() => {
                         const hsl = hexToHSL(selectedColor || '#000000');
@@ -624,7 +617,6 @@ export default function ModernUploader() {
                     >
                       <Settings className="w-4 h-4" />
                     </button>
-                    {/* Upload new image */}
                     <label className="bg-white/90 hover:bg-white text-gray-800 p-1 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer">
                       <Upload className="w-4 h-4" />
                       <input
@@ -641,7 +633,6 @@ export default function ModernUploader() {
             )}
 
             <div className="flex items-center justify-center gap-6">
-              {/* Back to Start Button */}
               <button
                 onClick={resetAll}
                 className="absolute top-4 left-4 text-white/60 hover:text-white/90 flex items-center gap-2"
@@ -715,7 +706,6 @@ export default function ModernUploader() {
                       onClick={() => {
                         const hsl = hexToHSL(col);
                         setColorWheelHsl(hsl);
-                        // Use type-safe values instead of template literals
                         setActiveEditingColor(i === 0 ? 'accent1' : 'accent2');
                         setShowWheel(true);
                       }}
@@ -760,11 +750,7 @@ export default function ModernUploader() {
                     className="absolute top-2 right-2 z-20 bg-black/40 text-white p-1 rounded hover:bg-black/60 transition"
                     title={isPinned ? 'Unpin item' : 'Pin item'}
                   >
-                    <Pin
-                      className={`w-5 h-5 ${
-                        isPinned ? 'fill-white text-yellow-300' : ''
-                      }`}
-                    />
+                    <Pin className={`w-5 h-5 ${isPinned ? 'fill-white text-yellow-300' : ''}`} />
                   </button>
                   <div className="aspect-square overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105">
                     <img
