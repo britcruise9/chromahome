@@ -361,6 +361,8 @@ export default function ModernUploader() {
     setProducts([]);
     setPage(1);
     setHasMore(true);
+    // Reset color wheel to initial state
+    setColorWheelHsl({ h: 0, s: 50, l: 50 });
     loadProducts(1, null);
   }
 
@@ -708,5 +710,4 @@ export default function ModernUploader() {
     </div>
   );
 }
-
 
