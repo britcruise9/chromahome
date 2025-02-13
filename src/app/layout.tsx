@@ -2,7 +2,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Script from "next/script";
-import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,11 +11,11 @@ export const metadata = {
     default: "SHOP BY COLOR - Find Perfect Home Decor in Your Color",
     template: "%s | SHOP BY COLOR"
   },
-  description: "Find matching furniture & decor in your exact color. Upload a paint chip or choose a color to discover perfectly coordinated pieces.",
+  description: "Upload any paint color and instantly find matching furniture & decor. Find the perfect pieces in your exact color for any room.",
   keywords: "shop by color, color match furniture, room color matching, color coordinated decor, paint color matching furniture",
   openGraph: {
     title: "SHOP BY COLOR - Find Perfect Home Decor in Your Color",
-    description: "Find matching furniture & decor in your exact color",
+    description: "Upload any paint color to find perfectly matching furniture & decor",
     url: 'https://shopbycolor.com',
     siteName: 'SHOP BY COLOR',
     type: 'website',
@@ -36,11 +35,22 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="canonical" href="https://shopbycolor.com" />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16873561102"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-tracking" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16873561102');
+          `}
+        </Script>
       </head>
       <body className={inter.className}>
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js" />
         {children}
-        <Analytics />
       </body>
     </html>
   );
