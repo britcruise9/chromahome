@@ -151,9 +151,15 @@ export default function ModernUploader() {
   const [isPinnedFloating, setIsPinnedFloating] = useState(false);
 
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
-  const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
-  const [triadicColors, setTriadicColors] = useState<[string, string] | null>(null);
-  const [activeSearchColor, setActiveSearchColor] = useState<string | null>(null);
+  const [complementaryColor, setComplementaryColor] = useState<string | null>(
+    null
+  );
+  const [triadicColors, setTriadicColors] = useState<[string, string] | null>(
+    null
+  );
+  const [activeSearchColor, setActiveSearchColor] = useState<string | null>(
+    null
+  );
 
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
@@ -439,7 +445,7 @@ export default function ModernUploader() {
               bg-transparent border-b border-white/20 text-white py-2 px-4 mb-8
               ${
                 isPinnedFloating
-                  ? "origin-top-left group/vision fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-slate-900/90 border-none shadow-lg md:hover:pt-8 md:hover:pb-12 md:hover:scale-[1.33] md:hover:bg-slate-900/95"
+                  ? "origin-top-left group/vision fixed left-0 right-0 z-40 top-16 md:top-4 backdrop-blur-md bg-slate-900/90 border-none shadow-lg md:hover:pt-8 md:hover:pb-12 md:hover:scale-[1.33] md:hover:bg-slate-900/95"
                   : "origin-top"
               }
               transition-all duration-500 ease-out
