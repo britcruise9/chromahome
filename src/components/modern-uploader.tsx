@@ -458,17 +458,17 @@ export default function ModernUploader() {
             ref={pinnedContainerRef}
             className={`
               bg-transparent border-b border-white/20 text-white py-2 px-4 mb-8
-              transition-all duration-300 hover:scale-[1.02] hover:border-white/40
+              origin-top transition-all duration-500 ease-out group/vision
               ${isPinnedFloating ? 
-                'fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-900/90 border-none shadow-lg' 
-                : ''}
+                'fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-900/90 border-none shadow-lg hover:pt-8 hover:pb-12 hover:scale-[1.33] hover:bg-slate-900/95' 
+                : 'hover:scale-[1.33] hover:pt-8 hover:pb-12 hover:bg-slate-900/95 hover:rounded-xl hover:border-none hover:shadow-2xl'}
             `}
           >
-            <div className="flex items-center justify-between mb-1.5">
-              <h3 className="text-sm font-medium text-white/80">Vision Board</h3>
-              <span className="text-xs text-white/50">{pinned.length} items</span>
+            <div className="flex items-center justify-between mb-1.5 px-4">
+              <h3 className="text-sm font-medium text-white/80 group-hover/vision:text-lg group-hover/vision:text-white transition-all duration-500">Vision Board</h3>
+              <span className="text-xs text-white/50 group-hover/vision:text-sm transition-all duration-500">{pinned.length} items</span>
             </div>
-            <div className="flex gap-2 overflow-x-auto scrollbar-hide py-1">
+            <div className="flex gap-3 overflow-x-auto scrollbar-hide py-1 px-8 transition-all duration-500">
               {pinned.map((id) => {
                 const product = allProducts.find((p) => p.id === id);
                 if (!product) return null;
@@ -478,26 +478,26 @@ export default function ModernUploader() {
                     href={product.affiliateLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="min-w-[100px] relative border border-white/20 rounded-lg overflow-hidden shrink-0 group hover:border-white/40 transition-colors"
+                    className="min-w-[100px] relative border border-white/20 rounded-lg overflow-hidden shrink-0 group/item transition-all duration-500 group-hover/vision:hover:scale-110"
                   >
                     <button
                       onClick={(e) => {
                         e.preventDefault();
                         togglePin(id);
                       }}
-                      className="absolute top-2 right-2 z-10 text-xs p-1.5 bg-black/50 rounded-full hover:bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity"
+                      className="absolute top-2 right-2 z-10 text-xs p-1.5 bg-black/50 rounded-full hover:bg-black/70 opacity-0 group-hover/item:opacity-100 transition-opacity"
                     >
                       <PinOff className="w-3 h-3" />
                     </button>
-                    <div className="h-[100px] w-[100px] overflow-hidden">
+                    <div className="h-[100px] w-[100px] overflow-hidden group-hover/vision:h-[133px] group-hover/vision:w-[133px] transition-all duration-500">
                       <img
                         src={product.image}
                         alt={product.description}
-                        className="w-full h-full object-cover scale-150 transform-gpu group-hover:scale-125 transition-transform duration-500"
+                        className="w-full h-full object-cover scale-150 transform-gpu group-hover/item:scale-125 transition-transform duration-500"
                       />
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
-                      <p className="text-[10px] text-white/90 line-clamp-1">
+                      <p className="text-[10px] text-white/90 line-clamp-1 group-hover/vision:text-sm transition-all duration-500">
                         {getShortDescription(product.description || '')}
                       </p>
                     </div>
