@@ -186,13 +186,11 @@ export default function ModernUploader() {
   // "Floating" vision board if scrolled beyond pinnedTrigger
   const [isPinnedFloating, setIsPinnedFloating] = useState(false);
 
-  // On scroll, hide back button if scrolled down
+  // On scroll, hide back button if scrolled > ~80px
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      // Hide back if scroll > ~80px
-      setShowBack(scrollY < 80);
-
+      setShowBack(scrollY < 80); // small threshold
       // Vision Board
       if (pinnedTriggerRef.current && pinnedContainerRef.current) {
         const triggerTop = pinnedTriggerRef.current.getBoundingClientRect().top;
@@ -354,15 +352,15 @@ export default function ModernUploader() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
-      {/* Back button only if (color chosen) && scrolled < 80px */}
+      {/* Back button only if color chosen and near top */}
       {(hasUploaded || selectedColor) && showBack && (
         <div className="fixed top-4 left-4 z-50">
           <button
             onClick={resetAll}
-            className="text-white flex items-center gap-1 px-3 py-2 bg-black/40 rounded hover:bg-black/60"
+            className="text-white flex items-center gap-1 px-2 py-1 bg-black/40 rounded hover:bg-black/60 text-sm"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span className="text-sm">Back</span>
+            Back
           </button>
         </div>
       )}
@@ -488,7 +486,6 @@ export default function ModernUploader() {
               </div>
             </div>
 
-            {/* If not collapsed, show pinned items */}
             {!visionCollapsed && (
               <div className="flex gap-3 overflow-x-auto scrollbar-hide py-1 px-8 transition-all duration-500">
                 {pinned.map((id) => {
@@ -600,7 +597,6 @@ export default function ModernUploader() {
                         }
                       }
                     } else {
-                      // picking fresh color
                       handleManualColor(newCol);
                     }
                     setShowWheel(false);
@@ -658,24 +654,17 @@ export default function ModernUploader() {
 
             <div className="flex items-center justify-center gap-6">
               {/* Primary */}
-              <div
-                className={`relative group cursor-pointer ${
-                  selectedColor === activeSearchColor ? "ring-2 ring-white" : ""
-                }`}
-                onClick={() => handleSwatchClick(selectedColor!)}
-              >
+              <div className="relative group cursor-pointer">
                 <div
-                  className="w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg"
+                  onClick={() => handleSwatchClick(selectedColor!)}
+                  className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
+                    selectedColor === activeSearchColor ? "ring-2 ring-white" : ""
+                  }`}
                   style={{ backgroundColor: selectedColor }}
                 />
-                {/* Hide gear on mobile, show on desktop hover */}
+                {/* Gear hidden on mobile, visible on desktop hover */}
                 <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setColorWheelHsl(hexToHSL(selectedColor || "#000000"));
-                    setActiveEditingColor("primary");
-                    setShowWheel(true);
-                  }}
+                  onClick={(e) => handleGearClick(e, selectedColor!, "primary")}
                   className="hidden sm:group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
                 >
                   <Settings className="w-4 h-4 text-white" />
@@ -687,25 +676,20 @@ export default function ModernUploader() {
 
               {/* Complement */}
               {complementaryColor && (
-                <div
-                  className={`relative group cursor-pointer ${
-                    complementaryColor === activeSearchColor
-                      ? "ring-2 ring-white"
-                      : ""
-                  }`}
-                  onClick={() => handleSwatchClick(complementaryColor)}
-                >
+                <div className="relative group cursor-pointer">
                   <div
-                    className="w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg"
+                    onClick={() => handleSwatchClick(complementaryColor)}
+                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
+                      complementaryColor === activeSearchColor
+                        ? "ring-2 ring-white"
+                        : ""
+                    }`}
                     style={{ backgroundColor: complementaryColor }}
                   />
                   <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setColorWheelHsl(hexToHSL(complementaryColor));
-                      setActiveEditingColor("complement");
-                      setShowWheel(true);
-                    }}
+                    onClick={(e) =>
+                      handleGearClick(e, complementaryColor, "complement")
+                    }
                     className="hidden sm:group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
                   >
                     <Settings className="w-4 h-4 text-white" />
@@ -718,24 +702,18 @@ export default function ModernUploader() {
 
               {/* Triadic */}
               {triadicColors?.map((col, i) => (
-                <div
-                  key={col}
-                  className={`relative group cursor-pointer ${
-                    col === activeSearchColor ? "ring-2 ring-white" : ""
-                  }`}
-                  onClick={() => handleSwatchClick(col)}
-                >
+                <div key={col} className="relative group cursor-pointer">
                   <div
-                    className="w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg"
+                    onClick={() => handleSwatchClick(col)}
+                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
+                      col === activeSearchColor ? "ring-2 ring-white" : ""
+                    }`}
                     style={{ backgroundColor: col }}
                   />
                   <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setColorWheelHsl(hexToHSL(col));
-                      setActiveEditingColor(i === 0 ? "accent1" : "accent2");
-                      setShowWheel(true);
-                    }}
+                    onClick={(e) =>
+                      handleGearClick(e, col, i === 0 ? "accent1" : "accent2")
+                    }
                     className="hidden sm:group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
                   >
                     <Settings className="w-4 h-4 text-white" />
@@ -814,5 +792,3 @@ export default function ModernUploader() {
     </div>
   );
 }
-
-
