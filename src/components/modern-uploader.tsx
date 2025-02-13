@@ -16,6 +16,8 @@ import { HslColorPicker } from "react-colorful";
 import { amazonProducts } from "../lib/amazonProducts";
 
 declare const ColorThief: any;
+declare const gtag_report_conversion: (url: string) => boolean;
+
 
 // ----- Color Utils -----
 function hexToHSL(hex: string) {
