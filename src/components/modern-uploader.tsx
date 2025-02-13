@@ -142,7 +142,6 @@ export default function ModernUploader() {
     }
     return [];
   });
-
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isPinnedFloating, setIsPinnedFloating] = useState(false);
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
@@ -175,13 +174,11 @@ export default function ModernUploader() {
     const handleScroll = () => {
       const position = window.scrollY;
       setScrollPosition(position);
-
       if (pinnedTriggerRef.current && pinnedContainerRef.current) {
         const triggerPosition = pinnedTriggerRef.current.getBoundingClientRect().top;
         setIsPinnedFloating(triggerPosition < 0);
       }
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -233,12 +230,18 @@ export default function ModernUploader() {
     loadProducts(1, activeSearchColor);
   }, [activeSearchColor, allProducts]);
 
+  // Calculate swatches from pinned products
+  const pinnedColors = allProducts
+    .filter((product) => pinned.includes(product.id) && product.dominantColor)
+    .map((product) => product.dominantColor);
+  const uniquePinnedColors = Array.from(new Set(pinnedColors));
+  const displayPinnedColors = uniquePinnedColors.slice(0, 3);
+
   // Functions
   function loadProducts(pageNum: number, color: string | null, data?: any[]) {
     setIsFetching(true);
     const productsData = data || allProducts;
     let sortedProducts = [];
-
     if (color) {
       sortedProducts = productsData.map((product) => {
         const prodColor = (product.dominantColor || '#000000').trim();
@@ -249,21 +252,17 @@ export default function ModernUploader() {
     } else {
       sortedProducts = productsData;
     }
-
     const pageSize = pageNum === 1 ? 50 : 12;
     const startIndex = (pageNum - 1) * pageSize;
     const newBatch = sortedProducts.slice(startIndex, startIndex + pageSize);
-
     if (pageNum === 1) {
       setProducts(newBatch);
     } else {
       setProducts((prev) => [...prev, ...newBatch]);
     }
-
     if (newBatch.length < pageSize) {
       setHasMore(false);
     }
-
     setIsFetching(false);
   }
 
@@ -305,17 +304,6 @@ export default function ModernUploader() {
       localStorage.setItem('pinnedProducts', JSON.stringify(updated));
       return updated;
     });
-  }
-
-  function getShortDescription(desc: string) {
-    if (!desc) return '';
-    const words = desc.trim().split(/\s+/);
-    const snippet = words.slice(0, 4).join(' ');
-    return snippet.length < desc.length ? snippet + '...' : snippet;
-  }
-
-  function getSwatchRingStyle(testColor: string | null) {
-    return activeSearchColor === testColor ? 'ring-4 ring-white' : '';
   }
 
   function resetAll() {
@@ -450,17 +438,23 @@ export default function ModernUploader() {
             ref={pinnedContainerRef}
             className={`
               bg-transparent border-b border-white/20 text-white py-2 px-4 mb-8
-              origin-top transition-all duration-500 ease-out
-              ${isPinnedFloating
-                ? 'group/vision fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-900/90 border-none shadow-lg hover:pt-8 hover:pb-12 hover:scale-[1.33] hover:translate-x-8 hover:bg-slate-900/95'
-                : ''
-              }
+              ${isPinnedFloating ? 'origin-top-left group/vision fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-900/90 border-none shadow-lg hover:pt-8 hover:pb-12 hover:scale-[1.33] hover:bg-slate-900/95' : 'origin-top'}
+              transition-all duration-500 ease-out
             `}
           >
             <div className="flex items-center justify-between mb-1.5 px-4">
-              <h3 className="text-sm font-medium text-white/80 transition-all duration-500 group-hover/vision:text-lg group-hover/vision:text-white">
-                Vision Board
-              </h3>
+              <div className="flex items-center gap-2">
+                <h3 className="text-sm font-medium text-white/80 transition-all duration-500 group-hover/vision:text-lg group-hover/vision:text-white">
+                  Vision Board
+                </h3>
+                {displayPinnedColors.map((color, idx) => (
+                  <div
+                    key={idx}
+                    className="w-4 h-4 rounded-full border border-white"
+                    style={{ backgroundColor: color }}
+                  />
+                ))}
+              </div>
               <span className="text-xs text-white/50 transition-all duration-500 group-hover/vision:text-sm">
                 {pinned.length} items
               </span>
@@ -492,11 +486,6 @@ export default function ModernUploader() {
                         alt={product.description}
                         className="w-full h-full object-cover scale-150 transform-gpu group-hover/item:scale-125 transition-transform duration-500"
                       />
-                    </div>
-                    <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
-                      <p className="text-[10px] text-white/90 line-clamp-1 transition-all duration-500 group-hover/vision:text-sm">
-                        {getShortDescription(product.description || '')}
-                      </p>
                     </div>
                   </a>
                 );
@@ -645,7 +634,7 @@ export default function ModernUploader() {
               <div className="flex flex-col items-center">
                 <div className="relative group">
                   <div
-                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(selectedColor)}`}
+                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer`}
                     style={{ backgroundColor: selectedColor }}
                     onClick={() => handleSwatchClick(selectedColor)}
                   />
@@ -671,7 +660,7 @@ export default function ModernUploader() {
                 <div className="flex flex-col items-center">
                   <div className="relative group">
                     <div
-                      className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(complementaryColor)}`}
+                      className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer`}
                       style={{ backgroundColor: complementaryColor }}
                       onClick={() => handleSwatchClick(complementaryColor)}
                     />
@@ -698,7 +687,7 @@ export default function ModernUploader() {
                 <div key={col} className="flex flex-col items-center">
                   <div className="relative group">
                     <div
-                      className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(col)}`}
+                      className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer`}
                       style={{ backgroundColor: col }}
                       onClick={() => handleSwatchClick(col)}
                     />
@@ -731,7 +720,6 @@ export default function ModernUploader() {
                 ? `${product.matchPercentage}% match`
                 : '—% match';
             const isPinned = pinned.includes(product.id);
-
             return (
               <a
                 key={product.id}
