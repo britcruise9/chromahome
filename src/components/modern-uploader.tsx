@@ -118,13 +118,13 @@ function calculateColorMatch(color1: string, color2: string): number {
     const b2 = parseInt(color2.slice(5, 7), 16);
     const distance = Math.sqrt(
       3 * Math.pow(r2 - r1, 2) +
-        4 * Math.pow(g2 - g1, 2) +
-        2 * Math.pow(b2 - b1, 2)
+      4 * Math.pow(g2 - g1, 2) +
+      2 * Math.pow(b2 - b1, 2)
     );
     const maxDistance = Math.sqrt(
       3 * Math.pow(255, 2) +
-        4 * Math.pow(255, 2) +
-        2 * Math.pow(255, 2)
+      4 * Math.pow(255, 2) +
+      2 * Math.pow(255, 2)
     );
     return Math.round((1 - distance / maxDistance) * 100);
   } catch (error) {
@@ -134,26 +134,23 @@ function calculateColorMatch(color1: string, color2: string): number {
 }
 
 ////////////////////////////////////////////////////
-// 2) HERO IMAGES (NEW)
+// 2) HERO IMAGES
 ////////////////////////////////////////////////////
 const heroImages = [
   "https://i.imgur.com/pHjncHD.png",
   "https://i.imgur.com/W1RnTGZ.png",
   "https://i.imgur.com/6uZrs0j.png",
   "https://i.imgur.com/oH0sLxE.jpeg",
-  "https://i.imgur.com/UzYfvqA.png",
-  "https://imgur.com/83d57027-21bd-4515-abd0-c7e3d724dc23",
-  "https://imgur.com/edc74bc2-7468-4c24-a88c-e1470a6188a2",
+  "https://i.imgur.com/UzYfvqA.png"
 ];
 
 ////////////////////////////////////////////////////
 // 3) MAIN COMPONENT
 ////////////////////////////////////////////////////
-const boxStyle =
-  "max-w-md mx-auto h-[320px] flex items-center justify-center bg-blue-600/10 border border-blue-300 rounded-xl p-8";
+const boxStyle = "max-w-md mx-auto h-[320px] flex items-center justify-center bg-blue-600/10 border border-blue-300 rounded-xl p-8";
 
 export default function ModernUploader() {
-  // ---------- PINNED ITEMS ----------
+  // ---------- PINNED ITEMS & SCROLL STATE ----------
   const [pinned, setPinned] = useState<number[]>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('pinnedProducts');
@@ -161,6 +158,10 @@ export default function ModernUploader() {
     }
     return [];
   });
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isPinnedFloating, setIsPinnedFloating] = useState(false);
+  const pinnedContainerRef = useRef<HTMLDivElement>(null);
+  const pinnedTriggerRef = useRef<HTMLDivElement>(null);
 
   // ---------- PALETTE & SEARCH STATES ----------
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
@@ -172,7 +173,7 @@ export default function ModernUploader() {
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
 
-  // ---------- COLOR PICKER (ALL DEVICES) ----------
+  // ---------- COLOR PICKER ----------
   const [showWheel, setShowWheel] = useState(false);
   const [colorWheelHsl, setColorWheelHsl] = useState({ h: 0, s: 50, l: 50 });
 
@@ -184,21 +185,36 @@ export default function ModernUploader() {
   const [isFetching, setIsFetching] = useState(false);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
-  // ---------- Hold the entire dataset (shuffled once on initial load) ----------
+  // ---------- ALL PRODUCTS ----------
   const [allProducts, setAllProducts] = useState<any[]>([]);
 
-  // ---------- DEFAULT GRADIENT (for the color box before picking a color) ----------
-  const defaultGradient =
-    "radial-gradient(circle at center, #ffadad 0%, #ffd6a5 16%, #fdffb6 33%, #caffbf 50%, #9bf6ff 66%, #a0c4ff 83%, #bdb2ff 100%)";
+  // ---------- DEFAULT GRADIENT ----------
+  const defaultGradient = "radial-gradient(circle at center, #ffadad 0%, #ffd6a5 16%, #fdffb6 33%, #caffbf 50%, #9bf6ff 66%, #a0c4ff 83%, #bdb2ff 100%)";
 
-  // ---------- DARK OVERLAY (for 0.5s on load) ----------
+  // ---------- SCROLL HANDLING ----------
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setScrollPosition(position);
+
+      if (pinnedTriggerRef.current && pinnedContainerRef.current) {
+        const triggerPosition = pinnedTriggerRef.current.getBoundingClientRect().top;
+        setIsPinnedFloating(triggerPosition < 0);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // ---------- DARK OVERLAY ----------
   const [colorOverlay, setColorOverlay] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => setColorOverlay(false), 500);
     return () => clearTimeout(timer);
   }, []);
 
-  // ---------- HERO IMAGE ROTATION ----------
+  // ---------- HERO ROTATION ----------
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroImages.length);
@@ -206,15 +222,14 @@ export default function ModernUploader() {
     return () => clearInterval(interval);
   }, []);
 
-  // ---------- INITIALIZATION: SHUFFLE PRODUCTS, LOAD FIRST PAGE ----------
+  // ---------- INITIALIZATION ----------
   useEffect(() => {
-    // Shuffle the imported products
     const shuffled = [...amazonProducts].sort(() => Math.random() - 0.5);
     setAllProducts(shuffled);
     loadProducts(1, activeSearchColor, shuffled);
   }, []);
 
-  // ---------- INFINITE SCROLL OBSERVER ----------
+  // ---------- INFINITE SCROLL ----------
   useEffect(() => {
     if (!sentinelRef.current) return;
     const observer = new IntersectionObserver(
@@ -231,13 +246,13 @@ export default function ModernUploader() {
     };
   }, [hasMore, isFetching]);
 
-  // ---------- WHEN PAGE CHANGES, LOAD MORE ----------
+  // ---------- PAGE CHANGES ----------
   useEffect(() => {
     if (page === 1) return;
     loadProducts(page, activeSearchColor);
   }, [page]);
 
-  // ---------- WHEN activeSearchColor CHANGES, RESET PRODUCTS/PAGINATION ----------
+  // ---------- ACTIVE SEARCH COLOR CHANGES ----------
   useEffect(() => {
     if (allProducts.length === 0) return;
     setProducts([]);
@@ -246,11 +261,12 @@ export default function ModernUploader() {
     loadProducts(1, activeSearchColor);
   }, [activeSearchColor, allProducts]);
 
-  // ---------- LOAD PRODUCTS FUNCTION ----------
+  // ---------- LOAD PRODUCTS ----------
   function loadProducts(pageNum: number, color: string | null, data?: any[]) {
     setIsFetching(true);
     const productsData = data || allProducts;
     let sortedProducts = [];
+    
     if (color) {
       sortedProducts = productsData.map((product) => {
         const prodColor = (product.dominantColor || '#000000').trim();
@@ -261,21 +277,25 @@ export default function ModernUploader() {
     } else {
       sortedProducts = productsData;
     }
+    
     const pageSize = pageNum === 1 ? 50 : 12;
     const startIndex = (pageNum - 1) * pageSize;
     const newBatch = sortedProducts.slice(startIndex, startIndex + pageSize);
+    
     if (pageNum === 1) {
       setProducts(newBatch);
     } else {
       setProducts((prev) => [...prev, ...newBatch]);
     }
+    
     if (newBatch.length < pageSize) {
       setHasMore(false);
     }
+    
     setIsFetching(false);
   }
 
-  // ---------- FILE UPLOAD => EXTRACT COLOR ----------
+  // ---------- FILE UPLOAD ----------
   async function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -295,9 +315,6 @@ export default function ModernUploader() {
     setSelectedColor(hex);
     setComplementaryColor(getComplementaryColor(hex));
     setTriadicColors(getTriadicColors(hex));
-    setProducts([]);
-    setPage(1);
-    setHasMore(true);
     setActiveSearchColor(hex);
     setHasUploaded(true);
   }
@@ -305,9 +322,6 @@ export default function ModernUploader() {
   // ---------- SWATCH CLICK ----------
   function handleSwatchClick(color: string | null) {
     if (!color) return;
-    setProducts([]);
-    setPage(1);
-    setHasMore(true);
     setActiveSearchColor(color);
   }
 
@@ -325,7 +339,7 @@ export default function ModernUploader() {
     });
   }
 
-  // ---------- SHORT DESCRIPTION ----------
+  // ---------- HELPER FUNCTIONS ----------
   function getShortDescription(desc: string) {
     if (!desc) return '';
     const words = desc.trim().split(/\s+/);
@@ -333,12 +347,10 @@ export default function ModernUploader() {
     return snippet.length < desc.length ? snippet + '...' : snippet;
   }
 
-  // ---------- SWATCH RING STYLE ----------
   function getSwatchRingStyle(testColor: string | null) {
     return activeSearchColor === testColor ? 'ring-4 ring-white' : '';
   }
 
-  // ---------- RESET ALL ----------
   function resetAll() {
     setHasUploaded(false);
     setUploadedImageUrl(null);
@@ -352,30 +364,27 @@ export default function ModernUploader() {
     loadProducts(1, null);
   }
 
-  //////////////////////////////////////////////////////
-  // 4) RENDER COMPONENT
-  //////////////////////////////////////////////////////
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
-      {/* A) ROTATING HERO WITH 0.5s COLOR OVERLAY */}
+      {/* HERO SECTION */}
       <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
-        {/* Dark-blue overlay for 0.5s */}
+        {/* Dark overlay for initial load */}
         <div
           className={`
-            absolute inset-0
+            absolute inset-0 bg-slate-900
             ${colorOverlay ? 'opacity-100' : 'opacity-0'}
             transition-opacity duration-500 z-30
           `}
-          style={{ backgroundColor: '#0f172a' }}
         />
 
-        {/* Carousel images underneath */}
+        {/* Hero Images */}
         {heroImages.map((imgSrc, i) => (
           <div
             key={i}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              currentHero === i ? 'opacity-100 z-20' : 'opacity-0 z-10'
-            }`}
+            className={`
+              absolute inset-0 transition-opacity duration-1000 ease-in-out
+              ${currentHero === i ? 'opacity-100 z-20' : 'opacity-0 z-10'}
+            `}
             style={{
               backgroundImage: `url('${imgSrc}')`,
               backgroundPosition: 'center',
@@ -407,13 +416,19 @@ export default function ModernUploader() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* B) FIRST PAGE: Upload or Color Picker (hidden after picking/upload) */}
+        {/* UPLOAD/COLOR PICKER */}
         {!hasUploaded && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-            {/* LEFT: Upload Box */}
+            {/* Upload Box */}
             <div className={boxStyle}>
               <label className="block w-full">
-                <div className="group cursor-pointer border-2 border-dashed border-white/20 rounded-xl p-8 text-center hover:border-white/30 transition-transform duration-300 ease-out hover:scale-105">
+                <div
+                  className="
+                    group cursor-pointer border-2 border-dashed border-white/20 
+                    rounded-xl p-8 text-center hover:border-white/30 
+                    transition-transform duration-300 ease-out hover:scale-105
+                  "
+                >
                   <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
                   <h3 className="text-xl text-white/90 mb-2">
                     Upload your color & discover matching furniture & decor
@@ -431,7 +446,7 @@ export default function ModernUploader() {
               </label>
             </div>
 
-            {/* RIGHT: Pick a Color Box */}
+            {/* Color Picker Box */}
             <div className={boxStyle}>
               <div className="flex flex-col items-center gap-4">
                 <div className="flex items-center gap-2 text-white/80 mb-1">
@@ -441,9 +456,7 @@ export default function ModernUploader() {
                 <div
                   className="w-36 h-36 rounded-xl border border-white/30 shadow-md cursor-pointer"
                   style={{
-                    background: selectedColor
-                      ? selectedColor
-                      : defaultGradient,
+                    background: selectedColor ? selectedColor : defaultGradient,
                   }}
                   onClick={() => setShowWheel(true)}
                 />
@@ -452,7 +465,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* COLOR PICKER MODAL */}
+        {/* COLOR WHEEL MODAL */}
         {showWheel && (
           <div
             className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
@@ -473,90 +486,32 @@ export default function ModernUploader() {
                   );
                   setShowWheel(false);
                 }}
-                className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
+                className="mt-4 w-full px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md"
               >
-                Confirm
+                Confirm Color
               </button>
             </div>
           </div>
         )}
 
-        {/* C) PALETTE ROW (after picking/uploading color) */}
-        {selectedColor && (
-          <div className="mb-10 flex flex-col items-center">
-            {uploadedImageUrl && (
-              <div className="flex flex-col items-center mb-4">
-                <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
-                  <img
-                    src={uploadedImageUrl}
-                    alt="Uploaded Inspiration"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <ArrowDown className="w-6 h-6 text-white mt-2" />
-              </div>
-            )}
-            <div className="flex items-center justify-center gap-6">
-              {/* Primary */}
-              <div className="flex flex-col items-center">
-                <div
-                  className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(selectedColor)}`}
-                  style={{ backgroundColor: selectedColor }}
-                  onClick={() => handleSwatchClick(selectedColor)}
-                />
-                <span className="text-xs md:text-sm text-white/60 mt-2">
-                  Primary
-                </span>
-                <button
-                  onClick={resetAll}
-                  className="mt-1 text-blue-400 hover:underline text-xs"
-                >
-                  Change
-                </button>
-              </div>
+        {/* Reference div for pinned container floating behavior */}
+        <div ref={pinnedTriggerRef} />
 
-              {/* Complement */}
-              {complementaryColor && (
-                <div className="flex flex-col items-center">
-                  <div
-                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(
-                      complementaryColor
-                    )}`}
-                    style={{ backgroundColor: complementaryColor }}
-                    onClick={() => handleSwatchClick(complementaryColor)}
-                  />
-                  <span className="text-xs md:text-sm text-white/60 mt-2">
-                    Complement
-                  </span>
-                </div>
-              )}
-
-              {/* Triadic */}
-              {triadicColors?.map((col, i) => (
-                <div key={col} className="flex flex-col items-center">
-                  <div
-                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(
-                      col
-                    )}`}
-                    style={{ backgroundColor: col }}
-                    onClick={() => handleSwatchClick(col)}
-                  />
-                  <span className="text-xs md:text-sm text-white/60 mt-2">
-                    Accent {i + 1}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* D) PINNED ROW */}
+        {/* PINNED ITEMS ROW */}
         {pinned.length > 0 && (
-          <div className="bg-transparent border border-white/40 text-white py-3 px-4 mb-8 rounded-md">
+          <div
+            ref={pinnedContainerRef}
+            className={`
+              bg-transparent border border-white/40 text-white py-3 px-4 mb-8 rounded-md
+              transition-all duration-300
+              ${isPinnedFloating ? 
+                'fixed top-0 left-0 right-0 z-50 mx-4 lg:mx-auto lg:max-w-6xl backdrop-blur-md bg-slate-900/90' 
+                : ''}
+            `}
+          >
             <h3 className="font-bold mb-2">Your Pinned Items</h3>
             <div className="flex gap-3 overflow-x-auto scrollbar-hide">
               {pinned.map((id) => {
-                // Use allProducts so pinned items remain visible even if filtered
                 const product = allProducts.find((p) => p.id === id);
                 if (!product) return null;
                 return (
@@ -591,7 +546,77 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* E) PRODUCT GRID */}
+        {/* Spacer when pinned container is floating */}
+        {isPinnedFloating && pinned.length > 0 && (
+          <div className="h-[120px]" />
+        )}
+
+        {/* COLOR PALETTE ROW */}
+        {selectedColor && (
+          <div className="mb-10 flex flex-col items-center">
+            {uploadedImageUrl && (
+              <div className="flex flex-col items-center mb-4">
+                <div className="w-24 h-24 rounded-xl overflow-hidden shadow-lg">
+                  <img
+                    src={uploadedImageUrl}
+                    alt="Uploaded Inspiration"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <ArrowDown className="w-6 h-6 text-white mt-2" />
+              </div>
+            )}
+            <div className="flex items-center justify-center gap-6">
+              {/* Primary Color */}
+              <div className="flex flex-col items-center">
+                <div
+                  className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(selectedColor)}`}
+                  style={{ backgroundColor: selectedColor }}
+                  onClick={() => handleSwatchClick(selectedColor)}
+                />
+                <span className="text-xs md:text-sm text-white/60 mt-2">
+                  Primary
+                </span>
+                <button
+                  onClick={resetAll}
+                  className="mt-1 text-blue-400 hover:underline text-xs"
+                >
+                  Change
+                </button>
+              </div>
+
+              {/* Complementary Color */}
+              {complementaryColor && (
+                <div className="flex flex-col items-center">
+                  <div
+                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(complementaryColor)}`}
+                    style={{ backgroundColor: complementaryColor }}
+                    onClick={() => handleSwatchClick(complementaryColor)}
+                  />
+                  <span className="text-xs md:text-sm text-white/60 mt-2">
+                    Complement
+                  </span>
+                </div>
+              )}
+
+              {/* Triadic Colors */}
+              {triadicColors?.map((col, i) => (
+                <div key={col} className="flex flex-col items-center">
+                  <div
+                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer ${getSwatchRingStyle(col)}`}
+                    style={{ backgroundColor: col }}
+                    onClick={() => handleSwatchClick(col)}
+                  />
+                  <span className="text-xs md:text-sm text-white/60 mt-2">
+                    Accent {i + 1}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* PRODUCT GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => {
             const matchText =
@@ -599,6 +624,7 @@ export default function ModernUploader() {
                 ? `${product.matchPercentage}% match`
                 : '—% match';
             const isPinned = pinned.includes(product.id);
+
             return (
               <a
                 key={product.id}
@@ -667,7 +693,7 @@ export default function ModernUploader() {
           })}
         </div>
 
-        {/* F) INFINITE SCROLL SENTINEL */}
+        {/* INFINITE SCROLL SENTINEL */}
         <div ref={sentinelRef} className="mt-8 h-8 flex justify-center items-center">
           {isFetching && hasMore && (
             <div className="text-sm text-white/60 animate-pulse">
@@ -682,6 +708,5 @@ export default function ModernUploader() {
     </div>
   );
 }
-
 
 
