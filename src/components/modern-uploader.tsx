@@ -436,13 +436,29 @@ export default function ModernUploader() {
         {/* Reference div for pinned container floating behavior */}
         <div ref={pinnedTriggerRef} />
 
-        {/* PINNED ITEMS ROW */}
+        {/* Floating Back Button */}
+        <div 
+          className="fixed left-0 top-1/2 -translate-y-1/2 z-40 px-4 py-20 group/back opacity-0 hover:opacity-100 transition-opacity"
+          style={{
+            background: 'linear-gradient(to right, rgba(0,0,0,0.2), transparent)'
+          }}
+        >
+          <button
+            onClick={resetAll}
+            className="text-white/80 hover:text-white flex items-center gap-2 transform transition-transform group-hover/back:translate-x-2"
+          >
+            <ArrowLeft className="w-5 h-5" />
+            <span className="text-sm font-medium">Back to Start</span>
+          </button>
+        </div>
+
+        {/* Vision Board Row */}
         {pinned.length > 0 && (
           <div
             ref={pinnedContainerRef}
             className={`
               bg-transparent border-b border-white/20 text-white py-2 px-4 mb-8
-              transition-all duration-300
+              transition-all duration-300 hover:scale-[1.02] hover:border-white/40
               ${isPinnedFloating ? 
                 'fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-900/90 border-none shadow-lg' 
                 : ''}
