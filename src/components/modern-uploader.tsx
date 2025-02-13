@@ -8,14 +8,16 @@ import {
   PinOff,
   Palette,
   Settings,
-  ArrowLeft
+  ArrowLeft,
+  ChevronUp,
+  ChevronDown
 } from "lucide-react";
 import { HslColorPicker } from "react-colorful";
 import { amazonProducts } from "../lib/amazonProducts";
 
 declare const ColorThief: any;
 
-// ---------- Color Utils ----------
+// ----- Color Utils -----
 function hexToHSL(hex: string) {
   const r = parseInt(hex.slice(1, 3), 16) / 255;
   const g = parseInt(hex.slice(3, 5), 16) / 255;
@@ -77,7 +79,6 @@ function getComplementaryColor(hex: string) {
   const { h, s, l } = hexToHSL(hex);
   return hslToHex((h + 180) % 360, s, l);
 }
-
 function getTriadicColors(hex: string): [string, string] {
   const { h, s, l } = hexToHSL(hex);
   return [
@@ -121,14 +122,14 @@ function calculateColorMatch(color1: string, color2: string): number {
     const dist = Math.sqrt(
       3 * (r2 - r1) ** 2 + 4 * (g2 - g1) ** 2 + 2 * (b2 - b1) ** 2
     );
-    const max = Math.sqrt(
-      3 * 255 ** 2 + 4 * 255 ** 2 + 2 * 255 ** 2
-    );
+    const max = Math.sqrt(3 * 255 ** 2 + 4 * 255 ** 2 + 2 * 255 ** 2);
     return Math.round((1 - dist / max) * 100);
   } catch {
     return 0;
   }
 }
+
+// ----- MAIN -----
 
 const heroImages = [
   "https://i.imgur.com/pHjncHD.png",
@@ -147,9 +148,7 @@ export default function ModernUploader() {
     }
     return [];
   });
-  const [scrollPosition, setScrollPosition] = useState(0);
   const [isPinnedFloating, setIsPinnedFloating] = useState(false);
-
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [complementaryColor, setComplementaryColor] = useState<string | null>(
     null
@@ -160,7 +159,6 @@ export default function ModernUploader() {
   const [activeSearchColor, setActiveSearchColor] = useState<string | null>(
     null
   );
-
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
   const [showWheel, setShowWheel] = useState(false);
@@ -175,21 +173,20 @@ export default function ModernUploader() {
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
   const [isFetching, setIsFetching] = useState(false);
-
   const [colorOverlay, setColorOverlay] = useState(true);
 
+  // Collapsible vision board
+  const [visionCollapsed, setVisionCollapsed] = useState(false);
+
   // Refs
-  const pinnedContainerRef = useRef<HTMLDivElement>(null);
   const pinnedTriggerRef = useRef<HTMLDivElement>(null);
+  const pinnedContainerRef = useRef<HTMLDivElement>(null);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
-  const defaultGradient =
-    "radial-gradient(circle at center, #ffadad 0%, #ffd6a5 16%, #fdffb6 33%, #caffbf 50%, #9bf6ff 66%, #a0c4ff 83%, #bdb2ff 100%)";
-
-  // Effects
+  // Setup
   useEffect(() => {
+    // Scroll
     const handleScroll = () => {
-      setScrollPosition(window.scrollY);
       if (pinnedTriggerRef.current && pinnedContainerRef.current) {
         const triggerTop = pinnedTriggerRef.current.getBoundingClientRect().top;
         setIsPinnedFloating(triggerTop < 0);
@@ -199,17 +196,16 @@ export default function ModernUploader() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Fade out overlay
   useEffect(() => {
     const t = setTimeout(() => setColorOverlay(false), 500);
     return () => clearTimeout(t);
   }, []);
 
-  // Hero slideshow
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentHero((prev) => (prev + 1) % heroImages.length);
-    }, 6000);
+    const interval = setInterval(
+      () => setCurrentHero((prev) => (prev + 1) % heroImages.length),
+      6000
+    );
     return () => clearInterval(interval);
   }, []);
 
@@ -236,13 +232,12 @@ export default function ModernUploader() {
     };
   }, [hasMore, isFetching]);
 
-  // Load more on page change
   useEffect(() => {
     if (page === 1) return;
     loadProducts(page, activeSearchColor);
   }, [page]);
 
-  // Reset products on color change
+  // Reset on color change
   useEffect(() => {
     if (!allProducts.length) return;
     setProducts([]);
@@ -251,13 +246,11 @@ export default function ModernUploader() {
     loadProducts(1, activeSearchColor);
   }, [activeSearchColor, allProducts]);
 
-  // Vision Board pinned colors
   const pinnedColors = allProducts
     .filter((p) => pinned.includes(p.id) && p.dominantColor)
     .map((p) => p.dominantColor);
   const uniquePinnedColors = Array.from(new Set(pinnedColors)).slice(0, 3);
 
-  // Load function
   function loadProducts(pageNum: number, color: string | null, data?: any[]) {
     setIsFetching(true);
     const list = data || allProducts;
@@ -287,6 +280,7 @@ export default function ModernUploader() {
     setIsFetching(false);
   }
 
+  // Handlers
   async function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -296,8 +290,8 @@ export default function ModernUploader() {
       const color = await extractColor(file);
       handleManualColor(color);
       setHasUploaded(true);
-    } catch (error) {
-      console.error("extract color error:", error);
+    } catch (err) {
+      console.error("extract color error:", err);
     }
   }
 
@@ -309,14 +303,21 @@ export default function ModernUploader() {
     setHasUploaded(true);
   }
 
-  function handleSwatchClick(color: string | null) {
-    if (!color) return;
-    if (color === activeSearchColor) {
-      setActiveSearchColor("");
-      setTimeout(() => setActiveSearchColor(color), 0);
-    } else {
-      setActiveSearchColor(color);
-    }
+  function handleSwatchClick(color: string) {
+    // Single tap selects color for both mobile & desktop
+    setActiveSearchColor(color);
+  }
+
+  function handleGearClick(
+    e: React.MouseEvent,
+    color: string,
+    editingType: "primary" | "complement" | "accent1" | "accent2"
+  ) {
+    // Do not also select the color if gear is tapped
+    e.stopPropagation();
+    setColorWheelHsl(hexToHSL(color));
+    setActiveEditingColor(editingType);
+    setShowWheel(true);
   }
 
   function togglePin(productId: number) {
@@ -343,9 +344,13 @@ export default function ModernUploader() {
     loadProducts(1, null);
   }
 
+  // UI
+  const defaultGradient =
+    "radial-gradient(circle at center, #ffadad 0%, #ffd6a5 16%, #fdffb6 33%, #caffbf 50%, #9bf6ff 66%, #a0c4ff 83%, #bdb2ff 100%)";
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
-      {/* Show "Back" button only after color is chosen or uploaded */}
+      {/* Back button only after color is chosen/uploaded */}
       {(hasUploaded || selectedColor) && (
         <div className="fixed top-4 left-4 z-50">
           <button
@@ -367,13 +372,11 @@ export default function ModernUploader() {
         />
         {heroImages.map((img, i) => (
           <div
-            key={i}
+            key={img}
             className={`absolute inset-0 transition-opacity duration-1000 ${
               currentHero === i ? "opacity-100 z-20" : "opacity-0 z-10"
             }`}
-            style={{
-              background: `url('${img}') center/cover no-repeat`
-            }}
+            style={{ background: `url('${img}') center/cover no-repeat` }}
           >
             <div className="absolute inset-0 bg-black/40" />
           </div>
@@ -390,10 +393,9 @@ export default function ModernUploader() {
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* Upload + Pick Color Boxes (stack vertically on mobile) */}
+        {/* Upload & Pick Color (landing) */}
         {!hasUploaded && !selectedColor && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-            {/* Upload Box */}
             <div className="max-w-md mx-auto w-full h-[320px] flex items-center justify-center bg-blue-600/10 border border-blue-300 rounded-xl p-8">
               <label className="block w-full">
                 <div className="group cursor-pointer border-2 border-dashed border-white/20 rounded-xl p-8 text-center hover:border-white/30 transition-transform duration-300 ease-out hover:scale-105">
@@ -414,8 +416,6 @@ export default function ModernUploader() {
                 />
               </label>
             </div>
-
-            {/* Color Picker Box */}
             <div className="max-w-md mx-auto w-full h-[320px] flex items-center justify-center bg-blue-600/10 border border-blue-300 rounded-xl p-8">
               <div className="flex flex-col items-center gap-4">
                 <div className="flex items-center gap-2 text-white/80 mb-1">
@@ -424,9 +424,7 @@ export default function ModernUploader() {
                 </div>
                 <div
                   className="w-36 h-36 rounded-xl border border-white/30 shadow-md cursor-pointer"
-                  style={{
-                    background: selectedColor || defaultGradient
-                  }}
+                  style={{ background: defaultGradient }}
                   onClick={() => setShowWheel(true)}
                 />
               </div>
@@ -434,7 +432,6 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Reference for pinned-floating */}
         <div ref={pinnedTriggerRef} />
 
         {/* Vision Board */}
@@ -442,10 +439,10 @@ export default function ModernUploader() {
           <div
             ref={pinnedContainerRef}
             className={`
-              bg-transparent border-b border-white/20 text-white py-2 px-4 mb-8
+              border-b border-white/20 text-white py-2 px-4 mb-8
               ${
                 isPinnedFloating
-                  ? "origin-top-left group/vision fixed left-0 right-0 z-40 top-16 md:top-4 backdrop-blur-md bg-slate-900/90 border-none shadow-lg md:hover:pt-8 md:hover:pb-12 md:hover:scale-[1.33] md:hover:bg-slate-900/95"
+                  ? "origin-top-left group/vision fixed left-0 right-0 z-40 top-12 md:top-4 backdrop-blur-md bg-slate-900/90 border-none shadow-lg"
                   : "origin-top"
               }
               transition-all duration-500 ease-out
@@ -453,55 +450,70 @@ export default function ModernUploader() {
           >
             <div className="flex items-center justify-between mb-1.5 px-4">
               <div className="flex items-center gap-2">
-                <h3 className="text-sm font-medium text-white/80 md:group-hover/vision:text-lg md:group-hover/vision:text-white transition-all">
+                <h3 className="text-sm font-medium text-white/80 transition-all">
                   Vision Board
                 </h3>
-                {uniquePinnedColors.map((color, idx) => (
-                  <div
-                    key={idx}
-                    className="w-4 h-4 rounded-full border border-white"
-                    style={{ backgroundColor: color }}
-                  />
-                ))}
+                {!visionCollapsed &&
+                  uniquePinnedColors.map((color, idx) => (
+                    <div
+                      key={idx}
+                      className="w-4 h-4 rounded-full border border-white"
+                      style={{ backgroundColor: color }}
+                    />
+                  ))}
               </div>
-              <span className="text-xs text-white/50 md:group-hover/vision:text-sm transition-all">
-                {pinned.length} items
-              </span>
+              <div className="flex items-center gap-4">
+                <span className="text-xs text-white/50 transition-all">
+                  {pinned.length} items
+                </span>
+                <button
+                  onClick={() => setVisionCollapsed(!visionCollapsed)}
+                  className="p-1 bg-black/40 hover:bg-black/60 rounded transition"
+                >
+                  {visionCollapsed ? (
+                    <ChevronDown className="w-4 h-4" />
+                  ) : (
+                    <ChevronUp className="w-4 h-4" />
+                  )}
+                </button>
+              </div>
             </div>
 
-            <div className="flex gap-3 overflow-x-auto scrollbar-hide py-1 px-8 transition-all duration-500">
-              {pinned.map((id) => {
-                const product = allProducts.find((p) => p.id === id);
-                if (!product) return null;
-                return (
-                  <a
-                    key={id}
-                    href={product.affiliateLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="min-w-[100px] relative border border-white/20 rounded-lg overflow-hidden shrink-0 transition-all duration-500 md:group-hover/vision:hover:scale-110"
-                  >
-                    {/* Always show unpin button */}
-                    <button
-                      onClick={(e) => {
-                        e.preventDefault();
-                        togglePin(id);
-                      }}
-                      className="absolute top-2 right-2 z-10 text-xs p-1.5 bg-black/50 rounded-full hover:bg-black/70"
+            {/* If not collapsed, show pinned items */}
+            {!visionCollapsed && (
+              <div className="flex gap-3 overflow-x-auto scrollbar-hide py-1 px-8 transition-all duration-500">
+                {pinned.map((id) => {
+                  const product = allProducts.find((p) => p.id === id);
+                  if (!product) return null;
+                  return (
+                    <a
+                      key={id}
+                      href={product.affiliateLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="min-w-[100px] relative border border-white/20 rounded-lg overflow-hidden shrink-0 transition-all duration-500 hover:scale-105"
                     >
-                      <PinOff className="w-3 h-3" />
-                    </button>
-                    <div className="h-[100px] w-[100px] overflow-hidden transition-all duration-500 md:group-hover/vision:h-[133px] md:group-hover/vision:w-[133px]">
-                      <img
-                        src={product.image}
-                        alt={product.description}
-                        className="w-full h-full object-cover scale-150 transform-gpu group-hover:item:scale-125 transition-transform duration-500"
-                      />
-                    </div>
-                  </a>
-                );
-              })}
-            </div>
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          togglePin(id);
+                        }}
+                        className="absolute top-2 right-2 z-10 text-xs p-1.5 bg-black/50 rounded-full hover:bg-black/70"
+                      >
+                        <PinOff className="w-3 h-3" />
+                      </button>
+                      <div className="h-[100px] w-[100px] overflow-hidden">
+                        <img
+                          src={product.image}
+                          alt={product.description}
+                          className="w-full h-full object-cover scale-150 transform-gpu hover:scale-125 transition-transform duration-500"
+                        />
+                      </div>
+                    </a>
+                  );
+                })}
+              </div>
+            )}
           </div>
         )}
         {isPinnedFloating && pinned.length > 0 && <div className="h-[120px]" />}
@@ -578,6 +590,7 @@ export default function ModernUploader() {
                         }
                       }
                     } else {
+                      // if just picking fresh color
                       handleManualColor(newCol);
                     }
                     setShowWheel(false);
@@ -605,14 +618,12 @@ export default function ModernUploader() {
                       className="w-full h-full object-cover"
                     />
                   </div>
+                  {/* Gear + re-upload */}
                   <div className="absolute -top-2 -right-2 flex gap-1">
                     <button
-                      onClick={() => {
-                        const hsl = hexToHSL(selectedColor || "#000000");
-                        setColorWheelHsl(hsl);
-                        setActiveEditingColor("primary");
-                        setShowWheel(true);
-                      }}
+                      onClick={(e) =>
+                        handleGearClick(e, selectedColor, "primary")
+                      }
                       className="bg-white/90 hover:bg-white p-1 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
                     >
                       <Settings className="w-4 h-4 text-gray-800" />
@@ -634,100 +645,79 @@ export default function ModernUploader() {
             )}
 
             <div className="flex items-center justify-center gap-6">
-              {/* Primary Swatch */}
-              <div className="flex flex-col items-center">
-                <div className="relative group">
-                  <div
-                    className={`
-                      w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer
-                      ${
-                        selectedColor === activeSearchColor
-                          ? "ring-2 ring-white"
-                          : ""
-                      }
-                    `}
-                    style={{ backgroundColor: selectedColor }}
-                    onClick={() => handleSwatchClick(selectedColor)}
-                  />
-                  {/* Gear button on hover */}
-                  <button
-                    onClick={() => {
-                      const hsl = hexToHSL(selectedColor || "#000000");
-                      setColorWheelHsl(hsl);
-                      setActiveEditingColor("primary");
-                      setShowWheel(true);
-                    }}
-                    className="hidden group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
-                  >
-                    <Settings className="w-4 h-4 text-white" />
-                  </button>
-                </div>
-                <span className="text-xs md:text-sm text-white/60 mt-2">
+              {/* Primary */}
+              <div
+                className="relative group cursor-pointer"
+                onClick={() => handleSwatchClick(selectedColor)}
+              >
+                <div
+                  className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
+                    selectedColor === activeSearchColor ? "ring-2 ring-white" : ""
+                  }`}
+                  style={{ backgroundColor: selectedColor }}
+                />
+                {/* Gear button (stop event) */}
+                <button
+                  onClick={(e) => handleGearClick(e, selectedColor, "primary")}
+                  className="hidden group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
+                >
+                  <Settings className="w-4 h-4 text-white" />
+                </button>
+                <span className="text-xs md:text-sm text-white/60 mt-2 block text-center">
                   Selected
                 </span>
               </div>
 
-              {/* Complement Swatch */}
+              {/* Complement */}
               {complementaryColor && (
-                <div className="flex flex-col items-center">
-                  <div className="relative group">
-                    <div
-                      className={`
-                        w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer
-                        ${
-                          complementaryColor === activeSearchColor
-                            ? "ring-2 ring-white"
-                            : ""
-                        }
-                      `}
-                      style={{ backgroundColor: complementaryColor }}
-                      onClick={() => handleSwatchClick(complementaryColor)}
-                    />
-                    {/* Gear button on hover */}
-                    <button
-                      onClick={() => {
-                        const hsl = hexToHSL(complementaryColor);
-                        setColorWheelHsl(hsl);
-                        setActiveEditingColor("complement");
-                        setShowWheel(true);
-                      }}
-                      className="hidden group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
-                    >
-                      <Settings className="w-4 h-4 text-white" />
-                    </button>
-                  </div>
-                  <span className="text-xs md:text-sm text-white/60 mt-2">
+                <div
+                  className="relative group cursor-pointer"
+                  onClick={() => handleSwatchClick(complementaryColor)}
+                >
+                  <div
+                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
+                      complementaryColor === activeSearchColor
+                        ? "ring-2 ring-white"
+                        : ""
+                    }`}
+                    style={{ backgroundColor: complementaryColor }}
+                  />
+                  <button
+                    onClick={(e) =>
+                      handleGearClick(e, complementaryColor, "complement")
+                    }
+                    className="hidden group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
+                  >
+                    <Settings className="w-4 h-4 text-white" />
+                  </button>
+                  <span className="text-xs md:text-sm text-white/60 mt-2 block text-center">
                     Complement
                   </span>
                 </div>
               )}
 
-              {/* Triadic Swatches */}
+              {/* Triadic */}
               {triadicColors?.map((col, i) => (
-                <div key={col} className="flex flex-col items-center">
-                  <div className="relative group">
-                    <div
-                      className={`
-                        w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg cursor-pointer
-                        ${col === activeSearchColor ? "ring-2 ring-white" : ""}
-                      `}
-                      style={{ backgroundColor: col }}
-                      onClick={() => handleSwatchClick(col)}
-                    />
-                    {/* Gear button on hover */}
-                    <button
-                      onClick={() => {
-                        const hsl = hexToHSL(col);
-                        setColorWheelHsl(hsl);
-                        setActiveEditingColor(i === 0 ? "accent1" : "accent2");
-                        setShowWheel(true);
-                      }}
-                      className="hidden group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
-                    >
-                      <Settings className="w-4 h-4 text-white" />
-                    </button>
-                  </div>
-                  <span className="text-xs md:text-sm text-white/60 mt-2">
+                <div
+                  key={col}
+                  className="relative group cursor-pointer"
+                  onClick={() => handleSwatchClick(col)}
+                >
+                  <div
+                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
+                      col === activeSearchColor ? "ring-2 ring-white" : ""
+                    }`}
+                    style={{ backgroundColor: col }}
+                  />
+                  <button
+                    onClick={(e) =>
+                      handleGearClick(e, col, i === 0 ? "accent1" : "accent2")
+                    }
+                    className="hidden group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
+                  >
+                    <Settings className="w-4 h-4 text-white" />
+                  </button>
+                  <span className="text-xs md:text-sm text-white/60 mt-2 block text-center">
                     Accent {i + 1}
                   </span>
                 </div>
@@ -749,7 +739,7 @@ export default function ModernUploader() {
                 className="block"
               >
                 <div className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300 ease-out">
-                  {/* Pin button */}
+                  {/* Pin */}
                   <button
                     onClick={(e) => {
                       e.preventDefault();
@@ -772,11 +762,9 @@ export default function ModernUploader() {
                   </div>
                   <div className="p-4">
                     {p.affiliateLink && (
-                      <div className="mt-2">
-                        <span className="text-sm text-blue-400 hover:text-blue-300">
-                          Shop on Amazon
-                        </span>
-                      </div>
+                      <span className="text-sm text-blue-400 hover:text-blue-300">
+                        Shop on Amazon
+                      </span>
                     )}
                   </div>
                 </div>
