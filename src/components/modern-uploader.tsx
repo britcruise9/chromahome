@@ -10,7 +10,7 @@ import {
   Settings,
   ArrowLeft,
   ChevronUp,
-  ChevronDown
+  ChevronDown,
 } from "lucide-react";
 import { HslColorPicker } from "react-colorful";
 import { amazonProducts } from "../lib/amazonProducts";
@@ -84,7 +84,7 @@ function getTriadicColors(hex: string): [string, string] {
   const { h, s, l } = hexToHSL(hex);
   return [
     hslToHex((h + 120) % 360, s, l),
-    hslToHex((h + 240) % 360, s, l)
+    hslToHex((h + 240) % 360, s, l),
   ];
 }
 
@@ -123,9 +123,7 @@ function calculateColorMatch(color1: string, color2: string): number {
     const dist = Math.sqrt(
       3 * (r2 - r1) ** 2 + 4 * (g2 - g1) ** 2 + 2 * (b2 - b1) ** 2
     );
-    const max = Math.sqrt(
-      3 * 255 ** 2 + 4 * 255 ** 2 + 2 * 255 ** 2
-    );
+    const max = Math.sqrt(3 * 255 ** 2 + 4 * 255 ** 2 + 2 * 255 ** 2);
     return Math.round((1 - dist / max) * 100);
   } catch {
     return 0;
@@ -137,7 +135,7 @@ const heroImages = [
   "https://i.imgur.com/W1RnTGZ.png",
   "https://i.imgur.com/6uZrs0j.png",
   "https://i.imgur.com/oH0sLxE.jpeg",
-  "https://i.imgur.com/UzYfvqA.png"
+  "https://i.imgur.com/UzYfvqA.png",
 ];
 
 export default function ModernUploader() {
@@ -193,8 +191,7 @@ export default function ModernUploader() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setShowBack(scrollY < 80); // small threshold
-      // Vision Board
+      setShowBack(scrollY < 80);
       if (pinnedTriggerRef.current && pinnedContainerRef.current) {
         const triggerTop = pinnedTriggerRef.current.getBoundingClientRect().top;
         setIsPinnedFloating(triggerTop < 0);
@@ -320,7 +317,7 @@ export default function ModernUploader() {
     color: string,
     editingType: "primary" | "complement" | "accent1" | "accent2"
   ) {
-    e.stopPropagation(); // don't also select color
+    e.stopPropagation();
     setColorWheelHsl(hexToHSL(color));
     setActiveEditingColor(editingType);
     setShowWheel(true);
@@ -355,7 +352,6 @@ export default function ModernUploader() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
-      {/* Back button only if color chosen and near top */}
       {(hasUploaded || selectedColor) && showBack && (
         <div className="fixed top-4 left-4 z-50">
           <button
@@ -382,7 +378,7 @@ export default function ModernUploader() {
               currentHero === i ? "opacity-100 z-20" : "opacity-0 z-10"
             }`}
             style={{
-              background: `url('${img}') center/cover no-repeat`
+              background: `url('${img}') center/cover no-repeat`,
             }}
           >
             <div className="absolute inset-0 bg-black/40" />
@@ -400,7 +396,6 @@ export default function ModernUploader() {
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* If no color chosen/uploaded, show upload & pick-color UI */}
         {!hasUploaded && !selectedColor && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             {/* Upload Box */}
@@ -415,7 +410,6 @@ export default function ModernUploader() {
                     (Paint chips, fabrics, or any surface photo)
                   </p>
                 </div>
-                {/* Removed capture="environment" so iOS can choose library or camera */}
                 <input
                   type="file"
                   className="hidden"
@@ -442,7 +436,6 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Reference for pinned-floating */}
         <div ref={pinnedTriggerRef} />
 
         {/* Vision Board */}
@@ -501,11 +494,16 @@ export default function ModernUploader() {
                       href={product.affiliateLink}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        gtag_report_conversion(product.affiliateLink);
+                      }}
                       className="min-w-[100px] relative border border-white/20 rounded-lg overflow-hidden shrink-0 transition-all duration-500 hover:scale-105"
                     >
                       <button
                         onClick={(e) => {
                           e.preventDefault();
+                          e.stopPropagation();
                           togglePin(id);
                         }}
                         className="absolute top-2 right-2 z-10 text-xs p-1.5 bg-black/50 rounded-full hover:bg-black/70"
@@ -642,7 +640,6 @@ export default function ModernUploader() {
                     </button>
                     <label className="bg-white/90 hover:bg-white p-1 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer">
                       <Upload className="w-4 h-4 text-gray-800" />
-                      {/* Also remove capture="environment" here */}
                       <input
                         type="file"
                         className="hidden"
@@ -666,7 +663,6 @@ export default function ModernUploader() {
                   }`}
                   style={{ backgroundColor: selectedColor }}
                 />
-                {/* Gear hidden on mobile, visible on desktop hover */}
                 <button
                   onClick={(e) => handleGearClick(e, selectedColor!, "primary")}
                   className="hidden sm:group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
@@ -741,13 +737,17 @@ export default function ModernUploader() {
                 href={p.affiliateLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  gtag_report_conversion(p.affiliateLink);
+                }}
                 className="block"
               >
                 <div className="group relative bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300 ease-out">
-                  {/* Pin */}
                   <button
                     onClick={(e) => {
                       e.preventDefault();
+                      e.stopPropagation();
                       togglePin(p.id);
                     }}
                     className="absolute top-2 right-2 z-20 bg-black/40 text-white p-1 rounded hover:bg-black/60 transition"
@@ -796,4 +796,3 @@ export default function ModernUploader() {
     </div>
   );
 }
-
