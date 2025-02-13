@@ -129,8 +129,6 @@ function calculateColorMatch(color1: string, color2: string): number {
   }
 }
 
-// ----- MAIN -----
-
 const heroImages = [
   "https://i.imgur.com/pHjncHD.png",
   "https://i.imgur.com/W1RnTGZ.png",
@@ -178,14 +176,27 @@ export default function ModernUploader() {
   // Collapsible vision board
   const [visionCollapsed, setVisionCollapsed] = useState(false);
 
+  // Show/hide Back button based on top-of-page visibility
+  const topRef = useRef<HTMLDivElement>(null);
+  const [showBack, setShowBack] = useState(true);
+
   // Refs
   const pinnedTriggerRef = useRef<HTMLDivElement>(null);
   const pinnedContainerRef = useRef<HTMLDivElement>(null);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
   // Setup
+  // Observe topRef to show/hide back button
   useEffect(() => {
-    // Scroll
+    if (!topRef.current) return;
+    const obs = new IntersectionObserver(([entry]) => {
+      setShowBack(entry.isIntersecting);
+    });
+    obs.observe(topRef.current);
+    return () => obs.disconnect();
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       if (pinnedTriggerRef.current && pinnedContainerRef.current) {
         const triggerTop = pinnedTriggerRef.current.getBoundingClientRect().top;
@@ -246,6 +257,7 @@ export default function ModernUploader() {
     loadProducts(1, activeSearchColor);
   }, [activeSearchColor, allProducts]);
 
+  // Vision Board pinned colors
   const pinnedColors = allProducts
     .filter((p) => pinned.includes(p.id) && p.dominantColor)
     .map((p) => p.dominantColor);
@@ -304,7 +316,7 @@ export default function ModernUploader() {
   }
 
   function handleSwatchClick(color: string) {
-    // Single tap selects color for both mobile & desktop
+    // Single tap always selects
     setActiveSearchColor(color);
   }
 
@@ -313,7 +325,7 @@ export default function ModernUploader() {
     color: string,
     editingType: "primary" | "complement" | "accent1" | "accent2"
   ) {
-    // Do not also select the color if gear is tapped
+    // Stop from also selecting color
     e.stopPropagation();
     setColorWheelHsl(hexToHSL(color));
     setActiveEditingColor(editingType);
@@ -350,8 +362,11 @@ export default function ModernUploader() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
-      {/* Back button only after color is chosen/uploaded */}
-      {(hasUploaded || selectedColor) && (
+      {/* Top sentinel to track scroll */}
+      <div ref={topRef} className="absolute -top-1 left-0" />
+
+      {/* Back button only if near top & after color is chosen/uploaded */}
+      {(hasUploaded || selectedColor) && showBack && (
         <div className="fixed top-4 left-4 z-50">
           <button
             onClick={resetAll}
@@ -442,7 +457,7 @@ export default function ModernUploader() {
               border-b border-white/20 text-white py-2 px-4 mb-8
               ${
                 isPinnedFloating
-                  ? "origin-top-left group/vision fixed left-0 right-0 z-40 top-12 md:top-4 backdrop-blur-md bg-slate-900/90 border-none shadow-lg"
+                  ? "origin-top-left group/vision fixed left-0 right-0 z-40 top-16 md:top-4 backdrop-blur-md bg-slate-900/90 border-none shadow-lg"
                   : "origin-top"
               }
               transition-all duration-500 ease-out
@@ -590,7 +605,7 @@ export default function ModernUploader() {
                         }
                       }
                     } else {
-                      // if just picking fresh color
+                      // picking fresh color
                       handleManualColor(newCol);
                     }
                     setShowWheel(false);
@@ -621,9 +636,7 @@ export default function ModernUploader() {
                   {/* Gear + re-upload */}
                   <div className="absolute -top-2 -right-2 flex gap-1">
                     <button
-                      onClick={(e) =>
-                        handleGearClick(e, selectedColor, "primary")
-                      }
+                      onClick={(e) => handleGearClick(e, selectedColor, "primary")}
                       className="bg-white/90 hover:bg-white p-1 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
                     >
                       <Settings className="w-4 h-4 text-gray-800" />
@@ -656,10 +669,10 @@ export default function ModernUploader() {
                   }`}
                   style={{ backgroundColor: selectedColor }}
                 />
-                {/* Gear button (stop event) */}
+                {/* Hide gear on mobile, show on desktop hover */}
                 <button
                   onClick={(e) => handleGearClick(e, selectedColor, "primary")}
-                  className="hidden group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
+                  className="hidden sm:group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
                 >
                   <Settings className="w-4 h-4 text-white" />
                 </button>
@@ -683,10 +696,8 @@ export default function ModernUploader() {
                     style={{ backgroundColor: complementaryColor }}
                   />
                   <button
-                    onClick={(e) =>
-                      handleGearClick(e, complementaryColor, "complement")
-                    }
-                    className="hidden group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
+                    onClick={(e) => handleGearClick(e, complementaryColor, "complement")}
+                    className="hidden sm:group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
                   >
                     <Settings className="w-4 h-4 text-white" />
                   </button>
@@ -713,7 +724,7 @@ export default function ModernUploader() {
                     onClick={(e) =>
                       handleGearClick(e, col, i === 0 ? "accent1" : "accent2")
                     }
-                    className="hidden group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
+                    className="hidden sm:group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
                   >
                     <Settings className="w-4 h-4 text-white" />
                   </button>
