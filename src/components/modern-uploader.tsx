@@ -699,7 +699,8 @@ export default function ModernUploader() {
                       onClick={() => {
                         const hsl = hexToHSL(col);
                         setColorWheelHsl(hsl);
-                        setActiveEditingColor(`accent${i + 1}`);
+                        // Use type-safe values instead of template literals
+                        setActiveEditingColor(i === 0 ? 'accent1' : 'accent2');
                         setShowWheel(true);
                       }}
                       className="absolute -top-2 -right-2 bg-white/90 hover:bg-white text-gray-800 p-1 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
