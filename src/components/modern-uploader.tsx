@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, useEffect, useRef } from "react";
 import {
   Upload,
@@ -73,7 +71,7 @@ function hslToHex(h: number, s: number, l: number) {
     const hx = Math.round(val * 255).toString(16);
     return hx.length === 1 ? "0" + hx : hx;
   };
-  return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+  return #${toHex(r)}${toHex(g)}${toHex(b)};
 }
 
 function getComplementaryColor(hex: string) {
@@ -97,9 +95,9 @@ async function extractColor(file: File): Promise<string> {
       try {
         const [r, g, b] = colorThief.getColor(img);
         resolve(
-          `#${r.toString(16).padStart(2, "0")}${g
+          #${r.toString(16).padStart(2, "0")}${g
             .toString(16)
-            .padStart(2, "0")}${b.toString(16).padStart(2, "0")}`
+            .padStart(2, "0")}${b.toString(16).padStart(2, "0")}
         );
       } catch {
         resolve("#000000");
@@ -167,11 +165,6 @@ export default function ModernUploader() {
   const [hasMore, setHasMore] = useState(true);
   const [isFetching, setIsFetching] = useState(false);
   const [colorOverlay, setColorOverlay] = useState(true);
-
-  // Dropper state (for landing page color picker only)
-  const [dropperVisible, setDropperVisible] = useState(false);
-  const [dropperColor, setDropperColor] = useState("");
-  const [dropperPos, setDropperPos] = useState({ x: 0, y: 0 });
 
   // Collapsible vision board
   const [visionCollapsed, setVisionCollapsed] = useState(false);
@@ -355,18 +348,18 @@ export default function ModernUploader() {
       {/* Hero */}
       <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
         <div
-          className={`absolute inset-0 bg-slate-900 transition-opacity duration-500 z-30 ${
+          className={absolute inset-0 bg-slate-900 transition-opacity duration-500 z-30 ${
             colorOverlay ? "opacity-100" : "opacity-0"
-          }`}
+          }}
         />
         {heroImages.map((img, i) => (
           <div
             key={img}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
+            className={absolute inset-0 transition-opacity duration-1000 ${
               currentHero === i ? "opacity-100 z-20" : "opacity-0 z-10"
-            }`}
+            }}
             style={{
-              background: `url('${img}') center/cover no-repeat`,
+              background: url('${img}') center/cover no-repeat,
             }}
           >
             <div className="absolute inset-0 bg-black/40" />
@@ -407,7 +400,7 @@ export default function ModernUploader() {
               </label>
             </div>
 
-            {/* Color Picker Box (with dropper effect) */}
+            {/* Color Picker Box */}
             <div className="max-w-md mx-auto w-full h-[320px] flex items-center justify-center bg-blue-600/10 border border-blue-300 rounded-xl p-8">
               <div className="flex flex-col items-center gap-4">
                 <div className="flex items-center gap-2 text-white/80 mb-1">
@@ -418,13 +411,6 @@ export default function ModernUploader() {
                   className="w-36 h-36 rounded-xl border border-white/30 shadow-md cursor-pointer"
                   style={{ background: defaultGradient }}
                   onClick={() => setShowWheel(true)}
-                  onMouseEnter={(e) => {
-                    setDropperVisible(true);
-                    // For demonstration, we use a fixed color.
-                    setDropperColor("#ffffff");
-                  }}
-                  onMouseMove={(e) => setDropperPos({ x: e.clientX, y: e.clientY })}
-                  onMouseLeave={() => setDropperVisible(false)}
                 />
               </div>
             </div>
@@ -437,7 +423,7 @@ export default function ModernUploader() {
         {pinned.length > 0 && (
           <div
             ref={pinnedContainerRef}
-            className={`
+            className={
               border-b border-white/20 text-white py-2 px-4 mb-8
               ${
                 isPinnedFloating
@@ -445,7 +431,7 @@ export default function ModernUploader() {
                   : "origin-top"
               }
               transition-all duration-500 ease-out
-            `}
+            }
           >
             <div className="flex items-center justify-between mb-1.5 px-4">
               <div className="flex items-center gap-2">
@@ -654,9 +640,9 @@ export default function ModernUploader() {
               <div className="relative group cursor-pointer">
                 <div
                   onClick={() => handleSwatchClick(selectedColor!)}
-                  className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
+                  className={w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
                     selectedColor === activeSearchColor ? "ring-2 ring-white" : ""
-                  }`}
+                  }}
                   style={{ backgroundColor: selectedColor }}
                 />
                 <button
@@ -675,9 +661,11 @@ export default function ModernUploader() {
                 <div className="relative group cursor-pointer">
                   <div
                     onClick={() => handleSwatchClick(complementaryColor)}
-                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
-                      complementaryColor === activeSearchColor ? "ring-2 ring-white" : ""
-                    }`}
+                    className={w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
+                      complementaryColor === activeSearchColor
+                        ? "ring-2 ring-white"
+                        : ""
+                    }}
                     style={{ backgroundColor: complementaryColor }}
                   />
                   <button
@@ -699,9 +687,9 @@ export default function ModernUploader() {
                 <div key={col} className="relative group cursor-pointer">
                   <div
                     onClick={() => handleSwatchClick(col)}
-                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
+                    className={w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
                       col === activeSearchColor ? "ring-2 ring-white" : ""
-                    }`}
+                    }}
                     style={{ backgroundColor: col }}
                   />
                   <button
@@ -747,9 +735,9 @@ export default function ModernUploader() {
                     className="absolute top-2 right-2 z-20 bg-black/40 text-white p-1 rounded hover:bg-black/60 transition"
                   >
                     <Pin
-                      className={`w-5 h-5 ${
+                      className={w-5 h-5 ${
                         isPinned ? "fill-white text-yellow-300" : ""
-                      }`}
+                      }}
                     />
                   </button>
                   <div className="aspect-square overflow-hidden group-hover:scale-105 transition-transform duration-300">
@@ -787,24 +775,6 @@ export default function ModernUploader() {
           )}
         </div>
       </div>
-
-      {/* Dropper Ring (only active on landing page color picker) */}
-      {dropperVisible && (
-        <div
-          style={{
-            position: "fixed",
-            top: dropperPos.y,
-            left: dropperPos.x,
-            transform: "translate(-50%, -50%)",
-            width: "40px",
-            height: "40px",
-            borderRadius: "50%",
-            border: `2px solid ${dropperColor}`,
-            pointerEvents: "none",
-            zIndex: 1000,
-          }}
-        />
-      )}
     </div>
   );
 }
