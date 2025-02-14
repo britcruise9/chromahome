@@ -168,6 +168,11 @@ export default function ModernUploader() {
   const [isFetching, setIsFetching] = useState(false);
   const [colorOverlay, setColorOverlay] = useState(true);
 
+  // Dropper state
+  const [dropperVisible, setDropperVisible] = useState(false);
+  const [dropperColor, setDropperColor] = useState("");
+  const [dropperPos, setDropperPos] = useState({ x: 0, y: 0 });
+
   // Collapsible vision board
   const [visionCollapsed, setVisionCollapsed] = useState(false);
 
@@ -639,7 +644,17 @@ export default function ModernUploader() {
 
             <div className="flex items-center justify-center gap-6">
               {/* Primary */}
-              <div className="relative group cursor-pointer">
+              <div
+                onMouseEnter={(e) => {
+                  setDropperVisible(true);
+                  setDropperColor(selectedColor!);
+                }}
+                onMouseMove={(e) => {
+                  setDropperPos({ x: e.clientX, y: e.clientY });
+                }}
+                onMouseLeave={() => setDropperVisible(false)}
+                className="relative group cursor-pointer"
+              >
                 <div
                   onClick={() => handleSwatchClick(selectedColor!)}
                   className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
@@ -660,13 +675,21 @@ export default function ModernUploader() {
 
               {/* Complement */}
               {complementaryColor && (
-                <div className="relative group cursor-pointer">
+                <div
+                  onMouseEnter={(e) => {
+                    setDropperVisible(true);
+                    setDropperColor(complementaryColor);
+                  }}
+                  onMouseMove={(e) => {
+                    setDropperPos({ x: e.clientX, y: e.clientY });
+                  }}
+                  onMouseLeave={() => setDropperVisible(false)}
+                  className="relative group cursor-pointer"
+                >
                   <div
                     onClick={() => handleSwatchClick(complementaryColor)}
                     className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
-                      complementaryColor === activeSearchColor
-                        ? "ring-2 ring-white"
-                        : ""
+                      complementaryColor === activeSearchColor ? "ring-2 ring-white" : ""
                     }`}
                     style={{ backgroundColor: complementaryColor }}
                   />
@@ -686,7 +709,18 @@ export default function ModernUploader() {
 
               {/* Triadic */}
               {triadicColors?.map((col, i) => (
-                <div key={col} className="relative group cursor-pointer">
+                <div
+                  key={col}
+                  onMouseEnter={(e) => {
+                    setDropperVisible(true);
+                    setDropperColor(col);
+                  }}
+                  onMouseMove={(e) => {
+                    setDropperPos({ x: e.clientX, y: e.clientY });
+                  }}
+                  onMouseLeave={() => setDropperVisible(false)}
+                  className="relative group cursor-pointer"
+                >
                   <div
                     onClick={() => handleSwatchClick(col)}
                     className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
@@ -777,7 +811,26 @@ export default function ModernUploader() {
           )}
         </div>
       </div>
+
+      {/* Dropper Ring */}
+      {dropperVisible && (
+        <div
+          style={{
+            position: "fixed",
+            top: dropperPos.y,
+            left: dropperPos.x,
+            transform: "translate(-50%, -50%)",
+            width: "40px",
+            height: "40px",
+            borderRadius: "50%",
+            border: `2px solid ${dropperColor}`,
+            pointerEvents: "none",
+            zIndex: 1000,
+          }}
+        />
+      )}
     </div>
   );
 }
+
 
