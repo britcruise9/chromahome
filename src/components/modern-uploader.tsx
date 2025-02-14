@@ -168,7 +168,7 @@ export default function ModernUploader() {
   const [isFetching, setIsFetching] = useState(false);
   const [colorOverlay, setColorOverlay] = useState(true);
 
-  // Dropper state
+  // Dropper state (for landing page color picker only)
   const [dropperVisible, setDropperVisible] = useState(false);
   const [dropperColor, setDropperColor] = useState("");
   const [dropperPos, setDropperPos] = useState({ x: 0, y: 0 });
@@ -407,7 +407,7 @@ export default function ModernUploader() {
               </label>
             </div>
 
-            {/* Color Picker Box */}
+            {/* Color Picker Box (with dropper effect) */}
             <div className="max-w-md mx-auto w-full h-[320px] flex items-center justify-center bg-blue-600/10 border border-blue-300 rounded-xl p-8">
               <div className="flex flex-col items-center gap-4">
                 <div className="flex items-center gap-2 text-white/80 mb-1">
@@ -418,6 +418,13 @@ export default function ModernUploader() {
                   className="w-36 h-36 rounded-xl border border-white/30 shadow-md cursor-pointer"
                   style={{ background: defaultGradient }}
                   onClick={() => setShowWheel(true)}
+                  onMouseEnter={(e) => {
+                    setDropperVisible(true);
+                    // For demonstration, we use a fixed color.
+                    setDropperColor("#ffffff");
+                  }}
+                  onMouseMove={(e) => setDropperPos({ x: e.clientX, y: e.clientY })}
+                  onMouseLeave={() => setDropperVisible(false)}
                 />
               </div>
             </div>
@@ -644,17 +651,7 @@ export default function ModernUploader() {
 
             <div className="flex items-center justify-center gap-6">
               {/* Primary */}
-              <div
-                onMouseEnter={(e) => {
-                  setDropperVisible(true);
-                  setDropperColor(selectedColor!);
-                }}
-                onMouseMove={(e) => {
-                  setDropperPos({ x: e.clientX, y: e.clientY });
-                }}
-                onMouseLeave={() => setDropperVisible(false)}
-                className="relative group cursor-pointer"
-              >
+              <div className="relative group cursor-pointer">
                 <div
                   onClick={() => handleSwatchClick(selectedColor!)}
                   className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
@@ -675,17 +672,7 @@ export default function ModernUploader() {
 
               {/* Complement */}
               {complementaryColor && (
-                <div
-                  onMouseEnter={(e) => {
-                    setDropperVisible(true);
-                    setDropperColor(complementaryColor);
-                  }}
-                  onMouseMove={(e) => {
-                    setDropperPos({ x: e.clientX, y: e.clientY });
-                  }}
-                  onMouseLeave={() => setDropperVisible(false)}
-                  className="relative group cursor-pointer"
-                >
+                <div className="relative group cursor-pointer">
                   <div
                     onClick={() => handleSwatchClick(complementaryColor)}
                     className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
@@ -709,18 +696,7 @@ export default function ModernUploader() {
 
               {/* Triadic */}
               {triadicColors?.map((col, i) => (
-                <div
-                  key={col}
-                  onMouseEnter={(e) => {
-                    setDropperVisible(true);
-                    setDropperColor(col);
-                  }}
-                  onMouseMove={(e) => {
-                    setDropperPos({ x: e.clientX, y: e.clientY });
-                  }}
-                  onMouseLeave={() => setDropperVisible(false)}
-                  className="relative group cursor-pointer"
-                >
+                <div key={col} className="relative group cursor-pointer">
                   <div
                     onClick={() => handleSwatchClick(col)}
                     className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
@@ -812,7 +788,7 @@ export default function ModernUploader() {
         </div>
       </div>
 
-      {/* Dropper Ring */}
+      {/* Dropper Ring (only active on landing page color picker) */}
       {dropperVisible && (
         <div
           style={{
@@ -832,5 +808,6 @@ export default function ModernUploader() {
     </div>
   );
 }
+
 
 
