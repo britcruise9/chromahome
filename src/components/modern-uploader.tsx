@@ -18,7 +18,6 @@ import { amazonProducts } from "../lib/amazonProducts";
 declare const ColorThief: any;
 declare const gtag_report_conversion: (url: string) => boolean;
 
-
 // ----- Color Utils -----
 function hexToHSL(hex: string) {
   const r = parseInt(hex.slice(1, 3), 16) / 255;
@@ -150,15 +149,9 @@ export default function ModernUploader() {
     return [];
   });
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
-  const [complementaryColor, setComplementaryColor] = useState<string | null>(
-    null
-  );
-  const [triadicColors, setTriadicColors] = useState<[string, string] | null>(
-    null
-  );
-  const [activeSearchColor, setActiveSearchColor] = useState<string | null>(
-    null
-  );
+  const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
+  const [triadicColors, setTriadicColors] = useState<[string, string] | null>(null);
+  const [activeSearchColor, setActiveSearchColor] = useState<string | null>(null);
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
   const [showWheel, setShowWheel] = useState(false);
@@ -252,7 +245,7 @@ export default function ModernUploader() {
     setProducts([]);
     setPage(1);
     setHasMore(true);
-    loadProducts(1, activeSearchColor);
+    loadProducts(1, activeSearchColor, allProducts);
   }, [activeSearchColor, allProducts]);
 
   const pinnedColors = allProducts
@@ -276,7 +269,7 @@ export default function ModernUploader() {
       sorted = list;
     }
 
-    const pageSize = pageNum === 1 ? 50 : 12;
+    const pageSize = 12;
     const start = (pageNum - 1) * pageSize;
     const batch = sorted.slice(start, start + pageSize);
 
@@ -798,3 +791,4 @@ export default function ModernUploader() {
     </div>
   );
 }
+
