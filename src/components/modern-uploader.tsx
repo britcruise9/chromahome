@@ -71,7 +71,8 @@ function hslToHex(h: number, s: number, l: number) {
     const hx = Math.round(val * 255).toString(16);
     return hx.length === 1 ? "0" + hx : hx;
   };
-  return #${toHex(r)}${toHex(g)}${toHex(b)};
+
+    return `#${toHex(r)}${toHex(g)}${toHex(b)}`;  
 }
 
 function getComplementaryColor(hex: string) {
