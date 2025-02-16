@@ -10,10 +10,12 @@ import {
   ArrowLeft,
   ChevronUp,
   ChevronDown,
+  Camera
 } from "lucide-react";
 import { HslColorPicker } from "react-colorful";
 import { amazonProducts } from "../lib/amazonProducts";
 
+// For TypeScript declarations
 declare const ColorThief: any;
 declare const gtag_report_conversion: (url: string) => boolean;
 
@@ -131,6 +133,7 @@ function calculateColorMatch(color1: string, color2: string): number {
   }
 }
 
+// Hero images
 const heroImages = [
   "https://i.imgur.com/pHjncHD.png",
   "https://i.imgur.com/W1RnTGZ.png",
@@ -139,6 +142,7 @@ const heroImages = [
   "https://i.imgur.com/UzYfvqA.png",
 ];
 
+// Default color gradient background for "select" swatch
 const defaultGradient =
   "radial-gradient(circle at center, #ffadad 0%, #ffd6a5 16%, #fdffb6 33%, #caffbf 50%, #9bf6ff 66%, #a0c4ff 83%, #bdb2ff 100%)";
 
@@ -232,6 +236,7 @@ export default function ModernUploader() {
     setIsFetching(true);
     const list = allProducts;
     let sorted: any[] = [];
+
     if (activeSearchColor) {
       sorted = list.map((p) => {
         const c2 = (p.dominantColor || "#000000").trim();
@@ -251,6 +256,7 @@ export default function ModernUploader() {
 
     if (batch.length < pageSize) setHasMore(false);
     else setHasMore(true);
+
     setIsFetching(false);
   }, [page, activeSearchColor, allProducts]);
 
@@ -340,13 +346,13 @@ export default function ModernUploader() {
   const uniquePinnedColors = Array.from(new Set(pinnedColors)).slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#fff4f9] to-[#ffeaf2]">
-      {/* Back button if user selected or uploaded color */}
+    <div className="min-h-screen bg-gradient-to-br from-[#2c2f33] to-[#3b3f45] text-gray-100">
+      {/* If a color is selected or uploaded, show Back button */}
       {(hasUploaded || selectedColor) && showBack && (
         <div className="fixed top-4 left-4 z-50">
           <button
             onClick={resetAll}
-            className="text-white flex items-center gap-1 px-2 py-1 bg-black/40 rounded hover:bg-black/60 text-sm"
+            className="flex items-center gap-1 px-2 py-1 bg-black/40 rounded hover:bg-black/60 text-sm"
           >
             <ArrowLeft className="w-4 h-4" />
             Back
@@ -354,9 +360,9 @@ export default function ModernUploader() {
         </div>
       )}
 
-      {/* Hero */}
+      {/* Hero Section */}
       <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
-        {/* Fade overlay on load */}
+        {/* Fade overlay */}
         <div
           className={`absolute inset-0 bg-slate-900 transition-opacity duration-500 z-30 ${
             colorOverlay ? "opacity-100" : "opacity-0"
@@ -372,40 +378,44 @@ export default function ModernUploader() {
               background: `url('${img}') center/cover no-repeat`,
             }}
           >
+            {/* Semi-transparent overlay for legibility */}
             <div className="absolute inset-0 bg-black/40" />
           </div>
         ))}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-40 px-4">
-          {/* "SHOP BY" in white, "COLOR" with animated gradient */}
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg flex flex-wrap items-center justify-center gap-2">
-            <span>SHOP BY</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-[length:200%_200%] animate-gradient-x">
+          {/* "SHOP BY" in plain text, "COLOR" with animated gradient */}
+          <h1 className="text-4xl md:text-6xl font-extrabold flex flex-wrap items-center justify-center gap-2">
+            <span className="text-white drop-shadow-lg">SHOP BY</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-[length:200%_200%] animate-gradient-x drop-shadow-lg">
               COLOR
             </span>
           </h1>
-
-          <p className="mt-2 text-xl md:text-2xl text-white font-light drop-shadow-md">
+          <p className="mt-2 text-xl md:text-2xl font-light drop-shadow-md text-white">
             Find matching furniture & decor in your exact color
           </p>
         </div>
       </div>
 
-      {/* Main Content */}
+      {/* Main Content Area */}
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* Only show these if user hasn't uploaded or selected a color yet */}
+        {/* Show if user hasn't chosen or uploaded a color yet */}
         {!hasUploaded && !selectedColor && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-            {/* Upload Box */}
-            <div className="max-w-md mx-auto w-full h-[320px] flex items-center justify-center text-center">
-              <label className="block w-full">
-                <div className="group cursor-pointer border-2 border-dashed border-gray-300 rounded-xl p-8 hover:border-gray-400 transition-transform duration-300 ease-out hover:scale-105">
-                  <Upload className="w-12 h-12 mb-4 mx-auto text-gray-500" />
-                  <h3 className="text-xl text-gray-800 font-semibold mb-2">
-                    Upload or Snap Your Color
-                  </h3>
-                  <p className="text-gray-600">
-                    (Paint chips, fabrics, or any surface photo)
-                  </p>
+          <div className="text-center mb-12">
+            <h3 className="text-xl md:text-2xl font-bold text-gray-100">
+              Upload, Snap, or Select Your Shade
+            </h3>
+            <p className="text-sm md:text-base text-gray-300 mt-1">
+              Quickly find matching decor your way
+            </p>
+
+            <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-8">
+              {/* Upload with dashed border */}
+              <label className="group cursor-pointer">
+                <div className="flex flex-col items-center p-4 border-2 border-dashed border-gray-400 rounded-xl hover:border-gray-300 transition">
+                  <Upload className="w-10 h-10 text-gray-300 group-hover:scale-110 transition-transform" />
+                  <span className="mt-2 text-sm md:text-base font-medium text-gray-100">
+                    Upload
+                  </span>
                 </div>
                 <input
                   type="file"
@@ -414,35 +424,39 @@ export default function ModernUploader() {
                   onChange={handleFileUpload}
                 />
               </label>
-            </div>
 
-            {/* Color Picker Box */}
-            <div className="max-w-md mx-auto w-full h-[320px] flex items-center justify-center text-center">
-              <div className="group cursor-pointer border-2 border-dashed border-gray-300 rounded-xl p-8 hover:border-gray-400 transition-transform duration-300 ease-out hover:scale-105">
-                <div className="mb-4 flex items-center justify-center gap-2">
-                  <Palette className="w-8 h-8 text-gray-500" />
-                  <h3 className="text-xl text-gray-800 font-semibold">
-                    Select a Shade to Explore
-                  </h3>
-                </div>
-                <div
-                  className="w-36 h-36 mx-auto rounded-xl border border-gray-300 shadow-md"
-                  style={{ background: defaultGradient }}
-                  onClick={() => setShowWheel(true)}
-                />
+              {/* Snap (Camera) */}
+              <div
+                className="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform"
+                // Add onClick={() => ...} for camera logic
+              >
+                <Camera className="w-10 h-10 text-gray-300" />
+                <span className="mt-2 text-sm md:text-base font-medium text-gray-100">
+                  Snap
+                </span>
+              </div>
+
+              {/* Select (Palette) */}
+              <div
+                className="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform"
+                // onClick={() => setShowWheel(true)} or something similar
+              >
+                <Palette className="w-10 h-10 text-gray-300" />
+                <span className="mt-2 text-sm md:text-base font-medium text-gray-100">
+                  Select
+                </span>
               </div>
             </div>
           </div>
         )}
 
-        {/* Vision Board anchor */}
         <div ref={pinnedTriggerRef} />
 
         {/* Vision Board */}
         {pinned.length > 0 && (
           <div
             ref={pinnedContainerRef}
-            className={`border-b border-gray-300 text-gray-700 py-2 px-4 mb-8 bg-white/90 backdrop-blur-md ${
+            className={`border-b border-gray-500/40 py-2 px-4 mb-8 bg-black/30 backdrop-blur-md text-gray-100 ${
               isPinnedFloating
                 ? "origin-top-left group/vision fixed left-0 right-0 z-40 top-0 border-none shadow-lg"
                 : "origin-top"
@@ -450,30 +464,30 @@ export default function ModernUploader() {
           >
             <div className="flex items-center justify-between mb-1.5 px-4">
               <div className="flex items-center gap-2">
-                <h3 className="text-sm font-medium text-gray-600 transition-all">
+                <h3 className="text-sm font-medium text-gray-300 transition-all">
                   Vision Board
                 </h3>
                 {!visionCollapsed &&
                   uniquePinnedColors.map((color, idx) => (
                     <div
                       key={idx}
-                      className="w-4 h-4 rounded-full border border-gray-400"
+                      className="w-4 h-4 rounded-full border border-gray-100"
                       style={{ backgroundColor: color }}
                     />
                   ))}
               </div>
               <div className="flex items-center gap-4">
-                <span className="text-xs text-gray-500 transition-all">
+                <span className="text-xs text-gray-400 transition-all">
                   {pinned.length} items
                 </span>
                 <button
                   onClick={() => setVisionCollapsed(!visionCollapsed)}
-                  className="p-1 bg-gray-200 hover:bg-gray-300 rounded transition"
+                  className="p-1 bg-black/40 hover:bg-black/60 rounded transition"
                 >
                   {visionCollapsed ? (
-                    <ChevronDown className="w-4 h-4 text-gray-600" />
+                    <ChevronDown className="w-4 h-4 text-gray-100" />
                   ) : (
-                    <ChevronUp className="w-4 h-4 text-gray-600" />
+                    <ChevronUp className="w-4 h-4 text-gray-100" />
                   )}
                 </button>
               </div>
@@ -494,7 +508,7 @@ export default function ModernUploader() {
                         e.preventDefault();
                         gtag_report_conversion(product.affiliateLink);
                       }}
-                      className="min-w-[100px] relative border border-gray-300 rounded-lg overflow-hidden shrink-0 transition-all duration-500 hover:scale-105 hover:shadow-md"
+                      className="min-w-[100px] relative border border-gray-400/60 rounded-lg overflow-hidden shrink-0 transition-all duration-500 hover:scale-105"
                     >
                       <button
                         onClick={(e) => {
@@ -502,9 +516,9 @@ export default function ModernUploader() {
                           e.stopPropagation();
                           togglePin(id);
                         }}
-                        className="absolute top-2 right-2 z-10 text-xs p-1.5 bg-black/30 rounded-full hover:bg-black/50 text-white"
+                        className="absolute top-2 right-2 z-10 text-xs p-1.5 bg-black/50 rounded-full hover:bg-black/70"
                       >
-                        <PinOff className="w-3 h-3" />
+                        <PinOff className="w-3 h-3 text-gray-100" />
                       </button>
                       <div className="h-[100px] w-[100px] overflow-hidden">
                         <img
@@ -564,7 +578,7 @@ export default function ModernUploader() {
                     setShowWheel(false);
                     setActiveEditingColor(null);
                   }}
-                  className="flex-1 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-md text-sm"
+                  className="flex-1 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-md text-sm"
                 >
                   Cancel
                 </button>
@@ -576,7 +590,7 @@ export default function ModernUploader() {
                       colorWheelHsl.l
                     );
                     if (activeEditingColor) {
-                      // Edit existing color swatches
+                      // Editing existing color
                       if (activeEditingColor === "primary") {
                         setSelectedColor(newCol);
                         setComplementaryColor(getComplementaryColor(newCol));
@@ -597,7 +611,7 @@ export default function ModernUploader() {
                       }
                       setPage(1);
                     } else {
-                      // Just selected a new color
+                      // Fresh color pick
                       handleManualColor(newCol);
                     }
                     setShowWheel(false);
@@ -612,9 +626,10 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Chosen color palette */}
+        {/* Chosen Color Palette */}
         {selectedColor && (
           <div className="mb-10 flex flex-col items-center">
+            {/* If user uploaded an image, show it */}
             {uploadedImageUrl && (
               <div className="flex flex-col items-center mb-4">
                 <div className="relative group">
@@ -625,6 +640,7 @@ export default function ModernUploader() {
                       className="w-full h-full object-cover"
                     />
                   </div>
+                  {/* Settings & re-upload icons */}
                   <div className="absolute -top-2 -right-2 flex gap-1">
                     <button
                       onClick={(e) => {
@@ -648,7 +664,7 @@ export default function ModernUploader() {
                     </label>
                   </div>
                 </div>
-                <ArrowDown className="w-6 h-6 text-gray-700 mt-2" />
+                <ArrowDown className="w-6 h-6 text-gray-300 mt-2" />
               </div>
             )}
 
@@ -670,7 +686,7 @@ export default function ModernUploader() {
                 >
                   <Settings className="w-4 h-4 text-white" />
                 </button>
-                <span className="text-xs md:text-sm text-gray-600 mt-2 block text-center">
+                <span className="text-xs md:text-sm text-gray-300 mt-2 block text-center">
                   Selected
                 </span>
               </div>
@@ -695,7 +711,7 @@ export default function ModernUploader() {
                   >
                     <Settings className="w-4 h-4 text-white" />
                   </button>
-                  <span className="text-xs md:text-sm text-gray-600 mt-2 block text-center">
+                  <span className="text-xs md:text-sm text-gray-300 mt-2 block text-center">
                     Complement
                   </span>
                 </div>
@@ -719,7 +735,7 @@ export default function ModernUploader() {
                   >
                     <Settings className="w-4 h-4 text-white" />
                   </button>
-                  <span className="text-xs md:text-sm text-gray-600 mt-2 block text-center">
+                  <span className="text-xs md:text-sm text-gray-300 mt-2 block text-center">
                     Accent {i + 1}
                   </span>
                 </div>
@@ -744,7 +760,7 @@ export default function ModernUploader() {
                 }}
                 className="block"
               >
-                <div className="group relative bg-white rounded-xl overflow-hidden border border-gray-300 hover:shadow-md transition-all duration-300 ease-out">
+                <div className="group relative bg-white/5 rounded-xl overflow-hidden border border-gray-600/20 hover:bg-white/10 transition-all duration-300 ease-out">
                   <button
                     onClick={(e) => {
                       e.preventDefault();
@@ -768,7 +784,7 @@ export default function ModernUploader() {
                   </div>
                   <div className="p-4">
                     {p.affiliateLink && (
-                      <span className="text-sm text-pink-500 hover:text-pink-400 transition-colors">
+                      <span className="text-sm text-pink-400 hover:text-pink-300 transition-colors">
                         Shop on Amazon
                       </span>
                     )}
@@ -782,9 +798,11 @@ export default function ModernUploader() {
         {/* Infinite Scroll Sentinel */}
         <div ref={sentinelRef} className="mt-8 h-8 flex justify-center items-center">
           {isFetching && hasMore && (
-            <div className="text-sm text-gray-600 animate-pulse">Loading more...</div>
+            <div className="text-sm text-gray-300 animate-pulse">Loading more...</div>
           )}
-          {!hasMore && <div className="text-sm text-gray-500">~ End of results ~</div>}
+          {!hasMore && (
+            <div className="text-sm text-gray-400">~ End of results ~</div>
+          )}
         </div>
       </div>
     </div>
