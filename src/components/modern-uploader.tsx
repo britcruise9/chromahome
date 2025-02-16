@@ -152,9 +152,15 @@ export default function ModernUploader() {
     return [];
   });
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
-  const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
-  const [triadicColors, setTriadicColors] = useState<[string, string] | null>(null);
-  const [activeSearchColor, setActiveSearchColor] = useState<string | null>(null);
+  const [complementaryColor, setComplementaryColor] = useState<string | null>(
+    null
+  );
+  const [triadicColors, setTriadicColors] = useState<[string, string] | null>(
+    null
+  );
+  const [activeSearchColor, setActiveSearchColor] = useState<string | null>(
+    null
+  );
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
   const [showWheel, setShowWheel] = useState(false);
@@ -334,7 +340,7 @@ export default function ModernUploader() {
   const uniquePinnedColors = Array.from(new Set(pinnedColors)).slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#f8f9fa] to-[#dee2e6]">
+    <div className="min-h-screen bg-gradient-to-br from-[#fdf1e7] to-[#f3e4d6]">
       {(hasUploaded || selectedColor) && showBack && (
         <div className="fixed top-4 left-4 z-50">
           <button
@@ -349,11 +355,17 @@ export default function ModernUploader() {
 
       {/* Hero */}
       <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
-        <div className={`absolute inset-0 bg-slate-900 transition-opacity duration-500 z-30 ${colorOverlay ? "opacity-100" : "opacity-0"}`} />
+        <div
+          className={`absolute inset-0 bg-slate-900 transition-opacity duration-500 z-30 ${
+            colorOverlay ? "opacity-100" : "opacity-0"
+          }`}
+        />
         {heroImages.map((img, i) => (
           <div
             key={img}
-            className={`absolute inset-0 transition-opacity duration-1000 ${currentHero === i ? "opacity-100 z-20" : "opacity-0 z-10"}`}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              currentHero === i ? "opacity-100 z-20" : "opacity-0 z-10"
+            }`}
             style={{
               background: `url('${img}') center/cover no-repeat`,
             }}
@@ -376,14 +388,14 @@ export default function ModernUploader() {
         {!hasUploaded && !selectedColor && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             {/* Upload Box */}
-            <div className="max-w-md mx-auto w-full h-[320px] flex items-center justify-center bg-blue-600/10 border border-blue-300 rounded-xl p-8">
+            <div className="max-w-md mx-auto w-full h-[320px] flex items-center justify-center bg-neutral-800/90 border border-neutral-700 rounded-xl p-8 text-white">
               <label className="block w-full">
-                <div className="group cursor-pointer border-2 border-dashed border-white/20 rounded-xl p-8 text-center hover:border-white/30 transition-transform duration-300 ease-out hover:scale-105">
-                  <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
-                  <h3 className="text-xl text-white/90 mb-2">
+                <div className="group cursor-pointer border-2 border-dashed border-white/30 rounded-xl p-8 text-center hover:border-white/50 transition-transform duration-300 ease-out hover:scale-105">
+                  <Upload className="w-12 h-12 mb-4 mx-auto text-white/70" />
+                  <h3 className="text-xl font-semibold mb-2">
                     Upload or Snap Your Color
                   </h3>
-                  <p className="text-white/60">
+                  <p className="text-white/80">
                     (Paint chips, fabrics, or any surface photo)
                   </p>
                 </div>
@@ -397,10 +409,10 @@ export default function ModernUploader() {
             </div>
 
             {/* Color Picker Box */}
-            <div className="max-w-md mx-auto w-full h-[320px] flex items-center justify-center bg-blue-600/10 border border-blue-300 rounded-xl p-8">
+            <div className="max-w-md mx-auto w-full h-[320px] flex items-center justify-center bg-neutral-800/90 border border-neutral-700 rounded-xl p-8 text-white">
               <div className="flex flex-col items-center gap-4">
-                <div className="flex items-center gap-2 text-white/80 mb-1">
-                  <Palette className="w-6 h-6 text-white/50" />
+                <div className="flex items-center gap-2 mb-1">
+                  <Palette className="w-6 h-6 text-white/70" />
                   <span className="font-semibold text-xl">
                     Select a Shade to Explore
                   </span>
@@ -656,7 +668,9 @@ export default function ModernUploader() {
                   <div
                     onClick={() => handleSwatchClick(complementaryColor)}
                     className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg ${
-                      complementaryColor === activeSearchColor ? "ring-2 ring-white" : ""
+                      complementaryColor === activeSearchColor
+                        ? "ring-2 ring-white"
+                        : ""
                     }`}
                     style={{ backgroundColor: complementaryColor }}
                   />
@@ -726,7 +740,11 @@ export default function ModernUploader() {
                     }}
                     className="absolute top-2 right-2 z-20 bg-black/40 text-white p-1 rounded hover:bg-black/60 transition"
                   >
-                    <Pin className={`w-5 h-5 ${isPinned ? "fill-white text-yellow-300" : ""}`} />
+                    <Pin
+                      className={`w-5 h-5 ${
+                        isPinned ? "fill-white text-yellow-300" : ""
+                      }`}
+                    />
                   </button>
                   <div className="aspect-square overflow-hidden group-hover:scale-105 transition-transform duration-300">
                     <img
@@ -749,21 +767,13 @@ export default function ModernUploader() {
         </div>
 
         {/* Infinite Scroll Sentinel */}
-        <div
-          ref={sentinelRef}
-          className="mt-8 h-8 flex justify-center items-center"
-        >
+        <div ref={sentinelRef} className="mt-8 h-8 flex justify-center items-center">
           {isFetching && hasMore && (
-            <div className="text-sm text-white/60 animate-pulse">
-              Loading more...
-            </div>
+            <div className="text-sm text-white/60 animate-pulse">Loading more...</div>
           )}
-          {!hasMore && (
-            <div className="text-sm text-white/50">~ End of results ~</div>
-          )}
+          {!hasMore && <div className="text-sm text-white/50">~ End of results ~</div>}
         </div>
       </div>
     </div>
   );
 }
-
