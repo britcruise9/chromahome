@@ -15,7 +15,7 @@ import {
 import { HslColorPicker } from "react-colorful";
 import { amazonProducts } from "../lib/amazonProducts";
 
-// For TypeScript declarations
+// ----- Type Declarations (if needed) -----
 declare const ColorThief: any;
 declare const gtag_report_conversion: (url: string) => boolean;
 
@@ -89,6 +89,20 @@ function getTriadicColors(hex: string): [string, string] {
     hslToHex((h + 120) % 360, s, l),
     hslToHex((h + 240) % 360, s, l),
   ];
+}
+
+// ----- File Drag & Drop Handlers -----
+function handleDragOver(e: React.DragEvent<HTMLLabelElement>) {
+  e.preventDefault();
+}
+
+async function handleDrop(
+  e: React.DragEvent<HTMLLabelElement>,
+  onFileSelect: (file: File) => void
+) {
+  e.preventDefault();
+  const file = e.dataTransfer.files?.[0];
+  if (file) onFileSelect(file);
 }
 
 async function extractColor(file: File): Promise<string> {
@@ -209,7 +223,7 @@ export default function ModernUploader() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Fade out overlay
+  // Fade out hero overlay
   useEffect(() => {
     const t = setTimeout(() => setColorOverlay(false), 500);
     return () => clearTimeout(t);
@@ -234,17 +248,16 @@ export default function ModernUploader() {
   useEffect(() => {
     if (!allProducts.length) return;
     setIsFetching(true);
-    const list = allProducts;
-    let sorted: any[] = [];
 
+    let sorted: any[] = [];
     if (activeSearchColor) {
-      sorted = list.map((p) => {
+      sorted = allProducts.map((p) => {
         const c2 = (p.dominantColor || "#000000").trim();
         return { ...p, matchPercentage: calculateColorMatch(activeSearchColor, c2) };
       });
       sorted.sort((a, b) => b.matchPercentage - a.matchPercentage);
     } else {
-      sorted = list;
+      sorted = allProducts;
     }
 
     const pageSize = 12;
@@ -277,10 +290,15 @@ export default function ModernUploader() {
     };
   }, [hasMore, isFetching]);
 
-  // Handlers
+  // Upload Handler
   async function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
+    await processUpload(file);
+  }
+
+  // Process Upload (shared by input and drag drop)
+  async function processUpload(file: File) {
     try {
       const url = URL.createObjectURL(file);
       setUploadedImageUrl(url);
@@ -292,20 +310,23 @@ export default function ModernUploader() {
     }
   }
 
+  // Choose color manually
   function handleManualColor(hex: string) {
     setSelectedColor(hex);
     setComplementaryColor(getComplementaryColor(hex));
     setTriadicColors(getTriadicColors(hex));
     setActiveSearchColor(hex);
-    setPage(1); // reset pagination on new color
+    setPage(1); // reset pagination
     setHasUploaded(true);
   }
 
+  // Click swatch
   function handleSwatchClick(color: string) {
     setActiveSearchColor(color);
     setPage(1);
   }
 
+  // Gear Icon
   function handleGearClick(
     e: React.MouseEvent,
     color: string,
@@ -317,6 +338,7 @@ export default function ModernUploader() {
     setShowWheel(true);
   }
 
+  // Pin/Unpin
   function togglePin(productId: number) {
     setPinned((prev) => {
       const updated = prev.includes(productId)
@@ -327,6 +349,7 @@ export default function ModernUploader() {
     });
   }
 
+  // Reset
   function resetAll() {
     setHasUploaded(false);
     setUploadedImageUrl(null);
@@ -340,6 +363,7 @@ export default function ModernUploader() {
     setColorWheelHsl({ h: 0, s: 50, l: 50 });
   }
 
+  // Compute pinned colors
   const pinnedColors = allProducts
     .filter((p) => pinned.includes(p.id) && p.dominantColor)
     .map((p) => p.dominantColor);
@@ -347,7 +371,7 @@ export default function ModernUploader() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#2c2f33] to-[#3b3f45] text-gray-100">
-      {/* If a color is selected or uploaded, show Back button */}
+      {/* Back Button */}
       {(hasUploaded || selectedColor) && showBack && (
         <div className="fixed top-4 left-4 z-50">
           <button
@@ -360,7 +384,7 @@ export default function ModernUploader() {
         </div>
       )}
 
-      {/* Hero Section */}
+      {/* Hero Slideshow */}
       <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
         {/* Fade overlay */}
         <div
@@ -378,12 +402,12 @@ export default function ModernUploader() {
               background: `url('${img}') center/cover no-repeat`,
             }}
           >
-            {/* Semi-transparent overlay for legibility */}
+            {/* Additional overlay for text legibility */}
             <div className="absolute inset-0 bg-black/40" />
           </div>
         ))}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-40 px-4">
-          {/* "SHOP BY" in plain text, "COLOR" with animated gradient */}
+          {/* "SHOP BY" + animated "COLOR" */}
           <h1 className="text-4xl md:text-6xl font-extrabold flex flex-wrap items-center justify-center gap-2">
             <span className="text-white drop-shadow-lg">SHOP BY</span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-[length:200%_200%] animate-gradient-x drop-shadow-lg">
@@ -396,21 +420,23 @@ export default function ModernUploader() {
         </div>
       </div>
 
-      {/* Main Content Area */}
+      {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 pb-20">
-        {/* Show if user hasn't chosen or uploaded a color yet */}
+        {/* If no color chosen yet */}
         {!hasUploaded && !selectedColor && (
           <div className="text-center mb-12">
             <h3 className="text-xl md:text-2xl font-bold text-gray-100">
-              Upload, Snap, or Select Your Shade
+              Select your shade to start:
             </h3>
-            <p className="text-sm md:text-base text-gray-300 mt-1">
-              Quickly find matching decor your way
-            </p>
 
+            {/* 3 Options: Upload, Snap, Select */}
             <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-8">
-              {/* Upload with dashed border */}
-              <label className="group cursor-pointer">
+              {/* Upload with drag & drop */}
+              <label
+                onDragOver={handleDragOver}
+                onDrop={(e) => handleDrop(e, processUpload)}
+                className="group cursor-pointer"
+              >
                 <div className="flex flex-col items-center p-4 border-2 border-dashed border-gray-400 rounded-xl hover:border-gray-300 transition">
                   <Upload className="w-10 h-10 text-gray-300 group-hover:scale-110 transition-transform" />
                   <span className="mt-2 text-sm md:text-base font-medium text-gray-100">
@@ -428,7 +454,7 @@ export default function ModernUploader() {
               {/* Snap (Camera) */}
               <div
                 className="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform"
-                // Add onClick={() => ...} for camera logic
+                // Add real camera logic here if needed
               >
                 <Camera className="w-10 h-10 text-gray-300" />
                 <span className="mt-2 text-sm md:text-base font-medium text-gray-100">
@@ -438,8 +464,8 @@ export default function ModernUploader() {
 
               {/* Select (Palette) */}
               <div
+                onClick={() => setShowWheel(true)}
                 className="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform"
-                // onClick={() => setShowWheel(true)} or something similar
               >
                 <Palette className="w-10 h-10 text-gray-300" />
                 <span className="mt-2 text-sm md:text-base font-medium text-gray-100">
@@ -467,14 +493,13 @@ export default function ModernUploader() {
                 <h3 className="text-sm font-medium text-gray-300 transition-all">
                   Vision Board
                 </h3>
-                {!visionCollapsed &&
-                  uniquePinnedColors.map((color, idx) => (
-                    <div
-                      key={idx}
-                      className="w-4 h-4 rounded-full border border-gray-100"
-                      style={{ backgroundColor: color }}
-                    />
-                  ))}
+                {uniquePinnedColors.map((color, idx) => (
+                  <div
+                    key={idx}
+                    className="w-4 h-4 rounded-full border border-gray-100"
+                    style={{ backgroundColor: color }}
+                  />
+                ))}
               </div>
               <div className="flex items-center gap-4">
                 <span className="text-xs text-gray-400 transition-all">
@@ -535,6 +560,7 @@ export default function ModernUploader() {
           </div>
         )}
 
+        {/* Spacer if pinned is floating */}
         {isPinnedFloating && pinned.length > 0 && <div className="h-[120px]" />}
 
         {/* Color Picker Modal */}
@@ -798,7 +824,9 @@ export default function ModernUploader() {
         {/* Infinite Scroll Sentinel */}
         <div ref={sentinelRef} className="mt-8 h-8 flex justify-center items-center">
           {isFetching && hasMore && (
-            <div className="text-sm text-gray-300 animate-pulse">Loading more...</div>
+            <div className="text-sm text-gray-300 animate-pulse">
+              Loading more...
+            </div>
           )}
           {!hasMore && (
             <div className="text-sm text-gray-400">~ End of results ~</div>
