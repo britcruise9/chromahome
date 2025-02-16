@@ -139,6 +139,9 @@ const heroImages = [
   "https://i.imgur.com/UzYfvqA.png",
 ];
 
+const defaultGradient =
+  "radial-gradient(circle at center, #ffadad 0%, #ffd6a5 16%, #fdffb6 33%, #caffbf 50%, #9bf6ff 66%, #a0c4ff 83%, #bdb2ff 100%)";
+
 export default function ModernUploader() {
   // States
   const [pinned, setPinned] = useState<number[]>(() => {
@@ -149,12 +152,8 @@ export default function ModernUploader() {
     return [];
   });
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
-  const [complementaryColor, setComplementaryColor] = useState<string | null>(
-    null
-  );
-  const [triadicColors, setTriadicColors] = useState<[string, string] | null>(
-    null
-  );
+  const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
+  const [triadicColors, setTriadicColors] = useState<[string, string] | null>(null);
   const [activeSearchColor, setActiveSearchColor] = useState<string | null>(null);
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
@@ -334,11 +333,8 @@ export default function ModernUploader() {
     .map((p) => p.dominantColor);
   const uniquePinnedColors = Array.from(new Set(pinnedColors)).slice(0, 3);
 
-  const defaultGradient =
-    "radial-gradient(circle at center, #ffadad 0%, #ffd6a5 16%, #fdffb6 33%, #caffbf 50%, #9bf6ff 66%, #a0c4ff 83%, #bdb2ff 100%)";
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
+    <div className="min-h-screen bg-gradient-to-br from-[#f8f9fa] to-[#dee2e6]">
       {(hasUploaded || selectedColor) && showBack && (
         <div className="fixed top-4 left-4 z-50">
           <button
@@ -353,17 +349,11 @@ export default function ModernUploader() {
 
       {/* Hero */}
       <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
-        <div
-          className={`absolute inset-0 bg-slate-900 transition-opacity duration-500 z-30 ${
-            colorOverlay ? "opacity-100" : "opacity-0"
-          }`}
-        />
+        <div className={`absolute inset-0 bg-slate-900 transition-opacity duration-500 z-30 ${colorOverlay ? "opacity-100" : "opacity-0"}`} />
         {heroImages.map((img, i) => (
           <div
             key={img}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              currentHero === i ? "opacity-100 z-20" : "opacity-0 z-10"
-            }`}
+            className={`absolute inset-0 transition-opacity duration-1000 ${currentHero === i ? "opacity-100 z-20" : "opacity-0 z-10"}`}
             style={{
               background: `url('${img}') center/cover no-repeat`,
             }}
@@ -375,7 +365,7 @@ export default function ModernUploader() {
           <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-[length:200%_200%] animate-gradient-x drop-shadow-lg">
             SHOP BY COLOR
           </h1>
-          <p className="mt-2 text-xl md:text-2xl text-white font-light">
+          <p className="mt-2 text-xl md:text-2xl text-white font-light drop-shadow-md">
             Find matching furniture & decor in your exact color
           </p>
         </div>
@@ -391,7 +381,7 @@ export default function ModernUploader() {
                 <div className="group cursor-pointer border-2 border-dashed border-white/20 rounded-xl p-8 text-center hover:border-white/30 transition-transform duration-300 ease-out hover:scale-105">
                   <Upload className="w-12 h-12 mb-4 mx-auto text-white/50" />
                   <h3 className="text-xl text-white/90 mb-2">
-                    Upload or Take Photo of your color
+                    Upload or Snap Your Color
                   </h3>
                   <p className="text-white/60">
                     (Paint chips, fabrics, or any surface photo)
@@ -411,7 +401,9 @@ export default function ModernUploader() {
               <div className="flex flex-col items-center gap-4">
                 <div className="flex items-center gap-2 text-white/80 mb-1">
                   <Palette className="w-6 h-6 text-white/50" />
-                  <span className="font-semibold">Or pick a color:</span>
+                  <span className="font-semibold text-xl">
+                    Select a Shade to Explore
+                  </span>
                 </div>
                 <div
                   className="w-36 h-36 rounded-xl border border-white/30 shadow-md cursor-pointer"
@@ -774,3 +766,4 @@ export default function ModernUploader() {
     </div>
   );
 }
+
