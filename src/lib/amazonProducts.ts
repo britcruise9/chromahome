@@ -30921,5 +30921,425 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BWRN728Y/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#2b2b2a"
+  },
+   {
+    "id": 3090,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "Alsingbago Large Abstract Canvas Wall Art for Living Room Bedroom Home Office Red Grey Black Abstract Canvas Prints Modern Wall Decor Ready to Hang Size 20x40",
+    "image": "https://m.media-amazon.com/images/I/81xK+GT2BOL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CRYW9RD1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e91105"
+  },
+  {
+    "id": 3091,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "Sense&Sensitivity Arts- Abstract Wall Art Modern Vintage Reed Wall Decor Red Landscape Picture Oil Paintings for Living Room Kitchen Bedroom Bathroom Office and Hallway Wall Decor 36\" x 24\" Inch",
+    "image": "https://m.media-amazon.com/images/I/71gRvbBnuCL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DLGGKDZC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#834a44"
+  },
+  {
+    "id": 3092,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "Lapremoly Canvas Wall Art For Living Room Wall Decor For Bedroom Office Decor Red Tree Abstract Landscape Wall Paintings Prints Artwork Modern Inspiration Wall Pictures Room Home Decor 3 Piece",
+    "image": "https://m.media-amazon.com/images/I/61lqnRer07L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQSD1D5G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d2c3c4"
+  },
+  {
+    "id": 3093,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "Yihui Arts Abstract Forest Painting - Red Tree Canvas Wall Art, Hand Painted Landscape Artwork for Modern Home Decor",
+    "image": "https://m.media-amazon.com/images/I/812QWek6IDL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07W57XDZP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a62823"
+  },
+  {
+    "id": 3094,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "Muolunna BK03975 Wall Art Decor Canvas Print Picture Red Forest Waterfalls 1 Piece Modern Landscape Tree for Living Room Bedroom Kitchen Office Home Decorations Stretched and Framed Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/81o0cEue57L._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09SZ75JYL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#874036"
+  },
+  {
+    "id": 3095,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Visual Art Decor Red and Grey Abstract Geometric Circle Canvas Wall Art Rustic Burgundy Red Prints Artwork for Living Room Bedroom Christmas Wall Decoration (Red)",
+    "image": "https://m.media-amazon.com/images/I/71hwx1yBYRL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B2MWHTLN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7c3435"
+  },
+  {
+    "id": 3096,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Red Wall Decor for Bedroom Red Bathroom Accessories Black and White Canvas Wall Art Rose Pictures for Living Room Home Decorations Flower Painting Couples Bedroom Kitchen Modern Artwork 12x12\"4Pcs/Set",
+    "image": "https://m.media-amazon.com/images/I/71yrlgLcMyL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07R2M5K93/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7e5359"
+  },
+  {
+    "id": 3097,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "NITERNY ART Red Wall Decor for Bedroom, Flower Canvas Wall Art for Living Room, Red and Black Bathroom Decor",
+    "image": "https://m.media-amazon.com/images/I/71rdhGVUjUL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJV2ZRHY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d71108"
+  },
+  {
+    "id": 3098,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "3 Pcs Red Decor Flower Inspirational Wooden Wall Art Red Roses Decor Office Wall Decor with Accept Let Go Have Faith Positive Quotes for Girl Women Bathroom Living Room Bedroom(Red Rose12 x 4 Inch)",
+    "image": "https://m.media-amazon.com/images/I/71GHhP49EnL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BW7MKY9M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8e2e31"
+  },
+  {
+    "id": 3099,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "aburaeart Inspirational Wall-Art - Quotes Office Teal Decor For Bedroom - Word Artwork For Home Walls Size 12x16",
+    "image": "https://m.media-amazon.com/images/I/81bd6FDgLeL._AC_SY679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08P1PWYMN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9fc3c3"
+  },
+  {
+    "id": 3100,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "YaSheng Art - 3D Oil Paintings On Canvas Golden Flowers Tree Paintings Abstract Artwork Wall Art For living Room, Dinning Room Home Decor Framed Stretched Ready to Hang 24x24inch",
+    "image": "https://m.media-amazon.com/images/I/71a1-YRIYjL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B075P3F87M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fcffbb"
+  },
+  {
+    "id": 3101,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "Stretched Canvas Wall Art of White Flowers Plant Picture for Living Room Bedroom Home Decoration, Beautiful White and Red Premium Nature Print Artwork Painting Decor, Inner Frame 20x40 Inches",
+    "image": "https://m.media-amazon.com/images/I/71grABAyeBL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKMT4JW2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bcb4ac"
+  },
+  {
+    "id": 3102,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "Kitchen Wall Art For Dining Room Wall Decor Still Life Black And White Canvas Art Prints Wine Barrel Bar Red Rose Painting Modern Family Wall Decorations Restaurant Bedroom Decor Artwork 3 Piece Set",
+    "image": "https://m.media-amazon.com/images/I/616jc5r2h9L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08CS8VV6B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#be0a0b"
+  },
+  {
+    "id": 3103,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "Wieco Art Red Silver Modern Stretched and Framed 100% Hand-Painted Contemporary Abstract Oil Paintings on Canvas Wall Art for Home Decorations Wall Decor 4pcs/Set I",
+    "image": "https://m.media-amazon.com/images/I/51g+WeNSv3L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00IMBXPPQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d99097"
+  },
+  {
+    "id": 3104,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "KREATIVE ARTS Large Canvas Prints Wall Art Grey and Red Plum Blossom Tree and Full Moon Landscape Contemporary Painting for Home Living Room Decorations 20x40inch (Red)",
+    "image": "https://m.media-amazon.com/images/I/714w853c-ML._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08R76THSM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#403f3b"
+  },
+  {
+    "id": 3105,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "Pyradecor Watch Your Thoughts Motivational Classroom Poster Modern Canvas Prints Wall Art Paintings Ready to Hang for Office Living Room Home Decorations Stretched Pictures Artwork",
+    "image": "https://m.media-amazon.com/images/I/61V9GisM92S._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B076PKMR4S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d21d1c"
+  },
+  {
+    "id": 3106,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "sechars Large Abstract Canvas Wall Art Golden Ginkgo Leaf Painting Artwork Modern Leaves Picture for Living Room Bedroom Decoration 24x48 Inch (Red)",
+    "image": "https://m.media-amazon.com/images/I/81frbWLcg-L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BN7Y9QXS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#800404"
+  },
+  {
+    "id": 3107,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "Orange Red Oil Painting Hand Painted Acrylic Picture Abstract Modern Minimalist Textured Wall Art Framed Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71pCE76o+TL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DBY6516J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b36128"
+  },
+  {
+    "id": 3108,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "Abstract Wall Art Ocean Red Sunset Canvas Painting Abstract Wall Decor for Living Room Bedroom Home Decorations Modern Stretched and Framed Artwork 20x40 inch",
+    "image": "https://m.media-amazon.com/images/I/91zs3OTdqXL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFKN6J68/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b95e36"
+  },
+  {
+    "id": 3109,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "Visual Art Decor Red Abstract Geometric Wall Art Abstract Red Lines Painting, Framed Canvas Wall Art (Red, 16x24 inch x 3 Pieces)",
+    "image": "https://m.media-amazon.com/images/I/81FN-habWCL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CM33W888/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a82d39"
+  },
+  {
+    "id": 3110,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "sechars 3 Pieces New York City Wall Art Canvas Black and White Red Brooklyn Bridge Night Skyline Picture Photo Print Modern Cityscape Poster Painting for Home Office Living Room Decor (Small) (Red)",
+    "image": "https://m.media-amazon.com/images/I/71n1JVvoJrL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVHXKHBF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e39ea4"
+  },
+  {
+    "id": 3111,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Scwhousi Large Red Metal Flower Wall Decor, 12\" Flower Art Wall Hanging for Home Bedroom Garden Indoor Outdoor",
+    "image": "https://m.media-amazon.com/images/I/61OiUS3X41L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08DKR4Z4V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c31918"
+  },
+  {
+    "id": 3112,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "Black and White Red Tree Wall Art Canvas Print Picture Large Red Tree Landscape Modern Artwork for Living Room Bedroom Office Home Wall Decoration Decor With Frame 20x40in",
+    "image": "https://m.media-amazon.com/images/I/71TTSup6tJL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07FSFQC4Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#660000"
+  },
+  {
+    "id": 3113,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "3 Pcs Red Decor Flower Inspirational Wooden Wall Art Red Roses Decor Office Wall Decor with Accept Let Go Have Faith Positive Quotes for Girl Women Bathroom Living Room Bedroom(Red Rose12 x 4 Inch)",
+    "image": "https://m.media-amazon.com/images/I/71TnVCdFrsL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BW7MKY9M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#610001"
+  },
+  {
+    "id": 3114,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "Red Retro Newspaper Posters Positive Affirming Quotes Trendy Wall Art Painting Poster What If It All Works Out Room Aesthetic Poster Apartment Bedroom Decor Preppy 12x18inch Unframed",
+    "image": "https://m.media-amazon.com/images/I/71lWm3I2X8L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DC596VH4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e02133"
+  },
+  {
+    "id": 3115,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "sechars Golden Ginkgo Leaf Canvas Wall Art Abstract Plant Leaves Paintings Pictures Modern Red Home Bedroom Bathroom Wall Decoration Gallery Wrapped Ready to Hang (Red)",
+    "image": "https://m.media-amazon.com/images/I/81b65ajKsKL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BP2839PY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7c3f2b"
+  },
+  {
+    "id": 3116,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "Wieco Art Blue Abstract Flowers 3 Panels Giclee Canvas Prints Wall Art Modern Pictures Artwork for Living Room Bedroom and Home Decorations",
+    "image": "https://m.media-amazon.com/images/I/51d8I8nAX0S._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07VSD81JT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2c4b70"
+  },
+  {
+    "id": 3117,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "Framed Canvas Wall Art for Living Room Bedroom Office Large Tree of Life Wall Art Orange Tree Fall Landscape Picture Modern Canvas Prints Decor Size 20x40",
+    "image": "https://m.media-amazon.com/images/I/81DmfH9cIVL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJXNN8KZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ff8641"
+  },
+  {
+    "id": 3118,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "Ouzzlie Colorful Wall Decor Red Art for Living Room Large Wall Pictures Abstract Artwork Home Decor Prints Wall Art 29\"x 59\"",
+    "image": "https://m.media-amazon.com/images/I/91c-+H0mB-L._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCTKTF7T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7c2428"
+  },
+  {
+    "id": 3119,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "Black and White Red Tree Wall Art Canvas Print Picture Large Red Tree Landscape Modern Artwork for Living Room Bedroom Office Home Wall Decor With Frame 20x40in",
+    "image": "https://m.media-amazon.com/images/I/71TTSup6tJL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07FSFQC4Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#725a5a"
+  },
+  {
+    "id": 3120,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "3 Pieces Metal Vase Flowers Wall Arts - Rustic Farmhouse Style Décor Metal Wall Art Black Minimalist Flower Natural Themed Wall Decors for Home Bedroom Dining Room Housewarming (Red, Vase-C)",
+    "image": "https://m.media-amazon.com/images/I/71aXDn-0FoL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3TWXY97/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3f3f30"
+  },
+  {
+    "id": 3121,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "Black and White Wall Art for Bedroom Red Wall Decor Paris Bathroom Pictures City Landscape Canvas Poster with Eiffel Tower Brooklyn Bridge London for Living Room Office Home Decorations 12×12\" 4 Pcs",
+    "image": "https://m.media-amazon.com/images/I/81mEtdAGrcL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B077988HS4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#952932"
+  },
+  {
+    "id": 3122,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "Black White and Red Abstract Print Picture Painting Large Canvas Wall Art for Living Room Bedroom Framed Canvas Wall Decor Modern Room Abstract Wall Decorations Artwork Size 20x40 Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/81EGcsk+i4L._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DDTM3XZZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e80003"
+  },
+  {
+    "id": 3123,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "4 Pcs Red Bathroom Decor Religious Wall Art Bible Verse Inspirational Red Rose Wall Decor Rustic Flower Wooden Christian Sign for Home Bathroom Office Bedroom Living Room Kitchen(Red 10x4)",
+    "image": "https://m.media-amazon.com/images/I/71XLqYtuIlL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CF298P1C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3b6b6"
+  },
+  {
+    "id": 3124,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "Wieco Art Red Almond Blossom Tree Vincent Van Gogh Paintings Reproduction Canvas Prints Wall Art for Home Decor and Wall Decor Classical Flowers Pictures Artwork",
+    "image": "https://m.media-amazon.com/images/I/71G5w4actfL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B099946DYR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c02b43"
+  },
+  {
+    "id": 3125,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "Seekland Art Modern Oil Painting Hand Painted Texture Red Abstract Canvas Wall Art Decoration Contemporary Artwork Framed Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/61FzsanTS3L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01LYFXADA/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#85221e"
+  },
+  {
+    "id": 3126,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "YPY Red Abstract Canvas Wall Art: Modern Minimalist Black and White Picture Painting Print Poster for Living Room Bedroom Bathroom Office Home Wall Decor 10x15",
+    "image": "https://m.media-amazon.com/images/I/71y6Bckdn0L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BXRYJZYX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b20216"
+  },
+  {
+    "id": 3127,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "wall art for living room Red Lakes and trees under the starry sky red landscape painting office Wall Art Decor 20\" x 40\" single Pieces Canvas Prints Ready to Hang for Home Decoration Works For bedroom",
+    "image": "https://m.media-amazon.com/images/I/61BZgtt83NL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07DVQ143Z/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#783e44"
+  },
+  {
+    "id": 3128,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "Metal Tree Leaf Wall Decor 2 PCS Rustic Vine Branch Leaf Wall Art for Living Room Bedroom Bathroom Decorations - Red",
+    "image": "https://m.media-amazon.com/images/I/71lniyDflZL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CB5SZFSF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b32727"
+  },
+  {
+    "id": 3129,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "Visual Art Decor Abstract Wall Art Red and Black Geometric Lines Painting Red Pictures Bathroom Bedroom Living Room Decor Framed 12x16inchx3Pieces",
+    "image": "https://m.media-amazon.com/images/I/71B4gc9VUyL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CM341FB4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#921721"
+  },
+  {
+    "id": 3130,
+    "title": "Amazon Product 41",
+    "price": 0,
+    "description": "Handmade Textured Red Abstract Canvas Wall Art Hand Painted Modern Square Oil Painting for Wall Home Office Decor",
+    "image": "https://m.media-amazon.com/images/I/71tILr37dkL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DD7SQRN3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a3130f"
+  },
+  {
+    "id": 3131,
+    "title": "Amazon Product 42",
+    "price": 0,
+    "description": "Fcimu Metal Sneaker Wall Decor, Unique Teen Room Decor, Metal Wall Art, Room Decor for Boy & Girl Bedroom, Wall Chart for Sneaker Lovers, Graduation gifts, 15 * 5.3 inch, Red",
+    "image": "https://m.media-amazon.com/images/I/610aqQN0VZL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1Y4SWHH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c63f3a"
   }
 ];
