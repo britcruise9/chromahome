@@ -29531,5 +29531,1395 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DK5BLDCT/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#dbbe94"
+  },
+   {
+    "id": 2951,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "MPLONG Wall Art 3 Pieces Of Framed Decorative Paintings Abstract Simple Orange White Blue And Other Color Blocks Wall Art Canvas Prints Wall Decor Gifts Size 16\" x 24\" x 3 Panels",
+    "image": "https://m.media-amazon.com/images/I/612rL13IdnL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B099RTPNL1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c0bbb8"
+  },
+  {
+    "id": 2952,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "MPLONG Wall Art, Bright Style Framed Wall Art, Abstract Modern Art Shape Pattern White Blue Yellow Grey Wall Art Artfully Matching Living Room Bedroom Office Wall Decor - 16\"x 24\"x 3 Panels",
+    "image": "https://m.media-amazon.com/images/I/61BEle83+hL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MLJGMV2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9b9693"
+  },
+  {
+    "id": 2953,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "MPLONG Wall Art 3 Pieces Framed Wall Art Canvas Print Set Minimalist Medieval Geometric Circle Abstract Illustration Modern Wall Art Decor Multicolor Living Room Bedroom Office 16\"x 24\"x 3 Panels",
+    "image": "https://m.media-amazon.com/images/I/611qGtYTvVL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MKGKT76/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c3c1b6"
+  },
+  {
+    "id": 2954,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "5 pcs gamer wall art Decor for bedroom Wooden. Decor Game Room Wall Decor Game Room Accessories and Decor Gaming Bedroom Decor for Boys Kids Teen Bedroom Playroom Decorations",
+    "image": "https://m.media-amazon.com/images/I/61uUOZD1gqL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DRSQDL4V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3d3a35"
+  },
+  {
+    "id": 2955,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "Boho Wall Art Set of 3, MidCentury Modern Wall Prints Framed Canvas Paintings Minimalist Abstract Geometric Beige Orange Moon Plant Desert Nature Illustrations Artwork, Boho Wall Decor Ready To Hang",
+    "image": "https://m.media-amazon.com/images/I/51TqcOuxVtL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B4J8WHX3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ede6db"
+  },
+  {
+    "id": 2956,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Hourglass Wall Decor, Sand Timer Wood Art, Hourglass Office Wall Art, Wall Clock Decor, Hour Home Design, Hourglass Line Art, Ideal Gift Idea",
+    "image": "https://m.media-amazon.com/images/I/711qV2MwKTL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DST8GQB5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0d0d0d"
+  },
+  {
+    "id": 2957,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "InSimSea 3 Pcs Framed Canvas Art for Living Room, 16x24inch, Vintage Wall Decor, French Country Field Landscape Paintings with Frame, Bedroom Farmhouse Decor Above Bed, Set of 3",
+    "image": "https://m.media-amazon.com/images/I/71MUIj5CVDL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DNS4V9FV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#474435"
+  },
+  {
+    "id": 2958,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "Glamativity 4 Pack Black Abstract Metal Wall Art, Minimalist Décor Single Line Art Wall Décor, 3D Textured Metal Wall Sculptures, for Living Room Bedroom Bathroom Study Room (Black Abstract, M Size 16 x 11'')",
+    "image": "https://m.media-amazon.com/images/I/71kA+j+-p0L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C1W773F8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#070302"
+  },
+  {
+    "id": 2959,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "Double Sided Tape Heavy Duty(Extra Large 16.5FT), Nano Adhesive Mounting Tape Wall Decor, Sticky Picture Hanging Adhesive Strips Poster Tape",
+    "image": "https://m.media-amazon.com/images/I/61VF0RnCfCL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07YB1ZXG6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ede4e3"
+  },
+  {
+    "id": 2960,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "Pigort 3 Pieces Metal Flowers Wall Arts - Rustic Farmhouse Decor Black Minimalist Flower Wall Decors for Living room Bathroom Bedroom Dining Room - Housewarming Gifts(Black, Vase-C)",
+    "image": "https://m.media-amazon.com/images/I/61RgxmG62bL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CBR8CBRB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#090909"
+  },
+  {
+    "id": 2961,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "Ardemy Tree Canvas Wall Art Teal Tree of Life Landscape Picture Modern Nature Painting, Abstract Blue Artwork Framed for Living Room Bedroom Bathroom Dinning Room Home Office Wall Decor, 40\"x20\"",
+    "image": "https://m.media-amazon.com/images/I/717oTbq5cmL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYSDXMWV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6e8795"
+  },
+  {
+    "id": 2962,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "MHARTK66 Wall Decorations For Living Room Canvas Wall Art For Bedroom Office Decor Abstract Tree Landscape Wall Paintings Framed Prints Pictures Artwork Ready To Hang Hotel Room Home Decor 20x40 In",
+    "image": "https://m.media-amazon.com/images/I/61lxDm7TgQL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQ4P557X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0c3b4"
+  },
+  {
+    "id": 2963,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "7 Rules of Life Motivational wall decor on canvas for classroom wall prints posters, inspirational wall art prints for home decor or home Positive for Office preppy room decor for Living Room A-253",
+    "image": "https://m.media-amazon.com/images/I/71UREcjv2zL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BD98XPN7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c3c5c1"
+  },
+  {
+    "id": 2964,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "Riverside Designs Wacky Sun Metal Wall Art Indoor/Outdoor Decor - 36\" Teal Rust Proof Wall Sculpture - Made in USA - Ideal for Bedroom, Garden, Home, Patio and Farmhouse",
+    "image": "https://m.media-amazon.com/images/I/819Q0CBMyTL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08JX5F7X8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dde6e8"
+  },
+  {
+    "id": 2965,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "MHARTK66 Wall Art for Living Room Modern Wall Decor for Bedroom Office Decor Abstract Mountain Forest Landscapes Ink Painting 3 Piece Framed Canvas Art Prints Ready to Hang Wall Pictures Home Decor",
+    "image": "https://m.media-amazon.com/images/I/71QsAhEbOHL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CT36RD5W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cfd2d1"
+  },
+  {
+    "id": 2966,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "Peryiter 3 Pcs Mountain Metal Wall Art Mountain Line Wall Decor Abstract Minimalist Rustic Nature Decor for Home Bathroom Living Room(Vibrant Colors)",
+    "image": "https://m.media-amazon.com/images/I/81kCpz1k8+L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CCXNTLHB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dccfc0"
+  },
+  {
+    "id": 2967,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "Art3dwallpanels 33 Pack 3D Wall Panel Diamond for Interior Wall Décor, PVC Flower Textured Wall Panels for Living Room Lobby Bedroom Hotel Office, Black, 12''x12'' Cover 32.Sq.Ft.",
+    "image": "https://m.media-amazon.com/images/I/51h-oPgZS8L._SX342_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09T9MYVWS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3b3b3b"
+  },
+  {
+    "id": 2968,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "Wieco Art The Cloud Tree 3 Panels Modern Canvas Wall Art Prints Artwork Abstract Seascape Paintings Reproduction Sea Beach Pictures on Canvas for Home Decorations Wall Decor",
+    "image": "https://m.media-amazon.com/images/I/71mrBmaxslL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00IKCCWXS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#811405"
+  },
+  {
+    "id": 2969,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "Poster, Vintage Anime-Inspired Sci-FI Wall Art, Japanese Aesthetic Decor, Neon Red Angel Movie-Style, Fall Home Accent, Room",
+    "image": "https://m.media-amazon.com/images/I/81koaV6FIpL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DPMLJFNY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#efe2e3"
+  },
+  {
+    "id": 2970,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "Poster, Vintage Anime-Inspired Sci-FI Wall Art, Japanese Aesthetic Decor, Neon Red Angel Movie-Style, Fall Home Accent, Room",
+    "image": "https://m.media-amazon.com/images/I/71lOBAQneCL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DPMN39T9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9c2239"
+  },
+  {
+    "id": 2971,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "Titan Attack Ackerman Vintage Poster Anime Wall Art, Survey Aesthetic, Iconic Action Scene Illustration",
+    "image": "https://m.media-amazon.com/images/I/71oae9ZEQ2L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DPMNHMDF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfbe90"
+  },
+  {
+    "id": 2972,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Lapremoly Canvas Wall Art For Living Room Farmhouse Wall Decor For Bedroom Office Wall Decoration Blue Beach Wall Painting Ocean Sea Wave Pictures Poster Print Artwork Room Home Walls Decor 3 Piece",
+    "image": "https://m.media-amazon.com/images/I/61-7zdEAf1L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BKZXPF6N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#5d6f7d"
+  },
+  {
+    "id": 2973,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "Pretty Jolly Boho Wall Decor, Wall-Mounted Metal Art, Hanging Artificial Pampas Display, Living Room, Bedroom, Bathroom, Diningroom, Fake Faux Plant 2 Pack Black Brown",
+    "image": "https://m.media-amazon.com/images/I/71fY0Enu07L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B314KVSN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b7a288"
+  },
+  {
+    "id": 2974,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "Inspirational Wall Art Decor for Office, Wooden Rustic Hanging Motivational Wall Art Decoration Sign, Inspiring Positive Quotes Wall Art for Home Living Room Bedroom Bathroom Classroom Gym 12\"x24\"",
+    "image": "https://m.media-amazon.com/images/I/71bN9oWFYML._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09M7DPBZW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8b8f8d"
+  },
+  {
+    "id": 2975,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "LAOTOART Abstract Canvas Wall-Art for Living Room - Colorful Wall Art Bedroom Office Artwork Wall Decor Ready to Hang Size 24\" x 48\"",
+    "image": "https://m.media-amazon.com/images/I/915cUG4Bb6L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CHVPVWQ5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c9c3bb"
+  },
+  {
+    "id": 2976,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "Black Cat Are You Pooping Funny Tin Signs Bathroom Wall Decor 8 x 12 Inch (918)",
+    "image": "https://m.media-amazon.com/images/I/61UCvqpjOFL._AC_SY879_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BK8468GV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#386b67"
+  },
+  {
+    "id": 2977,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "KAWAHONE Canvas Painting Wall Art, Grind Hustle Execution Motivational Wall Art Decoration Posters Prints for Living Room Bedroom, Office Decor, Gallery-Wrapped Canvas Art Set Framed Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/619mGoAs9FL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B089XVKF61/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#18181a"
+  },
+  {
+    "id": 2978,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "With the Waves School of Fish Undersea Metal Wall Sculpture | Coastal Style Decor for Beach House | Ocean Themed Hangings",
+    "image": "https://m.media-amazon.com/images/I/71FAsMPHLKL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2S1WRG8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7d9897"
+  },
+  {
+    "id": 2979,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "Fardes Maximalist Decor, Eclectic Home Decor, Maximalist Wall Decor for Bedroom, Eclectic Room Decor Aesthetic Pictures, Maximalist Wall Prints, Eclectic Wall Art",
+    "image": "https://m.media-amazon.com/images/I/81k2RBxn+QL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CS18MZS7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d1cec2"
+  },
+  {
+    "id": 2980,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "Bathroom Decor Wall Art Funny Tin Signs Black Cat Decor 8×12 Inch",
+    "image": "https://m.media-amazon.com/images/I/61pkXFVV1jL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMK7WV19/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#000000"
+  },
+  {
+    "id": 2981,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "Touch of Class Summer Scents Floral Metal Wall Art Panel Set of Two",
+    "image": "https://m.media-amazon.com/images/I/71-HeI9II8L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07DX9HXLC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eae5da"
+  },
+  {
+    "id": 2982,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "Qunclay 5 Pcs Wall Art Decor Wooden Living Room Wall Decor Bohemian Hanging Farmhouse Geometric 10'' and 8'' Aesthetic Wood Minimalist Posters for Bedroom(Greenery)",
+    "image": "https://m.media-amazon.com/images/I/81w6X62fuGL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CDKPTXTW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3d0c6"
+  },
+  {
+    "id": 2983,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "AOOLVY Infinity Heart Wall Decor, Unique Infinity Heart Metal Art Wall Decor Love Sign Steel Wall Plaques Bedroom Ornaments for Home Wedding Decor, Room Living Room Decoration (Black, 15.7x14inch)",
+    "image": "https://m.media-amazon.com/images/I/61p24CDn0kL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09P7FL1TW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7d6a5a"
+  },
+  {
+    "id": 2984,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "Framed Bathroom Decor Wall Art, Chimpanzee in Bathtub, Black and White Wall Art, Funny Bathroom Wall Decor Signs, Cute Animal Art Home Decor (Framed, 8''x10'')",
+    "image": "https://m.media-amazon.com/images/I/61zajCx8wBL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CFVFYRPZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cecece"
+  },
+  {
+    "id": 2985,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "3-Pack Battery Operated Picture Light Magnetic Painting Light with 3 Lighting Modes, Remote and Dimmable Timer Art Display Light for Picture Artworking Frame Portrait, Wireless Wall Decor Puck Lights",
+    "image": "https://m.media-amazon.com/images/I/61u5Dq4EQfL._AC_SX342_PIbundle-3,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CB4PF7MK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#242425"
+  },
+  {
+    "id": 2986,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "QEEIG",
+    "image": "https://m.media-amazon.com/images/I/71IGFEwflDL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CDVXRKZY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#180800"
+  },
+  {
+    "id": 2987,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "Deco 79 Metal Starburst Home Wall Decor 3D Long Spike Wall Sculpture, Set of 3 Wall Art 6\", 9\", 12\"W, Gold",
+    "image": "https://m.media-amazon.com/images/I/71wzcO4r-hL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01JM0GYBM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f0eee7"
+  },
+  {
+    "id": 2988,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "Artificial Eucalyptus Wall Decor Fake Greenery Leaves Stems Wall Hanging Plants on 16.5 inch Wooden Stick Boho Rustic Farmhouse Decor for Bedroom Kitchen Dining Room Bathroom",
+    "image": "https://m.media-amazon.com/images/I/71LMPfPc37L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09WQZYQDP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3ded2"
+  },
+  {
+    "id": 2989,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "Stupell Industries Soothing Eucalyptus Flower Herb Arrangement Rustic Jar Canvas Wall Art, Design by Nan",
+    "image": "https://m.media-amazon.com/images/I/81W5GLsoXLL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BGQLYB7M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bbbdb6"
+  },
+  {
+    "id": 2990,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "3 Pcs Metal Flowers Wall Arts Rustic Farmhouse Decor Bathroom Wall Decor Dining Room Wall Decor Minimalist Decor Housewarming Gifts (Multicolored)",
+    "image": "https://m.media-amazon.com/images/I/71oi75HXVXL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DLGN5BF7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e6ded8"
+  },
+  {
+    "id": 2991,
+    "title": "Amazon Product 41",
+    "price": 0,
+    "description": "Trademark Fine Art - ' Moo-ving In I ' by Ethan Harper, 18x18",
+    "image": "https://m.media-amazon.com/images/I/81oy70OI-8L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07NQRY31N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4d8581"
+  },
+  {
+    "id": 2992,
+    "title": "Amazon Product 42",
+    "price": 0,
+    "description": "Black Metal Wall Decor, Minimalist Retro Wall Art, Wall Candle Holder, Farmhouse Rustic Bathroom Wall Art, Aesthetics Wall Hanging for Living Room Bedroom Bathroom (2 Pack, 16.5 x 7 in)",
+    "image": "https://m.media-amazon.com/images/I/818zspnZQFL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CB89B9PD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6d5cf"
+  },
+  {
+    "id": 2993,
+    "title": "Amazon Product 43",
+    "price": 0,
+    "description": "BLEUM CADE Fake Hanging Plants, 2pcs Artificial Hanging Plant, Faux Pothos Vines Hanging Plant Greenery for Wall Home Living Room Indoor Outdoor Decor (No Baskets)",
+    "image": "https://m.media-amazon.com/images/I/811asVGuPdL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BY8X5GFY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#446d1f"
+  },
+  {
+    "id": 2994,
+    "title": "Amazon Product 44",
+    "price": 0,
+    "description": "Jetec Office Wall Decor Inspirational Rustic Motivational Plaques with Sayings Wooden Hangings Ability Sign Bathroom for Home Office Art Decoration(Fresh Color)",
+    "image": "https://m.media-amazon.com/images/I/81Ae03nvYdL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B884KM3M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0e2e3"
+  },
+  {
+    "id": 2995,
+    "title": "Amazon Product 45",
+    "price": 0,
+    "description": "Glamativity 4 Pcs Colorful And Black Double-Sided Abstract Mountain Metal Wall Art , Mountain Line Art Décor, 3D Textured Minimalist Wall Decor, Rustic Nature Wall Décor for Living Room Bedroom Study (Mountain, M Size 17 x 12'')",
+    "image": "https://m.media-amazon.com/images/I/71hVVUbu1KL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D11B497W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfd0be"
+  },
+  {
+    "id": 2996,
+    "title": "Amazon Product 46",
+    "price": 0,
+    "description": "3 Pieces Black Metal Flowers Wall Decor Metal Vase Wall Art Metal Wall Sculptures Hanging for Indoor Kitchen Bathroom Bedroom Living Room, 14.56x5.9 inches",
+    "image": "https://m.media-amazon.com/images/I/71-SZQvpqSL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BNDSRBM2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#000000"
+  },
+  {
+    "id": 2997,
+    "title": "Amazon Product 47",
+    "price": 0,
+    "description": "Rustic Wall Sconces Mason Jar Sconces Handmade Wall Art Hanging Design with Remote Control LED Fairy Lights and White Peony, Christmas Decor Gift Farmhouse Wall Home Decor Living Room Lights Set of Two",
+    "image": "https://m.media-amazon.com/images/I/71ck3ge7PYL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07SSLD42M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bc9044"
+  },
+  {
+    "id": 2998,
+    "title": "Amazon Product 48",
+    "price": 0,
+    "description": "YEOION Office Inspirational Wall Art, Teamwork Canvas Wall Art for Office, Motivational Office Wall Decor, Positive Quotes Wall Decor for Office, Office Canvas Wall Art Set of 6",
+    "image": "https://m.media-amazon.com/images/I/616YF8bQeWL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2CKC578/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7cbb9"
+  },
+  {
+    "id": 2999,
+    "title": "Amazon Product 49",
+    "price": 0,
+    "description": "Ferraycle Metal Wall Art Bird on Tree Branch Silhouette Bird Art Decor for Living Room Garden Bedroom Office Home Wall Housewarming Party Decor(Fresh Color)",
+    "image": "https://m.media-amazon.com/images/I/71FdIyemWZL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C61MFDXP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8c9a9a"
+  },
+  {
+    "id": 3000,
+    "title": "Amazon Product 50",
+    "price": 0,
+    "description": "Sorbus Large Wall Clock for Living Room Decor – Easy to Hang 24-Inch Big Wall Clock – Metal Wall Art for Kitchen, Bedroom, Home, Office – Analog Decorative Wall Clock (Black)",
+    "image": "https://m.media-amazon.com/images/I/81d3TjoxVdL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQD7KTHH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0b0b0d"
+  },
+  {
+    "id": 3001,
+    "title": "Amazon Product 51",
+    "price": 0,
+    "description": "Zzbakress 3 Pcs Wooden Palm Leaves Wall Art Tropical Leaf Wall Art Natural Plant Wall Decor Tropical Plant Wall Sculptures for Living Room Kitchen Bedroom Garden (Farmhouse, Leaves-A)",
+    "image": "https://m.media-amazon.com/images/I/71q7uwbpvUL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D38NSHTT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#597e43"
+  },
+  {
+    "id": 3002,
+    "title": "Amazon Product 52",
+    "price": 0,
+    "description": "Framed Boho Wall Art Set of 4 for Wooded Minimalist Botanical Print Wall Art for Rustic Vintage Farmhouse Home Kitchen Wall Decor (Brown, 12x16)",
+    "image": "https://m.media-amazon.com/images/I/81ID9fVcsHL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4NYY9Y7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ada391"
+  },
+  {
+    "id": 3003,
+    "title": "Amazon Product 53",
+    "price": 0,
+    "description": "Black and White Abstract Wall Art for Living Room, Large Framed Canvas Black Abstract Pictures Wall Decor, 3 Piece Modern Minimalist Black & White Art Work Painting for Home Office Guest Room Hallway 24x36 Inch",
+    "image": "https://m.media-amazon.com/images/I/81o73lf1TQL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D875CTRT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#242424"
+  },
+  {
+    "id": 3004,
+    "title": "Amazon Product 54",
+    "price": 0,
+    "description": "Jetec 5 Pieces Moon Phase Wall Decor Boho Hanging Moon Phase Nordic Wood Wall Art for Living Room Bedroom Home Decoration Room Apartment Bar Ornament(Black)",
+    "image": "https://m.media-amazon.com/images/I/71qqgrY2GzL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09GLNR9S9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dad6d4"
+  },
+  {
+    "id": 3005,
+    "title": "Amazon Product 55",
+    "price": 0,
+    "description": "97 Decor Colorful Eclectic Decor - Maximalist Decor, Eclectic Home Decor, Eclectic Wall Decor, Funky Eclectic Gallery Wall Art Prints for Bedroom, Famous Artist Painting Pictures (UNFRAMED)",
+    "image": "https://m.media-amazon.com/images/I/91oATSdj7uL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C1RB6353/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ded6c8"
+  },
+  {
+    "id": 3006,
+    "title": "Amazon Product 56",
+    "price": 0,
+    "description": "Drsoum Mid-Century Modern Framed Wall Art Minimalist Abstract Boho Neutral Line Wall Decor Geometric Artwork Kitchen Dining Room 11x14in Natural Framed",
+    "image": "https://m.media-amazon.com/images/I/61gWp1oOXML._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKF5JH85/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0c7bc"
+  },
+  {
+    "id": 3007,
+    "title": "Amazon Product 57",
+    "price": 0,
+    "description": "16 PCS Framed Eclectic Wall Art Decor, Modern Maximalist Wall Prints for Bedroom, Gallery Wall Frame Set, Posters for Living Room Aesthetic, Wall Collage Kit Pictures, Colorful Dorm Home Decor",
+    "image": "https://m.media-amazon.com/images/I/71+RnG12xAL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQYVWB7M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7d6c9"
+  },
+  {
+    "id": 3008,
+    "title": "Amazon Product 58",
+    "price": 0,
+    "description": "Blulu 3 Pieces Thicken Rustic Wall Decor Farmhouse Wall Art Decor Wood Hanging Decoration for Living Room Bedroom Home Indoor Outdoor Office(Vintage Style)",
+    "image": "https://m.media-amazon.com/images/I/712MKoK6C0L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MH42F9G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4e1de"
+  },
+  {
+    "id": 3009,
+    "title": "Amazon Product 59",
+    "price": 0,
+    "description": "VIYYIEA Framed Wall Art for Living Room, Swan Art Canvas Prints, Vintage Home Decor, Animal Oil Painting Picture, Bathroom Wall Decor Gifts for Friends or Family -【Zwaan】-(10L x 8W)",
+    "image": "https://m.media-amazon.com/images/I/71Ib0ZrxDTL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CBFNTLR6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0dacc"
+  },
+  {
+    "id": 3010,
+    "title": "Amazon Product 60",
+    "price": 0,
+    "description": "2 Pack Wooden Wall Vase Set - Black Finish Modern Farmhouse & Boho Wall Decor for Entryway, Hallway, Bathroom, Living Room, Dining Room, Narrow Spaces",
+    "image": "https://m.media-amazon.com/images/I/71xuWg7U4GL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9LD424P/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2f332c"
+  },
+  {
+    "id": 3011,
+    "title": "Amazon Product 61",
+    "price": 0,
+    "description": "Framed Vintage 3D Textured Wall Art - Dark Green Dragonfly Flowers Wall Decor - Hand Drawn Sandstone Nature Botanical Pictures for Living Room Bedroom Home Decor 12x16in",
+    "image": "https://m.media-amazon.com/images/I/81jU1BdbwTL._AC_SY879_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4V264VF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3c392d"
+  },
+  {
+    "id": 3012,
+    "title": "Amazon Product 62",
+    "price": 0,
+    "description": "Achart Macrame Wall Hanging Large- Boho Wall Decor- large wall art- Wall Decor Living Room- Macrame Tapestry Boho Decor for Bedroom (Wooden Bead)",
+    "image": "https://m.media-amazon.com/images/I/61wuAJ+sELL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CBLT4PPM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcdad8"
+  },
+  {
+    "id": 3013,
+    "title": "Amazon Product 63",
+    "price": 0,
+    "description": "Jetec 5 Pcs Moon Phase Wall Decor Hanging Wooden Moon Phase Wall Art Nordic Art Boho Decor for Room Bar Ornament(Brown, 10.6 Inch)",
+    "image": "https://m.media-amazon.com/images/I/71-O7t4bFGL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09SPNHTP7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4d6d1"
+  },
+  {
+    "id": 3014,
+    "title": "Amazon Product 64",
+    "price": 0,
+    "description": "Carrot's Den Donut Vase, Set of 2 - Minimalist Nordic, White Ceramic Hollow Donut Vase Decor | Table Centerpiece, Olive Plant, Wedding, Living Room, Bookshelf, Office, Modern Home, Entryway, Console",
+    "image": "https://m.media-amazon.com/images/I/81p83067jIL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BDR1X6PT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7d4cf"
+  },
+  {
+    "id": 3015,
+    "title": "Amazon Product 65",
+    "price": 0,
+    "description": "CHI AN HOME Wicker 23 Inch Jute Wall Decor Baskets, Set of 6 Extra Large Woven Jute Wall Plates, 23\", 21\", 15\", 13\", 12, 10\", Decorative Baskets for Wall Arts, Wall Hanging for Bedroom, Living Room, Office",
+    "image": "https://m.media-amazon.com/images/I/81pkptuaYML._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CMC94PMB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ceb190"
+  },
+  {
+    "id": 3016,
+    "title": "Amazon Product 66",
+    "price": 0,
+    "description": "KHOYIME Large Macrame Wall Hanging Boho Woven Tapestry, Chic Home Decor Modern Bohemian Handmade Leaf Feather Wall Art Decorations for Apartment Dorm Living Room Bedroom Nursery Backdrop 39\"W X 29.5\"L",
+    "image": "https://m.media-amazon.com/images/I/71hnuvqbOZL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4XX8NKQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbd6d0"
+  },
+  {
+    "id": 3017,
+    "title": "Amazon Product 67",
+    "price": 0,
+    "description": "Pangda 4 Pieces Metal Heart Wall Art Decor Heart Wall Decor Love Heart Wall Decoration Metal Heart Wall Sign Metal Wall Ornaments for Bedroom Living Room Decoration (Black)",
+    "image": "https://m.media-amazon.com/images/I/61H4vqE7ucS._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B097SM1YH5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ecedf0"
+  },
+  {
+    "id": 3018,
+    "title": "Amazon Product 68",
+    "price": 0,
+    "description": "Heiple Framed Bathroom Art Bathroom Wall Decor Farmhouse Home Bathroom Decor Sets Vintage Funny Wall Art Bathroom Signs (11\"x14\" Black Framed, Donkey)",
+    "image": "https://m.media-amazon.com/images/I/81x3dXYOfqL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CGRGT7J3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e6e6e1"
+  },
+  {
+    "id": 3019,
+    "title": "Amazon Product 69",
+    "price": 0,
+    "description": "Yookeer Bathroom Wall Art Funny Bathroom Wall Decor Quote Let That Shit Go Buddhist Sign with Hooks for Toilet Window Decor 6 x 11.8 x 0.2 inches(White Style)",
+    "image": "https://m.media-amazon.com/images/I/61uInFmjgoS._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B099F8LKSH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3f3c3b"
+  },
+  {
+    "id": 3020,
+    "title": "Amazon Product 70",
+    "price": 0,
+    "description": "Large Wall Art Gold Abstract Tree Of Life Framed Modern Artwork Canvas Painting Textured Tree Pictures Home Decor Ready To Hang For Bedroom Living Room 30\"X60\"",
+    "image": "https://m.media-amazon.com/images/I/81mytf3xGuL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8PBCRQL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b7a694"
+  },
+  {
+    "id": 3021,
+    "title": "Amazon Product 71",
+    "price": 0,
+    "description": "Vailla Tree of Life Wall Art 3pcs Family Tree Wall Decor 3D Wooden Wall Hanging Sculpture Modern Wall Home Decoration 3 Panels Textured Sculptures for Living Room Bedroom Office Dinnig Room",
+    "image": "https://m.media-amazon.com/images/I/81Oy7FIyZTL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DC5LK7D3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d2cfc7"
+  },
+  {
+    "id": 3022,
+    "title": "Amazon Product 72",
+    "price": 0,
+    "description": "VAILLA Tree of Life Wooden Wall Art Abstract Tree Man Woman Face Large 3D Wooden Wall Decor Set of 2 Wall Hanging Sculpture Modern Wall Home Decoration 3D Textured Sculptures for Living Room Bedroom Office Dinnig Room (Face 2)",
+    "image": "https://m.media-amazon.com/images/I/71UpPnCOPxL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DNV3CQJ1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b7a28f"
+  },
+  {
+    "id": 3023,
+    "title": "Amazon Product 73",
+    "price": 0,
+    "description": "VAILLA Lotus Flower Wood Wall Art Zen Art Decor Wall Hanging Sculpture Modern Mandala Wall Home Decoration 3 Panels Nature Wall Hangings Large Wooden Wall Arr 3D Textured Sculptures for Living Room Bedroom Office Dinnig Room",
+    "image": "https://m.media-amazon.com/images/I/812U22OPfjL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DF5S2Y14/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b3b4b5"
+  },
+  {
+    "id": 3024,
+    "title": "Amazon Product 74",
+    "price": 0,
+    "description": "Titan Attack Ackerman Vintage Poster Anime Wall Art, Survey Aesthetic, Iconic Action Scene Illustration",
+    "image": "https://m.media-amazon.com/images/I/71oae9ZEQ2L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DPMNHMDF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfbe90"
+  },
+  {
+    "id": 3025,
+    "title": "Amazon Product 75",
+    "price": 0,
+    "description": "Poster, Vintage Anime-Inspired Sci-FI Wall Art, Japanese Aesthetic Decor, Neon Red Angel Movie-Style, Fall Home Accent, Room",
+    "image": "https://m.media-amazon.com/images/I/81koaV6FIpL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DPMLJFNY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#efe2e3"
+  },
+  {
+    "id": 3026,
+    "title": "Amazon Product 76",
+    "price": 0,
+    "description": "Poster, Vintage Anime-Inspired Sci-FI Wall Art, Japanese Aesthetic Decor, Neon Red Angel Movie-Style, Fall Home Accent, Room",
+    "image": "https://m.media-amazon.com/images/I/71lOBAQneCL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DPMN39T9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ecdfe0"
+  },
+  {
+    "id": 3027,
+    "title": "Amazon Product 77",
+    "price": 0,
+    "description": "Hourglass Wall Decor, Sand Timer Wood Art, Hourglass Office Wall Art, Wall Clock Decor, Hour Home Design, Hourglass Line Art, Ideal Gift Idea",
+    "image": "https://m.media-amazon.com/images/I/711qV2MwKTL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DST8GQB5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0d0d0d"
+  },
+  {
+    "id": 3028,
+    "title": "Amazon Product 78",
+    "price": 0,
+    "description": "Art3d Framed Boho Wall Art Set of 4 for Wood Aesthetic Wall Decor for Living room Kitchen Hallway Bedroom, Neutral Botanical Wall Prints",
+    "image": "https://m.media-amazon.com/images/I/81p6Mp34wyL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DGTLKNZF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dedad4"
+  },
+  {
+    "id": 3029,
+    "title": "Amazon Product 79",
+    "price": 0,
+    "description": "okaxscm Pink Coquette Trendy Preppy Wall Art Prints Set of 4, Coquette Room Decor, Preppy Room Decor Aesthetic, Pink Bow Disco 8 Ball Cherry Wall Decor Posters for Girls Bedroom Dorm, 8x10 Unframed",
+    "image": "https://m.media-amazon.com/images/I/71rxRgD41uL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5VS1V8V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eedadf"
+  },
+  {
+    "id": 3030,
+    "title": "Amazon Product 80",
+    "price": 0,
+    "description": "Picture Light Battery Operated, 13in Wireless Art Light for Paintings, Dimmable 5000mAh Recharging Battery Picture Light with Remote Control for Wall, Gallery Dartboard Art Bedroom (Gold-2Pack)",
+    "image": "https://m.media-amazon.com/images/I/61p1IeesZQL._AC_SX425_PIbundle-2,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2HNRQKP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7e2db"
+  },
+  {
+    "id": 3031,
+    "title": "Amazon Product 81",
+    "price": 0,
+    "description": "NANKAI Art Hand-Painted Thick Texture White Minimalist Oil Painting 45x30 inch Large Home Wall Decorative Art Oil Painting",
+    "image": "https://m.media-amazon.com/images/I/81+6JNJf49L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D29GL1BM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b6b7b5"
+  },
+  {
+    "id": 3032,
+    "title": "Amazon Product 82",
+    "price": 0,
+    "description": "NANKAI Art Hand-Painted Thick Texture Black Minimalist Oil Painting 45x30 Inchs Texture Abstract Painting Home Wall Decorative Art",
+    "image": "https://m.media-amazon.com/images/I/91EFKBntoYL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CG1MMPVZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2b2c2c"
+  },
+  {
+    "id": 3033,
+    "title": "Amazon Product 83",
+    "price": 0,
+    "description": "NANKAI Art White Texture Abstract Art Oil Painting 44x44 Inches Contemporary Minimalist Art Large Home Wall Decoration",
+    "image": "https://m.media-amazon.com/images/I/91h9IfsPizL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D121K42W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c6c5bf"
+  },
+  {
+    "id": 3034,
+    "title": "Amazon Product 84",
+    "price": 0,
+    "description": "Jetec 2 Pieces Funny Bathroom Signs Beach Theme Bathroom Wall Decor Toilet Wall Accessories Farmhouse Toilet Rustic Wooden Signs(Chic Style)",
+    "image": "https://m.media-amazon.com/images/I/81D38eIgNcL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09GV8NXF5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3dadb"
+  },
+  {
+    "id": 3035,
+    "title": "Amazon Product 85",
+    "price": 0,
+    "description": "Metal Wall Art Modern Art Black and Gold Decor Wall Boho Living Room Decor Wall Art Abstract Geometric Wall Sculptures Large Metal Wall Art for Living Room Dining Room Bedroom Aathroom Wall Art",
+    "image": "https://m.media-amazon.com/images/I/61jjM337iML._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DGPPX9LF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b0aca0"
+  },
+  {
+    "id": 3036,
+    "title": "Amazon Product 86",
+    "price": 0,
+    "description": "Art3d Decorative 3D Wall Panels in Diamond Design, 12\"x12\" Matt Black for Home and Office Decor (33 Pack)",
+    "image": "https://m.media-amazon.com/images/I/51GbahknKWL._AC_SX569_PIbundle-33,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09NCZ3YKW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2c2c2c"
+  },
+  {
+    "id": 3037,
+    "title": "Amazon Product 87",
+    "price": 0,
+    "description": "5 pcs gamer wall art Decor for bedroom Wooden. Decor Game Room Wall Decor Game Room Accessories and Decor Gaming Bedroom Decor for Boys Kids Teen Bedroom Playroom Decorations",
+    "image": "https://m.media-amazon.com/images/I/61uUOZD1gqL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DRSQDL4V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3d3a35"
+  },
+  {
+    "id": 3038,
+    "title": "Amazon Product 88",
+    "price": 0,
+    "description": "With the Waves School of Fish Undersea Metal Wall Sculpture | Coastal Style Decor for Beach House | Ocean Themed Hangings",
+    "image": "https://m.media-amazon.com/images/I/71FAsMPHLKL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2S1WRG8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7d9897"
+  },
+  {
+    "id": 3039,
+    "title": "Amazon Product 89",
+    "price": 0,
+    "description": "You Can Do Hard Things Neon Sign Dimmable LED Neon Signs for Wall Decor, Neon Light Kids Wall Art Positive Classroom Decor, USB Neon Light for Bedroom Birthday Party Classroom Backdrop Decor Aesthetic",
+    "image": "https://m.media-amazon.com/images/I/71i48vFMntL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DDXSHKFM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#410d45"
+  },
+  {
+    "id": 3040,
+    "title": "Amazon Product 90",
+    "price": 0,
+    "description": "Vintage Anime Graphic Poster, JoJo's Bizarre Adventure Wall Art, BALL BREAKER Steel Ball Run Poster, Premium Matte Print",
+    "image": "https://m.media-amazon.com/images/I/81XtEIsWdBL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DPJ98FWJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d1c9c0"
+  },
+  {
+    "id": 3041,
+    "title": "Amazon Product 91",
+    "price": 0,
+    "description": "EZ4ENCE Butterfly Decoration Wall Art Boho Home Decor Hanging Appearance Metal Flower for Bedroom Living Room Wall, Black(Medium)",
+    "image": "https://m.media-amazon.com/images/I/71pNwuYozoL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09YHT9ZM9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cececf"
+  },
+  {
+    "id": 3042,
+    "title": "Amazon Product 92",
+    "price": 0,
+    "description": "Floating Shelves, Plant Wall Decor, Wall Shelf, No Drill Shelves, Decorative Leaves and Light Strip, Set of 2 Plant Shelf Wall, Easter for Decorating Room(Green Leaf)",
+    "image": "https://m.media-amazon.com/images/I/71UPEOfO75L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C2TPGSN8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c0b59e"
+  },
+  {
+    "id": 3043,
+    "title": "Amazon Product 93",
+    "price": 0,
+    "description": "Hamduker Cat Wall Art Monet Prints Vintage Canvas Wall Art Funny Cat in Water Lilies Posters for Room Bedroom Living Room Bathroom Wall Decor Aesthetic (Size: 8''x10''x1pcs)",
+    "image": "https://m.media-amazon.com/images/I/61+XdRmU5DL._AC_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D6B5PW44/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6e8d8f"
+  },
+  {
+    "id": 3044,
+    "title": "Amazon Product 94",
+    "price": 0,
+    "description": "Habseligkeit Sage Green Master Wall Art Prints, Abstract Matisse Wall Art Exhibition Posters, Vintage Art Boho Art Prints, Retro Room Decor for Aesthetic Bedroom（8x10inch, Unframed",
+    "image": "https://m.media-amazon.com/images/I/81I1hn0ZJXL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BRW5YWXF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dedace"
+  },
+  {
+    "id": 3045,
+    "title": "Amazon Product 95",
+    "price": 0,
+    "description": "Lapremoly Canvas Wall Art For Living Room Farmhouse Wall Decor For Bedroom Office Wall Decoration Blue Beach Wall Painting Ocean Sea Wave Pictures Poster Print Artwork Room Home Walls Decor 3 Piece",
+    "image": "https://m.media-amazon.com/images/I/61-7zdEAf1L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BKZXPF6N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#5d6f7d"
+  },
+  {
+    "id": 3046,
+    "title": "Amazon Product 96",
+    "price": 0,
+    "description": "Custom Metal Signs | Metal Name Sign | Metal Wall Art | Split Letter Monogram Wall Decor | Metal Wall Art Last Name Sign | Family Name Sign | Personalized Wedding Gift | Metal Art | Outdoor Metal Sign",
+    "image": "https://m.media-amazon.com/images/I/81Z5oDHL-EL._SX500_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B081732LNJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2e3a1b"
+  },
+  {
+    "id": 3047,
+    "title": "Amazon Product 97",
+    "price": 0,
+    "description": "Touch of Class Summer Scents Floral Metal Wall Art Panel Set of Two",
+    "image": "https://m.media-amazon.com/images/I/71-HeI9II8L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07DX9HXLC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eae5da"
+  },
+  {
+    "id": 3048,
+    "title": "Amazon Product 98",
+    "price": 0,
+    "description": "Higher Brightness Dynamic Cool Light Up Wall Décor Sign for Music Lovers and Gamers, Funny Led Stickers for Car/Home/Bar, Cool Stuff for Room Window Décor and Unusual Gifts(Masked Mystery, M)",
+    "image": "https://m.media-amazon.com/images/I/71AT1LnmgqL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D22K8MMM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0a0f14"
+  },
+  {
+    "id": 3049,
+    "title": "Amazon Product 99",
+    "price": 0,
+    "description": "7 Pack Boho Wall Basket Decor - Seagrass Rattan Wicker Wall Decor Round Handmade Hanging Rustic Flat Elegant Wall Art for Farmhouse Living Rooms Bedrooms Display Table Settings Kitchen Home",
+    "image": "https://m.media-amazon.com/images/I/81lKKJxrNGL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CFDZRM75/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eadbca"
+  },
+  {
+    "id": 3050,
+    "title": "Amazon Product 100",
+    "price": 0,
+    "description": "97 Decor Sage Green Wall Art Prints - Sage Green Pictures Wall Decor For Bedroom, Sage Green Room Decor Aesthetic, Sage Green Wall Collage Kit, Boho Prints Matisse Posters For Dorm Decorations",
+    "image": "https://m.media-amazon.com/images/I/81cgvrgFC9L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DLMQQX7Z/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcd6c5"
+  },
+  {
+    "id": 3051,
+    "title": "Amazon Product 101",
+    "price": 0,
+    "description": "97 Decor Vintage Eclectic Wall Art Prints - Colorful Eclectic Wall Decor, Artsy Maximalist Decor Gallery Wall Prints for Bedroom Dorm Home, Famous Art Posters for Room Aesthetic Pictures (Unframed)",
+    "image": "https://m.media-amazon.com/images/I/91453o0hgQL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNQXGLWV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e5ddca"
+  },
+  {
+    "id": 3052,
+    "title": "Amazon Product 102",
+    "price": 0,
+    "description": "Zzbakress 4 Pieces Abstract Metal Wall Art, Minimalist Art Decoration, Paintings Wall Decor, 3D Structure Sculptures Decor for Living Room Bedroom Bathroom Office (Black style 1)",
+    "image": "https://m.media-amazon.com/images/I/71NL8LgUkGL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CP9NP39D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1d1c18"
+  },
+  {
+    "id": 3053,
+    "title": "Amazon Product 103",
+    "price": 0,
+    "description": "FULEN 2 Pack Picture Lights for Wall, Battery Operated Wall Sconce Rechargeable, LED Wall Light Cordless with Remote, 3 Color Temperature, Art Lights for Painting, Frame, Gallery, Dartboard Lights, Black",
+    "image": "https://m.media-amazon.com/images/I/71po0V1CrQL._AC_SX466_PIbundle-2,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQ53PWZW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b7a891"
+  },
+  {
+    "id": 3054,
+    "title": "Amazon Product 104",
+    "price": 0,
+    "description": "XORT Metal Bathroom Wall Decor, Farmhouse Metal Bathroom Wall Art, Funny Bathroom Sign for Modern Home Hanging Decorations. (Black - 12 x 14 inch)",
+    "image": "https://m.media-amazon.com/images/I/51OdeeW3k6L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLVLGDHB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0d0d0"
+  },
+  {
+    "id": 3055,
+    "title": "Amazon Product 105",
+    "price": 0,
+    "description": "Deco 79 Wood Starburst Handmade Home Wall Decor Carved Wall Sculpture, Wall Art 36\" x 1\" x 36\", Multi Colored",
+    "image": "https://m.media-amazon.com/images/I/81TL+4DWm0L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01N811H86/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#767068"
+  },
+  {
+    "id": 3056,
+    "title": "Amazon Product 106",
+    "price": 0,
+    "description": "ArtbyHannah Framed Bathroom Wall Decor, Botanical Wall Art with Sage Green Plant Print for Bedroom Decoration, Minimalist Restroom Decor for Gift (Walnut, 10x10 Inch)",
+    "image": "https://m.media-amazon.com/images/I/71qdF-CEnUL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B087Q6YN5J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#86785a"
+  },
+  {
+    "id": 3057,
+    "title": "Amazon Product 107",
+    "price": 0,
+    "description": "ZEXUIRU 3 Set Silver Metal Jeweled Wall Art Bling Crystal Home Décor Sun Burst Rhinestone Wall Hanging Diamond Accents",
+    "image": "https://m.media-amazon.com/images/I/71PI5-KPeXL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BHQNP858/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8c929f"
+  },
+  {
+    "id": 3058,
+    "title": "Amazon Product 108",
+    "price": 0,
+    "description": "Moon Phase Wall Decor Wall Hanging Handmade 13 Phases Moon Wall Decor Hammered Metal 36\" Garland Boho Wall Decor Bedroom Headboard, Living Area for Women & Kids, Aesthetic Celestial Wall Art (Gold)",
+    "image": "https://m.media-amazon.com/images/I/71BkuGOZH1L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07T6D2QW5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0c9ca"
+  },
+  {
+    "id": 3059,
+    "title": "Amazon Product 109",
+    "price": 0,
+    "description": "NAHARO Modern Wood Wall Decor- Natural wood Handcrafted Rustic Charm for Your Home - Perfect for Living Room, Bedroom, Kitchen, or Office",
+    "image": "https://m.media-amazon.com/images/I/717ZupW4ohL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D46YMFVY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ae8459"
+  },
+  {
+    "id": 3060,
+    "title": "Amazon Product 110",
+    "price": 0,
+    "description": "Fmcmly Be Kind to Your Mind Vintage Tin Signs Hippie Boho Wall Art Encouragement Gifts for Women Home Office Bedroom Living Room Cafes Wall Decor 8x12 Inch",
+    "image": "https://m.media-amazon.com/images/I/71siuT4C81L._AC_SY606_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BBBZ3MNP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#233d39"
+  },
+  {
+    "id": 3061,
+    "title": "Amazon Product 111",
+    "price": 0,
+    "description": "Dripykiaa Love You Bye Wood Sign Home Decor Boho Decor Wall Decor Express Love and Warm for Your Family Lovers Wall Art Gift Hallway Entryway Door Valentine Decorations for Home",
+    "image": "https://m.media-amazon.com/images/I/51s4ahJPlfL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CK5KC9WW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3ddd6"
+  },
+  {
+    "id": 3062,
+    "title": "Amazon Product 112",
+    "price": 0,
+    "description": "Jexine 2 Pcs Hanging Planters with Artificial Eucalyptus Metal Hanging Vase Indoor Plants Holder Modern Geometric Boho Wall Decor for Living Room Home Office(Black)",
+    "image": "https://m.media-amazon.com/images/I/710Zr5aAinL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BTD82CYG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2e432e"
+  },
+  {
+    "id": 3063,
+    "title": "Amazon Product 113",
+    "price": 0,
+    "description": "I Can Do All Things Through Christ Wall Decor Metal Art, 17\"X13\" Philippians 4 13 Christ Home Decor I Can Do All Things Through Christ Who Strengthens Me Religious Christian Metal Wall Art Scripture",
+    "image": "https://m.media-amazon.com/images/I/71huomS2UoL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B2L5RSHG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#232121"
+  },
+  {
+    "id": 3064,
+    "title": "Amazon Product 114",
+    "price": 0,
+    "description": "ALKB Inspirational Wall Art Metal Sign 8 x 12 Inch, Inspiring Positive Quotes Room Decor for Living Room Bedroom Classroom Gym, Motivational Wall Decor for Teen",
+    "image": "https://m.media-amazon.com/images/I/61QW8axgMpL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CM38PVCS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5d5d4"
+  },
+  {
+    "id": 3065,
+    "title": "Amazon Product 115",
+    "price": 0,
+    "description": "Meetdeceny Black And White Wall Art/Pink Book Pictures Room Decor for Teen Girls/Women Handbag Perfume Wall Decor for Living Room/Fashion Canvas Artwork Size 10\"x 10\"x 4 Pieces",
+    "image": "https://m.media-amazon.com/images/I/71ocgKFJMHL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BSD676SQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0e0d0d"
+  },
+  {
+    "id": 3066,
+    "title": "Amazon Product 116",
+    "price": 0,
+    "description": "Supwhd Christian Wall Decor, His Mercies are New Every Morning Christian Wall Art Framed, Christian Decor for Bedroom Living Room Office 12x16",
+    "image": "https://m.media-amazon.com/images/I/71vYijOaO+L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1N34NWF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7e2d4"
+  },
+  {
+    "id": 3067,
+    "title": "Amazon Product 117",
+    "price": 0,
+    "description": "RICHER HOUSE Artificial Ivy LED-Strip Wall Hanging Shelves Set of 2, Macrame Shelf for Bedroom Bathroom Living Room Kitchen, Wood Hanging Plant Shelves for Wall Décor",
+    "image": "https://m.media-amazon.com/images/I/71tN1ANPbML._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09G67DKXV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c1b19e"
+  },
+  {
+    "id": 3068,
+    "title": "Amazon Product 118",
+    "price": 0,
+    "description": "Sage Green Boho Wall Art Set of 3, Minimalist Framed Wall Art Geometric Line Leaf Sun Moon Beige Green Canvas Artwork Paintings, Abstract Botanical Boho Room Decor, Office, 12\"x16\"",
+    "image": "https://m.media-amazon.com/images/I/71XNr3mv7cL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVLL9PCR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7e4e0"
+  },
+  {
+    "id": 3069,
+    "title": "Amazon Product 119",
+    "price": 0,
+    "description": "Hicarer Hello Gorgeous Metal Wall Art Decor Minimalist Decoration Metal Hello Gorgeous Decorative Sign for Living Room Office Bedroom Hotel Home Wall Decoration(Gold)",
+    "image": "https://m.media-amazon.com/images/I/611AIetjAIL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DDY5JRTV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#988f2c"
+  },
+  {
+    "id": 3070,
+    "title": "Amazon Product 120",
+    "price": 0,
+    "description": "Creative Co-Op Round Driftwood Wall Décor",
+    "image": "https://m.media-amazon.com/images/I/81wsrJAuiJL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07B9Z2WSB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#977b5f"
+  },
+  {
+    "id": 3071,
+    "title": "Amazon Product 121",
+    "price": 0,
+    "description": "OYEFLY 3 Pieces Metal Flowers Wall Arts, Black Metal Vase Wall Art, Rustic Farmhouse Decor (Black)",
+    "image": "https://m.media-amazon.com/images/I/71FcBdenCWL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJ58TBJS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1a1a1a"
+  },
+  {
+    "id": 3072,
+    "title": "Amazon Product 122",
+    "price": 0,
+    "description": "AIANHUA Black and White Bathroom Wall Decor Bad Smell Humorous Wall Art Funny Guest Toilet Picture Print Painting Modern Minimalistic Bathroom Sign",
+    "image": "https://m.media-amazon.com/images/I/61dHKJGf6-L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2KWGPD9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cbcccd"
+  },
+  {
+    "id": 3073,
+    "title": "Amazon Product 123",
+    "price": 0,
+    "description": "Jetec 2 Pieces Farmhouse Bathroom Signs Decor Wooden Box Sign Funny Bathroom Wall Art Rustic Wood Plaque Please Seat Yourself Decor for Home Restroom(Black)",
+    "image": "https://m.media-amazon.com/images/I/81M4Y3KMp9L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09D7SH5D5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1f1f20"
+  },
+  {
+    "id": 3074,
+    "title": "Amazon Product 124",
+    "price": 0,
+    "description": "S-MANTIS Vintage Wall Sculpture, Antique Pediment, Hallway Wall Art, Hand Painted Wall Decoration With Embossed Intricate Key Design, Oval Aesthetic Room Décor, Gallery, Unique Gift (Antique Gold-Key)",
+    "image": "https://m.media-amazon.com/images/I/61kJYMqU4TL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BZLJ2B4V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#453a39"
+  },
+  {
+    "id": 3075,
+    "title": "Amazon Product 125",
+    "price": 0,
+    "description": "Wieco Art Blue Abstract Flowers 3 Panels Giclee Canvas Prints Wall Art Modern Pictures Artwork for Living Room Bedroom and Home Decorations",
+    "image": "https://m.media-amazon.com/images/I/51d8I8nAX0S._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07VSD81JT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3e4ec"
+  },
+  {
+    "id": 3076,
+    "title": "Amazon Product 126",
+    "price": 0,
+    "description": "CHENGU 3 Pieces Metal Minimalist Abstract Woman Wall Art Line Drawing Wall Art Decor Single Line Female Home Hanging for Kitchen Bathroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/71Bu3bwUEEL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4TLXSSM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbd6d8"
+  },
+  {
+    "id": 3077,
+    "title": "Amazon Product 127",
+    "price": 0,
+    "description": "Therwen 3 Pcs Black Metal Wall Art Minimalist Wall Decor for Bedroom Flowers Decor Hanging Flower Bathroom Art Flower Line Sculpture Kitchen Decoration 16.5 x 9.8 Inch(Cute Style)",
+    "image": "https://m.media-amazon.com/images/I/71ru0CXlb3L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C2Q2WBY2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfd7ce"
+  },
+  {
+    "id": 3078,
+    "title": "Amazon Product 128",
+    "price": 0,
+    "description": "Zzbakress 3 Pieces Metal Flowers Wall Decor, Black Wall Decor, Flower Art Wall Decor Farmhouse Wall Decor Multiple Flowers Hanging Decor for Bathroom Living Room Garden Office (Black Elegant)",
+    "image": "https://m.media-amazon.com/images/I/71gR0nGut6L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CP9LMG2N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c8c8c8"
+  },
+  {
+    "id": 3079,
+    "title": "Amazon Product 129",
+    "price": 0,
+    "description": "Motivation Quotes Wall Art - Funny Quotes Wall Art & Decor - Funny Sayings Wall Decor - Positive Quotes Poster - Entrepreneur Gifts - Home Office Decor - Man cave Sign - Inspiration - UNFRAMED 8x10",
+    "image": "https://m.media-amazon.com/images/I/61jF8qjH7dL._SY800_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C6VFFVJN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#000000"
+  },
+  {
+    "id": 3080,
+    "title": "Amazon Product 130",
+    "price": 0,
+    "description": "3 Pcs Gold Wall Decor Above Bed Minimalist for Living Room Metal Line Art - Female Body, Gold Room Decor for Bedroom Modern Wall Art for Indoor 15inch",
+    "image": "https://m.media-amazon.com/images/I/719NgJkBAwL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BMLQK6Y5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2ecd7"
+  },
+  {
+    "id": 3081,
+    "title": "Amazon Product 131",
+    "price": 0,
+    "description": "Induslyfe Framed Sage Green Vintage Wall Art Canvas Decor Set of 3, Matisse Wall Art Prints Posters Mid Century Modern Art, Aesthetic Floral Botanical wall art for bedroom, living room, bathroom 12x16",
+    "image": "https://m.media-amazon.com/images/I/91aFQxRT9gL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKY1V241/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e9e9de"
+  },
+  {
+    "id": 3082,
+    "title": "Amazon Product 132",
+    "price": 0,
+    "description": "3Pcs Battery Operated Picture Light, Magnetic Led Painting Light with Remote Dimmable and Timer, 3 Lighting Modes Art Display Light for Picture Frame Paintings, Wireless Wall Decor Puck Lights, Gold",
+    "image": "https://m.media-amazon.com/images/I/71jqMhtgxVL._AC_SX342_PIbundle-3,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJ2T8C7C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bfaa79"
+  },
+  {
+    "id": 3083,
+    "title": "Amazon Product 133",
+    "price": 0,
+    "description": "Yookeer Christian Wall Art Office Inspirational Wooden Bible Verses Bedroom Scripture Wall Art Meditation Inspirational Hanging Wood Sign for Kitchen Living Room(Brown, English Style)",
+    "image": "https://m.media-amazon.com/images/I/81jW+FMLvAL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09LXDFSV2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4cdc8"
+  },
+  {
+    "id": 3084,
+    "title": "Amazon Product 134",
+    "price": 0,
+    "description": "Black Metal Wall Art Holder Set of 2, Black Farmhouse Home Wall Decor, Minimalist Rustic Wall Art, Aesthetics Wall Candle Holder for Living Room Bedroom Bathroom (11.8 x 13 in)",
+    "image": "https://m.media-amazon.com/images/I/81GQXenIo8L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5XZS533/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#33302c"
+  },
+  {
+    "id": 3085,
+    "title": "Amazon Product 135",
+    "price": 0,
+    "description": "Oubasa Metal Coffee Sign Wall Art, Kitchen Home Wall Decor, Minimalist Woman Coffee Black Wall Decors Modern Art for Office Living Room Coffee Bar Decorations, Housewarming Gifts",
+    "image": "https://m.media-amazon.com/images/I/510a-ZlCIjL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CRB85V1L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e2e1e2"
+  },
+  {
+    "id": 3086,
+    "title": "Amazon Product 136",
+    "price": 0,
+    "description": "GUASDIE Animal Heads Wall Decor, Faux Deer Head Mount, Animal Sculptures Wall Decor, Resin Animal Head Wall Hanging Decoration for Living Room Bedroom Kitchen Gift, Rabbit",
+    "image": "https://m.media-amazon.com/images/I/61LAf4lT9YL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C592QM4G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#95794c"
+  },
+  {
+    "id": 3087,
+    "title": "Amazon Product 137",
+    "price": 0,
+    "description": "Art3d 2 Wood Slat Acoustic Panels for Wall and Ceiling - 3D Fluted Sound Absorbing Panel with Wood Finish - Walnut",
+    "image": "https://m.media-amazon.com/images/I/81bdEC7xxhL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BWRP7CWB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#836956"
+  },
+  {
+    "id": 3088,
+    "title": "Amazon Product 138",
+    "price": 0,
+    "description": "Art3d 4-Pack Acoustic Wood Slat Wall Panels for Interior Decor, 3D Fluted Sound Absorbing Wood Paneling for Accent Wall Ceiling Kitchen Living Room Bedroom Office, 94.5 x 7.9 inch Warm Teak",
+    "image": "https://m.media-amazon.com/images/I/81mkpqF+4zL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYPJWTJ2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b0926e"
+  },
+  {
+    "id": 3089,
+    "title": "Amazon Product 139",
+    "price": 0,
+    "description": "Art3d 2 Wood Slat Acoustic Panels for Wall and Ceiling - 3D Fluted Sound Absorbing Panel with Wood Finish - Matte Black",
+    "image": "https://m.media-amazon.com/images/I/81YMOYhfNkL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BWRN728Y/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2b2b2a"
   }
 ];
