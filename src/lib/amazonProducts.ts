@@ -28121,5 +28121,1415 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DQPQQ4SH/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#c4beb9"
+  },
+ {
+    "id": 2810,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "KLAKLA Orange and Blue Abstract Wall Art - Modern Picture Artwork for Wall Decor - Frame Wall Art for Living Room Office Bedroom",
+    "image": "https://m.media-amazon.com/images/I/719CC2f-TjL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN6S22FJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffcb7c"
+  },
+  {
+    "id": 2811,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "KLAKLA Orange and Blue Abstract Wall Art - Modern Picture Artwork for Wall Decor - Frame Wall Art for Living Room Office Bedroom",
+    "image": "https://m.media-amazon.com/images/I/719CC2f-TjL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN6QXDQF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1a2f4c"
+  },
+  {
+    "id": 2812,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "KLAKLA Orange and Blue Abstract Wall Art - Modern Picture Artwork for Wall Decor - Frame Wall Art for Living Room Office Bedroom",
+    "image": "https://m.media-amazon.com/images/I/719CC2f-TjL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN6RP971/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b94002"
+  },
+  {
+    "id": 2813,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "Canvas Wall Art Abstract, Yellow Wall Art Paintings for Bedroom Living Room Office Home Decoration Modern Canvas Artwork Wall Decor Ready to Hang 12''x16'', 3 Pieces",
+    "image": "https://m.media-amazon.com/images/I/61STg+DUK8L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08M9R91WG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c8ae34"
+  },
+  {
+    "id": 2814,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "Alenoss 3D Modern Oil Paintings Large Yellow Flowers Canvas Wall Art Home Decorations Blooming Floral Paintings Framed Wall Pictures for Dining Room Bedroom Living Room Walls",
+    "image": "https://m.media-amazon.com/images/I/810Ocugd8WL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08CZL6QFG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f4d91a"
+  },
+  {
+    "id": 2815,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Yellow Paris Eiffel Tower Decor Black and White City Canvas Wall Art Modern Paris Pictures Artwork for Bedroom Living Room Bathroom Office Home Decor 12\"X12\"X4",
+    "image": "https://m.media-amazon.com/images/I/71vR7eOODSL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B996JX3L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f1bf1f"
+  },
+  {
+    "id": 2816,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Handicrafts Home 9x9 Photo Picture Frames, Art Wall Hanging Decor - Classic Yellow",
+    "image": "https://m.media-amazon.com/images/I/41frvl5bZ6L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08ZKR5QPB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eee2a7"
+  },
+  {
+    "id": 2817,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "KREATIVE ARTS 3 Pieces Flower Canvas Wall Art Flower Poppy Blossom Picture Wall Decor Floral Painting Framed Poster for Bathroom Easy to Hang Each Panel 12x16 Inch (Yellow)",
+    "image": "https://m.media-amazon.com/images/I/61GnGzAeM2L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C8J35843/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f4ca42"
+  },
+  {
+    "id": 2818,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "LB Framed African American Women Canvas Wall Art Black Woman Yellow Hair Beauty Abstract Painting Canvas Prints Living Room Bedroom Bathroom Home Decoration Ready to Hang, 12x16 inch",
+    "image": "https://m.media-amazon.com/images/I/617K2x4FRoL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08811M1DH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffef52"
+  },
+  {
+    "id": 2819,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "GIFTME 5 Yellow Metal Layered Flower Wall Decor for Bathroom Livingroom Garden Indoor or Outdoor Wall Sculptures(10X2 inch)",
+    "image": "https://m.media-amazon.com/images/I/61SaQfOwgTL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07R6FZM6R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2b728"
+  },
+  {
+    "id": 2820,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "MHARTK66 Wall Decorations For Living Room Canvas Wall Art For Bedroom Office Decor Abstract Tree Landscape Wall Paintings Framed Prints Pictures Artwork Ready To Hang Hotel Room Home Decor 20x40 In",
+    "image": "https://m.media-amazon.com/images/I/61lxDm7TgQL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQ4P557X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ef7f4e"
+  },
+  {
+    "id": 2821,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "Wieco Art Framed Wall Art Canvas Print of Water Lilies by Claude Monet Paintings Reproduction Modern Canvas Wall Art for Home and office Decoration Abstract Artwork Silver Frame",
+    "image": "https://m.media-amazon.com/images/I/71B1dkRrL5L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07ZB4QX1F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7fa2ab"
+  },
+  {
+    "id": 2822,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "Yellow Wall Decor for Living Room - Flower Canvas Wall-Art for Bedroom Inspirational Posters for Women - Daisy Wall Decor Ready to Hang Size 20\" x 40\"",
+    "image": "https://m.media-amazon.com/images/I/81bGlwW2PPL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B9Y5LZ98/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fbd718"
+  },
+  {
+    "id": 2823,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "MHARTK66 Wall Art for Living Room Modern Wall Decor for Bedroom Office Decor Abstract Mountain Forest Landscapes Ink Painting 3 Piece Framed Canvas Art Prints Ready to Hang Wall Pictures Home Decor",
+    "image": "https://m.media-amazon.com/images/I/71QsAhEbOHL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CT36RD5W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a48e5c"
+  },
+  {
+    "id": 2824,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "TTHYUEWS Canvas Wall Art For Living Room Modern Inspiration Wall Decor For Bedroom Office Wall Decoration Black And White Painting Yellow Landscape Wall Pictures Prints Artwork Home Decor 3 Piece",
+    "image": "https://m.media-amazon.com/images/I/610fZLEWxiL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQZN6N1P/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#edcd45"
+  },
+  {
+    "id": 2825,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "Wall Decorations For Living Room Large Size Canvas Wall Art For Bedroom Modern Office Wall Decor Canvas Art Black and white view Yellow Tree Painting Pictures Artwork for Walls Bathroom Home Decor",
+    "image": "https://m.media-amazon.com/images/I/61nrzAR1lHL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B2JN43WD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffef2d"
+  },
+  {
+    "id": 2826,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "Canvas Wall Art For Bedroom Living Room Bathroom Wall Decor For Kitchen Wall Pictures Artwork Black And White Yellow Rose Flowers Paintings 12\" X 16\" 3 Pieces Framed Modern Office Home Decorations",
+    "image": "https://m.media-amazon.com/images/I/61vBHbNHi4L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B083TSTCXX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffea1a"
+  },
+  {
+    "id": 2827,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "ONIZHITY 4Pcs Yellow Bathroom Decor Yellow Wall Decor Religious Bible Verse Yellow Rose Wall Decor Rustic Wooden Christian Sign for Home Bathroom Office Bedroom Living Room Kitchen(Yellow 10x4",
+    "image": "https://m.media-amazon.com/images/I/71yjC5CIBpL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CK2BKWYK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f7e33c"
+  },
+  {
+    "id": 2828,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "Handicrafts Home 6x14 Photo Picture Frames Handmade Art Wall Hanging Nursery Guest Living Room Table Decor Gifts, Classic Yellow",
+    "image": "https://m.media-amazon.com/images/I/61PTqpgmbWL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B7B4QMYP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f7e659"
+  },
+  {
+    "id": 2829,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "Handicrafts Home 16x24 Photo Picture Frames Handmade Art Wall Hanging Nursery Guest Living Room Wall Decor Gifts, Classic Yellow",
+    "image": "https://m.media-amazon.com/images/I/61WxOcWqxNL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B8DBB1QP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f5dd51"
+  },
+  {
+    "id": 2830,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "7Fisionart Yellow Abstract Canvas Wall Art Grey Black Pictures Modern Geometric Painting Mustard Bathroom Decor for Living Room Bedroom Kitchen Home Office Decor 12\" x 16\"",
+    "image": "https://m.media-amazon.com/images/I/719gicosGFL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08TBJTCN4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3b90f"
+  },
+  {
+    "id": 2831,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "daktenn Canvas Wall Art African American Women Wall Decor Black Woman Yellow Hair Beauty Abstract Painting Canvas Prints Living Room Bedroom Bathroom Home Decoration African Wall Art, 12 * 16 inch",
+    "image": "https://m.media-amazon.com/images/I/61OvBajLX4L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5BQQN5C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fbe26a"
+  },
+  {
+    "id": 2832,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "PYGHLKNBY 3 Pieces Metal Flowers Wall Decor, Rustic Metal Wall Art Decorations Floral Metal Wall For Family Home Living Room Bedroom Bathroom Kitchen Modern Farmhouse Office Outdoor Garden (Yellow)",
+    "image": "https://m.media-amazon.com/images/I/71OJc+03kmL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C61RXKJQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f3a531"
+  },
+  {
+    "id": 2833,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "Jakalin Macrame Wall Hanging Yellow Dip Dyed Yarn Macrame Wall Decor Fiber Wall Art Boho Wall Decor Bedroom Living Room 15.7\" Wx 47.2\" L",
+    "image": "https://m.media-amazon.com/images/I/81Ci4csTzWL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9LXL2DX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e8c702"
+  },
+  {
+    "id": 2834,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "Yellow Abstract Smart Line Pictures Canvas Wall Art for Living room Bedroom Wall Decor, Smart Line Wall Art Print Paitnings for home Decor, Morden Artwork Full of Imagination Line Drawing Canvas Art",
+    "image": "https://m.media-amazon.com/images/I/715CAAv46ZL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C3DK5C7F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3d44e"
+  },
+  {
+    "id": 2835,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "Takfot Leaf Wall Art Yellow Grey Leaves Canvas Painting Vintage Botanical Pictures Rustic Plants Artwork Home Decor Stretched and Framed Artwork for Bathroom Living Room 1216 Inch, 3 Panels",
+    "image": "https://m.media-amazon.com/images/I/61yiYKLUYKL._SY500_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07XMQ88ZV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3b34d"
+  },
+  {
+    "id": 2836,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "Metal Tree Leaf Wall Decor 2 PCS Rustic Vine Branch Leaf Wall Art for Living Room Bedroom Bathroom Decorations - Golden Yellow",
+    "image": "https://m.media-amazon.com/images/I/71Y-+wdMltL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CB5T63NY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e6b41f"
+  },
+  {
+    "id": 2837,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "RyounoArt Yellow Tree Painting Canvas Wall Art Yellow and Gray Wall Decor Picture Abstract Tree Artwork Print for Living Room Office Framed Ready to Hang 24\"x48\"",
+    "image": "https://m.media-amazon.com/images/I/71Fmnk+jOqS._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B098DPHLKZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f6f161"
+  },
+  {
+    "id": 2838,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "SYGALLERIER White Flower Canvas Wall Art Hand Painted Heavy Textured Paintings Yellow and White Pictures Contemporary Artwork for Living Room Bedroom Dinning Decor",
+    "image": "https://m.media-amazon.com/images/I/817Slmd+LxL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08P44VWCS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddd38b"
+  },
+  {
+    "id": 2839,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "sechars Yellow Flower Canvas Wall Art Vintage Floral Painting Pictures Decor Modern Yellow and Grey Bedroom Bathroom Decoration (Yellow)",
+    "image": "https://m.media-amazon.com/images/I/71uIg2IKPEL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPDKXMJZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e9b258"
+  },
+  {
+    "id": 2840,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "Biuteawal- 4 Panel Black and White Canvas Wall Art Wine with Yellow Sunflower Picture Painting Print Still Life Artwork for Home Dining Room Living Room Wall Decor Framed and Easy Hanging",
+    "image": "https://m.media-amazon.com/images/I/71Uu-QPZI2L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07K6CX8SF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f1be01"
+  },
+  {
+    "id": 2841,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "Visual Art Decor Yellow and Grey Abstract Geometric Circle Canvas Wall Art Rustic Lemon Yellow Prints Artwork for Living Room Bedroom Wall Decoration",
+    "image": "https://m.media-amazon.com/images/I/71l0SLmlyEL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09RDYMC98/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e9bf50"
+  },
+  {
+    "id": 2842,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "Bright Yellow Wall Collage Kit - 50 Aesthetic Posters for Room Decor, Perfect Dorm and Bedroom Wall Art, Vibrant Yellow Collage Kit for Teen Girls and Cheerful Spaces",
+    "image": "https://m.media-amazon.com/images/I/91DKKmElY9L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CWDCYLTQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffde3b"
+  },
+  {
+    "id": 2843,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "Stupell Industries Abstract Flower Blossoms Tree Yellow White Painting, Designed by Lisa Audit Wall Art, 16 x 20, Canvas",
+    "image": "https://m.media-amazon.com/images/I/61cgIZXVJML._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0886KLMCN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d1a941"
+  },
+  {
+    "id": 2844,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "Cao Gen Decor Art S06375 Wall Art Canvas Painting Yellow Tree in Black and White Sunshine Foggy Forest Picture Poster Print Framed Ready to Hang for Living Room Bedroom Office Home Decor",
+    "image": "https://m.media-amazon.com/images/I/81VIvIAqBtL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09NKH41YT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dab053"
+  },
+  {
+    "id": 2845,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "Everydecor Succulent Metal Flowers Wall Decor – Yellow, Hand Painted, 3D Flower Art Decoration for Living Room, Bedroom, Kitchen, Bathroom - Floral Decor for Indoor & Outdoor Use",
+    "image": "https://m.media-amazon.com/images/I/71FyiAY4rxL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C5F4ZYFK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e19c16"
+  },
+  {
+    "id": 2846,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "Alenoss 3D Modern Oil Paintings Large Yellow Flowers Canvas Wall Art Home Decorations Blooming Floral Paintings Framed Wall Pictures for Dining Room Bedroom Living Room Walls",
+    "image": "https://m.media-amazon.com/images/I/810Ocugd8WL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08CZL6QFG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fff670"
+  },
+  {
+    "id": 2847,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "Art3d Botanical Plant Wall Art Prints 4 Piece Set Flower Wall Decor for Living Room Kitchen Bedroom Hallway, Yellow Botanical Poster, Changeable Wall Art Frame",
+    "image": "https://m.media-amazon.com/images/I/81HzGvvrOIL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DGTP3GGY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#edefc1"
+  },
+  {
+    "id": 2848,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "WENGTIAO 3Pcs Framed Colorful Wildflower Canvas Wall Art, Yellow Watercolors Flowers Wall Pictures Floral Canvas Prints Wall Decor Paintings for Living Room Girls Bedroom Ready to Hang 12\"x16\"x3",
+    "image": "https://m.media-amazon.com/images/I/71ZresjMbqL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKNJ5692/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b7ad7e"
+  },
+  {
+    "id": 2849,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "DISSA Fleece Blanket Throw Size – 51x63, Yellow Soft, Plush, Fluffy, Fuzzy, Warm, Cozy Perfect for Couch, Bed, Sofa - with Pompom Fringe Flannel",
+    "image": "https://m.media-amazon.com/images/I/81IKim5nZiL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08R5JRXBW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c08c26"
+  },
+  {
+    "id": 2850,
+    "title": "Amazon Product 41",
+    "price": 0,
+    "description": "DuoBaorom Yellow Grey Flower Canvas 3 Pieces Wall Art Abstract Lily Painting Home Decor Bedroom Bathroom Hang Decortations 12\"x12\"",
+    "image": "https://m.media-amazon.com/images/I/71KXkivC+TL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNSNFG6T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f4db5f"
+  },
+  {
+    "id": 2851,
+    "title": "Amazon Product 42",
+    "price": 0,
+    "description": "Inspirational Canvas Wall Art, Girly Wall Art, Yellow And Blue Preppy Funky Today Is a Good Day Framed Canvas Wall Art Decor 14x11, Colorful Hot Pink Preppy Paintings Artwork Office Dorm Room Home Wall Art Decor",
+    "image": "https://m.media-amazon.com/images/I/71omMp5IMcL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CWVDCV9K/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f9bc4e"
+  },
+  {
+    "id": 2852,
+    "title": "Amazon Product 43",
+    "price": 0,
+    "description": "Boho Beige Minimalist Wall Art Decor Prints Boho Yellow Pictures Yellow And Grey Abstract Canvas Wall Art Modern Artwork Boho Line Poster Minimalist Boho Painting Line Canvas Art 16x24inchx2 No Frame",
+    "image": "https://m.media-amazon.com/images/I/71S0NElsshL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C13D6D11/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0ab42"
+  },
+  {
+    "id": 2853,
+    "title": "Amazon Product 44",
+    "price": 0,
+    "description": "LITIALLY 12 Inches Metal Flower Wall Art Garden Decor Cute Flowers Decorations, Bathroom Wall Decor Hanging for Outside Yard Porch Lawn (Yellow)",
+    "image": "https://m.media-amazon.com/images/I/71I6yqtmSQL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C16FPXH6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eb9f0a"
+  },
+  {
+    "id": 2854,
+    "title": "Amazon Product 45",
+    "price": 0,
+    "description": "Yellow Flower Wall Art Yellow and Gray Wall Decor Modern Abstract Canvas Painting Prints Pictures Artwork Home Decor For Kitchen Living Room Dining Room",
+    "image": "https://m.media-amazon.com/images/I/61FNMgL-aoL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07R46XCS7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dccf53"
+  },
+  {
+    "id": 2855,
+    "title": "Amazon Product 46",
+    "price": 0,
+    "description": "DuoBaorom Large Tree Bird Canvas Wall Art Two Loving Birds on Yellow Tree Branch Romantic Artwork Picture Print for Bedroom Living Room Decor 20\"x36\"",
+    "image": "https://m.media-amazon.com/images/I/71jTD4aWPuL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0983FB9JL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8be34"
+  },
+  {
+    "id": 2856,
+    "title": "Amazon Product 47",
+    "price": 0,
+    "description": "LevvArts Watercolor Abstract Flower Canvas Wall Art Wild Sunflower Painting Picture Prints White and Yellow Bathroom Decorations (Yellow, Small)",
+    "image": "https://m.media-amazon.com/images/I/61gyCWkB3vL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CBRCNCGC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddc978"
+  },
+  {
+    "id": 2857,
+    "title": "Amazon Product 48",
+    "price": 0,
+    "description": "Zlove Yellow Bathroom Decor Wall Art Yellow Grey Pictures for Bathroom Yellow and Gray Canvas Painting Prints",
+    "image": "https://m.media-amazon.com/images/I/51-9IdBYjJL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B086MDCJMT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eee3b6"
+  },
+  {
+    "id": 2858,
+    "title": "Amazon Product 49",
+    "price": 0,
+    "description": "RnnJoile Yellow and Grey Pictures Decor Yellow Dahlia Floral Bathroom Wall Art Prints Relax Refresh Renew Canvas Bathroom Accessories Framed Each Piece 12x16 Inch",
+    "image": "https://m.media-amazon.com/images/I/71jM4ovv-oL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B092PK6R75/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f7df64"
+  },
+  {
+    "id": 2859,
+    "title": "Amazon Product 50",
+    "price": 0,
+    "description": "dazongweihan Yellow Matisse Prints Wall Art, Aesthetic Posters Danish Wall Art, Unframed, Flower Market Exhibition Posters, 8x10in, Set of 6(C)",
+    "image": "https://m.media-amazon.com/images/I/71NCVHdZNbL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4SMS3TH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e8bc73"
+  },
+  {
+    "id": 2860,
+    "title": "Amazon Product 51",
+    "price": 0,
+    "description": "WOFUPMY Trendy Cute Posters Eclectic Preppy Aesthetics Canvas Wall Art Yellow Affirmation Room Decor - More Amor Por Favor Prints for Bedroom Dorm 12x16 inch Unframed",
+    "image": "https://m.media-amazon.com/images/I/71wzX-0Qr0L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DG5Q43Q8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2b627"
+  },
+  {
+    "id": 2861,
+    "title": "Amazon Product 52",
+    "price": 0,
+    "description": "5 Panel Yellow Orchid Flowers Canvas Print - Abstract Golden Floral Wall Decor Poster, 5 pieces Wall Art Painting Decor for Home Decoration Artwork Picture Bedroom Wall Decor (D, Oversize 60x30inch)",
+    "image": "https://m.media-amazon.com/images/I/81a0xKqDOgS._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B095NP6J6P/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4e2cc"
+  },
+  {
+    "id": 2862,
+    "title": "Amazon Product 53",
+    "price": 0,
+    "description": "IOWER Macrame Wall Hanging Yellow Dip-Dyed Large For Living Room Boho Macrame Wall Decor 59\" Wx37 L",
+    "image": "https://m.media-amazon.com/images/I/810vA9VHZYL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CG83DVBG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbb054"
+  },
+  {
+    "id": 2863,
+    "title": "Amazon Product 54",
+    "price": 0,
+    "description": "Wieco Art Olive Trees with Yellow Sky and Sun Canvas Print of Vincent Van Gogh Wall Art Paintings Reproduction Field Pictures Artwork for Wall Decor and Home Decorations VAN-0071-3040",
+    "image": "https://m.media-amazon.com/images/I/71DAFT5X+BL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09CHHDCWK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dace9c"
+  },
+  {
+    "id": 2864,
+    "title": "Amazon Product 55",
+    "price": 0,
+    "description": "Abstract Canvas Painting A Rainy Walk Girl with Yellow Umbrella Wall Art Modern Artwork for Office Home Decoration",
+    "image": "https://m.media-amazon.com/images/I/71ecS3FegRL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08GS45DX7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5aa0e"
+  },
+  {
+    "id": 2865,
+    "title": "Amazon Product 56",
+    "price": 0,
+    "description": "daktenn Canvas Wall Art African American Women Wall Decor Black Woman Yellow Hair Beauty Abstract Painting Canvas Prints Living Room Bedroom Bathroom Home Decoration African Wall Art, 12 * 16 inch",
+    "image": "https://m.media-amazon.com/images/I/61YJbZH1R-L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5BQ8MSK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e5d17a"
+  },
+  {
+    "id": 2866,
+    "title": "Amazon Product 57",
+    "price": 0,
+    "description": "DJSYLIFE Kitchen Wall Decor Black and White Yellow Wall Art Bread Cake Fruit Picture Canvas Print Paintings for Cafe Dining Room Restaurant Farmhouse Kitchen Decoration 12\" Wx12 Hx4",
+    "image": "https://m.media-amazon.com/images/I/81L3lvuV9ML._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09TT1N5Z7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f7db16"
+  },
+  {
+    "id": 2867,
+    "title": "Amazon Product 58",
+    "price": 0,
+    "description": "Wall decorations for living room Canvas Wall Art for bedroom Abstract wall decor Black and white Canvas Art Yellow tree paintings bathroom Home Decoration Hang Pictures Office large Wall Artworks",
+    "image": "https://m.media-amazon.com/images/I/71lcTRU5GjL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08N11ZGPH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fadc1e"
+  },
+  {
+    "id": 2868,
+    "title": "Amazon Product 59",
+    "price": 0,
+    "description": "YEAHOME Sunflower Decor 11'' Metal Flower Wall Decor, Wall Art Decorations Sunflower Kitchen Yard Garden Decor Hanging for Bathroom, Living Room, Spring Decor Boho Art for Indoor Outdoor",
+    "image": "https://m.media-amazon.com/images/I/71RlAO0K6cL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNXHBJG4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ecc738"
+  },
+  {
+    "id": 2869,
+    "title": "Amazon Product 60",
+    "price": 0,
+    "description": "Yellow Paris Eiffel Tower Decor Black and White City Canvas Wall Art Modern Paris Pictures Artwork for Bedroom Living Room Bathroom Office Home Decor 12\"X12\"X4",
+    "image": "https://m.media-amazon.com/images/I/71vR7eOODSL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B996JX3L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fffc8c"
+  },
+  {
+    "id": 2870,
+    "title": "Amazon Product 61",
+    "price": 0,
+    "description": "Pankila Yellow Flower Wall Art Floral Pictures for Bathroom Abstract Canvas Flowers Wall Decor Botanical Poster Print for Living Room Bedroom Home Decorations Framed Artwork (12''W x 12''H x 2)",
+    "image": "https://m.media-amazon.com/images/I/61cA9UyQTZL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C3Q82BMQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f6dd66"
+  },
+  {
+    "id": 2871,
+    "title": "Amazon Product 62",
+    "price": 0,
+    "description": "Canvas Wall Art For Bedroom Wall Decor For Kitchen Living Room Decor Girls Room Wall Decorations Black And White Wall Pictures Artwork Yellow Rose Flowers Canvas Prints Bathroom Home Decor 3 Piece",
+    "image": "https://m.media-amazon.com/images/I/61vabtBrhhL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B2JY9RNG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fbd905"
+  },
+  {
+    "id": 2872,
+    "title": "Amazon Product 63",
+    "price": 0,
+    "description": "HVEST Vintage Floral Yellow Wall Art for Living Room, Farmhouse Yellow and Gray Daisy on Rustic Wood Canvas Wall Art Nature Plant Wildflower Framed Wall Art for Bathroom Bedroom Decor, 16L X 12W inches",
+    "image": "https://m.media-amazon.com/images/I/81umbHs-m9L._AC_SY741_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CWP1XGS2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c9b006"
+  },
+  {
+    "id": 2873,
+    "title": "Amazon Product 64",
+    "price": 0,
+    "description": "3 Pcs Yellow Wall Decor Inspirational Yellow Bathroom Wall Decor Wooden Yellow Rose Wall Art Office Wall Decor With Accept Let Go Have Faith Quotes For Girl Women Bathroom Bedroom(yellow 12 X 4 Inch)",
+    "image": "https://m.media-amazon.com/images/I/71x6pdwmupL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CB4MWHMQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ded79f"
+  },
+  {
+    "id": 2874,
+    "title": "Amazon Product 65",
+    "price": 0,
+    "description": "Yellow and Gray Floral Wall Art: Flower Pictures Wall Decor Floral Canvas Wall Art Grey Yellow Bathroom Decor Living Room Accessories Modern Yellow Flower Print Painting Bedroom Kitchen Decor 12\"x16\"",
+    "image": "https://m.media-amazon.com/images/I/61QUQIFzTlL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CXXCR71Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddad36"
+  },
+  {
+    "id": 2875,
+    "title": "Amazon Product 66",
+    "price": 0,
+    "description": "Yellow Flower Zen Stone Pictures Giclee Wall Art Prints Bathroom Decor framed 4 pieces Grey Pebble Stone Canvas 12\"×12\" (gray, 12x12 inch)",
+    "image": "https://m.media-amazon.com/images/I/616hyw3HwEL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CB36FH6Y/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eaeaea"
+  },
+  {
+    "id": 2876,
+    "title": "Amazon Product 67",
+    "price": 0,
+    "description": "Wapluam Farmhouse Canvas Wall Art For Living Room Large Wall Decor Art For Office Black And White Wall Painting Yellow Tree View Wall Pictures Framed Prints Artwork Bedroom Home Decoration 30\"X60\"",
+    "image": "https://m.media-amazon.com/images/I/71-xkVcHioL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNK574WG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ebb831"
+  },
+  {
+    "id": 2877,
+    "title": "Amazon Product 68",
+    "price": 0,
+    "description": "Metal Flowers Wall Decor Indoor Outdoor Metal Wall Art for Farmhouse Home Living Room Bedroom Bathroom Garden Decor – 12 Inch - Yellow",
+    "image": "https://m.media-amazon.com/images/I/51bVq7hw8PS._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B098R4BJCS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfb361"
+  },
+  {
+    "id": 2878,
+    "title": "Amazon Product 69",
+    "price": 0,
+    "description": "LoveHouse Yellow and Grey Bathroom Flower Wall Art Grey and Yellow Bathroom Pictures Prints Grey Gray Floral Art Decor",
+    "image": "https://m.media-amazon.com/images/I/71DkBCtSlHL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08QHW2CPW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffbc2a"
+  },
+  {
+    "id": 2879,
+    "title": "Amazon Product 70",
+    "price": 0,
+    "description": "AJAZIKO Landscape Wall Art Moon Framed Canvas Wall Art Large Yellow Living Room Wall Decor Fall Paintings for Bedroom Nature Office Artwork Wall Decor Dining Room Wall Pictures20×40IN",
+    "image": "https://m.media-amazon.com/images/I/81o4fxj5J1L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8TMXRTH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bd974a"
+  },
+  {
+    "id": 2880,
+    "title": "Amazon Product 71",
+    "price": 0,
+    "description": "YS-Art Framed acrylic painting on canvas Eternity II Textured wall art decor Hand painted acrylic modern art 48x32 inch",
+    "image": "https://m.media-amazon.com/images/I/918lIRvc-gL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09C8RZH5M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7d4d2"
+  },
+  {
+    "id": 2881,
+    "title": "Amazon Product 72",
+    "price": 0,
+    "description": "YS-Art Landscape hand painted painting Dawn Spring motive art for wall decorations Acrylic artwork with birds and white flower With Frame 64x30 inch",
+    "image": "https://m.media-amazon.com/images/I/81MLgM4esyL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C3ZSXSS4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d2cec4"
+  },
+  {
+    "id": 2882,
+    "title": "Amazon Product 73",
+    "price": 0,
+    "description": "YS-Art Hand-painted abstract cityscape Autumn alley Painting wall art for living room colorful autumn motive Wall art 55x28 inch",
+    "image": "https://m.media-amazon.com/images/I/91FVXL8203L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07QBYR986/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#08102c"
+  },
+  {
+    "id": 2883,
+    "title": "Amazon Product 74",
+    "price": 0,
+    "description": "Handicrafts Home 6x14 Photo Picture Frames Handmade Art Wall Hanging Nursery Guest Living Room Table Decor Gifts, Classic Yellow",
+    "image": "https://m.media-amazon.com/images/I/61PTqpgmbWL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B7B4QMYP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f8ea67"
+  },
+  {
+    "id": 2884,
+    "title": "Amazon Product 75",
+    "price": 0,
+    "description": "Handicrafts Home 9x9 Photo Picture Frames, Art Wall Hanging Decor - Classic Yellow",
+    "image": "https://m.media-amazon.com/images/I/41frvl5bZ6L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08ZKR5QPB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eae1b5"
+  },
+  {
+    "id": 2885,
+    "title": "Amazon Product 76",
+    "price": 0,
+    "description": "Handicrafts Home 16x24 Photo Picture Frames Handmade Art Wall Hanging Nursery Guest Living Room Wall Decor Gifts, Classic Yellow",
+    "image": "https://m.media-amazon.com/images/I/61WxOcWqxNL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B8DBB1QP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e8d43f"
+  },
+  {
+    "id": 2886,
+    "title": "Amazon Product 77",
+    "price": 0,
+    "description": "7Fisionart Yellow Abstract Canvas Wall Art Grey Black Pictures Modern Geometric Painting Mustard Bathroom Decor for Living Room Bedroom Kitchen Home Office Decor 12\" x 16\"",
+    "image": "https://m.media-amazon.com/images/I/719gicosGFL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08TBJTCN4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e6c91f"
+  },
+  {
+    "id": 2887,
+    "title": "Amazon Product 78",
+    "price": 0,
+    "description": "ZINYAZHE 3 Pcs Farmhouse Bathroom Wall Decor Yellow Daisy Floral Flowers and Butterfly Yellow Bathroom Wall Art Accept Let Go Have Faith Positive Rustic Wood Plaque for Home Laundry (Yellow, 12x4 Inch)",
+    "image": "https://m.media-amazon.com/images/I/71EHzoQi+EL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CHZ6QTGN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f7e495"
+  },
+  {
+    "id": 2888,
+    "title": "Amazon Product 79",
+    "price": 0,
+    "description": "MPLONG Wall Art, Bright Style Framed Wall Art, Abstract Modern Art Shape Pattern White Blue Yellow Grey Wall Art Artfully Matching Living Room Bedroom Office Wall Decor - 24\"x 32\"x 3 Panels",
+    "image": "https://m.media-amazon.com/images/I/61BEle83+hL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BKGYN66L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9b9693"
+  },
+  {
+    "id": 2889,
+    "title": "Amazon Product 80",
+    "price": 0,
+    "description": "SkenoArt Flower Wall Art for Bedroom Grey and Yellow Butterfly Floral Canvas Paintings Faith Hope Love Quotes Inspirational Pictures Prints Home Farmhouse Bathroom Decor Ready to Hang 12x12inchx3pcs",
+    "image": "https://m.media-amazon.com/images/I/814RG-MpiTL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09D7GL3BH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d2d2cb"
+  },
+  {
+    "id": 2890,
+    "title": "Amazon Product 81",
+    "price": 0,
+    "description": "Cleaning Brush - Hard Bristle Crevice Cleaning Brush for Tight Spaces, Gap Scrub Brush, Bathroom Grout Brush, Thin Cleaning Brush for Household Use, Home Kitchen Toilet Cleaning Supplies",
+    "image": "https://m.media-amazon.com/images/I/61-oKJLNdfL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2HX2NS4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b8babb"
+  },
+  {
+    "id": 2891,
+    "title": "Amazon Product 82",
+    "price": 0,
+    "description": "Cleaning Brush, 3 Pcs Hard Bristle Crevice Cleaning Brush, Grout Cleaning Brush, Scrub Brush for Tile Grout Crevice, Gap Cleaning Tools for Bathroom Kitchen Toilet Window Track (3, Black)",
+    "image": "https://m.media-amazon.com/images/I/61Et6q2yGLL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7MFD841/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#242324"
+  },
+  {
+    "id": 2892,
+    "title": "Amazon Product 83",
+    "price": 0,
+    "description": "Cleaning Brush, 5 Pcs Hard Bristle Crevice Cleaning Brush, Grout Cleaning Brush, Scrub Brush for Tile Grout Crevice, Gap Cleaning Tools for Bathroom Kitchen Toilet Window Track (5, Black)",
+    "image": "https://m.media-amazon.com/images/I/71ruuwSpTdL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCNPL22L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#222223"
+  },
+  {
+    "id": 2893,
+    "title": "Amazon Product 84",
+    "price": 0,
+    "description": "4 Pcs Farmhouse Yellow Bathroom Wall Decor Yellow Daisy Floral Flowers and Butterfly Yellow Wall Art Relax Soak Unwind Breathe Rustic Wood Plaque for Kitchen Home Bedroom(Yellow, 10 x 4 Inch)",
+    "image": "https://m.media-amazon.com/images/I/714llih8bxL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CHZ13KQR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eae8e2"
+  },
+  {
+    "id": 2894,
+    "title": "Amazon Product 85",
+    "price": 0,
+    "description": "HAUS AND HUES Mid Century Modern Wall Art Print - Retro Wall Art, Evil Eye Decor, Yellow Wall Art, Bauhaus Poster, Geometric Wall Art Decor, Large Abstract Art Wall Decor (Black Frame, 12x16)",
+    "image": "https://m.media-amazon.com/images/I/71yn7uS44LL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09VCGCSZM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ebb426"
+  },
+  {
+    "id": 2895,
+    "title": "Amazon Product 86",
+    "price": 0,
+    "description": "Framed 3pcs Boho Flower Wall Art Abstract Yellow Floral Canvas Prints Botanical Plant Poster Vintage Neutral Flower Pictures Minimalist Flower Painting Wall Decor for Livingroom12x16 Inchx3",
+    "image": "https://m.media-amazon.com/images/I/71PjQB71UNL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DDPYXYFC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f6ad20"
+  },
+  {
+    "id": 2896,
+    "title": "Amazon Product 87",
+    "price": 0,
+    "description": "Biuteawal- 4 Panel Black and White Canvas Wall Art Wine with Yellow Sunflower Picture Painting Print Still Life Artwork for Home Dining Room Living Room Wall Decor Framed and Easy Hanging",
+    "image": "https://m.media-amazon.com/images/I/71Uu-QPZI2L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07K6CX8SF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4aa00"
+  },
+  {
+    "id": 2897,
+    "title": "Amazon Product 88",
+    "price": 0,
+    "description": "Wieco Art Framed Wall Art Canvas Print of Water Lilies by Claude Monet Paintings Reproduction Modern Canvas Wall Art for Home and office Decoration Abstract Artwork Silver Frame",
+    "image": "https://m.media-amazon.com/images/I/71B1dkRrL5L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07ZB4QX1F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7fa2ab"
+  },
+  {
+    "id": 2898,
+    "title": "Amazon Product 89",
+    "price": 0,
+    "description": "SYGALLERIER White Flower Canvas Wall Art Hand Painted Heavy Textured Paintings Yellow and White Pictures Contemporary Artwork for Living Room Bedroom Dinning Decor",
+    "image": "https://m.media-amazon.com/images/I/817Slmd+LxL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08P44VWCS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b4b090"
+  },
+  {
+    "id": 2899,
+    "title": "Amazon Product 90",
+    "price": 0,
+    "description": "Wieco Art Blue Abstract Flowers 3 Panels Giclee Canvas Prints Wall Art Modern Pictures Artwork for Living Room Bedroom and Home Decorations",
+    "image": "https://m.media-amazon.com/images/I/51d8I8nAX0S._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07VSD81JT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3e4ec"
+  },
+  {
+    "id": 2900,
+    "title": "Amazon Product 91",
+    "price": 0,
+    "description": "Barydat 5 Pcs Wooden Bird Wall Art Wood Flying Birds Wall Decor Rustic Folk Art Scandinavian Home Decor for Gift Living Room Bedroom Kitchen Office(Yellow)",
+    "image": "https://m.media-amazon.com/images/I/815vOG6QKjL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1K8R1DH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f0ecda"
+  },
+  {
+    "id": 2901,
+    "title": "Amazon Product 92",
+    "price": 0,
+    "description": "Bedroom Forest Canvas Wall Art: Abstract Landscape Painting Modern Gold Yellow Tree Picture Autumn Woods Scenery Prints Rustic Countryside Vintage Aesthetic Artwork for Living Room Home Office",
+    "image": "https://m.media-amazon.com/images/I/810lC74SKDL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BZ8CKH4D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b9a150"
+  },
+  {
+    "id": 2902,
+    "title": "Amazon Product 93",
+    "price": 0,
+    "description": "Yellow and Gray Flowers Canvas Wall Art Tulip Picture Prints Artwork Modern Floral Wall Decor for Living Room Bedroom Bathroom Decor Plant Painting Framed 2 Pieces",
+    "image": "https://m.media-amazon.com/images/I/71v+H++9oCL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B096XV4Y5P/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d89e33"
+  },
+  {
+    "id": 2903,
+    "title": "Amazon Product 94",
+    "price": 0,
+    "description": "Yellow Paris Eiffel Tower Decor Black and White City Canvas Wall Art Modern Paris Pictures Artwork for Bedroom Living Room Bathroom Office Home Decor 12\"X12\"X4",
+    "image": "https://m.media-amazon.com/images/I/71vR7eOODSL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B996JX3L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffe774"
+  },
+  {
+    "id": 2904,
+    "title": "Amazon Product 95",
+    "price": 0,
+    "description": "Large Canvas Wall Art Set of 3 Framed Boho Wall Art Mid Century Modern Wall Prints Yellow Green Moon Plant Desert Nature Illustrations Artwork, Minimalist Boho Wall Decor for Living Room 16x24in",
+    "image": "https://m.media-amazon.com/images/I/711j5AAE3uL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLXZBY4M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3a6f5b"
+  },
+  {
+    "id": 2905,
+    "title": "Amazon Product 96",
+    "price": 0,
+    "description": "Wall Art Framed Ready to HangCanvas Wall Art Modern Fantasy Paintings Yellow Abstract Wall Art Prints Large Size for Living Room Bedroom Office Decoration 20\"x40\"inches",
+    "image": "https://m.media-amazon.com/images/I/71+7m8plajL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN5NSDM2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fae345"
+  },
+  {
+    "id": 2906,
+    "title": "Amazon Product 97",
+    "price": 0,
+    "description": "Cao Gen Decor Art S06375 Wall Art Canvas Painting Yellow Tree in Black and White Sunshine Foggy Forest Picture Poster Print Framed Ready to Hang for Living Room Bedroom Office Home Decor",
+    "image": "https://m.media-amazon.com/images/I/81VIvIAqBtL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09NKH41YT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#976c04"
+  },
+  {
+    "id": 2907,
+    "title": "Amazon Product 98",
+    "price": 0,
+    "description": "Yxbhhym Yellow Gray Wall Art Black White Zen Wall Art Floral Wall Pictures Flower Zen Painting Stone Sand Pebble Canvas Poster Artwork for Wall Decor Living Room Bedroom Bathroom Decor Framed",
+    "image": "https://m.media-amazon.com/images/I/71sKJ1QcTrL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B6F16HJV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ecda0e"
+  },
+  {
+    "id": 2908,
+    "title": "Amazon Product 99",
+    "price": 0,
+    "description": "NISTOMISU Daisys Art Canvas Prints Wall Decor Retro Yellow Daisy Bathroom Canvas Art Sign Canvas Poster Gifts for Home Bathroom Decor 12\"x15\"",
+    "image": "https://m.media-amazon.com/images/I/61iPJ4Yyi9L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4CV7GVY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfba67"
+  },
+  {
+    "id": 2909,
+    "title": "Amazon Product 100",
+    "price": 0,
+    "description": "RyounoArt Yellow Tree Painting Canvas Wall Art Yellow and Gray Wall Decor Picture Abstract Tree Artwork Print for Living Room Office Framed Ready to Hang 24\"x48\"",
+    "image": "https://m.media-amazon.com/images/I/71Fmnk+jOqS._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B098DPHLKZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b4ab89"
+  },
+  {
+    "id": 2910,
+    "title": "Amazon Product 101",
+    "price": 0,
+    "description": "Ardemy Sunflower Wall Art Canvas Flowers Yellow Picture Rustic Floral Field Landscape Painting, Countryside Large Framed Artwork for Living Room Bedroom Bathroom Dinnng Room Office Home Decor 40\"x20\"",
+    "image": "https://m.media-amazon.com/images/I/819dQb0Nn4L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLRVL6ZJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ead851"
+  },
+  {
+    "id": 2911,
+    "title": "Amazon Product 102",
+    "price": 0,
+    "description": "Yellow School Bus Wall Art Decal Sticker",
+    "image": "https://m.media-amazon.com/images/I/71ah2UfuvjL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B075VZZ5P2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#69afc3"
+  },
+  {
+    "id": 2912,
+    "title": "Amazon Product 103",
+    "price": 0,
+    "description": "sechars Yellow Flower Canvas Wall Art Vintage Floral Painting Pictures Decor Modern Yellow and Grey Bedroom Bathroom Decoration (Yellow)",
+    "image": "https://m.media-amazon.com/images/I/71uIg2IKPEL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPDKXMJZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fae079"
+  },
+  {
+    "id": 2913,
+    "title": "Amazon Product 104",
+    "price": 0,
+    "description": "Acocifi Bathroom Sunflower Canvas Wall Art Blue Butterfly Picture Spring Flowers Florals Painting Yellow Gray Print Artwork Framed for Living Room Bedroom Kitchen Dining Room Office Home Decor 16\"x12\"",
+    "image": "https://m.media-amazon.com/images/I/61G0VdmVtaL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B087BZ8DX5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fdec72"
+  },
+  {
+    "id": 2914,
+    "title": "Amazon Product 105",
+    "price": 0,
+    "description": "bilitiekart Mustard Yellow And Grey Bathroom Wall Decor White Floral Pictures for Living Room Decoration Black And White Room Decor Kitchen Home Office Bedroom Wall Art Frames",
+    "image": "https://m.media-amazon.com/images/I/81+qsEwLgOL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09BKQ63YK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9a8230"
+  },
+  {
+    "id": 2915,
+    "title": "Amazon Product 106",
+    "price": 0,
+    "description": "Conipit Faith Hope Love Canvas Yellow Green Floral Wall Art Butterfly Flower Pictures Yellow Daisy Lily Paintings Framed 12\"x12\" x 3Pcs",
+    "image": "https://m.media-amazon.com/images/I/816A+7CQGjL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09TQS3QLT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6d8c7"
+  },
+  {
+    "id": 2916,
+    "title": "Amazon Product 107",
+    "price": 0,
+    "description": "Rustic Rose Canvas Wall Art: Vintage Yellow Flower in Vase Framed Bedroom Decor - Black White Picture Home Decoration Farmhouse Artwork for Living Room Kitchen 10\" x 15\"",
+    "image": "https://m.media-amazon.com/images/I/81H0UNbS42L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B31HBCVD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eae00e"
+  },
+  {
+    "id": 2917,
+    "title": "Amazon Product 108",
+    "price": 0,
+    "description": "WODMIS Boho Framed Wall Art, Boho Sunshine Sun Yellow Framed Canvas Wall Art Decor 11x14, Boho Sun Sunshine Sunset Yellow Dorm Bathroom Office Home Painting Artwork Wall Decor Decoration",
+    "image": "https://m.media-amazon.com/images/I/61TPAUxSDTL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYCJBTJ2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ebbf08"
+  },
+  {
+    "id": 2918,
+    "title": "Amazon Product 109",
+    "price": 0,
+    "description": "Hillban 3 Pieces Rose Wooden Wall Decor Thankful Grateful Blessed Wooden Signs Inspirational Wall Art Signs Wedding Decor for Room Kitchen Bathroom(10 x 4 Inch, Yellow)",
+    "image": "https://m.media-amazon.com/images/I/71kx4FxulTL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C2HH6WHT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4db64"
+  },
+  {
+    "id": 2919,
+    "title": "Amazon Product 110",
+    "price": 0,
+    "description": "Wall decorations for living room Canvas Wall Art for bedroom Abstract wall decor Black and white Canvas Art Yellow tree paintings bathroom Home Decoration 3 Piece Hang Pictures Office Wall Artworks",
+    "image": "https://m.media-amazon.com/images/I/61rdnv-ygdL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08CRJ468F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbbc36"
+  },
+  {
+    "id": 2920,
+    "title": "Amazon Product 111",
+    "price": 0,
+    "description": "Blue and Gold Canvas Wall Art Abstract Navy Blue Framed Wall Decor Marble Textured Modern Grey Art Work Paintings Set of 3 Pieces Yellow Pictures for Living Room Bedroom Office - 12'' x 16''",
+    "image": "https://m.media-amazon.com/images/I/916zdFWHfaL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSTGWRY1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#edab07"
+  },
+  {
+    "id": 2921,
+    "title": "Amazon Product 112",
+    "price": 0,
+    "description": "Black and Gold Wall Art Digital Abstract Black White Yellow Wall Art Painting Pictures Print On Canvas The Modern Picture for Living Room Kitchen Home Decor",
+    "image": "https://m.media-amazon.com/images/I/61BAlB75-nL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00RDDJ2B0/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fddb45"
+  },
+  {
+    "id": 2922,
+    "title": "Amazon Product 113",
+    "price": 0,
+    "description": "Framed Blue Modern Abstract Wall Art, Minimalist Large Canvas Paintings Artwork for Walls, Blue Yellow Art Prints Pictures for Living Room, Hallway, Bedroom, Office, Bathroom Wall Decor -24x24 Inch",
+    "image": "https://m.media-amazon.com/images/I/81oJm6E2N+L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9PXMP3W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bf8611"
+  },
+  {
+    "id": 2923,
+    "title": "Amazon Product 114",
+    "price": 0,
+    "description": "Lnond 4 Pieces Yellow Abstract Bathroom Wall Art, Relax Soak Unwind Breathe Bathroom Signs Decor, Wood Hanging Bathroom Wall Art for Bathroom Spa Room (12 x 4 Inch)",
+    "image": "https://m.media-amazon.com/images/I/71lIiOab5QL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BWN3GPRY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffd75b"
+  },
+  {
+    "id": 2924,
+    "title": "Amazon Product 115",
+    "price": 0,
+    "description": "HVEST Farmhouse Yellow Floral Wall Art for Living Room White Daisy Flower and Butterfly on Grey Wood Pictures Wall Decor Nature Plant Framed Canvas Wall Art for Bedroom Bathroom Decor, 16L X 12W inches",
+    "image": "https://m.media-amazon.com/images/I/81Wwk6DKjGL._AC_SY741_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D17QSN3W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b7a539"
+  },
+  {
+    "id": 2925,
+    "title": "Amazon Product 116",
+    "price": 0,
+    "description": "AIYISU Yellow Wall Art Bathroom Decor Yellow Roses Pictures for Living Room Yellow and Grey Rose Flower Wall Decor Rustic Floral Canvas Paintings Modern Artwork for Bedroom Home Decoration 12x12 3Pcs",
+    "image": "https://m.media-amazon.com/images/I/81b7oJdN7pL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09PYRYVPQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffea49"
+  },
+  {
+    "id": 2926,
+    "title": "Amazon Product 117",
+    "price": 0,
+    "description": "Biuteawal 3 Panels Flower Canvas Print Blue and Yellow Blooming Wall Art Painting Abstract Floral Picture Stil Life Artwork for Wall Bedroom Living Room Kitchen Decor Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71KSpqtWaqL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKYQBHDF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1a964"
+  },
+  {
+    "id": 2927,
+    "title": "Amazon Product 118",
+    "price": 0,
+    "description": "KREATIVE ARTS 3 Pieces Abstract Canvas Poster Prints Contemporary Creative Yellow Grey Picture Wall Art Framed Artwork Ready to Hang Living Room Bedroom Each Panel 12x16 Inches",
+    "image": "https://m.media-amazon.com/images/I/71EHP4XNgPL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C8J1QRJ8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#edc107"
+  },
+  {
+    "id": 2928,
+    "title": "Amazon Product 119",
+    "price": 0,
+    "description": "Pigort Inspirational Wall Art - Don’t Look Back - Quote & Saying Art Painting, Motto Print Canvas Picture，Motivational Wall Art for Office or Living Room Home Decor (Yellow)",
+    "image": "https://m.media-amazon.com/images/I/611umobTgaL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B086BT6ZV4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7ccbc"
+  },
+  {
+    "id": 2929,
+    "title": "Amazon Product 120",
+    "price": 0,
+    "description": "Boho Wall Art Sun Mountain Canvas Mid Century Modern Abstract Poster Yellow Sun Painting Mid Century Boho Canvas Pictures Abstract Sun Print Minimalist Boho Artwork Sunrise Sunset Art 16x24inchx3 No",
+    "image": "https://m.media-amazon.com/images/I/717dvvS0iwL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CBMHY4PM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4b440"
+  },
+  {
+    "id": 2930,
+    "title": "Amazon Product 121",
+    "price": 0,
+    "description": "Sweetude 12 Pcs Sunflower Metal Flowers Wall Decor Yellow Flower Outdoor Decor Metal Ladybug Bee Garden Fence Patio Yard Art Inspirational Metal Wall Art Hanging for Indoor Home Bedroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/815fH+ls+CL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4YR99R9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e5b419"
+  },
+  {
+    "id": 2931,
+    "title": "Amazon Product 122",
+    "price": 0,
+    "description": "Sunnyray 4 Pcs Farmhouse Bathroom Wall Decor Sign Spring Daisy Tulip Flowers and Butterfly Bathroom Wall Art Relax Soak Unwind Breathe Rustic Wood Plaque Decor(10 x 4 Inch, Yellow)",
+    "image": "https://m.media-amazon.com/images/I/81ZnNY9z8-L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C7BR7J45/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfdbcd"
+  },
+  {
+    "id": 2932,
+    "title": "Amazon Product 123",
+    "price": 0,
+    "description": "RnnJoile Mustard Yellow Wall Decor Yellow and Grey Pictures Painting Live Love Laugh Sign with Dahlia Floral Canvas Prints for Bathroom Decor Framed 12x16 Inch",
+    "image": "https://m.media-amazon.com/images/I/71R9c38Af3L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B092PMT4J5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fbe092"
+  },
+  {
+    "id": 2933,
+    "title": "Amazon Product 124",
+    "price": 0,
+    "description": "MIDEFINCH Vintage Yellow Rose Wall Art Poster - Retro Style Botanical Illustration Print with Wooden Hanging Frame, Home and Office Decor - 16x23 Inches",
+    "image": "https://m.media-amazon.com/images/I/61c-09PPhsL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B253KHLJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4bf5e"
+  },
+  {
+    "id": 2934,
+    "title": "Amazon Product 125",
+    "price": 0,
+    "description": "ONIZHITY 3 Pcs Yellow Bathroom Decor Yellow Daisy Floral Wooden Wall Decor Positive Quotes You Are Beautiful Wall Art Inspirational Girl Bedroom Decor for Teacher Women Living Room(yellow Daisy 12x4)",
+    "image": "https://m.media-amazon.com/images/I/813dpGxE87L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CHY7R1S9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f0d980"
+  },
+  {
+    "id": 2935,
+    "title": "Amazon Product 126",
+    "price": 0,
+    "description": "HAUS AND HUES Sunflower Wall Art Poster, Yellow Cosmos, 12x16 Unframed, Wall Art for Bathroom, Bedroom, Kitchen, Living Room, Office Decor, Glossy Finish",
+    "image": "https://m.media-amazon.com/images/I/811-jxoJ96L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B091HHTR2J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f7d849"
+  },
+  {
+    "id": 2936,
+    "title": "Amazon Product 127",
+    "price": 0,
+    "description": "Bathroom Decor Wall Art-Framed Canvas Wall Art Modern Beach Coastal Floral Sunset Boho Ocean Artwork Blue Yellow Lotus Flower Zen Wall Picture for Bedroom Kitchen Office Small",
+    "image": "https://m.media-amazon.com/images/I/81MgAdTtG4L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D78GJ8T3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ebc97a"
+  },
+  {
+    "id": 2937,
+    "title": "Amazon Product 128",
+    "price": 0,
+    "description": "Derkymo 2 Pieces Elegant Yellow Flower Pictures Poppies Flower Canvas Wall Art Yellow and Grey Wall Decor for Home Office Decoration Stretched and Framed Ready to Hang 16\"x16\"x2pcs",
+    "image": "https://m.media-amazon.com/images/I/61ggIEcXPHL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08QMCYV5H/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#feeabe"
+  },
+  {
+    "id": 2938,
+    "title": "Amazon Product 129",
+    "price": 0,
+    "description": "Julaydi Floral Wall Art Poster Yellow and White Flower Painting Abstract Flowers Canvas Prints Wildflower Vase Pictures Modern Home Decor Aesthetic for Bedroom Living Room Kitchen 16x24Inch Unframed",
+    "image": "https://m.media-amazon.com/images/I/61yjxd3+eqL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCZQPNJT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bf9339"
+  },
+  {
+    "id": 2939,
+    "title": "Amazon Product 130",
+    "price": 0,
+    "description": "Yellow Sunflower Wall Decoration Canvas Art Sunflower Bedroom decoration Kitchen Accessories and Decorations Sunflower Bathroom Decoration Sunflower Flower Decoration Country Decoration Home Picture",
+    "image": "https://m.media-amazon.com/images/I/61Of-J0qHJL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B092JG2CJY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dedecd"
+  },
+  {
+    "id": 2940,
+    "title": "Amazon Product 131",
+    "price": 0,
+    "description": "Ardemy Flower Canvas Wall Art Daisy Floral White Yellow Painting Modern Bloosm Picture Artwork Framed for Bathroom Living Room Bedroom Kitchen Home Office Wall Decor, 14\"x14\"",
+    "image": "https://m.media-amazon.com/images/I/71xQDn6X5TL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D6FQV3YM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9ba19e"
+  },
+  {
+    "id": 2941,
+    "title": "Amazon Product 132",
+    "price": 0,
+    "description": "Metal sunflower wall decor 25 Inches for indoors and outdoors | Perfect sunflower decor for porch, patio, kitchen | Rustic yellow individually hand painted petals",
+    "image": "https://m.media-amazon.com/images/I/71GKZu+-U3L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08HFR3DRT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c48e2d"
+  },
+  {
+    "id": 2942,
+    "title": "Amazon Product 133",
+    "price": 0,
+    "description": "Canvas Wall Art Decor Canvas Wall Art For Living Room Tree of Life Wall Art Decor Fall Textured Wall Art Decor White Yellow Wall Art Prints Art Work For Bedroom Office Kitchen Wall Decor 20\" x 40\"",
+    "image": "https://m.media-amazon.com/images/I/914MapZq6fL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKXK5W18/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a69070"
+  },
+  {
+    "id": 2943,
+    "title": "Amazon Product 134",
+    "price": 0,
+    "description": "KREATIVE ARTS 3 Pieces Yellow and Grey Bathroom Picture Wall Art Abstract Flower and Leaves Painting Relax Refresh Renew Signs Poster Canvas Print Artwork Framed for Bedroom Each Panel 12x16 Inches",
+    "image": "https://m.media-amazon.com/images/I/71l8DrCI3TL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CG5ZQQR1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f1d52c"
+  },
+  {
+    "id": 2944,
+    "title": "Amazon Product 135",
+    "price": 0,
+    "description": "iHAPPYWALL 3 Pieces Yellow Flower Canvas Wall Art Wildflower Botanical Plant Abstract Watercolor Country Floral Picture for Bathroom Bedroom Home Decor Ready to Hang 12x16inchx3pcs (Yellow)",
+    "image": "https://m.media-amazon.com/images/I/71-Z0PsdgLL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJR982BG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5b63f"
+  },
+  {
+    "id": 2945,
+    "title": "Amazon Product 136",
+    "price": 0,
+    "description": "DJSYLIFE Yellow Rose Decor for Living Room Art Wall 4 Piece Flower Picture Poster Decoration Artwork Hanging Painting 12\" Wx12 Hx4",
+    "image": "https://m.media-amazon.com/images/I/81IW1q4k8lL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B092YY9C46/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e2cb48"
+  },
+  {
+    "id": 2946,
+    "title": "Amazon Product 137",
+    "price": 0,
+    "description": "Biuteawal- 4 Panel Black and White Canvas Wall Art Wine with Yellow Sunflower Picture Painting Print Still Life Artwork for Home Dining Room Living Room Wall Decor Framed and Easy Hanging",
+    "image": "https://m.media-amazon.com/images/I/71Uu-QPZI2L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07K6CX8SF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bd8609"
+  },
+  {
+    "id": 2947,
+    "title": "Amazon Product 138",
+    "price": 0,
+    "description": "iHAPPYWALL Large Floral Bird Canvas Wall Art Abstract Birds on Flower Tree Branch Yellow and Gray Artwork for Modern Home Bedroom Decor Ready to Hang 20x36inch",
+    "image": "https://m.media-amazon.com/images/I/71CGrs0HdbL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09XCWK2QD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#878275"
+  },
+  {
+    "id": 2948,
+    "title": "Amazon Product 139",
+    "price": 0,
+    "description": "CCWACPP African Women Wall Art Beauty Abstract Yellow Hair Black Woman Pictures African American Canvas Art Print Living Room Bedroom Decor Frame (Yellow lips, 12x18inch)",
+    "image": "https://m.media-amazon.com/images/I/611v6TGmo+L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CBK3C95N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c7a95a"
+  },
+  {
+    "id": 2949,
+    "title": "Amazon Product 140",
+    "price": 0,
+    "description": "4Pcs Yellow Bathroom Decor Yellow Rose Wall Decor Wooden Yellow Bathroom Accessories with Relax Soak Unwind Breathe Wall Art For Girl Women Bedroom Living Room Home Decoration (Yellow 10 X 4 Inch)",
+    "image": "https://m.media-amazon.com/images/I/61HsCKExX6L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CK27Y2GM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fee915"
+  },
+  {
+    "id": 2950,
+    "title": "Amazon Product 141",
+    "price": 0,
+    "description": "AMIEE ROSE Pale Yellow Wall Art print, Flower Market Wall Art, Matisse Room Aesthetic poster, frameless, 8x10 inch, set of 6",
+    "image": "https://m.media-amazon.com/images/I/71fyIYZm4GL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DK5BLDCT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbbe94"
   }
 ];
