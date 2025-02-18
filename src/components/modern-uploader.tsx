@@ -348,8 +348,8 @@ export default function ModernUploader() {
   const uniquePinnedColors = Array.from(new Set(pinnedColors)).slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 text-gray-800">
-      {/** Back Button */}
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 text-gray-800 pb-20">
+      {/* Back Button */}
       {(hasUploaded || selectedColor) && showBack && (
         <div className="fixed top-4 left-4 z-50">
           <button
@@ -362,7 +362,7 @@ export default function ModernUploader() {
         </div>
       )}
 
-      {/** Hero Slideshow */}
+      {/* Hero Slideshow */}
       <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
         <div
           className={`absolute inset-0 bg-slate-900 transition-opacity duration-500 z-30 ${
@@ -395,17 +395,15 @@ export default function ModernUploader() {
         </div>
       </div>
 
-      {/** Main Content */}
+      {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 pb-20">
         {!hasUploaded && !selectedColor && (
           <div className="text-center mb-12">
             <h3 className="text-xl md:text-2xl font-bold text-gray-800">
               Select your color to start.
             </h3>
-
-            {/** 3 Options: Upload, Snap, Select */}
             <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-8">
-              {/** Upload */}
+              {/* Upload */}
               <label
                 onDragOver={handleDragOver}
                 onDrop={(e) => handleDrop(e, processUpload)}
@@ -425,7 +423,7 @@ export default function ModernUploader() {
                 />
               </label>
 
-              {/** Snap (Camera) */}
+              {/* Snap (Camera) */}
               <label className="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform">
                 <Camera className="w-10 h-10 text-gray-400" />
                 <span className="mt-2 text-sm md:text-base font-medium text-gray-700">
@@ -440,7 +438,7 @@ export default function ModernUploader() {
                 />
               </label>
 
-              {/** Select (Palette) */}
+              {/* Select (Palette) */}
               <div
                 onClick={() => setShowWheel(true)}
                 className="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform"
@@ -456,7 +454,7 @@ export default function ModernUploader() {
 
         <div ref={pinnedTriggerRef} />
 
-        {/** Vision Board */}
+        {/* Vision Board */}
         {pinned.length > 0 && (
           <div
             ref={pinnedContainerRef}
@@ -468,9 +466,7 @@ export default function ModernUploader() {
           >
             <div className="flex items-center justify-between mb-1.5 px-4">
               <div className="flex items-center gap-2">
-                <h3 className="text-sm font-medium text-gray-600 transition-all">
-                  Vision Board
-                </h3>
+                <h3 className="text-sm font-medium text-gray-600">Vision Board</h3>
                 {uniquePinnedColors.map((color, idx) => (
                   <div
                     key={idx}
@@ -480,7 +476,7 @@ export default function ModernUploader() {
                 ))}
               </div>
               <div className="flex items-center gap-4">
-                <span className="text-xs text-gray-500 transition-all">
+                <span className="text-xs text-gray-500">
                   {pinned.length} items
                 </span>
                 <button
@@ -495,7 +491,6 @@ export default function ModernUploader() {
                 </button>
               </div>
             </div>
-
             {!visionCollapsed && (
               <div className="flex gap-3 overflow-x-auto scrollbar-hide py-1 px-8 transition-all duration-500">
                 {pinned.map((id) => {
@@ -539,7 +534,7 @@ export default function ModernUploader() {
         )}
         {isPinnedFloating && pinned.length > 0 && <div className="h-[120px]" />}
 
-        {/** Color Picker Modal */}
+        {/* Color Picker Modal */}
         {showWheel && (
           <div
             className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
@@ -571,9 +566,7 @@ export default function ModernUploader() {
                   />
                 </div>
               </div>
-
               <HslColorPicker color={colorWheelHsl} onChange={setColorWheelHsl} />
-
               <div className="flex gap-2 mt-4">
                 <button
                   onClick={() => {
@@ -626,7 +619,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/** Chosen Color Palette */}
+        {/* Chosen Color Palette */}
         {selectedColor && (
           <div className="mb-10 flex flex-col items-center">
             {uploadedImageUrl && (
@@ -739,7 +732,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/** Product Grid */}
+        {/* Product Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((p) => {
             const isPinned = pinned.includes(p.id);
@@ -790,21 +783,26 @@ export default function ModernUploader() {
           })}
         </div>
 
-        <div className="mt-12 mb-4 text-center text-sm text-gray-500">
-  <p>Questions? Contact us at info@shop-by-color.com</p>
-        </div>
-
-
-        {/** Infinite Scroll Sentinel */}
-        <div ref={sentinelRef} className="mt-8 h-8 flex justify-center items-center">
+        {/* Infinite Scroll Sentinel */}
+        <div
+          ref={sentinelRef}
+          className="mt-8 h-8 flex justify-center items-center"
+        >
           {isFetching && hasMore && (
-            <div className="text-sm text-gray-500 animate-pulse">Loading more...</div>
+            <div className="text-sm text-gray-500 animate-pulse">
+              Loading more...
+            </div>
           )}
           {!hasMore && (
             <div className="text-sm text-gray-400">~ End of results ~</div>
           )}
         </div>
       </div>
+
+      {/* Sticky Footer */}
+      <footer className="fixed bottom-0 left-0 w-full bg-gray-900 text-white py-2 text-center text-sm z-50">
+        Contact us at: <a href="mailto:info@example.com">info@example.com</a>
+      </footer>
     </div>
   );
 }
