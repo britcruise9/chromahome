@@ -34921,5 +34921,1355 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CRHMQQFS/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#3b555d"
+  },
+  {
+    "id": 3440,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "KLAKLA Orange and Blue Abstract Wall Art - Modern Picture Artwork for Wall Decor - Frame Wall Art for Living Room Office Bedroom",
+    "image": "https://m.media-amazon.com/images/I/719CC2f-TjL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN6S22FJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d65400"
+  },
+  {
+    "id": 3441,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "KLAKLA Orange and Blue Abstract Wall Art - Modern Picture Artwork for Wall Decor - Frame Wall Art for Living Room Office Bedroom",
+    "image": "https://m.media-amazon.com/images/I/719CC2f-TjL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN6QXDQF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#db7626"
+  },
+  {
+    "id": 3442,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "KLAKLA Orange and Blue Abstract Wall Art - Modern Picture Artwork for Wall Decor - Frame Wall Art for Living Room Office Bedroom",
+    "image": "https://m.media-amazon.com/images/I/719CC2f-TjL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN6RP971/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f5e4d4"
+  },
+  {
+    "id": 3443,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "Orange Red Oil Painting Hand Painted Acrylic Picture Abstract Modern Minimalist Textured Wall Art Framed Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71pCE76o+TL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DBY6516J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#92471e"
+  },
+  {
+    "id": 3444,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "TIEHAOMAI Orange Abstract Canvas Wall Art 3 Pieces Black Orange Art Prints Orange and Grey Abstract Paintings Modern Abstract Artwork for Home Decor（Abstract-1, 12x16inchx3 Pieces (30x40cmx3 Pieces)",
+    "image": "https://m.media-amazon.com/images/I/61yi41wJW1L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DR8K7YLD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c86b33"
+  },
+  {
+    "id": 3445,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "First Wall Art - Abstract Orange Brown White Lines Wall Art Painting The Picture Print On Canvas Abstract Pictures for Home Decor Decoration Gift",
+    "image": "https://m.media-amazon.com/images/I/61F1306YexL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00RDDJ6JI/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#977d60"
+  },
+  {
+    "id": 3446,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Disco Oranges Art Canvas, Glam Disco Ball Oranges Poster, Preppy Fruit Canvas Wall Art, Funky Kitchen Picture for Wall, Trendy Bar Cart Wall Art Decor, Dorm Apartment Wall Decor 12x16in Unframed",
+    "image": "https://m.media-amazon.com/images/I/71t9nIcHfWL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DC5X8CSB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b45336"
+  },
+  {
+    "id": 3447,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "Framed Canvas Wall Art for Living Room Bedroom Office Large Tree of Life Wall Art Orange Tree Fall Landscape Picture Modern Canvas Prints Decor Size 20x40",
+    "image": "https://m.media-amazon.com/images/I/81DmfH9cIVL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJXNN8KZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#991b00"
+  },
+  {
+    "id": 3448,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "Colorful Ocean Sunset Abstract Beach Wall Art for Living Room Orange Red Warm Sunrise Artwork Bathroom Wall Decor Large Beach Posters Picture over the Bed 20\"x40\"x1",
+    "image": "https://m.media-amazon.com/images/I/5187bxk76RL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08CKFYSF9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#be8c66"
+  },
+  {
+    "id": 3449,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "CroBlissful 2 Pcs Mid Century Modern Wall Art Wood Mid Century Elegance Decor Accents Abstract Wall Sculpture Geometric Panels for Interior Panel Art for Home Living Room(Orange)",
+    "image": "https://m.media-amazon.com/images/I/61CLOHB1U6L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DC6SZWV9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e84722"
+  },
+  {
+    "id": 3450,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "Riverside Designs Wacky Sun Metal Wall Art Indoor/Outdoor Decor - 36\" Teal Rust Proof Wall Sculpture - Made in USA - Ideal for Bedroom, Garden, Home, Patio and Farmhouse",
+    "image": "https://m.media-amazon.com/images/I/819Q0CBMyTL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08JX5F7X8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dde6e8"
+  },
+  {
+    "id": 3451,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "puthiac 18x24 Oak Wood Picture Frames -18\"x24\" Poster Frames for Wall, 18x24 Picture Frames for Wall, 18 x 24 Picture Frames, 18 x 24 Frames for Wall(1 Pack, Beige)",
+    "image": "https://m.media-amazon.com/images/I/51tXp6ejWoL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJXXSBH2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#decebc"
+  },
+  {
+    "id": 3452,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "YaSheng Art - 3D Oil Paintings On Canvas Golden Flowers Tree Paintings Abstract Artwork Wall Art For living Room, Dinning Room Home Decor Framed Stretched Ready to Hang 24x24inch",
+    "image": "https://m.media-amazon.com/images/I/71a1-YRIYjL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B075P3F87M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4c4520"
+  },
+  {
+    "id": 3453,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "MHARTK66 Wall Decorations For Living Room Canvas Wall Art For Bedroom Office Decor Abstract Tree Landscape Wall Paintings Framed Prints Pictures Artwork Ready To Hang Hotel Room Home Decor 20x40 In",
+    "image": "https://m.media-amazon.com/images/I/61lxDm7TgQL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQ4P557X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c57950"
+  },
+  {
+    "id": 3454,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "YaSheng Art-Handmade White Flower Contemporary Art Oil Painting On Canvas 3D Texture Abstract Tree Paintings Modern Home Bedroom, Dining Room, Wall Art Decor Ready to Hang20x40inch",
+    "image": "https://m.media-amazon.com/images/I/71SNgzsia7L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01LEBTDW4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b9b8ab"
+  },
+  {
+    "id": 3455,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "BXFAHZJ Abstract Modern Orange Brown Grey Graffiti Wall Art Canvas Farmhouse Graffiti Theme 11x14 Inch Prints(Set Of 3) Decor For Home Bedroom Living Room, Gift For Housewarming",
+    "image": "https://m.media-amazon.com/images/I/61O1fdfjXUL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B5CJR7B6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e39a60"
+  },
+  {
+    "id": 3456,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "Derkymo 3 Panels Elegant Poppy Wall Painting Orange Flower Canvas Wall Art Pictures of Poppy Flowers for Home Decoration Stretched and Framed Easy to Hang 12\"x16\"x3pcs",
+    "image": "https://m.media-amazon.com/images/I/71hOxAK6bqL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B082XP97KS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e87631"
+  },
+  {
+    "id": 3457,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "EASICUTI Orange Sunflower Metal Flowers Wall Decor Metal Wall Art Decorations Hanging For Indoor Outdoor Home Bathroom Kitchen Room Bedroom Living Room Garden Patio Porch 13 Inch",
+    "image": "https://m.media-amazon.com/images/I/81qKdu+noGS._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B095GXWWMY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c35324"
+  },
+  {
+    "id": 3458,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "KLAKLA Orange and Blue Abstract Wall Art - Modern Picture Artwork for Wall Decor - Frame Wall Art for Living Room Office Bedroom",
+    "image": "https://m.media-amazon.com/images/I/719CC2f-TjL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN6RP971/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6f0900"
+  },
+  {
+    "id": 3459,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "Vintage Orange Wildflower Canvas Wall Art, Country Farmhouse Watercolor Flower Wall Decor, Vintage Botanical Painting Picture Artwork for Bedroom Living Room Wood Framed Ready to Hang 12\"x16\"x3",
+    "image": "https://m.media-amazon.com/images/I/717eC5B+IQL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMKFM2DQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ede6d6"
+  },
+  {
+    "id": 3460,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "Framed Canvas Wall Art for Living Room Bedroom Office Large Tree of Life Wall Art Orange Tree Fall Landscape Picture Modern Canvas Prints Decor Size 20x40",
+    "image": "https://m.media-amazon.com/images/I/81DmfH9cIVL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJXNN8KZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9e2d0a"
+  },
+  {
+    "id": 3461,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Zoyotago Large Canvas Wall Art Orange Yellow Tree Picture Modern Canvas Prints Ready to Hang for Bedroom Living Room Size 20x40",
+    "image": "https://m.media-amazon.com/images/I/913xnC13Z0L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CC55WB8P/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bb8857"
+  },
+  {
+    "id": 3462,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "EcoHest Christian Bible Verse Framed Wall Art, 12x16 in OAK Wood A Psalm of David Canvas Wall Art, Psalm 23 Orange Faith Home Decor, Thanksgiving Scripture Set of 1 for Bedroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/911u5WM4O6L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHZZLWT6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c26f45"
+  },
+  {
+    "id": 3463,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "VHMING Abstract Wall Art Home Decor Orange Artwork Wall Art Prints Canvas Painting Wall Decor for Living Room Bedroom Office Decoration 29\"x58\"",
+    "image": "https://m.media-amazon.com/images/I/81oWi-MAvbL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D813RX3L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ae7035"
+  },
+  {
+    "id": 3464,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "KLAKLA Orange and Blue Abstract Wall Art - Modern Picture Artwork for Wall Decor - Frame Wall Art for Living Room Office Bedroom",
+    "image": "https://m.media-amazon.com/images/I/719CC2f-TjL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN6RP971/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#df8431"
+  },
+  {
+    "id": 3465,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "Zoyotago Large Canvas Wall Art Orange Yellow Tree Picture Modern Canvas Prints Ready to Hang for Bedroom Living Room Size 20x40",
+    "image": "https://m.media-amazon.com/images/I/913xnC13Z0L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CC55WB8P/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bb8857"
+  },
+  {
+    "id": 3466,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "Orange Wall Art Flower Wall Decor for Bathroom Abstract Wildflower Canvas Prints Pictures Nature Poppy Floral Painting Botanical Plant Artwork for Living Room Bedroom Home Decorations 12x12\" 3 Pcs",
+    "image": "https://m.media-amazon.com/images/I/71lkRFwtcEL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5YKH9V2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fba828"
+  },
+  {
+    "id": 3467,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "XLSJERST Abstract Canvas Wall Art for Living Room - Large Nave Blue and White Wall Decor Picture Modern Orange Painting Artwork for Bedroom Home Office Decoration Size 24x48 Inches",
+    "image": "https://m.media-amazon.com/images/I/81iw6yjpdtL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9D67P7B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#044353"
+  },
+  {
+    "id": 3468,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "MODOJOART Abstract Canvas Wall Art, Black and Orange Lines Print Poster Full of Imagination Line Picture Painting for Study Office Decor(Artwork-03, 18\"x12\")",
+    "image": "https://m.media-amazon.com/images/I/71VXeDviOsL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CP5TJ2VD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f25c05"
+  },
+  {
+    "id": 3469,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "Orange Bar Wall Art Vintage Liquor Poster Bar Cart Wall Art Drinks Wall Decor Funky Cocktail Wiskey Art Picture College Dorm Apartment Decor 12x16in Unframed",
+    "image": "https://m.media-amazon.com/images/I/71pNfayca4L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFCFN8V6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6855f"
+  },
+  {
+    "id": 3470,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "ARTKN Modern Wall Art 3 Piece Set, Abstract Modern Art Wall Decor for Living Room Bedroom, Fresh Minimalist Large Framed Wall Art, Gray Blue Orange Wall Decor(Orange, 24\" X 32\" X 3 pieces)",
+    "image": "https://m.media-amazon.com/images/I/61kDZ7KJUbL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C3R2QB3N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#da773d"
+  },
+  {
+    "id": 3471,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "LB African Black Woman Wall Art Orange Hair African American Women Pictures Canvas Wall Art Minimalist Abstract Framed Wall Art for Bathroom Living Room Bedroom Decor Ready to Hanging 12x16 Inch",
+    "image": "https://m.media-amazon.com/images/I/61xCxObOLZL._AC_SY606_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5CCMY3J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f7783b"
+  },
+  {
+    "id": 3472,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "TLESKE Orange Boho Sun Round Wall Art Decor, Bohemian Sunshine Framed Canvas Prints Wall Art Artwork, Abstract Minimalist Wall Hanging Room Door Decor Decorations for Bedroom Living Room 10x10in",
+    "image": "https://m.media-amazon.com/images/I/71gFr2y9KoL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D6KW42R4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f0e2d1"
+  },
+  {
+    "id": 3473,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "LANCHI95 12 PCS Orange Matisse Wall Art Prints, Trendy Art Prints, Eclectic Wall Decor, Eclectic Boho Vintage Dorm Gallery Home Decor, Room Decor for Teen Girls Dorm, Bedroom (Unframed)",
+    "image": "https://m.media-amazon.com/images/I/915eOPwOzPL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCYQ6RRQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fea36b"
+  },
+  {
+    "id": 3474,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "ONIZHITY 4 Pcs Orange Bathroom Decor Religious Orange Boho Wall Art Bible Verse Inspirational Bohemian Wall Decor Rustic Christian Sign for Home Bathroom Office Bedroom Living Room(Orange Boho 10x4)",
+    "image": "https://m.media-amazon.com/images/I/61vl5NxxMGL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCFP9XP4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c56c30"
+  },
+  {
+    "id": 3475,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "Sense&Sensitivity Arts Modern Abstract Canvas Wall Art - Premium Textured Orange, Grey, Black Artwork for Home and Office Decor Wall Painting Contemporary Geometric Print Pictures Home Decoration Ideas",
+    "image": "https://m.media-amazon.com/images/I/51Fx6Zs782L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNKRF2L3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bf7432"
+  },
+  {
+    "id": 3476,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "HVEST Farmhouse Orange Floral Wall Art for Living Room, White Daisy Flower and Butterfly on Rustic Wood Pictures Wall Decor Nature Plant Framed Canvas Wall Art for Bedroom Bathroom Decor, 16L X 12W inches",
+    "image": "https://m.media-amazon.com/images/I/81W8+FrD0hL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D22HJSDW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e18e63"
+  },
+  {
+    "id": 3477,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "3Pcs Boho Cats Wall Art Mid Century Modern Orange Canvas Cats Prints Vintage Retro Black Cats Paintings Cute Plant Animail Posters Pictures for Living Room Bedroom Bathroom Wall Decor Unframed",
+    "image": "https://m.media-amazon.com/images/I/81tZWGX-tJL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7SF261V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#973f07"
+  },
+  {
+    "id": 3478,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "First Wall Art - Abstract Orange Brown White Lines Wall Art Painting The Picture Print On Canvas Abstract Pictures for Home Decor Decoration Gift",
+    "image": "https://m.media-amazon.com/images/I/71boMdzDqbL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00RDBZECS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7a6e62"
+  },
+  {
+    "id": 3479,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "Aurlan Boho Burnt Orange Terracotta Wildflowers Framed Wall Art(40\"x20\"), Abstract Floral 3D Textured Canvas Artwork, Large Modern Vintage Botanical Nature Art Wall Decor for Home Office Living Room Bedroom",
+    "image": "https://m.media-amazon.com/images/I/81020NThLjL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8J4G81W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ba886b"
+  },
+  {
+    "id": 3480,
+    "title": "Amazon Product 41",
+    "price": 0,
+    "description": "KREATIVE ARTS 3 Pieces Orange Flower Canvas Wall Art Flower Poppy Blossom Picture Wall Decor Floral Painting Framed Poster for Bathroom Easy to Hang Each Panel 12x16 Inch (Orange)",
+    "image": "https://m.media-amazon.com/images/I/71aYDykUiNL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C8J428H9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7701b"
+  },
+  {
+    "id": 3481,
+    "title": "Amazon Product 42",
+    "price": 0,
+    "description": "VIYYIEA Framed Canvas Wall Art, Vintage Wall Art for Living Room, Fruits Oil Painting Picture Summer Home Decor Bathroom Wall Decor Gifts for Friends or Family -【Oranges】-(10\"x12\")",
+    "image": "https://m.media-amazon.com/images/I/71xbgQgGe6L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CV4RTRKH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e47922"
+  },
+  {
+    "id": 3482,
+    "title": "Amazon Product 43",
+    "price": 0,
+    "description": "Abstract Canvas Wall Art - Large Framed Gray and Orange Paintings - Modern Wall Art Decor for Living Room & Office - Includes Pictures for Home Decoration Artwork for Bedroom 24×48IN",
+    "image": "https://m.media-amazon.com/images/I/81rN1xanCjL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQVLCLGJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d1c5b6"
+  },
+  {
+    "id": 3483,
+    "title": "Amazon Product 44",
+    "price": 0,
+    "description": "Y2K BOO Vibrant Orange Wall Collage Kit - 50 Aesthetic Posters for Room Decor, Perfect Dorm and Bedroom Wall Art, Trendy Orange Collage Kit for Teen Girls",
+    "image": "https://m.media-amazon.com/images/I/9103pING84L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CWDB6Q4Y/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cf7b3e"
+  },
+  {
+    "id": 3484,
+    "title": "Amazon Product 45",
+    "price": 0,
+    "description": "Niwo ART - Orange Poppies, Flower Canvas Wall Art Home Decor, Framed Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71R2eWIwG9L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07K1TZLVF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a85735"
+  },
+  {
+    "id": 3485,
+    "title": "Amazon Product 46",
+    "price": 0,
+    "description": "Novup Large Abstract Orange Wall Art, 5 Piece Modern Painting Canvas Print - Contemporary Artwork Picture for Living Room Bedroom Wall Decoration Home Décor",
+    "image": "https://m.media-amazon.com/images/I/81tlUdLufPL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09PN4C52Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ba783c"
+  },
+  {
+    "id": 3486,
+    "title": "Amazon Product 47",
+    "price": 0,
+    "description": "JCSMHVLA Modern Geometric Wall Art Orange Geometric Painting Modern Abstract Wall Art Canvas Orange Pictures Black Gold Beige Orange Geometric Wall Art for Living Room 16x24inx3pcs No Frame",
+    "image": "https://m.media-amazon.com/images/I/71sJcUAmZuL._AC_SX466_PIbundle-3,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BPKGL1WD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#da7702"
+  },
+  {
+    "id": 3487,
+    "title": "Amazon Product 48",
+    "price": 0,
+    "description": "3 Pcs Orange Rose Bathroom Wall Decor Orange Decor Flower Wooden Inspirational Wall Art Orange Bedroom Wall Decor with Accept Let Go Have Faith Sign for Bathroom Living Room Bedroom(orange 12 x 7\")",
+    "image": "https://m.media-amazon.com/images/I/61gSzuwjzDL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLRRTTGC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b76620"
+  },
+  {
+    "id": 3488,
+    "title": "Amazon Product 49",
+    "price": 0,
+    "description": "KONGSY Orange Matisse Wall Art Prints Set of 9, Abstract Flower Market Exhibition Gallery Posters, Trendy Art Prints, Eclectic Wall Decor, Aesthetic Pictures Room Decor for Teen Girls Dorm, Bedroom",
+    "image": "https://m.media-amazon.com/images/I/81BK-aR-QhL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D972Z1KK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eca27d"
+  },
+  {
+    "id": 3489,
+    "title": "Amazon Product 50",
+    "price": 0,
+    "description": "YPY Orange Black Abstract Painting Canvas Wall Art: Grey Orange Picture for Living Room Decoration, Minimalist Painting Textured Print Poster for Bedroom Home Office Decor 10 x 15",
+    "image": "https://m.media-amazon.com/images/I/71p2WFz0-aL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BFDZM4SV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f76513"
+  },
+  {
+    "id": 3490,
+    "title": "Amazon Product 51",
+    "price": 0,
+    "description": "MPLONG Aesthetic Wall Art Large size 24\" x 32\" x 3 Panels Of Framed Decorative Paintings Abstract Simple Orange White Blue And Other Color Blocks Wall Art Canvas Prints Nature Home Decor",
+    "image": "https://m.media-amazon.com/images/I/612rL13IdnL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BJV24VKN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e68620"
+  },
+  {
+    "id": 3491,
+    "title": "Amazon Product 52",
+    "price": 0,
+    "description": "3Pcs Burnt Orange Wall Decor Rose Flower Wall Art for Living Room Floral Posters Canvas Prints Bathroom Bedroom Pictures Rustic Kitchen Painting Modern Artworks Dinner Room Home Decorations 12x12\" 4 Pieces",
+    "image": "https://m.media-amazon.com/images/I/81ZrZ7A+q9L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08ZNC5GTN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c96e36"
+  },
+  {
+    "id": 3492,
+    "title": "Amazon Product 53",
+    "price": 0,
+    "description": "Framed Black Abstract Canvas Wall Art Three-Dimensional Sculpture Ceramic Wall Deco Pictures Modern Still Lifes orange Black Shape Posters Prints for Living Room Bedroom Bathroom Home Decoration",
+    "image": "https://m.media-amazon.com/images/I/61v8dgGBd4L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMJRTGM1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a24f13"
+  },
+  {
+    "id": 3493,
+    "title": "Amazon Product 54",
+    "price": 0,
+    "description": "VIYYIEA Framed Canvas Wall Art Vintage Decor, Country Orange Trees Earthy Room Decor Aesthetic, Kitchen Living Room Bedroom Bathroom Rustic Farmhouse Decorations, 9\"x11\"",
+    "image": "https://m.media-amazon.com/images/I/81i9NXY4u6L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C7YXCFM7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9f9279"
+  },
+  {
+    "id": 3494,
+    "title": "Amazon Product 55",
+    "price": 0,
+    "description": "Barydat 5 Pcs Wooden Bird Wall Art Wood Flying Birds Wall Decor Rustic Folk Art Scandinavian Home Decor for Gift Living Room Bedroom Kitchen Office(Orange)",
+    "image": "https://m.media-amazon.com/images/I/81RISOXGHtL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1K85YXP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c66340"
+  },
+  {
+    "id": 3495,
+    "title": "Amazon Product 56",
+    "price": 0,
+    "description": "First Wall Art - Abstract Orange Brown White Lines Wall Art Painting The Picture Print On Canvas Abstract Pictures for Home Decor Decoration Gift",
+    "image": "https://m.media-amazon.com/images/I/61F1306YexL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00RDDJ6JI/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#977d60"
+  },
+  {
+    "id": 3496,
+    "title": "Amazon Product 57",
+    "price": 0,
+    "description": "ASTRDECOR Boho Wall Art Set Of 3, Boho Wall Decor, Mid Century Modern Wall Art, Neutral Abstract Geometric Framed Canvas Artwork Prints for Wall Decor, Burnt Orange Minimalist Art Large 12\" X 26\" Ready To Hang for Bathroom Bedroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/51ZWNhDnsQL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D835PJVC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bd7d59"
+  },
+  {
+    "id": 3497,
+    "title": "Amazon Product 58",
+    "price": 0,
+    "description": "Maitys 4 Pcs Bathroom Wall Decor 10 x 4 Inch Bathroom Wall Art Contemporary Wood Restroom Pictures for Soak Unwind Relax Hanging Sign Spa Rustic Vintage Farmhouse Pediments(Orange)",
+    "image": "https://m.media-amazon.com/images/I/71TY3+ICe3L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D31SWRMJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c06e48"
+  },
+  {
+    "id": 3498,
+    "title": "Amazon Product 59",
+    "price": 0,
+    "description": "First Wall Art - Abstract Orange White Lines Wall Art Painting The Picture Print On Canvas Abstract Pictures for Home Decor Decoration Gift",
+    "image": "https://m.media-amazon.com/images/I/71boMdzDqbL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00RDBZECS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7a6e62"
+  },
+  {
+    "id": 3499,
+    "title": "Amazon Product 60",
+    "price": 0,
+    "description": "Oranges Room Decor Aesthetic Wall Art Poster Preppy Disco Ball Glam Ball Art Print Trendy Dorm for Valentines Day Girly Bedroom Kitchen Decor Fruit 8x10inch Unframed",
+    "image": "https://m.media-amazon.com/images/I/61OQbz-mYbL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DBF77BQB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fc9628"
+  },
+  {
+    "id": 3500,
+    "title": "Amazon Product 61",
+    "price": 0,
+    "description": "FWIEXA Burnt Orange Floral Framed Canvas Wall Art Set, Botanical Wall Prints, Neutral Plant Wall Painting, Modern Art Print for Living Room, Bedroom, Office 24\"x36\"x3",
+    "image": "https://m.media-amazon.com/images/I/81Gjnb-c6PL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D86CK3CY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#945c10"
+  },
+  {
+    "id": 3501,
+    "title": "Amazon Product 62",
+    "price": 0,
+    "description": "Abstract Boho Black flowers Plant Poster Prints for Home Living Girl Room Dorm Office Decor, Vintage Botanical Bohemian Neutral Floral Decorations Prints Aesthetic Wall Art Unframed 4pcs (Orange, 12x16",
+    "image": "https://m.media-amazon.com/images/I/71mb4ey+MyL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLRS1S68/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#494748"
+  },
+  {
+    "id": 3502,
+    "title": "Amazon Product 63",
+    "price": 0,
+    "description": "Framed Large Luxury Feather Wall Art for Living Room, Modern Set of 3 Piece Bright Style Paintings Artwork for Walls, orange Prints Pictures with Gold Frame, Wall Decor Hallway, Office 24x36 Inch",
+    "image": "https://m.media-amazon.com/images/I/81V-6xCzh9L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DPPHRSYG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cbbfb2"
+  },
+  {
+    "id": 3503,
+    "title": "Amazon Product 64",
+    "price": 0,
+    "description": "Pyradecor Large Canvas Prints Wall Art Colorful Clouds Landscape Pictures Paintings for Living Room Bedroom Home Decorations 4 Piece Modern Orange Abstract Stretched Artwork",
+    "image": "https://m.media-amazon.com/images/I/61hRa1EiCaS._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01A3TKIRC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b57235"
+  },
+  {
+    "id": 3504,
+    "title": "Amazon Product 65",
+    "price": 0,
+    "description": "KPLUNDO Poppy Wall Art Canvas Print Wall Decor Orange Flower Picture Floral Vintage Painting Artwork Home Decor for Living Room Bedroom Bathroom Office Gallery Wrap(Art-3, 12.00x18.00 inch)",
+    "image": "https://m.media-amazon.com/images/I/71xySiPbYWL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D77QXNP8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffc058"
+  },
+  {
+    "id": 3505,
+    "title": "Amazon Product 66",
+    "price": 0,
+    "description": "TLESKE Orange Boho Sun Canvas Wall Art Decor, Colorful Vintage Mid Century Modern Wall Decor, Abstract Bohemian Pictures Wall Art Decor for Bedroom Living Room Office, Boho Artwork Posters Prints 11x14in",
+    "image": "https://m.media-amazon.com/images/I/71GIMCd7uGL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2XS3G3N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c17e47"
+  },
+  {
+    "id": 3506,
+    "title": "Amazon Product 67",
+    "price": 0,
+    "description": "Framed Black and White Abstract Wall Art, Burnt Orange Modern Canvas Paintings Artwork for Walls, Large Minimalist Art Prints Pictures for Living Room Hallway Bedroom Office Bathroom Wall Decor 24x36 Inch",
+    "image": "https://m.media-amazon.com/images/I/81Eb-9PgW1L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9PWJCRQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e57324"
+  },
+  {
+    "id": 3507,
+    "title": "Amazon Product 68",
+    "price": 0,
+    "description": "Orange Abstract Canvas Wall Art Orange and Gray Painting Abstract Orange Black Gold Wall Art for Living Room Decor Red Abstract Art Prints Orange Abstract Pictures for Wall Decor 16x24inch No Frame",
+    "image": "https://m.media-amazon.com/images/I/81bJICeslfL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BQR8QZCR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e47e06"
+  },
+  {
+    "id": 3508,
+    "title": "Amazon Product 69",
+    "price": 0,
+    "description": "Qunclay 5 Pcs Wall Art Decor Wooden Living Room Wall Decor Bohemian Hanging Farmhouse Geometric 10'' and 8'' Aesthetic Wood Minimalist Posters for Bedroom(Boho)",
+    "image": "https://m.media-amazon.com/images/I/81Qsn1e1KXL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVM9JB8L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfaf89"
+  },
+  {
+    "id": 3509,
+    "title": "Amazon Product 70",
+    "price": 0,
+    "description": "Abstract Canvas Wall Art - Large Framed Gray and Orange Paintings - Modern Wall Art Decor for Living Room & Office - Includes Pictures for Home Decoration Artwork for Bedroom 24×48IN",
+    "image": "https://m.media-amazon.com/images/I/81rN1xanCjL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQVLCLGJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d2c1a7"
+  },
+  {
+    "id": 3510,
+    "title": "Amazon Product 71",
+    "price": 0,
+    "description": "YDYSUNE Large Painting Wall Art Expertly Picture for Living Room Red and White Home Bedroom Decoration Tree Framed Artwork Decor 24X48",
+    "image": "https://m.media-amazon.com/images/I/81z3yXDJBNL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4TWDZ53/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffa999"
+  },
+  {
+    "id": 3511,
+    "title": "Amazon Product 72",
+    "price": 0,
+    "description": "First Wall Art - Abstract Orange Brown White Lines Wall Art Painting The Picture Print On Canvas Abstract Pictures for Home Decor Decoration Gift",
+    "image": "https://m.media-amazon.com/images/I/61F1306YexL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00RDDJ6JI/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#977d60"
+  },
+  {
+    "id": 3512,
+    "title": "Amazon Product 73",
+    "price": 0,
+    "description": "Handicrafts Home 8x14 Photo Picture Frames Handmade Art Wall Hanging Nursery Guest Living Room Wall Decor Gifts, Classic Orange",
+    "image": "https://m.media-amazon.com/images/I/71z7T7P8NUL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B84KY7WQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#df400b"
+  },
+  {
+    "id": 3513,
+    "title": "Amazon Product 74",
+    "price": 0,
+    "description": "Handicrafts Home 6x14 Photo Picture Frames Handmade Art Wall Hanging Nursery Guest Living Room Wall Decor Gifts, Classic Orange",
+    "image": "https://m.media-amazon.com/images/I/71sh7YDJK+L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B7BH8VNB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ef4d0a"
+  },
+  {
+    "id": 3514,
+    "title": "Amazon Product 75",
+    "price": 0,
+    "description": "First Wall Art - Abstract Orange White Lines Wall Art Painting The Picture Print On Canvas Abstract Pictures for Home Decor Decoration Gift",
+    "image": "https://m.media-amazon.com/images/I/71boMdzDqbL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00RDBZECS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7a6e62"
+  },
+  {
+    "id": 3515,
+    "title": "Amazon Product 76",
+    "price": 0,
+    "description": "Orange Red Oil Painting Hand Painted Acrylic Picture Abstract Modern Minimalist Textured Wall Art Framed Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71pCE76o+TL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DBY6516J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#92471e"
+  },
+  {
+    "id": 3516,
+    "title": "Amazon Product 77",
+    "price": 0,
+    "description": "Generic Retro Disco Art Poster Orange Disco Ball Canvas Wall Art Trendy Bar Cart Decor Painting Prints for Home Kitchen Living Room Wall Decor 12 x 16 in Unframed, Fruit",
+    "image": "https://m.media-amazon.com/images/I/71ffmrX6-CL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DBCQD95J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f76a18"
+  },
+  {
+    "id": 3517,
+    "title": "Amazon Product 78",
+    "price": 0,
+    "description": "WELMECO 3 Pieces Orange and Gold Flowers Painting Canvas Wall Art Decor Giclee Prints Rustic Beautiful Floral Picture Poster Contemporary Artwork for Modern Bedroom Decoration (Orange)",
+    "image": "https://m.media-amazon.com/images/I/81qPoQrmDFL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVM7K8NP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cf7a38"
+  },
+  {
+    "id": 3518,
+    "title": "Amazon Product 79",
+    "price": 0,
+    "description": "Cleaning Brush - Hard Bristle Crevice Cleaning Brush for Tight Spaces, Gap Scrub Brush, Bathroom Grout Brush, Thin Cleaning Brush for Household Use, Home Kitchen Toilet Cleaning Supplies",
+    "image": "https://m.media-amazon.com/images/I/61-oKJLNdfL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2HX2NS4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b8babb"
+  },
+  {
+    "id": 3519,
+    "title": "Amazon Product 80",
+    "price": 0,
+    "description": "Cleaning Brush, 3 Pcs Hard Bristle Crevice Cleaning Brush, Grout Cleaning Brush, Scrub Brush for Tile Grout Crevice, Gap Cleaning Tools for Bathroom Kitchen Toilet Window Track (3, Black)",
+    "image": "https://m.media-amazon.com/images/I/61Et6q2yGLL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7MFD841/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#242324"
+  },
+  {
+    "id": 3520,
+    "title": "Amazon Product 81",
+    "price": 0,
+    "description": "Cleaning Brush, 5 Pcs Hard Bristle Crevice Cleaning Brush, Grout Cleaning Brush, Scrub Brush for Tile Grout Crevice, Gap Cleaning Tools for Bathroom Kitchen Toilet Window Track (5, Black)",
+    "image": "https://m.media-amazon.com/images/I/71ruuwSpTdL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCNPL22L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#222223"
+  },
+  {
+    "id": 3521,
+    "title": "Amazon Product 82",
+    "price": 0,
+    "description": "HVEST Farmhouse Orange Floral Wall Art for Living Room White Daisy Flower and Butterfly on Rustic Wood Pictures Wall Decor Nature Plant Framed Canvas Wall Art for Bedroom Bathroom Decor, 16L X 12W inch",
+    "image": "https://m.media-amazon.com/images/I/81W8+FrD0hL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D22HJSDW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e18e63"
+  },
+  {
+    "id": 3522,
+    "title": "Amazon Product 83",
+    "price": 0,
+    "description": "3Pcs Boho Cats Wall Art Mid Century Modern Orange Canvas Cats Prints Vintage Retro Black Cats Paintings Cute Plant Animail Posters Pictures for Living Room Bedroom Bathroom Wall Decor Unframed",
+    "image": "https://m.media-amazon.com/images/I/81tZWGX-tJL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7SF261V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#973f07"
+  },
+  {
+    "id": 3523,
+    "title": "Amazon Product 84",
+    "price": 0,
+    "description": "Orange Geometric Wall Art Modern Wall Art Abstract Orange Black White Orange Abstract Wall Art Silver Grey Geometric Nordic Home Luxury Abstract Minimalist Poster Print Decor 16x24inchx3pcs No Frame",
+    "image": "https://m.media-amazon.com/images/I/61jvNgNJeyL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CVTWP224/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c77f46"
+  },
+  {
+    "id": 3524,
+    "title": "Amazon Product 85",
+    "price": 0,
+    "description": "Orange Red Oil Painting Hand Painted Acrylic Picture Abstract Modern Minimalist Textured Wall Art Framed Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71pCE76o+TL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DBY6516J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#92471e"
+  },
+  {
+    "id": 3525,
+    "title": "Amazon Product 86",
+    "price": 0,
+    "description": "XLSJERST Abstract Canvas Wall Art for Living Room - Large Nave Blue and White Wall Decor Picture Modern Orange Painting Artwork for Bedroom Home Office Decoration Size 24x48 Inches",
+    "image": "https://m.media-amazon.com/images/I/81iw6yjpdtL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9D67P7B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bcbab2"
+  },
+  {
+    "id": 3526,
+    "title": "Amazon Product 87",
+    "price": 0,
+    "description": "KLAKLA Orange and Blue Abstract Wall Art - Modern Picture Artwork for Wall Decor - Frame Wall Art for Living Room Office Bedroom",
+    "image": "https://m.media-amazon.com/images/I/719CC2f-TjL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN6RP971/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#af2d02"
+  },
+  {
+    "id": 3527,
+    "title": "Amazon Product 88",
+    "price": 0,
+    "description": "ARTKN Modern Wall Art 3 Piece Set, Abstract Modern Art Wall Decor for Living Room Bedroom, Fresh Minimalist Large Framed Wall Art, Gray Blue Orange Wall Decor(Orange, 24\" X 32\" X 3 pieces)",
+    "image": "https://m.media-amazon.com/images/I/61kDZ7KJUbL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C3R2QB3N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e6814c"
+  },
+  {
+    "id": 3528,
+    "title": "Amazon Product 89",
+    "price": 0,
+    "description": "Derkymo Flower Framed Artwork Orange Poppies Picture Elegant Flowal Canvas Wall Art 16\"x24\"",
+    "image": "https://m.media-amazon.com/images/I/71xZ99mLprL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B091BQVX61/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d91d09"
+  },
+  {
+    "id": 3529,
+    "title": "Amazon Product 90",
+    "price": 0,
+    "description": "Burnt Orange Wall Decor Rose Flower Wall Art for Living Room Floral Posters Canvas Prints Bathroom Bedroom Pictures Rustic Kitchen Painting Modern Artworks Dinner Room Home Decorations 12x12\" 4 Pieces",
+    "image": "https://m.media-amazon.com/images/I/81ZrZ7A+q9L._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08ZNC5GTN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c96e36"
+  },
+  {
+    "id": 3530,
+    "title": "Amazon Product 91",
+    "price": 0,
+    "description": "Large Boho Framed Wall Art, Set of 3 Piece Neutral and Orange Canvas Paintings Artwork for Walls, Bohemian Wall Hanging Art Prints Pictures for Living Room Bedroom Dining Room Fireplace Office Wall Decor 16x24 In",
+    "image": "https://m.media-amazon.com/images/I/81lx9RjQRIL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJ8XD4NV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9f593c"
+  },
+  {
+    "id": 3531,
+    "title": "Amazon Product 92",
+    "price": 0,
+    "description": "KONGSY Orange Matisse Wall Art Prints Set of 9, Abstract Flower Market Exhibition Gallery Posters, Trendy Art Prints, Eclectic Wall Decor, Aesthetic Pictures Room Decor for Teen Girls Dorm, Bedroom",
+    "image": "https://m.media-amazon.com/images/I/81BK-aR-QhL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D972Z1KK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eca27d"
+  },
+  {
+    "id": 3532,
+    "title": "Amazon Product 93",
+    "price": 0,
+    "description": "Wallcrafts 3Pcs Mountain Metal Wall Art Colorful And Black Double-Sided Abstract Minimalist Wall Art Rustic Nature Wall Decor for Home Bathroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/81zYXUzGcLL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DNC8L8R5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eae5de"
+  },
+  {
+    "id": 3533,
+    "title": "Amazon Product 94",
+    "price": 0,
+    "description": "Zoyotago Large Canvas Wall Art Orange Yellow Tree Picture Modern Canvas Prints Ready to Hang for Bedroom Living Room Size 20x40",
+    "image": "https://m.media-amazon.com/images/I/913xnC13Z0L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CC55WB8P/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ce5227"
+  },
+  {
+    "id": 3534,
+    "title": "Amazon Product 95",
+    "price": 0,
+    "description": "Wieco Art Canvas Wall Art 3 Piece Henri Mattise Art Abstract Colorful Matisse Posters Canvas Prints for Wall and Home Office Decorations",
+    "image": "https://m.media-amazon.com/images/I/81UJR6o5vxL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJ6H9JCY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f37d68"
+  },
+  {
+    "id": 3535,
+    "title": "Amazon Product 96",
+    "price": 0,
+    "description": "Framed Canvas Wall Art for Living Room Bedroom Office Large Tree of Life Wall Art Orange Tree Fall Landscape Picture Modern Canvas Prints Decor Size 20x40",
+    "image": "https://m.media-amazon.com/images/I/81DmfH9cIVL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJXNN8KZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c25927"
+  },
+  {
+    "id": 3536,
+    "title": "Amazon Product 97",
+    "price": 0,
+    "description": "Creative Wall Hanging Sculpture, Artistic Wall Hanging Hand Sculpture with Test Tube vases, Home Decoration Hand Against Wall (Orange)",
+    "image": "https://m.media-amazon.com/images/I/61RqotXrBsL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CB29D9PQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f28e40"
+  },
+  {
+    "id": 3537,
+    "title": "Amazon Product 98",
+    "price": 0,
+    "description": "Canvas Prints Art Modern 5 pieces Wall Picture Abstract Sphere Pros and Cons Painting Orange Artwork Framed Home Decoration Bedroom Living Room CL14, Large 60x30",
+    "image": "https://m.media-amazon.com/images/I/61nv0OHrZXL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CCJ18SD3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c47830"
+  },
+  {
+    "id": 3538,
+    "title": "Amazon Product 99",
+    "price": 0,
+    "description": "LYPHNX Framed Boho Burnt Orange Botanical Floral Canvas Wall Art Abstract Terracotta Jungle Poster Pictures Set of 3 Flower Prints Painting Home Decor for Bathroom Bedroom Living Room 12x16",
+    "image": "https://m.media-amazon.com/images/I/81bsxvstRBL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJRB8MHT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fcdaaf"
+  },
+  {
+    "id": 3539,
+    "title": "Amazon Product 100",
+    "price": 0,
+    "description": "Geetery 3 Pcs Orange Bathroom Decor Thankful Grateful Blessed Wall Signs Orange Wall Decor Wooden Hanging Art Decoration for Living Room Bedroom Farmhouse Office",
+    "image": "https://m.media-amazon.com/images/I/719C1V3zAQL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CBMX6V4T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e86f14"
+  },
+  {
+    "id": 3540,
+    "title": "Amazon Product 101",
+    "price": 0,
+    "description": "DRACIT Single Large Wood Wall Art Boho Mountain Forest Wall Decor Orange Sun Mountain Art Print Artwork for Living Room Bedroom Office 20x40 Inches",
+    "image": "https://m.media-amazon.com/images/I/71JUVDOj+6L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKBWR2PM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c18f3e"
+  },
+  {
+    "id": 3541,
+    "title": "Amazon Product 102",
+    "price": 0,
+    "description": "Empire Art Direct Frameless Free Floating Tempered Glass Panel Graphic Wall Art Ready to Hang, 24\" x 24\", Poppy Orange",
+    "image": "https://m.media-amazon.com/images/I/91+W0jt58NL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09838RJ5B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#feb985"
+  },
+  {
+    "id": 3542,
+    "title": "Amazon Product 103",
+    "price": 0,
+    "description": "Burnt Orange Daisy Poppy Wall Art Bedroom Red Yellow Grey Flower Wall Decor for Living Room Canvas Prints Floral Picture Colorful Wildflower Posters Modern Artwork Bathroom Home Decorations 12x12\" 3P",
+    "image": "https://m.media-amazon.com/images/I/81URTCluccL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B082YNFDXN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7a1b20"
+  },
+  {
+    "id": 3543,
+    "title": "Amazon Product 104",
+    "price": 0,
+    "description": "3Pcs Framed Boho Wall Art BohoWall Decor Mid Century Modern posters Prints Pictures Abstract Geometric Sun Mountain Line Plant Orange Minimalist Artwork for Living Room Bathroom Bedroom12x16inx3",
+    "image": "https://m.media-amazon.com/images/I/71NnDKkdr9L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C65PRBZD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e98853"
+  },
+  {
+    "id": 3544,
+    "title": "Amazon Product 105",
+    "price": 0,
+    "description": "YYYYHPP YP1075 Abstract Clouds Modern Wall Art Decor Orange Abstract Poster Art abstract wall art for living room Bedroom Kitchen Home and Office Wall Decor",
+    "image": "https://m.media-amazon.com/images/I/71L2Cy6qngL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B7BLHKDN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8743e"
+  },
+  {
+    "id": 3545,
+    "title": "Amazon Product 106",
+    "price": 0,
+    "description": "ONIZHITY 3 Pcs Orange Bathroom Decor Boho Wall Decor Orange Abstract Wooden Wall Decor Orange Kitchen Decor Positive Quotes Wall Art Orange Decor for Women Bedroom Living Room(Orange 12x4 Inch)",
+    "image": "https://m.media-amazon.com/images/I/813ffd2LTtL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CHY6XWSJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbcec2"
+  },
+  {
+    "id": 3546,
+    "title": "Amazon Product 107",
+    "price": 0,
+    "description": "Inspirational Wall Art Canvas Poster for Bedroom, Office, Living Room - Framed Canvas - 10 x 16.5 Inch Motivational Print",
+    "image": "https://m.media-amazon.com/images/I/7157QCbgVvL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CG1YQN9L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4d5765"
+  },
+  {
+    "id": 3547,
+    "title": "Amazon Product 108",
+    "price": 0,
+    "description": "Vintage Orange Wildflower Canvas Wall Art, Country Farmhouse Watercolor Flower Wall Decor, Vintage Botanical Painting Picture Artwork for Bedroom Living Room Wood Framed Ready to Hang 12\"x16\"x3",
+    "image": "https://m.media-amazon.com/images/I/717eC5B+IQL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMKFM2DQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ede6d6"
+  },
+  {
+    "id": 3548,
+    "title": "Amazon Product 109",
+    "price": 0,
+    "description": "KLAKLA Wall Art for Living Room & Office - Modern Abstract Canvas Wall Art Decor - Orange, Gray, Yellow Paintings & Pictures for Living Room - Bedroom Wall Decor 24×48IN",
+    "image": "https://m.media-amazon.com/images/I/815Kznp0PhL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D12W3748/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#443e36"
+  },
+  {
+    "id": 3549,
+    "title": "Amazon Product 110",
+    "price": 0,
+    "description": "Orange Abstract Canvas Wall Art Orange and Gray Painting Abstract Orange Black Gold Wall Art for Living Room Decor Red Abstract Art Prints Orange Abstract Pictures for Wall Decor 16x24inch No Frame",
+    "image": "https://m.media-amazon.com/images/I/81bJICeslfL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BQR8QZCR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#24211e"
+  },
+  {
+    "id": 3550,
+    "title": "Amazon Product 111",
+    "price": 0,
+    "description": "Zhengmy 2 Pieces Metal Tree Leaf Wall Decor Vine Olive Branch Leaf Wall Art Living Room, Hallway Wall Decor Outdoor Decoration(Lively Colors)",
+    "image": "https://m.media-amazon.com/images/I/71KRU6gd-oL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKWYDMBZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b07d5b"
+  },
+  {
+    "id": 3551,
+    "title": "Amazon Product 112",
+    "price": 0,
+    "description": "Lnond 4 Pieces Orange Abstract Living Room Wall Decor, Motivational Home Family Rustic Wall Art Decor for Bedroom Living Room, Rustic Wooden Farmhouse Home Decor, 12 x 4 Inch",
+    "image": "https://m.media-amazon.com/images/I/81iDKKvT-JL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C6Q96HTP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4cbbb"
+  },
+  {
+    "id": 3552,
+    "title": "Amazon Product 113",
+    "price": 0,
+    "description": "3 Pcs Orange Boho Plants Canvas Wall Art Burnt Orange Botanical Wall Decor Pictures Abstract Floral Poster Prints Paintings for Bedroom Office Dining Kitchen Home Decoration",
+    "image": "https://m.media-amazon.com/images/I/81a6IS8gQfL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1XP658R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4d9c7"
+  },
+  {
+    "id": 3553,
+    "title": "Amazon Product 114",
+    "price": 0,
+    "description": "4Pcs Framed Boho Wall Art BohoWall Decor Mid Century Modern posters Prints Pictures Abstract Geometric Sun Mountain Line Plant Orange Minimalist Artwork for Living Room Bathroom Bedroom12x16inx3",
+    "image": "https://m.media-amazon.com/images/I/71NnDKkdr9L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C65PRBZD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e98853"
+  },
+  {
+    "id": 3554,
+    "title": "Amazon Product 115",
+    "price": 0,
+    "description": "YYYYHPP YP1075 Abstract Clouds Modern Wall Art Decor Orange Abstract Poster Art abstract wall art for living room Bedroom Kitchen Home and Office Wall Decor",
+    "image": "https://m.media-amazon.com/images/I/71L2Cy6qngL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B7BLHKDN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8743e"
+  },
+  {
+    "id": 3555,
+    "title": "Amazon Product 116",
+    "price": 0,
+    "description": "ONIZHITY 3 Pcs Orange and Gold Abstract Canvas Wall Art Modern Gold Foil Artwork Luxury Painting Printed on Canvas for Walls Guest Room Girls Gifts Decor Each Size 12x16 Inches (Orange)",
+    "image": "https://m.media-amazon.com/images/I/71VUNybwM9L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CDWTXVQQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ea5d04"
+  },
+  {
+    "id": 3556,
+    "title": "Amazon Product 117",
+    "price": 0,
+    "description": "AKWISH Mid Century Abstract Canvas Wall Art Set of 3, Terracotta Navy Blue and Orange Boho Wall Decor Posters Prints, Minimalist Wall Art Painting for Living Room Bedroom Office Framed 12x16in",
+    "image": "https://m.media-amazon.com/images/I/71I4p0piXIL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D267KBYB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c28c70"
+  },
+  {
+    "id": 3557,
+    "title": "Amazon Product 118",
+    "price": 0,
+    "description": "Boho Wall Art Mid Century Modern Wall Decor for Bedroom Abstract Geometric Beige Orange Painting Bathroom Canvas Minimalist Green Plant Rosmary Picture Artwork Living Room Home Decorations 12x12\" 4P",
+    "image": "https://m.media-amazon.com/images/I/81ZSp7-XIAL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8SDN617/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0ccb7"
+  },
+  {
+    "id": 3558,
+    "title": "Amazon Product 119",
+    "price": 0,
+    "description": "XLSJERST Black and Orange Picture Artwork - Boho Abstract Wall Art for Living Room Office Canvas Pintings Modern Minimalist Frame Wall Art 20x40 Inches",
+    "image": "https://m.media-amazon.com/images/I/81jM2B8hgRL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3TKVZGR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7d756f"
+  },
+  {
+    "id": 3559,
+    "title": "Amazon Product 120",
+    "price": 0,
+    "description": "3Pcs Minimalist Boho Canvas Wall Art Beige Orange Bohemian Line Wall Decor Pictures Modern Mid Century Posters Prints Abstract Neutral Geometric Paintings for Living Room Bedroom Home Decoration",
+    "image": "https://m.media-amazon.com/images/I/81WbR3LFtJL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DPFPH899/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2e9de"
+  },
+  {
+    "id": 3560,
+    "title": "Amazon Product 121",
+    "price": 0,
+    "description": "ARTINME 3 Pieces Metal Flowers Wall Arts - Rustic Farmhouse Decor Minimalist Flower Wall Decors for Living Room Bathroom Kitchen Bedroom Dining Room - Housewarming Gifts (Orange)",
+    "image": "https://m.media-amazon.com/images/I/71D3Xe1AspL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DM18D1W2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ede8df"
+  },
+  {
+    "id": 3561,
+    "title": "Amazon Product 122",
+    "price": 0,
+    "description": "iKNOW FOTO 3 Pieces Orange and Gold Abstract Canvas Wall Art Modern Gold Foil Artwork Luxury Painting Printed on Canvas for Walls Guest Room Girls Gifts Decor Each Size 12x16 Inches (Orange)",
+    "image": "https://m.media-amazon.com/images/I/71VUNybwM9L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CDWTXVQQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ea5d04"
+  },
+  {
+    "id": 3562,
+    "title": "Amazon Product 123",
+    "price": 0,
+    "description": "Boho Flower Canvas Wall Art Abstract Flower Plant Wall decor pictures Mid Century Modern Flowers Picture Prints Orange Floral Poster Artwork For Living Room Bedroom Home Decorations (12inx16in canvas)",
+    "image": "https://m.media-amazon.com/images/I/71odzAoitqL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DPZNSDK4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6c1f00"
+  },
+  {
+    "id": 3563,
+    "title": "Amazon Product 124",
+    "price": 0,
+    "description": "Pyradecor Modern 4 Panel Stretched Contemporary Zen Canvas Prints Perfect Bamboo Green Pictures on Canvas Wall Art for Home Office Decorations Living Room Bedroom",
+    "image": "https://m.media-amazon.com/images/I/61FkTT1uEPL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01GO2DF4A/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c8d486"
+  },
+  {
+    "id": 3564,
+    "title": "Amazon Product 125",
+    "price": 0,
+    "description": "Botanical Boho Bathroom Decor Wall Art Prints, UNFRAMED Sage Green Plants Decor for Bedroom|Office, Minimalist Eucalyptus Leaves Watercolor Art Prints, Set of 4 Pictures, 8\"x10\" No Frames",
+    "image": "https://m.media-amazon.com/images/I/71ZEBBVQomL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0923P4PCS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c3ccbb"
+  },
+  {
+    "id": 3565,
+    "title": "Amazon Product 126",
+    "price": 0,
+    "description": "Sage Green Wall Decor, Minimalist Boho wall art, Geometric with Green Leaves, Framed Canvas Wall Art, Bohemian Wall Decor for Living Room Bedroom Bathroom Office Aesthetic Set of 4, 8x10in (Framed)",
+    "image": "https://m.media-amazon.com/images/I/61YQKVbRX9L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BQ34JRDV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a4af9f"
+  },
+  {
+    "id": 3566,
+    "title": "Amazon Product 127",
+    "price": 0,
+    "description": "Green Abstract Pictures Green White Canvas Wall Art Emerald Artwork Modern Marble Wall Art Turquoise Abstract Pictures Abstract Fluid Wall Art Modern Green Artwork Abstract Marble Painting 16x24in No",
+    "image": "https://m.media-amazon.com/images/I/71GaUsbBVjL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CL6KP19H/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#27352a"
+  },
+  {
+    "id": 3567,
+    "title": "Amazon Product 128",
+    "price": 0,
+    "description": "Abstract Matisse Wall Art Exhibition Posters, Vintage Art Boho Art Prints, Retro Room Decor for Aesthetic Bedroom, green wall art, Unframed, 8 x 10 Inch(Green)-B02",
+    "image": "https://m.media-amazon.com/images/I/812Mzj3unZL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9P6K4XR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9aac94"
+  },
+  {
+    "id": 3568,
+    "title": "Amazon Product 129",
+    "price": 0,
+    "description": "Howwii Sage Green Wall Art Prints, Abstract Matisse Wall Art for Room Decor Aesthetic, Vintage Posters for Bedroom Wall Decor, Botanical Retro Wall Art Decor, Unframed, 6 PCS",
+    "image": "https://m.media-amazon.com/images/I/81Ic-XJsgoL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJ6JX9BQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a3a99b"
+  },
+  {
+    "id": 3569,
+    "title": "Amazon Product 130",
+    "price": 0,
+    "description": "DONFENTHY 3 Pieces Orange Bedroom Decor Orange Floral Bathroom Decor Wooden Hanging Wall Art Christian Quotes SHE Word Sign Gift for Women Bedroom Living Room Office Decor(Orange 12x4 Inch)",
+    "image": "https://m.media-amazon.com/images/I/71rM+I5tTvL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKF145YG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#efeaea"
+  },
+  {
+    "id": 3570,
+    "title": "Amazon Product 131",
+    "price": 0,
+    "description": "LevvArts Burn Orange and Teal Wall Art Decor Hummingbird Painting Prints Hawaii Hibiscus Flower Canvas Picture Vintage Living Room Bedroom Decorations 24x36",
+    "image": "https://m.media-amazon.com/images/I/61lA+U0zjtL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B088Z62PSS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f57b40"
+  },
+  {
+    "id": 3571,
+    "title": "Amazon Product 132",
+    "price": 0,
+    "description": "Large Metal Hornbill Wall Decor, Vivid Colorful Bird Art Wall Hanging for Indoor Outdoor Home Bedroom Office Garden (Orange)",
+    "image": "https://m.media-amazon.com/images/I/61v-Gp+XiSL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08FT27TNV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e85c04"
+  },
+  {
+    "id": 3572,
+    "title": "Amazon Product 133",
+    "price": 0,
+    "description": "97 Decor Abstract Boho Sun Wall Art - Boho Art Wall Decor, Mid Century Modern Art Prints, Minimalist Terracotta Mustard Aesthetic Pictures, Burnt Orange Poster for Home Bedroom (8x10 UNFRAMED)",
+    "image": "https://m.media-amazon.com/images/I/81iMKE6lACL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKDZ89BQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d28f27"
+  },
+  {
+    "id": 3573,
+    "title": "Amazon Product 134",
+    "price": 0,
+    "description": "HRQKO Fall Plant Wall Decor Poster Prints Set of 4, Botanical Wall Art, Burnt Orange Retro Artwork Prints Posters Wall Art, Vintage Botanical Prints Decor for Home Bedroom Living Room 8”x10”Unframed",
+    "image": "https://m.media-amazon.com/images/I/91JtCRDbKqL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D985WTW3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#aa5d39"
+  },
+  {
+    "id": 3574,
+    "title": "Amazon Product 135",
+    "price": 0,
+    "description": "YDYSUNE Landscape Nature Wall Art - Forest Artwork for Walls - Scenery Canvas Wall Art - Orange Painting for Living Room - Farmhouse Decor - Wall Pictures for Bedroom 29×58IN",
+    "image": "https://m.media-amazon.com/images/I/81-hCJvqwlL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4TVTB24/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b9ada4"
   }
 ];
