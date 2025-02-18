@@ -11,115 +11,77 @@ import {
   ChevronUp,
   ChevronDown,
   Camera,
+  Filter,
 } from "lucide-react";
 import { HslColorPicker } from "react-colorful";
 import { amazonProducts } from "../lib/amazonProducts";
 
-// Declarations
-declare const ColorThief: any;
-declare const gtag_report_conversion: (url: string) => boolean;
-
-// Color utils
-function hexToHSL(hex: string) {
-  const r = parseInt(hex.slice(1, 3), 16) / 255;
-  const g = parseInt(hex.slice(3, 5), 16) / 255;
-  const b = parseInt(hex.slice(5, 7), 16) / 255;
-  const max = Math.max(r, g, b),
-    min = Math.min(r, g, b);
-  let h = 0,
-    s = 0;
-  const l = (max + min) / 2;
+// Example color-utils
+function hexToHSL(hex) {
+  const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255);
+  const max = Math.max(r, g, b), min = Math.min(r, g, b), l = (max + min) / 2;
+  let h = 0, s = 0;
   if (max !== min) {
     const d = max - min;
     s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-    switch (max) {
-      case r:
-        h = (g - b) / d + (g < b ? 6 : 0);
-        break;
-      case g:
-        h = (b - r) / d + 2;
-        break;
-      case b:
-        h = (r - g) / d + 4;
-        break;
-    }
+    h =
+      max === r
+        ? (g - b) / d + (g < b ? 6 : 0)
+        : max === g
+        ? (b - r) / d + 2
+        : (r - g) / d + 4;
     h /= 6;
   }
   return { h: h * 360, s: s * 100, l: l * 100 };
 }
-function hslToHex(h: number, s: number, l: number) {
-  h /= 360;
-  s /= 100;
-  l /= 100;
-  let r, g, b;
-  if (s === 0) {
-    r = g = b = l;
-  } else {
-    const hue2rgb = (p: number, q: number, t: number) => {
-      if (t < 0) t += 1;
-      if (t > 1) t -= 1;
-      if (t < 1 / 6) return p + (q - p) * 6 * t;
-      if (t < 1 / 2) return q;
-      if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
-      return p;
-    };
-    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-    const p = 2 * l - q;
-    r = hue2rgb(p, q, h + 1 / 3);
-    g = hue2rgb(p, q, h);
-    b = hue2rgb(p, q, h - 1 / 3);
-  }
-  const toHex = (val: number) => {
-    const hx = Math.round(val * 255).toString(16);
-    return hx.length === 1 ? "0" + hx : hx;
+function hslToHex(h, s, l) {
+  h /= 360; s /= 100; l /= 100;
+  const hue2rgb = (p, q, t) => {
+    t < 0 && (t += 1); t > 1 && (t -= 1);
+    if (t < 1/6) return p + (q - p) * 6 * t;
+    if (t < 1/2) return q; if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+    return p;
   };
+  const q = l < 0.5 ? l * (1 + s) : l + s - l * s, p = 2 * l - q;
+  const [r, g, b] = [
+    hue2rgb(p, q, h + 1/3),
+    hue2rgb(p, q, h),
+    hue2rgb(p, q, h - 1/3),
+  ];
+  const toHex = (val) => Math.round(val * 255).toString(16).padStart(2, "0");
   return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
 }
-function getComplementaryColor(hex: string) {
+function getComplementaryColor(hex) {
   const { h, s, l } = hexToHSL(hex);
   return hslToHex((h + 180) % 360, s, l);
 }
-function getTriadicColors(hex: string): [string, string] {
+function getTriadicColors(hex) {
   const { h, s, l } = hexToHSL(hex);
   return [
     hslToHex((h + 120) % 360, s, l),
     hslToHex((h + 240) % 360, s, l),
   ];
 }
-function calculateColorMatch(color1: string, color2: string): number {
+function calculateColorMatch(color1, color2) {
   try {
-    const c1 = color1.replace(/^%23/, "#");
-    const c2 = color2.replace(/^%23/, "#");
-    const r1 = parseInt(c1.slice(1, 3), 16),
-      g1 = parseInt(c1.slice(3, 5), 16),
-      b1 = parseInt(c1.slice(5, 7), 16);
-    const r2 = parseInt(c2.slice(1, 3), 16),
-      g2 = parseInt(c2.slice(3, 5), 16),
-      b2 = parseInt(c2.slice(5, 7), 16);
-    const dist = Math.sqrt(
-      3 * (r2 - r1) ** 2 + 4 * (g2 - g1) ** 2 + 2 * (b2 - b1) ** 2
-    );
-    const max = Math.sqrt(3 * 255 ** 2 + 4 * 255 ** 2 + 2 * 255 ** 2);
+    const c1 = color1.replace(/^%23/, "#"), c2 = color2.replace(/^%23/, "#");
+    const [r1, g1, b1] = [1, 3, 5].map((i) => parseInt(c1.slice(i, i + 2), 16));
+    const [r2, g2, b2] = [1, 3, 5].map((i) => parseInt(c2.slice(i, i + 2), 16));
+    const dist = Math.sqrt(3*(r2-r1)**2 + 4*(g2-g1)**2 + 2*(b2-b1)**2);
+    const max = Math.sqrt(3*255**2 + 4*255**2 + 2*255**2);
     return Math.round((1 - dist / max) * 100);
   } catch {
     return 0;
   }
 }
-async function extractColor(file: File): Promise<string> {
+async function extractColor(file) {
   return new Promise((resolve) => {
-    const img = new Image();
-    const colorThief = new ColorThief();
+    const img = new Image(), colorThief = new ColorThief();
     img.onload = () => {
       try {
         const [r, g, b] = colorThief.getColor(img);
-        resolve(
-          `#${r.toString(16).padStart(2, "0")}${g
-            .toString(16)
-            .padStart(2, "0")}${b.toString(16).padStart(2, "0")}`
-        );
-      } catch {
-        resolve("#000000");
-      }
+        resolve(`#${[r, g, b].map((x) => x.toString(16).padStart(2, "0")).join("")}`);
+      } catch { resolve("#000000"); }
     };
     img.onerror = () => resolve("#000000");
     img.crossOrigin = "Anonymous";
@@ -127,73 +89,114 @@ async function extractColor(file: File): Promise<string> {
   });
 }
 
-// Drag & drop
-function handleDragOver(e: React.DragEvent<HTMLLabelElement>) {
-  e.preventDefault();
-}
-async function handleDrop(
-  e: React.DragEvent<HTMLLabelElement>,
-  onFileSelect: (file: File) => void
-) {
-  e.preventDefault();
-  const file = e.dataTransfer.files?.[0];
-  if (file) onFileSelect(file);
+// Category keywords + helper
+const categoryKeywords = {
+  chairs: ["chair", "armchair", "recliner", "seating", "sofa", "ottoman"],
+  pillows: ["pillow", "cushion", "pillowcase", "throw pillow"],
+  rugs: ["rug", "carpet", "mat", "runner"],
+  art: ["art", "painting", "print", "poster", "canvas", "wall art"],
+  clocks: ["clock", "timepiece"],
+  curtains: ["curtain", "drapes", "drapery", "window"],
+};
+function getCategoryFromDescription(desc) {
+  const lower = desc.toLowerCase();
+  for (const [cat, kws] of Object.entries(categoryKeywords)) {
+    if (kws.some((kw) => lower.includes(kw))) return cat;
+  }
+  return "other";
 }
 
-// Hero slideshow images
-const heroImages = [
-  "https://i.imgur.com/pHjncHD.png",
-  "https://i.imgur.com/W1RnTGZ.png",
-  "https://i.imgur.com/6uZrs0j.png",
-  "https://i.imgur.com/oH0sLxE.jpeg",
-  "https://i.imgur.com/UzYfvqA.png",
-];
+// Category Filter Component
+function CategoryFilter({ activeCategory, onCategoryChange, products }) {
+  const categories = ["all"];
+  const categoryCount = { all: products.length };
+  products.forEach((p) => {
+    const c = getCategoryFromDescription(p.description);
+    if (!categories.includes(c)) categories.push(c);
+    categoryCount[c] = (categoryCount[c] || 0) + 1;
+  });
 
-// Main component
+  return (
+    <div className="bg-white/10 rounded-xl p-4 mb-8">
+      <div className="flex items-center gap-2 mb-4">
+        <Filter className="w-5 h-5 text-white/70" />
+        <h3 className="text-white/70 font-medium">Filter by Category</h3>
+      </div>
+      <div className="flex flex-wrap gap-2">
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            onClick={() => onCategoryChange(cat)}
+            className={`
+              px-4 py-2 rounded-full text-sm transition-all
+              ${activeCategory === cat
+                ? "bg-white/20 text-white scale-105"
+                : "bg-white/5 text-white/60 hover:bg-white/10 hover:scale-105"}
+            `}
+          >
+            {cat === "all" ? "All Items" : cat.charAt(0).toUpperCase() + cat.slice(1)}
+            <span className="ml-2 text-xs opacity-60">
+              ({categoryCount[cat]})
+            </span>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function ModernUploader() {
-  const [pinned, setPinned] = useState<number[]>(() => {
+  const [pinned, setPinned] = useState(() => {
     if (typeof window !== "undefined") {
       const saved = localStorage.getItem("pinnedProducts");
       return saved ? JSON.parse(saved) : [];
     }
     return [];
   });
-  const [selectedColor, setSelectedColor] = useState<string | null>(null);
-  const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
-  const [triadicColors, setTriadicColors] = useState<[string, string] | null>(null);
-  const [activeSearchColor, setActiveSearchColor] = useState<string | null>(null);
-  const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
+  const [selectedColor, setSelectedColor] = useState(null);
+  const [complementaryColor, setComplementaryColor] = useState(null);
+  const [triadicColors, setTriadicColors] = useState(null);
+  const [activeSearchColor, setActiveSearchColor] = useState(null);
+
+  const [uploadedImageUrl, setUploadedImageUrl] = useState(null);
   const [hasUploaded, setHasUploaded] = useState(false);
   const [showWheel, setShowWheel] = useState(false);
   const [colorWheelHsl, setColorWheelHsl] = useState({ h: 0, s: 50, l: 50 });
-  const [activeEditingColor, setActiveEditingColor] = useState<
-    "primary" | "complement" | "accent1" | "accent2" | null
-  >(null);
+  const [activeEditingColor, setActiveEditingColor] = useState(null);
 
   // Slideshow
   const [currentHero, setCurrentHero] = useState(0);
   const [colorOverlay, setColorOverlay] = useState(true);
+  const heroImages = [
+    "https://i.imgur.com/pHjncHD.png",
+    "https://i.imgur.com/W1RnTGZ.png",
+    "https://i.imgur.com/6uZrs0j.png",
+    "https://i.imgur.com/oH0sLxE.jpeg",
+    "https://i.imgur.com/UzYfvqA.png",
+  ];
 
   // Infinite scroll
-  const [allProducts, setAllProducts] = useState<any[]>([]);
-  const [products, setProducts] = useState<any[]>([]);
+  const [allProducts, setAllProducts] = useState([]);
+  const [products, setProducts] = useState([]);
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
   const [isFetching, setIsFetching] = useState(false);
-  const sentinelRef = useRef<HTMLDivElement>(null);
+  const sentinelRef = useRef(null);
 
   // Vision Board
-  const pinnedTriggerRef = useRef<HTMLDivElement>(null);
-  const pinnedContainerRef = useRef<HTMLDivElement>(null);
+  const pinnedTriggerRef = useRef(null);
+  const pinnedContainerRef = useRef(null);
   const [isPinnedFloating, setIsPinnedFloating] = useState(false);
   const [visionCollapsed, setVisionCollapsed] = useState(false);
 
-  // Back button
+  // UI
   const [showBack, setShowBack] = useState(true);
+
+  // New category filter
+  const [activeCategory, setActiveCategory] = useState("all");
 
   // Effects
   useEffect(() => {
-    // Slideshow
     const interval = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroImages.length);
     }, 6000);
@@ -222,15 +225,24 @@ export default function ModernUploader() {
     if (!allProducts.length) return;
     setIsFetching(true);
 
-    let sorted = allProducts;
+    // 1) Sort by color match if activeSearchColor
+    let sorted = [...allProducts];
     if (activeSearchColor) {
-      sorted = allProducts.map((p) => ({
+      sorted = sorted.map((p) => ({
         ...p,
         matchPercentage: calculateColorMatch(activeSearchColor, p.dominantColor || "#000"),
       }));
       sorted.sort((a, b) => b.matchPercentage - a.matchPercentage);
     }
 
+    // 2) Filter by category
+    if (activeCategory !== "all") {
+      sorted = sorted.filter(
+        (p) => getCategoryFromDescription(p.description) === activeCategory
+      );
+    }
+
+    // 3) Paginate
     const pageSize = 12;
     const start = (page - 1) * pageSize;
     const batch = sorted.slice(start, start + pageSize);
@@ -240,7 +252,9 @@ export default function ModernUploader() {
 
     setHasMore(batch.length === pageSize);
     setIsFetching(false);
-  }, [page, activeSearchColor, allProducts]);
+  }, [page, activeSearchColor, allProducts, activeCategory]);
+
+  // Load more on scroll
   useEffect(() => {
     if (!sentinelRef.current) return;
     const observer = new IntersectionObserver(
@@ -256,40 +270,37 @@ export default function ModernUploader() {
   }, [hasMore, isFetching]);
 
   // Handlers
-  async function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
+  async function handleFileUpload(e) {
     const file = e.target.files?.[0];
     if (!file) return;
     await processUpload(file);
   }
-  async function processUpload(file: File) {
-    const url = URL.createObjectURL(file);
-    setUploadedImageUrl(url);
+  async function processUpload(file) {
+    setUploadedImageUrl(URL.createObjectURL(file));
     setHasUploaded(true);
     const color = await extractColor(file);
     handleManualColor(color);
   }
-  function handleManualColor(hex: string) {
+  function handleManualColor(hex) {
     setSelectedColor(hex);
     setComplementaryColor(getComplementaryColor(hex));
     setTriadicColors(getTriadicColors(hex));
+    setProducts([]);            // Clear old items
     setActiveSearchColor(hex);
     setPage(1);
   }
-  function handleSwatchClick(color: string) {
+  function handleSwatchClick(color) {
+    setProducts([]);            // Clear old items
     setActiveSearchColor(color);
     setPage(1);
   }
-  function handleGearClick(
-    e: React.MouseEvent,
-    color: string,
-    editingType: "primary" | "complement" | "accent1" | "accent2"
-  ) {
+  function handleGearClick(e, color, editingType) {
     e.stopPropagation();
     setColorWheelHsl(hexToHSL(color));
     setActiveEditingColor(editingType);
     setShowWheel(true);
   }
-  function togglePin(productId: number) {
+  function togglePin(productId) {
     setPinned((prev) => {
       const updated = prev.includes(productId)
         ? prev.filter((id) => id !== productId)
@@ -309,6 +320,7 @@ export default function ModernUploader() {
     setPage(1);
     setHasMore(true);
     setColorWheelHsl({ h: 0, s: 50, l: 50 });
+    setActiveCategory("all");
   }
 
   // Vision Board color highlights
@@ -332,7 +344,7 @@ export default function ModernUploader() {
         </div>
       )}
 
-      {/* Hero Slideshow (original) */}
+      {/* Hero Slideshow */}
       <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
         <div
           className={`absolute inset-0 bg-slate-900 transition-opacity duration-500 z-30 ${
@@ -410,10 +422,6 @@ export default function ModernUploader() {
                     href={product.affiliateLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      gtag_report_conversion(product.affiliateLink);
-                    }}
                     className="min-w-[100px] relative border border-gray-300 rounded-lg overflow-hidden shrink-0 hover:shadow-md transition-all"
                   >
                     <button
@@ -452,8 +460,12 @@ export default function ModernUploader() {
             <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-8 mb-12">
               {/* Upload with drag & drop */}
               <label
-                onDragOver={handleDragOver}
-                onDrop={(e) => handleDrop(e, processUpload)}
+                onDragOver={(e) => e.preventDefault()}
+                onDrop={(e) => {
+                  e.preventDefault();
+                  const file = e.dataTransfer.files?.[0];
+                  if (file) processUpload(file);
+                }}
                 className="group cursor-pointer flex flex-col items-center justify-center"
               >
                 <div className="p-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-gray-400 transition flex flex-col items-center justify-center">
@@ -554,30 +566,34 @@ export default function ModernUploader() {
                       colorWheelHsl.l
                     );
                     if (activeEditingColor) {
+                      // Updating existing color
                       if (activeEditingColor === "primary") {
                         setSelectedColor(newCol);
                         setComplementaryColor(getComplementaryColor(newCol));
                         setTriadicColors(getTriadicColors(newCol));
+                        setProducts([]); // reset
                         setActiveSearchColor(newCol);
                       } else if (activeEditingColor === "complement") {
                         setComplementaryColor(newCol);
+                        setProducts([]); // reset
                         setActiveSearchColor(newCol);
                       } else {
                         const [c1, c2] = triadicColors || [newCol, newCol];
                         if (activeEditingColor === "accent1") {
                           setTriadicColors([newCol, c2]);
-                          setActiveSearchColor(newCol);
                         } else {
                           setTriadicColors([c1, newCol]);
-                          setActiveSearchColor(newCol);
                         }
+                        setProducts([]); // reset
+                        setActiveSearchColor(newCol);
                       }
                       setPage(1);
                     } else {
-                      // First-time color selection
+                      // First-time selection
                       setSelectedColor(newCol);
                       setComplementaryColor(getComplementaryColor(newCol));
                       setTriadicColors(getTriadicColors(newCol));
+                      setProducts([]); // reset
                       setActiveSearchColor(newCol);
                       setPage(1);
                     }
@@ -636,14 +652,14 @@ export default function ModernUploader() {
               {/* Primary */}
               <div className="relative group cursor-pointer">
                 <div
-                  onClick={() => handleSwatchClick(selectedColor!)}
+                  onClick={() => handleSwatchClick(selectedColor)}
                   className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg transition ${
                     selectedColor === activeSearchColor ? "ring-2 ring-pink-500" : ""
                   }`}
-                  style={{ backgroundColor: selectedColor! }}
+                  style={{ backgroundColor: selectedColor }}
                 />
                 <button
-                  onClick={(e) => handleGearClick(e, selectedColor!, "primary")}
+                  onClick={(e) => handleGearClick(e, selectedColor, "primary")}
                   className="hidden sm:group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
                 >
                   <Settings className="w-4 h-4 text-white" />
@@ -686,9 +702,7 @@ export default function ModernUploader() {
                     style={{ backgroundColor: col }}
                   />
                   <button
-                    onClick={(e) =>
-                      handleGearClick(e, col, i === 0 ? "accent1" : "accent2")
-                    }
+                    onClick={(e) => handleGearClick(e, col, i === 0 ? "accent1" : "accent2")}
                     className="hidden sm:group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
                   >
                     <Settings className="w-4 h-4 text-white" />
@@ -702,6 +716,26 @@ export default function ModernUploader() {
           </div>
         )}
 
+        {/* Category Filter */}
+        <CategoryFilter
+          activeCategory={activeCategory}
+          onCategoryChange={(cat) => {
+            setProducts([]); // reset
+            setActiveCategory(cat);
+            setPage(1);
+          }}
+          products={
+            // Show entire *current* product list for counts
+            // (Since these are after color match but before pagination, you can also pass allProducts if you prefer)
+            allProducts.map((p) => ({
+              ...p,
+              matchPercentage: activeSearchColor
+                ? calculateColorMatch(activeSearchColor, p.dominantColor || "#000")
+                : 0,
+            }))
+          }
+        />
+
         {/* Product Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((p) => {
@@ -714,7 +748,8 @@ export default function ModernUploader() {
                 rel="noopener noreferrer"
                 onClick={(e) => {
                   e.preventDefault();
-                  gtag_report_conversion(p.affiliateLink);
+                  // gtag_report_conversion(p.affiliateLink);
+                  window.open(p.affiliateLink, "_blank");
                 }}
                 className="block"
               >
@@ -727,11 +762,7 @@ export default function ModernUploader() {
                     }}
                     className="absolute top-2 right-2 z-20 bg-black/30 text-white p-1 rounded hover:bg-black/50 transition"
                   >
-                    <Pin
-                      className={`w-5 h-5 ${
-                        isPinned ? "fill-white text-pink-400" : ""
-                      }`}
-                    />
+                    <Pin className={`w-5 h-5 ${isPinned ? "fill-white text-pink-400" : ""}`} />
                   </button>
                   <div className="aspect-square overflow-hidden group-hover:scale-105 transition-transform duration-300">
                     <img
@@ -771,4 +802,5 @@ export default function ModernUploader() {
     </div>
   );
 }
+
 
