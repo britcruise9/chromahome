@@ -15,17 +15,17 @@ import {
 import { HslColorPicker } from "react-colorful";
 import { amazonProducts } from "../lib/amazonProducts";
 
-// --- Needed declarations (from the original code) ---
+// -- Declarations (from original code) --
 declare const ColorThief: any;
 declare const gtag_report_conversion: (url: string) => boolean;
 
-// --- Color utils (same as original) ---
+// -- Color Utils (same as original) --
 function hexToHSL(hex: string) {
   const r = parseInt(hex.slice(1, 3), 16) / 255;
   const g = parseInt(hex.slice(3, 5), 16) / 255;
   const b = parseInt(hex.slice(5, 7), 16) / 255;
-  const max = Math.max(r, g, b);
-  const min = Math.min(r, g, b);
+  const max = Math.max(r, g, b),
+    min = Math.min(r, g, b);
   let h = 0,
     s = 0;
   const l = (max + min) / 2;
@@ -47,7 +47,6 @@ function hexToHSL(hex: string) {
   }
   return { h: h * 360, s: s * 100, l: l * 100 };
 }
-
 function hslToHex(h: number, s: number, l: number) {
   h /= 360;
   s /= 100;
@@ -76,12 +75,10 @@ function hslToHex(h: number, s: number, l: number) {
   };
   return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
 }
-
 function getComplementaryColor(hex: string) {
   const { h, s, l } = hexToHSL(hex);
   return hslToHex((h + 180) % 360, s, l);
 }
-
 function getTriadicColors(hex: string): [string, string] {
   const { h, s, l } = hexToHSL(hex);
   return [
@@ -89,7 +86,25 @@ function getTriadicColors(hex: string): [string, string] {
     hslToHex((h + 240) % 360, s, l),
   ];
 }
-
+function calculateColorMatch(color1: string, color2: string): number {
+  try {
+    const c1 = color1.replace(/^%23/, "#");
+    const c2 = color2.replace(/^%23/, "#");
+    const r1 = parseInt(c1.slice(1, 3), 16),
+      g1 = parseInt(c1.slice(3, 5), 16),
+      b1 = parseInt(c1.slice(5, 7), 16);
+    const r2 = parseInt(c2.slice(1, 3), 16),
+      g2 = parseInt(c2.slice(3, 5), 16),
+      b2 = parseInt(c2.slice(5, 7), 16);
+    const dist = Math.sqrt(
+      3 * (r2 - r1) ** 2 + 4 * (g2 - g1) ** 2 + 2 * (b2 - b1) ** 2
+    );
+    const max = Math.sqrt(3 * 255 ** 2 + 4 * 255 ** 2 + 2 * 255 ** 2);
+    return Math.round((1 - dist / max) * 100);
+  } catch {
+    return 0;
+  }
+}
 async function extractColor(file: File): Promise<string> {
   return new Promise((resolve) => {
     const img = new Image();
@@ -112,29 +127,30 @@ async function extractColor(file: File): Promise<string> {
   });
 }
 
-function calculateColorMatch(color1: string, color2: string): number {
-  try {
-    const c1 = color1.replace(/^%23/, "#");
-    const c2 = color2.replace(/^%23/, "#");
-    const r1 = parseInt(c1.slice(1, 3), 16),
-      g1 = parseInt(c1.slice(3, 5), 16),
-      b1 = parseInt(c1.slice(5, 7), 16);
-    const r2 = parseInt(c2.slice(1, 3), 16),
-      g2 = parseInt(c2.slice(3, 5), 16),
-      b2 = parseInt(c2.slice(5, 7), 16);
-    const dist = Math.sqrt(
-      3 * (r2 - r1) ** 2 + 4 * (g2 - g1) ** 2 + 2 * (b2 - b1) ** 2
-    );
-    const max = Math.sqrt(3 * 255 ** 2 + 4 * 255 ** 2 + 2 * 255 ** 2);
-    return Math.round((1 - dist / max) * 100);
-  } catch {
-    return 0;
-  }
+// -- Drag & Drop helpers --
+function handleDragOver(e: React.DragEvent<HTMLLabelElement>) {
+  e.preventDefault();
+}
+async function handleDrop(
+  e: React.DragEvent<HTMLLabelElement>,
+  onFileSelect: (file: File) => void
+) {
+  e.preventDefault();
+  const file = e.dataTransfer.files?.[0];
+  if (file) onFileSelect(file);
 }
 
-// --- Main Component ---
+// -- Hero slideshow images --
+const heroImages = [
+  "https://i.imgur.com/pHjncHD.png",
+  "https://i.imgur.com/W1RnTGZ.png",
+  "https://i.imgur.com/6uZrs0j.png",
+  "https://i.imgur.com/oH0sLxE.jpeg",
+  "https://i.imgur.com/UzYfvqA.png",
+];
+
 export default function ModernUploader() {
-  // -- Vision Board pins --
+  // -- States --
   const [pinned, setPinned] = useState<number[]>(() => {
     if (typeof window !== "undefined") {
       const saved = localStorage.getItem("pinnedProducts");
@@ -142,31 +158,23 @@ export default function ModernUploader() {
     }
     return [];
   });
-
-  // -- Colors --
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
-  const [complementaryColor, setComplementaryColor] = useState<string | null>(
-    null
-  );
-  const [triadicColors, setTriadicColors] = useState<[string, string] | null>(
-    null
-  );
-  const [activeSearchColor, setActiveSearchColor] = useState<string | null>(
-    null
-  );
-
-  // -- Upload states --
+  const [complementaryColor, setComplementaryColor] = useState<string | null>(null);
+  const [triadicColors, setTriadicColors] = useState<[string, string] | null>(null);
+  const [activeSearchColor, setActiveSearchColor] = useState<string | null>(null);
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
-
-  // -- Color Picker Modal --
   const [showWheel, setShowWheel] = useState(false);
   const [colorWheelHsl, setColorWheelHsl] = useState({ h: 0, s: 50, l: 50 });
   const [activeEditingColor, setActiveEditingColor] = useState<
     "primary" | "complement" | "accent1" | "accent2" | null
   >(null);
 
-  // -- Product listing + infinite scroll --
+  // Slideshow
+  const [currentHero, setCurrentHero] = useState(0);
+  const [colorOverlay, setColorOverlay] = useState(true);
+
+  // Product listing + infinite scroll
   const [allProducts, setAllProducts] = useState<any[]>([]);
   const [products, setProducts] = useState<any[]>([]);
   const [page, setPage] = useState(1);
@@ -174,38 +182,46 @@ export default function ModernUploader() {
   const [isFetching, setIsFetching] = useState(false);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
-  // -- Vision Board collapsible --
+  // Vision Board floating/collapse
   const pinnedTriggerRef = useRef<HTMLDivElement>(null);
   const pinnedContainerRef = useRef<HTMLDivElement>(null);
   const [isPinnedFloating, setIsPinnedFloating] = useState(false);
   const [visionCollapsed, setVisionCollapsed] = useState(false);
 
-  // -- Show "Back" button once color is chosen --
+  // Show 'Back' button
   const [showBack, setShowBack] = useState(true);
 
   // -- Effects --
   useEffect(() => {
-    // Shuffle products once
+    // Slideshow
+    const interval = setInterval(() => {
+      setCurrentHero((prev) => (prev + 1) % heroImages.length);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
+  useEffect(() => {
+    // Fade out overlay
+    const t = setTimeout(() => setColorOverlay(false), 500);
+    return () => clearTimeout(t);
+  }, []);
+  useEffect(() => {
+    // Shuffle products
     const shuffled = [...amazonProducts].sort(() => Math.random() - 0.5);
     setAllProducts(shuffled);
     setPage(1);
 
     const handleScroll = () => {
-      // Hide "Back" if scrolling
       setShowBack(window.scrollY < 80);
-      // Handle pinned vision board floating
       if (pinnedTriggerRef.current && pinnedContainerRef.current) {
-        const trigTop = pinnedTriggerRef.current.getBoundingClientRect().top;
-        setIsPinnedFloating(trigTop < 0);
+        const triggerTop = pinnedTriggerRef.current.getBoundingClientRect().top;
+        setIsPinnedFloating(triggerTop < 0);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   useEffect(() => {
-    // Whenever page, or search color changes, load next batch
+    // Paginate or re-sort
     if (!allProducts.length) return;
     setIsFetching(true);
 
@@ -228,7 +244,6 @@ export default function ModernUploader() {
     setHasMore(batch.length === pageSize);
     setIsFetching(false);
   }, [page, activeSearchColor, allProducts]);
-
   useEffect(() => {
     // Infinite scroll observer
     if (!sentinelRef.current) return;
@@ -254,7 +269,6 @@ export default function ModernUploader() {
     const url = URL.createObjectURL(file);
     setUploadedImageUrl(url);
     setHasUploaded(true);
-
     const color = await extractColor(file);
     handleManualColor(color);
   }
@@ -281,8 +295,9 @@ export default function ModernUploader() {
   }
   function togglePin(productId: number) {
     setPinned((prev) => {
-      const hasIt = prev.includes(productId);
-      const updated = hasIt ? prev.filter((id) => id !== productId) : [...prev, productId];
+      const updated = prev.includes(productId)
+        ? prev.filter((id) => id !== productId)
+        : [...prev, productId];
       localStorage.setItem("pinnedProducts", JSON.stringify(updated));
       return updated;
     });
@@ -300,20 +315,20 @@ export default function ModernUploader() {
     setColorWheelHsl({ h: 0, s: 50, l: 50 });
   }
 
-  // -- Vision board pinned color highlights --
+  // -- Vision board colors --
   const pinnedColors = allProducts
     .filter((p) => pinned.includes(p.id) && p.dominantColor)
     .map((p) => p.dominantColor);
   const uniquePinnedColors = Array.from(new Set(pinnedColors)).slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 text-gray-800 pb-20">
-      {/* "Back" Button */}
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 text-gray-800 pb-20">
+      {/* Back Button */}
       {(hasUploaded || selectedColor) && showBack && (
         <div className="fixed top-4 left-4 z-50">
           <button
             onClick={resetAll}
-            className="flex items-center gap-1 px-2 py-1 bg-black/40 rounded text-white hover:bg-black/60 text-sm"
+            className="flex items-center gap-1 px-2 py-1 bg-black/40 rounded hover:bg-black/60 text-sm text-white"
           >
             <ArrowLeft className="w-4 h-4" />
             Back
@@ -321,23 +336,38 @@ export default function ModernUploader() {
         </div>
       )}
 
-      {/* Hero Section (new design) */}
-      <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden flex items-center justify-center">
-        <div className="absolute inset-0 bg-gray-300/10" />
-        <div className="z-10 text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-extrabold">
-            <span className="text-gray-900">SHOP BY</span>{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+      {/* Hero Slideshow (original) */}
+      <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
+        <div
+          className={`absolute inset-0 bg-slate-900 transition-opacity duration-500 z-30 ${
+            colorOverlay ? "opacity-100" : "opacity-0"
+          }`}
+        />
+        {heroImages.map((img, i) => (
+          <div
+            key={img}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              currentHero === i ? "opacity-100 z-20" : "opacity-0 z-10"
+            }`}
+            style={{ background: `url('${img}') center/cover no-repeat` }}
+          >
+            <div className="absolute inset-0 bg-black/40" />
+          </div>
+        ))}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-40 px-4">
+          <h1 className="text-4xl md:text-6xl font-extrabold flex flex-wrap items-center justify-center gap-2">
+            <span className="text-white drop-shadow-lg">SHOP BY</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-[length:200%_200%] animate-gradient-x drop-shadow-lg">
               COLOR
             </span>
           </h1>
-          <p className="mt-2 text-xl md:text-2xl text-gray-700">
-            Find furniture & décor that perfectly matches your style.
+          <p className="mt-2 text-xl md:text-2xl font-light drop-shadow-md text-white">
+            Find matching furniture & decor in your exact color
           </p>
         </div>
       </div>
 
-      {/* Vision Board Trigger */}
+      {/* Vision Board trigger */}
       <div ref={pinnedTriggerRef} />
 
       {/* Vision Board */}
@@ -365,7 +395,7 @@ export default function ModernUploader() {
               <span className="text-xs text-gray-500">{pinned.length} items</span>
               <button
                 onClick={() => setVisionCollapsed(!visionCollapsed)}
-                className="p-1 bg-gray-200 hover:bg-gray-300 rounded"
+                className="p-1 bg-gray-200 hover:bg-gray-300 rounded transition"
               >
                 {visionCollapsed ? (
                   <ChevronDown className="w-4 h-4 text-gray-600" />
@@ -406,7 +436,7 @@ export default function ModernUploader() {
                       <img
                         src={product.image}
                         alt={product.description}
-                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-125"
+                        className="w-full h-full object-cover scale-150 transition-transform duration-500 hover:scale-125"
                       />
                     </div>
                   </a>
@@ -418,18 +448,23 @@ export default function ModernUploader() {
       )}
       {isPinnedFloating && pinned.length > 0 && <div className="h-[120px]" />}
 
-      {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-4 pb-20 text-center">
+      {/* Main container */}
+      <div className="max-w-6xl mx-auto px-4">
+        {/* If user hasn't uploaded or chosen a color */}
         {!hasUploaded && !selectedColor && (
-          <>
+          <div className="text-center mb-12">
             <h3 className="text-xl md:text-2xl font-bold text-gray-800">
               Select your color to start.
             </h3>
-            <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-8">
-              {/* Upload */}
-              <label className="group cursor-pointer flex flex-col items-center">
-                <div className="p-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-gray-400 transition">
-                  <Upload className="w-10 h-10 text-blue-500 group-hover:scale-110 transition-transform" />
+            <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-8 mb-12">
+              {/* Upload with drag & drop */}
+              <label
+                onDragOver={handleDragOver}
+                onDrop={(e) => handleDrop(e, processUpload)}
+                className="group cursor-pointer flex flex-col items-center justify-center"
+              >
+                <div className="p-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-gray-400 transition flex flex-col items-center justify-center">
+                  <Upload className="w-10 h-10 text-gray-400 group-hover:scale-110 transition-transform" />
                   <span className="mt-2 text-sm md:text-base font-medium text-gray-700">
                     Upload
                   </span>
@@ -442,10 +477,10 @@ export default function ModernUploader() {
                 />
               </label>
 
-              {/* Snap (Camera) */}
-              <label className="group cursor-pointer flex flex-col items-center">
-                <div className="p-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-gray-400 transition">
-                  <Camera className="w-10 h-10 text-orange-500 group-hover:scale-110 transition-transform" />
+              {/* Snap */}
+              <label className="group cursor-pointer flex flex-col items-center justify-center">
+                <div className="p-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-gray-400 transition flex flex-col items-center justify-center">
+                  <Camera className="w-10 h-10 text-gray-400 group-hover:scale-110 transition-transform" />
                   <span className="mt-2 text-sm md:text-base font-medium text-gray-700">
                     Snap
                   </span>
@@ -459,37 +494,37 @@ export default function ModernUploader() {
                 />
               </label>
 
-              {/* Select (Palette) */}
+              {/* Select */}
               <div
                 onClick={() => setShowWheel(true)}
-                className="group cursor-pointer flex flex-col items-center"
+                className="group cursor-pointer flex flex-col items-center justify-center"
               >
-                <div className="p-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-gray-400 transition">
-                  <Palette className="w-10 h-10 text-green-500 group-hover:scale-110 transition-transform" />
+                <div className="p-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-gray-400 transition flex flex-col items-center justify-center">
+                  <Palette className="w-10 h-10 text-gray-400 group-hover:scale-110 transition-transform" />
                   <span className="mt-2 text-sm md:text-base font-medium text-gray-700">
                     Select
                   </span>
                 </div>
               </div>
             </div>
-          </>
+          </div>
         )}
 
         {/* Color Picker Modal */}
         {showWheel && (
           <div
-            className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center"
+            className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center"
             onClick={() => {
               setShowWheel(false);
               setActiveEditingColor(null);
             }}
           >
             <div
-              className="bg-white p-6 rounded-xl shadow-xl"
+              className="bg-white p-6 rounded-xl shadow-lg"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex justify-between items-center mb-4">
-                <h3 className="text-lg font-semibold">
+                <h3 className="text-lg font-semibold text-gray-800">
                   {activeEditingColor ? "Modify Color" : "Choose Color"}
                 </h3>
                 <div className="flex gap-2">
@@ -520,33 +555,33 @@ export default function ModernUploader() {
                 </button>
                 <button
                   onClick={() => {
-                    const newColor = hslToHex(
+                    const newCol = hslToHex(
                       colorWheelHsl.h,
                       colorWheelHsl.s,
                       colorWheelHsl.l
                     );
                     if (activeEditingColor) {
                       if (activeEditingColor === "primary") {
-                        setSelectedColor(newColor);
-                        setComplementaryColor(getComplementaryColor(newColor));
-                        setTriadicColors(getTriadicColors(newColor));
-                        setActiveSearchColor(newColor);
+                        setSelectedColor(newCol);
+                        setComplementaryColor(getComplementaryColor(newCol));
+                        setTriadicColors(getTriadicColors(newCol));
+                        setActiveSearchColor(newCol);
                       } else if (activeEditingColor === "complement") {
-                        setComplementaryColor(newColor);
-                        setActiveSearchColor(newColor);
+                        setComplementaryColor(newCol);
+                        setActiveSearchColor(newCol);
                       } else {
-                        const [c1, c2] = triadicColors || [newColor, newColor];
+                        const [c1, c2] = triadicColors || [newCol, newCol];
                         if (activeEditingColor === "accent1") {
-                          setTriadicColors([newColor, c2]);
-                          setActiveSearchColor(newColor);
+                          setTriadicColors([newCol, c2]);
+                          setActiveSearchColor(newCol);
                         } else {
-                          setTriadicColors([c1, newColor]);
-                          setActiveSearchColor(newColor);
+                          setTriadicColors([c1, newCol]);
+                          setActiveSearchColor(newCol);
                         }
                       }
                       setPage(1);
                     } else {
-                      handleManualColor(newColor);
+                      handleManualColor(newCol);
                     }
                     setShowWheel(false);
                     setActiveEditingColor(null);
@@ -560,7 +595,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Display chosen colors */}
+        {/* Chosen Colors */}
         {selectedColor && (
           <div className="mb-10 flex flex-col items-center">
             {uploadedImageUrl && (
@@ -599,7 +634,6 @@ export default function ModernUploader() {
                 <ArrowDown className="w-6 h-6 text-gray-400 mt-2" />
               </div>
             )}
-
             <div className="flex items-center justify-center gap-6">
               {/* Primary */}
               <div className="relative group cursor-pointer">
@@ -670,7 +704,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Products Grid */}
+        {/* Product Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((p) => {
             const isPinned = pinned.includes(p.id);
@@ -734,7 +768,8 @@ export default function ModernUploader() {
 
       {/* Sticky Footer */}
       <footer className="fixed bottom-0 left-0 w-full bg-gray-900 text-white py-2 text-center text-sm z-50">
-        Contact us at: <a href="mailto:info@example.com">info@shop-by-color.com</a>
+        Contact us at:{" "}
+        <a href="mailto:info@example.com">info@shop-by-color.com</a>
       </footer>
     </div>
   );
