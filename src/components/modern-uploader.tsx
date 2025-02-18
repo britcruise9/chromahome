@@ -801,7 +801,7 @@ export default function ModernUploader() {
 
       {/* Sticky Footer */}
       <footer className="fixed bottom-0 left-0 w-full bg-gray-900 text-white py-2 text-center text-sm z-50">
-        Contact us at: <a href="mailto:info@example.com">info@example.com</a>
+        Contact us at: <a href="mailto:info@example.com">info@shop-by-color.com</a>
       </footer>
     </div>
   );
