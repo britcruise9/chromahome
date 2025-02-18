@@ -36271,5 +36271,1355 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D4TVTB24/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#b9ada4"
+  },
+  {
+    "id": 3575,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "Dandelion Wall Art Blue Large Picture for Living Room Canvas Art Wall Decor Above Bed Wall Decor White Flower Artwork for Walls Wall Paintings Modern Art Aall Decor Framed Wall Art for Bedroom 29×58IN",
+    "image": "https://m.media-amazon.com/images/I/81DAV7a4oEL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09T9T4Q1T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1c2933"
+  },
+  {
+    "id": 3576,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "YFvrPt Framed Matisse Flower Market Wall Art Light Blue Canvas Poster Prints Wall Decor Set of 3 Abstract Stylish Minimalist Picture Gallery Painting Artwork for Bedroom Living Room 12x16 Inch",
+    "image": "https://m.media-amazon.com/images/I/61R93Ql7-mL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D57V45W3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#37548f"
+  },
+  {
+    "id": 3577,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "Mountain Pictures Wall Art Blue Smoky Ridge Mountains Wall Decor Mountain Nature Landscape Pictures Wall Framed For Living Room Bedroom Wall Decor 12\" x16“x3 Piece",
+    "image": "https://m.media-amazon.com/images/I/61FdqC6psKL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJR4CDKF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#020e3d"
+  },
+  {
+    "id": 3578,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "SIGNWIN 3 Piece Framed Canvas Wall Art Blue and Brown Watercolor Nature Wilderness Illustrations Abstract Traditional Relax/Calm Home Artwork Decoration for Living Room, Bedroom - 16\"x24\"x3 Natural",
+    "image": "https://m.media-amazon.com/images/I/615sqkvn-kL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08HV75FQ4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#81b2d0"
+  },
+  {
+    "id": 3579,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "VIYYIEA Vintage Framed Botanical Wall Art Decor, Living Room Bedroom Blue Campanula Pictures Retro Wall Decor, Framed Canvas Prints Artwork, Farmhouse Flower Paintings, 12x16 Inch",
+    "image": "https://m.media-amazon.com/images/I/81I-NNAVN0L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1K1C7YB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1a1d25"
+  },
+  {
+    "id": 3580,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Wieco Art Blue Abstract Flowers 3 Panels Giclee Canvas Prints Wall Art Modern Pictures Artwork for Living Room Bedroom and Home Decorations",
+    "image": "https://m.media-amazon.com/images/I/51d8I8nAX0S._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07VSD81JT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#5b7eb0"
+  },
+  {
+    "id": 3581,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Zhengmy 2 Pieces Metal Tree Leaf Wall Decor Vine Olive Branch Leaf Wall Art Living Room, Hallway Wall Decor Outdoor Decoration(Vintage Blue)",
+    "image": "https://m.media-amazon.com/images/I/71Hnn-PyoNL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D22BKZVY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#576e78"
+  },
+  {
+    "id": 3582,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "Blue Abstract Wall Art-Grey Abstract Picture 3 Piece Living Room Office Canvas Wall Art Print Wall Painting Modern Artwork for Home Bedroom Wall Decor",
+    "image": "https://m.media-amazon.com/images/I/81ZGFaV84WL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09PY8ZPDH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#93a3ad"
+  },
+  {
+    "id": 3583,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "Empire Art Direct Blue Wave 2 Frameless Free Floating Tempered Glass Panel Graphic Wall Art, 24\" x 63\" x 0.2\", Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/81pNeIFSb6L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0719BX1KV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#163344"
+  },
+  {
+    "id": 3584,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "Ardemy Tree Canvas Wall Art Teal Tree of Life Landscape Picture Modern Nature Painting, Abstract Blue Artwork Framed for Living Room Bedroom Bathroom Dinning Room Home Office Wall Decor, 40\"x20\"",
+    "image": "https://m.media-amazon.com/images/I/717oTbq5cmL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYSDXMWV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6e8795"
+  },
+  {
+    "id": 3585,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "Wall Art for Living Room 100% Hand-Painted Flower Oil Painting On Canvas Gallery Wrapped Large Framed Floral Plum Blossom Tree Teal Blue Artwork for Home Bedroom Decor 48\"x24\"",
+    "image": "https://m.media-amazon.com/images/I/71AQ71Eq4UL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07RTWGQRS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6d868a"
+  },
+  {
+    "id": 3586,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "Takfot Blue Wall Art Rustic Canvas Paintings Vintage Leaf Art Prints Botanical Pictures Farmhouse Leaves Artwork Home Decor Stretched and Wrapped for Bathroom Living Room 12x16 Inch, 3 Panels",
+    "image": "https://m.media-amazon.com/images/I/61PgY-383oL._SY800_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07XMKVBL5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e5e8eb"
+  },
+  {
+    "id": 3587,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "ERQINHUA Large Canvas Wall Art For Living Room Farmhouse Wall Decor For Bedroom Abstract Paintings Blue Tree Black Framed Wall Pictures Artwork Office Mural To Hang Dormitory Home Decor 20x40 In",
+    "image": "https://m.media-amazon.com/images/I/81cD3+RslIL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKN7QH9V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9bd7ff"
+  },
+  {
+    "id": 3588,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "SERIMINO 3 Piece Lotus Flower Canvas Wall Art for Living Room, Blue Floral Picture Wall Decor for Dining Room Bedroom, Art Print Painting for Home Decorations 12\"X16\"",
+    "image": "https://m.media-amazon.com/images/I/71cOucOSRiL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08VP27GL7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6c9ea5"
+  },
+  {
+    "id": 3589,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "Pyradecor Blue Flickering Flower Modern Abstract Paintings Canvas Wall Art Gallery Wrapped Grace Floral Pictures on Canvas Prints 4 Panels Artwork for Living Room Bedroom Office Home Decorations",
+    "image": "https://m.media-amazon.com/images/I/610c+2FL9aL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07B3RFFRJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#101153"
+  },
+  {
+    "id": 3590,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "Jetec 3 Pieces Rustic Wood Sign Wall Decor Live Love Blessed Family and Love Quote Sign Farmhouse Wall Mount Decoration for Home Kitchen Living Room, 12 x 3 x 0.2 Inch(Blue Series, Classic)",
+    "image": "https://m.media-amazon.com/images/I/81vrQK1ZN3L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B092MCM8K3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8ea6b9"
+  },
+  {
+    "id": 3591,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "ketilly Art Blue Tree of Life Wall Art For Living Room Farmhouse Kitchen Abstract Wall Decor For Bedroom Canvas Prints Pictures For Bathroom Canvas Wall Painting Unframed 15X12 Inches",
+    "image": "https://m.media-amazon.com/images/I/81OLcYn0WFL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKCWK21G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#849ba8"
+  },
+  {
+    "id": 3592,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "YaSheng Art - sea landscapes Abstract Oil Painting, Oil Painting on Canvas Texture Blue Ocean scenery Oil Painting Hand-Painted Abstract Artwork Pictures Canvas Wall Art Paintings 24x48inch",
+    "image": "https://m.media-amazon.com/images/I/61Z0RZxgkiL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07YSHTGSN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#51737d"
+  },
+  {
+    "id": 3593,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "Abstract Wall Art Nave Blue Modern Canvas Pictures Art Print Gold Contemporary Artwork Painting Decor for Living Room Bedroom Home Office Decorations(20\"x40\")",
+    "image": "https://m.media-amazon.com/images/I/61crVyn5lKL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKK47F2D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c8cfd4"
+  },
+  {
+    "id": 3594,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "NINEASO Blue Quasi-Gold Wall Art - Deep Blue Ocean Pictures for Home Decor Modern Elegance Canvas Print Wall Decor Vast Ocean from Above Abstract Artwork for Living Room Bedroom 20\" x 40\"",
+    "image": "https://m.media-amazon.com/images/I/81YLYzO1ORL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNSR71FG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2a4162"
+  },
+  {
+    "id": 3595,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "INK+IVY Cerulean Stones Wall Décor Natural Agate, Glass Framed Art for Living Room Entryway Home Accent, Ready to Hang Bedroom Decoration, 13.78\" W x 23.62\" H, Blue MT95B-0064",
+    "image": "https://m.media-amazon.com/images/I/510l7u9iyfL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MH8P8MZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#383c42"
+  },
+  {
+    "id": 3596,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Framed Navy Blue Modern Abstract Wall Art, Canvas Paintings Artwork for Walls, Minimalist Blue Art Prints Pictures for Living Room, Hallway, Bedroom, Office, Bathroom Wall Decor -24x24 Inch",
+    "image": "https://m.media-amazon.com/images/I/81Eboc5P6YL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9PXFRBM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cccbc6"
+  },
+  {
+    "id": 3597,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "XLSJERST Abstract Canvas Wall Decor - Modern Living Room Wall Art Elegant Combination of Tones Black and White Gray Background Blue Gradient Picture Size 20x40",
+    "image": "https://m.media-amazon.com/images/I/81INVCrx5pL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3TJG8MY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6c7780"
+  },
+  {
+    "id": 3598,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "Navy Blue Botanical Wall Art Set of 6, Minimalist Abstract Botanical Prints Watercolor Blue White Leaf Plant Wall Decor Canvas Painting, Boho Floral Botanical Wall Decor for Bathroom, Bedroom, Living",
+    "image": "https://m.media-amazon.com/images/I/61zcu5LPfXL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJTKJ36J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0dad0"
+  },
+  {
+    "id": 3599,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "BingruiArt Navy Blue Flower Canvas Wall Art Daisy Floral Poster Print Set of 3 Wildflower Pictures Abstract Botanical Paintings Decor For Living Room Bedroom Bathroom 12x16in framed",
+    "image": "https://m.media-amazon.com/images/I/71UojqT4GlL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DL461YLB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0d324e"
+  },
+  {
+    "id": 3600,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "NINEASO Blue Abstract Canvas Wall Art - Turbulent Abstract Ocean Picture Blue Green Teal Wall Decor Roaring Waves Canvas Painting Abstract Prints Artwork for Living Room Bedroom Decoration 20\" x 40\"",
+    "image": "https://m.media-amazon.com/images/I/81GAzi15UcL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CHFD3KCS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#406b87"
+  },
+  {
+    "id": 3601,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "Dandelion Wall Art Blue Canvas Print Picture Framed Wall Art for Living Room Large White Flower Flora Home Decoration Modern(With Soild wood dark framed) Artwork Wall Decor Wall Art Bedroom",
+    "image": "https://m.media-amazon.com/images/I/81TpYEknUrL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B7LDJS2W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3d5976"
+  },
+  {
+    "id": 3602,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "Foggy Forest Canvas Wall Art - Indigo Blue Abstract Trees Pictures for Wall Decor Nature Canvas Painting Modern Printing Artwork for Living Room Bedroom Home Office Wall Decoration 20\" x 40\"",
+    "image": "https://m.media-amazon.com/images/I/61rN5RJ+WHL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CG196JTS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0d222f"
+  },
+  {
+    "id": 3603,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "Home Decor Mountain Wall Art Blue Large Framed Artwork for Living Room Bedroom Office Wall Decorations 29x58 Inch",
+    "image": "https://m.media-amazon.com/images/I/61H3PQwuqfL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJJB367S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2f4769"
+  },
+  {
+    "id": 3604,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "SIXTTART Forest Pictures Wall Art for Office - Modern Blue Canvas Art Wall Decor for Living Room - 3 Piece Wall Art for Bedroom Size 12\" x 16\"",
+    "image": "https://m.media-amazon.com/images/I/81C2oAQfC4L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMDK41QQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#425465"
+  },
+  {
+    "id": 3605,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "Stupell Industries Navy Blue Bow Heels Chic Glam Bookstack, Designed by Amanda Greenwood Canvas Wall Art, 16x20",
+    "image": "https://m.media-amazon.com/images/I/81dIn6A9+yL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B099123Z9R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#223153"
+  },
+  {
+    "id": 3606,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "Mofutinpo Abstract Canvas Wall Art Blue Pictures for Living Room Wall Decoration Large Modern Wall Art Office Artwork Wall Decor Graffiti Paintings for Bedroom 24×48in",
+    "image": "https://m.media-amazon.com/images/I/818DKkYMr3L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CHQL58WY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#93afc2"
+  },
+  {
+    "id": 3607,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "HVEST Farmhouse Floral Wall Art for Living Room, Blue and White Daisy Flower and Butterfly on Rustic Wood Board Canvas Wall Art Framed Artwork Ready to Hang for Bathroom Bedroom Decor, 16L X 12W",
+    "image": "https://m.media-amazon.com/images/I/81YIonqVMTL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CCY6V468/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7e92b7"
+  },
+  {
+    "id": 3608,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "DJSYLIFE Bathroom Wall Decor Navy Blue Flower Paintings Canvas Prints Decoration Vintage Wall Art for Bedroom Framed Ready to Hang 12\" Wx12 Hx4 pcs",
+    "image": "https://m.media-amazon.com/images/I/91W9ZfMKUyL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09YY72P8Y/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cbd3dc"
+  },
+  {
+    "id": 3609,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "Blue Flower Wall Art Chinoiserie Floral Canvas Wall Decor Botanical Wall Art Wildflower Floral Prints Blue Flower Pictures Botanical Artwork for Bathroom Bedroom 12x16 Inch Unframed Set of 3",
+    "image": "https://m.media-amazon.com/images/I/71vjDS81FKL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D56PDKWB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dddcda"
+  },
+  {
+    "id": 3610,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "AJAZIKO Blue Abstract Wall Art Modern Art Wall Decor Artwork For Walls Living Room Large Painting Size 20x40 Office Pictures For Wall Navy Gold Contempor Decorations For Bedroom",
+    "image": "https://m.media-amazon.com/images/I/81fKFFUs+HL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CC9GJQYM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1c2439"
+  },
+  {
+    "id": 3611,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "Xuhal 15 Pcs Boho Wall Basket Decor Hanging Woven Wall Basket Decorative Rustic Handcrafted Seagrass Round Woven Hanging Art for Home Farmhouse Kitchen Table Living Room(Blue Classic Style)",
+    "image": "https://m.media-amazon.com/images/I/916nYiA26cL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5L77YHZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#212036"
+  },
+  {
+    "id": 3612,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "Zessonic Blue Abstract Wall Art Set of 2- Framed Twist Stroke Minimalist Graffiti on White Background Modern Canvas Artwork for Living Room, Bedroom, Office Decor, 16 x 24 Inches x 2",
+    "image": "https://m.media-amazon.com/images/I/71bGy6-p9AL._AC_SY606_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DG26F5K3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6d7790"
+  },
+  {
+    "id": 3613,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "Trademark Fine Art, 22x32 Marche des Fleurs Blue Gold by Danhui NAI",
+    "image": "https://m.media-amazon.com/images/I/81RQpwrG6rL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07L8YP69S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b4aa98"
+  },
+  {
+    "id": 3614,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "Blue Wall Art Poster Prints, Set of 9 Matisse Wall Decor for Dorm Bedroom, Trendy Aesthetic Pictures for Teens Boys Girls, Maximalism Posters Wall Decorations",
+    "image": "https://m.media-amazon.com/images/I/81D0Ws9GHfL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7K3FD4Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7ba6c5"
+  },
+  {
+    "id": 3615,
+    "title": "Amazon Product 41",
+    "price": 0,
+    "description": "PLKMK Navy Blue Abstract art wall decor Set of 4 - Boho Wall Art, Minimalist Geometric Wall Art Prints Decor, Bohemian Wall Art Decor for Bedroom Office, Navyblue 8x10 (Unframed)",
+    "image": "https://m.media-amazon.com/images/I/61UuYwU30NL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D174DXQ2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#445d74"
+  },
+  {
+    "id": 3616,
+    "title": "Amazon Product 42",
+    "price": 0,
+    "description": "Henri Matisse Wall Art Prints Abstract Aesthetic Canvas Wall Art Blue Matisse Wall Decor Abstract Matisse Poster Minimalist Pictures Flower Market Painting for Bathroom 12x16 Inch Unframed Set of 3",
+    "image": "https://m.media-amazon.com/images/I/71zkImWtD7L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CGD8X7XK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2e5290"
+  },
+  {
+    "id": 3617,
+    "title": "Amazon Product 43",
+    "price": 0,
+    "description": "3 Pieces Metal Vase Flowers Wall Arts - Rustic Farmhouse Style Décor Metal Wall Art Black Minimalist Flower Natural Themed Wall Decors for Home Bedroom Dining Room Housewarming (Brown-Blue, Vase-C)",
+    "image": "https://m.media-amazon.com/images/I/71GYDemArKL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3TZ4MNG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6d7d5"
+  },
+  {
+    "id": 3618,
+    "title": "Amazon Product 44",
+    "price": 0,
+    "description": "UPWOIGH Wood Framed Wall Art, Minimalist 12x16in Botanical Wall Decor, Fern Plants Framed Prints, White Leafs Tropical Plants, Blue Naval Background High-Frame Process, Bedroom, Set of 3",
+    "image": "https://m.media-amazon.com/images/I/91UGrQ3Y6XL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BNQ1ZFQZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#202f46"
+  },
+  {
+    "id": 3619,
+    "title": "Amazon Product 45",
+    "price": 0,
+    "description": "Drsoum Mid-century Boho Geometric Abstract Decor Blue White Grunge Minimalist Bohemian Wall Art Framed Canvas Prints 8\"x 10\"x 6pcs Natural Framed",
+    "image": "https://m.media-amazon.com/images/I/81a0XXP-hkL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFM739QW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eee7e2"
+  },
+  {
+    "id": 3620,
+    "title": "Amazon Product 46",
+    "price": 0,
+    "description": "15 Pcs Boho Wall Basket Decor Woven Rattan Seagrass Wall Decor Hanging Rustic Farmhouse Western Art Decoration for Nursery Living Room Bedroom Home Kitchen(Blue Style)",
+    "image": "https://m.media-amazon.com/images/I/91Hh8ceRSZL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN9D8J15/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1d6c8"
+  },
+  {
+    "id": 3621,
+    "title": "Amazon Product 47",
+    "price": 0,
+    "description": "HLNIUC Blue Abstract Line Framed Wall Art Set, Modern Watercolor Wave Canvas Wall Decor, Natural Landscape Wall Painting, Paint Stroke Art Print for Living Room, Bedroom, Office - 16\"x24\"x3",
+    "image": "https://m.media-amazon.com/images/I/61uF5JdLGWL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D763J58H/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0c0e19"
+  },
+  {
+    "id": 3622,
+    "title": "Amazon Product 48",
+    "price": 0,
+    "description": "TEIPAI Silver and Blue Wall Decor for Living Room, 7PCS Metal Wall Hanging Sculptures for Office Apartment Bathroom Decoration, Modern Silver Home Decor for Staircase Hallway Porch Housewarming Gift",
+    "image": "https://m.media-amazon.com/images/I/71pGDcxykqL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJ33TMCN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#334051"
+  },
+  {
+    "id": 3623,
+    "title": "Amazon Product 49",
+    "price": 0,
+    "description": "97 Decor Blue Lucky Poster - Playing Card Wall Art, Poker Room Decor, Blue Trendy Wall Art, Funky Posters Aesthetic Pictures, Retro Ace Prints Queen of Hearts Decor for Bedroom (8x10 UNFRAMED)",
+    "image": "https://m.media-amazon.com/images/I/81qDMgaHOpL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJC8NHBC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#345276"
+  },
+  {
+    "id": 3624,
+    "title": "Amazon Product 50",
+    "price": 0,
+    "description": "YPY Blue Flowers Canvas Wall Art: Abstract Bouquet in Vase Artwork Prints for Teen Girl Bedroom Blue Floral Picture Poster Bathroom Decor 12\" x 15\"",
+    "image": "https://m.media-amazon.com/images/I/71Q-0cZ-ETL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C69LR3S8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3773a6"
+  },
+  {
+    "id": 3625,
+    "title": "Amazon Product 51",
+    "price": 0,
+    "description": "KAIRNE Classic Chinoiserie Framed Canvas Wall Art Set, Blue Watercolor Flower Wall Decor, Blue and White Plant Wall Painting, Minimalist Floral Art Print for Living Room, Bedroom, Office - 16\"×24\"×3",
+    "image": "https://m.media-amazon.com/images/I/81OL4KuSUhL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D41V2HLD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddebfc"
+  },
+  {
+    "id": 3626,
+    "title": "Amazon Product 52",
+    "price": 0,
+    "description": "Navy Blue Flowers Canvas Wall Art Bedroom Wall Decor Minimalistic Bouquet Canvas Pictures Blossom Watercolor Artwork for Living Room Bathroom Home Office Decoration Indigo Floral Canvas Prints 12 x 16",
+    "image": "https://m.media-amazon.com/images/I/61WjzTLFyQL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08JLS86S5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c5cacb"
+  },
+  {
+    "id": 3627,
+    "title": "Amazon Product 53",
+    "price": 0,
+    "description": "Inspirational Wall Art Canvas Poster for Bedroom, Office, Living Room - Framed Canvas - 10 x 16.5 Inch Motivational Print",
+    "image": "https://m.media-amazon.com/images/I/7157QCbgVvL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CG1YQN9L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4d5765"
+  },
+  {
+    "id": 3628,
+    "title": "Amazon Product 54",
+    "price": 0,
+    "description": "Wall Art For Living Room black and white Blue tree moon Canvas Wall Decor for Home artwork Painting 12\" x 16\" 3 Pieces Canvas Print For bedroom Decor Modern Salon kitchen office Hang a picture",
+    "image": "https://m.media-amazon.com/images/I/71UULrVw5ZL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07DW1DLWF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#55acdf"
+  },
+  {
+    "id": 3629,
+    "title": "Amazon Product 55",
+    "price": 0,
+    "description": "Matisse Flower Wall Art Prints Blue Abstract Wall Decor Aesthetic Matisse Canvas Wall Art Picasso Gallery Posters Matisse Preppy Pictures Flower Paintings for Bathroom 8x10 Inch Unframed Set of 6",
+    "image": "https://m.media-amazon.com/images/I/71aa6N+BOYL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CG3GWCSW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#355087"
+  },
+  {
+    "id": 3630,
+    "title": "Amazon Product 56",
+    "price": 0,
+    "description": "ArtbyHannah Framed Wall Art for Living Room, 6 Pieces Blue Wall Art with Abstract Color Blocks and Flowers for Wall Decor, Multi Sizes",
+    "image": "https://m.media-amazon.com/images/I/719uHaPo9-L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CB3Y31NS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#daddde"
+  },
+  {
+    "id": 3631,
+    "title": "Amazon Product 57",
+    "price": 0,
+    "description": "Metal Flowers Wall Decor Blue and Gold Wall Art Hanging Decorations 3 Pc Rustic Modern Floral Sculpture Wall Accent Artwork Indoor Outdoor for Bathroom Bedroom Living Room Garden Patio Porch 10 Inch",
+    "image": "https://m.media-amazon.com/images/I/810NDA-o+RL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7LL76PS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#738f97"
+  },
+  {
+    "id": 3632,
+    "title": "Amazon Product 58",
+    "price": 0,
+    "description": "okaxscm Blue Coquette Trendy Preppy Wall Art Prints Set of 4, Coquette Room Decor, Preppy Room Decor Aesthetic, Blue Bow Disco 8 Ball Cherry Wall Decor Posters for Girls Bedroom Dorm, 8x10 Unframed",
+    "image": "https://m.media-amazon.com/images/I/71OBZ1eLbLL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9WJBKS8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dce6ea"
+  },
+  {
+    "id": 3633,
+    "title": "Amazon Product 59",
+    "price": 0,
+    "description": "Farmhouse Blue Butterfly Flower Decor Wall Art Vintage Rustic Country Butterfly Just Breathe Pictures Wall Decor Canvas Painting Prints Artwork Home Decorations Framed for Bathroom Bedroom 16\"x12\"",
+    "image": "https://m.media-amazon.com/images/I/91Lt5QbiuEL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C3921GNG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bdbfbf"
+  },
+  {
+    "id": 3634,
+    "title": "Amazon Product 60",
+    "price": 0,
+    "description": "LHIUEM Large Navy Blue Abstract Shapes Framed Canvas Wall Art Set, Modern Tree Rings Wall Decor, Neutral Wooden Artwork for Living Room, Bedroom, Dining Room, Office -16\"x24\"x3",
+    "image": "https://m.media-amazon.com/images/I/81xDKG6VGzL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3TT9Z8K/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cdc7c1"
+  },
+  {
+    "id": 3635,
+    "title": "Amazon Product 61",
+    "price": 0,
+    "description": "KLAKLA Large Wall Art for Living Room - Abstract Wall Decor Framed Picture Artwork for Wall Decorative Paintings Blue and White Modern Office Bedroom Art",
+    "image": "https://m.media-amazon.com/images/I/81ZO0rTk9IL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D12XKCKF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#37455b"
+  },
+  {
+    "id": 3636,
+    "title": "Amazon Product 62",
+    "price": 0,
+    "description": "KREATIVE ARTS Beautiful Blue Flower Canvas Print Wall Art Decor for Home or Office Stunning Floral Wall Art Ready to Hang for Bedroom Bathroom Living Room Each Panel 12×12 Inch Set of 4 (Small)",
+    "image": "https://m.media-amazon.com/images/I/91ocLgkOuwL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BZPHWSS8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0d0cf"
+  },
+  {
+    "id": 3637,
+    "title": "Amazon Product 63",
+    "price": 0,
+    "description": "Abstract Canvas Wall Art For Living Room Bedroom Decoration Office Wall Painting, Bathroom Wall Decor Gray Blue Canvas Pictures Modern Home Decoration Wall Artwork, Fashion Wall Art 16x12 Inch/ 3 Piece",
+    "image": "https://m.media-amazon.com/images/I/51NCaK+zqOL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08T1D9KX9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2b516d"
+  },
+  {
+    "id": 3638,
+    "title": "Amazon Product 64",
+    "price": 0,
+    "description": "Canvas Wall Art for Living Room Wall Decor for Bedroom Bathroom Black and White Paintings Modern 3 Piece Framed Canvas Art Prints Ready to Hang Inspirational Abstract Blue Pictures Home Decorations",
+    "image": "https://m.media-amazon.com/images/I/71c+zy+x-3L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08MJ8WG4X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#59d2dd"
+  },
+  {
+    "id": 3639,
+    "title": "Amazon Product 65",
+    "price": 0,
+    "description": "KREATIVE ARTS 3 Pieces Canvas Wall Art Navy Blue and Grey Flower Painting Art Prints Vintage Floral Picture Artwork Modern Bedroom Bathroom Wall Decor Framed Ready to Hang Each Panel 12x16 Inches",
+    "image": "https://m.media-amazon.com/images/I/716TwIoxEUL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C2YXK1TT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1e3e8"
+  },
+  {
+    "id": 3640,
+    "title": "Amazon Product 66",
+    "price": 0,
+    "description": "MHARTK66 Canvas Wall Art For Living Room Farmhouse Wall Decor For Bedroom Office Decorations Gray Wall Paintings Blue Tree Landscape Wall Pictures Artwork Ready to Hang for Home Decor art 40\"X20\"",
+    "image": "https://m.media-amazon.com/images/I/81i6EFEEFbL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DDPCJ1KF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#86a2af"
+  },
+  {
+    "id": 3641,
+    "title": "Amazon Product 67",
+    "price": 0,
+    "description": "Framed Abstract Wall Art for Living Room, Abstract Canvas Wall Art Set of 2, Blue Gray Abstract Artwork Prints for Bedroom Bathroom Wall Art Decor, 24x36 Inch",
+    "image": "https://m.media-amazon.com/images/I/81tUgd1NvEL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9WDTQYV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9eb9b2"
+  },
+  {
+    "id": 3642,
+    "title": "Amazon Product 68",
+    "price": 0,
+    "description": "Sxurmtiie Canvas Wall Art Abstract Art Paintings Blue Fantasy Colorful Graffiti on White Background Modern Artwork wall Decor for Living Room Bedroom Kitchen20 x40",
+    "image": "https://m.media-amazon.com/images/I/818beLviE5L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B1499QLK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#415671"
+  },
+  {
+    "id": 3643,
+    "title": "Amazon Product 69",
+    "price": 0,
+    "description": "Wieco Art Large Framed Art Giclee Canvas Prints of Starry Night by Vincent Van Gogh Paintings Reproduction Post-Impressionism Artwork for Living Room Home Bedroom Decorations, 40x30inch (Framed)",
+    "image": "https://m.media-amazon.com/images/I/91bRszGDHtL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BPLNJFT3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#535d90"
+  },
+  {
+    "id": 3644,
+    "title": "Amazon Product 70",
+    "price": 0,
+    "description": "Wieco Art Framed Art Canvas Prints of Cafe Terrace at Night Canvas Prints Wall Art by Van Gogh Paintings Reproduction Abstract Artwork for Wall Decor Golden Frame VAN-0060_5060-GF",
+    "image": "https://m.media-amazon.com/images/I/71IJ9C6K6HL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08HMWJPTP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#334553"
+  },
+  {
+    "id": 3645,
+    "title": "Amazon Product 71",
+    "price": 0,
+    "description": "Wieco Art Large Framed Canvas Wall Art Wassily Kandinsky Composition VIII Picture Print of Famous Paintings Abstract Canvas Prints for Living Room Home Decor Wall Decorations",
+    "image": "https://m.media-amazon.com/images/I/71Rwimh+gOL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B8C5H4XK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7e0db"
+  },
+  {
+    "id": 3646,
+    "title": "Amazon Product 72",
+    "price": 0,
+    "description": "YaSheng Art - sea landscapes Abstract Oil Painting, Oil Painting on Canvas Texture Blue Ocean scenery Oil Painting Hand-Painted Abstract Artwork Pictures Canvas Wall Art Paintings 24x48inch",
+    "image": "https://m.media-amazon.com/images/I/61Z0RZxgkiL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07YSHTGSN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#51737d"
+  },
+  {
+    "id": 3647,
+    "title": "Amazon Product 73",
+    "price": 0,
+    "description": "Wieco Art Blue Abstract Flowers 3 Panels Giclee Canvas Prints Wall Art Modern Pictures Artwork for Living Room Bedroom and Home Decorations",
+    "image": "https://m.media-amazon.com/images/I/51d8I8nAX0S._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07VSD81JT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3e4ec"
+  },
+  {
+    "id": 3648,
+    "title": "Amazon Product 74",
+    "price": 0,
+    "description": "ketilly Art Blue Tree of Life Wall Art For Living Room Farmhouse Kitchen Abstract Wall Decor For Bedroom Canvas Prints Pictures For Bathroom Canvas Wall Painting Unframed 15X12 Inches",
+    "image": "https://m.media-amazon.com/images/I/81OLcYn0WFL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKCWK21G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#849ba8"
+  },
+  {
+    "id": 3649,
+    "title": "Amazon Product 75",
+    "price": 0,
+    "description": "Abstract Wall Art Nave Blue Modern Canvas Pictures Art Print Gold Contemporary Artwork Painting Decor for Living Room Bedroom Home Office Decorations(20\"x40\")",
+    "image": "https://m.media-amazon.com/images/I/61crVyn5lKL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKK47F2D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c8cfd4"
+  },
+  {
+    "id": 3650,
+    "title": "Amazon Product 76",
+    "price": 0,
+    "description": "Bathroom Flower Picture Wall Art Abstract Blue and Gray White Floral Print on Canvas for Powder Room Decor 15 x 12 in",
+    "image": "https://m.media-amazon.com/images/I/617FDHT7NML._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CFZTTNG6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0a4066"
+  },
+  {
+    "id": 3651,
+    "title": "Amazon Product 77",
+    "price": 0,
+    "description": "HOMEOART Bathroom Wall Art Bath Tub Painting Picture Bathroom Wall Decor Framed Ready to Hang 12x12inchx3, Deep Blue",
+    "image": "https://m.media-amazon.com/images/I/71DCaMaO0KL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BMVKJ9JN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8d7d7"
+  },
+  {
+    "id": 3652,
+    "title": "Amazon Product 78",
+    "price": 0,
+    "description": "Joyhawk 4 Pieces Blue Flower Wall Decor For Bedroom, Accept-Let go-Have faith-Believe Wooden Inspirational Wall Art Decorations for Living Room Bathroom, Rustic Wooden Farmhouse Home Decor, 12 x 4 Inch",
+    "image": "https://m.media-amazon.com/images/I/81SBhR-L19L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BZYDYGV7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3a4750"
+  },
+  {
+    "id": 3653,
+    "title": "Amazon Product 79",
+    "price": 0,
+    "description": "NANKAI Art Hand-Painted White Texture Abstract Art Oil Painting Contemporary Minimalist Art Home Wall Decoration Painting 45x30 inch",
+    "image": "https://m.media-amazon.com/images/I/91sgsT+OogL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSBMWHSV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b8b9b7"
+  },
+  {
+    "id": 3654,
+    "title": "Amazon Product 80",
+    "price": 0,
+    "description": "NANKAI Art Hand-painted Blue thick texture Abstract Oil painting Modern minimalist style Wall Deco art 45x30 inch large canvas wall deco art",
+    "image": "https://m.media-amazon.com/images/I/91PwNarRvtL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSBNBL5D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4f686f"
+  },
+  {
+    "id": 3655,
+    "title": "Amazon Product 81",
+    "price": 0,
+    "description": "NANKAI Art Hand Painted Black Canvas Wall Art 48x24 inch Abstract Modern Oil Painting Contemporary Textured Wall Art Minimalist Artwork Home Decor",
+    "image": "https://m.media-amazon.com/images/I/71DQKpU6rfL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSBQDMWM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3e3e40"
+  },
+  {
+    "id": 3656,
+    "title": "Amazon Product 82",
+    "price": 0,
+    "description": "ArtbyHannah Framed Wall Art with Light Blue Watercolor flowers on Handmade Deckled Edge Paper for Bathroom Bedroom Decor (2 Pack 12x16 inch, Vanilla Frame)",
+    "image": "https://m.media-amazon.com/images/I/716IZP9REkL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B097Y3X2D8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dadcde"
+  },
+  {
+    "id": 3657,
+    "title": "Amazon Product 83",
+    "price": 0,
+    "description": "Rustic Modern French Country Pictures - Watercolor Vintage Blue Magnolia Leaves Flower Poster Print - Primitive Cottagecore Wall Art Gallery Gift - Farmhouse Plant Botanical Floral Kitchen Room Decor",
+    "image": "https://m.media-amazon.com/images/I/61p9v8iziML._SY500_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CBRWL572/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#263543"
+  },
+  {
+    "id": 3658,
+    "title": "Amazon Product 84",
+    "price": 0,
+    "description": "Dandelion Wall Art Blue Large Picture for Living Room Canvas Art Wall Decor Above Bed Wall Decor White Flower Artwork for Walls Wall Paintings Modern Art Aall Decor Framed Wall Art for Bedroom 29×58IN",
+    "image": "https://m.media-amazon.com/images/I/81DAV7a4oEL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09T9T4Q1T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#202c3b"
+  },
+  {
+    "id": 3659,
+    "title": "Amazon Product 85",
+    "price": 0,
+    "description": "Dandelion Wall Art Blue Canvas Print Picture Framed Wall Art for Living Room Large White Flower Flora Home Decoration Modern(With Soild wood dark framed) Artwork Wall Decor Wall Art Bedroom",
+    "image": "https://m.media-amazon.com/images/I/81TpYEknUrL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B7LDJS2W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#33536d"
+  },
+  {
+    "id": 3660,
+    "title": "Amazon Product 86",
+    "price": 0,
+    "description": "NINEASO Blue Quasi-Gold Wall Art - Deep Blue Ocean Pictures for Home Decor Modern Elegance Canvas Print Wall Decor Vast Ocean from Above Abstract Artwork for Living Room Bedroom 20\" x 40\"",
+    "image": "https://m.media-amazon.com/images/I/81YLYzO1ORL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNSR71FG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2a4162"
+  },
+  {
+    "id": 3661,
+    "title": "Amazon Product 87",
+    "price": 0,
+    "description": "Home Decor Mountain Wall Art Blue Large Framed Artwork for Living Room Bedroom Office Wall Decorations 29x58 Inch",
+    "image": "https://m.media-amazon.com/images/I/61H3PQwuqfL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJJB367S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8dacba"
+  },
+  {
+    "id": 3662,
+    "title": "Amazon Product 88",
+    "price": 0,
+    "description": "YFvrPt Framed Matisse Flower Market Wall Art Light Blue Canvas Poster Prints Wall Decor Set of 3 Abstract Stylish Minimalist Picture Gallery Painting Artwork for Bedroom Living Room 12x16 Inch",
+    "image": "https://m.media-amazon.com/images/I/61R93Ql7-mL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D57V45W3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#375592"
+  },
+  {
+    "id": 3663,
+    "title": "Amazon Product 89",
+    "price": 0,
+    "description": "3 Pcs Blue Bathroom Wall Decors Inspirational Blue Decor Wooden Blue Roses Flower Wall Art Office Wall Decor with Accept Let Go Have Faith Quotes for Girl Women Bathroom Bedroom(Blue Rose12 x 4 Inch)",
+    "image": "https://m.media-amazon.com/images/I/71jVbV8L6pL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C2YHP2WF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1c307d"
+  },
+  {
+    "id": 3664,
+    "title": "Amazon Product 90",
+    "price": 0,
+    "description": "11.8\" Metal Wall Decor Art, 3 Pcs Blue White and Gold Wall Accent Art Decor Wall Sculptures, Modern Wall Hanging Decorations for Home Bathroom Office Dining Room Bedroom Living Room Blue Kitchen",
+    "image": "https://m.media-amazon.com/images/I/81xXQkbx5gL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DC637SJV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#326f9f"
+  },
+  {
+    "id": 3665,
+    "title": "Amazon Product 91",
+    "price": 0,
+    "description": "KSDUT Blue Flowers Wall Art Decor - Boho Chinoiserie Flower Wall Art Canvas Frame Hanging Prints, Navy Blue Botanical Wall Art Decor for Grandmillennial Home Bedroom Decorations 10\"x10\"",
+    "image": "https://m.media-amazon.com/images/I/81u320fnr7L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1KGRD7B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1eaff"
+  },
+  {
+    "id": 3666,
+    "title": "Amazon Product 92",
+    "price": 0,
+    "description": "16 PCS Blue Wall Art Decor, Matisse Gallery Wall Prints for Bedroom, Light blue posters for Room Aesthetic, Collage Kit Pictures for Living Room, Teen Girls Dorm Home Artwork",
+    "image": "https://m.media-amazon.com/images/I/71kSbZG2o3L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DGGJZF3G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7296ad"
+  },
+  {
+    "id": 3667,
+    "title": "Amazon Product 93",
+    "price": 0,
+    "description": "YJYart Abstract Watercolor Wall Painting Pictures for Bathroom Wall Decor Navy Blue Canvas Prints Blue and White Wall Art for Bedroom Kitchen Office 12\"x16\"x3p",
+    "image": "https://m.media-amazon.com/images/I/71hDGgs8j8L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BBV3T2XF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#415d83"
+  },
+  {
+    "id": 3668,
+    "title": "Amazon Product 94",
+    "price": 0,
+    "description": "NINEASO Blue Abstract Canvas Wall Art - Turbulent Abstract Ocean Picture Blue Green Teal Wall Decor Roaring Waves Canvas Painting Abstract Prints Artwork for Living Room Bedroom Decoration 20\" x 40\"",
+    "image": "https://m.media-amazon.com/images/I/81GAzi15UcL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CHFD3KCS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#406b87"
+  },
+  {
+    "id": 3669,
+    "title": "Amazon Product 95",
+    "price": 0,
+    "description": "Abstract Tree Canvas Wall Art: Blue Painting Graphic Art Picture Print on Canvas Small Size without Embellishment for Dining Room (12\"x16\"x 1 Panel)",
+    "image": "https://m.media-amazon.com/images/I/A1FioNPc7-L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08R6RK966/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c2cdcd"
+  },
+  {
+    "id": 3670,
+    "title": "Amazon Product 96",
+    "price": 0,
+    "description": "iHAPPYWALL 3 Pieces Blue Flower Canvas Wall Art Wildflower Botanical Plant Abstract Watercolor Country Floral Picture for Bathroom Bedroom Home Decor Ready to Hang 12x16inchx3pcs (Blue)",
+    "image": "https://m.media-amazon.com/images/I/7185TsLS3nL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJR9R8R3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dde3ef"
+  },
+  {
+    "id": 3671,
+    "title": "Amazon Product 97",
+    "price": 0,
+    "description": "Touch of Class Allana Abstract Fanning Metal Wall Art - Dimensional Design - Shades of Blue, Gray - Hanging Sculpture for Bedroom, Living Room, Bathroom, Office",
+    "image": "https://m.media-amazon.com/images/I/81RQ3FgOzFL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09XY3TFY1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8e999e"
+  },
+  {
+    "id": 3672,
+    "title": "Amazon Product 98",
+    "price": 0,
+    "description": "WLHARTT Blue Botanical Canvas Wall Art, Modern Eucalyptus Leaves Plant Artwork, Minimalist Watercolor Floral Art Painting for Bedroom, Living Room Wall Decor Framed Ready to Hang 12\"x16\"x3",
+    "image": "https://m.media-amazon.com/images/I/71NS8y3quaL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D6756QJ7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6dee3"
+  },
+  {
+    "id": 3673,
+    "title": "Amazon Product 99",
+    "price": 0,
+    "description": "Yaasilinage Daily Reminder Positive Canvas Wall Art, Positive Affirmations Wall Decor, What's The Best That Could Happen Uplifting Quote Poster, Light Blue Typography Art Prints 12x16in Unframed",
+    "image": "https://m.media-amazon.com/images/I/61o+XPcOwmL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D25NXM88/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#acbfe2"
+  },
+  {
+    "id": 3674,
+    "title": "Amazon Product 100",
+    "price": 0,
+    "description": "Takfot Blue Wall Art Rustic Canvas Paintings Vintage Leaf Art Prints Botanical Pictures Farmhouse Leaves Artwork Home Decor Stretched and Wrapped for Bathroom Living Room 12x16 Inch, 3 Panels",
+    "image": "https://m.media-amazon.com/images/I/61PgY-383oL._SY800_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07XMKVBL5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e5e8eb"
+  },
+  {
+    "id": 3675,
+    "title": "Amazon Product 101",
+    "price": 0,
+    "description": "Djmwtb Matisse Canvas Wall Art Abstract Navy Blue Poster Prints Framed Set of 3 Minimalist Flower Aesthetic Pictures Modern Artwork Painting Wall Decor for Living Room Bedroom Bathroom 12\"x16\"x3",
+    "image": "https://m.media-amazon.com/images/I/71K2iL+zFUL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5YJRG7S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#244785"
+  },
+  {
+    "id": 3676,
+    "title": "Amazon Product 102",
+    "price": 0,
+    "description": "Bathroom Wall Art Abstract Canvas Art Print Framed Modern Blue Ocean Picture Small Coastal Sunset & Sunrise Artwork for Sea Lake Themed Home Bedroom Décor 14x14inch",
+    "image": "https://m.media-amazon.com/images/I/919Rz01pylL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08YQN523H/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c1d4da"
+  },
+  {
+    "id": 3677,
+    "title": "Amazon Product 103",
+    "price": 0,
+    "description": "Mofutinpo Navy Blue Wall Decor with Talavera, Mandala, and Moroccan Art Prints - Vintage Wall Art for Bohemian, and Mexican Decor - Elegant Artistic Wall Decorations for Home",
+    "image": "https://m.media-amazon.com/images/I/8192MblaU2L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C3LR9RWJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#687891"
+  },
+  {
+    "id": 3678,
+    "title": "Amazon Product 104",
+    "price": 0,
+    "description": "HAUS AND HUES Blue Wall Decor - Set of 4 Abstract Blue Posters for Room Aesthetic, Blue Wall Art, Blue Aesthetic Room Décor, Abstract Art (Black Frame, 8x10)",
+    "image": "https://m.media-amazon.com/images/I/81nVF2dWL3L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09JCNNMF3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#648bb5"
+  },
+  {
+    "id": 3679,
+    "title": "Amazon Product 105",
+    "price": 0,
+    "description": "XLSJERST Abstract Wall Decor Living Room - Modern Canvas Wall Art Blue and White Picture Artwork for Office Bedroom Home Decoration",
+    "image": "https://m.media-amazon.com/images/I/81rBbjoVH0L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3TNWL9R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#333a42"
+  },
+  {
+    "id": 3680,
+    "title": "Amazon Product 106",
+    "price": 0,
+    "description": "Blue Abstract Canvas Wall Art For Living Room Bedroom Wall Decor Office Pictures Watercolor Wall Paintings Bathroom Home Decoration Posters Prints Artwork 12'' X 16'' 3 Piece Set",
+    "image": "https://m.media-amazon.com/images/I/61PFwvZUb1L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B085VX7VMG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#99acba"
+  },
+  {
+    "id": 3681,
+    "title": "Amazon Product 107",
+    "price": 0,
+    "description": "Meetdeceny Fashion Women Canvas Wall Art Blue Bathroom Wall Art Decor Aesthetic Room Decor for Teen Girls Bathroom Pictures for Wall 12x16 Inch",
+    "image": "https://m.media-amazon.com/images/I/71lSd-jDXmL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C3GPZCGX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cfd7d8"
+  },
+  {
+    "id": 3682,
+    "title": "Amazon Product 108",
+    "price": 0,
+    "description": "3 Framed Abstract Canvas Wall Art, Artwork in Blue, White and Grey, Simple and Elegant for Living Room Bedroom Office Decor 16\" x 24\" x 3 Pieces",
+    "image": "https://m.media-amazon.com/images/I/61EOfCgZnkL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BHJG49DT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bebbb8"
+  },
+  {
+    "id": 3683,
+    "title": "Amazon Product 109",
+    "price": 0,
+    "description": "iKNOW FOTO Blue Flower Canvas Wall Art 3 Piece Botanical Prints for Living Room, Bedroom, Bathroom Decor Floral Pictures for Home Decoration12x16 Inches Each",
+    "image": "https://m.media-amazon.com/images/I/61ouLrzHrXL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C2V9Z3W1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dadee5"
+  },
+  {
+    "id": 3684,
+    "title": "Amazon Product 110",
+    "price": 0,
+    "description": "Trendy Blue Bow Canvas Wall Art Watercolor Hydrangea Coquette Paintings Pictures Wall Decor Coastal Preppy Aesthetic Posters Prints for Girly Room Bedroom College Apartment Home Decoration",
+    "image": "https://m.media-amazon.com/images/I/815kUqadEaL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DL5PYCC3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4e7e8"
+  },
+  {
+    "id": 3685,
+    "title": "Amazon Product 111",
+    "price": 0,
+    "description": "Creoate Navy Blue Wall Art for Bathroom Decor, 2 Pieces Abstract Flower Painting Canvas Print Artwork Framed Set Blue and white Wall Decor for Bedroom, Small, 12x12 Inch x2pcs",
+    "image": "https://m.media-amazon.com/images/I/61CIJl08fiL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B8249XMT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#16205d"
+  },
+  {
+    "id": 3686,
+    "title": "Amazon Product 112",
+    "price": 0,
+    "description": "Empire Art Direct Frameless Free Floating Tempered Glass Panel Graphic Wall Art Ready to Hang, 24\" x 24\", Blue Magnolia x-ray",
+    "image": "https://m.media-amazon.com/images/I/71D33biL3dL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07TZ4RXSF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#113250"
+  },
+  {
+    "id": 3687,
+    "title": "Amazon Product 113",
+    "price": 0,
+    "description": "Trendy Blue Line Floral Wall Art Vintage Flower Market Botanical Poster Boho Preppy Plant Canvas Prints for Living Room Dorm Bedroom Wall Decor 12x16 inch Unframed",
+    "image": "https://m.media-amazon.com/images/I/61S2bp48N5L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DNSW1F9K/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f6f7f2"
+  },
+  {
+    "id": 3688,
+    "title": "Amazon Product 114",
+    "price": 0,
+    "description": "yiijeah Blue Wall Art Large Picture Artwork for Living Room - Light Blue and Gold Painting Canvas Abstract Wall Art Framed Wall Decor for Home Office Bedroom",
+    "image": "https://m.media-amazon.com/images/I/81wbB-FUWRL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CP3DDL85/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0d1d0"
+  },
+  {
+    "id": 3689,
+    "title": "Amazon Product 115",
+    "price": 0,
+    "description": "3 Pcs Modern Street Graffiti Wall Art Abstract Poster Print Wall Decor Artist Blue Print Canvas Painting for Living Room Bedroom Bathroom Office Home Decorations Unframed (Framed, 16\"Hx12\"W×3pcs)",
+    "image": "https://m.media-amazon.com/images/I/91CVo15dA0L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYGPR1QP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddd2c1"
+  },
+  {
+    "id": 3690,
+    "title": "Amazon Product 116",
+    "price": 0,
+    "description": "ARPEOTCY Vintage Framed Canvas Wall Art, Blue Sky Cloud Oil Painting Wall Art for Living Room, Vintage Antique Retro Bathroom Bedroom Kitchen Office Decor Prints (8x10 Inch)",
+    "image": "https://m.media-amazon.com/images/I/81glJWXxuWL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DM1RR369/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#92a0a1"
+  },
+  {
+    "id": 3691,
+    "title": "Amazon Product 117",
+    "price": 0,
+    "description": "6Pcs Blue coastal Wall Art Flowers Aesthetic Wall Decor Pictures Trendy Minimalist Posters Prints Hydrangeas painting Preppy Artwork for Bedroom Gallery Home Decoration, 8x10in Unframed",
+    "image": "https://m.media-amazon.com/images/I/81aPwGYrfuL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DM4WN1RN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5d7d6"
+  },
+  {
+    "id": 3692,
+    "title": "Amazon Product 118",
+    "price": 0,
+    "description": "3 Pieces Neutral Abstract Boho Lines Canvas Wall Art Mid Century Modern Navy Blue Geometric Pictures Wall Decor Posters Print Artwork for Living Room Bedroom Office Home Decoration",
+    "image": "https://m.media-amazon.com/images/I/91d-rSE+4tL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZWQ542F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#272a2d"
+  },
+  {
+    "id": 3693,
+    "title": "Amazon Product 119",
+    "price": 0,
+    "description": "Stupell Industries Blooming Blue Flowers Night Moon Canvas Wall Art, Design by Jennifer Taylor Art",
+    "image": "https://m.media-amazon.com/images/I/813uzZdqX4L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVZ9TCQN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#424e55"
+  },
+  {
+    "id": 3694,
+    "title": "Amazon Product 120",
+    "price": 0,
+    "description": "ArtbyHannah 4Pack Blue Bathroom Wall Art, Canvas Wall Art with Navy Blue Coastal Ocean Coral Beach Prints Decor, 12x12 Inch",
+    "image": "https://m.media-amazon.com/images/I/917HnttZI9L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08SBNC9MN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#465375"
+  },
+  {
+    "id": 3695,
+    "title": "Amazon Product 121",
+    "price": 0,
+    "description": "okudolit Modern Abstract Framed Navy Blue Canvas Wall Art Prints Set of 3 Boho Mid Century Minimalist Geometric Paintings Pictures Wall Decor Posters Artwork for Living Room Bedroom Office-12x16in",
+    "image": "https://m.media-amazon.com/images/I/91-7hMrIxCL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8W9T9RS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#292c33"
+  },
+  {
+    "id": 3696,
+    "title": "Amazon Product 122",
+    "price": 0,
+    "description": "AKWISH Framed William Morris Blue Wall Art Set of 3 - Vintage Butterfly Botanical Flower Paintings Wall Decor, Owl Canvas Wall Aesthetics for Living Room Bedroom Office Decor 12x16in",
+    "image": "https://m.media-amazon.com/images/I/71zOslbeVNL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZ41Z9R1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#607d94"
+  },
+  {
+    "id": 3697,
+    "title": "Amazon Product 123",
+    "price": 0,
+    "description": "Y2K BOO Blue Wall Collage Kit - 50 Aesthetic Blue Posters for Dorms and Bedrooms, Blue Room Decor for Teen Girls and College Girls, Perfect Blue Aesthetic Wall Art",
+    "image": "https://m.media-amazon.com/images/I/81cmw1az0wL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CWDD7Y3F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ccd6de"
+  },
+  {
+    "id": 3698,
+    "title": "Amazon Product 124",
+    "price": 0,
+    "description": "HOMEOART Bathroom Signs Farmhouse Bathroom Wall Decor Pictures Canvas Wall Art for Bathroom Decor Framed 6x12inchx3Pieces (Blue)",
+    "image": "https://m.media-amazon.com/images/I/71PRpUT6kPL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CT5QLW6R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#424c60"
+  },
+  {
+    "id": 3699,
+    "title": "Amazon Product 125",
+    "price": 0,
+    "description": "BINCUE Large Blue Abstract Canvas Wall Decor Framed Modern Wall Art Set of 3 Neutral Minimalist Art Print for Living Room Bedroom Office 24\"x36\" Gift",
+    "image": "https://m.media-amazon.com/images/I/71yPh0QK6aL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCFZHF7C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#334668"
+  },
+  {
+    "id": 3700,
+    "title": "Amazon Product 126",
+    "price": 0,
+    "description": "UTOP-art Abstract Flower Painting Wall Art: Modern Blue Floral Transparent Watercolor Artwork Print on canvas for Bathroom Decor",
+    "image": "https://m.media-amazon.com/images/I/61KTOx8-f6L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0832WBZ23/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1d2937"
+  },
+  {
+    "id": 3701,
+    "title": "Amazon Product 127",
+    "price": 0,
+    "description": "FWIEXA Abstract Framed Canvas Wall Art Set, Neutral Minimalist Wall Decor, Navy Blue and White Texture Wall Painting, Mid Century Modern Art Print for Living Room, Bedroom, Office - 16”x24”x3",
+    "image": "https://m.media-amazon.com/images/I/81csfX5fmwL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D6RMRVGK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#313f4c"
+  },
+  {
+    "id": 3702,
+    "title": "Amazon Product 128",
+    "price": 0,
+    "description": "Hillban 3 Pieces Rose Wooden Wall Decor Thankful Grateful Blessed Wooden Signs Inspirational Wall Art Signs Wedding Decor for Room Kitchen Bathroom(10 x 4 Inch, Blue)",
+    "image": "https://m.media-amazon.com/images/I/71OQ-CMc6OL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BS6DW5MP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0a12d6"
+  },
+  {
+    "id": 3703,
+    "title": "Amazon Product 129",
+    "price": 0,
+    "description": "Large Abstract Framed Wall Art - Canvas Wall Art Pictures Prints for Living Room Decor Natural Float Framed Artwork for Bedroom Kitchen Home Office Decoration 72\" X 36\" Set of 3 Blue Grey",
+    "image": "https://m.media-amazon.com/images/I/71oQNBSBDBL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CWS62B74/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0f0e0a"
+  },
+  {
+    "id": 3704,
+    "title": "Amazon Product 130",
+    "price": 0,
+    "description": "Youshion Art Mountain Wall Art for Bedroom, Blue Abstract Mountain Canvas Picture Prints Artwork, for Living Room Office Dining Room Modern Home Decor Framed Ready to Hang, 12\" X 16\" X 3 Pieces",
+    "image": "https://m.media-amazon.com/images/I/51cHyNRbGHL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BJQRJQQ2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#446f8e"
+  },
+  {
+    "id": 3705,
+    "title": "Amazon Product 131",
+    "price": 0,
+    "description": "Inspirational Wall-Art - Positive Quotes Office Wall Decor - Blue Motivational Wall Art - Framed Canvas Wall Art For Bathrooms Size 12x16 Inches",
+    "image": "https://m.media-amazon.com/images/I/91nFMwm+6RS._AC_SY606_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0978519R1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#002e7d"
+  },
+  {
+    "id": 3706,
+    "title": "Amazon Product 132",
+    "price": 0,
+    "description": "Blue and Grey Wall Art-Abstract Picture 3 Piece Canvas Print Wall Painting Modern Artwork Canvas Wall Art for Living Room Home Office Décor",
+    "image": "https://m.media-amazon.com/images/I/61OcCiVgR3L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09PYK4X55/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a4a7af"
+  },
+  {
+    "id": 3707,
+    "title": "Amazon Product 133",
+    "price": 0,
+    "description": "CANEITO Lotus Leaf Wall Art for Bedroom, Blue and White Leaves Canvas Wall Decor for Living Room, Picture Print Artwork for Office, Size 40 x 20 Inches",
+    "image": "https://m.media-amazon.com/images/I/81CXITUQ4pL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DDSFQYT5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#5e6e7d"
+  },
+  {
+    "id": 3708,
+    "title": "Amazon Product 134",
+    "price": 0,
+    "description": "WARTHZ Framed Boho Light Blue Flowers Plant Wall Art Set of 3 Trendy Abstract Botanical Canvas Wall Decor Vintage White and Blue Bohemian Painting Prints for Living Room Bedroom 12X16 In",
+    "image": "https://m.media-amazon.com/images/I/71YrgIelxmL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8PT47CL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#95bbd2"
+  },
+  {
+    "id": 3709,
+    "title": "Amazon Product 135",
+    "price": 0,
+    "description": "Dandelion Wall Art Blue Large Picture for Living Room Canvas Art Wall Decor Above Bed Wall Decor White Flower Artwork for Walls Wall Paintings Modern Art Aall Decor Framed Wall Art for Bedroom 29×58IN",
+    "image": "https://m.media-amazon.com/images/I/81DAV7a4oEL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09T9T4Q1T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#32475c"
   }
 ];
