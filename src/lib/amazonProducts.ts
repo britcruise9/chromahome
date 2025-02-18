@@ -33591,5 +33591,1335 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0DJSY94KK/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#c9c7c5"
+  },
+  {
+    "id": 3307,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "YJYart Green Flowers Canvas Wall Art Modern Paintings with Gold Foil Abstract Nature Wall Decorations for Home Office Living Room Bedroom 24\" x 48\"",
+    "image": "https://m.media-amazon.com/images/I/71jrBi9tCjL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSK6HHYM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8ea793"
+  },
+  {
+    "id": 3308,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "YJYart Abstract Wall Art Green and Gold Hand Painted Oil Painting Blossom Botanical Large Picture for Living Room Bedroom Kitchen Office 30x60 Inch",
+    "image": "https://m.media-amazon.com/images/I/71Rm0Pv90cL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSK8J22D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#879977"
+  },
+  {
+    "id": 3309,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "ArtbyHannah Framed Bathroom Canvas Wall Art, Botanical Wall Decor with Green Plant Print for Living Room (12x16 Inch, 3pack)",
+    "image": "https://m.media-amazon.com/images/I/81CaSLZFwxL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPHVQWWN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#627061"
+  },
+  {
+    "id": 3310,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "Slyart Large Green and White Abstract Painting 3D Textured Vertical Wall Art Modern Oil Paintings on Canvas Living Room Wall Decor Minimalist Art",
+    "image": "https://m.media-amazon.com/images/I/81B72AGpkAL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7VXFBN4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3c523a"
+  },
+  {
+    "id": 3311,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "YJYart Green Abstract Canvas Artwork Flowers Wall Decor for Office Line Art Painting 24\"x 48\" Pictures for Bedroom Dining Room Neutral Wall Art",
+    "image": "https://m.media-amazon.com/images/I/71kRA2YVqFL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJQQ3NM3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#acbeb0"
+  },
+  {
+    "id": 3312,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "3Pcs Framed Emerald Green Wall Art, Modern Green and Gold Abstract Marble Canvas Wall Art Paintings Prints Posters Wall Decor Pictures for Living Room Bedroom Office Home Decoration, Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71dFAdjLs5L._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CFXBDLM4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#07251f"
+  },
+  {
+    "id": 3313,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "3D Floral Green Wall Art (Set of 2) Lightweight, Wooden Ready-to-Hang Boho Framed Wall Art for Bathroom, Bedroom, Living Room or Office – Premium Sage Green Farmhouse Decor – Gift-Boxed",
+    "image": "https://m.media-amazon.com/images/I/81HqMCcJqtL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHW7RRVT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#697165"
+  },
+  {
+    "id": 3314,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "Stupell Industries Soothing Eucalyptus Flower Herb Arrangement Rustic Jar Canvas Wall Art, Design by Nan",
+    "image": "https://m.media-amazon.com/images/I/81W5GLsoXLL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BGQLYB7M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#66807e"
+  },
+  {
+    "id": 3315,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "HesenDot Framed Matisse Sage Green Wall Art, William Morris Canvas Wall Decor, 16x12IN High Framed Wood Design Prints, Minimalist Classic Decor Aesthetic for Living Room, Bedroom, Bathroom Set of 3",
+    "image": "https://m.media-amazon.com/images/I/81iE7LzEsXL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCSM63NJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#959f86"
+  },
+  {
+    "id": 3316,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "Bwodke Botanical Wall Art Plant Floral Watercolor Poster Canvas Prints Set of 3 Framed Sage Green Painting Eucalyptus Leaf Picture Modern Minimalist Home Decor Bedroom Bathroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/71hMD707MfL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZTW54BM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#becaad"
+  },
+  {
+    "id": 3317,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "12PCS Grass Wall Panel with Flowers, 20x20inch Boxwood Panels, Grass Backdrop Wall, Privacy Hedge Screen, UV Protected Wall Backdrop for Outdoor Garden and Indoor Home Wedding",
+    "image": "https://m.media-amazon.com/images/I/914vNySvJNL._AC_SX425_PIbundle-12,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MF1P11S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#58725e"
+  },
+  {
+    "id": 3318,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "MHARTK66 Wall Decorations For Living Room Canvas Wall Art For Bedroom Office Decor Abstract Tree Landscape Wall Paintings Framed Prints Pictures Artwork Ready To Hang Hotel Room Home Decor 20x40 In",
+    "image": "https://m.media-amazon.com/images/I/61lxDm7TgQL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQ4P557X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0c3b4"
+  },
+  {
+    "id": 3319,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "xbsifyiooa Cute Japanese Frog Canvas Wall Art 3pcs 12x16in, Funny Vintage Matsumoto Green Frog Posters, Wabi Sabi Aesthetic Room Decor, Eclectic Asian Animal Print Painting Unframed",
+    "image": "https://m.media-amazon.com/images/I/71N5DhksL6L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CBLTQ1J1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3a4523"
+  },
+  {
+    "id": 3320,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "Macrame Wall Hanging Green Large Dip Dye Fiber Wall Art Bohemian Yarn Tapestry Wall Décor 57''W*35''L",
+    "image": "https://m.media-amazon.com/images/I/81uEMIH7caL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLLQVTCL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7d867d"
+  },
+  {
+    "id": 3321,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "Floating Shelves, Plant Wall Decor, Wall Shelf, No Drill Shelves, Decorative Leaves and Light Strip, Set of 2 Plant Shelf Wall, Easter for Decorating Room(Green Leaf)",
+    "image": "https://m.media-amazon.com/images/I/71UPEOfO75L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C2TPGSN8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#718217"
+  },
+  {
+    "id": 3322,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "Qunclay 5 Pcs Wall Art Decor Wooden Living Room Wall Decor Bohemian Hanging Farmhouse Geometric 10'' and 8'' Aesthetic Wood Minimalist Posters for Bedroom(Greenery)",
+    "image": "https://m.media-amazon.com/images/I/81w6X62fuGL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CDKPTXTW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9ca590"
+  },
+  {
+    "id": 3323,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "Boho Geometric Green Polygon Tropical Leaves Illustrations Wall Art 16\"x11\" Wood Set Of 3 Framed Abstract Shapes Sign Modren Living Room Bedroom Office Neutral Print Wall Hang Decor (Black)",
+    "image": "https://m.media-amazon.com/images/I/71Z1Ew7ADpL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4Q6RPXH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a29c7c"
+  },
+  {
+    "id": 3324,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "UPWOIGH Framed Canvas Wall Art Gustav Klimt Print, Klimt Poster, Klimt Vintage Art Print, Klimt Modern Art, Wall Art Modern Poster Print for Living room Bedroom 12x16in",
+    "image": "https://m.media-amazon.com/images/I/A1LX16Ern5L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CWV3DFXW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#72a597"
+  },
+  {
+    "id": 3325,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "YISXINOAG Mountain Abstract Wall Art For Living Room Modern Canvas Art Wall Decor Green Wall Art Bedroom Office Decor Abstract Mountain Forest Landscapes Painting Ready To Hang Wall Pictures 24×48 In",
+    "image": "https://m.media-amazon.com/images/I/91D93t61uyL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKXSN6QB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#636757"
+  },
+  {
+    "id": 3326,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "Sage Green Wall Art Set of 3, Abstract Green Wall Decor Living Room, Minimalist Modern Framed Wall Art Marble Line Beige Gold Green Canvas Artwork Paintings, Green Boho Room Decor, Bedroom Bathroom Office Wall Decoration, 12\"x16\"",
+    "image": "https://m.media-amazon.com/images/I/61IkuOwEY2L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CY44L6BG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5dbd3"
+  },
+  {
+    "id": 3327,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "SHENIFY Green Fog Pine Tree Forest Canvas Wall Art 11x14in Framed Modern Artwork Prints Decor",
+    "image": "https://m.media-amazon.com/images/I/71hPnVdBkML._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D16ZR5KW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#313634"
+  },
+  {
+    "id": 3328,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Habseligkeit Sage Green Master Wall Art Prints, Abstract Matisse Wall Art Exhibition Posters, Vintage Art Boho Art Prints, Retro Room Decor for Aesthetic Bedroom（8x10inch, Unframed",
+    "image": "https://m.media-amazon.com/images/I/81I1hn0ZJXL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BRW5YWXF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#909f8c"
+  },
+  {
+    "id": 3329,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "SOUGUAN Large Wall Art Abstract Painting Green Wall Decor 20x40 Inch Living Room Decorations Teal and Grey Art Office Decor Colorful Canvas Picture Artwork for Bedroom Kitchen Decorations",
+    "image": "https://m.media-amazon.com/images/I/71GeZZizc3L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CG9935T8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a3bdba"
+  },
+  {
+    "id": 3330,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "Framed Vintage 3D Textured Wall Art - Dark Green Dragonfly Flowers Wall Decor - Hand Drawn Sandstone Nature Botanical Pictures for Living Room Bedroom Home Decor 12x16in",
+    "image": "https://m.media-amazon.com/images/I/81jU1BdbwTL._AC_SY879_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4V264VF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3c392d"
+  },
+  {
+    "id": 3331,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "Zhengmy 2 Pieces Metal Tree Leaf Wall Decor Vine Olive Branch Leaf Wall Art Living Room, Hallway Wall Decor Outdoor Decoration(Gradient Green)",
+    "image": "https://m.media-amazon.com/images/I/71xjnSa-MUL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKWYXNT9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8d9986"
+  },
+  {
+    "id": 3332,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "Dark Coffee Color Framed Green Landscape Birch Forest Wall Art Decoration Natural Art Home Living Room Bedroom Office Wall Decoration Wall Art Framed Art 20x40",
+    "image": "https://m.media-amazon.com/images/I/81aP-V1CkvL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BFHKN9RQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bbc3b8"
+  },
+  {
+    "id": 3333,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "TEIPAI Emerald Green and Gold Wall Decor for Living Room, 7PCS Modern Metal Wall Art Hanging Sculptures for Office Bedroom Decoration, Brass Gold Home Decor for Gallery Wall Guest Room Bathroom",
+    "image": "https://m.media-amazon.com/images/I/71y4TIVZrPL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C6Q5DYZD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4f8462"
+  },
+  {
+    "id": 3334,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "Abstract Canvas Wall Art Gold Circle Painting Green Artwork Framed Wall Prints 29\"x 58\" Office Wall Decor Colorful Pictures for Living Room Bedroom",
+    "image": "https://m.media-amazon.com/images/I/718L6979SVL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DGPZY7VB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a89f8e"
+  },
+  {
+    "id": 3335,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "HOURIA Large Vintage Italy City Landscape Framed Canvas Wall Art Set, Green Olive Tree Old House Wall Decor, Malta Modern Minimalist Country Farmhouse Art Print for Living Room, Bedroom, Office-16 x24 x3",
+    "image": "https://m.media-amazon.com/images/I/71RONIbVXML._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DB5CGW7T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#252e11"
+  },
+  {
+    "id": 3336,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "Framed Sage Green Abstract Wall Art, Modern Canvas Paintings Artwork for Walls, Large Minimalist Dark Green Art Prints Pictures for Living Room Hallway Bedroom Dining Room Office Bathroom Wall Decor 24x36 Inch",
+    "image": "https://m.media-amazon.com/images/I/81X32ShkfVL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9PY6TJ2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#637462"
+  },
+  {
+    "id": 3337,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "QSQ Green Wall Art Decor Green White Boho Wall Art Minimalist Wall Art Geometric Color Block Canvas Artwork Paintings Wall Decor Modern Home Bedroom Art Office Decor 20\"X 40\"",
+    "image": "https://m.media-amazon.com/images/I/812ra6q+cYL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D91G882B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#829e88"
+  },
+  {
+    "id": 3338,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "Drsoum 11x14in Boho Wall Art Green Sage Decor Framed Wood Modern Bohemian Abstract Geometry Canvas Prints Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71D5c8VrGmL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYH6KVWX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#70755f"
+  },
+  {
+    "id": 3339,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "Erctoo Botanical Plant Canvas Wall Art, Framed Boho Wall Decor for Bathroom, Minimalist Aesthetic Bedroom Wall Art, Sage Green Eucalyptus Leaf Prints for Office, Set of 4PCS, 8”X10”",
+    "image": "https://m.media-amazon.com/images/I/71+DXnZNVEL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CFG2YPPX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b1b8a7"
+  },
+  {
+    "id": 3340,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "HOURIA Large Vintage Italy City Landscape Framed Canvas Wall Art Set, Green Olive Tree Old House Wall Decor, Malta Modern Minimalist Country Farmhouse Art Print for Living Room, Bedroom, Office-16 x24 x3",
+    "image": "https://m.media-amazon.com/images/I/71RONIbVXML._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DB5CGW7T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#535144"
+  },
+  {
+    "id": 3341,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "Everydecor Succulent Metal Flowers Wall Decor – Green, Hand Painted, 3D Flower Art Decoration for Living Room, Bedroom, Kitchen, Bathroom - Floral Decor for Indoor & Outdoor Use",
+    "image": "https://m.media-amazon.com/images/I/81oUhvv7UWL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07PQX6TTQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6b856d"
+  },
+  {
+    "id": 3342,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "Artificial Eucalyptus Wall Decor Fake Greenery Leaves Stems Wall Hanging Plants on 16.5 inch Wooden Stick Boho Rustic Farmhouse Decor for Bedroom Kitchen Dining Room Bathroom",
+    "image": "https://m.media-amazon.com/images/I/71LMPfPc37L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09WQZYQDP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3ded2"
+  },
+  {
+    "id": 3343,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "97 Decor Green Lucky Poster - Playing Card Wall Art, Poker Room Decor, Green Trendy Wall Art, Funky Posters Aesthetic Pictures, Retro Ace Prints Queen of Hearts Decor for Bedroom (8x10 UNFRAMED)",
+    "image": "https://m.media-amazon.com/images/I/815zqnUpXHL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJCBCVNX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#84947a"
+  },
+  {
+    "id": 3344,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "PHOPAGO Boho Plant Wall Art Green Botanical Bohemain Framed Wall Printing 11x14in Abstract Canvas Prints with Leaf & Sun Lines - Natural Framed",
+    "image": "https://m.media-amazon.com/images/I/71mCq8Z8JYL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5CZ8QX2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9fa57f"
+  },
+  {
+    "id": 3345,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "Sage Green Wall Art Set of 3, Abstract Green Wall Decor Living Room, Minimalist Modern Framed Wall Art Marble Line Beige Gold Green Canvas Artwork Paintings, Green Boho Room Decor, Bedroom Bathroom Office Wall Decoration, 12\"x16\"",
+    "image": "https://m.media-amazon.com/images/I/61IkuOwEY2L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CY44L6BG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5dbd3"
+  },
+  {
+    "id": 3346,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "SIGNWIN Framed Canvas Print Wall Art Set Grunge Tan Green Pastel Landscape Shapes Abstract Illustrations Modern Art Decorative Nordic for Living Room, Bedroom, Office - 24\"x36\"x3 Natural",
+    "image": "https://m.media-amazon.com/images/I/71t1tkyX2qL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BRX5XJZ1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dddbcc"
+  },
+  {
+    "id": 3347,
+    "title": "Amazon Product 41",
+    "price": 0,
+    "description": "HZDHCLH Wall Clocks Battery Operated, 12 inch Silent Non Ticking Modern Wall Clock for Living Room Bedroom Kitchen Office Classroom Decor (Olive Green and Gold)",
+    "image": "https://m.media-amazon.com/images/I/61Cmqo0mSuL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09F6FXGWJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#747a53"
+  },
+  {
+    "id": 3348,
+    "title": "Amazon Product 42",
+    "price": 0,
+    "description": "Wieco Art Black Frame Art Large Green Flickering Flowers Pictures Paintings on Canvas Wall Art Floral Canvas Print Ready to Hang for Living Room Home Decorations 24x24 inch",
+    "image": "https://m.media-amazon.com/images/I/51+mQbku33L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B6TSSMJG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c3c6b3"
+  },
+  {
+    "id": 3349,
+    "title": "Amazon Product 43",
+    "price": 0,
+    "description": "Sage Green Matisse Wall Art Set of 3, Abstract Matisse Wall Art Posters Decor, Minimalist Framed Wall Art Geometric Line Sun Rising Green Canvas Artwork Paintings, Bedroom, Office",
+    "image": "https://m.media-amazon.com/images/I/71JcS4vVW8L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C38T2G3L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7a9272"
+  },
+  {
+    "id": 3350,
+    "title": "Amazon Product 44",
+    "price": 0,
+    "description": "Stupell Industries Bottles and Plants Farm Wood Textured, Design by Anne Tavoletti Wall Art, 11 x 14, Multi-Color for Living Room, Grey Framed",
+    "image": "https://m.media-amazon.com/images/I/819kgY37M0L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B082JMW55W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2f5eb"
+  },
+  {
+    "id": 3351,
+    "title": "Amazon Product 45",
+    "price": 0,
+    "description": "UPWOIGH Framed Green Wall Art(No Plexiglass), Olive Leafs Canvas Wall Art, 12x16in Botanical Wood Bohemia Sage Wall Decor Prints Artworks for Bathroom Bedroom, Plant Neutral Wall Art Set of 3",
+    "image": "https://m.media-amazon.com/images/I/81f+D6OCTAL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BPP84GCZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#265130"
+  },
+  {
+    "id": 3352,
+    "title": "Amazon Product 46",
+    "price": 0,
+    "description": "Framed Boho Wall Art Set of 4 for Wooded Minimalist Botanical Print Wall Art for Rustic Vintage Farmhouse Home Kitchen Wall Decor (Brown, 11x14)",
+    "image": "https://m.media-amazon.com/images/I/71A1g0sGUaL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BS9RNJDX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cdcab9"
+  },
+  {
+    "id": 3353,
+    "title": "Amazon Product 47",
+    "price": 0,
+    "description": "Green Abstract Wall Art Boho Wall Art Modern Art Decor Framed Canvas Painting Home Decor Wall Artwork Living Room Bedroom Restaurant Office Wall Decor 24X48inch",
+    "image": "https://m.media-amazon.com/images/I/81aO21XQKEL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHRWWDL5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#93977f"
+  },
+  {
+    "id": 3354,
+    "title": "Amazon Product 48",
+    "price": 0,
+    "description": "97 Decor Sage Green Wall Art Prints - Sage Green Pictures Wall Decor For Bedroom, Sage Green Room Decor Aesthetic, Sage Green Wall Collage Kit, Boho Prints Matisse Posters For Dorm Decorations",
+    "image": "https://m.media-amazon.com/images/I/81cgvrgFC9L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DLMQQX7Z/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcd6c5"
+  },
+  {
+    "id": 3355,
+    "title": "Amazon Product 49",
+    "price": 0,
+    "description": "ArtbyHannah Framed Bathroom Wall Decor, Botanical Wall Art with Sage Green Plant Print for Bedroom Decoration, Minimalist Restroom Decor for Gift (Walnut, 10x10 Inch)",
+    "image": "https://m.media-amazon.com/images/I/71qdF-CEnUL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B087Q6YN5J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a1b9a0"
+  },
+  {
+    "id": 3356,
+    "title": "Amazon Product 50",
+    "price": 0,
+    "description": "3Pcs Green and Gold Abstract Marble Wall Art Gold Foil Poster Emerald Green Dark Green Canvas Wall Art Modern Abstract neutral for Living Room Pictures for Bedroom Office Dining Room Wall Decoration",
+    "image": "https://m.media-amazon.com/images/I/81yFcsiYroL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPSQDT8D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0e2920"
+  },
+  {
+    "id": 3357,
+    "title": "Amazon Product 51",
+    "price": 0,
+    "description": "Canvas Wall Art Decor Large Artwork Green Wall Art Spring Scene Wall Painting Decorations Canvas Art Wall Decor Wall Art Prints for Room Living Room Bedroom Office Wall Decor 29\"X58\"",
+    "image": "https://m.media-amazon.com/images/I/615HAkquUqL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHDF4LFB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ede9cb"
+  },
+  {
+    "id": 3358,
+    "title": "Amazon Product 52",
+    "price": 0,
+    "description": "3Pcs Sage Green Canvas Wall Art Modern Neutral Abstract Wall Decor Pictures Minimalist Green Tan Posters Prints for Living Room Bedroom Home Decoration, 16x24in",
+    "image": "https://m.media-amazon.com/images/I/513pXoFsm9L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5HH7FQB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0cec1"
+  },
+  {
+    "id": 3359,
+    "title": "Amazon Product 53",
+    "price": 0,
+    "description": "FRAMED Botanical Plant Canvas Wall Art, Boho Plant Wall Decor for Bedroom, Minimalist Floral Prints for Living Room, Light Green Botanical Art Painting for Office, Set of 4, 8”x10”",
+    "image": "https://m.media-amazon.com/images/I/71kXct96npL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09HH17JRH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7dad2"
+  },
+  {
+    "id": 3360,
+    "title": "Amazon Product 54",
+    "price": 0,
+    "description": "KONGSY Sage Green Wall Art Prints Set of 9, Abstract Matisse Exhibition Posters, Boho Art Prints, Sage Green Wall Decor, Aesthetic Pictures Room Decor for Teen Girls Dorm, Bedroom",
+    "image": "https://m.media-amazon.com/images/I/71sKbIO-WbL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8LBX5PR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8d6c9"
+  },
+  {
+    "id": 3361,
+    "title": "Amazon Product 55",
+    "price": 0,
+    "description": "Nature-Inspired Macrame Leaf Wall Hanging, Handcrafted Green Tapestry Boho Home Decor, Bohemian Art Nursery Living Room Bedroom Backdrop Chic Decoration (Green Off White 47.2“ x 30“)",
+    "image": "https://m.media-amazon.com/images/I/61XDOo9ejfL._SX500_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D44TRTCG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0ded1"
+  },
+  {
+    "id": 3362,
+    "title": "Amazon Product 56",
+    "price": 0,
+    "description": "Dahey 2 Pack Wood Wall Planter Vase with Artificial Eucalyptus Farmhouse Wall Hanging Decor Pocket Planter for Indoor Fake Plants Greenery, Living Room Bedroom Kitchen Home Office Decoration",
+    "image": "https://m.media-amazon.com/images/I/71iz2vIHoGL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C2V9THZD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#534f46"
+  },
+  {
+    "id": 3363,
+    "title": "Amazon Product 57",
+    "price": 0,
+    "description": "RICHER HOUSE Artificial Ivy LED-Strip Wall Hanging Shelves Set of 2, Macrame Shelf for Bedroom Bathroom Living Room Kitchen, Wood Hanging Plant Shelves for Wall Décor",
+    "image": "https://m.media-amazon.com/images/I/71tN1ANPbML._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09G67DKXV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#beca80"
+  },
+  {
+    "id": 3364,
+    "title": "Amazon Product 58",
+    "price": 0,
+    "description": "IARTTOP Large Sage Green Abstract Boho Wall Art Set Of 3 Geometric Wood Wall Art Mid Century Modern Artwork Neutral Bohemian Wall Decor for Living Room Bedroom Office-16 x 32 Inch",
+    "image": "https://m.media-amazon.com/images/I/716+thiqXKL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DBQYF49V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4daca"
+  },
+  {
+    "id": 3365,
+    "title": "Amazon Product 59",
+    "price": 0,
+    "description": "Set of 2 Artificial Plants with Gold Metal Round Hanging Hoop for Wall Decor, Wall-Mounted Green Fake Plants in Metal Hoop for Modern Home Decor, Gold Wall Decor for Bedroom, Living Room",
+    "image": "https://m.media-amazon.com/images/I/71J+rFHmDcL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09WXTW1T4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#263d19"
+  },
+  {
+    "id": 3366,
+    "title": "Amazon Product 60",
+    "price": 0,
+    "description": "Green and Gold Abstract Wall Art Green Abstract Picture Wall Decor Sage Green Abstract Painting Set of 3 Modern Abstract Wall Art Green Geometric Art Print Modern Green Abstract Art 16x24inx3 No Frame",
+    "image": "https://m.media-amazon.com/images/I/712EwJr7XPL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQCF9FR8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#373f33"
+  },
+  {
+    "id": 3367,
+    "title": "Amazon Product 61",
+    "price": 0,
+    "description": "ArtbyHannah Framed Bathroom Canvas Wall Art, Botanical Wall Decor with Green Plant Print for Living Room (12x16 Inch, 3pack)",
+    "image": "https://m.media-amazon.com/images/I/81CaSLZFwxL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPHVQWWN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d9edc7"
+  },
+  {
+    "id": 3368,
+    "title": "Amazon Product 62",
+    "price": 0,
+    "description": "Roslynity Framed Canvas Wall Art Vintage Print Paintings Emerald Green Old Bookcover Sketches of British Insects Eclectic Retro Artwork for Home Living Room Bathroom Wall Decor (8\"x10\")",
+    "image": "https://m.media-amazon.com/images/I/81Xt+OufHWL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZPDCG6X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2f3c28"
+  },
+  {
+    "id": 3369,
+    "title": "Amazon Product 63",
+    "price": 0,
+    "description": "LHIUEM Large Abstract Green Gray Pastel Framed Canvas Wall Art, Neutral Landscape Wall Decor, Modern Watercolor Lake Artwork, Beige Textured Illustrations Art for Living Room, Bedroom, Office- 24\"x36\"x3",
+    "image": "https://m.media-amazon.com/images/I/61XSJmpd3+L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DNJJCPCN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7f927c"
+  },
+  {
+    "id": 3370,
+    "title": "Amazon Product 64",
+    "price": 0,
+    "description": "Vintage Picture Frame 4x6 Antique Ornate Photo Frame Tabletop and Wall Hanging Old-Fashioned Picture Frame, Decorative Retro Design Home Decor, Photo Gallery, Art, Green",
+    "image": "https://m.media-amazon.com/images/I/81Cx8rFoj7L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08Z3FYRRV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#868d7a"
+  },
+  {
+    "id": 3371,
+    "title": "Amazon Product 65",
+    "price": 0,
+    "description": "Drsoum Botanical Canvas Framed Wall Art Watercolor Green Leaf Tropical Plant Art Prints Boho Decor for Bedroom Bathroom Kitchen Home Office Decorations 8\"x 10\"x 4pcs",
+    "image": "https://m.media-amazon.com/images/I/61Alk4N4GnL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJBKB92R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#476949"
+  },
+  {
+    "id": 3372,
+    "title": "Amazon Product 66",
+    "price": 0,
+    "description": "17 PCS Matisse Wall Prints for Bedroom, Sage Green Wall Art Decor, Matisse Wall Art Exhibition Posters, Wall Collage Kit Pictures for Living Room, Eclectic Boho Vintage Dorm Gallery Home Decor",
+    "image": "https://m.media-amazon.com/images/I/81YRksMZowL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CS2XN8FK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#90c497"
+  },
+  {
+    "id": 3373,
+    "title": "Amazon Product 67",
+    "price": 0,
+    "description": "IOWER Large Macrame Wall Hanging Green Boho Wall Decor Macrame Beads Yarn Fiber Wall Art Beaded Tassel Home Decor For Bedroom Living room 39\" W x 55\" L",
+    "image": "https://m.media-amazon.com/images/I/713SG5wa8vL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5XHKKPW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#626b5a"
+  },
+  {
+    "id": 3374,
+    "title": "Amazon Product 68",
+    "price": 0,
+    "description": "UPWOIGH Framed Green Wall Art(No Plexiglass), Palm Leaves Canvas Wall Art, 16x12in Botanical Wood Bohemia Sage Wall Decor Prints Artworks for Living Room Bedroom, Plant Neutral Wall Decor Set of 3",
+    "image": "https://m.media-amazon.com/images/I/919Hsmh5xAL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B934JJJG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8aa67d"
+  },
+  {
+    "id": 3375,
+    "title": "Amazon Product 69",
+    "price": 0,
+    "description": "Forest & Mountain Wall Art Green Framed Nature Landscape Pictures for Living Room, Bedroom & Office Large Paintings Wall Decor Tree, Lake, and Mountain Artwork for Wall Decor 29x58IN",
+    "image": "https://m.media-amazon.com/images/I/91TCS1ZayEL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKSDB2GW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c0c15b"
+  },
+  {
+    "id": 3376,
+    "title": "Amazon Product 70",
+    "price": 0,
+    "description": "Abstract Wall Art For Living Room Canvas Art Wall Decor Blue Eclectic Decor Modern Canvas Wall Prints Abstract Wall Decor Suitable For Bedroom Apartment Office Dining Room Wall Decor Can Be Hung 24\"X48\"",
+    "image": "https://m.media-amazon.com/images/I/81-YuwgOX1L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKXTW4WT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#688092"
+  },
+  {
+    "id": 3377,
+    "title": "Amazon Product 71",
+    "price": 0,
+    "description": "Wall Art for Living Room Teal Plum Blossom Canvas Wall Pictures for Bedroom Wall Decor large Framed Floral Canvas Prints Artwork Home Wall Decorations Ready to Hang Framed 30\"x60\"",
+    "image": "https://m.media-amazon.com/images/I/81s0Vdp0O4L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C1BJ4DLN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#779db0"
+  },
+  {
+    "id": 3378,
+    "title": "Amazon Product 72",
+    "price": 0,
+    "description": "Boho Geometric Green Polygon Tropical Leaves Illustrations Wall Art 16\"x11\" Wood Set Of 3 Framed Abstract Shapes Sign Modren Living Room Bedroom Office Neutral Print Wall Hang Decor (Black)",
+    "image": "https://m.media-amazon.com/images/I/71Z1Ew7ADpL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4Q6RPXH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#958e70"
+  },
+  {
+    "id": 3379,
+    "title": "Amazon Product 73",
+    "price": 0,
+    "description": "Saypeacher Green Canvas Wall Art Abstract Rose Painting Pictures Prints Green and White Artwork",
+    "image": "https://m.media-amazon.com/images/I/71lNcy5JmyL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4LZDBGH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#224136"
+  },
+  {
+    "id": 3380,
+    "title": "Amazon Product 74",
+    "price": 0,
+    "description": "ANHUIB Green Wall Art 16x24 Inch Large Canvas Wall Art Abstract Watercolor Wall Decor Misty Landscape Art Prints Framed Neutral Paintings Set of 3 for Living Room Bedroom Ofice",
+    "image": "https://m.media-amazon.com/images/I/51NoxRxSCaL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DL5JV87D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7dad5"
+  },
+  {
+    "id": 3381,
+    "title": "Amazon Product 75",
+    "price": 0,
+    "description": "Sage Green Boho Wall Art Set of 3, Minimalist Framed Wall Art Geometric Line Leaf Sun Moon Beige Green Canvas Artwork Paintings, Abstract Botanical Boho Room Decor, Office, 12\"x16\"",
+    "image": "https://m.media-amazon.com/images/I/71XNr3mv7cL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVLL9PCR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7b7f69"
+  },
+  {
+    "id": 3382,
+    "title": "Amazon Product 76",
+    "price": 0,
+    "description": "KHOYIME Large Macrame Wall Hanging Boho Woven Tapestry, Chic Home Decor Modern Bohemian Handmade Leaf Feather Wall Art Decorations for Apartment Dorm Living Room Bedroom Nursery Backdrop 39\"W X 29.5\"L",
+    "image": "https://m.media-amazon.com/images/I/71hnuvqbOZL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4XX8NKQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#727c61"
+  },
+  {
+    "id": 3383,
+    "title": "Amazon Product 77",
+    "price": 0,
+    "description": "Cleaning Brush - Hard Bristle Crevice Cleaning Brush for Tight Spaces, Gap Scrub Brush, Bathroom Grout Brush, Thin Cleaning Brush for Household Use, Home Kitchen Toilet Cleaning Supplies",
+    "image": "https://m.media-amazon.com/images/I/61-oKJLNdfL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2HX2NS4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#1f1d1e"
+  },
+  {
+    "id": 3384,
+    "title": "Amazon Product 78",
+    "price": 0,
+    "description": "Cleaning Brush, 3 Pcs Hard Bristle Crevice Cleaning Brush, Grout Cleaning Brush, Scrub Brush for Tile Grout Crevice, Gap Cleaning Tools for Bathroom Kitchen Toilet Window Track (3, Black)",
+    "image": "https://m.media-amazon.com/images/I/61Et6q2yGLL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7MFD841/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#242324"
+  },
+  {
+    "id": 3385,
+    "title": "Amazon Product 79",
+    "price": 0,
+    "description": "Cleaning Brush, 5 Pcs Hard Bristle Crevice Cleaning Brush, Grout Cleaning Brush, Scrub Brush for Tile Grout Crevice, Gap Cleaning Tools for Bathroom Kitchen Toilet Window Track (5, Black)",
+    "image": "https://m.media-amazon.com/images/I/71ruuwSpTdL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCNPL22L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#222223"
+  },
+  {
+    "id": 3386,
+    "title": "Amazon Product 80",
+    "price": 0,
+    "description": "4 Pcs Farmhouse Bathroom Wall Decors Relax Soak Unwind Breathe Wooden Word Sign Green Hanging Wall Art Rustic Office Wall Decor for Bedroom Living Room Vintage Decorations(Green Leaves 10X4 Inch)",
+    "image": "https://m.media-amazon.com/images/I/71Y9aiXgmiL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CD2BKC68/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9cb781"
+  },
+  {
+    "id": 3387,
+    "title": "Amazon Product 81",
+    "price": 0,
+    "description": "Boho Wall Art Painting, Boho Wall Art Set of 3, Sage Green Minimalist Framed Canvas Wall Art Geometric Leaf Sun Moon Beige Green Canvas Artwork 12\"X16\" for Bathroom Living Room Boho Wall Decor",
+    "image": "https://m.media-amazon.com/images/I/71BYE8QkCZL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BGPHTL57/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cbcebb"
+  },
+  {
+    "id": 3388,
+    "title": "Amazon Product 82",
+    "price": 0,
+    "description": "KISSFOX Framed Canvas Wall Art Abstract Floral Botanical Print Set of 3 Green Beige Wildflower Flower Market Paintings Boho Modern Minimalist Pictures Decor Bedroom Bathroom Living Room 12\"x16\"",
+    "image": "https://m.media-amazon.com/images/I/71powpZkDHL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8Q17ZWG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#898f6c"
+  },
+  {
+    "id": 3389,
+    "title": "Amazon Product 83",
+    "price": 0,
+    "description": "YJYart Green Flowers Canvas Wall Art Modern Paintings with Gold Foil Abstract Nature Wall Decorations for Home Office Living Room Bedroom 24\" x 48\"",
+    "image": "https://m.media-amazon.com/images/I/71jrBi9tCjL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSK6HHYM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a0b096"
+  },
+  {
+    "id": 3390,
+    "title": "Amazon Product 84",
+    "price": 0,
+    "description": "Sage Green Wall Art Set of 3, Abstract Green Wall Decor Living Room, Minimalist Modern Framed Wall Art Marble Line Beige Gold Green Canvas Artwork Paintings, Green Boho Room Decor, Bedroom Bathroom Office Wall Decoration, 12\"x16\"",
+    "image": "https://m.media-amazon.com/images/I/61IkuOwEY2L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CY44L6BG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a6b7a5"
+  },
+  {
+    "id": 3391,
+    "title": "Amazon Product 85",
+    "price": 0,
+    "description": "DUWQU 2Pcs Framed Inspirational Wall Decor, Wooden Bible Verse Signs Wall Art Decoration Sage Green Wall Decor Easily Hang Ornament for Office Bedroom Bathroom Home(Classic, 12 x 4 Inch)",
+    "image": "https://m.media-amazon.com/images/I/71XO4ofV3GL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09FFBV7BS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c5d0a4"
+  },
+  {
+    "id": 3392,
+    "title": "Amazon Product 86",
+    "price": 0,
+    "description": "FWIEXA Misty Green Forest Framed Canvas Wall Art Set, Nature Scenery Modern Wall Decor, Foggy Mountain Wall Painting, Woodland Landscape Nursery Art Print for Living Room, Bedroom, Office - 16\"x24\"x3",
+    "image": "https://m.media-amazon.com/images/I/7141kCI828L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CY2FG62N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b7a997"
+  },
+  {
+    "id": 3393,
+    "title": "Amazon Product 87",
+    "price": 0,
+    "description": "Framed Inspirational Wall Art Minimalist Eucalyptus Wall Decor Motivational Positive Quotes Canvas Posters Prints Green Botanical Pictures for Office Living Room Bedroom Decoration (12\"x12\")",
+    "image": "https://m.media-amazon.com/images/I/81+G93AxFZL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C1RZ9Z38/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#5f6b60"
+  },
+  {
+    "id": 3394,
+    "title": "Amazon Product 88",
+    "price": 0,
+    "description": "Fmcmly Be Kind to Your Mind Vintage Tin Signs Hippie Boho Wall Art Encouragement Gifts for Women Home Office Bedroom Living Room Cafes Wall Decor 8x12 Inch",
+    "image": "https://m.media-amazon.com/images/I/71siuT4C81L._AC_SY606_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BBBZ3MNP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#233d39"
+  },
+  {
+    "id": 3395,
+    "title": "Amazon Product 89",
+    "price": 0,
+    "description": "WOWSTAR Framed Wall Art for Living Room, Picture Frame, Botanical Wall Art, Green Modern Wall Decor with Green Plant Pictures for Bedroom, Bathroom (4 Pack, 8in x 10in)",
+    "image": "https://m.media-amazon.com/images/I/71QpX84OfJL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DGL5GX8Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c8ccc3"
+  },
+  {
+    "id": 3396,
+    "title": "Amazon Product 90",
+    "price": 0,
+    "description": "97 Decor Green Wall Art Prints - Plant Pictures Wall Art, Vintage Botanical Prints, Plant Poster For Room Aesthetic, Book Pages Dictionary Art Dark Green Wall Decor For Bedroom Home (8x10 Unframed)",
+    "image": "https://m.media-amazon.com/images/I/A1qBusI-0zL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNQ2SPGZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#77876c"
+  },
+  {
+    "id": 3397,
+    "title": "Amazon Product 91",
+    "price": 0,
+    "description": "Green Forest Canvas Wall Art Living Room Decoration Big Trees Nature Picture Large Modern Canvas Artwork Contemporary Woods Mossy Rock Spring Season Prints for Office Home Decoration 20\" x 40\"",
+    "image": "https://m.media-amazon.com/images/I/81o4l3ROFuL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B074JFWX8M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2f4236"
+  },
+  {
+    "id": 3398,
+    "title": "Amazon Product 92",
+    "price": 0,
+    "description": "ANERZA Framed Sage Green Wall Art Decor, Large Matisse Wall Prints for Bedroom, Modern Posters for Living Room Aesthetic, Botanical Floral Home Bathroom Kitchen Office Dining Above Bed Artwork (12x16)",
+    "image": "https://m.media-amazon.com/images/I/715s1zr7rTL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1G72RJQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a2a998"
+  },
+  {
+    "id": 3399,
+    "title": "Amazon Product 93",
+    "price": 0,
+    "description": "TUDRUKU Macrame Wall Hanging Nursery Decor Leaves Woven Tapestry Feather Handmade Yarn Tassels Boho Wall Decor Leaves Art Decorations for Nursery Bedroom Living Room Apartment Home Backdrop (Green)",
+    "image": "https://m.media-amazon.com/images/I/715P2cKWsHL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNLWZSQ4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#25381c"
+  },
+  {
+    "id": 3400,
+    "title": "Amazon Product 94",
+    "price": 0,
+    "description": "Canvas Wall Art Decor Modern Canvas Wall Art For Living Room Abstract Art Green Wall Art Decor Colorful Abstract Wall Art Prints Canvans Art Work For Bedroom Office Kitchen Wall Decor 20\" x 40\"",
+    "image": "https://m.media-amazon.com/images/I/81GfNZ78fgL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKXNWF6Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c5c5c2"
+  },
+  {
+    "id": 3401,
+    "title": "Amazon Product 95",
+    "price": 0,
+    "description": "Qunclay 4 Pieces Boho Wall Decor for Bathroom 12 x 5 Inch Relax Soak Unwind Breathe Bathroom Sign with Beads Leaf Print Minimalist Botanical Wall Art Farmhouse Wooden Hanging Art(Green, Plant)",
+    "image": "https://m.media-amazon.com/images/I/71VEhEV+9YL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BZX9TJ2D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ebeae6"
+  },
+  {
+    "id": 3402,
+    "title": "Amazon Product 96",
+    "price": 0,
+    "description": "Bwodke Botanical Wall Art Plant Floral Watercolor Poster Canvas Prints Set of 3 Framed Sage Green Painting Eucalyptus Leaf Picture Modern Minimalist Home Decor Bedroom Bathroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/71hMD707MfL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZTW54BM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7d8cf"
+  },
+  {
+    "id": 3403,
+    "title": "Amazon Product 97",
+    "price": 0,
+    "description": "iKNOW FOTO 3 Pieces Abstract Wall Art Geometric Canvas Circle Painting Modern Brown Green and Gold Picture Simple Artwork Framed for Bedroom Bathroom Home Office Wall Décor Each Panel 12x16",
+    "image": "https://m.media-amazon.com/images/I/71VVb13rOvL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4P1CV4Y/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#606433"
+  },
+  {
+    "id": 3404,
+    "title": "Amazon Product 98",
+    "price": 0,
+    "description": "Nachic Wall Green Bathroom Picture Wall Decor Relax Soak Unwind Signs Poster Canvas Print Art Botanical Leaf Artwok Framed Washroom Toilet Decoration Ready to Hang 12X12inchx3pcs",
+    "image": "https://m.media-amazon.com/images/I/719jyzAnVFL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09KGZFJ1C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b9bba8"
+  },
+  {
+    "id": 3405,
+    "title": "Amazon Product 99",
+    "price": 0,
+    "description": "3Pcs Sage Green Botanical Wall Art Line Drawing Floral Canvas Poster Prints Modern Abstract Minimalist Picture Neutral Boho Artwork Simple Painting Wall Decor for Living Room Bedroom 12x16in Framed",
+    "image": "https://m.media-amazon.com/images/I/61FjiBHLUUL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D964K5WS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9aa499"
+  },
+  {
+    "id": 3406,
+    "title": "Amazon Product 100",
+    "price": 0,
+    "description": "16 PCS Sage Green Wall Art Decor, Matisse Wall Prints for Bedroom, Abstract Posters for Room Aesthetic, Wall Collage Kit Pictures for Living Room, Eclectic Boho Vintage Dorm Gallery Home Decor",
+    "image": "https://m.media-amazon.com/images/I/81Avgp07NkL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CHV86FJL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4f1d7"
+  },
+  {
+    "id": 3407,
+    "title": "Amazon Product 101",
+    "price": 0,
+    "description": "KREATIVE ARTS Wall Art Living Room Simple Life Lime Green Tree Landscape Painting Office Wall Decor Single Pieces Canvas Prints Ready to Hang Home Decoration Black White Works Art 20x40in",
+    "image": "https://m.media-amazon.com/images/I/618GqlE0XiL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07SW2KL7S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8a9569"
+  },
+  {
+    "id": 3408,
+    "title": "Amazon Product 102",
+    "price": 0,
+    "description": "ANERZA Framed Sage Green Wall Art Decor, Large Matisse Wall Prints for Bedroom, Modern Posters for Living Room Aesthetic, Botanical Floral Home Bathroom Kitchen Office Dining Above Bed Artwork (12x16)",
+    "image": "https://m.media-amazon.com/images/I/715s1zr7rTL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1G72RJQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a2a998"
+  },
+  {
+    "id": 3409,
+    "title": "Amazon Product 103",
+    "price": 0,
+    "description": "TUDRUKU Macrame Wall Hanging Nursery Decor Leaves Woven Tapestry Feather Handmade Yarn Tassels Boho Wall Decor Leaves Art Decorations for Nursery Bedroom Living Room Apartment Home Backdrop (Green)",
+    "image": "https://m.media-amazon.com/images/I/715P2cKWsHL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNLWZSQ4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#25381c"
+  },
+  {
+    "id": 3410,
+    "title": "Amazon Product 104",
+    "price": 0,
+    "description": "Canvas Wall Art Decor Modern Canvas Wall Art For Living Room Abstract Art Green Wall Art Decor Colorful Abstract Wall Art Prints Canvans Art Work For Bedroom Office Kitchen Wall Decor 20\" x 40\"",
+    "image": "https://m.media-amazon.com/images/I/81GfNZ78fgL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKXNWF6Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c5c5c2"
+  },
+  {
+    "id": 3411,
+    "title": "Amazon Product 105",
+    "price": 0,
+    "description": "Qunclay 4 Pieces Boho Wall Decor for Bathroom 12 x 5 Inch Relax Soak Unwind Breathe Bathroom Sign with Beads Leaf Print Minimalist Botanical Wall Art Farmhouse Wooden Hanging Art(Green, Plant)",
+    "image": "https://m.media-amazon.com/images/I/71VEhEV+9YL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BZX9TJ2D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ebeae6"
+  },
+  {
+    "id": 3412,
+    "title": "Amazon Product 106",
+    "price": 0,
+    "description": "Bwodke Botanical Wall Art Plant Floral Watercolor Poster Canvas Prints Set of 3 Framed Sage Green Painting Eucalyptus Leaf Picture Modern Minimalist Home Decor Bedroom Bathroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/71hMD707MfL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZTW54BM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7d8cf"
+  },
+  {
+    "id": 3413,
+    "title": "Amazon Product 107",
+    "price": 0,
+    "description": "iKNOW FOTO 3 Pieces Abstract Wall Art Geometric Canvas Circle Painting Modern Brown Green and Gold Picture Simple Artwork Framed for Bedroom Bathroom Home Office Wall Décor Each Panel 12x16",
+    "image": "https://m.media-amazon.com/images/I/71VVb13rOvL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4P1CV4Y/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#606433"
+  },
+  {
+    "id": 3414,
+    "title": "Amazon Product 108",
+    "price": 0,
+    "description": "Nachic Wall Green Bathroom Picture Wall Decor Relax Soak Unwind Signs Poster Canvas Print Art Botanical Leaf Artwok Framed Washroom Toilet Decoration Ready to Hang 12X12inchx3pcs",
+    "image": "https://m.media-amazon.com/images/I/719jyzAnVFL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09KGZFJ1C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b9bba8"
+  },
+  {
+    "id": 3415,
+    "title": "Amazon Product 109",
+    "price": 0,
+    "description": "3Pcs Sage Green Botanical Wall Art Line Drawing Floral Canvas Poster Prints Modern Abstract Minimalist Picture Neutral Boho Artwork Simple Painting Wall Decor for Living Room Bedroom 12x16in Framed",
+    "image": "https://m.media-amazon.com/images/I/61FjiBHLUUL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D964K5WS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9aa499"
+  },
+  {
+    "id": 3416,
+    "title": "Amazon Product 110",
+    "price": 0,
+    "description": "16 PCS Sage Green Wall Art Decor, Matisse Wall Prints for Bedroom, Abstract Posters for Room Aesthetic, Wall Collage Kit Pictures for Living Room, Eclectic Boho Vintage Dorm Gallery Home Decor",
+    "image": "https://m.media-amazon.com/images/I/81Avgp07NkL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CHV86FJL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4f1d7"
+  },
+  {
+    "id": 3417,
+    "title": "Amazon Product 111",
+    "price": 0,
+    "description": "KREATIVE ARTS Wall Art Living Room Simple Life Lime Green Tree Landscape Painting Office Wall Decor Single Pieces Canvas Prints Ready to Hang Home Decoration Black White Works Art 20x40in",
+    "image": "https://m.media-amazon.com/images/I/618GqlE0XiL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07SW2KL7S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8a9569"
+  },
+  {
+    "id": 3418,
+    "title": "Amazon Product 112",
+    "price": 0,
+    "description": "Wieco Art Large Contemporary Gallery Wrapped Floral Giclee Canvas Print Green Flickering Flowers Pictures Paintings on Canvas Wall Art Ready to Hang for Living Room Home Decorations 24x24 inch",
+    "image": "https://m.media-amazon.com/images/I/51OCTC-2DdS._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00O9XITMU/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#525739"
+  },
+  {
+    "id": 3419,
+    "title": "Amazon Product 113",
+    "price": 0,
+    "description": "Botanical Prints Wall Art Framed: Sage Green Modern Farmhouse Wall Decor - Boho Wall Art for Bathroom Bedroom - Eucalyptus Nature Plant Pictures Minimalist Room Decor Aesthetic 8x10x4",
+    "image": "https://m.media-amazon.com/images/I/71Fq3p2pwjL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3LHMBLD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9ab094"
+  },
+  {
+    "id": 3420,
+    "title": "Amazon Product 114",
+    "price": 0,
+    "description": "Drsoum Green Botanical Boho Wall Art Framed Modern Sage Bohemian Wall Decor Abstract Geometry Lines Prints Ready to Hang 11x14in Natural Framed",
+    "image": "https://m.media-amazon.com/images/I/61-QEV48oRL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DK92754X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#878a6f"
+  },
+  {
+    "id": 3421,
+    "title": "Amazon Product 115",
+    "price": 0,
+    "description": "Hwetui Framed Sage Green Matisse Wall Art Set of 3 Vintage Vin Gogh Flower Market Posters Open Window Canvas Prints Abstract Aesthetic Artwork Painting Picture Decor for Living Room Bedroom 12\"x16\"",
+    "image": "https://m.media-amazon.com/images/I/71cAdj6N4IL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLGMM2MS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a2bdb4"
+  },
+  {
+    "id": 3422,
+    "title": "Amazon Product 116",
+    "price": 0,
+    "description": "Large Boho Framed Sage Green Canvas Wall Art, 3 Pieces White Green Prints Paintings Artwork for Walls, Bohemian Wall Hanging Pictures for Living Room, Hallway, Office Wall Decor -Total 30x60 Inch",
+    "image": "https://m.media-amazon.com/images/I/812h4c0gbdL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DK112QMH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#989982"
+  },
+  {
+    "id": 3423,
+    "title": "Amazon Product 117",
+    "price": 0,
+    "description": "Wieco Art Framed Wall Art Cypresses Classic Giclee Canvas Prints by Van Gogh Famous Oil Paintings Green Tree Picture for Home Decorations Modern Abstract Forest Landscape Artwork",
+    "image": "https://m.media-amazon.com/images/I/915-+jaiL8L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09LCXHJ7W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#405139"
+  },
+  {
+    "id": 3424,
+    "title": "Amazon Product 118",
+    "price": 0,
+    "description": "Botanical Prints Wall Art Black Framed: Sage Green Eucalyptus Bathroom Decor, Boho Pictures for Bedroom, Plant Leaf Poster Set 6 Pieces, Farmhouse Living Room Home Decoration Aesthetic",
+    "image": "https://m.media-amazon.com/images/I/61PSgcvLYfL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3LH138V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e5e7e4"
+  },
+  {
+    "id": 3425,
+    "title": "Amazon Product 119",
+    "price": 0,
+    "description": "Arjun Landscape Coastal Canvas Wall Art Green Trees Cottage Painting Woodgrain Picture Framed Modern for Bathroom Living Room Bedroom Nursery Room Kitchen Wall Decor, 14\"x14\" One Panel",
+    "image": "https://m.media-amazon.com/images/I/81XKHnRhE8L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D6FQTHQV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cdcebd"
+  },
+  {
+    "id": 3426,
+    "title": "Amazon Product 120",
+    "price": 0,
+    "description": "VisionaryBrush Framed Emerald Green Wall Art, Abstract Marbled Canvas Wall Decor, Modern Abstract Green and Gold Poster Print for Living Room Bedroom Office Aesthetic Picture 12x16 Inch 3 Pieces",
+    "image": "https://m.media-amazon.com/images/I/71vQdGS1OoL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHXNFZ42/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#14322a"
+  },
+  {
+    "id": 3427,
+    "title": "Amazon Product 121",
+    "price": 0,
+    "description": "Eucalyptus Flower Glass Vase Canvas Wall Art Bathroom Decor Country Style Wall Decor Pictures Farmhouse Vintage Artwork Green Botanical Posters Prints for Bathroom Bedroom Decoration",
+    "image": "https://m.media-amazon.com/images/I/91MK6vZnPuL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7LMH6LR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#98a69a"
+  },
+  {
+    "id": 3428,
+    "title": "Amazon Product 122",
+    "price": 0,
+    "description": "Jetec 4 Pcs Bathroom Decor Wall Art Relax Soak Unwind Breathe Wooden Sign Hanging Wall Art Green Accessories for Bedroom Living Room Office Farmhouse Decorations(Leaves, White, Green)",
+    "image": "https://m.media-amazon.com/images/I/71gvF3dSN7L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C14L7M7D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9ab089"
+  },
+  {
+    "id": 3429,
+    "title": "Amazon Product 123",
+    "price": 0,
+    "description": "Forest Art Canvas Wall Decor: 3 Panel Nature Wall Art Landscape Paintings Framed Trees Green Pictures Sunrise Scenery Wall Decor for Living Room Bedroom Office Bathroom 12 x 16 Inch",
+    "image": "https://m.media-amazon.com/images/I/81JeeO3Kf1L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPXG6XQJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#59792c"
+  },
+  {
+    "id": 3430,
+    "title": "Amazon Product 124",
+    "price": 0,
+    "description": "Pyradecor Modern 4 Panel Stretched Contemporary Zen Canvas Prints Perfect Bamboo Green Pictures on Canvas Wall Art for Home Office Decorations Living Room Bedroom",
+    "image": "https://m.media-amazon.com/images/I/61FkTT1uEPL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01GO2DF4A/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c8d486"
+  },
+  {
+    "id": 3431,
+    "title": "Amazon Product 125",
+    "price": 0,
+    "description": "Botanical Boho Bathroom Decor Wall Art Prints, UNFRAMED Sage Green Plants Decor for Bedroom|Office, Minimalist Eucalyptus Leaves Watercolor Art Prints, Set of 4 Pictures, 8\"x10\" No Frames",
+    "image": "https://m.media-amazon.com/images/I/71ZEBBVQomL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0923P4PCS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c3ccbb"
+  },
+  {
+    "id": 3432,
+    "title": "Amazon Product 126",
+    "price": 0,
+    "description": "Sage Green Wall Decor, Minimalist Boho wall art, Geometric with Green Leaves, Framed Canvas Wall Art, Bohemian Wall Decor for Living Room Bedroom Bathroom Office Aesthetic Set of 4, 8x10in (Framed)",
+    "image": "https://m.media-amazon.com/images/I/61YQKVbRX9L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BQ34JRDV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a4af9f"
+  },
+  {
+    "id": 3433,
+    "title": "Amazon Product 127",
+    "price": 0,
+    "description": "Green Abstract Pictures Green White Canvas Wall Art Emerald Artwork Modern Marble Wall Art Turquoise Abstract Pictures Abstract Fluid Wall Art Modern Green Artwork Abstract Marble Painting 16x24in No",
+    "image": "https://m.media-amazon.com/images/I/71GaUsbBVjL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CL6KP19H/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#27352a"
+  },
+  {
+    "id": 3434,
+    "title": "Amazon Product 128",
+    "price": 0,
+    "description": "Abstract Matisse Wall Art Exhibition Posters, Vintage Art Boho Art Prints, Retro Room Decor for Aesthetic Bedroom, green wall art, Unframed, 8 x 10 Inch(Green)-B02",
+    "image": "https://m.media-amazon.com/images/I/812Mzj3unZL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9P6K4XR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9aac94"
+  },
+  {
+    "id": 3435,
+    "title": "Amazon Product 129",
+    "price": 0,
+    "description": "Howwii Sage Green Wall Art Prints, Abstract Matisse Wall Art for Room Decor Aesthetic, Vintage Posters for Bedroom Wall Decor, Botanical Retro Wall Art Decor, Unframed, 6 PCS",
+    "image": "https://m.media-amazon.com/images/I/81Ic-XJsgoL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJ6JX9BQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a3a99b"
+  },
+  {
+    "id": 3436,
+    "title": "Amazon Product 130",
+    "price": 0,
+    "description": "Meetdeceny Green Wall Art for Women Girls Room Fashion Bag Wall Decor Photo Pictures for Wall Perfume Wall Decorations for Living Room Bedroom Modern Artwork 10\"x10\"x 4 Pieces",
+    "image": "https://m.media-amazon.com/images/I/81xc0p0JUvL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BSD73FMC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a0d9cf"
+  },
+  {
+    "id": 3437,
+    "title": "Amazon Product 131",
+    "price": 0,
+    "description": "Botanical Prints Wall Art for Bathrooms Canvas Green Leaf Framed Green Plant Wall Art Pictures (12\" x 16\") Posters Fall Pictures Boho Sage Green Leaf for Bathrooms, 4 Pieces Tropical Plants Pictures",
+    "image": "https://m.media-amazon.com/images/I/71Uh-941QpL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPLH64MZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3a6c4e"
+  },
+  {
+    "id": 3438,
+    "title": "Amazon Product 132",
+    "price": 0,
+    "description": "Framed Boho Floral Wall Art Set of 3 Sage Green Minimalist Poster Wall Decor, Watercolor Botanical Prints Canvas Wall Art Paintings Floral Wildflower Picture for Bedroom Bathroom Living Room 12x16 In",
+    "image": "https://m.media-amazon.com/images/I/81NJ+tviKsL._AC_SX466_PIbundle-3,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1NYSX94/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c6d0bf"
+  },
+  {
+    "id": 3439,
+    "title": "Amazon Product 133",
+    "price": 0,
+    "description": "ENTANUB Tree Wall Art for Living Room, Gold and Green Abstract Wall Decor for Bedroom, Tree of Life Print Paintings Artwork, Size 24x48 Inches",
+    "image": "https://m.media-amazon.com/images/I/91h68OqK-7L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CRHMQQFS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3b555d"
   }
 ];
