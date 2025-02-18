@@ -15,7 +15,7 @@
    "@types/react-dom": "18.2.4",
    "autoprefixer": "10.4.14",
    "chroma-js": "^2.4.2",
-   "color-thief": "^2.3.2",
+   "color-thief": "latest",
    "@types/chroma-js": "^2.4.3",
    "class-variance-authority": "^0.6.0",
    "clsx": "^1.2.1",
