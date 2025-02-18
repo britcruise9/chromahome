@@ -37621,5 +37621,1355 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B09T9T4Q1T/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#32475c"
+  },
+  {
+    "id": 3710,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "MPLONG Wall Art 3 Pieces Of Framed Decorative Paintings Abstract Simple Orange White Blue And Other Color Blocks Wall Art Canvas Prints Wall Decor Gifts Size 16\" x 24\" x 3 Panels",
+    "image": "https://m.media-amazon.com/images/I/612rL13IdnL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B099RTPNL1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c0bbb8"
+  },
+  {
+    "id": 3711,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "MPLONG Wall Art, Bright Style Framed Wall Art, Abstract Modern Art Shape Pattern White Blue Yellow Grey Wall Art Artfully Matching Living Room Bedroom Office Wall Decor - 16\"x 24\"x 3 Panels",
+    "image": "https://m.media-amazon.com/images/I/61BEle83+hL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MLJGMV2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9b9693"
+  },
+  {
+    "id": 3712,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "MPLONG Wall Art 3 Pieces Framed Wall Art Canvas Print Set Minimalist Medieval Geometric Circle Abstract Illustration Modern Wall Art Decor Multicolor Living Room Bedroom Office 16\"x 24\"x 3 Panels",
+    "image": "https://m.media-amazon.com/images/I/611qGtYTvVL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MKGKT76/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c3c1b6"
+  },
+  {
+    "id": 3713,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "Wall Art Set Canvas Print Art Painting Color Field Abstract Shapes Illustrations Brown Abstract Modern Wall Art for Living Room Bedroom Decoration Paintings Bathroom Wall Decor 12\"x16\"x3 Pieces",
+    "image": "https://m.media-amazon.com/images/I/81IrZITIIlL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BJV74MNH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8e765f"
+  },
+  {
+    "id": 3714,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "Black and White Canvas Wall Art Decor for Living Room Abstract Wall Art Pictures for Bedroom Brown Artwork Painting Large Modern Canvas Print for Home Office Decorations, Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/61QpgDNS-CL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7PD1GB3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d9cbbd"
+  },
+  {
+    "id": 3715,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Hand Painted Brown Abstract Canvas Wall Art Contemporary Modern Textured Oil Painting for Living Room Bedroom Office Decor",
+    "image": "https://m.media-amazon.com/images/I/71gS-Ah1JDL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNXNCKG2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b0a084"
+  },
+  {
+    "id": 3716,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Large Wall Art - Framed Canvas Wall Art for Living Room, Bedroom, Office - Textured Brown Modern Abstract Artwork- Minimalist Home and dining room Decor 20×40IN Wood Frame Dedroom decorations",
+    "image": "https://m.media-amazon.com/images/I/81ogDC66XNL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN69584F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7cbbe"
+  },
+  {
+    "id": 3717,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "Jetec 5 Pcs Moon Phase Wall Decor Hanging Wooden Moon Phase Wall Art Nordic Art Boho Decor for Room Bar Ornament(Brown, 10.6 Inch)",
+    "image": "https://m.media-amazon.com/images/I/71-O7t4bFGL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09SPNHTP7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8a6340"
+  },
+  {
+    "id": 3718,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "Large Framed Boho Black and White Brown Abstract Wall Art for Living Room, Set of 3 Piece Modern Minimalist Canvas Paintings Artwork for Walls, Geometric Prints Pictures for Hallway Office Wall Decor 24x36 In",
+    "image": "https://m.media-amazon.com/images/I/812zFMFikdL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHNZ6FWZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#80694d"
+  },
+  {
+    "id": 3719,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "SIGNFORD Framed Canvas Print Wall Art Set Abstract Earthy in Deep Brown and Beige Tones Modern Art Decorative Colorful for Living Room, Bedroom, Office - 24\"x36\"x3 Black",
+    "image": "https://m.media-amazon.com/images/I/71jagS5HB0L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKF2JB2D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#453a31"
+  },
+  {
+    "id": 3720,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "Acocifi Flowers Canvas Wall Art 3D Textured Painting, Elegant Florals Landscape Picture Grey and Brown Large Abstract Artwork for Living Room Bedroom Kitchen Dining Room Office Home Decor 40\"x20\"",
+    "image": "https://m.media-amazon.com/images/I/710Eqy41yPL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQQFJ5MQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a4a093"
+  },
+  {
+    "id": 3721,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "MHARTK66 Wall Decorations For Living Room Canvas Wall Art For Bedroom Office Decor Abstract Tree Landscape Wall Paintings Framed Prints Pictures Artwork Ready To Hang Hotel Room Home Decor 20x40 In",
+    "image": "https://m.media-amazon.com/images/I/61lxDm7TgQL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQ4P557X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#978473"
+  },
+  {
+    "id": 3722,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "HOMEOART Bathroom Signs Farmhouse Bathroom Wall Decor Pictures Canvas Wall Art for Bathroom Decor Framed 6x12inchx3Pieces (Brown)",
+    "image": "https://m.media-amazon.com/images/I/81+aFD8ce8L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CT5QVZKW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b6ab9e"
+  },
+  {
+    "id": 3723,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "Macrame Wall Hanging Boho Wall Decor 3Pcs Brown Fiber Wall Art Handmade Home Room Décor",
+    "image": "https://m.media-amazon.com/images/I/71B0irmUK6L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B2WF1XCG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9b846c"
+  },
+  {
+    "id": 3724,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "Takfot Blue Wall Art Rustic Canvas Paintings Vintage Leaf Art Prints Botanical Pictures Farmhouse Leaves Artwork Home Decor Stretched and Wrapped for Bathroom Living Room 12x16 Inch, 3 Panels",
+    "image": "https://m.media-amazon.com/images/I/61PgY-383oL._SY800_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07XMKVBL5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e5e8eb"
+  },
+  {
+    "id": 3725,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "arteWOODS Abstract Wall Art Brown Flowers Canvas Pictures Contemporary Minimalism Abstract Flower Artwork for Bedroom Bathroom Living Room Wall Decor 12\" x 16\" x 3 Pieces",
+    "image": "https://m.media-amazon.com/images/I/61V2GGJ6ldL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B085C96XC9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2d231e"
+  },
+  {
+    "id": 3726,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "Pretty Jolly Boho Wall Decor, Wall-Mounted Metal Art, Hanging Artificial Pampas Display, Living Room, Bedroom, Bathroom, Diningroom, Fake Faux Plant 2 Pack Black Brown",
+    "image": "https://m.media-amazon.com/images/I/71fY0Enu07L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B314KVSN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b7a288"
+  },
+  {
+    "id": 3727,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "CroBlissful 2 Pcs Wooden Mid Century Modern Wall Decor 3D Mid Century Modern Elegance Wall Accents Vintage Abstract Geometric Panels Art for Home Room(Classic Style, Brown)",
+    "image": "https://m.media-amazon.com/images/I/71jHNs7q9lL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9K8GBT4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#90552f"
+  },
+  {
+    "id": 3728,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "Abstract Wall Art For Living Room Brown Grey And White Wall Art Abstract Canvas Art Wall Decor Paintings Background Modern Artwork Decor For Bedroom Bathroom Can Be Hung 24×48 Inch",
+    "image": "https://m.media-amazon.com/images/I/91-e7+s0G3L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKXTKMKQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a69384"
+  },
+  {
+    "id": 3729,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "Framed Abstract Neutral Wall Art for Living Room, 3 Piece Modern Beige Brown Orange Canvas Artwork, Extra Large White Gold Painting Prints for Dining Room Bedroom Hallway Office Wall Decor, 20x30 Inch",
+    "image": "https://m.media-amazon.com/images/I/81I6PknhOKL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMCVHHN6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c2b0a0"
+  },
+  {
+    "id": 3730,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "Biuteawal - 3 Pieces Canvas Prints American West Rodeo Cowboy Wall Art Painting Brown Straw Hat on Leather Rancher Roper Boots Picture on Canvas Vintage Artwork Stretched for Home Office Decoration",
+    "image": "https://m.media-amazon.com/images/I/71Z7mdUxo5L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07VK4JVC8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#21130e"
+  },
+  {
+    "id": 3731,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Yihui Arts Abstract Tree Canvas Wall Art - Brown Forest Paintings with Gold Foil - Modern Landscape Pictures for Living Room Bedroom Bathroom Decor",
+    "image": "https://m.media-amazon.com/images/I/81FaI7PtyyL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MFQG5YL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c3c2b9"
+  },
+  {
+    "id": 3732,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "2 Pack Wooden Wall Vase Set - Brown Finish Modern Farmhouse & Boho Wall Decor for Entryway, Hallway, Bathroom, Living Room, Dining Room, Narrow Spaces",
+    "image": "https://m.media-amazon.com/images/I/81gc39PZqbL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9LFF1C1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fedaba"
+  },
+  {
+    "id": 3733,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "Blulu 3 Pieces Thicken Rustic Wall Decor Farmhouse Wall Art Decor Wood Hanging Decoration for Living Room Bedroom Home Indoor Outdoor Office(Vintage Style)",
+    "image": "https://m.media-amazon.com/images/I/712MKoK6C0L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MH42F9G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7d462f"
+  },
+  {
+    "id": 3734,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "Abstract Wall Art For Living Room Brown Grey And White Wall Art Abstract Canvas Art Wall Decor Paintings Background Modern Artwork Decor For Bedroom Bathroom Can Be Hung 24×48 Inch",
+    "image": "https://m.media-amazon.com/images/I/91-e7+s0G3L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKXTKMKQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#72635c"
+  },
+  {
+    "id": 3735,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "SIGNFORD Extra Large Framed Canvas Print Wall Art Abstract Earthy Gradient Warm Brown Tones Illustrations Modern Art Calm Warm for Living Room, Bedroom, Office - 60\"x30\"",
+    "image": "https://m.media-amazon.com/images/I/71J3LrWVuIL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DPYPM9FF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#614837"
+  },
+  {
+    "id": 3736,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "Black and Brown Abstract Wall Art Brown Abstract Pictures Black White and Brown Wall Art Modern Abstract Painting Black and Terracotta Wall Art Brown Minimalist Abstract Painting 16x24inchx3 No Frame",
+    "image": "https://m.media-amazon.com/images/I/71P5CgnpvdL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D99GTF6M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4cbc3"
+  },
+  {
+    "id": 3737,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "Abstract Blue Brown Like Several Holes Wall Art Painting The Picture Print On Canvas Abstract Pictures for Home Decor Decoration Gift",
+    "image": "https://m.media-amazon.com/images/I/61965CAdJzL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00RDDEHP6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2a1d15"
+  },
+  {
+    "id": 3738,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "NINEASO Botanical Canvas Wall Art - Wildflower Pictures Vintage Grey Brown Floral Wall Decor Rustic Beige Print Flower Plants Painting Artwork for Living Room Bedroom Home Office Decorations 20\" x 40\"",
+    "image": "https://m.media-amazon.com/images/I/81YBBV+5eoL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1FSN259/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#514b46"
+  },
+  {
+    "id": 3739,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "YISXINOAG Abstract Canvas Art Wall Decor Modern Artwork Canvas Prints Abstract Art Picture Contemporary Brown And White Wall Art Decor Artwork Bedroom Living Room Office Home Wall Decor 24x48 Inch",
+    "image": "https://m.media-amazon.com/images/I/81jqD4-bLWL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKXTD5FN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c1b0b0"
+  },
+  {
+    "id": 3740,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "Handicrafts Home 16x24 Photo Picture Frames Handmade Art Wall Hanging Nursery Guest Living Room Wall Decor Gifts, Taj Brown",
+    "image": "https://m.media-amazon.com/images/I/71nQnX183fL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B8DD5YZ8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bea894"
+  },
+  {
+    "id": 3741,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "3 Pcs Boho Wooden Art Wall Decor Leaf Sign Wall Accent Rustic Palm Leaf Wood Art Wall Hanging Sculpture Vintage Tropical Plant Wood Wall Plaque for Home Bathroom Living Room Office Decoration (Brown)",
+    "image": "https://m.media-amazon.com/images/I/815Tcoia5kL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09XZYXS8M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#52342c"
+  },
+  {
+    "id": 3742,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "Framed Modern Abstract 3D Textured Wall Art for Living Room, Large 3-Piece Neutral Artwork for Walls, Geometric Brown White Textured Wall Art Sandstone Painting Prints for Bedroom Guest Room Hallway Home Office Decor 16x24 Inch",
+    "image": "https://m.media-amazon.com/images/I/71AEfaxRGRL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DDBR7L9K/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#715a4a"
+  },
+  {
+    "id": 3743,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "Large Framed Neutral Abstract Wall Art 3 Piece, Brown Beige Flower Canvas Wall Art for Living Room, Wabi Sabi Art Minimalist Painting Prints Aesthetic Artwork for Bedroom Hallway Office Decor",
+    "image": "https://m.media-amazon.com/images/I/810W1nvwUDL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHNQC6HN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ab9181"
+  },
+  {
+    "id": 3744,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "QEEIG ‎Bathroom Shelves Over Toilet - Paper Storage Wall Mounted Farmhouse Decor Decorations Aesthetic Décor Sign Small Floating Wall Shelf 2+1 Set 16 inch, Rustic Brown (020BN)",
+    "image": "https://m.media-amazon.com/images/I/71IGFEwflDL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CDVXRKZY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8f6e4e"
+  },
+  {
+    "id": 3745,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "Deco 79 Wooden Tree Home Wall Decor Embossed Wall Sculpture, Wall Art 24\" x 2\" x 24\", Brown",
+    "image": "https://m.media-amazon.com/images/I/81SI+7A7NvS._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B097QG6ZF7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#997b61"
+  },
+  {
+    "id": 3746,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "LSXARTQQ Gray Gradient Abstract Wall Art Mid Century Modern Abstract Paintings Wall Decor Brown Boho Rustic Pictures Art Prints Minimalist Posters for Living Room Bedroom Office Unframed(16x24inch)",
+    "image": "https://m.media-amazon.com/images/I/71vkEkqWl3L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DNT1WXZX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#837a6f"
+  },
+  {
+    "id": 3747,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "LuxenHome Metal Wall Art, 2 Pieces Abstract Wall Decorations Metal Wall Decor, 36\" Brown Wall Decor Living Room with Frame, Metal Art Wall Decor, Wall Hanging Decor, Bedroom, Dining Room Wall Decor",
+    "image": "https://m.media-amazon.com/images/I/81aNrhrO-NL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C5R1DFY4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcd2c8"
+  },
+  {
+    "id": 3748,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "TANXM Black Woman Art Printing, Boho Black Female Wall Art, Black Girl Art Poster, Abstract African American Woman Wall Art Decor for Home Bedroom - Set of 4 (8\"X10\", No Frame",
+    "image": "https://m.media-amazon.com/images/I/71Kb0QvVnjL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C1BBHQXD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#47271e"
+  },
+  {
+    "id": 3749,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "Framed Modern Black and White Brown Abstract Wall Art, Large for Living Room Set of 4 Minimalist neutral Canvas Wall Decor, Geometric boho Paintings Pictures for Bathroom, Dining, Office, Hallway",
+    "image": "https://m.media-amazon.com/images/I/81t481Y++PL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMZC8KJC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8c6a51"
+  },
+  {
+    "id": 3750,
+    "title": "Amazon Product 41",
+    "price": 0,
+    "description": "Wall Art for Living Room Large Modern Wall Decor Canvas Paintings for Wall Decorations White Flower Graffiti on Brown Background Bedroom Office Artwork Plum Blossom Art Prints Framed 24x48 inches",
+    "image": "https://m.media-amazon.com/images/I/910Lktu2W+L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B7JMB2WM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#614339"
+  },
+  {
+    "id": 3751,
+    "title": "Amazon Product 42",
+    "price": 0,
+    "description": "Black Brown Abstract Wall Art Grey Black Brown Canvas Pictures Brown Modern Artwork Brown Orange Wall Art Brown Abstract Picture Black Brown White Paintings Abstract Art Prints 16x24inch Unframed",
+    "image": "https://m.media-amazon.com/images/I/71hVd468uQL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPVF15L3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6d3cd"
+  },
+  {
+    "id": 3752,
+    "title": "Amazon Product 43",
+    "price": 0,
+    "description": "Large Framed Canvas Wall Art - Natural Float Framed Brown Abstract Picturtes for Living Room Decor Brown Abstract Painting Artwork Prints for Bedroom Kitchen Home Office Decor 60\" X 28\" Set of 3",
+    "image": "https://m.media-amazon.com/images/I/718az4YVl5L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CWS4ZCQY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9c5d3d"
+  },
+  {
+    "id": 3753,
+    "title": "Amazon Product 44",
+    "price": 0,
+    "description": "Musanpou Hand-carved Wood Wall Decor featuring Artistic Round Design for Farmhouse and Country-style Interiors | Wall Art Decoration | 11.8 inches x 11.8 inches (brown)",
+    "image": "https://m.media-amazon.com/images/I/91odYYMYsxL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BZP1CMSJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#81684e"
+  },
+  {
+    "id": 3754,
+    "title": "Amazon Product 45",
+    "price": 0,
+    "description": "Dahey 2 Pack Wood Wall Planter Vase with Artificial Eucalyptus Farmhouse Wall Hanging Decor Pocket Planter for Indoor Fake Plants Greenery, Living Room Bedroom Kitchen Home Office Decoration",
+    "image": "https://m.media-amazon.com/images/I/71iz2vIHoGL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C2V9THZD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#534f46"
+  },
+  {
+    "id": 3755,
+    "title": "Amazon Product 46",
+    "price": 0,
+    "description": "Framed Boho Wall Art Set of 4 for Wooded Minimalist Botanical Print Wall Art for Rustic Vintage Farmhouse Home Kitchen Wall Decor (Brown, 11x14)",
+    "image": "https://m.media-amazon.com/images/I/71A1g0sGUaL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BS9RNJDX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5cdc2"
+  },
+  {
+    "id": 3756,
+    "title": "Amazon Product 47",
+    "price": 0,
+    "description": "Ronasip Modern Boho Abstract Line Wall Art Set Of 3, Mid Century Minimalist Wall Decor, Black And Brown Framed Neutral Wall Decor (12X16 Brown)",
+    "image": "https://m.media-amazon.com/images/I/819q7q-M2NL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DDKRVJSY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0c6b8"
+  },
+  {
+    "id": 3757,
+    "title": "Amazon Product 48",
+    "price": 0,
+    "description": "Abstract Texture Canvas Brown Beige and White Wall Art Neutral Textured Painting Brown Textured Wall Art Beige Abstract Artwork White Textured Painting Textured Boho Artwork for Bedroom 16x24inx2 Frameless",
+    "image": "https://m.media-amazon.com/images/I/81pu6i+jXjL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C8SWXMKZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#90745c"
+  },
+  {
+    "id": 3758,
+    "title": "Amazon Product 49",
+    "price": 0,
+    "description": "Wall Planters, Wood Wall Decor for Bedroom and Living Room, Modern Farmhouse Wooden Pocket Vases for Dried Flowers and Faux Greenery (Brown, 4 Pack)",
+    "image": "https://m.media-amazon.com/images/I/71Q0al3herL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BXKKW1H9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d2946a"
+  },
+  {
+    "id": 3759,
+    "title": "Amazon Product 50",
+    "price": 0,
+    "description": "Heiple Framed Boho Wall Art Set of 4 Wooden Wall Art for Rustic Vintage Farmhouse Home Living Room Bedroom Bathroom Kitchen Wall Decor (Brown, 12\"x16\")",
+    "image": "https://m.media-amazon.com/images/I/81ozPsEA13L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DBHFR5R3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9d978a"
+  },
+  {
+    "id": 3760,
+    "title": "Amazon Product 51",
+    "price": 0,
+    "description": "3 Pieces Metal Vase Flowers Wall Arts - Rustic Farmhouse Style Décor Metal Wall Art Black Minimalist Flower Natural Themed Wall Decors for Home Bedroom Dining Room Housewarming (Brown-Blue, Vase-C)",
+    "image": "https://m.media-amazon.com/images/I/71GYDemArKL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3TZ4MNG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6d7d5"
+  },
+  {
+    "id": 3761,
+    "title": "Amazon Product 52",
+    "price": 0,
+    "description": "Yookeer Christian Wall Art Office Inspirational Wooden Bible Verses Bedroom Scripture Wall Art Meditation Inspirational Hanging Wood Sign for Kitchen Living Room(Brown, English Style)",
+    "image": "https://m.media-amazon.com/images/I/81jW+FMLvAL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09LXDFSV2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4cdc8"
+  },
+  {
+    "id": 3762,
+    "title": "Amazon Product 53",
+    "price": 0,
+    "description": "Framed Modern Abstract Black White Brown Wall Art, Set of 3 Large Canvas Paintings Artwork for Walls, 3 Piece Contemporary Wabi Sabi Minimalist Prints Pictures for Living Room, Hallway, Bedroom, Office Wall Decor 16x24 Inch",
+    "image": "https://m.media-amazon.com/images/I/71yQ89dI-yL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8TCJKVM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b4aea8"
+  },
+  {
+    "id": 3763,
+    "title": "Amazon Product 54",
+    "price": 0,
+    "description": "3 PCS Vintage Brown Wooden Plaque Golden Flower Wall Decor, Relax Soak Unwind Signs Inspirational Wall Art Decrations Blessing Wall For Bedroom Living Room Bathroom Wall Pediments",
+    "image": "https://m.media-amazon.com/images/I/81P+xKxhxIL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C6XQNPHK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#35261c"
+  },
+  {
+    "id": 3764,
+    "title": "Amazon Product 55",
+    "price": 0,
+    "description": "Zhengmy 2 Pieces Metal Tree Leaf Wall Decor Vine Olive Branch Leaf Wall Art Living Room, Hallway Wall Decor Outdoor Decoration(Bright Colors)",
+    "image": "https://m.media-amazon.com/images/I/712C6pyOsOL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C61TNJ29/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cdd0c5"
+  },
+  {
+    "id": 3765,
+    "title": "Amazon Product 56",
+    "price": 0,
+    "description": "Heiple Family Wall Decor 11\"x14\" Framed Wooden Wall Sign for Home Decor Farmhouse Vintage Rustic Living Room Minimalist Family Wall Art (Brown, 11”x14”)",
+    "image": "https://m.media-amazon.com/images/I/81GAeZHpiKL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZRHF63Z/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0dad5"
+  },
+  {
+    "id": 3766,
+    "title": "Amazon Product 57",
+    "price": 0,
+    "description": "Wesiti 2 Set Boho Pampas Wall Decor Include 6 Artificial Pampas Plants and 2 Gold Metal Round Hanging Hoop Gold Boho Wall Mounted Decor Hanging Home Modern Artificial Display Wall Art(Brown)",
+    "image": "https://m.media-amazon.com/images/I/71kPKZ-wJyL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CT2JKM9J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c9b297"
+  },
+  {
+    "id": 3767,
+    "title": "Amazon Product 58",
+    "price": 0,
+    "description": "Xuhal Bless This Home Wall Decor Religious House Warming Gift Farmhouse Wooden God Sign Wood Rustic Blessing Plaque for Bedroom Living Room Kitchen Wall Art(Brown)",
+    "image": "https://m.media-amazon.com/images/I/818lFogxqcL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJ59QYNM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7a5b42"
+  },
+  {
+    "id": 3768,
+    "title": "Amazon Product 59",
+    "price": 0,
+    "description": "Glamativity 4 Pack Black Abstract Metal Wall Art, Minimalist Décor Single Line Art Wall Décor, 3D Textured Metal Wall Sculptures, for Living Room Bedroom Bathroom Study Room (Black Abstract, M Size 16 x 11\"\")",
+    "image": "https://m.media-amazon.com/images/I/71kA+j+-p0L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C1W773F8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5d6d2"
+  },
+  {
+    "id": 3769,
+    "title": "Amazon Product 60",
+    "price": 0,
+    "description": "Musanpou Hand-carved Round Art Decor for Home and Living Room Wall Simple Wooden Farmhouse Wall Decor (brown)",
+    "image": "https://m.media-amazon.com/images/I/91mBCXRXNpL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BZP1FJNL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6b5642"
+  },
+  {
+    "id": 3770,
+    "title": "Amazon Product 61",
+    "price": 0,
+    "description": "HOURIA Large Abstract Neutral Framed Canvas Wall Art Set, Brown Beige Wall Decor, Minimalist Black Wall Painting, Modern Brush Stroke Line Art Print for Living Room, Bedroom, Office- 16\"x24\"x3",
+    "image": "https://m.media-amazon.com/images/I/71+-8YS3g1L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DF221B65/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dcd3c5"
+  },
+  {
+    "id": 3771,
+    "title": "Amazon Product 62",
+    "price": 0,
+    "description": "SnugLife 2 Pcs Wood Mountain Wall Art - Modern Wooden Panel Mountain Wall Decor, Decorative Forest Nature Abstract Line Minimalist Wall Art for Living Room Bedroom Farmhouse - Large 23.5”x23.5”",
+    "image": "https://m.media-amazon.com/images/I/816X0K68MFL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CXF8MWZ7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfd6cf"
+  },
+  {
+    "id": 3772,
+    "title": "Amazon Product 63",
+    "price": 0,
+    "description": "4 Pieces Home Wall Signs, THIS IS US/TOGETHER/BLESS THIS HOME/FAMILY Wall Decor For Living Room Bedroom, Rustic Wooden Farmhouse Wall Art , 4.7 x 13.8 Inch(Brown)",
+    "image": "https://m.media-amazon.com/images/I/91j+JvXO51L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09X3BT2VS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#866348"
+  },
+  {
+    "id": 3773,
+    "title": "Amazon Product 64",
+    "price": 0,
+    "description": "BLINFEIRU Botanical Plant Wall Art, Minimalist Aesthetic Bedroom Wall Art, Vintage Leaf Pictures Wall Decor, 4 Piece Abstract Leaf Canvas Print for Office Living Room, Framed Artwork 12\"x12\"x4",
+    "image": "https://m.media-amazon.com/images/I/815J4mjoFWL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BNHHWYVD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#694d3c"
+  },
+  {
+    "id": 3774,
+    "title": "Amazon Product 65",
+    "price": 0,
+    "description": "Framed Boho Black and White Brown Modern Abstract Wall Art for Living Room, Set of 6 Bohemian Wall Hanging Artwork, Minimalist Sun Geometric Pictures for Bedroom Office Bathroom Wall Decor 11x14 Inch",
+    "image": "https://m.media-amazon.com/images/I/81j8M0q2HuL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DK54XH72/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#997459"
+  },
+  {
+    "id": 3775,
+    "title": "Amazon Product 66",
+    "price": 0,
+    "description": "UPWOIGH Boho Canvas Wall Art(No Plexiglass), Framed High Side Wall Art, 16x12in Yellow-Brown Abstract Woman and Leaf Lines Minimalist Wall Decor for Living Room Bedroom Set of 3",
+    "image": "https://m.media-amazon.com/images/I/61Se7tm21VL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B9359JKK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#987953"
+  },
+  {
+    "id": 3776,
+    "title": "Amazon Product 67",
+    "price": 0,
+    "description": "Pigort Modern Abstract Wall Art Framed, Neutral Canvas Wall Art Prints Minimalist Line Wall Decor Black Brown Artwork for Living Room Bedroom, 12x16 Inch, Set of 3",
+    "image": "https://m.media-amazon.com/images/I/815m70FmGbL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CXMXRM3F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dac9b7"
+  },
+  {
+    "id": 3777,
+    "title": "Amazon Product 68",
+    "price": 0,
+    "description": "KAIRNE Black Tan Stroke Shape Framed Canvas Wall Art Set, Abstract Brown Pastel Wall Decor, Modern Block Illustration Wall Painting, Nordic Neutral Paint Art Print Living Room Bedroom Office 16\"×24\"×3",
+    "image": "https://m.media-amazon.com/images/I/71fbVxpyrQL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D78WXKPK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c3b4a6"
+  },
+  {
+    "id": 3778,
+    "title": "Amazon Product 69",
+    "price": 0,
+    "description": "Heiple The Lord Your God Is Good Wall Decor 11\"x14\" Framed Wooden Wall Sign for Home Decor Farmhouse Vintage Rustic Living Room Minimalist Christian Wall Art (Brown, 11”x14”)",
+    "image": "https://m.media-amazon.com/images/I/81aVLWjeHCL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZRN62WN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddd6ca"
+  },
+  {
+    "id": 3779,
+    "title": "Amazon Product 70",
+    "price": 0,
+    "description": "Pine Tree Framed Canvas Wall Art Set, Natural Woodland Landscape Wall Decor, Large Retro Forest Painting, Vintage Brown Artwork for Living Room, Bedroom, Kitchen, Study, Office - 16\"x24\"x3",
+    "image": "https://m.media-amazon.com/images/I/81AitzSCqQL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCBF13NG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ccb9a3"
+  },
+  {
+    "id": 3780,
+    "title": "Amazon Product 71",
+    "price": 0,
+    "description": "BATRENDY ARTS Tree Canvas Wall Art for Bedroom Hand Painted Grey and White Landscape Pictures with Gold Foil Modern Brown Forest Painting Artwork Stretched",
+    "image": "https://m.media-amazon.com/images/I/91PxL7g+QSL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08CZ15Z49/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#88817c"
+  },
+  {
+    "id": 3781,
+    "title": "Amazon Product 72",
+    "price": 0,
+    "description": "Framed Abstract Neutral Wall Art for Living Room, 3 Piece Modern Beige Brown Orange Canvas Artwork, Extra Large White Gold Painting Prints for Dining Room Bedroom Hallway Office Wall Decor, 20x30 Inch",
+    "image": "https://m.media-amazon.com/images/I/81I6PknhOKL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMCVHHN6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#73503c"
+  },
+  {
+    "id": 3782,
+    "title": "Amazon Product 73",
+    "price": 0,
+    "description": "Abstract Blue Brown Like Several Holes Wall Art Painting The Picture Print On Canvas Abstract Pictures for Home Decor Decoration Gift",
+    "image": "https://m.media-amazon.com/images/I/61965CAdJzL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00RDDEHP6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#454745"
+  },
+  {
+    "id": 3783,
+    "title": "Amazon Product 74",
+    "price": 0,
+    "description": "Abstract Wall Art For Living Room Brown Grey And White Wall Art Abstract Canvas Art Wall Decor Paintings Background Modern Artwork Decor For Bedroom Bathroom Can Be Hung 24×48 Inch",
+    "image": "https://m.media-amazon.com/images/I/91-e7+s0G3L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKXTKMKQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#493a33"
+  },
+  {
+    "id": 3784,
+    "title": "Amazon Product 75",
+    "price": 0,
+    "description": "Framed Abstract Brown White Wall Art for Living Room, 3 Piece Modern Beige Canvas Artwork, Large Minimalist Contemporary Painting Prints for Bedroom Dining Room Hallway Office Wall Decor 24x36 Inch",
+    "image": "https://m.media-amazon.com/images/I/81oQRP-fnNL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DMD24PGN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ae9f8a"
+  },
+  {
+    "id": 3785,
+    "title": "Amazon Product 76",
+    "price": 0,
+    "description": "BLINFEIRU Botanical Plant Wall Art, Minimalist Aesthetic Bedroom Wall Art, Vintage Leaf Pictures Wall Decor, 4 Piece Abstract Leaf Canvas Print for Office Living Room, Framed Artwork 12\"x12\"x4",
+    "image": "https://m.media-amazon.com/images/I/815J4mjoFWL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BNHHWYVD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#694d3c"
+  },
+  {
+    "id": 3786,
+    "title": "Amazon Product 77",
+    "price": 0,
+    "description": "KAIRNE Black Tan Stroke Shape Framed Canvas Wall Art Set, Abstract Brown Pastel Wall Decor, Modern Block Illustration Wall Painting, Nordic Neutral Paint Art Print Living Room Bedroom Office 16\"×24\"×3",
+    "image": "https://m.media-amazon.com/images/I/71fbVxpyrQL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D78WXKPK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4c8bf"
+  },
+  {
+    "id": 3787,
+    "title": "Amazon Product 78",
+    "price": 0,
+    "description": "Large Canvas Wall Art Plum Blossom Wall Art Brown Wall Decor Living Room Bedroom Pictures for Wall Over Bed Framed Artwork for Wall Modern Canvas Paintings for Wall Decorations Office Decor 30×60",
+    "image": "https://m.media-amazon.com/images/I/81CEByz6fWL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CP57BJQD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0ccc5"
+  },
+  {
+    "id": 3788,
+    "title": "Amazon Product 79",
+    "price": 0,
+    "description": "Cleaning Brush - Hard Bristle Crevice Cleaning Brush for Tight Spaces, Gap Scrub Brush, Bathroom Grout Brush, Thin Cleaning Brush for Household Use, Home Kitchen Toilet Cleaning Supplies",
+    "image": "https://m.media-amazon.com/images/I/61-oKJLNdfL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2HX2NS4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b8babb"
+  },
+  {
+    "id": 3789,
+    "title": "Amazon Product 80",
+    "price": 0,
+    "description": "Cleaning Brush, 3 Pcs Hard Bristle Crevice Cleaning Brush, Grout Cleaning Brush, Scrub Brush for Tile Grout Crevice, Gap Cleaning Tools for Bathroom Kitchen Toilet Window Track (3, Black)",
+    "image": "https://m.media-amazon.com/images/I/61Et6q2yGLL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7MFD841/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#242324"
+  },
+  {
+    "id": 3790,
+    "title": "Amazon Product 81",
+    "price": 0,
+    "description": "Cleaning Brush, 5 Pcs Hard Bristle Crevice Cleaning Brush, Grout Cleaning Brush, Scrub Brush for Tile Grout Crevice, Gap Cleaning Tools for Bathroom Kitchen Toilet Window Track (5, Black)",
+    "image": "https://m.media-amazon.com/images/I/71ruuwSpTdL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCNPL22L/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#222223"
+  },
+  {
+    "id": 3791,
+    "title": "Amazon Product 82",
+    "price": 0,
+    "description": "SIGNWIN Framed Canvas Print Wall Art Set Geometric Line Brown Black Pastel Color Field Abstract Shapes Illustrations Modern Art Decorative Colorful for Living Room, Bedroom, Office - 24\"x36\"x3 Black",
+    "image": "https://m.media-amazon.com/images/I/717vM03IjIL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09VKYQ7FQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#393836"
+  },
+  {
+    "id": 3792,
+    "title": "Amazon Product 83",
+    "price": 0,
+    "description": "Macrame Wall Hanging 59.00\" W x 35.00\" L Brown Mountain Dip-Dyed Macrame Wall Decor Large Modern Fiber Art Boho Wall Decor",
+    "image": "https://m.media-amazon.com/images/I/71qWWHTjtxL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CFXR93YP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cec4b6"
+  },
+  {
+    "id": 3793,
+    "title": "Amazon Product 84",
+    "price": 0,
+    "description": "Deco 79 Wooden Scroll Home Wall Decor Carved Beading Wall Sculpture with Metal Accents, Wall Art 27\" x 1\" x 27\", Brown",
+    "image": "https://m.media-amazon.com/images/I/81jyKPi6a4L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B094SNBD21/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbcec2"
+  },
+  {
+    "id": 3794,
+    "title": "Amazon Product 85",
+    "price": 0,
+    "description": "Large Wall Art - Framed Canvas Wall Art for Living Room, Bedroom, Office - Textured Brown Modern Abstract Artwork- Minimalist Home and dining room Decor 20×40IN Wood Frame Dedroom decorations",
+    "image": "https://m.media-amazon.com/images/I/81ogDC66XNL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN69584F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7cbbe"
+  },
+  {
+    "id": 3795,
+    "title": "Amazon Product 86",
+    "price": 0,
+    "description": "Biuteawal - 3 Pieces Canvas Prints American West Rodeo Cowboy Wall Art Painting Brown Straw Hat on Leather Rancher Roper Boots Picture on Canvas Vintage Artwork Stretched for Home Office Decoration",
+    "image": "https://m.media-amazon.com/images/I/71Z7mdUxo5L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07VK4JVC8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#21130e"
+  },
+  {
+    "id": 3796,
+    "title": "Amazon Product 87",
+    "price": 0,
+    "description": "OuElegent Longhorn Cow Wall Art Print Western Cattle Painting Farm Pictures Decor Framed Artwork 48 x 20 inches, Rustic Farmhouse Decor (Light Brown)",
+    "image": "https://m.media-amazon.com/images/I/819W4sjsw8L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJXS7CXB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbd6d1"
+  },
+  {
+    "id": 3797,
+    "title": "Amazon Product 88",
+    "price": 0,
+    "description": "Wall Art Set Canvas Print Art Painting Color Field Abstract Shapes Illustrations Brown Abstract Modern Wall Art for Living Room Bedroom Decoration Paintings Bathroom Wall Decor 12\"x16\"x3 Pieces",
+    "image": "https://m.media-amazon.com/images/I/81IrZITIIlL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BJV74MNH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8e765f"
+  },
+  {
+    "id": 3798,
+    "title": "Amazon Product 89",
+    "price": 0,
+    "description": "UPWOIGH Boho Canvas Wall Art(No Plexiglass), Framed High Side Wall Art, 16x12in Yellow-Brown Abstract Woman and Leaf Lines Minimalist Wall Decor for Living Room Bedroom Set of 3",
+    "image": "https://m.media-amazon.com/images/I/61Se7tm21VL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B9359JKK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#90724c"
+  },
+  {
+    "id": 3799,
+    "title": "Amazon Product 90",
+    "price": 0,
+    "description": "FWIEXA 3D Neutral Vintage Texture Framed Canvas Wall Art Set, Minimalist Boho Abstract Wall Decor, Brown Brush Stroke Wall Painting, Mid Century Modern Art Print for Living Room, Bedroom, Office - 16”x24”x3",
+    "image": "https://m.media-amazon.com/images/I/71sl-H-KhZL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D6RM3KQ4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8d7b69"
+  },
+  {
+    "id": 3800,
+    "title": "Amazon Product 91",
+    "price": 0,
+    "description": "VIYYIEA Modern Abstract Framed Wall Art, Brown Grey Wall Art Bedroom Neutral Decor, Canvas Print Color Pictures, Living Room Vintage Decor, 12x16 inch",
+    "image": "https://m.media-amazon.com/images/I/61PB-2Eko-L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1XN7962/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3c2a20"
+  },
+  {
+    "id": 3801,
+    "title": "Amazon Product 92",
+    "price": 0,
+    "description": "Houmury Set of 3 Framed Farmhouse Bible Verses Wall Decor Sign 11”x14” Christian Faith Scripture Wall Art for Home Living Room Bedroom Wall Decor (11\"x14\" Brown)",
+    "image": "https://m.media-amazon.com/images/I/71qhIWxdyTL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPKXQ48F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfddd6"
+  },
+  {
+    "id": 3802,
+    "title": "Amazon Product 93",
+    "price": 0,
+    "description": "Biuteawal 3 Panel Canvas Print Teal Brown Butterfly Flower Painting Wall Art Plant Floral Picture Print on Canvas Vintage Artwork for Home Living Room Bedroom Bathroom Wall Decor Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71EmBUckhqL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09NPNMDXP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9a9890"
+  },
+  {
+    "id": 3803,
+    "title": "Amazon Product 94",
+    "price": 0,
+    "description": "Acocifi Large Abstract Leaf Painting Wall Art Modern Aesthetic Picture Landscape Canvas Brown Gold Handmade Textured Artwork Framed for Bedroom Living Room Bathroom Kitchen Office Home Decor 40\"x20\"",
+    "image": "https://m.media-amazon.com/images/I/81NIhBsdE8L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09WDJTNMM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c5c0bd"
+  },
+  {
+    "id": 3804,
+    "title": "Amazon Product 95",
+    "price": 0,
+    "description": "NANKAI Art Hand Painted Thick Texture Dark Brown Minimalist Oil Painting Modern Abstract Art 24x36 inch Wall Abstract Decorative Art",
+    "image": "https://m.media-amazon.com/images/I/911LZysYZ3L._AC_SY606_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9YR4X6J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#685142"
+  },
+  {
+    "id": 3805,
+    "title": "Amazon Product 96",
+    "price": 0,
+    "description": "YISXINOAG Abstract Canvas Art Wall Decor Modern Artwork Canvas Prints Abstract Art Picture Contemporary Brown And White Wall Art Decor Artwork Bedroom Living Room Office Home Wall Decor 24x48 Inch",
+    "image": "https://m.media-amazon.com/images/I/81jqD4-bLWL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKXTD5FN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cdd1d4"
+  },
+  {
+    "id": 3806,
+    "title": "Amazon Product 97",
+    "price": 0,
+    "description": "Mkono Farmhouse Wall Home Sign with Artificial Eucalyptus for O Rustic Wooden Hanging Letters Decorative Wall Art Decor for Living Room Kitchen Entryway Housewarming Gift, Large, Brown",
+    "image": "https://m.media-amazon.com/images/I/61BFyQWcXtL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B099DM2LNJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#695b47"
+  },
+  {
+    "id": 3807,
+    "title": "Amazon Product 98",
+    "price": 0,
+    "description": "Flber Large Macrame Wall Hanging Brown Die-Dyed 57.00\" W x 31.00\" L Boho Wall Decor Yarn Tapestry Craftsmanship Home Macrame Wall Decor",
+    "image": "https://m.media-amazon.com/images/I/81laNPejyPL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CGLK6QVS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddcbbf"
+  },
+  {
+    "id": 3808,
+    "title": "Amazon Product 99",
+    "price": 0,
+    "description": "Large Wall Art - Framed Canvas Wall Art for Living Room, Bedroom, Office - Textured Brown Modern Abstract Artwork- Minimalist Home and dining room Decor 20×40IN Wood Frame Dedroom decorations",
+    "image": "https://m.media-amazon.com/images/I/81ogDC66XNL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN69584F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7cbbe"
+  },
+  {
+    "id": 3809,
+    "title": "Amazon Product 100",
+    "price": 0,
+    "description": "Boho Neutral Canvas Wall Art, Abstract Beige Brown Black Geometric Line Poster Prints, Modern Minimalist Painting Wall Decor, Framed Picture Artwork for Living Room Bedroom 12\"x16\"x3",
+    "image": "https://m.media-amazon.com/images/I/71O3oq6Vn+L._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DK22CCPS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddcbb3"
+  },
+  {
+    "id": 3810,
+    "title": "Amazon Product 101",
+    "price": 0,
+    "description": "Elixart Bedroom Wall Decor Inspirational Wall Art Black Wall Pictures for Living Room Paintings for Wall Decoration Map Canvas Artwork Big Brown Decor for Kitchen Dining Room",
+    "image": "https://m.media-amazon.com/images/I/71sPXqrM3nL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C23XTTPC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4d2b5"
+  },
+  {
+    "id": 3811,
+    "title": "Amazon Product 102",
+    "price": 0,
+    "description": "Jetec 4 Pieces Farmhouse Bathroom Decor Wall Art Soak Relax Unwind Breathe Wooden Signs with Arrow Rustic Vintage Country Bathroom Decor for Home Laundry Room(Brown)",
+    "image": "https://m.media-amazon.com/images/I/81aVxZKaUtS._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B093PXPC84/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#483f40"
+  },
+  {
+    "id": 3812,
+    "title": "Amazon Product 103",
+    "price": 0,
+    "description": "Roowest 2 Pcs Decorative Mirror Wall Decor Leaf Teardrop Mirror Wall Mounted Decorations for Living Room Bedroom Bathroom Vanity Entryway Office(Brown)",
+    "image": "https://m.media-amazon.com/images/I/81xkt+-pIRL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZDF5W2W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b89f81"
+  },
+  {
+    "id": 3813,
+    "title": "Amazon Product 104",
+    "price": 0,
+    "description": "Rustic Family Wall Art Farmhouse Brown Bless Wall Pictures for Living Room Kitchen Wall Decor Vintage Inspirational Words Canvas Prints Country Artworks Dining Room Entryway Home Decorations 12x16”",
+    "image": "https://m.media-amazon.com/images/I/91G39bUgv4L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVBJ4D4R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#beab97"
+  },
+  {
+    "id": 3814,
+    "title": "Amazon Product 105",
+    "price": 0,
+    "description": "Art3d 2 Wood Slat Acoustic Panels for Wall and Ceiling - 3D Fluted Sound Absorbing Panel with Wood Finish - Walnut",
+    "image": "https://m.media-amazon.com/images/I/81bdEC7xxhL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BWRP7CWB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#836956"
+  },
+  {
+    "id": 3815,
+    "title": "Amazon Product 106",
+    "price": 0,
+    "description": "CroBlissful 2 Pcs Mid Century Wall Decor Wood Mid Century Modern Elegance Wall Accents Abstract Wall Decor Geometric Panels for Interior Wall Decor Panel Wall Art for Home Living Room (Dark Brown)",
+    "image": "https://m.media-amazon.com/images/I/71OKslcxNJL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYBB4H4K/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#906f56"
+  },
+  {
+    "id": 3816,
+    "title": "Amazon Product 107",
+    "price": 0,
+    "description": "Funny Bathroom Highland Cow Wall Art, Brown Cute Cow Animal Canvas Posters Prints Set of 3, Vintage Rustic Farmhouse Home Pictures Wall Decor Painting for Bathroom Restroom Framed 12x16 Inch",
+    "image": "https://m.media-amazon.com/images/I/716AH3OLgmL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7CCHJY9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dad6d3"
+  },
+  {
+    "id": 3817,
+    "title": "Amazon Product 108",
+    "price": 0,
+    "description": "Deco 79 Metal Leaf Home Decor, Wall Art 32\" x 1\" x 8\", Brown",
+    "image": "https://m.media-amazon.com/images/I/61sYRJ0IzvL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B009GEHCF2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8a5044"
+  },
+  {
+    "id": 3818,
+    "title": "Amazon Product 109",
+    "price": 0,
+    "description": "J-Fly Music Art Wall Decor Jazz Decoration Cowboy Metal Wall Art Rustic Indoor And Outdoor Home Decor With Saxophone Cello Drum Kit And Piano, Brown",
+    "image": "https://m.media-amazon.com/images/I/91r3B83QnTL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09G98T9RT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a56b59"
+  },
+  {
+    "id": 3819,
+    "title": "Amazon Product 110",
+    "price": 0,
+    "description": "tigeridge Horses Canvas Wall Art - Brown Horse Pictures Animal Wall Decor Running Horses Painting Prints Artwork for Living Room Bedroom Home Office Wall Decorations 20\" x 40\"",
+    "image": "https://m.media-amazon.com/images/I/71XtyCtw5mL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1KCDQ41/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c6bbaf"
+  },
+  {
+    "id": 3820,
+    "title": "Amazon Product 111",
+    "price": 0,
+    "description": "Jetec 4 Pieces Farmhouse Bathroom Decor Wall Art Bathroom Sign Rustic Decor Relax Soak Unwind Breathe Wood Sign for Home Spa Bath Decoration, 11.8 x 3 Inch(Brown)",
+    "image": "https://m.media-amazon.com/images/I/81D-T5MKWAS._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09688N5DJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4e301d"
+  },
+  {
+    "id": 3821,
+    "title": "Amazon Product 112",
+    "price": 0,
+    "description": "Novup Large Abstract Brown Wall Art, 5 Piece Modern Painting Canvas Print - Contemporary Artwork Picture for Living Room Bedroom Wall Decoration Home Décor",
+    "image": "https://m.media-amazon.com/images/I/71LZkth1LqL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09PN31CN4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2d1f18"
+  },
+  {
+    "id": 3822,
+    "title": "Amazon Product 113",
+    "price": 0,
+    "description": "Deco 79 Wood Geometric Home Wall Decor Slatted Wood Design Wall Sculpture, Set of 3 Wall Art 12\"W, 35\"H, Brown",
+    "image": "https://m.media-amazon.com/images/I/91gXu6mfkzS._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B097QGCDT8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a68a6c"
+  },
+  {
+    "id": 3823,
+    "title": "Amazon Product 114",
+    "price": 0,
+    "description": "AISSPINGET Black White Brown Abstract Wall Art Black and White Abstract Pictures Black White Textured Wall Art Brown Minimalist Abstract Painting Black Grey Brown Wall Art 16x24inchx3PCS No Frame",
+    "image": "https://m.media-amazon.com/images/I/71A4uf3b0wL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CT5459KD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#271e1a"
+  },
+  {
+    "id": 3824,
+    "title": "Amazon Product 115",
+    "price": 0,
+    "description": "Brown Definition Melanin Black Love Art Framed Canvas Wall Art Decor 11×14 inch, Black Pride Prints Painting Artwork Home Wall Decoration For Bedroom Living Room Office",
+    "image": "https://m.media-amazon.com/images/I/61txE04VM7L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C538RGFJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4d7cc"
+  },
+  {
+    "id": 3825,
+    "title": "Amazon Product 116",
+    "price": 0,
+    "description": "3 Pieces Metal Flowers Wall Art Hanging - Boho Metal Flower Decorations for Living Room, Bedroom, Bathroom Walls - Elegant Wall Decor for Home, Perfect Flower Art for Room Decorations (Gold-Brown)",
+    "image": "https://m.media-amazon.com/images/I/712Yj+qqtcL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJP3QTBK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddd8d0"
+  },
+  {
+    "id": 3826,
+    "title": "Amazon Product 117",
+    "price": 0,
+    "description": "Large Framed Canvas Wall Art - Natural Float Framed Rustic Black Flowers Leaves Pictures Decor Brown Floral Foliage Artwork for Bedroom Living Room Kitchen Home Office Decoration 48\" X 24\" Set of 3",
+    "image": "https://m.media-amazon.com/images/I/717Sj3Q6VwL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1JTGJN6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c8beb7"
+  },
+  {
+    "id": 3827,
+    "title": "Amazon Product 118",
+    "price": 0,
+    "description": "Xuhal Farmhouse Bathroom Wall Decor Rustic Wood Wall Art Relax Soak Unwind Breathe Sign Wood Print Modern Home Artwork Decor for Bathroom(Brown, Cotton)",
+    "image": "https://m.media-amazon.com/images/I/81j0B8fn09L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFWKM3DY/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7e4de"
+  },
+  {
+    "id": 3828,
+    "title": "Amazon Product 119",
+    "price": 0,
+    "description": "CHI AN 18 Inch Boho Wall Decor – Set of 5 Woven Jute Wall Baskets, Boho Wall Art & Decorative Basket Set, Farmhouse Wall Hanging, Handwoven Wall Plates for Living Room, Bedroom – 18\", 14\", 11\", 8\", 7\"",
+    "image": "https://m.media-amazon.com/images/I/81l7bP4unLL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZSPYL54/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ceb08b"
+  },
+  {
+    "id": 3829,
+    "title": "Amazon Product 120",
+    "price": 0,
+    "description": "First Wall Art - Abstract Orange Brown White Lines Wall Art Painting The Picture Print On Canvas Abstract Pictures for Home Decor Decoration Gift",
+    "image": "https://m.media-amazon.com/images/I/61F1306YexL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B00RDDJ6JI/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#977d60"
+  },
+  {
+    "id": 3830,
+    "title": "Amazon Product 121",
+    "price": 0,
+    "description": "Visual Art Decor Bathroom wall Art Farmhouse Bathroom Decor Painting, Framed Canvas Wall Art 12x12inchx3Pieces (Brown)",
+    "image": "https://m.media-amazon.com/images/I/810fO7zjzBL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLTS1HK6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cfcac4"
+  },
+  {
+    "id": 3831,
+    "title": "Amazon Product 122",
+    "price": 0,
+    "description": "LHIUEM Large Neutral Minimalist Line Framed Canvas Wall Art Set, Brown Textured Wall Decor, Modern Abstract Boho Art Painting Painting for Living Room, Bedroom, Dining Room, Office -16\"x24\"x3",
+    "image": "https://m.media-amazon.com/images/I/71E5du85A6L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3TWGNYR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d2c1af"
+  },
+  {
+    "id": 3832,
+    "title": "Amazon Product 123",
+    "price": 0,
+    "description": "Palm Leaves Wood Wall Decor , 3Pcs Tropical Wall Art Jungle Decor, Wooden Natural Leaves Plant Wall Decor, Vintage Tropical Plant Plaque for Home Living Room Kitchen Bedroom Bathroom & Garden, Brown",
+    "image": "https://m.media-amazon.com/images/I/81d+aAINhwL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DDTGG9LM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dedcd3"
+  },
+  {
+    "id": 3833,
+    "title": "Amazon Product 124",
+    "price": 0,
+    "description": "Abstract Wall Art, Modern Framed Canvas Wall Art for Living Room, Large Wood Wall Art Decor, Brown and Black Office and Kitchen Decorations, Bedroom Aesthetic, Modern Painting Print 20×40",
+    "image": "https://m.media-amazon.com/images/I/81Xir4jyL+L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CN6CM291/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5d0c8"
+  },
+  {
+    "id": 3834,
+    "title": "Amazon Product 125",
+    "price": 0,
+    "description": "Modern Abstract Wall Art Decor: Minimalist Brown and White Smoke Canvas Pictures Prints Contemporary Painting Artwork for Living Room Bathroom Bedroom 11\" x 16\" x 2 Panel",
+    "image": "https://m.media-amazon.com/images/I/51c7oBu5RYL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1XHFNJ1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e9ded7"
+  },
+  {
+    "id": 3835,
+    "title": "Amazon Product 126",
+    "price": 0,
+    "description": "Besuerte Mason Jar Wall Sconces Set of Two, Wall Deco Cute Wall Decor with LED Fairy Lights, Art for Living Room Modern Decorations, House Decor, Rustic Brown",
+    "image": "https://m.media-amazon.com/images/I/81466-AAqxL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07T2GKZDT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4d1c1"
+  },
+  {
+    "id": 3836,
+    "title": "Amazon Product 127",
+    "price": 0,
+    "description": "Biuteawal Vintage Wall Art Brown Flowers Painting Bedroom Wall Decor 3 Pieces Canvas Print Brown Blossom Floral Pictures Abstract Artwork Bathroom Living Room Decoration Framed Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71f2ADc8HKL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08QCSW8C2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d1baa4"
+  },
+  {
+    "id": 3837,
+    "title": "Amazon Product 128",
+    "price": 0,
+    "description": "Abstract Canvas Wall Art, Modern Minimalist Wall Art Painting, Brown Room Decorations, Framed Wall Art for Living Room, Bedroom, Office Artwork Wall Decor - Wall Art 20×40IN",
+    "image": "https://m.media-amazon.com/images/I/81AOcv8naxL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CM8L93X1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c2bab4"
+  },
+  {
+    "id": 3838,
+    "title": "Amazon Product 129",
+    "price": 0,
+    "description": "LoveHouse Teal And Brown Abstract Wall Art Blue and Brown Geometric Circle Painting Pictures",
+    "image": "https://m.media-amazon.com/images/I/81ldBthALdL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BKL7W384/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#867d6c"
+  },
+  {
+    "id": 3839,
+    "title": "Amazon Product 130",
+    "price": 0,
+    "description": "Huwena 4 Pcs Brown Bathroom Wall Decorations Modern Gradient Wood Wall Art Beige Bathroom Sign Relax Soak Unwind Breathe Geometric Golden Cubic Lines Hanging Sign for Home Living Room Toilet",
+    "image": "https://m.media-amazon.com/images/I/8191vLhRh-L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CG1TD8P6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cabcac"
+  },
+  {
+    "id": 3840,
+    "title": "Amazon Product 131",
+    "price": 0,
+    "description": "Tree Wall Art Framed- Brown Trees with Yellow Leaves Abstract Tree Canvas Wall Art Nature Vintage Landscape Prints Contemporary Artwork for Living Room Bedroom Office Decor Ready to Hang 12x16in",
+    "image": "https://m.media-amazon.com/images/I/61mF4wBH5vL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CMQFC1BT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9c927d"
+  },
+  {
+    "id": 3841,
+    "title": "Amazon Product 132",
+    "price": 0,
+    "description": "Houmury Framed Set of 3 And So Together They Built A Life They Loved Above Bed Wall Decor Wall Art for Farmhouse Home Bedroom Kitchen Living Room Wood Signs (Brown, 12\"x16\")",
+    "image": "https://m.media-amazon.com/images/I/71gay24SjFL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DC9NNT4X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dad0c2"
+  },
+  {
+    "id": 3842,
+    "title": "Amazon Product 133",
+    "price": 0,
+    "description": "Baisuart Canvas Prints Abstract Wall Art Print Paintings Grey and Brown Stretched Canvas Wooden Framed for Living Room Bedroom and Office Home Decor Artwork 20x40inch",
+    "image": "https://m.media-amazon.com/images/I/71WDcW8q8iL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07VR3J5QL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9b9386"
+  },
+  {
+    "id": 3843,
+    "title": "Amazon Product 134",
+    "price": 0,
+    "description": "Jakalin Large Macrame Wall Hanging 47\" Wx 55\" L Brown Macrame Wall Decor Boho Panels Handmade Yarn Wall Art Living Room Bedroom Home Decor",
+    "image": "https://m.media-amazon.com/images/I/81memK-Xf2L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BN5FTM3T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbd4cd"
+  },
+  {
+    "id": 3844,
+    "title": "Amazon Product 135",
+    "price": 0,
+    "description": "Abstract Shapes Framed Canvas Wall Art Set, Mid-Century Black Polygon Wall Decor, Black Brown Irregular Painting, Neutral Modern Art Print for Living Room, Dining Room, Office - 16\"x24\"x3",
+    "image": "https://m.media-amazon.com/images/I/61fkmB6+qXL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCBL4C7X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dfd3c6"
   }
 ];
