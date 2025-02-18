@@ -32241,18 +32241,7 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0BLVPDJNB/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#f9dd82"
-  }
-  // ...continue updating each object's "id" incrementally up to 3306 for the 135th product.
-]
-
-
-
-You said:
-please do all
-Reasoned for a few seconds
-json
-Copy
-[
+  },
   {
     "id": 3172,
     "title": "Amazon Product 1",
