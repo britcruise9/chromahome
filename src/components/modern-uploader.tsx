@@ -790,6 +790,11 @@ export default function ModernUploader() {
           })}
         </div>
 
+        <div className="mt-12 mb-4 text-center text-sm text-gray-500">
+  <p>Questions? Contact us at info@shop-by-color.com</p>
+        </div>
+
+
         {/** Infinite Scroll Sentinel */}
         <div ref={sentinelRef} className="mt-8 h-8 flex justify-center items-center">
           {isFetching && hasMore && (
