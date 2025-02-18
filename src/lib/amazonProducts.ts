@@ -31341,5 +31341,805 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0D1Y4SWHH/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#c63f3a"
+  },
+   {
+    "id": 3132,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "Djmwtb Matisse Picasso Pink Canvas Wall Art Framed Set of 3 Abstract Flower Market Prints Cute Posters Aesthetic Pictures Paintings Wall Decor for Girls Bedroom Apartment Living Room 12x16in",
+    "image": "https://m.media-amazon.com/images/I/81a-alYY24L._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLMBSYG4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eacbcd"
+  },
+  {
+    "id": 3133,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "Djmwtb Matisse Canvas Wall Art Blue Abstract Poster Prints Framed Set of 3 Plant Leaves Aesthetic Pictures Minimalist Flower Market Painting Wall Decor for Living Room Bedroom Bathroom 12x16in",
+    "image": "https://m.media-amazon.com/images/I/61VZ-b3FB+L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5YLFJXR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbdddf"
+  },
+  {
+    "id": 3134,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "Djmwtb Matisse Canvas Wall Art Abstract Navy Blue Poster Prints Framed Set of 3 Minimalist Flower Aesthetic Pictures Modern Artwork Painting Wall Decor for Living Room Bedroom Bathroom 12\"x16\"x3",
+    "image": "https://m.media-amazon.com/images/I/71K2iL+zFUL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5YJRG7S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#244785"
+  },
+  {
+    "id": 3135,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "Trendy Pink Bows Canvas Wall Art Set Of 3 Pink Cherry Bow Canvas Print For Girly Wall Decor Preppy Watercolor Bows Wall Decor For Aesthetic Posters Prints For College Apartment Bedroom Decor Unframed",
+    "image": "https://m.media-amazon.com/images/I/61ri7DHayUL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DQQ21H6S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f8efee"
+  },
+  {
+    "id": 3136,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "Stupell Industries Pink Flower Perfume Fashion Glam Design, Designed by Amanda Greenwood Art, 10 x 0.5 x 15, Wall Plaque",
+    "image": "https://m.media-amazon.com/images/I/71tcxCbsu7L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B086P831SC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f3e4e6"
+  },
+  {
+    "id": 3137,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Canvas Wall Art Glam Perfume Chanel Pictures Wall Decor Pink Flowers And Gold Canvas Wall Art Girl Home Decor For Bedroom Wall Bathroom Set Room Decor",
+    "image": "https://m.media-amazon.com/images/I/51bhfOpYhVL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B8MBZLTZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2e3e3"
+  },
+  {
+    "id": 3138,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Wall Decor Pink Tree Painting Art Prints for Living Room Large Size Framed for Home Office Bedroom Wall Decor 29\"x 58\" Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/81LMO8u8ReL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSFSTT5T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c2b6b4"
+  },
+  {
+    "id": 3139,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "Fashion Pink Wall Decorations - Grey Wall Decor for Bedroom - Women Satchel Painting Pictures Wall Art - Book Canvas Prints for Home Decor 10\"x 10\"x 4 Panel",
+    "image": "https://m.media-amazon.com/images/I/81MRPyhrZtL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BSD5S9TQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cfcdcd"
+  },
+  {
+    "id": 3140,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "Pink Wall Art Large Tree of Life Wall Art for Living Room Bedroom Office Bathroom Modern Framed Canvas Prints Pink and Grey Picture Size 20x40 Inch",
+    "image": "https://m.media-amazon.com/images/I/812-OINOcAL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DD6VQP6J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ba92a4"
+  },
+  {
+    "id": 3141,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "The Stupell Home Decor Collection Watercolor High Fashion Bookstack Padded Pink Bag Wall Plaque Art, 12 x 12, Pink, for Bedroom",
+    "image": "https://m.media-amazon.com/images/I/71tqbL8BOEL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07GRL1SFG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eae1e2"
+  },
+  {
+    "id": 3142,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "Floral Picture Canvas Wall Art: Pink Peony Flower Wreath Photographic Prints for Decor (12”x12”x3pcs)",
+    "image": "https://m.media-amazon.com/images/I/61yQD8k0zjL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07Q25DL77/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0d2cd"
+  },
+  {
+    "id": 3143,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "SOUGUAN Wall Art for Bedroom Forest Canvas Art Hand Painted Artwork Gold Plant Pictures for Living Room Office Home Decoration 30x60 Inch",
+    "image": "https://m.media-amazon.com/images/I/813cT7qYF4L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSK5PHT4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b4aba2"
+  },
+  {
+    "id": 3144,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "Canvas Wall Art Glam Perfume Chanel Pictures Wall Decor Pink Flowers And Gold Canvas Wall Art Girl Home Decor For Bedroom Wall Bathroom Set Room Decor",
+    "image": "https://m.media-amazon.com/images/I/51bhfOpYhVL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B8MBZLTZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2e3e3"
+  },
+  {
+    "id": 3145,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "Bwodke Framed Wildflower Canvas Wall Art Pink Watercolor Botanical Floral Poster Prints Set of 3 Modern Minimalist Flower Pictures Home Decor Painting Bedroom Bathroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/71Y8hT8zvfL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D56D5JC6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ecebe9"
+  },
+  {
+    "id": 3146,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "XIANSHOU Oil Painting Art Wall Decor Pictures for Living Room Big Wall Artwork White Painting 29\"x 58\" Modern Abstract Wall Decor Bedroom Office Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71jtAN7zRJL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CXXBGFLG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8d5d0"
+  },
+  {
+    "id": 3147,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "Meetdeceny Black And White Wall Art/Pink Book Pictures Room Decor for Teen Girls/Women Handbag Perfume Wall Decor for Living Room/Fashion Canvas Artwork Size 10\"x 10\"x 4 Pieces",
+    "image": "https://m.media-amazon.com/images/I/71ocgKFJMHL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BSD676SQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0e0d0d"
+  },
+  {
+    "id": 3148,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "Lucky You Pink Wall Art Guest Check Preppy Wall Decor Trendy Aesthetic Canvas Wall Art Funky Retro Poster Hearts Cute Picture Prints Inspirational Artwork for Room Bedroom 16x24 Inch Unframed Set of 3",
+    "image": "https://m.media-amazon.com/images/I/71Ba+IkoKuL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CG39JVWF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cc9bad"
+  },
+  {
+    "id": 3149,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "Stupell Industries She's Going Places Quote Pink Watercolor World Map, Canvas, ab-961_cn_16x20, 16 x 20",
+    "image": "https://m.media-amazon.com/images/I/81DPZeGp+2L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08F6VQPJH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4bbb3"
+  },
+  {
+    "id": 3150,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "WRFON Unframed Pink Abstract Wall Art, Modern Pink Fluid Art Prints, Minimalist Pink and Black Color Block Canvas Painting for Living Room Bedroom Bathroom Home Decor Ready to Hang 12\"x16\"x3",
+    "image": "https://m.media-amazon.com/images/I/81UB-Queh1L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHCFG9Y4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#aa8198"
+  },
+  {
+    "id": 3151,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "Abstract Pink Wall Art/Framed Artwork Wall Art/Oil Painting Home Decoration/Modern Art for Bedroom Living Room Home Office 20x40 Inches",
+    "image": "https://m.media-amazon.com/images/I/71+TgC3dRxL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CS6C48V6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cd9795"
+  },
+  {
+    "id": 3152,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "Djmwtb Matisse Picasso Pink Canvas Wall Art Framed Set of 3 Abstract Flower Market Prints Cute Posters Aesthetic Pictures Paintings Wall Decor for Girls Bedroom Apartment Living Room 12x16in",
+    "image": "https://m.media-amazon.com/images/I/81a-alYY24L._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLMBSYG4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eacbcd"
+  },
+  {
+    "id": 3153,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Matisse Wall Art and Boho Wall Prints UNFRAMED, Minimalist Aesthetic Images Decor, Pink Print Set, Orange Posters for Room, 8x10in, Set of 6",
+    "image": "https://m.media-amazon.com/images/I/71oOZFcwihL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09YGT4LVH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f3bcc1"
+  },
+  {
+    "id": 3154,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "Pink Wall Decor - Inspirational Quotes Wall-Art - Motivational Bedroom Decor For Teen Girls - Office Gifts For Women With Framed Canvas Artwork Ready to Hang 15\" W x 11.5\" H",
+    "image": "https://m.media-amazon.com/images/I/81aLWW1nTFL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09TSFZ6RB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ecced4"
+  },
+  {
+    "id": 3155,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "Stupell Industries Makeup Fashion Designer Modern Pink Word Canvas Wall Art, 10x24, Multicolor",
+    "image": "https://m.media-amazon.com/images/I/71doIEY-oYL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07TSQNK91/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f4f0ef"
+  },
+  {
+    "id": 3156,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "Japanese Wall-Art for Bedroom - Pink Wall Decor - Cherry Blossom Wall Art Living Room Large Mount Fuji Pictures Poster Ready to Hang Size 40\" x 20\"",
+    "image": "https://m.media-amazon.com/images/I/91dwFG-nkdL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BXT3CNS5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9a858b"
+  },
+  {
+    "id": 3157,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "Pink Office Desk Accessories Decor Sign, Pink Dorm Room Decor for Women, Pink Bathroom Decor, Inspirational Christian Gifts for Women Boss, Pray on it Wooden Sign Bible Verse Wall Art Decor",
+    "image": "https://m.media-amazon.com/images/I/5111pRwigVL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1R6WQ34/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#efd1da"
+  },
+  {
+    "id": 3158,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "Pink Canvas Wall Art Set of 3 - Abstract Halo Angel Number Positive Energy Motivational Wall Decor - Ideal for Living Room, Bedroom, Apartment - Clean Girls Room Decoration - Frames 12x16''",
+    "image": "https://m.media-amazon.com/images/I/6144FBA6coL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C14N5B6R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eed4db"
+  },
+  {
+    "id": 3159,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "Pink Bar Cart Wall Art Coquette Trendy Alcohol Bottles Poster Girly Aesthetic Bar Cart Art Canvas Funky Cocktail Wiskey Art Picture College Dorm Apartment Decor 8x12in Unframed",
+    "image": "https://m.media-amazon.com/images/I/71g7eJKzmSL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFCFSM3W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2e1dc"
+  },
+  {
+    "id": 3160,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "97 Decor Pink Preppy Room Decor Aesthetic - Retro Pink Pictures Wall Decor, Girly Preppy Posters For Bedroom, Trendy Preppy Wall Art Prints For Teen Girl College Dorm Decorations (Unframed)",
+    "image": "https://m.media-amazon.com/images/I/81HcCPDd6WL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKK4SDGG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#edd2cd"
+  },
+  {
+    "id": 3161,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "4 Pack Pink Kids Art Frame, 8.5x11 Front Opening Wood Kid Artwork Frames Changeable, Wall-mounted or Standing Children Art Frame with Mat, Holds 150 Pcs, Drawing Display Storage Frames",
+    "image": "https://m.media-amazon.com/images/I/81hVBD-pXYL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DNSKR5F7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0cbc4"
+  },
+  {
+    "id": 3162,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "GUGIKA Pink Wall Art for Living Room, Abstract Canvas Wall Decor for Bedroom Decor, Modern Print Paintings, Size 24x48 Inches",
+    "image": "https://m.media-amazon.com/images/I/91xOVun3uzL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CRHNPYN1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f4d9e4"
+  },
+  {
+    "id": 3163,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "YPY Pink Flowers Canvas Wall Art: Abstract Bouquet in Vase Artwork Prints for Teen Girl Bedroom Pink Floral Picture Poster Bathroom Decor 12\" x 15\"",
+    "image": "https://m.media-amazon.com/images/I/71ISUhc-FkL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C69J2RZX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1d2e6"
+  },
+  {
+    "id": 3164,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "Canvas Wall Art Glam Perfume Chanel Pictures Wall Decor Pink Flowers And Gold Canvas Wall Art Girl Home Decor For Bedroom Wall Bathroom Set Room Decor",
+    "image": "https://m.media-amazon.com/images/I/51bhfOpYhVL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B8MBZLTZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2e3e3"
+  },
+  {
+    "id": 3165,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "Funky Pink Fruit Canvas Wall Art Set of 3, Red Disco Strawberry and Cherry Wall Decor Painting, Cute Preppy Balloon Dog Posters Prints for Living Room Girls Bedroom Home Decor 12x16 In Framed",
+    "image": "https://m.media-amazon.com/images/I/61b5Z6zST5L._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7PTBJ2S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fabbce"
+  },
+  {
+    "id": 3166,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "Botanical Wall Art Decor Set of 3 Pink Flower Wall Art Line Art Wall Decor Floral Wall Art Plant Pictures Minimalist Wall Art Botanical Canvas Prints Artwork for Living Room Home 12x16 Inch UNFRAMED",
+    "image": "https://m.media-amazon.com/images/I/71T8j6HJh5L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C5VHLB1Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f0dbd8"
+  },
+  {
+    "id": 3167,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "okaxscm Pink Coquette Trendy Preppy Wall Art Prints Set of 4, Coquette Room Decor, Preppy Room Decor Aesthetic, Pink Bow Disco 8 Ball Cherry Wall Decor Posters for Girls Bedroom Dorm, 12x16 Unframed",
+    "image": "https://m.media-amazon.com/images/I/71cZdbW7kSL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9W5DL9T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eddee1"
+  },
+  {
+    "id": 3168,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "Black Girl Pink Wall Art Set of 3 African American Black Women Canvas Posters Fashion Black Girl Wall Decor Pictures Prints for Home Living Room Bedroom Bathroom Decoration 12x16 Inch Framed",
+    "image": "https://m.media-amazon.com/images/I/71Wm39V13YL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DP481Z9D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ca596b"
+  },
+  {
+    "id": 3169,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "Trendy Baby Pink News Wall Art 70s Canvas Prints The New York Press Poster Life Is Better in Pink Hot Girly Posters Preppy Aesthetic Decor Bedroom Apartment for Cool Girl Room Home Dorm 12x16inch Unframed",
+    "image": "https://m.media-amazon.com/images/I/71aLwZTVtIL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DG36LDKX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3a39f"
+  },
+  {
+    "id": 3170,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "Framed Matisse Pink Canvas Wall Art, Abstract Matisse Canvas Wall Decor, 16x12IN High Framed Wood Design Prints, Minimalist Wood Frame Posters for Living Room, Bedroom, Bathroom Set of 3",
+    "image": "https://m.media-amazon.com/images/I/81juYjJdnyL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MN76S1M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4788f"
+  },
+  {
+    "id": 3171,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "97 Decor Pink Wall Decor Aesthetic Pictures - Matisse Wall Art Pink Posters for Room Aesthetic, Abstract Danish Pastel Prins, Light Pink Dorm Wall Decor for College Girls Bedroom (8x10 Unframed)",
+    "image": "https://m.media-amazon.com/images/I/81BP-v-kscL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPP6GJLQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffd1e3"
+  },
+   {
+    "id": 3132,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "Djmwtb Matisse Picasso Pink Canvas Wall Art Framed Set of 3 Abstract Flower Market Prints Cute Posters Aesthetic Pictures Paintings Wall Decor for Girls Bedroom Apartment Living Room 12x16in",
+    "image": "https://m.media-amazon.com/images/I/81a-alYY24L._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLMBSYG4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eacbcd"
+  },
+  {
+    "id": 3133,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "Djmwtb Matisse Canvas Wall Art Blue Abstract Poster Prints Framed Set of 3 Plant Leaves Aesthetic Pictures Minimalist Flower Market Painting Wall Decor for Living Room Bedroom Bathroom 12x16in",
+    "image": "https://m.media-amazon.com/images/I/61VZ-b3FB+L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5YLFJXR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dbdddf"
+  },
+  {
+    "id": 3134,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "Djmwtb Matisse Canvas Wall Art Abstract Navy Blue Poster Prints Framed Set of 3 Minimalist Flower Aesthetic Pictures Modern Artwork Painting Wall Decor for Living Room Bedroom Bathroom 12\"x16\"x3",
+    "image": "https://m.media-amazon.com/images/I/71K2iL+zFUL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D5YJRG7S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#244785"
+  },
+  {
+    "id": 3135,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "Trendy Pink Bows Canvas Wall Art Set Of 3 Pink Cherry Bow Canvas Print For Girly Wall Decor Preppy Watercolor Bows Wall Decor For Aesthetic Posters Prints For College Apartment Bedroom Decor Unframed",
+    "image": "https://m.media-amazon.com/images/I/61ri7DHayUL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DQQ21H6S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f8efee"
+  },
+  {
+    "id": 3136,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "Stupell Industries Pink Flower Perfume Fashion Glam Design, Designed by Amanda Greenwood Art, 10 x 0.5 x 15, Wall Plaque",
+    "image": "https://m.media-amazon.com/images/I/71tcxCbsu7L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B086P831SC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f3e4e6"
+  },
+  {
+    "id": 3137,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "Canvas Wall Art Glam Perfume Chanel Pictures Wall Decor Pink Flowers And Gold Canvas Wall Art Girl Home Decor For Bedroom Wall Bathroom Set Room Decor",
+    "image": "https://m.media-amazon.com/images/I/51bhfOpYhVL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B8MBZLTZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2e3e3"
+  },
+  {
+    "id": 3138,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "Wall Decor Pink Tree Painting Art Prints for Living Room Large Size Framed for Home Office Bedroom Wall Decor 29\"x 58\" Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/81LMO8u8ReL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSFSTT5T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c2b6b4"
+  },
+  {
+    "id": 3139,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "Fashion Pink Wall Decorations - Grey Wall Decor for Bedroom - Women Satchel Painting Pictures Wall Art - Book Canvas Prints for Home Decor 10\"x 10\"x 4 Panel",
+    "image": "https://m.media-amazon.com/images/I/81MRPyhrZtL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BSD5S9TQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cfcdcd"
+  },
+  {
+    "id": 3140,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "Pink Wall Art Large Tree of Life Wall Art for Living Room Bedroom Office Bathroom Modern Framed Canvas Prints Pink and Grey Picture Size 20x40 Inch",
+    "image": "https://m.media-amazon.com/images/I/812-OINOcAL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DD6VQP6J/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ba92a4"
+  },
+  {
+    "id": 3141,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "The Stupell Home Decor Collection Watercolor High Fashion Bookstack Padded Pink Bag Wall Plaque Art, 12 x 12, Pink, for Bedroom",
+    "image": "https://m.media-amazon.com/images/I/71tqbL8BOEL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07GRL1SFG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eae1e2"
+  },
+  {
+    "id": 3142,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "Floral Picture Canvas Wall Art: Pink Peony Flower Wreath Photographic Prints for Decor (12”x12”x3pcs)",
+    "image": "https://m.media-amazon.com/images/I/61yQD8k0zjL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07Q25DL77/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0d2cd"
+  },
+  {
+    "id": 3143,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "SOUGUAN Wall Art for Bedroom Forest Canvas Art Hand Painted Artwork Gold Plant Pictures for Living Room Office Home Decoration 30x60 Inch",
+    "image": "https://m.media-amazon.com/images/I/813cT7qYF4L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSK5PHT4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b4aba2"
+  },
+  {
+    "id": 3144,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "Canvas Wall Art Glam Perfume Chanel Pictures Wall Decor Pink Flowers And Gold Canvas Wall Art Girl Home Decor For Bedroom Wall Bathroom Set Room Decor",
+    "image": "https://m.media-amazon.com/images/I/51bhfOpYhVL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B8MBZLTZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2e3e3"
+  },
+  {
+    "id": 3145,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "Bwodke Framed Wildflower Canvas Wall Art Pink Watercolor Botanical Floral Poster Prints Set of 3 Modern Minimalist Flower Pictures Home Decor Painting Bedroom Bathroom Living Room",
+    "image": "https://m.media-amazon.com/images/I/71Y8hT8zvfL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D56D5JC6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ecebe9"
+  },
+  {
+    "id": 3146,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "XIANSHOU Oil Painting Art Wall Decor Pictures for Living Room Big Wall Artwork White Painting 29\"x 58\" Modern Abstract Wall Decor Bedroom Office Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71jtAN7zRJL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CXXBGFLG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d8d5d0"
+  },
+  {
+    "id": 3147,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "Meetdeceny Black And White Wall Art/Pink Book Pictures Room Decor for Teen Girls/Women Handbag Perfume Wall Decor for Living Room/Fashion Canvas Artwork Size 10\"x 10\"x 4 Pieces",
+    "image": "https://m.media-amazon.com/images/I/71ocgKFJMHL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BSD676SQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#0e0d0d"
+  },
+  {
+    "id": 3148,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "Lucky You Pink Wall Art Guest Check Preppy Wall Decor Trendy Aesthetic Canvas Wall Art Funky Retro Poster Hearts Cute Picture Prints Inspirational Artwork for Room Bedroom 16x24 Inch Unframed Set of 3",
+    "image": "https://m.media-amazon.com/images/I/71Ba+IkoKuL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CG39JVWF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cc9bad"
+  },
+  {
+    "id": 3149,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "Stupell Industries She's Going Places Quote Pink Watercolor World Map, Canvas, ab-961_cn_16x20, 16 x 20",
+    "image": "https://m.media-amazon.com/images/I/81DPZeGp+2L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08F6VQPJH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4bbb3"
+  },
+  {
+    "id": 3150,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "WRFON Unframed Pink Abstract Wall Art, Modern Pink Fluid Art Prints, Minimalist Pink and Black Color Block Canvas Painting for Living Room Bedroom Bathroom Home Decor Ready to Hang 12\"x16\"x3",
+    "image": "https://m.media-amazon.com/images/I/81UB-Queh1L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHCFG9Y4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#aa8198"
+  },
+  {
+    "id": 3151,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "Abstract Pink Wall Art/Framed Artwork Wall Art/Oil Painting Home Decoration/Modern Art for Bedroom Living Room Home Office 20x40 Inches",
+    "image": "https://m.media-amazon.com/images/I/71+TgC3dRxL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CS6C48V6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cd9795"
+  },
+  {
+    "id": 3152,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "Djmwtb Matisse Picasso Pink Canvas Wall Art Framed Set of 3 Abstract Flower Market Prints Cute Posters Aesthetic Pictures Paintings Wall Decor for Girls Bedroom Apartment Living Room 12x16in",
+    "image": "https://m.media-amazon.com/images/I/81a-alYY24L._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLMBSYG4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eacbcd"
+  },
+  {
+    "id": 3153,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Matisse Wall Art and Boho Wall Prints UNFRAMED, Minimalist Aesthetic Images Decor, Pink Print Set, Orange Posters for Room, 8x10in, Set of 6",
+    "image": "https://m.media-amazon.com/images/I/71oOZFcwihL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09YGT4LVH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f3bcc1"
+  },
+  {
+    "id": 3154,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "Pink Wall Decor - Inspirational Quotes Wall-Art - Motivational Bedroom Decor For Teen Girls - Office Gifts For Women With Framed Canvas Artwork Ready to Hang 15\" W x 11.5\" H",
+    "image": "https://m.media-amazon.com/images/I/81aLWW1nTFL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09TSFZ6RB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ecced4"
+  },
+  {
+    "id": 3155,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "Stupell Industries Makeup Fashion Designer Modern Pink Word Canvas Wall Art, 10x24, Multicolor",
+    "image": "https://m.media-amazon.com/images/I/71doIEY-oYL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07TSQNK91/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f4f0ef"
+  },
+  {
+    "id": 3156,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "Japanese Wall-Art for Bedroom - Pink Wall Decor - Cherry Blossom Wall Art Living Room Large Mount Fuji Pictures Poster Ready to Hang Size 40\" x 20\"",
+    "image": "https://m.media-amazon.com/images/I/91dwFG-nkdL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BXT3CNS5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9a858b"
+  },
+  {
+    "id": 3157,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "Pink Office Desk Accessories Decor Sign, Pink Dorm Room Decor for Women, Pink Bathroom Decor, Inspirational Christian Gifts for Women Boss, Pray on it Wooden Sign Bible Verse Wall Art Decor",
+    "image": "https://m.media-amazon.com/images/I/5111pRwigVL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1R6WQ34/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#efd1da"
+  },
+  {
+    "id": 3158,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "Pink Canvas Wall Art Set of 3 - Abstract Halo Angel Number Positive Energy Motivational Wall Decor - Ideal for Living Room, Bedroom, Apartment - Clean Girls Room Decoration - Frames 12x16''",
+    "image": "https://m.media-amazon.com/images/I/6144FBA6coL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C14N5B6R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eed4db"
+  },
+  {
+    "id": 3159,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "Pink Bar Cart Wall Art Coquette Trendy Alcohol Bottles Poster Girly Aesthetic Bar Cart Art Canvas Funky Cocktail Wiskey Art Picture College Dorm Apartment Decor 8x12in Unframed",
+    "image": "https://m.media-amazon.com/images/I/71g7eJKzmSL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFCFSM3W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2e1dc"
+  },
+  {
+    "id": 3160,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "97 Decor Pink Preppy Room Decor Aesthetic - Retro Pink Pictures Wall Decor, Girly Preppy Posters For Bedroom, Trendy Preppy Wall Art Prints For Teen Girl College Dorm Decorations (Unframed)",
+    "image": "https://m.media-amazon.com/images/I/81HcCPDd6WL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKK4SDGG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#edd2cd"
+  },
+  {
+    "id": 3161,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "4 Pack Pink Kids Art Frame, 8.5x11 Front Opening Wood Kid Artwork Frames Changeable, Wall-mounted or Standing Children Art Frame with Mat, Holds 150 Pcs, Drawing Display Storage Frames",
+    "image": "https://m.media-amazon.com/images/I/81hVBD-pXYL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DNSKR5F7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e0cbc4"
+  },
+  {
+    "id": 3162,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "GUGIKA Pink Wall Art for Living Room, Abstract Canvas Wall Decor for Bedroom Decor, Modern Print Paintings, Size 24x48 Inches",
+    "image": "https://m.media-amazon.com/images/I/91xOVun3uzL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CRHNPYN1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f4d9e4"
+  },
+  {
+    "id": 3163,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "YPY Pink Flowers Canvas Wall Art: Abstract Bouquet in Vase Artwork Prints for Teen Girl Bedroom Pink Floral Picture Poster Bathroom Decor 12\" x 15\"",
+    "image": "https://m.media-amazon.com/images/I/71ISUhc-FkL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C69J2RZX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1d2e6"
+  },
+  {
+    "id": 3164,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "Canvas Wall Art Glam Perfume Chanel Pictures Wall Decor Pink Flowers And Gold Canvas Wall Art Girl Home Decor For Bedroom Wall Bathroom Set Room Decor",
+    "image": "https://m.media-amazon.com/images/I/51bhfOpYhVL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B8MBZLTZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2e3e3"
+  },
+  {
+    "id": 3165,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "Funky Pink Fruit Canvas Wall Art Set of 3, Red Disco Strawberry and Cherry Wall Decor Painting, Cute Preppy Balloon Dog Posters Prints for Living Room Girls Bedroom Home Decor 12x16 In Framed",
+    "image": "https://m.media-amazon.com/images/I/61b5Z6zST5L._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7PTBJ2S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fabbce"
+  },
+  {
+    "id": 3166,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "Botanical Wall Art Decor Set of 3 Pink Flower Wall Art Line Art Wall Decor Floral Wall Art Plant Pictures Minimalist Wall Art Botanical Canvas Prints Artwork for Living Room Home 12x16 Inch UNFRAMED",
+    "image": "https://m.media-amazon.com/images/I/71T8j6HJh5L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C5VHLB1Q/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f0dbd8"
+  },
+  {
+    "id": 3167,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "okaxscm Pink Coquette Trendy Preppy Wall Art Prints Set of 4, Coquette Room Decor, Preppy Room Decor Aesthetic, Pink Bow Disco 8 Ball Cherry Wall Decor Posters for Girls Bedroom Dorm, 12x16 Unframed",
+    "image": "https://m.media-amazon.com/images/I/71cZdbW7kSL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9W5DL9T/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eddee1"
+  },
+  {
+    "id": 3168,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "Black Girl Pink Wall Art Set of 3 African American Black Women Canvas Posters Fashion Black Girl Wall Decor Pictures Prints for Home Living Room Bedroom Bathroom Decoration 12x16 Inch Framed",
+    "image": "https://m.media-amazon.com/images/I/71Wm39V13YL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DP481Z9D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ca596b"
+  },
+  {
+    "id": 3169,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "Trendy Baby Pink News Wall Art 70s Canvas Prints The New York Press Poster Life Is Better in Pink Hot Girly Posters Preppy Aesthetic Decor Bedroom Apartment for Cool Girl Room Home Dorm 12x16inch Unframed",
+    "image": "https://m.media-amazon.com/images/I/71aLwZTVtIL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DG36LDKX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3a39f"
+  },
+  {
+    "id": 3170,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "Framed Matisse Pink Canvas Wall Art, Abstract Matisse Canvas Wall Decor, 16x12IN High Framed Wood Design Prints, Minimalist Wood Frame Posters for Living Room, Bedroom, Bathroom Set of 3",
+    "image": "https://m.media-amazon.com/images/I/81juYjJdnyL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09MN76S1M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4788f"
+  },
+  {
+    "id": 3171,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "97 Decor Pink Wall Decor Aesthetic Pictures - Matisse Wall Art Pink Posters for Room Aesthetic, Abstract Danish Pastel Prins, Light Pink Dorm Wall Decor for College Girls Bedroom (8x10 Unframed)",
+    "image": "https://m.media-amazon.com/images/I/81BP-v-kscL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPP6GJLQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffd1e3"
   }
 ];
