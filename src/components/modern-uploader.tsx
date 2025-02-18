@@ -1,4 +1,5 @@
 "use client";
+import ColorThief from 'colorthief';
 import React, { useState, useEffect, useRef } from "react";
 import {
   Upload,
