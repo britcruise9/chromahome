@@ -32141,5 +32141,1466 @@ export const amazonProducts: AmazonProduct[] = [
     "category": "home decor",
     "affiliateLink": "https://www.amazon.com/dp/B0CPP6GJLQ/ref=nosim?tag=paintchipshop-20",
     "dominantColor": "#ffd1e3"
+  },
+   {
+    "id": 3172,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "Dimpaga Abstract Canvans Wall Art Paintings Modern Wall art Decor Black And Gold Lines Texture Artwork for Walls Minimalist Wall Art Living Room Decor For Room Bedroom Office Wall Decor 20x40 Inch",
+    "image": "https://m.media-amazon.com/images/I/91+J6KPlsyL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D93ZFP5Z/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f1daa8"
+  },
+  {
+    "id": 3173,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "Canvas Wall Art Decor Modern Wall Art Decorations Blue Beach Coastal Artwork for Walls Textured Wall Art Prints Pictures Wall Decor Wall Art Bedroom For Room Living Room Office Wall Decor 20\"X40\"",
+    "image": "https://m.media-amazon.com/images/I/9163AsJFJeL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D941MXWN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c3bbb4"
+  },
+  {
+    "id": 3174,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "Canvas Wall Art Decor Modern Pictures Wall Decor Textured Wall Art Prints White and Blue Flower Wall Decor Artwork for Walls Botanical Wall Art Bedroom For Room Living Room Office Wall Decor 20x40 Inch",
+    "image": "https://m.media-amazon.com/images/I/91p-5rz2IzL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9413ZX2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c5ced3"
+  },
+  {
+    "id": 3175,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "SOUGUAN Living Room Decor White Flower Artwork Gold Canvas Wall Art Abstract Line Painting for Bedroom Kitchen Dining Room Home Wall Decor 26\"x40\"x 3 Pieces",
+    "image": "https://m.media-amazon.com/images/I/71s4krmEs8L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLY8KXBK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3cac2"
+  },
+  {
+    "id": 3176,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "Abstract Canvas Wall Art Gold Circle Painting Green Artwork Framed Wall Prints 29\"x 58\" Office Wall Decor Colorful Pictures for Living Room Bedroom",
+    "image": "https://m.media-amazon.com/images/I/718L6979SVL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DGPZY7VB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5b26b"
+  },
+  {
+    "id": 3177,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "LONGKING 4 Pack Metal Wall Art, Mountain Iron Wall Sculpture, Art Wall Décor for Office, Dining Room, Living Room, Bedroom (Gold, 17 x 12 in)",
+    "image": "https://m.media-amazon.com/images/I/71wAO36VstL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DF6ZJHVT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dda139"
+  },
+  {
+    "id": 3178,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "VAYIMDH Gold Abstract Canvas Wall Art for Living Room - Vintage Posters for Room Aesthetic - Line Wall Decor for Bedroom 20\"x 40\" Dining Room Decoration",
+    "image": "https://m.media-amazon.com/images/I/71+42JMPMDL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D6VJ6ZW9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f1dcb7"
+  },
+  {
+    "id": 3179,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "3 Pcs Gold Wall Decor Above Bed Minimalist for Living Room Metal Line Art - Female Body, Gold Room Decor for Bedroom Modern Wall Art for Indoor 15inch",
+    "image": "https://m.media-amazon.com/images/I/719NgJkBAwL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BMLQK6Y5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d2b779"
+  },
+  {
+    "id": 3180,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "Deco 79 Metal Starburst Home Wall Decor 3D Long Spike Wall Sculpture, Set of 3 Wall Art 6\", 9\", 12\"W, Gold",
+    "image": "https://m.media-amazon.com/images/I/71wzcO4r-hL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01JM0GYBM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f0eee7"
+  },
+  {
+    "id": 3181,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "Peryiter 2 Pcs Boho Wall Decor Metal Gold Wall Art Hanging Planters with Artificial Pampas Modern Home Decor Display Art for Living Room Bedroom Bathroom(Rhombus)",
+    "image": "https://m.media-amazon.com/images/I/71XdS3rirbL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BLVPDJNB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f9dd82"
+  }
+  // ...continue updating each object's "id" incrementally up to 3306 for the 135th product.
+]
+
+
+
+You said:
+please do all
+Reasoned for a few seconds
+json
+Copy
+[
+  {
+    "id": 3172,
+    "title": "Amazon Product 1",
+    "price": 0,
+    "description": "Dimpaga Abstract Canvans Wall Art Paintings Modern Wall art Decor Black And Gold Lines Texture Artwork for Walls Minimalist Wall Art Living Room Decor For Room Bedroom Office Wall Decor 20x40 Inch",
+    "image": "https://m.media-amazon.com/images/I/91+J6KPlsyL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D93ZFP5Z/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f1daa8"
+  },
+  {
+    "id": 3173,
+    "title": "Amazon Product 2",
+    "price": 0,
+    "description": "Canvas Wall Art Decor Modern Wall Art Decorations Blue Beach Coastal Artwork for Walls Textured Wall Art Prints Pictures Wall Decor Wall Art Bedroom For Room Living Room Office Wall Decor 20\"X40\"",
+    "image": "https://m.media-amazon.com/images/I/9163AsJFJeL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D941MXWN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c3bbb4"
+  },
+  {
+    "id": 3174,
+    "title": "Amazon Product 3",
+    "price": 0,
+    "description": "Canvas Wall Art Decor Modern Pictures Wall Decor Textured Wall Art Prints White and Blue Flower Wall Decor Artwork for Walls Botanical Wall Art Bedroom For Room Living Room Office Wall Decor 20x40 Inch",
+    "image": "https://m.media-amazon.com/images/I/91p-5rz2IzL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D9413ZX2/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c5ced3"
+  },
+  {
+    "id": 3175,
+    "title": "Amazon Product 4",
+    "price": 0,
+    "description": "SOUGUAN Living Room Decor White Flower Artwork Gold Canvas Wall Art Abstract Line Painting for Bedroom Kitchen Dining Room Home Wall Decor 26\"x40\"x 3 Pieces",
+    "image": "https://m.media-amazon.com/images/I/71s4krmEs8L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLY8KXBK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3cac2"
+  },
+  {
+    "id": 3176,
+    "title": "Amazon Product 5",
+    "price": 0,
+    "description": "Abstract Canvas Wall Art Gold Circle Painting Green Artwork Framed Wall Prints 29\"x 58\" Office Wall Decor Colorful Pictures for Living Room Bedroom",
+    "image": "https://m.media-amazon.com/images/I/718L6979SVL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DGPZY7VB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5b26b"
+  },
+  {
+    "id": 3177,
+    "title": "Amazon Product 6",
+    "price": 0,
+    "description": "LONGKING 4 Pack Metal Wall Art, Mountain Iron Wall Sculpture, Art Wall Décor for Office, Dining Room, Living Room, Bedroom (Gold, 17 x 12 in)",
+    "image": "https://m.media-amazon.com/images/I/71wAO36VstL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DF6ZJHVT/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dda139"
+  },
+  {
+    "id": 3178,
+    "title": "Amazon Product 7",
+    "price": 0,
+    "description": "VAYIMDH Gold Abstract Canvas Wall Art for Living Room - Vintage Posters for Room Aesthetic - Line Wall Decor for Bedroom 20\"x 40\" Dining Room Decoration",
+    "image": "https://m.media-amazon.com/images/I/71+42JMPMDL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D6VJ6ZW9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f1dcb7"
+  },
+  {
+    "id": 3179,
+    "title": "Amazon Product 8",
+    "price": 0,
+    "description": "3 Pcs Gold Wall Decor Above Bed Minimalist for Living Room Metal Line Art - Female Body, Gold Room Decor for Bedroom Modern Wall Art for Indoor 15inch",
+    "image": "https://m.media-amazon.com/images/I/719NgJkBAwL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BMLQK6Y5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d2b779"
+  },
+  {
+    "id": 3180,
+    "title": "Amazon Product 9",
+    "price": 0,
+    "description": "Deco 79 Metal Starburst Home Wall Decor 3D Long Spike Wall Sculpture, Set of 3 Wall Art 6\", 9\", 12\"W, Gold",
+    "image": "https://m.media-amazon.com/images/I/71wzcO4r-hL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B01JM0GYBM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f0eee7"
+  },
+  {
+    "id": 3181,
+    "title": "Amazon Product 10",
+    "price": 0,
+    "description": "Peryiter 2 Pcs Boho Wall Decor Metal Gold Wall Art Hanging Planters with Artificial Pampas Modern Home Decor Display Art for Living Room Bedroom Bathroom(Rhombus)",
+    "image": "https://m.media-amazon.com/images/I/71XdS3rirbL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BLVPDJNB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f9dd82"
+  },
+  {
+    "id": 3182,
+    "title": "Amazon Product 11",
+    "price": 0,
+    "description": "YaSheng Art - 3D Oil Paintings On Canvas Golden Flowers Tree Paintings Abstract Artwork Wall Art For living Room, Dinning Room Home Decor Framed Stretched Ready to Hang 24x24inch",
+    "image": "https://m.media-amazon.com/images/I/71a1-YRIYjL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B075P3F87M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#4c4520"
+  },
+  {
+    "id": 3183,
+    "title": "Amazon Product 12",
+    "price": 0,
+    "description": "Kepgonegu Large Canvas Wall Art Blue Tree Golden Butterflies Picture Abstract Grey Graffiti Canvas Prints Ready to Hang for Living Room Bedroom Size 20x40",
+    "image": "https://m.media-amazon.com/images/I/91Ip79ZB-4L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C49S6PVW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c08c1f"
+  },
+  {
+    "id": 3184,
+    "title": "Amazon Product 13",
+    "price": 0,
+    "description": "Office Wall Art-3 Panel Motivational Wall Art, Inspirational Quotes Canvas Art for Home Office Wall Decor, Positive Quote Wall Decor, Entrepreneur Words Poster Frame for Company Wall Decor 12”x18”x3Pcs",
+    "image": "https://m.media-amazon.com/images/I/71fccXU1CQL._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09WQGRW72/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d9c381"
+  },
+  {
+    "id": 3185,
+    "title": "Amazon Product 14",
+    "price": 0,
+    "description": "GUASDIE Animal Heads Wall Decor, Faux Deer Head Mount, Animal Sculptures Wall Decor, Resin Animal Head Wall Hanging Decoration for Living Room Bedroom Kitchen Gift, Fox",
+    "image": "https://m.media-amazon.com/images/I/61ygS9s2LeL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C58Z881B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7b26c"
+  },
+  {
+    "id": 3186,
+    "title": "Amazon Product 15",
+    "price": 0,
+    "description": "GraduationMall 8x10 Picture Frames, Real Glass, Display Photos for Wall or Tabletop, Mahogany with Gold Beads, 2-Pack",
+    "image": "https://m.media-amazon.com/images/I/81OeTLUF6VL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B082KGJ8MD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#3e2226"
+  },
+  {
+    "id": 3187,
+    "title": "Amazon Product 16",
+    "price": 0,
+    "description": "YUDACHU Metal Wall Art Gold Wall Decor for Living Room, Modern Geometric Wall Art Decor 59\" × 19.6\" Large Luxury 3D Wall Accents for Bedroom, Dining Room, Wall Decorations Wall Sculptures",
+    "image": "https://m.media-amazon.com/images/I/71iPSvqgdBL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BYRKJKB4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f9e5a6"
+  },
+  {
+    "id": 3188,
+    "title": "Amazon Product 17",
+    "price": 0,
+    "description": "CosmoLiving by Cosmopolitan Metal Geometric Home Wall Decor 3D Stripe Wall Sculpture, Wall Art 36\" x 1\" x 23\", Gold",
+    "image": "https://m.media-amazon.com/images/I/81rMlK8kNYL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08QV1QL2P/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f4e6cc"
+  },
+  {
+    "id": 3189,
+    "title": "Amazon Product 18",
+    "price": 0,
+    "description": "Hicarer 4 Pcs 12 Inch Metal Wall Art Decor Sunburst Hanging Metal Artwork Decor Wall Art Decorations for Home Living Room Office(Gold)",
+    "image": "https://m.media-amazon.com/images/I/815O7uL1tFL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2XJ24BF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e8ddb8"
+  },
+  {
+    "id": 3190,
+    "title": "Amazon Product 19",
+    "price": 0,
+    "description": "Wall Art Botanical Natural Decor Canvas Print Spring Scene Nature Landscape Abstract Tree Artwork Framed Ready To Hang Living Room Bedroom Decor And Office Wall Decor 24x48 Inch",
+    "image": "https://m.media-amazon.com/images/I/81oVvwRUbjL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1RKQL8B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c7bcad"
+  },
+  {
+    "id": 3191,
+    "title": "Amazon Product 20",
+    "price": 0,
+    "description": "sechars 3 Piece Winter Canvas Wall Art Modern Golden Snowflake Painting Art Prints Simple Life Quotes Picture Poster for Living Room Bedroom Bathroom Wall Decoration Framed Artwork Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71NfII3aD8L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09GFGBVC5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e7e7e4"
+  },
+  {
+    "id": 3192,
+    "title": "Amazon Product 21",
+    "price": 0,
+    "description": "SIGNLEADER Metal Wall Art Decor Abstract Circle Shapes Minimalist Modern Abstract Wall Sculpture Hangings Home Decoration for Living Room, Bedroom, Bathroom, Kitchen, Outdoor - 18\" Gold",
+    "image": "https://m.media-amazon.com/images/I/71QDPvHvVSL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CP1Z56N1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c5ab6d"
+  },
+  {
+    "id": 3193,
+    "title": "Amazon Product 22",
+    "price": 0,
+    "description": "Abstract Painting Wall Art Modern Aesthetic Picture Canvas Handdrawn brown and white minimalist line Artwork Framed for Bedroom Living Room Kitchen Office Home Decor 24\"x48\"",
+    "image": "https://m.media-amazon.com/images/I/81A3gGgoPbL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1TZ88H4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddd5c0"
+  },
+  {
+    "id": 3194,
+    "title": "Amazon Product 23",
+    "price": 0,
+    "description": "upsimples 11x14 Picture Frame Set of 5, Display Pictures 8x10 with Mat or 11x14 Without Mat, Wall Gallery Photo Frames, Gold",
+    "image": "https://m.media-amazon.com/images/I/71qMe1GaayL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B089KGB3RH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3c096"
+  },
+  {
+    "id": 3195,
+    "title": "Amazon Product 24",
+    "price": 0,
+    "description": "3 Pack Metal Mirrors for Wall Sunburst Wall Mirrors Home Décor Decorative Hanging Wall Art for Living Room Bedroom Entryway (Gold, Flower+Sunburst)",
+    "image": "https://m.media-amazon.com/images/I/71TKgOyjB4L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08P39NQV7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f7dc9d"
+  },
+  {
+    "id": 3196,
+    "title": "Amazon Product 25",
+    "price": 0,
+    "description": "Abstract Wall Art Paintings Canvas Wall Art Decor Black And Gold Lines Artwork for Walls Texture Wall Decorations Modern Minimalist Wall Art Living Room Decor For Room Bedroom Office Wall Decor 24\"X48\"",
+    "image": "https://m.media-amazon.com/images/I/91+J6KPlsyL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D93Z45HR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7bf8f"
+  },
+  {
+    "id": 3197,
+    "title": "Amazon Product 26",
+    "price": 0,
+    "description": "Peryiter 3 Pcs Metal Flower Wall Decor Minimalist Floral Wall Hanging Decor Meta Flower Art Floral Decor for Living Room Bathroom Kitchen Indoor Outdoor(Gold)",
+    "image": "https://m.media-amazon.com/images/I/71o9-6oZ9rL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BDQ7WF8N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f5dfa7"
+  },
+  {
+    "id": 3198,
+    "title": "Amazon Product 27",
+    "price": 0,
+    "description": "Vivegate Gold Minimalist Floral Single Line Metal Wall Art Decor - 18\"X12\" 3 Packs Gold Floral Abstract Minimalist Lines Wall signs for Hanging home wall decor",
+    "image": "https://m.media-amazon.com/images/I/71BrA1FrgiL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BC2NZFGL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d1c898"
+  },
+  {
+    "id": 3199,
+    "title": "Amazon Product 28",
+    "price": 0,
+    "description": "YJYart Green Flowers Canvas Wall Art Modern Paintings with Gold Foil Abstract Nature Wall Decorations for Home Office Living Room Bedroom 24\" x 48\"",
+    "image": "https://m.media-amazon.com/images/I/71jrBi9tCjL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSK6HHYM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9eab8f"
+  },
+  {
+    "id": 3200,
+    "title": "Amazon Product 29",
+    "price": 0,
+    "description": "XXMWallArt WKFC3150 Wood framed Abstract Wall Art Gold and Blue Canvas Print Artwork for Living Room Bedroom Kitchen Home and Office Wall Decor",
+    "image": "https://m.media-amazon.com/images/I/71CYc-0ABgL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CCVMG7WL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#193763"
+  },
+  {
+    "id": 3201,
+    "title": "Amazon Product 30",
+    "price": 0,
+    "description": "Abstract Wall Art Nave Blue Modern Canvas Pictures Art Print Gold Contemporary Artwork Painting Decor for Living Room Bedroom Home Office Decorations(20\"x40\")",
+    "image": "https://m.media-amazon.com/images/I/61crVyn5lKL._AC_SX355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DKK47F2D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fdf8bd"
+  },
+  {
+    "id": 3202,
+    "title": "Amazon Product 31",
+    "price": 0,
+    "description": "Gold Trees Canvas Wall Art for Living Room - Black Art Wall Decor for Bedroom - Office Artwork Wall Decor Size 20\" x 40\"",
+    "image": "https://m.media-amazon.com/images/I/91VM-VUnEWL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFCQR5LM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0b791"
+  },
+  {
+    "id": 3203,
+    "title": "Amazon Product 32",
+    "price": 0,
+    "description": "2 Pieces Wall Decor Hanging Planters with Artificial Plants Metal Hanging Vase Indoor Plants Holder Modern Geometric Wall Art for Home Bedroom Living Room Office(Eucalyptus)",
+    "image": "https://m.media-amazon.com/images/I/71cC-jNQ8qL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BFCB83RG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dee4c7"
+  },
+  {
+    "id": 3204,
+    "title": "Amazon Product 33",
+    "price": 0,
+    "description": "Hicarer Hello Gorgeous Metal Wall Art Decor Minimalist Decoration Metal Hello Gorgeous Decorative Sign for Living Room Office Bedroom Hotel Home Wall Decoration(Gold)",
+    "image": "https://m.media-amazon.com/images/I/611AIetjAIL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DDY5JRTV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fff7c7"
+  },
+  {
+    "id": 3205,
+    "title": "Amazon Product 34",
+    "price": 0,
+    "description": "Murwall Gold Wall Decal Peel and Stick | Geometric Line Wall Sticker | Metallic Line Wall Decals",
+    "image": "https://m.media-amazon.com/images/I/71Lh6VGB6oL._SX1000_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0922H8368/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cec7c1"
+  },
+  {
+    "id": 3206,
+    "title": "Amazon Product 35",
+    "price": 0,
+    "description": "SAOROPEB 3D Butterfly Wall Decor 48 Pcs 4 Styles 3 Sizes, Gold Butterfly Decorations for Butterfly Birthday Decorations Butterfly Party Decorations Cake Decorations, Removable Stickers (Gold)",
+    "image": "https://m.media-amazon.com/images/I/81ryUOLchIS._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B095P43V29/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2ebd4"
+  },
+  {
+    "id": 3207,
+    "title": "Amazon Product 36",
+    "price": 0,
+    "description": "Briful 12\" Gold Wall Décor Pack of 3 Metal Starbursts Radial Plate Wall Art Modern Accent Hanging Wall Decorations For Home Office Bedroom Or Living Room Wall Sculptures",
+    "image": "https://m.media-amazon.com/images/I/81hmDGkc0cL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C4GZMVMM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#a98a4d"
+  },
+  {
+    "id": 3208,
+    "title": "Amazon Product 37",
+    "price": 0,
+    "description": "GUASDIE Animal Heads Wall Decor, Faux Deer Head Mount, Animal Sculptures Wall Decor, Resin Animal Head Wall Hanging Decoration for Living Room Bedroom Kitchen Gift, 5pcs",
+    "image": "https://m.media-amazon.com/images/I/81dunWE8-VL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CCRNT76W/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#947c58"
+  },
+  {
+    "id": 3209,
+    "title": "Amazon Product 38",
+    "price": 0,
+    "description": "MADISON PARK SIGNATURE Sunburst Wall Art - Modern Resin Dimensional Radiant Color Hand Painted Home Décor Abstract Textured Gold 30\" W x 30\" H x 1.25\" D",
+    "image": "https://m.media-amazon.com/images/I/91zxROXZbhL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B074ZRTCM9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f8d883"
+  },
+  {
+    "id": 3210,
+    "title": "Amazon Product 39",
+    "price": 0,
+    "description": "Madison Park Wall Art Living Room Décor Faye Metal Foil Ginkgo Leaf Large Home Accent Modern Inspired Dining, Bathroom Decoration Ready to Hang Ornament for Bedroom, 43\" W x 23.5\" H x 1.6\" D, Gold",
+    "image": "https://m.media-amazon.com/images/I/71ZMPJPElkL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B082YJ1W6H/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#816234"
+  },
+  {
+    "id": 3211,
+    "title": "Amazon Product 40",
+    "price": 0,
+    "description": "Madison Park Golden Glimmer 100% Hand Brush Embellished Canvas, 2 Piece Set, Each 22\" W x 28\" H x 1.5\" D, Gold, Living Room",
+    "image": "https://m.media-amazon.com/images/I/81F-+LVfp4L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07KG7SWPQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7cebf"
+  },
+  {
+    "id": 3212,
+    "title": "Amazon Product 41",
+    "price": 0,
+    "description": "ZEXUIRU 3 Set Gold Metal Jeweled Wall Art Bling Crystal Home Décor Star Sun Rhinestone Wall Hanging Diamond Accents",
+    "image": "https://m.media-amazon.com/images/I/717FnsmjbWL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BHQNKRR6/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#9c9b95"
+  },
+  {
+    "id": 3213,
+    "title": "Amazon Product 42",
+    "price": 0,
+    "description": "Zessonic Black Abstract Wall Art Decor - 2 Pack 24\" x 36\" Black and Gold Canvas Wall Decor with Hand Texture for Living Room, Bedroom, Office, Framed, Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71eMcjCg-fL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BHXYSNYG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6bc76"
+  },
+  {
+    "id": 3214,
+    "title": "Amazon Product 43",
+    "price": 0,
+    "description": "Gold Wall Decor for Living Room Hallway, 7PCS Metal Wall Art Hanging Sculptures Bedroom Decoration, 3D Metal Leaf Accent with 5 Sizes, Large Modern Artwork for Home Office Bathroom Kitchen",
+    "image": "https://m.media-amazon.com/images/I/71Lzl3wQIyL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B878TC8C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cfae6b"
+  },
+  {
+    "id": 3215,
+    "title": "Amazon Product 44",
+    "price": 0,
+    "description": "Pangda 4 Pieces Metal Heart Wall Art Decor Love Heart Wall Sign Ornaments for Bedroom Living Room Decoration(Gold)",
+    "image": "https://m.media-amazon.com/images/I/618HvUPU2iL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BDDFPPJZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f3f2e7"
+  },
+  {
+    "id": 3216,
+    "title": "Amazon Product 45",
+    "price": 0,
+    "description": "Sweetcrispy Arched Full Length Mirror 64\"x21\" Full Body Floor Mirror Standing Hanging or Leaning Wall, Large Arch Wall Mirror with Stand Aluminum Alloy Thin Frame for Bedroom Cloakroom, Gold",
+    "image": "https://m.media-amazon.com/images/I/71U9rLByqTL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CQRRVV4F/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e19b46"
+  },
+  {
+    "id": 3217,
+    "title": "Amazon Product 46",
+    "price": 0,
+    "description": "XIANSHOU Wall Decorations for Living Room Gold and White Abstract Canvas Art Oil Painting Large Minimalist Decor Wall Art for Office Bedroom Home 29\"x 58\"",
+    "image": "https://m.media-amazon.com/images/I/71DL5C-UlmL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7GJ5Q6K/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5cdbd"
+  },
+  {
+    "id": 3218,
+    "title": "Amazon Product 47",
+    "price": 0,
+    "description": "Moon Phase Wall Decor Wall Hanging Handmade 13 Phases Moon Wall Decor Hammered Metal 36\" Garland Boho Wall Decor Bedroom Headboard, Living Area for Women & Kids, Aesthetic Celestial Wall Art (Gold)",
+    "image": "https://m.media-amazon.com/images/I/71BkuGOZH1L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07T6D2QW5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0c9ca"
+  },
+  {
+    "id": 3219,
+    "title": "Amazon Product 48",
+    "price": 0,
+    "description": "Ecqizer Good Vibes Only Signs Wall Decor Metal Wire Letters Wall Decor Metal Wire Art Decor Inspirational Wall Decoration for Home Room Office Wall (Gold)",
+    "image": "https://m.media-amazon.com/images/I/61Tg1WG2-oL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CKXYBT78/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2efdc"
+  },
+  {
+    "id": 3220,
+    "title": "Amazon Product 49",
+    "price": 0,
+    "description": "Kelly Miller 24\"x48\" Large Gold Mirror for Wall, Gold Traditional Wall Mirror Art Decorative Mirror Beveled Full Length Mirror Home Decor for Bathroom Living Room Bedroom Kitchen Farmhouse Entryway",
+    "image": "https://m.media-amazon.com/images/I/71e3T1wA+YL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CDCN8CCR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e6ceaa"
+  },
+  {
+    "id": 3221,
+    "title": "Amazon Product 50",
+    "price": 0,
+    "description": "Deco 79 Metal Plate Home Wall Decor Wall Sculpture with Embossed Details, Wall Art 30\" x 2\" x 30\", Gold",
+    "image": "https://m.media-amazon.com/images/I/91ayzziD1zS._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B097QGYRRJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffe8c1"
+  },
+  {
+    "id": 3222,
+    "title": "Amazon Product 51",
+    "price": 0,
+    "description": "Large Wall Art Gold Abstract Tree Of Life Framed Modern Artwork Canvas Painting Textured Tree Pictures Home Decor Ready To Hang For Bedroom Living Room 30\"X60\"",
+    "image": "https://m.media-amazon.com/images/I/81mytf3xGuL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8PBCRQL/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b7a694"
+  },
+  {
+    "id": 3223,
+    "title": "Amazon Product 52",
+    "price": 0,
+    "description": "Zessonic Abstract Wall Art For Living-room: Framed Glam Gold Hand-Painting Canvas Art for Bedroom Decor Glitter Abstract Artwork for Modern, Contemporary Decor, (Set of 3, 24 x 36 Inches for Each)",
+    "image": "https://m.media-amazon.com/images/I/81Okaen8mFL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C6TDF68X/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cabf9a"
+  },
+  {
+    "id": 3224,
+    "title": "Amazon Product 53",
+    "price": 0,
+    "description": "CosmoLiving by Cosmopolitan Canvas Geode Glitter Flakes Framed Wall Art with Gold Frame, 30\" x 2\" x 40\", Gold",
+    "image": "https://m.media-amazon.com/images/I/91w8sqhkIQL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08QTXCJNM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c9c1b3"
+  },
+  {
+    "id": 3225,
+    "title": "Amazon Product 54",
+    "price": 0,
+    "description": "3Pcs Battery Operated Picture Light, Magnetic Led Painting Light with Remote Dimmable and Timer, 3 Lighting Modes Art Display Light for Picture Frame Paintings, Wireless Wall Decor Puck Lights, Gold",
+    "image": "https://m.media-amazon.com/images/I/71jqMhtgxVL._AC_SX342_PIbundle-3,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJ2T8C7C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bfaa79"
+  },
+  {
+    "id": 3226,
+    "title": "Amazon Product 55",
+    "price": 0,
+    "description": "8 Pcs Gold Wall Decor Modern Metal Decor Metal Starbursts Radial Plate Art Hanging Decorative Wall Decorations for Home Bedroom Bathroom Living Room Office Sculpture(Gold)",
+    "image": "https://m.media-amazon.com/images/I/81wBANUPjGL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DCZGGS3C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ebe0b9"
+  },
+  {
+    "id": 3227,
+    "title": "Amazon Product 56",
+    "price": 0,
+    "description": "Mkono Moon Phase Wall Hanging Metal Boho Home Decor Vertical Chic Moon Garland for Dorm Nursery Bedroom Living Room Apartment Office, Decorative Wall Art for Girls Mom, Gold",
+    "image": "https://m.media-amazon.com/images/I/51izu8petlL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07YB3VC21/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4d19f"
+  },
+  {
+    "id": 3228,
+    "title": "Amazon Product 57",
+    "price": 0,
+    "description": "Hicarer 4 Pcs Starburst Wall Decor Bling Wall Art Crystal Teardrop 3D Hanging Rhinestone Radial Metal Artwork Modern Accent Sculptures Decorations for Living Room Home Office Bedroom(Gold)",
+    "image": "https://m.media-amazon.com/images/I/71+qavxVG-L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4232PPN/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b8b3ae"
+  },
+  {
+    "id": 3229,
+    "title": "Amazon Product 58",
+    "price": 0,
+    "description": "Set of 2 Artificial Plants with Gold Metal Round Hanging Hoop for Wall Decor, Wall-Mounted Green Fake Plants in Metal Hoop for Modern Home Decor, Gold Wall Decor for Bedroom, Living Room",
+    "image": "https://m.media-amazon.com/images/I/71J+rFHmDcL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09WXTW1T4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#263d19"
+  },
+  {
+    "id": 3230,
+    "title": "Amazon Product 59",
+    "price": 0,
+    "description": "Glamativity 4 Pack Gold Wall Art Décor, Minimalist Décor Single Line Art Wall Décor, Real Metal Wall Art, Woman's Body Shape Abstract Wall Art (Gold Elegant Style, M Size 17 x 11.8'')",
+    "image": "https://m.media-amazon.com/images/I/71ukDl4LzSL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BXWJWCLB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cfbd90"
+  },
+  {
+    "id": 3231,
+    "title": "Amazon Product 60",
+    "price": 0,
+    "description": "Peryiter 3 Pcs Mountain Metal Wall Art Mountain Line Wall Decor Abstract Minimalist Wall Art Rustic Nature Wall Decor for Home Bathroom Living Room(Gold, Simple Style)",
+    "image": "https://m.media-amazon.com/images/I/81RSKyWtISL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BCK6BMVR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c1b48c"
+  },
+  {
+    "id": 3232,
+    "title": "Amazon Product 61",
+    "price": 0,
+    "description": "3 Panels Metal Flowers Wall Decor Modern Abstract Nature Floral Line Wall Sculpture Minimalist Decor Metal Home Hanging Wall Art for Home Bedroom Above Bed Wall Decor, 11.8 x 17 Inch (Gold)",
+    "image": "https://m.media-amazon.com/images/I/71mYAuyGKvL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09V56DSKR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f2d27d"
+  },
+  {
+    "id": 3233,
+    "title": "Amazon Product 62",
+    "price": 0,
+    "description": "UITWMKTG 5 Pack Animal Head Wall Decor Gold Wall Sculpture Home Decor for Office Bedroom Modern Decor for Men Women",
+    "image": "https://m.media-amazon.com/images/I/8123fehOM4L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFBT2BVV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#947d5a"
+  },
+  {
+    "id": 3234,
+    "title": "Amazon Product 63",
+    "price": 0,
+    "description": "Fetco Habitat WA3718W Cabers SSilver Starbursts Metal Wall Art, Metallic 8.5\" x 8.5\"",
+    "image": "https://m.media-amazon.com/images/I/71Ei418zYZL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08L42JZ7B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f3f0e6"
+  },
+  {
+    "id": 3235,
+    "title": "Amazon Product 64",
+    "price": 0,
+    "description": "S-MANTIS Vintage Wall Sculpture, Antique Pediment, Hallway Wall Art, Hand Painted Wall Decoration With Embossed Intricate Key Design, Oval Aesthetic Room Décor, Gallery, Unique Gift (Antique Gold-Key)",
+    "image": "https://m.media-amazon.com/images/I/61kJYMqU4TL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BZLJ2B4V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#453a39"
+  },
+  {
+    "id": 3236,
+    "title": "Amazon Product 65",
+    "price": 0,
+    "description": "Remenna Metal Flowers Wall Decor, Metal Rustic Wall Art Decoration Farmhouse Wall Decorations Multiple Floral Hanging Decor for Bathroom Living Room Home Office Garden Kitchen (Rustic Gold - 2)",
+    "image": "https://m.media-amazon.com/images/I/81AOvP1uT1L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BRPW2PVR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#efead3"
+  },
+  {
+    "id": 3237,
+    "title": "Amazon Product 66",
+    "price": 0,
+    "description": "LuxenHome Metal Wall Decor, 36\" Luxury Living Room Metal Wall Art, Set of 2 Gold Wall Decor, Bedroom Wall Decorations with Frame for Home, Bedroom, Kitchen, Office, Dining Room, Gold/Black",
+    "image": "https://m.media-amazon.com/images/I/51bQpRdL+HL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09F1376DC/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8c8271"
+  },
+  {
+    "id": 3238,
+    "title": "Amazon Product 67",
+    "price": 0,
+    "description": "Peryiter 3 Pcs Modern Minimalist Wall Decor Abstract Line Art Wall Decor Woman Body Shape Art Print Decor Drawing Metal Wall Art for Living Room Bedroom Wall(Gold)",
+    "image": "https://m.media-amazon.com/images/I/71XdXy5tchL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BGHN6DK3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f1e5c2"
+  },
+  {
+    "id": 3239,
+    "title": "Amazon Product 68",
+    "price": 0,
+    "description": "Amyhill 15 Pack Teardop Mirror Stickers Wall Decor Wavy Mirror Wall Stickers Removable Acrylic 3D DIY Decals Art for Living Room Bathroom Home Decorations",
+    "image": "https://m.media-amazon.com/images/I/61DQMMBu7HL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B5CSSQ9Z/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e4d8a6"
+  },
+  {
+    "id": 3240,
+    "title": "Amazon Product 69",
+    "price": 0,
+    "description": "Picture Light Battery Operated, 13in Wireless Art Light for Paintings, Dimmable 5000mAh Recharging Battery Picture Light with Remote Control for Wall, Gallery Dartboard Art Bedroom (Gold-2Pack)",
+    "image": "https://m.media-amazon.com/images/I/61p1IeesZQL._AC_SX425_PIbundle-2,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D2HNRQKP/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3c283"
+  },
+  {
+    "id": 3241,
+    "title": "Amazon Product 70",
+    "price": 0,
+    "description": "Wall Art Wall Decor Bedroom Pictures Artwork Abstract Wall Art Black And Gold Artwork Large Size Modern Painting Wall Decoration Pictures For Living Room Home Kitchen Office 30x60 Inch",
+    "image": "https://m.media-amazon.com/images/I/61+noNI+qAL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8PH8TD3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#423a39"
+  },
+  {
+    "id": 3242,
+    "title": "Amazon Product 71",
+    "price": 0,
+    "description": "the stream design Abstract Canvas Wall Art Decor: Contemporary Gold Foil Textured Painting Picture Modern Hand Painted Gallery Print Artwork for Bedroom Living Room Kitchen",
+    "image": "https://m.media-amazon.com/images/I/81WMJHVe-qL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C713NTW9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cfb87d"
+  },
+  {
+    "id": 3243,
+    "title": "Amazon Product 72",
+    "price": 0,
+    "description": "Wall Art Botanical Natural Decor Canvas Print Spring Scene Nature Landscape Abstract Tree Artwork Framed Ready To Hang Living Room Bedroom Decor And Office Wall Decor 24x48 Inch",
+    "image": "https://m.media-amazon.com/images/I/81oVvwRUbjL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1RKQL8B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c7bcad"
+  },
+  {
+    "id": 3244,
+    "title": "Amazon Product 73",
+    "price": 0,
+    "description": "SOUGUAN Living Room Decor White Flower Artwork Gold Canvas Wall Art Abstract Line Painting for Bedroom Kitchen Dining Room Home Wall Decor 26\"x40\"x 3 Pieces",
+    "image": "https://m.media-amazon.com/images/I/71s4krmEs8L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLY8KXBK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c5bfa7"
+  },
+  {
+    "id": 3245,
+    "title": "Amazon Product 74",
+    "price": 0,
+    "description": "Abstract Painting Wall Art Modern Aesthetic Picture Canvas Handdrawn brown and white minimalist line Artwork Framed for Bedroom Living Room Kitchen Office Home Decor 24\"x48\"",
+    "image": "https://m.media-amazon.com/images/I/81A3gGgoPbL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1TZ88H4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ddd5c2"
+  },
+  {
+    "id": 3246,
+    "title": "Amazon Product 75",
+    "price": 0,
+    "description": "Black and Gold Marble Wall Art Golden Swirl Abstract Painting Luxurious Canvas Print Picture Office Home Decor for Living Room Bedroom",
+    "image": "https://m.media-amazon.com/images/I/711tWtBd1nL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D1GQPH3V/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bca16d"
+  },
+  {
+    "id": 3247,
+    "title": "Amazon Product 76",
+    "price": 0,
+    "description": "Howard Elliott Antiqued Talida Mirror, Ornate Mirror for Wall Focal Point, Rectangular Vanity Bedroom Wall Mounted Mirror, Resin Frame, Glossy Hunter Green, 27 Inch x 38 Inch x 1 Inch",
+    "image": "https://m.media-amazon.com/images/I/61rHxTBRGWL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DHXHWYPR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#183620"
+  },
+  {
+    "id": 3248,
+    "title": "Amazon Product 77",
+    "price": 0,
+    "description": "Golden State Art, 11x14 Ornate Finish Photo Frame, with White Mat for 8x10 Picture & Real Glass, Color: Bronze",
+    "image": "https://m.media-amazon.com/images/I/71rcHyuc98L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07474HMXR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#987137"
+  },
+  {
+    "id": 3249,
+    "title": "Amazon Product 78",
+    "price": 0,
+    "description": "Picture Light with Remote, 15.35inch Wireless Rechargeable Battery Wall Light for Paintings, 3 Colors Paintings Light Dimmable and Timer Metal Art Light for Display, Wall, Artwork, Gallery (Gold)",
+    "image": "https://m.media-amazon.com/images/I/71bVD0MatWL._AC_SX342_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYLNFSR7/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffea9e"
+  },
+  {
+    "id": 3250,
+    "title": "Amazon Product 79",
+    "price": 0,
+    "description": "Kelly Miller 24\"x48\" Large Gold Mirror for Wall, Gold Traditional Wall Mirror Art Decorative Mirror Beveled Full Length Mirror Home Decor for Bathroom Living Room Bedroom Kitchen Farmhouse Entryway",
+    "image": "https://m.media-amazon.com/images/I/71e3T1wA+YL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CDCN8CCR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c9bcb1"
+  },
+  {
+    "id": 3251,
+    "title": "Amazon Product 80",
+    "price": 0,
+    "description": "Kelly Miller Large Gold Full Length Mirror for Wall, 60\"x30\" Full Body Mirror Beveled Scalloped Mirror Modern Elegant Home Decor for Bedroom Living Room Bathroom Dressing Room Entryway Hallway",
+    "image": "https://m.media-amazon.com/images/I/81JaXrRsC3L._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CZ6Y745Y/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bbb0a9"
+  },
+  {
+    "id": 3252,
+    "title": "Amazon Product 81",
+    "price": 0,
+    "description": "Kelly Miller 32\"x48\" Large Gold Mirror for Wall, Modern Decorative Mirror Rectangle Mirror Wall Vanity Mirror Bevelled Full Length Mirror for Bathroom Living Room Bedroom Farmhouse Fireplace Entryway",
+    "image": "https://m.media-amazon.com/images/I/71j74NBwxmL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CDCNK2GZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#cdc0b4"
+  },
+  {
+    "id": 3253,
+    "title": "Amazon Product 82",
+    "price": 0,
+    "description": "Irregular Wall Mirror - Wall Mirrors Decorative 20\"x36\" Gold Asymmetrical Mirror Aviation Aluminum Alloy Frame for Bathroom, Bedroom, Living Room, Cloakroom, Entryway",
+    "image": "https://m.media-amazon.com/images/I/714LrXeY9DL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CRDPNR4R/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ccc0ab"
+  },
+  {
+    "id": 3254,
+    "title": "Amazon Product 83",
+    "price": 0,
+    "description": "OYEFLY 3 Pcs Metal Flower Wall Decor, Flower Art Wall Decor, Farmhouse Wall Decor (Gold)",
+    "image": "https://m.media-amazon.com/images/I/71lg90WmAHL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFYZTM8S/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c8bd7c"
+  },
+  {
+    "id": 3255,
+    "title": "Amazon Product 84",
+    "price": 0,
+    "description": "Deco 79 Metal Abstract Home Wall Decor Dimensional Wall Sculpture with Black Wood Backing, Set of 2 Wall Art 12\"W, 36\"H, Gold",
+    "image": "https://m.media-amazon.com/images/I/81wcu-2aDsL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09V9MWW6P/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2f2e2b"
+  },
+  {
+    "id": 3256,
+    "title": "Amazon Product 85",
+    "price": 0,
+    "description": "sechars 3 Piece Winter Canvas Wall Art Modern Golden Snowflake Painting Art Prints Simple Life Quotes Picture Poster for Living Room Bedroom Bathroom Wall Decoration Framed Artwork Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71NfII3aD8L._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09GFGBVC5/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fffbef"
+  },
+  {
+    "id": 3257,
+    "title": "Amazon Product 86",
+    "price": 0,
+    "description": "YJYart Green Flowers Canvas Wall Art Modern Paintings with Gold Foil Abstract Nature Wall Decorations for Home Office Living Room Bedroom 24\" x 48\"",
+    "image": "https://m.media-amazon.com/images/I/71jrBi9tCjL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSK6HHYM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#848e76"
+  },
+  {
+    "id": 3258,
+    "title": "Amazon Product 87",
+    "price": 0,
+    "description": "Abstract Canvas Wall Art Gold Circle Painting Green Artwork Framed Wall Prints 29\"x 58\" Office Wall Decor Colorful Pictures for Living Room Bedroom",
+    "image": "https://m.media-amazon.com/images/I/718L6979SVL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DGPZY7VB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#87806f"
+  },
+  {
+    "id": 3259,
+    "title": "Amazon Product 88",
+    "price": 0,
+    "description": "SIGNLEADER Metal Wall Art Decor Abstract Circle Shapes Minimalist Modern Abstract Wall Sculpture Hangings Home Decoration for Living Room, Bedroom, Bathroom, Kitchen, Outdoor - 18\" Gold",
+    "image": "https://m.media-amazon.com/images/I/71QDPvHvVSL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CP1Z56N1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c6ac69"
+  },
+  {
+    "id": 3260,
+    "title": "Amazon Product 89",
+    "price": 0,
+    "description": "Weysat 2 Pieces Square Mirrored Wall Art Square Accent Diamond Hanging Mirror Decorative Wall Mirror for Home Bedroom Living Room Bathroom(Gold, Mirrored)",
+    "image": "https://m.media-amazon.com/images/I/61ke4jI2KqL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C1ZJCMXH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f7eca2"
+  },
+  {
+    "id": 3261,
+    "title": "Amazon Product 90",
+    "price": 0,
+    "description": "2 Pieces Boho Wall Decor Gold Metal Wall Art Artificial Pampas Wall Mounted Home Artwork Plant Hanging Decor for Bedroom Living Room Kitchen Bathroom (Gold, Fresh Shell)",
+    "image": "https://m.media-amazon.com/images/I/61Cj4PSRb1L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D4M9MKMG/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eee3c5"
+  },
+  {
+    "id": 3262,
+    "title": "Amazon Product 91",
+    "price": 0,
+    "description": "Framed Modern Luxury Gold Wall Art, Set of 3 Piece Contemporary Paintings Artwork for Walls, Golden Leaf Prints with Gold Frame, Pictures for Living Room, Hallway, Bedroom, Office Wall Decor 16x24 Inch",
+    "image": "https://m.media-amazon.com/images/I/813OyRYwG-L._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D86ZF1TD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fbf7de"
+  },
+  {
+    "id": 3263,
+    "title": "Amazon Product 92",
+    "price": 0,
+    "description": "Deco 79 Metal Leaf Home Wall Decor Tall Cut-Out Wall Sculpture with Gold Frame, Set of 2 Wall Art 12\"W, 34\"H, Gold",
+    "image": "https://m.media-amazon.com/images/I/71o1wH8zJtL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08QTLP8BS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#897951"
+  },
+  {
+    "id": 3264,
+    "title": "Amazon Product 93",
+    "price": 0,
+    "description": "Biuteawal Abstract Canvas Wall Art for Living Room Gold Butterfly on Blue Background Painting Prints Modern Creative Artwork 3 Panels Framed Pictures Bathroom Bedroom Office Kitchen Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71bl80-+MtL._AC_SY741_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B08QCHXBW3/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7c59e"
+  },
+  {
+    "id": 3265,
+    "title": "Amazon Product 94",
+    "price": 0,
+    "description": "YJYart Green Wall Decor Abstract Wall Art for Living Room Gold Wall Decorations Circle Poster Pictures for Home Kitchen Office 24”x48”",
+    "image": "https://m.media-amazon.com/images/I/710BrF9NxpL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CJ22L4BJ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e9ce90"
+  },
+  {
+    "id": 3266,
+    "title": "Amazon Product 95",
+    "price": 0,
+    "description": "VAYIMDH Gold Abstract Canvas Wall Art for Living Room - Vintage Posters for Room Aesthetic - Line Wall Decor for Bedroom 20\"x 40\" Dining Room Decoration",
+    "image": "https://m.media-amazon.com/images/I/71+42JMPMDL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D6VJ6ZW9/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c39e61"
+  },
+  {
+    "id": 3267,
+    "title": "Amazon Product 96",
+    "price": 0,
+    "description": "Gold Trees Canvas Wall Art for Living Room - Black Art Wall Decor for Bedroom - Office Artwork Wall Decor Size 20\" x 40\"",
+    "image": "https://m.media-amazon.com/images/I/91VM-VUnEWL._AC_SX569_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DFCQR5LM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d0b791"
+  },
+  {
+    "id": 3268,
+    "title": "Amazon Product 97",
+    "price": 0,
+    "description": "FUNTEREST Gold Leaf Wall Decor Modern Wall Art Home Decor, Set of 3 Metal Wall Hanging Decoration for Living Room Office Bedroom Hotel",
+    "image": "https://m.media-amazon.com/images/I/718Hub5DjgL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0B5QL42QF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d9d8d5"
+  },
+  {
+    "id": 3269,
+    "title": "Amazon Product 98",
+    "price": 0,
+    "description": "ESTART 2 Pieces Metal Tree Leaf Wall Decor Vine Olive Branch Leaf Wall Art Wrought Iron Scroll Sculptures for Above the Bed, Living Room, Bedroom, Hallway, Indoor and Outdoor Decoration (Gold)",
+    "image": "https://m.media-amazon.com/images/I/61LwMVh-nPL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BB9TNXMF/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bfaa80"
+  },
+  {
+    "id": 3270,
+    "title": "Amazon Product 99",
+    "price": 0,
+    "description": "BearCake Abstract Black and Gold Wall Art Set of 2 - Modern Black Gold and White Wall Decor Poster for Bedroom Living Room, Oil Painting Abstract Pictures for Home Office Decor, 11x14 Inches Framed",
+    "image": "https://m.media-amazon.com/images/I/815mfvWm7LL._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D3ZZQGQS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bc9b64"
+  },
+  {
+    "id": 3271,
+    "title": "Amazon Product 100",
+    "price": 0,
+    "description": "Gold Wall Sculpture, Hand Vase Home Decor, Wall Mount Hands Sculpture Vases, Wall Glass Test Tube Vase, Funky Flower Vase Decorations, Hand Wall Hanging Decor, Unique Wall Statue",
+    "image": "https://m.media-amazon.com/images/I/61FMyDHO6XL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CB26JWCB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#be9b7b"
+  },
+  {
+    "id": 3272,
+    "title": "Amazon Product 101",
+    "price": 0,
+    "description": "FANTESTICRYAN Small Birds Statues Gold Home Decor Modern Style Figurine Decorative Ornaments for Living Room, Bedroom, Office Desktop, Cabinets",
+    "image": "https://m.media-amazon.com/images/I/71SKqRaBtwL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07SPKC554/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7c096"
+  },
+  {
+    "id": 3273,
+    "title": "Amazon Product 102",
+    "price": 0,
+    "description": "Peryiter 2 Pcs Small Boho Wall Decor Hanging Planters with Artificial Pampas Metal Wall Art Modern Home Decor Display Art for Bedroom Bathroom Living Room(Gold)",
+    "image": "https://m.media-amazon.com/images/I/71YLVVuIERL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CL5PGHHH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d4b689"
+  },
+  {
+    "id": 3274,
+    "title": "Amazon Product 103",
+    "price": 0,
+    "description": "Art3d 33-Pack 3D Wall Panels for Interior Wall Decor, Diamond Textured Feature Wall Paneling for Gaming Living Room TV Wall Background Accent Wall - 12 x 12 inch Gold",
+    "image": "https://m.media-amazon.com/images/I/81S9+YA3bfL._AC_SY355_PIbundle-33,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D73HK9CV/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#8b7541"
+  },
+  {
+    "id": 3275,
+    "title": "Amazon Product 104",
+    "price": 0,
+    "description": "VIYYIEA Gold Framed Wall Art Canvas Print Home Decor for Living Room Women Reading Pictures for Bedroom Bathroom Wall Decor Women Portrait Art Wall Painting Vintage Art Prints Room Wall Decor 13x16in",
+    "image": "https://m.media-amazon.com/images/I/71MuJnKDeXL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CSNM3YKM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fff7d1"
+  },
+  {
+    "id": 3276,
+    "title": "Amazon Product 105",
+    "price": 0,
+    "description": "Golden State Art - 11x14 Aluminum Picture Frame - with Mat for 8x10 Photo or Without Mat for 11 x 14 Photo - Real Glass Cover - Simple and Elegant Decor for Wall Mounting - 1 Pack - Gold",
+    "image": "https://m.media-amazon.com/images/I/61GBsdSQAwL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B06XJBD19C/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1cc95"
+  },
+  {
+    "id": 3277,
+    "title": "Amazon Product 106",
+    "price": 0,
+    "description": "CHENGU 3 Pieces Gold Wall Decor Minimalist Wall Art Metal Line Wall Art Wall Decor for Bedroom Single Line Female for Kitchen Bathroom Living Room(Flower)",
+    "image": "https://m.media-amazon.com/images/I/71fdfYJ7F4L._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BFX48VXW/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#263c2a"
+  },
+  {
+    "id": 3278,
+    "title": "Amazon Product 107",
+    "price": 0,
+    "description": "HUARCEY Gold Framed Vintage Wall Art for Living Room, Animals Painting Prints Shelf Decor for Kitchen, Aesthetic Bedroom Wall Art, Christmas Gifts for Friends or Family (Seven Cranes - 8\"x10\")",
+    "image": "https://m.media-amazon.com/images/I/81-xIHT-4OL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DGGKVL4G/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#bb9149"
+  },
+  {
+    "id": 3279,
+    "title": "Amazon Product 108",
+    "price": 0,
+    "description": "Glamativity 4 Pack Black Abstract Metal Wall Art, Minimalist Décor Single Line Art Wall Décor, 3D Textured Metal Wall Sculptures, for Living Room Bedroom Bathroom Study Room (Black Abstract, M Size 16 x 11'')",
+    "image": "https://m.media-amazon.com/images/I/71kA+j+-p0L._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0C1W773F8/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d5d6d2"
+  },
+  {
+    "id": 3280,
+    "title": "Amazon Product 109",
+    "price": 0,
+    "description": "CosmoLiving by Cosmopolitan Metal Abstract Home Wall Decor Interlocking Rings Wall Sculpture, Wall Art 43\" x 1\" x 22\", Gold",
+    "image": "https://m.media-amazon.com/images/I/61m0WJwZiGL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09V9MW7KR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#6a5e44"
+  },
+  {
+    "id": 3281,
+    "title": "Amazon Product 110",
+    "price": 0,
+    "description": "Battery Operated Wall Sconces with Remote Control, Dimmable Wall Sconces Set of Two, 350°Rotate, 3000K LED Gold Wireless Wall Light for Living Room, Hallway, Bedroom, 28.3 Inch (2 Pack)",
+    "image": "https://m.media-amazon.com/images/I/61Mxbxp+BHL._AC_SX342_PIbundle-2,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CNVY5WMH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eddfbd"
+  },
+  {
+    "id": 3282,
+    "title": "Amazon Product 111",
+    "price": 0,
+    "description": "InSimSea Gold Picture Framed Wall Art, Living Room Bathroom Vintage Meadow with Flowers Canvas Print Wall Decor, Home Farmhouse Decor, Antique Paintings with Frames 13x16inch",
+    "image": "https://m.media-amazon.com/images/I/818OVzFeGeL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYPTD1TS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#69685a"
+  },
+  {
+    "id": 3283,
+    "title": "Amazon Product 112",
+    "price": 0,
+    "description": "Empire Art Direct Textured II Rugged Blocks with Gold Leaf, 3D Wood Wall Art, Ready to Hang, 72\" x 22\", Living Room, Bedroom",
+    "image": "https://m.media-amazon.com/images/I/81rTUEPMfgL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B079J69PLS/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c8b49a"
+  },
+  {
+    "id": 3284,
+    "title": "Amazon Product 113",
+    "price": 0,
+    "description": "Metal Flowers Wall Decor Black and Gold Wall Art Decorations Hanging 3 Pc Rustic Modern Floral Sculpture Wall Accent Artwork Indoor Outdoor for Bathroom Kitchen Bedroom Living Room Patio Porch 10 Inch",
+    "image": "https://m.media-amazon.com/images/I/71aShqLbYrL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D7M19Y57/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e1cdad"
+  },
+  {
+    "id": 3285,
+    "title": "Amazon Product 114",
+    "price": 0,
+    "description": "Empire Art Direct Abstract Wall Art Textured Hand Painted Canvas by Martin Edwards, Triptych, 48\" x 20 each, Sunshine",
+    "image": "https://m.media-amazon.com/images/I/A10bww58dfL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B079J8N58N/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c2ae8a"
+  },
+  {
+    "id": 3286,
+    "title": "Amazon Product 115",
+    "price": 0,
+    "description": "Wireless LED Spotlight, Battery Powered Picture Lights, Uplighting Indoor, Puck Lights with Remote, Stick Spot Lights for Wall Art Display Dartboard Painting Artwork Accent Closet-Gold",
+    "image": "https://m.media-amazon.com/images/I/71pf9wbCF+L._AC_SX569_PIbundle-2,TopRight,0,0_SH20_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0974X8GKM/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#2c2c30"
+  },
+  {
+    "id": 3287,
+    "title": "Amazon Product 116",
+    "price": 0,
+    "description": "8 Pcs Silver and Gold Metal Wall Decor Set Metal Wall Art Wall Mount Modern Art Decor Large Sunburst Hanging Sculpture Circular Decorative for Home Office Bedroom Living Room(Gold)",
+    "image": "https://m.media-amazon.com/images/I/8116w0qk9LL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CLRZG1P1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d7b36a"
+  },
+  {
+    "id": 3288,
+    "title": "Amazon Product 117",
+    "price": 0,
+    "description": "3 Piece Metal Flowers and Vases Wall Decoration Minimalist Art Wall Sculpture Daffodils Chrysanthemum Eucalyptus Leaf Iron Decorative Floral for Living Room or Kitchen (Style 1, Gold)",
+    "image": "https://m.media-amazon.com/images/I/71l7-S6sgpL._AC_SX522_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CH1C6PHH/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#f8f5dc"
+  },
+  {
+    "id": 3289,
+    "title": "Amazon Product 118",
+    "price": 0,
+    "description": "ArtbyHannah Gallery Wall Frame Set, Gold Picture Frames Collage Wall Decor for Stairway Wall or Living Room Bedroom, 8 Pack Assorted Size-11x14 x2pcs, 8x10 x3pcs, 6x8 x3pcs",
+    "image": "https://m.media-amazon.com/images/I/71-JiLZLBbL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BNQRPBYQ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ccb384"
+  },
+  {
+    "id": 3290,
+    "title": "Amazon Product 119",
+    "price": 0,
+    "description": "Mid Century Modern Decor, Gold Mcm Retro 3D Star Art Wall Sculpture, Plastic Starburst Decor, Vintage Celestial Whimsigoth Home Decor Accent. (Set of 6)",
+    "image": "https://m.media-amazon.com/images/I/61-5KiqtEoL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0D8PB7SLZ/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#ffe9bb"
+  },
+  {
+    "id": 3291,
+    "title": "Amazon Product 120",
+    "price": 0,
+    "description": "2 Pieces Metal Tree Leaf Wall Decor Vine Olive Branch Leaf Wall Art Wrought Iron Scroll Sculptures Above the Bed, Living Room, Outdoor Decoration (Gold, Classic Style)",
+    "image": "https://m.media-amazon.com/images/I/71z-4JNyTgL._AC_SX679_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BDFT8W5Z/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fffeb0"
+  },
+  {
+    "id": 3292,
+    "title": "Amazon Product 121",
+    "price": 0,
+    "description": "Mie Creations Vintage Metal Heart Wall Hanging Art, Gold Hearts Shaped Bedroom Wall Decor | Valentine's Gifts for Him, Her, Decorations for Couples, Farmhouse Country Rustic Love Heart - Golden 27''",
+    "image": "https://m.media-amazon.com/images/I/51KRG+mnWtL._AC_SY606_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09LD44NH1/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#7d5c3f"
+  },
+  {
+    "id": 3293,
+    "title": "Amazon Product 122",
+    "price": 0,
+    "description": "MIEVU Gold Vintage Framed Wall Art - Canvas Wall Art Prints for Living Room Decor Bedroom Home Bathroom, 11x14in Floral Flower Frame Wall Decor (Floral 10)",
+    "image": "https://m.media-amazon.com/images/I/81WdMetUfXL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DBPCZ7RB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#b49368"
+  },
+  {
+    "id": 3294,
+    "title": "Amazon Product 123",
+    "price": 0,
+    "description": "Peryiter 2 Pcs Boho Wall Decor Metal Wall Art x Shaped Hanging Planters with Artificial Pampas Modern Home Decor for Bedroom Bathroom Living Room(Gold)",
+    "image": "https://m.media-amazon.com/images/I/711JhJDt+tL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CRK7H39B/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#fae988"
+  },
+  {
+    "id": 3295,
+    "title": "Amazon Product 124",
+    "price": 0,
+    "description": "3Pcs Framed Emerald Green Wall Art, Modern Green and Gold Abstract Marble Canvas Wall Art Paintings Prints Posters Wall Decor Pictures for Living Room Bedroom Office Home Decoration, Ready to Hang",
+    "image": "https://m.media-amazon.com/images/I/71dFAdjLs5L._AC_SX450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CFXBDLM4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#11221c"
+  },
+  {
+    "id": 3296,
+    "title": "Amazon Product 125",
+    "price": 0,
+    "description": "ArtbyHannah Gold Framed Canvas Wall Art, 16x16 Inch Vintage Wall Decor Landscape Impressionism Sencery for Living Room, Bedroom",
+    "image": "https://m.media-amazon.com/images/I/81eJB6tz7EL._AC_SX425_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPCDV8PD/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#90490c"
+  },
+  {
+    "id": 3297,
+    "title": "Amazon Product 126",
+    "price": 0,
+    "description": "Gold Mirrors for Wall Pack of 3 - BONNYCO | Wall Mirrors for Room Decor & Home Decor | Gold Round Mirrors for Wall Decor | Circle Mirrors Modern Wall Decor Gifts for Women & Moms | Decorative Mirrors",
+    "image": "https://m.media-amazon.com/images/I/910g1KqescL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B07T31R5F4/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d3bd73"
+  },
+  {
+    "id": 3298,
+    "title": "Amazon Product 127",
+    "price": 0,
+    "description": "Blulu Hello Gorgeous Wall Decor Words Hello Gorgeous Sign 3D Wooden Wall Art Sign for Home Room Office Door Decorations Party Supplies(Gold)",
+    "image": "https://m.media-amazon.com/images/I/71DpJ2Q04cL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B09TKS1RRB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d6d7d2"
+  },
+  {
+    "id": 3299,
+    "title": "Amazon Product 128",
+    "price": 0,
+    "description": "ESTART Large Metal Mandala Wall Art, Unique Lotus Flower Wall Decor for Living Room Bedroom Office and Home Indoor and Outdoor Decoration (Gold)",
+    "image": "https://m.media-amazon.com/images/I/713jErBAKsL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BB9N5HPB/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#d1caa6"
+  },
+  {
+    "id": 3300,
+    "title": "Amazon Product 129",
+    "price": 0,
+    "description": "6 Pieces Metal Butterfly Wall Decor Metal Wall Art Heart Hanging Decorations Wire Flowers Decals Decor for Kitchen Bathroom Indoor Outdoor Wedding Birthday Party(Butterfly, Gold)",
+    "image": "https://m.media-amazon.com/images/I/71Ntf64JA+L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0BVM29MML/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e9e4d3"
+  },
+  {
+    "id": 3301,
+    "title": "Amazon Product 130",
+    "price": 0,
+    "description": "KREATIVE ARTS Abstract Canvas Art Set - 16x24 Inch, 3 Pieces Brown and Gold Pastel Paint Strokes Painting Modern Nordic Wall Decor for Living Room, Bedroom, Office, Zen-Inspired Giclee Prints",
+    "image": "https://m.media-amazon.com/images/I/71W0SoF5gAL._AC_SY450_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CPDVMH3D/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c1b69e"
+  },
+  {
+    "id": 3302,
+    "title": "Amazon Product 131",
+    "price": 0,
+    "description": "Deco 79 Metal Floral Home Wall Decor Wall Sculpture with Gold Frame, Set of 2 Wall Art 14\" W, 35\" H, Gold",
+    "image": "https://m.media-amazon.com/images/I/81DEj66gCyL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CM87Z515/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#eceae1"
+  },
+  {
+    "id": 3303,
+    "title": "Amazon Product 132",
+    "price": 0,
+    "description": "Yaocom 5 Pieces Midcentury Modern Vintage Style Starburst Metal Wall Decor Mid Century Modern Elegance Wall Accents Diamond Star Bursts Decor Vintage Style Home Decoration(Gold)",
+    "image": "https://m.media-amazon.com/images/I/71HmaFbIGxL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYGW5SKR/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e2db95"
+  },
+  {
+    "id": 3304,
+    "title": "Amazon Product 133",
+    "price": 0,
+    "description": "Blulu 9 Pcs Mirror Wall Decor Multi Metal Home Decor Decorative Circle Plates Mirror, Modern Round Large Wall Art Sculpture Decoration for Living Room, Office, Bedroom, Kitchen, Hallway(Gold)",
+    "image": "https://m.media-amazon.com/images/I/714ED+K-E0L._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CYSWHWJX/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#e3ded7"
+  },
+  {
+    "id": 3305,
+    "title": "Amazon Product 134",
+    "price": 0,
+    "description": "Sokurdeg Gold Metal Wall Art, Boho Minimalist Geometry Wall Art, Bohemian Abstract Line Metal Art Wall Decor, Gold Boho Wall Art for Bedroom Bathroom Living Room (3 Pack, 12 x 17 in)",
+    "image": "https://m.media-amazon.com/images/I/71KepMGlW5L._AC_SY355_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0CW67KZ3M/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#dad88b"
+  },
+  {
+    "id": 3306,
+    "title": "Amazon Product 135",
+    "price": 0,
+    "description": "Plum Blossom Tree Hand Painted Wall Art for Living Room - Flower Painting Wall Art for Office - Framed Wall Art Large Modern 29\" x 59\"",
+    "image": "https://m.media-amazon.com/images/I/91HOfcinhHL._AC_SX466_.jpg",
+    "category": "home decor",
+    "affiliateLink": "https://www.amazon.com/dp/B0DJSY94KK/ref=nosim?tag=paintchipshop-20",
+    "dominantColor": "#c9c7c5"
   }
 ];
