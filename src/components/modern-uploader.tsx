@@ -15,17 +15,17 @@ import {
 import { HslColorPicker } from "react-colorful";
 import { amazonProducts } from "../lib/amazonProducts";
 
-// ----- Type Declarations (if needed) -----
+// --- Needed declarations (from the original code) ---
 declare const ColorThief: any;
 declare const gtag_report_conversion: (url: string) => boolean;
 
-// ----- Color Utils -----
+// --- Color utils (same as original) ---
 function hexToHSL(hex: string) {
   const r = parseInt(hex.slice(1, 3), 16) / 255;
   const g = parseInt(hex.slice(3, 5), 16) / 255;
   const b = parseInt(hex.slice(5, 7), 16) / 255;
-  const max = Math.max(r, g, b),
-    min = Math.min(r, g, b);
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
   let h = 0,
     s = 0;
   const l = (max + min) / 2;
@@ -74,7 +74,7 @@ function hslToHex(h: number, s: number, l: number) {
     const hx = Math.round(val * 255).toString(16);
     return hx.length === 1 ? "0" + hx : hx;
   };
-  return #${toHex(r)}${toHex(g)}${toHex(b)};
+  return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
 }
 
 function getComplementaryColor(hex: string) {
@@ -90,20 +90,6 @@ function getTriadicColors(hex: string): [string, string] {
   ];
 }
 
-function handleDragOver(e: React.DragEvent<HTMLLabelElement>) {
-  e.preventDefault();
-}
-
-async function handleDrop(
-  e: React.DragEvent<HTMLLabelElement>,
-  onFileSelect: (file: File) => void
-) {
-  e.preventDefault();
-  const file = e.dataTransfer.files?.[0];
-  if (file) onFileSelect(file);
-}
-
-// Extract dominant color
 async function extractColor(file: File): Promise<string> {
   return new Promise((resolve) => {
     const img = new Image();
@@ -112,9 +98,9 @@ async function extractColor(file: File): Promise<string> {
       try {
         const [r, g, b] = colorThief.getColor(img);
         resolve(
-          #${r.toString(16).padStart(2, "0")}${g
+          `#${r.toString(16).padStart(2, "0")}${g
             .toString(16)
-            .padStart(2, "0")}${b.toString(16).padStart(2, "0")}
+            .padStart(2, "0")}${b.toString(16).padStart(2, "0")}`
         );
       } catch {
         resolve("#000000");
@@ -146,18 +132,9 @@ function calculateColorMatch(color1: string, color2: string): number {
   }
 }
 
-const heroImages = [
-  "https://i.imgur.com/pHjncHD.png",
-  "https://i.imgur.com/W1RnTGZ.png",
-  "https://i.imgur.com/6uZrs0j.png",
-  "https://i.imgur.com/oH0sLxE.jpeg",
-  "https://i.imgur.com/UzYfvqA.png",
-];
-
-const defaultGradient =
-  "radial-gradient(circle at center, #ffadad 0%, #ffd6a5 16%, #fdffb6 33%, #caffbf 50%, #9bf6ff 66%, #a0c4ff 83%, #bdb2ff 100%)";
-
+// --- Main Component ---
 export default function ModernUploader() {
+  // -- Vision Board pins --
   const [pinned, setPinned] = useState<number[]>(() => {
     if (typeof window !== "undefined") {
       const saved = localStorage.getItem("pinnedProducts");
@@ -165,6 +142,8 @@ export default function ModernUploader() {
     }
     return [];
   });
+
+  // -- Colors --
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [complementaryColor, setComplementaryColor] = useState<string | null>(
     null
@@ -175,76 +154,68 @@ export default function ModernUploader() {
   const [activeSearchColor, setActiveSearchColor] = useState<string | null>(
     null
   );
+
+  // -- Upload states --
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
   const [hasUploaded, setHasUploaded] = useState(false);
+
+  // -- Color Picker Modal --
   const [showWheel, setShowWheel] = useState(false);
   const [colorWheelHsl, setColorWheelHsl] = useState({ h: 0, s: 50, l: 50 });
   const [activeEditingColor, setActiveEditingColor] = useState<
     "primary" | "complement" | "accent1" | "accent2" | null
   >(null);
 
-  const [currentHero, setCurrentHero] = useState(0);
-  const [products, setProducts] = useState<any[]>([]);
+  // -- Product listing + infinite scroll --
   const [allProducts, setAllProducts] = useState<any[]>([]);
+  const [products, setProducts] = useState<any[]>([]);
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
   const [isFetching, setIsFetching] = useState(false);
-  const [colorOverlay, setColorOverlay] = useState(true);
+  const sentinelRef = useRef<HTMLDivElement>(null);
 
-  const [visionCollapsed, setVisionCollapsed] = useState(false);
-  const [showBack, setShowBack] = useState(true);
-
+  // -- Vision Board collapsible --
   const pinnedTriggerRef = useRef<HTMLDivElement>(null);
   const pinnedContainerRef = useRef<HTMLDivElement>(null);
-  const sentinelRef = useRef<HTMLDivElement>(null);
   const [isPinnedFloating, setIsPinnedFloating] = useState(false);
+  const [visionCollapsed, setVisionCollapsed] = useState(false);
 
+  // -- Show "Back" button once color is chosen --
+  const [showBack, setShowBack] = useState(true);
+
+  // -- Effects --
   useEffect(() => {
+    // Shuffle products once
+    const shuffled = [...amazonProducts].sort(() => Math.random() - 0.5);
+    setAllProducts(shuffled);
+    setPage(1);
+
     const handleScroll = () => {
+      // Hide "Back" if scrolling
       setShowBack(window.scrollY < 80);
+      // Handle pinned vision board floating
       if (pinnedTriggerRef.current && pinnedContainerRef.current) {
-        const triggerTop = pinnedTriggerRef.current.getBoundingClientRect().top;
-        setIsPinnedFloating(triggerTop < 0);
+        const trigTop = pinnedTriggerRef.current.getBoundingClientRect().top;
+        setIsPinnedFloating(trigTop < 0);
       }
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
-    const t = setTimeout(() => setColorOverlay(false), 500);
-    return () => clearTimeout(t);
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentHero((prev) => (prev + 1) % heroImages.length);
-    }, 6000);
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    const shuffled = [...amazonProducts].sort(() => Math.random() - 0.5);
-    setAllProducts(shuffled);
-    setPage(1);
-  }, []);
-
-  useEffect(() => {
+    // Whenever page, or search color changes, load next batch
     if (!allProducts.length) return;
     setIsFetching(true);
 
-    let sorted: any[] = [];
+    let sorted = allProducts;
     if (activeSearchColor) {
-      sorted = allProducts.map((p) => {
-        const c2 = (p.dominantColor || "#000000").trim();
-        return {
-          ...p,
-          matchPercentage: calculateColorMatch(activeSearchColor, c2),
-        };
-      });
+      sorted = allProducts.map((p) => ({
+        ...p,
+        matchPercentage: calculateColorMatch(activeSearchColor, p.dominantColor || "#000"),
+      }));
       sorted.sort((a, b) => b.matchPercentage - a.matchPercentage);
-    } else {
-      sorted = allProducts;
     }
 
     const pageSize = 12;
@@ -254,13 +225,12 @@ export default function ModernUploader() {
     if (page === 1) setProducts(batch);
     else setProducts((prev) => [...prev, ...batch]);
 
-    if (batch.length < pageSize) setHasMore(false);
-    else setHasMore(true);
-
+    setHasMore(batch.length === pageSize);
     setIsFetching(false);
   }, [page, activeSearchColor, allProducts]);
 
   useEffect(() => {
+    // Infinite scroll observer
     if (!sentinelRef.current) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -271,43 +241,34 @@ export default function ModernUploader() {
       { threshold: 0.1 }
     );
     observer.observe(sentinelRef.current);
-    return () => {
-      if (sentinelRef.current) observer.unobserve(sentinelRef.current);
-    };
+    return () => observer.disconnect();
   }, [hasMore, isFetching]);
 
+  // -- Handlers --
   async function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
     await processUpload(file);
   }
-
   async function processUpload(file: File) {
-    try {
-      const url = URL.createObjectURL(file);
-      setUploadedImageUrl(url);
-      const color = await extractColor(file);
-      handleManualColor(color);
-      setHasUploaded(true);
-    } catch (err) {
-      console.error("extract color error:", err);
-    }
-  }
+    const url = URL.createObjectURL(file);
+    setUploadedImageUrl(url);
+    setHasUploaded(true);
 
+    const color = await extractColor(file);
+    handleManualColor(color);
+  }
   function handleManualColor(hex: string) {
     setSelectedColor(hex);
     setComplementaryColor(getComplementaryColor(hex));
     setTriadicColors(getTriadicColors(hex));
     setActiveSearchColor(hex);
     setPage(1);
-    setHasUploaded(true);
   }
-
   function handleSwatchClick(color: string) {
     setActiveSearchColor(color);
     setPage(1);
   }
-
   function handleGearClick(
     e: React.MouseEvent,
     color: string,
@@ -318,17 +279,14 @@ export default function ModernUploader() {
     setActiveEditingColor(editingType);
     setShowWheel(true);
   }
-
   function togglePin(productId: number) {
     setPinned((prev) => {
-      const updated = prev.includes(productId)
-        ? prev.filter((id) => id !== productId)
-        : [...prev, productId];
+      const hasIt = prev.includes(productId);
+      const updated = hasIt ? prev.filter((id) => id !== productId) : [...prev, productId];
       localStorage.setItem("pinnedProducts", JSON.stringify(updated));
       return updated;
     });
   }
-
   function resetAll() {
     setHasUploaded(false);
     setUploadedImageUrl(null);
@@ -342,19 +300,20 @@ export default function ModernUploader() {
     setColorWheelHsl({ h: 0, s: 50, l: 50 });
   }
 
+  // -- Vision board pinned color highlights --
   const pinnedColors = allProducts
     .filter((p) => pinned.includes(p.id) && p.dominantColor)
     .map((p) => p.dominantColor);
   const uniquePinnedColors = Array.from(new Set(pinnedColors)).slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 text-gray-800 pb-20">
-      {/* Back Button */}
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 text-gray-800 pb-20">
+      {/* "Back" Button */}
       {(hasUploaded || selectedColor) && showBack && (
         <div className="fixed top-4 left-4 z-50">
           <button
             onClick={resetAll}
-            className="flex items-center gap-1 px-2 py-1 bg-black/40 rounded hover:bg-black/60 text-sm text-white"
+            className="flex items-center gap-1 px-2 py-1 bg-black/40 rounded text-white hover:bg-black/60 text-sm"
           >
             <ArrowLeft className="w-4 h-4" />
             Back
@@ -362,55 +321,115 @@ export default function ModernUploader() {
         </div>
       )}
 
-      {/* Hero Slideshow */}
-      <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden">
-        <div
-          className={absolute inset-0 bg-slate-900 transition-opacity duration-500 z-30 ${
-            colorOverlay ? "opacity-100" : "opacity-0"
-          }}
-        />
-        {heroImages.map((img, i) => (
-          <div
-            key={img}
-            className={absolute inset-0 transition-opacity duration-1000 ${
-              currentHero === i ? "opacity-100 z-20" : "opacity-0 z-10"
-            }}
-            style={{
-              background: url('${img}') center/cover no-repeat,
-            }}
-          >
-            <div className="absolute inset-0 bg-black/40" />
-          </div>
-        ))}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-40 px-4">
-          <h1 className="text-4xl md:text-6xl font-extrabold flex flex-wrap items-center justify-center gap-2">
-            <span className="text-white drop-shadow-lg">SHOP BY</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-[length:200%_200%] animate-gradient-x drop-shadow-lg">
+      {/* Hero Section (new design) */}
+      <div className="relative h-[38vh] md:h-[45vh] mb-12 overflow-hidden flex items-center justify-center">
+        <div className="absolute inset-0 bg-gray-300/10" />
+        <div className="z-10 text-center px-4">
+          <h1 className="text-4xl md:text-6xl font-extrabold">
+            <span className="text-gray-900">SHOP BY</span>{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
               COLOR
             </span>
           </h1>
-          <p className="mt-2 text-xl md:text-2xl font-light drop-shadow-md text-white">
-            Find matching furniture & decor in your exact color
+          <p className="mt-2 text-xl md:text-2xl text-gray-700">
+            Find furniture & décor that perfectly matches your style.
           </p>
         </div>
       </div>
 
+      {/* Vision Board Trigger */}
+      <div ref={pinnedTriggerRef} />
+
+      {/* Vision Board */}
+      {pinned.length > 0 && (
+        <div
+          ref={pinnedContainerRef}
+          className={`border-b border-gray-300 py-2 px-4 mb-8 bg-white/50 backdrop-blur-md text-gray-800 ${
+            isPinnedFloating
+              ? "fixed left-0 right-0 top-0 z-40 shadow-lg"
+              : ""
+          } transition-all duration-500 ease-out`}
+        >
+          <div className="flex items-center justify-between mb-1.5 px-4">
+            <div className="flex items-center gap-2">
+              <h3 className="text-sm font-medium text-gray-600">Vision Board</h3>
+              {uniquePinnedColors.map((color, idx) => (
+                <div
+                  key={idx}
+                  className="w-4 h-4 rounded-full border border-gray-300"
+                  style={{ backgroundColor: color }}
+                />
+              ))}
+            </div>
+            <div className="flex items-center gap-4">
+              <span className="text-xs text-gray-500">{pinned.length} items</span>
+              <button
+                onClick={() => setVisionCollapsed(!visionCollapsed)}
+                className="p-1 bg-gray-200 hover:bg-gray-300 rounded"
+              >
+                {visionCollapsed ? (
+                  <ChevronDown className="w-4 h-4 text-gray-600" />
+                ) : (
+                  <ChevronUp className="w-4 h-4 text-gray-600" />
+                )}
+              </button>
+            </div>
+          </div>
+          {!visionCollapsed && (
+            <div className="flex gap-3 overflow-x-auto scrollbar-hide py-1 px-8">
+              {pinned.map((id) => {
+                const product = allProducts.find((p) => p.id === id);
+                if (!product) return null;
+                return (
+                  <a
+                    key={id}
+                    href={product.affiliateLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      gtag_report_conversion(product.affiliateLink);
+                    }}
+                    className="min-w-[100px] relative border border-gray-300 rounded-lg overflow-hidden shrink-0 hover:shadow-md transition-all"
+                  >
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        togglePin(id);
+                      }}
+                      className="absolute top-2 right-2 z-10 text-xs p-1.5 bg-black/30 rounded-full hover:bg-black/50 text-white"
+                    >
+                      <PinOff className="w-3 h-3" />
+                    </button>
+                    <div className="h-[100px] w-[100px] overflow-hidden">
+                      <img
+                        src={product.image}
+                        alt={product.description}
+                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-125"
+                      />
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      )}
+      {isPinnedFloating && pinned.length > 0 && <div className="h-[120px]" />}
+
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-4 pb-20">
+      <div className="max-w-6xl mx-auto px-4 pb-20 text-center">
         {!hasUploaded && !selectedColor && (
-          <div className="text-center mb-12">
+          <>
             <h3 className="text-xl md:text-2xl font-bold text-gray-800">
               Select your color to start.
             </h3>
             <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-8">
               {/* Upload */}
-              <label
-                onDragOver={handleDragOver}
-                onDrop={(e) => handleDrop(e, processUpload)}
-                className="group cursor-pointer"
-              >
-                <div className="flex flex-col items-center p-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-gray-400 transition">
-                  <Upload className="w-10 h-10 text-gray-400 group-hover:scale-110 transition-transform" />
+              <label className="group cursor-pointer flex flex-col items-center">
+                <div className="p-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-gray-400 transition">
+                  <Upload className="w-10 h-10 text-blue-500 group-hover:scale-110 transition-transform" />
                   <span className="mt-2 text-sm md:text-base font-medium text-gray-700">
                     Upload
                   </span>
@@ -424,11 +443,13 @@ export default function ModernUploader() {
               </label>
 
               {/* Snap (Camera) */}
-              <label className="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform">
-                <Camera className="w-10 h-10 text-gray-400" />
-                <span className="mt-2 text-sm md:text-base font-medium text-gray-700">
-                  Snap
-                </span>
+              <label className="group cursor-pointer flex flex-col items-center">
+                <div className="p-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-gray-400 transition">
+                  <Camera className="w-10 h-10 text-orange-500 group-hover:scale-110 transition-transform" />
+                  <span className="mt-2 text-sm md:text-base font-medium text-gray-700">
+                    Snap
+                  </span>
+                </div>
                 <input
                   type="file"
                   accept="image/*"
@@ -441,114 +462,34 @@ export default function ModernUploader() {
               {/* Select (Palette) */}
               <div
                 onClick={() => setShowWheel(true)}
-                className="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform"
+                className="group cursor-pointer flex flex-col items-center"
               >
-                <Palette className="w-10 h-10 text-gray-400" />
-                <span className="mt-2 text-sm md:text-base font-medium text-gray-700">
-                  Select
-                </span>
+                <div className="p-4 border-2 border-dashed border-gray-300 rounded-xl hover:border-gray-400 transition">
+                  <Palette className="w-10 h-10 text-green-500 group-hover:scale-110 transition-transform" />
+                  <span className="mt-2 text-sm md:text-base font-medium text-gray-700">
+                    Select
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
+          </>
         )}
-
-        <div ref={pinnedTriggerRef} />
-
-        {/* Vision Board */}
-        {pinned.length > 0 && (
-          <div
-            ref={pinnedContainerRef}
-            className={border-b border-gray-300 py-2 px-4 mb-8 bg-white/50 backdrop-blur-md text-gray-800 ${
-              isPinnedFloating
-                ? "origin-top-left group/vision fixed left-0 right-0 z-40 top-0 border-none shadow-lg"
-                : "origin-top"
-            } transition-all duration-500 ease-out}
-          >
-            <div className="flex items-center justify-between mb-1.5 px-4">
-              <div className="flex items-center gap-2">
-                <h3 className="text-sm font-medium text-gray-600">Vision Board</h3>
-                {uniquePinnedColors.map((color, idx) => (
-                  <div
-                    key={idx}
-                    className="w-4 h-4 rounded-full border border-gray-300"
-                    style={{ backgroundColor: color }}
-                  />
-                ))}
-              </div>
-              <div className="flex items-center gap-4">
-                <span className="text-xs text-gray-500">
-                  {pinned.length} items
-                </span>
-                <button
-                  onClick={() => setVisionCollapsed(!visionCollapsed)}
-                  className="p-1 bg-gray-200 hover:bg-gray-300 rounded transition"
-                >
-                  {visionCollapsed ? (
-                    <ChevronDown className="w-4 h-4 text-gray-600" />
-                  ) : (
-                    <ChevronUp className="w-4 h-4 text-gray-600" />
-                  )}
-                </button>
-              </div>
-            </div>
-            {!visionCollapsed && (
-              <div className="flex gap-3 overflow-x-auto scrollbar-hide py-1 px-8 transition-all duration-500">
-                {pinned.map((id) => {
-                  const product = allProducts.find((p) => p.id === id);
-                  if (!product) return null;
-                  return (
-                    <a
-                      key={id}
-                      href={product.affiliateLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        gtag_report_conversion(product.affiliateLink);
-                      }}
-                      className="min-w-[100px] relative border border-gray-300 rounded-lg overflow-hidden shrink-0 transition-all duration-500 hover:scale-105 hover:shadow-md"
-                    >
-                      <button
-                        onClick={(e) => {
-                          e.preventDefault();
-                          e.stopPropagation();
-                          togglePin(id);
-                        }}
-                        className="absolute top-2 right-2 z-10 text-xs p-1.5 bg-black/30 rounded-full hover:bg-black/50 text-white"
-                      >
-                        <PinOff className="w-3 h-3" />
-                      </button>
-                      <div className="h-[100px] w-[100px] overflow-hidden">
-                        <img
-                          src={product.image}
-                          alt={product.description}
-                          className="w-full h-full object-cover scale-150 transform-gpu hover:scale-125 transition-transform duration-500"
-                        />
-                      </div>
-                    </a>
-                  );
-                })}
-              </div>
-            )}
-          </div>
-        )}
-        {isPinnedFloating && pinned.length > 0 && <div className="h-[120px]" />}
 
         {/* Color Picker Modal */}
         {showWheel && (
           <div
-            className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
+            className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center"
             onClick={() => {
               setShowWheel(false);
               setActiveEditingColor(null);
             }}
           >
             <div
-              className="bg-white p-6 rounded-xl shadow-lg"
+              className="bg-white p-6 rounded-xl shadow-xl"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex justify-between items-center mb-4">
-                <h3 className="text-lg font-semibold text-gray-800">
+                <h3 className="text-lg font-semibold">
                   {activeEditingColor ? "Modify Color" : "Choose Color"}
                 </h3>
                 <div className="flex gap-2">
@@ -579,33 +520,33 @@ export default function ModernUploader() {
                 </button>
                 <button
                   onClick={() => {
-                    const newCol = hslToHex(
+                    const newColor = hslToHex(
                       colorWheelHsl.h,
                       colorWheelHsl.s,
                       colorWheelHsl.l
                     );
                     if (activeEditingColor) {
                       if (activeEditingColor === "primary") {
-                        setSelectedColor(newCol);
-                        setComplementaryColor(getComplementaryColor(newCol));
-                        setTriadicColors(getTriadicColors(newCol));
-                        setActiveSearchColor(newCol);
+                        setSelectedColor(newColor);
+                        setComplementaryColor(getComplementaryColor(newColor));
+                        setTriadicColors(getTriadicColors(newColor));
+                        setActiveSearchColor(newColor);
                       } else if (activeEditingColor === "complement") {
-                        setComplementaryColor(newCol);
-                        setActiveSearchColor(newCol);
+                        setComplementaryColor(newColor);
+                        setActiveSearchColor(newColor);
                       } else {
-                        const [c1, c2] = triadicColors || [newCol, newCol];
+                        const [c1, c2] = triadicColors || [newColor, newColor];
                         if (activeEditingColor === "accent1") {
-                          setTriadicColors([newCol, c2]);
-                          setActiveSearchColor(newCol);
+                          setTriadicColors([newColor, c2]);
+                          setActiveSearchColor(newColor);
                         } else {
-                          setTriadicColors([c1, newCol]);
-                          setActiveSearchColor(newCol);
+                          setTriadicColors([c1, newColor]);
+                          setActiveSearchColor(newColor);
                         }
                       }
                       setPage(1);
                     } else {
-                      handleManualColor(newCol);
+                      handleManualColor(newColor);
                     }
                     setShowWheel(false);
                     setActiveEditingColor(null);
@@ -619,7 +560,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Chosen Color Palette */}
+        {/* Display chosen colors */}
         {selectedColor && (
           <div className="mb-10 flex flex-col items-center">
             {uploadedImageUrl && (
@@ -660,14 +601,13 @@ export default function ModernUploader() {
             )}
 
             <div className="flex items-center justify-center gap-6">
+              {/* Primary */}
               <div className="relative group cursor-pointer">
                 <div
                   onClick={() => handleSwatchClick(selectedColor!)}
-                  className={w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg transition ${
-                    selectedColor === activeSearchColor
-                      ? "ring-2 ring-pink-500"
-                      : ""
-                  }}
+                  className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg transition ${
+                    selectedColor === activeSearchColor ? "ring-2 ring-pink-500" : ""
+                  }`}
                   style={{ backgroundColor: selectedColor! }}
                 />
                 <button
@@ -681,21 +621,18 @@ export default function ModernUploader() {
                 </span>
               </div>
 
+              {/* Complement */}
               {complementaryColor && (
                 <div className="relative group cursor-pointer">
                   <div
                     onClick={() => handleSwatchClick(complementaryColor)}
-                    className={w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg transition ${
-                      complementaryColor === activeSearchColor
-                        ? "ring-2 ring-pink-500"
-                        : ""
-                    }}
+                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg transition ${
+                      complementaryColor === activeSearchColor ? "ring-2 ring-pink-500" : ""
+                    }`}
                     style={{ backgroundColor: complementaryColor }}
                   />
                   <button
-                    onClick={(e) =>
-                      handleGearClick(e, complementaryColor, "complement")
-                    }
+                    onClick={(e) => handleGearClick(e, complementaryColor, "complement")}
                     className="hidden sm:group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
                   >
                     <Settings className="w-4 h-4 text-white" />
@@ -706,13 +643,14 @@ export default function ModernUploader() {
                 </div>
               )}
 
+              {/* Triadic */}
               {triadicColors?.map((col, i) => (
                 <div key={col} className="relative group cursor-pointer">
                   <div
                     onClick={() => handleSwatchClick(col)}
-                    className={w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg transition ${
+                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg transition ${
                       col === activeSearchColor ? "ring-2 ring-pink-500" : ""
-                    }}
+                    }`}
                     style={{ backgroundColor: col }}
                   />
                   <button
@@ -732,7 +670,7 @@ export default function ModernUploader() {
           </div>
         )}
 
-        {/* Product Grid */}
+        {/* Products Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((p) => {
             const isPinned = pinned.includes(p.id);
@@ -758,9 +696,9 @@ export default function ModernUploader() {
                     className="absolute top-2 right-2 z-20 bg-black/30 text-white p-1 rounded hover:bg-black/50 transition"
                   >
                     <Pin
-                      className={w-5 h-5 ${
+                      className={`w-5 h-5 ${
                         isPinned ? "fill-white text-pink-400" : ""
-                      }}
+                      }`}
                     />
                   </button>
                   <div className="aspect-square overflow-hidden group-hover:scale-105 transition-transform duration-300">
@@ -784,16 +722,11 @@ export default function ModernUploader() {
         </div>
 
         {/* Infinite Scroll Sentinel */}
-        <div
-          ref={sentinelRef}
-          className="mt-8 h-8 flex justify-center items-center"
-        >
+        <div ref={sentinelRef} className="mt-8 h-8 flex justify-center items-center">
           {isFetching && hasMore && (
-            <div className="text-sm text-gray-500 animate-pulse">
-              Loading more...
-            </div>
+            <div className="text-sm text-gray-500 animate-pulse">Loading more...</div>
           )}
-          {!hasMore && (
+          {!hasMore && products.length > 0 && (
             <div className="text-sm text-gray-400">~ End of results ~</div>
           )}
         </div>
@@ -806,3 +739,4 @@ export default function ModernUploader() {
     </div>
   );
 }
+
