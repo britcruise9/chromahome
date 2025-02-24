@@ -40,7 +40,8 @@ function hslToHex(h, s, l) {
   const hue2rgb = (p, q, t) => {
     t < 0 && (t += 1); t > 1 && (t -= 1);
     if (t < 1/6) return p + (q - p) * 6 * t;
-    if (t < 1/2) return q; if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+    if (t < 1/2) return q;
+    if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
     return p;
   };
   const q = l < 0.5 ? l * (1 + s) : l + s - l * s, p = 2 * l - q;
@@ -68,8 +69,8 @@ function calculateColorMatch(color1, color2) {
     const c1 = color1.replace(/^%23/, "#"), c2 = color2.replace(/^%23/, "#");
     const [r1, g1, b1] = [1, 3, 5].map((i) => parseInt(c1.slice(i, i + 2), 16));
     const [r2, g2, b2] = [1, 3, 5].map((i) => parseInt(c2.slice(i, i + 2), 16));
-    const dist = Math.sqrt(3*(r2-r1)**2 + 4*(g2-g1)**2 + 2*(b2-b1)**2);
-    const max = Math.sqrt(3*255**2 + 4*255**2 + 2*255**2);
+    const dist = Math.sqrt(3 * (r2 - r1) ** 2 + 4 * (g2 - g1) ** 2 + 2 * (b2 - b1) ** 2);
+    const max = Math.sqrt(3 * 255 ** 2 + 4 * 255 ** 2 + 2 * 255 ** 2);
     return Math.round((1 - dist / max) * 100);
   } catch {
     return 0;
@@ -82,7 +83,9 @@ async function extractColor(file) {
       try {
         const [r, g, b] = colorThief.getColor(img);
         resolve(`#${[r, g, b].map((x) => x.toString(16).padStart(2, "0")).join("")}`);
-      } catch { resolve("#000000"); }
+      } catch {
+        resolve("#000000");
+      }
     };
     img.onerror = () => resolve("#000000");
     img.crossOrigin = "Anonymous";
@@ -90,16 +93,18 @@ async function extractColor(file) {
   });
 }
 
-// Category keywords + helper
+// Updated Category keywords + helper
 const categoryKeywords = {
   chairs: ["chair", "armchair", "recliner", "seating", "sofa", "ottoman"],
   pillows: ["pillow", "cushion", "pillowcase", "throw pillow"],
   rugs: ["rug", "carpet", "mat", "runner"],
   art: ["art", "painting", "print", "poster", "canvas", "wall art"],
-  clocks: ["clock", "timepiece"],
   curtains: ["curtain", "drapes", "drapery", "window"],
+  blankets: ["blanket", "throw", "fleece", "quilt"],
+  other: [],
 };
 function getCategoryFromDescription(desc) {
+  if (!desc) return "other";
   const lower = desc.toLowerCase();
   for (const [cat, kws] of Object.entries(categoryKeywords)) {
     if (kws.some((kw) => lower.includes(kw))) return cat;
@@ -107,7 +112,7 @@ function getCategoryFromDescription(desc) {
   return "other";
 }
 
-// Category Filter Component
+// Category Filter Component (Unchanged except new keywords)
 function CategoryFilter({ activeCategory, onCategoryChange, products }) {
   const categories = ["all"];
   const categoryCount = { all: products.length };
@@ -136,9 +141,7 @@ function CategoryFilter({ activeCategory, onCategoryChange, products }) {
             `}
           >
             {cat === "all" ? "All Items" : cat.charAt(0).toUpperCase() + cat.slice(1)}
-            <span className="ml-2 text-xs opacity-60">
-              ({categoryCount[cat]})
-            </span>
+            <span className="ml-2 text-xs opacity-60">({categoryCount[cat]})</span>
           </button>
         ))}
       </div>
@@ -193,7 +196,7 @@ export default function ModernUploader() {
   // UI
   const [showBack, setShowBack] = useState(true);
 
-  // New category filter
+  // Category filter state
   const [activeCategory, setActiveCategory] = useState("all");
 
   // Effects
@@ -286,12 +289,12 @@ export default function ModernUploader() {
     setSelectedColor(hex);
     setComplementaryColor(getComplementaryColor(hex));
     setTriadicColors(getTriadicColors(hex));
-    setProducts([]);            // Clear old items
+    setProducts([]);
     setActiveSearchColor(hex);
     setPage(1);
   }
   function handleSwatchClick(color) {
-    setProducts([]);            // Clear old items
+    setProducts([]);
     setActiveSearchColor(color);
     setPage(1);
   }
@@ -321,7 +324,7 @@ export default function ModernUploader() {
     setPage(1);
     setHasMore(true);
     setColorWheelHsl({ h: 0, s: 50, l: 50 });
-    setActiveCategory("all");
+    setActiveCategory("all"); // Reset category
   }
 
   // Vision Board color highlights
@@ -572,11 +575,11 @@ export default function ModernUploader() {
                         setSelectedColor(newCol);
                         setComplementaryColor(getComplementaryColor(newCol));
                         setTriadicColors(getTriadicColors(newCol));
-                        setProducts([]); // reset
+                        setProducts([]);
                         setActiveSearchColor(newCol);
                       } else if (activeEditingColor === "complement") {
                         setComplementaryColor(newCol);
-                        setProducts([]); // reset
+                        setProducts([]);
                         setActiveSearchColor(newCol);
                       } else {
                         const [c1, c2] = triadicColors || [newCol, newCol];
@@ -585,7 +588,7 @@ export default function ModernUploader() {
                         } else {
                           setTriadicColors([c1, newCol]);
                         }
-                        setProducts([]); // reset
+                        setProducts([]);
                         setActiveSearchColor(newCol);
                       }
                       setPage(1);
@@ -594,7 +597,7 @@ export default function ModernUploader() {
                       setSelectedColor(newCol);
                       setComplementaryColor(getComplementaryColor(newCol));
                       setTriadicColors(getTriadicColors(newCol));
-                      setProducts([]); // reset
+                      setProducts([]);
                       setActiveSearchColor(newCol);
                       setPage(1);
                     }
@@ -633,86 +636,70 @@ export default function ModernUploader() {
                       }}
                       className="bg-white/90 hover:bg-white p-1 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
                     >
-                      <Settings className="w-4 h-4 text-gray-800" />
+                      <Settings className="w-4 h-4 text-gray-700" />
                     </button>
-                    <label className="bg-white/90 hover:bg-white p-1 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer">
-                      <Upload className="w-4 h-4 text-gray-800" />
-                      <input
-                        type="file"
-                        className="hidden"
-                        accept="image/*"
-                        onChange={handleFileUpload}
-                      />
-                    </label>
                   </div>
                 </div>
-                <ArrowDown className="w-6 h-6 text-gray-400 mt-2" />
-              </div>
-            )}
-            <div className="flex items-center justify-center gap-6">
-              {/* Primary */}
-              <div className="relative group cursor-pointer">
-                <div
-                  onClick={() => handleSwatchClick(selectedColor)}
-                  className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg transition ${
-                    selectedColor === activeSearchColor ? "ring-2 ring-pink-500" : ""
-                  }`}
-                  style={{ backgroundColor: selectedColor }}
-                />
-                <button
-                  onClick={(e) => handleGearClick(e, selectedColor, "primary")}
-                  className="hidden sm:group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
-                >
-                  <Settings className="w-4 h-4 text-white" />
-                </button>
-                <span className="text-xs md:text-sm text-gray-600 mt-2 block text-center">
-                  Selected
+                <span className="text-sm mt-1 text-gray-600 italic">
+                  (Extracted primary color)
                 </span>
               </div>
+            )}
 
-              {/* Complement */}
+            {/* Swatches */}
+            <div className="flex items-center justify-center gap-4">
+              {/* Primary */}
+              <div
+                onClick={() => handleSwatchClick(selectedColor)}
+                className="relative cursor-pointer"
+                style={{ backgroundColor: selectedColor }}
+              >
+                <div className="w-16 h-16 rounded-md shadow-md" />
+                <button
+                  onClick={(e) => handleGearClick(e, selectedColor, "primary")}
+                  className="absolute bottom-1 right-1 text-white opacity-80 bg-black/30 hover:bg-black/50 rounded-full p-1 transition"
+                >
+                  <Settings className="w-3 h-3" />
+                </button>
+              </div>
+
+              {/* Complementary */}
               {complementaryColor && (
-                <div className="relative group cursor-pointer">
-                  <div
-                    onClick={() => handleSwatchClick(complementaryColor)}
-                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg transition ${
-                      complementaryColor === activeSearchColor ? "ring-2 ring-pink-500" : ""
-                    }`}
-                    style={{ backgroundColor: complementaryColor }}
-                  />
+                <div
+                  onClick={() => handleSwatchClick(complementaryColor)}
+                  className="relative cursor-pointer"
+                  style={{ backgroundColor: complementaryColor }}
+                >
+                  <div className="w-16 h-16 rounded-md shadow-md" />
                   <button
                     onClick={(e) => handleGearClick(e, complementaryColor, "complement")}
-                    className="hidden sm:group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
+                    className="absolute bottom-1 right-1 text-white opacity-80 bg-black/30 hover:bg-black/50 rounded-full p-1 transition"
                   >
-                    <Settings className="w-4 h-4 text-white" />
+                    <Settings className="w-3 h-3" />
                   </button>
-                  <span className="text-xs md:text-sm text-gray-600 mt-2 block text-center">
-                    Complement
-                  </span>
                 </div>
               )}
 
               {/* Triadic */}
-              {triadicColors?.map((col, i) => (
-                <div key={col} className="relative group cursor-pointer">
+              {triadicColors &&
+                triadicColors.map((col, idx) => (
                   <div
+                    key={idx}
                     onClick={() => handleSwatchClick(col)}
-                    className={`w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-lg transition ${
-                      col === activeSearchColor ? "ring-2 ring-pink-500" : ""
-                    }`}
+                    className="relative cursor-pointer"
                     style={{ backgroundColor: col }}
-                  />
-                  <button
-                    onClick={(e) => handleGearClick(e, col, i === 0 ? "accent1" : "accent2")}
-                    className="hidden sm:group-hover:block absolute top-1 right-1 p-1 bg-black/50 rounded"
                   >
-                    <Settings className="w-4 h-4 text-white" />
-                  </button>
-                  <span className="text-xs md:text-sm text-gray-600 mt-2 block text-center">
-                    Accent {i + 1}
-                  </span>
-                </div>
-              ))}
+                    <div className="w-16 h-16 rounded-md shadow-md" />
+                    <button
+                      onClick={(e) =>
+                        handleGearClick(e, col, idx === 0 ? "accent1" : "accent2")
+                      }
+                      className="absolute bottom-1 right-1 text-white opacity-80 bg-black/30 hover:bg-black/50 rounded-full p-1 transition"
+                    >
+                      <Settings className="w-3 h-3" />
+                    </button>
+                  </div>
+                ))}
             </div>
           </div>
         )}
@@ -721,87 +708,66 @@ export default function ModernUploader() {
         <CategoryFilter
           activeCategory={activeCategory}
           onCategoryChange={(cat) => {
-            setProducts([]); // reset
+            setProducts([]);
             setActiveCategory(cat);
             setPage(1);
           }}
-          products={
-            // Show entire *current* product list for counts
-            // (Since these are after color match but before pagination, you can also pass allProducts if you prefer)
-            allProducts.map((p) => ({
-              ...p,
-              matchPercentage: activeSearchColor
-                ? calculateColorMatch(activeSearchColor, p.dominantColor || "#000")
-                : 0,
-            }))
-          }
+          products={allProducts}
         />
 
         {/* Product Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {products.map((p) => {
-            const isPinned = pinned.includes(p.id);
-            return (
-              <a
-                key={p.id}
-                href={p.affiliateLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => {
-                  e.preventDefault();
-                  // gtag_report_conversion(p.affiliateLink);
-                  window.open(p.affiliateLink, "_blank");
-                }}
-                className="block"
-              >
-                <div className="group relative bg-white rounded-xl overflow-hidden border border-gray-300 hover:shadow-md transition-all duration-300 ease-out">
-                  <button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      togglePin(p.id);
-                    }}
-                    className="absolute top-2 right-2 z-20 bg-black/30 text-white p-1 rounded hover:bg-black/50 transition"
-                  >
-                    <Pin className={`w-5 h-5 ${isPinned ? "fill-white text-pink-400" : ""}`} />
-                  </button>
-                  <div className="aspect-square overflow-hidden group-hover:scale-105 transition-transform duration-300">
-                    <img
-                      src={p.image}
-                      alt={p.description}
-                      className="w-full h-full object-cover"
-                    />
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          {products.map((product) => (
+            <a
+              key={product.id}
+              href={product.affiliateLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-xl p-4 border border-gray-200 shadow hover:shadow-md transition flex flex-col"
+            >
+              <div className="relative w-full h-40 mb-3 overflow-hidden rounded-lg bg-gray-100">
+                <img
+                  src={product.image}
+                  alt={product.description}
+                  className="w-full h-full object-cover scale-110 hover:scale-[1.15] transition-transform duration-500"
+                />
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    togglePin(product.id);
+                  }}
+                  className="absolute top-2 right-2 z-10 text-xs p-1.5 bg-black/30 rounded-full hover:bg-black/50 text-white"
+                >
+                  {pinned.includes(product.id) ? (
+                    <Pin className="w-3 h-3" />
+                  ) : (
+                    <PinOff className="w-3 h-3" />
+                  )}
+                </button>
+              </div>
+              <div className="flex-1 flex flex-col">
+                <p className="text-gray-700 text-sm font-medium line-clamp-2 mb-2">
+                  {product.description}
+                </p>
+                {activeSearchColor && product.matchPercentage !== undefined && (
+                  <div className="text-xs text-gray-500">
+                    Match: {product.matchPercentage}%
                   </div>
-                  <div className="p-4">
-                    {p.affiliateLink && (
-                      <span className="text-sm text-pink-500 hover:text-pink-400 transition-colors">
-                        Shop on Amazon
-                      </span>
-                    )}
-                  </div>
-                </div>
-              </a>
-            );
-          })}
+                )}
+              </div>
+            </a>
+          ))}
         </div>
 
-        {/* Infinite Scroll Sentinel */}
-        <div ref={sentinelRef} className="mt-8 h-8 flex justify-center items-center">
-          {isFetching && hasMore && (
-            <div className="text-sm text-gray-500 animate-pulse">Loading more...</div>
-          )}
-          {!hasMore && products.length > 0 && (
-            <div className="text-sm text-gray-400">~ End of results ~</div>
-          )}
-        </div>
+        {isFetching && (
+          <div className="text-center py-6 text-gray-500">Loading...</div>
+        )}
+        {!hasMore && !isFetching && (
+          <div className="text-center py-6 text-gray-500">No more items</div>
+        )}
+        <div ref={sentinelRef} className="h-1" />
       </div>
-
-      {/* Sticky Footer */}
-      <footer className="fixed bottom-0 left-0 w-full bg-gray-900 text-white py-2 text-center text-sm z-50">
-        Contact us at: <a href="mailto:info@example.com">info@shop-by-color.com</a>
-      </footer>
     </div>
   );
-}
-
 
