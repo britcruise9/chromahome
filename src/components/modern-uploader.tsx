@@ -376,7 +376,7 @@ export default function ModernUploader() {
             </span>
           </h1>
           <p className="mt-2 text-xl md:text-2xl font-light drop-shadow-md text-white">
-            Discover matching furniture & decor in your exact color
+            Discover perfectly matched furniture & decor in your exact color
           </p>
         </div>
       </div>
