@@ -1,6 +1,8 @@
 "use client";
-import ColorThief from 'color-thief';
 import React, { useState, useEffect, useRef } from "react";
+
+// ColorThief is loaded via CDN in layout.tsx
+declare const ColorThief: any;
 import {
   Upload,
   ArrowDown,
@@ -770,4 +772,4 @@ export default function ModernUploader() {
       </div>
     </div>
   );
-
+}
