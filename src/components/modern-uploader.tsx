@@ -1,6 +1,8 @@
 "use client";
-import ColorThief from 'color-thief';
 import React, { useState, useEffect, useRef } from "react";
+
+// ColorThief is loaded via CDN in layout.tsx
+declare const ColorThief: any;
 import {
   Upload,
   ArrowDown,
@@ -374,7 +376,7 @@ export default function ModernUploader() {
             </span>
           </h1>
           <p className="mt-2 text-xl md:text-2xl font-light drop-shadow-md text-white">
-            Find matching furniture & decor in your exact color
+            Discover matching furniture & decor in your exact color
           </p>
         </div>
       </div>
@@ -770,4 +772,4 @@ export default function ModernUploader() {
       </div>
     </div>
   );
-
+}
